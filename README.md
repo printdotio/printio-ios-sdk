@@ -33,6 +33,7 @@ Note: you can view the contents of the .bundle files we distribute, although we 
 Check your target's "Link Binary With Libraries" build phase. Make sure your app is being linked against all the following libraries:
 
     Accounts.framework
+    AssetsLibrary.framework
     AudioToolbox.framework
     AVFoundation.framework
     CFNetwork.framework
