@@ -213,6 +213,9 @@ Below is sample code for launching a customized PrintIO widget, with all option 
     // Set Payee name
     [printIO payeeName:@”Payee Name”];
     
+    // Enable Side Menu YES or NO
+    [printIO enableSideMenu:YES];
+    
     // Open widget
     [printIO open];
     }
