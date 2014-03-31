@@ -39,6 +39,7 @@ Check your target's "Link Binary With Libraries" build phase. Make sure your app
     CFNetwork.framework
     CoreGraphic.framework
     CoreMedia.framework
+    CoreLocation.framework
     CoreVideo.framework
     CoreTelephony.framework
     Foundation.framework
