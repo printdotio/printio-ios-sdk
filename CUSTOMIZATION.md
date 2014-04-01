@@ -5,11 +5,11 @@
 Customization from code:
 ------------------------
 
- - Add image's urls to SDK, so with/without photo sources, SDK will use these images also
+ - Add image's urls to SDK, so with/without photo sources, SDK will use these images also 
  `- (void)images:(NSArray *)images;`
 
  - Set country, by setting country code, so user will not have option to change it
-`- (void)countryCode:(NSString *)countryCode;`
+ `- (void)countryCode:(NSString *)countryCode;`
 
  - Set currency, by setting currency code, so user will not have option to change it
  `- (void)currencyCode:(NSString *)currencyCode;`
