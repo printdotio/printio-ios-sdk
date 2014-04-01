@@ -5,55 +5,55 @@
 Customization from code:
 ------------------------
 
- - Add image's urls to SDK, so with/without photo sources, SDK will use these images also 
+ - Add image's urls to SDK, with/without photo sources, SDK will use these images also: 
  `- (void)images:(NSArray *)images;`
 
- - Set country, by setting country code, so user will not have option to change it
+ - Set country, by setting country code, so user will not have option to change it:
  `- (void)countryCode:(NSString *)countryCode;`
 
- - Set currency, by setting currency code, so user will not have option to change it
+ - Set currency, by setting currency code, so user will not have option to change it:
  `- (void)currencyCode:(NSString *)currencyCode;`
 
- - Set language, bt setting language code, so user will not have option to change it
+ - Set language, bt setting language code, so user will not have option to change it:
  `- (void)languageCode:(NSString *)languageCode;`
 
- - Enable or disable using photo sources in SDK. Default option is disable.
+ - Enable or disable using photo sources in SDK:
 `- (void)usePhotoSources:(BOOL)usePhotoSources;`
 
- - Set available photo sources by passing in array of photo sources you want to be visible to user
+ - Set available photo sources by passing in array of photo sources you want to be visible to user:
 `- (void)availablePhotoSources:(NSArray *)vPhotoSources;`
 
- - Set custom icon, by passing in icon file name. Icon must be stored in main bundle resources.
+ - Set custom icon, by passing in icon file name. Icon must be stored in main bundle resources:
  `- (void)iconWithFileName:(NSString *)iconFileName;`
 
- - Jumps directly to product
+ - Jumps directly to product:
 `- (void)goToProductId:(int)productId;`
 
- - Jumps directly to product with sku
+ - Jumps directly to product with sku:
 `- (void)goToProductId:(int)productId withSKU:(NSString *)sku;`
 
- - Set custom fonts
+ - Set custom fonts:
  `- (void)customFonts:(NSArray *)fonts;`
 
- -  Set payee name
+ -  Set payee name:
 `- (void)payeeName:(NSString *)payeeName;`
 
- - Set custom share text. This is option from Side Menu, so first side menu mush be enabled
+ - Set custom share text. This is option from Side Menu, so first side menu mush be enabled:
 `- (void)setApplicationShareText:(NSString *)shareText;`
 
- -  On Edit Product Screen show custom image(something like help) on center of screen
+ -  On Edit Product Screen show custom image(something like help) on center of screen:
 `- (void)showCustomDoubleTapImage:(NSString *)imagePath;`
 
- - Shows menu button in center of navigation bar. Menu can be customized by PrintIO for you.
+ - Shows menu button in center of navigation bar. Menu can be customized by PrintIO for you:
 `- (void)showMenuButtonInNavigationBar:(NSString *)buttonIconFilePath;`
 
- - Show/hide Side Menu
+ - Show/hide Side Menu:
 `- (void)enableSideMenu:(BOOL)enabled;`
 
- - Change Title bar background color and title color
+ - Change Title bar background color and title color:
 `- (void)titleBarColor:(UIColor *)color fontColor:(UIColor *)fontColor;`
 
- - Loads customization.xml which is used for customizing some UI elements
+ - Loads customization.xml which is used for customizing some UI elements:
 `- (void)customizationXML:(NSData *)xmlData;`
 
 Customization of UI elements in customization.xml:
