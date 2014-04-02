@@ -56,6 +56,9 @@ Customization from code:
  - Loads customization.xml which is used for customizing some UI elements:
 `- (void)customizationXML:(NSData *)xmlData;`
 
+ - Shows/hides tab bar in Customize Product screen. Default value is YES
+`- (void)showTabBarInCustomizeProduct:(BOOL *)show;`
+
 Customization of UI elements in customization.xml:
 --------------------------------------------------
 
