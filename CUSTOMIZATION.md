@@ -59,6 +59,12 @@ Customization from code:
  - Shows/hides tab bar in Customize Product screen. Default value is YES
 `- (void)showTabBarInCustomizeProduct:(BOOL *)show;`
 
+ - Set which buttons will be visible in Image Editor tab bar. By default, all buttons are visible.
+`- (void)imageEditorShowButtons:(NSArray *)buttons;`
+
+ - Hide list with images in customization screen
+`- (void)hideImagesListInCustomizationScreen:(BOOL)hide;`
+
 Customization of UI elements in customization.xml:
 --------------------------------------------------
 
