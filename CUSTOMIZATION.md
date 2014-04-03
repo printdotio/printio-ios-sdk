@@ -68,6 +68,9 @@ Customization from code:
  - If user pass photos using method 'images', this method can disable photo sources, forcing user to use only passed photos.
 `- (void)disablePhotoSourcesWhenImagesArePassed:(BOOL)disable;`
 
+ -  Set passed in image as thumbnail for templates with one photo.
+`- (void)setPassedImageAsThumbForOnePhotoTemplate:(BOOL)set;`
+
 Customization of UI elements in customization.xml:
 --------------------------------------------------
 
