@@ -65,6 +65,9 @@ Customization from code:
  - Hide list with images in customization screen
 `- (void)hideImagesListInCustomizationScreen:(BOOL)hide;`
 
+ - If user pass photos uzinig method 'images', this method can disable photo sources, forsing user to use only passed photos.
+`- (void)disablePhotoSourcesWhenImagesArePassed:(BOOL)disable;`
+
 Customization of UI elements in customization.xml:
 --------------------------------------------------
 
