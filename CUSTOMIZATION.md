@@ -71,6 +71,9 @@ Customization from code:
  -  Set passed in image as thumbnail for templates with one photo.
 `- (void)setPassedImageAsThumbForOnePhotoTemplate:(BOOL)set;`
 
+ - Disables photo sources only if image is passed in, and user selects template with one photo.
+`- (void)disablePhotoSourcesWhenImageIsPassedForOnePhotoTemplate:(BOOL)disable;`
+
 Customization of UI elements in customization.xml:
 --------------------------------------------------
 
