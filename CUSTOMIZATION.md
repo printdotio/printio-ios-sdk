@@ -74,6 +74,9 @@ Customization from code:
  - Disables photo sources only if image is passed in, and user selects template with one photo.
 `- (void)disablePhotoSourcesWhenImageIsPassedForOnePhotoTemplate:(BOOL)disable;`
 
+ - Set custom icon for Shopping Cart
+`- (void)setShopingCartIcon:(NSString *)path;`
+
 Customization of UI elements in customization.xml:
 --------------------------------------------------
 
