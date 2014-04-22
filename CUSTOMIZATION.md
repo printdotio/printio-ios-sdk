@@ -71,12 +71,84 @@ Customization from code:
  -  Set passed in image as thumbnail for templates with one photo.
 `- (void)setPassedImageAsThumbForOnePhotoTemplate:(BOOL)set;`
 
+ - Set passed in image to be first in row for all photo sources.
+`- (void)setPassedImageFirstInPhotoSources:(BOOL)set;`
+
  - Disables photo sources only if image is passed in, and user selects template with one photo.
 `- (void)disablePhotoSourcesWhenImageIsPassedForOnePhotoTemplate:(BOOL)disable;`
 
- - Set custom icon for Shopping Cart
+ - Set custom icon for Shopping Cart, displayed in navigation bar
 `- (void)setShopingCartIcon:(NSString *)path;`
 
+ - Set custom icon for Shopping Cart, displayed in navigation bar, with red circle for showing number of items in cart
+`- (void)setShopingCartIconWithCircle:(NSString *)path;`
+
+ - Set partners ID, for additional customization options
+`- (void)setPartnerId:(NSInteger)partnerId;`
+
+ - Set background image for items (buttons) in Side Menu
+`- (void)setBackgoundImageForSideMenuItems:(NSString *)path;`
+
+ -  Hide category+search view on Featured Products screen. Default value is NO;
+`- (void)hideCategoryViewInFeaturedProducts:(BOOL)hide;`
+
+ -  Hide status bar in SDK
+`- (void)hideStatusBar:(BOOL)hide;`
+
+ -  Change background image for Toolbar in Customize Product screen
+`- (void)setBackgoundImageForToolbarInCustomizeProduct:(NSString *)imagePath;`
+
+ -  Change image for "Add photos" button in Customize Product screen
+`- (void)setImageForAddPhotosButton:(NSString *)imagePath;`
+
+ -  Change icon for Help Button
+`- (void)setIconForHelpButton:(NSString *)imagePath;`
+
+ -  Change icon for Help Button on Customize Product screen
+`- (void)setIconForHelpButtonInCustomizeProduct:(NSString *)imagePath;`
+
+ -  Set country on Featured Products screen instead on First screen. Default value is NO.
+`- (void)setCountryInFeaturedProducts:(BOOL)set;`
+
+ -  Set custom icon for back button
+`- (void)setIconForBackButton:(NSString *)path;`
+
+ -  Hide icon for Upload Instructions text. Default value is NO.
+`- (void)hideIconForUplaodInstructions:(BOOL)hide;`
+
+ - Set custom image for Double Tap balloon in Customize Product screen
+`- (void)setDoubleTapBaloonImage:(NSString *)path text:(NSString *)text textColor:(UIColor *)textColor;`
+
+ - Remove plus sign from "Add more products" button in Shopping Cart
+`- (void)removePlusFromAddMoreProductsButton:(BOOL)remove;`
+
+ -  Set background color for left and right navigation bar buttons. Default color is transparent.
+`- (void)setBackgroundColorForNavBarButtonLeft:(UIColor *)lColor right:(UIColor *)rColor;`
+
+ - Option only for testing MG
+`- (void)setMGPathNumber:(NSInteger)path;`
+
+ - Removes logo from payment screens
+`- (void)removeLogoFromPaymentScreen:(BOOL)remove;`
+
+ -  Set status bar style to dark. Default value is light.
+`- (void)setStatusBarDark:(BOOL)set;`
+
+![enter image description here][1]
+
+ - Set navigation bar icon for Side Menu
+`- (void)setIconForSideMenu:(NSString *)path;`
+
+![enter image description here][2]
+
+ - Set background color for Side Menu
+`- (void)setBackgroundColorForSideMenu:(UIColor *)bcgColor;`
+
+ - Change loading GIF animation by providing file name
+`- (void)setLoadingGIF:(NSString *)fileName;`
+
+![enter image description here][3]
+ 
 Customization of UI elements in customization.xml:
 --------------------------------------------------
 
@@ -89,7 +161,7 @@ Customization of UI elements in customization.xml:
         	</screen>
     </customization>
     
-![enter image description here][1]
+![enter image description here][4]
 
 
 ----------
@@ -103,7 +175,7 @@ Customization of UI elements in customization.xml:
         	</screen>
     </customization> 
 
-![enter image description here][2]
+![enter image description here][5]
 
 
 ----------
@@ -117,7 +189,7 @@ Customization of UI elements in customization.xml:
         	</screen>
     </customization> 
     
-![enter image description here][3]
+![enter image description here][6]
 
 
 ----------
@@ -132,7 +204,7 @@ Customization of UI elements in customization.xml:
         	</screen>
     </customization>
 
-![enter image description here][4]
+![enter image description here][7]
 
 
 ----------
@@ -146,7 +218,7 @@ Customization of UI elements in customization.xml:
         	</screen>
     </customization>
 
-![enter image description here][5]
+![enter image description here][8]
 
 
 ----------
@@ -161,7 +233,7 @@ Customization of UI elements in customization.xml:
         	</screen>
     </customization>
 
-![enter image description here][6]
+![enter image description here][9]
 
 
 ----------
@@ -176,7 +248,7 @@ Customization of UI elements in customization.xml:
         	</screen>
     </customization>
 
-![enter image description here][7]
+![enter image description here][10]
 
 
 ----------
@@ -190,7 +262,7 @@ Customization of UI elements in customization.xml:
         	</screen>
     </customization>
 
-![enter image description here][8]
+![enter image description here][11]
 
 
 ----------
@@ -204,7 +276,7 @@ Customization of UI elements in customization.xml:
         	</screen>
     </customization>
 
-![enter image description here][9]
+![enter image description here][12]
 
 
 ----------
@@ -218,7 +290,7 @@ Customization of UI elements in customization.xml:
         	</screen>
     </customization>
 
-![enter link description here][10]
+![enter link description here][13]
 
 ----------
 
@@ -232,7 +304,7 @@ Customization of UI elements in customization.xml:
         	</screen>
     </customization>
 
-![enter image description here][11]
+![enter image description here][14]
 
 ----------
 
@@ -249,7 +321,7 @@ Customization of UI elements in customization.xml:
         	</screen>
     </customization>
 
-![enter image description here][12]
+![enter image description here][15]
 
 
 ----------
@@ -263,7 +335,7 @@ Customization of UI elements in customization.xml:
         	</screen>
     </customization>
 
-![enter image description here][13]
+![enter image description here][16]
 
 
 ----------
@@ -277,7 +349,7 @@ Customization of UI elements in customization.xml:
         	</screen>
     </customization>
 
-![enter image description here][14]
+![enter image description here][17]
 
 
 ----------
@@ -291,21 +363,24 @@ Customization of UI elements in customization.xml:
         	</screen>
     </customization>
 
-![enter link description here][15]
+![enter link description here][18]
 
 
-  [1]: https://lh4.googleusercontent.com/-2ADaecem7Jw/Uuv1i9io2TI/AAAAAAAABYs/amhq_zDb72M/w413-h367-no/1.png
-  [2]: https://lh4.googleusercontent.com/-knOfqdYFS8o/Uuv1j3WecRI/AAAAAAAABY0/cs2J9rLVB-k/w470-h410-no/2.png
-  [3]: https://lh3.googleusercontent.com/-vjkD_NIiDEU/Uuv1keaWBQI/AAAAAAAABZE/DSIRrxtNXCU/w440-h380-no/3.png
-  [4]: https://lh3.googleusercontent.com/-P73Ra-OXaFo/Uuv1kmpDZvI/AAAAAAAABZI/zb79Pr3JFVw/w459-h384-no/4.png
-  [5]: https://lh6.googleusercontent.com/-rXMwPIDrPRE/Uuv1k-ukafI/AAAAAAAABZM/rgsdzKyapgg/w417-h404-no/5.png
-  [6]: https://lh4.googleusercontent.com/-aW6_mt_-wRQ/Uuv1kzZfXOI/AAAAAAAABZk/LufYhml6OPQ/w392-h377-no/6.png
-  [7]: https://lh4.googleusercontent.com/-yhK7G_IHDbw/Uuv1lGwzKzI/AAAAAAAABZc/UdR3wTe5r4g/w491-h411-no/7.png
-  [8]: https://lh6.googleusercontent.com/-VaVfDEGTy7Q/Uuv1lcOJRxI/AAAAAAAABZg/nNt4sIQvfwE/w457-h414-no/8.png
-  [9]: https://lh5.googleusercontent.com/-IEQkIohL1x8/Uuv4li8qufI/AAAAAAAABak/Fc_sz5GXXZM/w497-h413-no/9.png
-  [10]: https://lh4.googleusercontent.com/-XI9hBSfPlP0/Uuv4jIfiFpI/AAAAAAAABZ0/Tgnh0vIbexk/w475-h430-no/10.png
-  [11]: https://lh5.googleusercontent.com/-6MkW6xXXX1I/Uuv4jtQWByI/AAAAAAAABaE/35vGTxX2csA/w510-h439-no/11.png
-  [12]: https://lh5.googleusercontent.com/-yqOByNTVP_4/Uuv4j1F7pgI/AAAAAAAABaI/LeV-67KBJ0g/w489-h427-no/12.png
-  [13]: https://lh6.googleusercontent.com/-TjmbGv4RTsY/Uuv4kKY_-KI/AAAAAAAABaM/-pO0royMH5g/w487-h410-no/13.png
-  [14]: https://lh6.googleusercontent.com/-Os6CO1SseJg/Uuv4knkwGqI/AAAAAAAABaU/7Ut_TX2UbBM/w497-h429-no/14.png
-  [15]: https://lh4.googleusercontent.com/-dkgEz6Z8eE0/Uuv4lq0wNLI/AAAAAAAABag/3L3RADcVvLU/w508-h422-no/15.png
+  [1]: https://docs.google.com/drawings/d/sOQZFG3O5CXy25mF1V6J6MA/image?w=284&h=200&rev=54&ac=1
+  [2]: https://docs.google.com/drawings/d/sj7LuRWhj6CqJIPFyP34v2g/image?w=624&h=493&rev=16&ac=1
+  [3]: https://docs.google.com/drawings/d/sn2U0NdzVKDJ0dCzmAva6Iw/image?w=624&h=484&rev=31&ac=1
+  [4]: https://lh4.googleusercontent.com/-2ADaecem7Jw/Uuv1i9io2TI/AAAAAAAABYs/amhq_zDb72M/w413-h367-no/1.png
+  [5]: https://lh4.googleusercontent.com/-knOfqdYFS8o/Uuv1j3WecRI/AAAAAAAABY0/cs2J9rLVB-k/w470-h410-no/2.png
+  [6]: https://lh3.googleusercontent.com/-vjkD_NIiDEU/Uuv1keaWBQI/AAAAAAAABZE/DSIRrxtNXCU/w440-h380-no/3.png
+  [7]: https://lh3.googleusercontent.com/-P73Ra-OXaFo/Uuv1kmpDZvI/AAAAAAAABZI/zb79Pr3JFVw/w459-h384-no/4.png
+  [8]: https://lh6.googleusercontent.com/-rXMwPIDrPRE/Uuv1k-ukafI/AAAAAAAABZM/rgsdzKyapgg/w417-h404-no/5.png
+  [9]: https://lh4.googleusercontent.com/-aW6_mt_-wRQ/Uuv1kzZfXOI/AAAAAAAABZk/LufYhml6OPQ/w392-h377-no/6.png
+  [10]: https://lh4.googleusercontent.com/-yhK7G_IHDbw/Uuv1lGwzKzI/AAAAAAAABZc/UdR3wTe5r4g/w491-h411-no/7.png
+  [11]: https://lh6.googleusercontent.com/-VaVfDEGTy7Q/Uuv1lcOJRxI/AAAAAAAABZg/nNt4sIQvfwE/w457-h414-no/8.png
+  [12]: https://lh5.googleusercontent.com/-IEQkIohL1x8/Uuv4li8qufI/AAAAAAAABak/Fc_sz5GXXZM/w497-h413-no/9.png
+  [13]: https://lh4.googleusercontent.com/-XI9hBSfPlP0/Uuv4jIfiFpI/AAAAAAAABZ0/Tgnh0vIbexk/w475-h430-no/10.png
+  [14]: https://lh5.googleusercontent.com/-6MkW6xXXX1I/Uuv4jtQWByI/AAAAAAAABaE/35vGTxX2csA/w510-h439-no/11.png
+  [15]: https://lh5.googleusercontent.com/-yqOByNTVP_4/Uuv4j1F7pgI/AAAAAAAABaI/LeV-67KBJ0g/w489-h427-no/12.png
+  [16]: https://lh6.googleusercontent.com/-TjmbGv4RTsY/Uuv4kKY_-KI/AAAAAAAABaM/-pO0royMH5g/w487-h410-no/13.png
+  [17]: https://lh6.googleusercontent.com/-Os6CO1SseJg/Uuv4knkwGqI/AAAAAAAABaU/7Ut_TX2UbBM/w497-h429-no/14.png
+  [18]: https://lh4.googleusercontent.com/-dkgEz6Z8eE0/Uuv4lq0wNLI/AAAAAAAABag/3L3RADcVvLU/w508-h422-no/15.png
