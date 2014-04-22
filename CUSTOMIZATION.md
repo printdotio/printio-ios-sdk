@@ -366,9 +366,9 @@ Customization of UI elements in customization.xml:
 ![enter link description here][18]
 
 
-  [1]: https://docs.google.com/drawings/d/sOQZFG3O5CXy25mF1V6J6MA/image?w=284&h=200&rev=54&ac=1
-  [2]: https://docs.google.com/drawings/d/sj7LuRWhj6CqJIPFyP34v2g/image?w=624&h=493&rev=16&ac=1
-  [3]: https://docs.google.com/drawings/d/sn2U0NdzVKDJ0dCzmAva6Iw/image?w=624&h=484&rev=31&ac=1
+  [1]: https://lh5.googleusercontent.com/-18qrMfgPFUA/U1agy25l1aI/AAAAAAAABhI/21Bg4E2MfOY/w284-h199-no/c_sta_bar.png
+  [2]: https://lh5.googleusercontent.com/-SxWzz69iiqs/U1ag3bwnpWI/AAAAAAAABhY/xeHV7VqvGg8/w623-h493-no/c_menu_bar.png
+  [3]: https://lh3.googleusercontent.com/-iwfn8qWXwvQ/U1ag09L9vFI/AAAAAAAABhQ/3oth_zq3NAU/w624-h483-no/c_loading.png
   [4]: https://lh4.googleusercontent.com/-2ADaecem7Jw/Uuv1i9io2TI/AAAAAAAABYs/amhq_zDb72M/w413-h367-no/1.png
   [5]: https://lh4.googleusercontent.com/-knOfqdYFS8o/Uuv1j3WecRI/AAAAAAAABY0/cs2J9rLVB-k/w470-h410-no/2.png
   [6]: https://lh3.googleusercontent.com/-vjkD_NIiDEU/Uuv1keaWBQI/AAAAAAAABZE/DSIRrxtNXCU/w440-h380-no/3.png
