@@ -232,6 +232,31 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)hideIconForUplaodInstructions:(BOOL)hide;
 
+/**
+ Set Instagram credentials. By default, prtinIO credentials are used.
+ */
+- (void)setInstagramClientID:(NSString *)clientId
+                 redirectUrl:(NSString *)redirectUrl;
+
+/**
+ Set Flickr credentials. By default, prtinIO credentials are used.
+ */
+- (void)setFlickrKey:(NSString *)key
+           secretKey:(NSString *)secretKey
+         redirectUrl:(NSString *)redirectUrl;
+
+/**
+ Set Dropbox credentials. By default, prtinIO credentials are used.
+ */
+- (void)setDropboxKey:(NSString *)key
+          redirectUrl:(NSString *)redirectUrl;
+
+/**
+ Set Facebook credentials. By default, prtinIO credentials are used.
+ */
+- (void)setFacebookAppId:(NSString *)appId
+             redirectUrl:(NSString *)redirectUrl;
+
 #pragma mark - Customize Product
 
 /**
