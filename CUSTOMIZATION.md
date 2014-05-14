@@ -2,153 +2,384 @@
 **SDK Customization**
 -----------------
 
-Customization from code:
-------------------------
+Navigation bar
+--------------
 
- - Add image's urls to SDK, with/without photo sources, SDK will use these images also: 
- `- (void)images:(NSArray *)images;`
+Change navigation bar color and title font color, also set left and right bar button.
 
- - Set country, by setting country code, so user will not have option to change it:
- `- (void)countryCode:(NSString *)countryCode;`
+    /**
+     @param color Color for title bar (navigation bar). If nil default color is used.
+     @param tColor Color of fonts on title bar. If nil default color is used.
+     @param lColor Background color for left navigation bar button. If nil, transparent will be used.
+     @param rColor Background color for right navigation bar button. If nil, transparent will be used.
+     @param iPath Path to icon for button in the center of navigation bar. If nil, title will be shown, otherwise
+     button will be shown. Click on button opens sub menu, which can be customized by PrintIO.
+     */
+    - (void)navigationBarColor:(UIColor *)color
+                    titleColor:(UIColor *)tColor
+     leftButtonBackgroundColor:(UIColor *)lColor
+    rightButtonBackgroundColor:(UIColor *)rColor
+               titleButtonIcon:(NSString *)iPath;
+               
+               
 
- - Set currency, by setting currency code, so user will not have option to change it:
- `- (void)currencyCode:(NSString *)currencyCode;`
+ Set icon for back button.
 
- - Set language, bt setting language code, so user will not have option to change it:
- `- (void)languageCode:(NSString *)languageCode;`
+     /**
+     @param path Path to image file.
+     */
+    - (void)iconForBackButton:(NSString *)path;
 
- - Enable or disable using photo sources in SDK:
-`- (void)usePhotoSources:(BOOL)usePhotoSources;`
-
- - Set available photo sources by passing in array of photo sources you want to be visible to user:
-`- (void)availablePhotoSources:(NSArray *)vPhotoSources;`
-
- - Set custom icon, by passing in icon file name. Icon must be stored in main bundle resources:
- `- (void)iconWithFileName:(NSString *)iconFileName;`
-
- - Jumps directly to product:
-`- (void)goToProductId:(int)productId;`
-
- - Jumps directly to product with sku:
-`- (void)goToProductId:(int)productId withSKU:(NSString *)sku;`
-
- - Set custom fonts:
- `- (void)customFonts:(NSArray *)fonts;`
-
- -  Set payee name:
-`- (void)payeeName:(NSString *)payeeName;`
-
- - Set custom share text. This is option from Side Menu, so first side menu mush be enabled:
-`- (void)setApplicationShareText:(NSString *)shareText;`
-
- -  On Edit Product Screen show custom image(something like help) on center of screen:
-`- (void)showCustomDoubleTapImage:(NSString *)imagePath;`
-
- - Shows menu button in center of navigation bar. Menu can be customized by PrintIO for you:
-`- (void)showMenuButtonInNavigationBar:(NSString *)buttonIconFilePath;`
-
- - Show/hide Side Menu:
-`- (void)enableSideMenu:(BOOL)enabled;`
-
- - Change Title bar background color and title color:
-`- (void)titleBarColor:(UIColor *)color fontColor:(UIColor *)fontColor;`
-
- - Loads customization.xml which is used for customizing some UI elements:
-`- (void)customizationXML:(NSData *)xmlData;`
-
- - Shows/hides tab bar in Customize Product screen. Default value is YES
-`- (void)showTabBarInCustomizeProduct:(BOOL *)show;`
-
- - Set which buttons will be visible in Image Editor tab bar. By default, all buttons are visible.
-`- (void)imageEditorShowButtons:(NSArray *)buttons;`
-
- - Hide list with images in customization screen
-`- (void)hideImagesListInCustomizationScreen:(BOOL)hide;`
-
- - If user pass photos using method 'images', this method can disable photo sources, forcing user to use only passed photos.
-`- (void)disablePhotoSourcesWhenImagesArePassed:(BOOL)disable;`
-
- -  Set passed in image as thumbnail for templates with one photo.
-`- (void)setPassedImageAsThumbForOnePhotoTemplate:(BOOL)set;`
-
- - Set passed in image to be first in row for all photo sources.
-`- (void)setPassedImageFirstInPhotoSources:(BOOL)set;`
-
- - Disables photo sources only if image is passed in, and user selects template with one photo.
-`- (void)disablePhotoSourcesWhenImageIsPassedForOnePhotoTemplate:(BOOL)disable;`
-
- - Set custom icon for Shopping Cart, displayed in navigation bar
-`- (void)setShopingCartIcon:(NSString *)path;`
-
- - Set custom icon for Shopping Cart, displayed in navigation bar, with red circle for showing number of items in cart
-`- (void)setShopingCartIconWithCircle:(NSString *)path;`
-
- - Set partners ID, for additional customization options
-`- (void)setPartnerId:(NSInteger)partnerId;`
-
- - Set background image for items (buttons) in Side Menu
-`- (void)setBackgoundImageForSideMenuItems:(NSString *)path;`
-
- -  Hide category+search view on Featured Products screen. Default value is NO;
-`- (void)hideCategoryViewInFeaturedProducts:(BOOL)hide;`
-
- -  Hide status bar in SDK
-`- (void)hideStatusBar:(BOOL)hide;`
-
- -  Change background image for Toolbar in Customize Product screen
-`- (void)setBackgoundImageForToolbarInCustomizeProduct:(NSString *)imagePath;`
-
- -  Change image for "Add photos" button in Customize Product screen
-`- (void)setImageForAddPhotosButton:(NSString *)imagePath;`
-
- -  Change icon for Help Button
-`- (void)setIconForHelpButton:(NSString *)imagePath;`
-
- -  Change icon for Help Button on Customize Product screen
-`- (void)setIconForHelpButtonInCustomizeProduct:(NSString *)imagePath;`
-
- -  Set country on Featured Products screen instead on First screen. Default value is NO.
-`- (void)setCountryInFeaturedProducts:(BOOL)set;`
-
- -  Set custom icon for back button
-`- (void)setIconForBackButton:(NSString *)path;`
-
- -  Hide icon for Upload Instructions text. Default value is NO.
-`- (void)hideIconForUplaodInstructions:(BOOL)hide;`
-
- - Set custom image for Double Tap balloon in Customize Product screen
-`- (void)setDoubleTapBaloonImage:(NSString *)path text:(NSString *)text textColor:(UIColor *)textColor;`
-
- - Remove plus sign from "Add more products" button in Shopping Cart
-`- (void)removePlusFromAddMoreProductsButton:(BOOL)remove;`
-
- -  Set background color for left and right navigation bar buttons. Default color is transparent.
-`- (void)setBackgroundColorForNavBarButtonLeft:(UIColor *)lColor right:(UIColor *)rColor;`
-
- - Option only for testing MG
-`- (void)setMGPathNumber:(NSInteger)path;`
-
- - Removes logo from payment screens
-`- (void)removeLogoFromPaymentScreen:(BOOL)remove;`
-
- -  Set status bar style to dark. Default value is light.
-`- (void)setStatusBarDark:(BOOL)set;`
+ Set status bar style and visibility. Default value is light and visible.
+ 
+    - (void)statusBarDark:(BOOL)dark
+                   hidden:(BOOL)hidden;
 
 ![enter image description here][1]
 
- - Set navigation bar icon for Side Menu
-`- (void)setIconForSideMenu:(NSString *)path;`
+Side Menu
+---------
 
-![enter image description here][2]
+ Use Side Menu with options.
+ 
 
- - Set background color for Side Menu
-`- (void)setBackgroundColorForSideMenu:(UIColor *)bcgColor;`
+     /**
+     @param mIconPath Path to image for Menu icon. If nil, default icon will be used.
+     @param bcgColor Background color for Side Menu. If nil, default will be used.
+     */
+    - (void)useSideMenuWithMenuIcon:(NSString *)mIconPath
+                         background:(UIColor *)bcgColor;
 
- - Change loading GIF animation by providing file name
-`- (void)setLoadingGIF:(NSString *)fileName;`
+ Set which options to use in side menu
+ 
+
+     /**
+     @param buttons Array of PIOSideMenuButton objects of types:
+     PIO_SM_EXIT_BUTTON,
+     PIO_SM_SEARCH_BAR,
+     PIO_SM_PRODUCTS,
+     PIO_SM_FEATURED_PRODUCTS,
+     PIO_SM_VIEW_CART,
+     PIO_SM_SHARE_WITH_IMAGE,
+     PIO_SM_EMAIL_SUPPORT
+     
+     @param options Array of PIOSideMenuButton objects of types:
+     PIO_SM_CHANGE_CURRENCY,
+     PIO_SM_CHANGE_COUNTRY,
+     PIO_SM_CHANGE_LANGUAGE
+     
+     @param optionsTitle Title for this section
+     @param oTitleColor Title color
+     @param optionsColor Background color for this section
+     @param accountsTitle Title for this section
+     @param aTitleColor Title color
+     @param accountsColor Background color for this section
+     
+     @param info Array of PIOSideMenuButton objects of types:
+     PIO_SM_PRICING_CHART,
+     PIO_SM_SHARE_APP,
+     PIO_SM_LIKE_US_FB,
+     PIO_SM_RATE_APP,
+     PIO_SM_ABOUT,
+     PIO_SM_HOW_IT_WORKS,
+     PIO_SM_PAST_ORDERS
+     
+     @param infoTitle Title for this section
+     @param infoTitleColor Title color
+     @param infoColor Background color for this section
+     
+     */
+    - (void)sideMenuAddButtons:(NSArray *)buttons
+                       options:(NSArray *)options
+                  optionsTitle:(NSString *)optionsTitle
+             optionsTitleColor:(UIColor *)oTitleColor
+                  optionsColor:(UIColor *)optionsColor
+                 accountsTitle:(NSString *)accountsTitle
+            accountsTitleColor:(UIColor *)aTitleColor
+                 accountsColor:(UIColor *)accountsColor
+                          info:(NSArray *)info
+                     infoTitle:(NSString *)infoTitle
+                infoTitleColor:(UIColor *)iTitleColor
+                     infoColor:(UIColor *)infoColor
+     backgroundImageForButtons:(NSString *)path;
+
+ This is option from Side Menu, in order to use it, Side Menu needs to be enabled first.
+ 
+
+     /**
+     @param shareText Text that will be used for sharing. May contains link also.
+     */
+    - (void)setShareText:(NSString *)shareText;
+
+Featured Products
+-----------------
+
+ Set country on Featured Products screen instead on First screen. Default value is NO.
+
+    - (void)selectCountryInFeaturedProducts:(BOOL)set;
+
+ Hide category+search view on Featured Products screen. Default value is NO;
+ 
+    - (void)hideCategoriesInFeaturedProducts:(BOOL)hide;
+    
+Photo Sources
+-------------
+
+ Set available photo sources.
+ 
+     /**
+     @param Array of PIOSideMenuButton objects, represents which types of photo sources will be
+     available to user. Types:
+     
+     PIO_SM_FACEBOOK
+     PIO_SM_INSTAGRAM
+     PIO_SM_PICASA
+     PIO_SM_FLICKR
+     PIO_SM_DROPBOX
+     PIO_SM_PHOTOBUCKET
+     PIO_SM_PHONE
+     */
+    - (void)availablePhotoSources:(NSArray *)vPhotoSources;
+
+ Pass in images URLs or UIImage objects.
+
+     /**
+     @param images Array of image urls or/and UIImage objects
+     */
+    - (void)images:(NSArray *)images;
+
+ If user pass in images usinig method 'images', this method can disable photo sources,
+ forcing user to use only passed photos.
+ 
+ This method overrides method 'availablePhotoSources'
+
+    - (void)disablePhotoSourcesWhenImagesArePassedIn:(BOOL)disable;
+
+ Disable photo sources only if image is passed in, and user selects template with
+ one photo.
+
+    - (void)disablePhotoSourcesForOnePhotoTemplate:(BOOL)disable;
+
+ Set passed in image to be first in row for all photo sources.
+
+    - (void)setPassedImageFirstInPhotoSources:(BOOL)set;
+
+ Set passed in image as thumbnail for templates with one photo.
+ Right now, only supports Canvas Wraps and Framed Prints.
+
+    - (void)setPassedImageAsThumbForOnePhotoTemplate:(BOOL)set;
+
+ Hide icon for Upload Instructions text in Photo Sources screen. Default value is NO.
+
+    - (void)hideIconForUplaodInstructions:(BOOL)hide;
+
+ Set Instagram credentials. By default, PrintIO credentials are used.
+
+    - (void)setInstagramClientID:(NSString *)clientId
+                     redirectUrl:(NSString *)redirectUrl;
+
+ Set Flickr credentials. By default, PrintIO credentials are used.
+
+    - (void)setFlickrKey:(NSString *)key
+               secretKey:(NSString *)secretKey
+             redirectUrl:(NSString *)redirectUrl;
+
+ Set Dropbox credentials. By default, PrintIO credentials are used.
+
+    - (void)setDropboxKey:(NSString *)key
+              redirectUrl:(NSString *)redirectUrl;
+
+ Set Facebook credentials. By default, PrintIO credentials are used.
+
+    - (void)setFacebookAppId:(NSString *)appId
+                 redirectUrl:(NSString *)redirectUrl;
+
+Customize Product
+-----------------
+
+ Show/hide tab bar in Customize Product screen. Default value is YES.
+
+     /**
+     @param show Set show/hide
+     @param imagePath Path to image file.
+     */
+    - (void)showToolbarInCustomizeProduct:(BOOL)show
+                          backgroundImage:(NSString *)imagePath;
+
+ Hide list with images in customization screen.
+
+    - (void)hideImagesListInCustomizeProduct:(BOOL)hide;
+    
+ Set photo(s) arrangement in Customize Product screen.
+
+     /**
+     @param
+     PIO_PHOTO_ARRANGEMENT_CHOOSE,
+     PIO_PHOTO_ARRANGEMENT_AUTO,
+     PIO_PHOTO_ARRANGEMENT_MANUAL
+     */
+    - (void)setPhotoArrangement:(NSInteger)option;
+
+ Change image for "Add photos" button in Customize Product screen.
+
+     /**
+     @param imagePath Path to image file.
+     */
+    - (void)iconForAddPhotosButton:(NSString *)imagePath;
+
+ Change icon for Help Button on Customize Product screen.
+
+     /**
+     @param imagePath Path to image file.
+     */
+    - (void)iconForHelpButtonInCustomizeProduct:(NSString *)imagePath;
+
+ Set Pop up balloon in Customize Product screen.
+
+     /**
+     @param path Path to background image.
+     @param text Balloon text.
+     @param textColor Text color.
+    */
+    - (void)setPopUpWithImage:(NSString *)path text:(NSString *)text textColor:(UIColor *)textColor;
+
+ Show custom dialog for helping user how to edit a photo.
+
+     /**
+     @param Path to image.
+     */
+    - (void)showHelpDialogWithImage:(NSString *)imagePath;
+
+Image Editor
+------------
+
+ Set which buttons will be visible in Image Editor toolbar. By default, all buttons are visible.
+
+    /**
+     @param buttons Array of PIOButton objects of types:
+     PIO_BUTTON_IMAGE_EDITOR_INFO,
+     PIO_BUTTON_IMAGE_EDITOR_ROTATE,
+     PIO_BUTTON_IMAGE_EDITOR_EDIT_TEXT,
+     PIO_BUTTON_IMAGE_EDITOR_EFFECTS
+     */
+    - (void)imageEditorShowButtons:(NSArray *)buttons;
+
+Shopping Cart
+-------------
+
+ Set custom icon for Shopping Cart
+
+     /**
+     @param path Path to image file.
+     @param set Set to YES if image has red circle for number of items in cart.
+     */
+    - (void)iconForShoppingCart:(NSString *)path withNumberOfProducts:(BOOL)set;
+
+ Remove plus sign from "Add more products" button. By default, sign is visible.
+
+    - (void)removePlusFromAddMoreProductsButton:(BOOL)remove;
+
+Payment Screen
+--------------
+
+ Remove logo from Payment and Order Confirmation screen.
+
+    - (void)removeLogoFromPaymentScreen:(BOOL)remove;
+
+Country, Currency and Language
+------------------------------
+
+ Set country code.
+
+    - (void)countryCode:(NSString *)countryCode;
+
+ Set currency code.
+
+    - (void)currencyCode:(NSString *)currencyCode;
+
+ Set language code.
+
+    - (void)languageCode:(NSString *)languageCode;
+
+Steps
+-----
+
+ Jumps directly to product.
+
+     /**
+     @param productId Product identifier can be found in ProductIds.h and starts with PRODUCT_
+     */
+    - (void)goToProductId:(int)productId;
+
+ Jumps directly to product with sku
+
+     /**
+     @param productId Product identifier can be found in ProductIds.h and starts with PRODUCT_
+     @param sku SKU for selected product
+     */
+    - (void)goToProductId:(int)productId withSKU:(NSString *)sku;
+
+ Set products variants options.
+
+     /**
+     @param options Array of PIOVariantOption objects. Pass 'color' with Case Style option
+     */
+    - (void)setVariantsOptions:(NSArray *)options;
+
+Other Customization
+-------------------
+
+ Import customization XML file
+
+     /**
+     @param xmlData Customization xml file.
+     
+     Example: NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"customization" ofType:@"xml"];
+     NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];
+     */
+    - (void)customizationXML:(NSData *)xmlData;
+
+ Set custom fonts from main app bundle.
+
+     /**
+     @param fonts Array of string values contain font name and type with exact order (light, medium, regular, bold). 
+     
+     Example: [@"font_light.otf", @"font_medium.otf", @"font_regular.otf", @"font_bold.otf"]. 
+     
+     Array must have four items, and fonts can be diplicated.
+     */
+    - (void)customFonts:(NSArray *)fonts;
+
+ Change "Loading" GIF animation
+
+     /**
+     @param fileName File name of GIF
+     */
+    - (void)setLoadingGIF:(NSString *)fileName;
 
 ![enter image description here][3]
- 
+
+ Change icon for Help Button.
+
+     /**
+     @param imagePath Path for image file
+     */
+    - (void)iconForHelpButton:(NSString *)imagePath;
+
+ Change logo in SDK.
+
+     /**
+     @param logo Logo file name
+     */
+    - (void)changeLogo:(NSString *)logo;
+
+ Set payee name.
+
+     /**
+     @param payeeName Payee name
+     */
+    - (void)payeeName:(NSString *)payeeName;
+
 Customization of UI elements in customization.xml:
 --------------------------------------------------
 
