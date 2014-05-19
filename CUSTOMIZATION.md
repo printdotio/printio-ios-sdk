@@ -325,6 +325,28 @@ Steps
      @param options Array of PIOVariantOption objects. Pass 'color' with Case Style option
      */
     - (void)setVariantsOptions:(NSArray *)options;
+    
+
+Push Notifications
+------------------
+
+Register device to receive push notifications.
+
+     /**
+     @param deviceToken Device token
+     */
+    + (void)registerDeviceToken:(NSData *)deviceToken;
+    
+Display notification pop up from bottom of screen. On tap it will dismiss notification.
+
+     /**
+     @param userInfo Dictionary provided from didReceiveRemoteNotification
+     @param backgroundColor Background color for notification pop up
+     @param textColor Text color
+     */
+    + (void)showNotification:(NSDictionary *)userInfo
+             backgroundColor:(UIColor *)bcgColor
+                   textColor:(UIColor *)textColor;
 
 Other Customization
 -------------------
