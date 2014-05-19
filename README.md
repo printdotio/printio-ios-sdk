@@ -308,10 +308,15 @@ Below is sample code for launching a customized PrintIO widget, with all option 
         // Open widget
         [self.printIO open];
 
+Push notifications
+------------------
+
+PrintIO SDK offers you ability to receive push notifications in you app. More can be found in [Push Notifications][5].
+
 Customization
 -------------
 
-Most of UI elements in SDK are customizable, through xml file. Example of customization’s xml file is distributed with the SDK. List of customizable UI elements, and basic usage can be found in [CUSTOMIZATION.md][5] file, which is also distributed with the SDK.
+Most of UI elements in SDK are customizable, through xml file. Example of customization’s xml file is distributed with the SDK. List of customizable UI elements, and basic usage can be found in [CUSTOMIZATION.md][6] file, which is also distributed with the SDK.
 
 UI customizations, e.g. button colors, titles can be done through XML file, and other customization e.g. navigation bar color, side menu items, photo sources are available at the code level.
 
@@ -321,12 +326,13 @@ See Also
 
 **Demo App**
 
-For a more comprehensive demonstration of the PrintIO SDK, see the [PrintIOSDKSample app][6], which is distributed with the SDK.
+For a more comprehensive demonstration of the PrintIO SDK, see the [PrintIOSDKSample app][7], which is distributed with the SDK.
 
 
   [1]: http://developer.apple.com/devcenter/ios/
   [2]: http://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html
   [3]: https://lh3.googleusercontent.com/-ulmge2-oWUo/Uu-fUJx7GOI/AAAAAAAABbk/vRlJvKsmWNE/w946-h570-no/Screen+Shot+2014-02-03+at+2.50.32+PM.png
   [4]: https://lh5.googleusercontent.com/-Ai5j-5M3AV4/Uu-fTtJE6KI/AAAAAAAABbg/YEASmrmgk_0/w947-h570-no/Screen+Shot+2014-02-03+at+2.51.20+PM.png
-  [5]: https://github.com/printdotio/printio-ios-sdk/blob/master/CUSTOMIZATION.md
-  [6]: https://github.com/printdotio/printio-ios-example
+  [5]: https://github.com/printdotio/printio-ios-sdk/blob/master/PUSH_NOTIFICATIONS.md
+  [6]: https://github.com/printdotio/printio-ios-sdk/blob/master/CUSTOMIZATION.md
+  [7]: https://github.com/printdotio/printio-ios-example
