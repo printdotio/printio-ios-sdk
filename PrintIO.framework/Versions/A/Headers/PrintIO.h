@@ -233,26 +233,26 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)hideIconForUplaodInstructions:(BOOL)hide;
 
 /**
- Set Instagram credentials. By default, prtinIO credentials are used.
+ Set Instagram credentials. By default, PrintIO credentials are used.
  */
 - (void)setInstagramClientID:(NSString *)clientId
                  redirectUrl:(NSString *)redirectUrl;
 
 /**
- Set Flickr credentials. By default, prtinIO credentials are used.
+ Set Flickr credentials. By default, PrintIO credentials are used.
  */
 - (void)setFlickrKey:(NSString *)key
            secretKey:(NSString *)secretKey
          redirectUrl:(NSString *)redirectUrl;
 
 /**
- Set Dropbox credentials. By default, prtinIO credentials are used.
+ Set Dropbox credentials. By default, PrintIO credentials are used.
  */
 - (void)setDropboxKey:(NSString *)key
           redirectUrl:(NSString *)redirectUrl;
 
 /**
- Set Facebook credentials. By default, prtinIO credentials are used.
+ Set Facebook credentials. By default, PrintIO credentials are used.
  */
 - (void)setFacebookAppId:(NSString *)appId
              redirectUrl:(NSString *)redirectUrl;
@@ -436,6 +436,35 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param options Array of PIOVariantOption objects. Pass 'color' with Case Style option
  */
 - (void)setVariantsOptions:(NSArray *)options;
+
+#pragma mark - Push Notifications
+
+/**
+ Set applicationId and apiKey provided from parse.com
+ 
+ @param appId application id
+ @param apiKey rest api key
+ */
++ (void)setParseApplicationId:(NSString *)appId
+                       apiKey:(NSString *)apiKey;
+
+/**
+ Register device to receive push notifications
+ 
+ @param deviceToken Device token
+ */
++ (void)registerDeviceToken:(NSData *)deviceToken;
+
+/**
+ Display notification pop up from bottom of screen. On tap it will dismiss notification.
+ 
+ @param userInfo Dictionary provided from didReceiveRemoteNotification
+ @param backgroundColor Background color for notification pop up
+ @param textColor Text color
+ */
++ (void)showNotification:(NSDictionary *)userInfo
+         backgroundColor:(UIColor *)bcgColor
+               textColor:(UIColor *)textColor;
 
 #pragma mark - For Partners
 
