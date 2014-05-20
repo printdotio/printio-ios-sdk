@@ -99,6 +99,10 @@ In your app delegate, add these lines:
     {
         ...
         
+        // Set Parse application id and api key
+        [PrintIO setParseApplicationId:kAppID
+        						apiKey:kApiKey];
+        
         // Register for push notifications
         [application registerForRemoteNotificationTypes:
          UIRemoteNotificationTypeBadge |

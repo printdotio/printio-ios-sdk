@@ -330,6 +330,15 @@ Steps
 Push Notifications
 ------------------
 
+Set applicationId and apiKey provided from parse.com
+
+     /**
+     @param appId application id
+ 	 @param apiKey rest api key
+     */
+    + (void)setParseApplicationId:(NSString *)appId
+                       	   apiKey:(NSString *)apiKey;
+    
 Register device to receive push notifications.
 
      /**
