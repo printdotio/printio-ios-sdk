@@ -466,6 +466,18 @@ rightButtonBackgroundColor:(UIColor *)rColor
          backgroundColor:(UIColor *)bcgColor
                textColor:(UIColor *)textColor;
 
+#pragma mark - PayPal settings
+
+/**
+ Set PayPal's client ids, for both modes, stagging and production. Default values are
+ client ids from PrintIO
+ 
+ @param sClientId Client id for stagging mode
+ @param pClientId Client id for production mode
+ */
+- (void)setPayPalStaggingClientId:(NSString *)sClientId
+               productionClientId:(NSString *)pClientId;
+
 #pragma mark - For Partners
 
 /**
