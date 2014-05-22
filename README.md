@@ -99,15 +99,16 @@ Include the following line to make the SDK available to your code:
 Basic Usage
 -----------
 
-To launch the HelloPics widget, create and display an instance of HelloPics. You can present it modally, like so:
+To launch the PrintIO widget, create and display an instance of PrintIO. You can present it modally:
 
 
     - (void)startPrintIO 
     {
         // kRecipeId is developer defined and provided by PrintIO
-        PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
-                                                      environment:PRINTIO_STAGING 
-                                                         recipeId:kRecipeId];
+        PrintIO *printIO = [[PrintIO alloc]initWithViewController:(UIViewController *)vc
+                 									  environment:kEnvironment
+          									   productionRecipeId:pRecipeId
+             									  stagingRecipeId:sRecipeId;
                                                          
         // Set Delegate
         [printIO setDelegate:self];
