@@ -41,14 +41,14 @@ enum {
  Init PrintIO widget with parent view controller.
  
  @param vc Parent view controller. From this view controller, widget will be presented like modal.
- 
  @param type Set environment to staging or live, use PRINTIO_STAGING or PRINTIO_PRODUCTION
- 
- @param recipeId RecipeId provided by PrintIO.
+ @param pRecipeId Production recipeId provided by PrintIO
+ @param sRecipeId Staging recipeId provided by PrintIO
  */
 - (id)initWithViewController:(UIViewController *)vc
                  environment:(int)type
-                    recipeId:(NSString *)recipeId;
+          productionRecipeId:(NSString *)pRecipeId
+             stagingRecipeId:(NSString *)sRecipeId;
 
 /**
  Open widget.
@@ -304,7 +304,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param path Path to background image.
  @param text Balloon text.
  @param textColor Text color.
-*/
+ */
 - (void)setPopUpWithImage:(NSString *)path text:(NSString *)text textColor:(UIColor *)textColor;
 
 /**
@@ -318,7 +318,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 
 /**
  Set which buttons will be visible in Image Editor toolbar. By default, all buttons are visible.
-
+ 
  @param buttons Array of PIOButton objects of types:
  PIO_BUTTON_IMAGE_EDITOR_INFO,
  PIO_BUTTON_IMAGE_EDITOR_ROTATE,
