@@ -126,7 +126,7 @@ Optionaly, you can implement the following PrintIODelegate methods in your prese
         NSLog(@"PrintIOWidgetOnOpened");
     }
     
-    - (void)PrintIOWidgetOnClose
+    - (void)PrintIOWidgetOnCloseWithFlag:(NSInteger)flag;
     {
         NSLog(@"PrintIOWidgetOnCloseed");
     }
