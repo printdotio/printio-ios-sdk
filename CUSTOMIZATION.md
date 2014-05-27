@@ -403,11 +403,12 @@ Other Customization
 ![enter image description here][2]
 
  Change title of loading dialog
-	/**
+
+     /**
      @param lText New title for loading dialog.
      */
     - (void)setLoadingText:(NSString *)lText;
-    
+
  Change icon for Help Button.
 
      /**
