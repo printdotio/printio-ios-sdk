@@ -20,7 +20,7 @@ enum {
 @optional
 
 - (void)PrintIOWidgetOnOpen;
-- (void)PrintIOWidgetOnClose;
+- (void)PrintIOWidgetOnCloseWithFlag:(NSInteger)flag;
 - (void)PrintIOWidgetOnCloseWithOrderData:(NSMutableDictionary *)orderData;
 
 @end
@@ -58,7 +58,7 @@ enum {
 /**
  Close widget.
  */
-- (void)close;
+- (void)close:(NSInteger)flag;
 
 #pragma mark - Navigation Bar
 
@@ -391,6 +391,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param fileName File name of GIF
  */
 - (void)setLoadingGIF:(NSString *)fileName;
+
+/**
+ Change title of loading dialog
+ 
+ @param lText New title for loading dialog.
+ */
+- (void)setLoadingText:(NSString *)lText;
 
 /**
  Change icon for Help Button
