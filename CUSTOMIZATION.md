@@ -369,6 +369,18 @@ Set PayPal's client ids, for both modes, staging and production. Default values 
      - (void)setPayPalStagingClientId:(NSString *)sClientId
                	   productionClientId:(NSString *)pClientId;
 
+Braintree settings
+-------------------
+
+Set Braintree encryption key for staging and production mode. By default, keys from PrintIO will be used.
+
+    /**
+    @param sEncKey Encryption key for staging mode
+    @param pEncKey Encryption key for production mode
+    */
+    - (void)setBraintreeStagingEncryptionKey:(NSString *)sEncKey
+                     productionEncryptionKey:(NSString *)pEncKey;
+
 Other Customization
 -------------------
 
