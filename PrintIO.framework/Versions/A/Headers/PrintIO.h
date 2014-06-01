@@ -12,7 +12,11 @@
 
 enum {
     PRINTIO_STAGING,
-    PRINTIO_PRODUCTION
+    PRINTIO_PRODUCTION,
+    
+    PRINTIO_OPTION_PRESENT_VIEW_FROM_LEFT,
+    PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT,
+    PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM
 };
 
 @protocol PrintIODelegate <NSObject>
@@ -20,8 +24,7 @@ enum {
 @optional
 
 - (void)PrintIOWidgetOnOpen;
-- (void)PrintIOWidgetOnCloseWithFlag:(NSInteger)flag;
-- (void)PrintIOWidgetOnCloseWithOrderData:(NSMutableDictionary *)orderData;
+- (void)PrintIOWidgetOnCloseWithData:(NSDictionary *)data;
 
 @end
 
@@ -40,20 +43,29 @@ enum {
 /**
  Init PrintIO widget with parent view controller.
  
- @param vc Parent view controller. From this view controller, widget will be presented like modal.
+ @param viewController Parent view controller. From this view controller, widget will open.
  @param type Set environment to staging or live, use PRINTIO_STAGING or PRINTIO_PRODUCTION
  @param pRecipeId Production recipeId provided by PrintIO
  @param sRecipeId Staging recipeId provided by PrintIO
  */
-- (id)initWithViewController:(UIViewController *)vc
+- (id)initWithViewController:(id)viewController
                  environment:(int)type
           productionRecipeId:(NSString *)pRecipeId
              stagingRecipeId:(NSString *)sRecipeId;
 
 /**
- Open widget.
+ Open widget by presenting view
  */
 - (void)open;
+
+/**
+ Open widget with option
+ 
+ @param option Set the option how the view opens
+    PRINTIO_OPTION_PRESENT_VIEW,
+    PRINTIO_OPTION_PUSH_VIEW
+ */
+- (void)openWithOption:(int)option;
 
 /**
  Close widget.
@@ -256,6 +268,24 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setFacebookAppId:(NSString *)appId
              redirectUrl:(NSString *)redirectUrl;
+
+/**
+ Set username and password for Photobucket (autologin)
+ 
+ @param userName Username or email for Photobucket account
+ @param password Password
+ */
+- (void)setPhotobucketUsername:(NSString *)userName
+                      password:(NSString *)password;
+
+/**
+ Set access token for Photobucket
+ 
+ @param aToken Valid access token for session
+ @param username Username
+ */
+- (void)setPhotobucketAccessToken:(NSString *)aToken
+                         userName:(NSString *)username;
 
 #pragma mark - Customize Product
 
@@ -476,14 +506,25 @@ rightButtonBackgroundColor:(UIColor *)rColor
 #pragma mark - PayPal settings
 
 /**
- Set PayPal's client ids, for both modes, stagging and production. Default values are
+ Set PayPal's client ids, for both modes, staging and production. Default values are
  client ids from PrintIO
  
- @param sClientId Client id for stagging mode
+ @param sClientId Client id for staging mode
  @param pClientId Client id for production mode
  */
-- (void)setPayPalStaggingClientId:(NSString *)sClientId
-               productionClientId:(NSString *)pClientId;
+- (void)setPayPalStagingClientId:(NSString *)sClientId
+              productionClientId:(NSString *)pClientId;
+
+#pragma mark - Braintree settings
+
+/**
+ Set Braintree encryption key for staging and production mode. By default, keys from PrintIO will be used
+ 
+ @param sEncKey Encryption key for staging mode
+ @param pEncKey Encryption key for production mode
+ */
+- (void)setBraintreeStagingEncryptionKey:(NSString *)sEncKey
+                 productionEncryptionKey:(NSString *)pEncKey;
 
 #pragma mark - For Partners
 
