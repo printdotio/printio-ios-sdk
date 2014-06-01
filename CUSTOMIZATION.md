@@ -194,6 +194,24 @@ Photo Sources
     - (void)setFacebookAppId:(NSString *)appId
                  redirectUrl:(NSString *)redirectUrl;
 
+ Set username and password for Photobucket (autologin)
+
+     /**
+     @param userName Username or email for Photobucket account
+     @param password Password
+     */
+     - (void)setPhotobucketUsername:(NSString *)userName
+                           password:(NSString *)password;
+
+ Set access token for Photobucket
+
+     /**
+     @param aToken Valid access token for session
+     @param username Username
+     */
+    - (void)setPhotobucketAccessToken:(NSString *)aToken
+                             userName:(NSString *)username;
+                         
 Customize Product
 -----------------
 
