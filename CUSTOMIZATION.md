@@ -360,14 +360,14 @@ Display notification pop up from bottom of screen. On tap it will dismiss notifi
 PayPal settings
 -------------------
 
-Set PayPal's client ids, for both modes, stagging and production. Default values are client ids from PrintIO.
+Set PayPal's client ids, for both modes, staging and production. Default values are client ids from PrintIO.
 
      /**
-     @param sClientId Client id for stagging mode
+     @param sClientId Client id for staging mode
  	 @param pClientId Client id for production mode
      */
-     - (void)setPayPalStaggingClientId:(NSString *)sClientId
-               		productionClientId:(NSString *)pClientId;
+     - (void)setPayPalStagingClientId:(NSString *)sClientId
+               	   productionClientId:(NSString *)pClientId;
 
 Other Customization
 -------------------
