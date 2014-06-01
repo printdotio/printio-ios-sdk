@@ -105,7 +105,7 @@ To launch the PrintIO widget, create and display an instance of PrintIO. You can
     - (void)startPrintIO 
     {
         // kRecipeId is developer defined and provided by PrintIO
-        PrintIO *printIO = [[PrintIO alloc]initWithViewController:(UIViewController *)vc
+        PrintIO *printIO = [[PrintIO alloc]initWithViewController:vc
                  									  environment:kEnvironment
           									   productionRecipeId:pRecipeId
              									  stagingRecipeId:sRecipeId;
@@ -126,14 +126,9 @@ Optionaly, you can implement the following PrintIODelegate methods in your prese
         NSLog(@"PrintIOWidgetOnOpened");
     }
     
-    - (void)PrintIOWidgetOnCloseWithFlag:(NSInteger)flag;
+    - (void)PrintIOWidgetOnCloseWithData:(NSDictionary *)data
     {
-        NSLog(@"PrintIOWidgetOnCloseed");
-    }
-    
-    - (void)PrintIOWidgetOnCloseWithOrderData:(NSMutableDictionary *)orderData
-    {
-        NSLog(@"PrintIOWidgetOnCloseWithOrderData: %@", orderData);
+        NSLog(@"Returned data: %@", data);
     }
 
 
