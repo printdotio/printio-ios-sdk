@@ -103,8 +103,15 @@ Side Menu
                      infoColor:(UIColor *)infoColor
      backgroundImageForButtons:(NSString *)path;
 
- This is option from Side Menu, in order to use it, Side Menu needs to be enabled first.
+ Slide side menu from right. Default value is NO.
  
+     /**
+     @param set Default value is NO
+     */
+     - (void)slideSideMenuFromRight:(BOOL)set;
+    
+    
+ This is option from Side Menu, in order to use it, Side Menu needs to be enabled first.
 
      /**
      @param shareText Text that will be used for sharing. May contains link also.
@@ -459,6 +466,21 @@ Other Customization
      @param payeeName Payee name
      */
     - (void)payeeName:(NSString *)payeeName;
+
+ Jumps to screen
+
+     /**
+     @param screen Screen:
+            PRINTIO_SCREEN_SHOPING_CART
+     */
+     - (void)goToScreen:(int)screen; 
+
+ Set url for Terms and Conditions
+
+     /**
+     @params url If not set, options will be hidden
+     */
+     - (void)termsAndConditionsURL:(NSURL *)url; 
 
 Customization of UI elements in customization.xml:
 --------------------------------------------------
