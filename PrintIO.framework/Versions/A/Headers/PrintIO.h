@@ -16,7 +16,9 @@ enum {
     
     PRINTIO_OPTION_PRESENT_VIEW_FROM_LEFT,
     PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT,
-    PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM
+    PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM,
+    
+    PRINTIO_SCREEN_SHOPING_CART
 };
 
 @protocol PrintIODelegate <NSObject>
@@ -54,7 +56,7 @@ enum {
              stagingRecipeId:(NSString *)sRecipeId;
 
 /**
- Open widget by presenting view
+ Open widget by presenting view from bottom
  */
 - (void)open;
 
@@ -62,8 +64,9 @@ enum {
  Open widget with option
  
  @param option Set the option how the view opens
-    PRINTIO_OPTION_PRESENT_VIEW,
-    PRINTIO_OPTION_PUSH_VIEW
+    PRINTIO_OPTION_PRESENT_VIEW_FROM_LEFT,
+    PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT,
+    PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM
  */
 - (void)openWithOption:(int)option;
 
@@ -71,6 +74,14 @@ enum {
  Close widget.
  */
 - (void)close:(NSInteger)flag;
+
+/**
+ Jumps to screen
+ 
+ @param screen Screen:
+    PRINTIO_SCREEN_SHOPING_CART
+ */
+- (void)goToScreen:(int)screen;
 
 #pragma mark - Navigation Bar
 
@@ -165,6 +176,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
             infoTitleColor:(UIColor *)iTitleColor
                  infoColor:(UIColor *)infoColor
  backgroundImageForButtons:(NSString *)path;
+
+/**
+ Slide side menu from right. Default value is NO.
+ 
+ @param set Default value is NO.
+ */
+- (void)slideSideMenuFromRight:(BOOL)set;
 
 /**
  This is option from Side Menu, in order to use it, Side Menu needs to be enabled first.
@@ -449,6 +467,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param payeeName Payee name
  */
 - (void)payeeName:(NSString *)payeeName;
+
+/**
+ Set url to Terms and Conditions
+ 
+ @params url If not set, options will be hidden
+ */
+- (void)termsAndConditionsURL:(NSURL *)url;
 
 #pragma mark - Steps
 
