@@ -37,6 +37,13 @@ Change navigation bar color and title font color, also set left and right bar bu
 
 ![enter image description here][1]
 
+ Set three buttons Back, Menu and Cart button in navigation bar for Featured Products screen
+
+     /**
+     @param set Default value is NO
+     */
+    - (void)useThreeButtonsBarStyle:(BOOL)set;
+
 Side Menu
 ---------
 
