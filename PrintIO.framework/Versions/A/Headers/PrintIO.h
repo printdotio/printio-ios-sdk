@@ -114,6 +114,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)statusBarDark:(BOOL)dark
                hidden:(BOOL)hidden;
 
+/**
+ Set three buttons Back, Menu and Cart button in navigation bar for Featured Products screen
+ 
+ @param set Default value is NO
+ */
+- (void)useThreeButtonsBarStyle:(BOOL)set;
+
 #pragma mark - Side Menu
 
 /**
