@@ -139,7 +139,7 @@ Featured Products
 Photo Sources
 -------------
 
- Set available photo sources.
+ Set available photo sources. The order of photo sources on screen will be the same like order they are placed in array.
  
      /**
      @param Array of PIOSideMenuButton objects, represents which types of photo sources will be
