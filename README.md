@@ -118,7 +118,7 @@ To launch the PrintIO widget, create and display an instance of PrintIO. You can
     }
 
 
-Optionaly, you can implement the following PrintIODelegate methods in your presenting view controller:
+Optionally, you can implement the following PrintIODelegate methods in your presenting view controller:
 
 
     - (void)PrintIOWidgetOnOpen
