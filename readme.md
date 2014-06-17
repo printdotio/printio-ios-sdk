@@ -135,5 +135,5 @@ That's it - now you're ready to develop an amazing application using the Print.I
 # Next Steps
 
 - If you'd like a little more guidance, you can refer to our [Quick Start code](https://github.com/printdotio/printio-ios-sdk/blob/gh-pages/quick_start.md).
-- For a more comprehensive demonstration of the PrintIO SDK, please see the [PrintIOSDKSample app](https://github.com/printdotio/printio-ios-example)
 - For in depth descriptions of the customization options available, see our [SDK customization document](https://github.com/printdotio/printio-ios-sdk/blob/gh-pages/ios_sdk_customization.md)
+- For a more comprehensive demonstration of the PrintIO SDK, please see the [PrintIOSDKSample app](https://github.com/printdotio/printio-ios-example)

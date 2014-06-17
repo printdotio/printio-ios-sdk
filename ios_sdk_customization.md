@@ -35,9 +35,7 @@ Set status bar theme and display options.  statusBarDark being set to YES will r
 
 ### Screenshots
 
-- [Status Bar - Hidden](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/statusBar_hide.png)
-- [Status Bar - Visible - Dark text](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/statusBar_show-dark.png)
-- [Status Bar - Visible - Light Text](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/statusBar_show-light.png)
+[![Status Bar - Hidden](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/statusBar_hide.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/statusBar_hide.png) [![Status Bar - Visible - Dark text](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/statusBar_show-dark.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/statusBar_show-dark.png) [![Status Bar - Visible - Light Text](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/statusBar_show-light.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/statusBar_show-light.png)
 
 ---
 
@@ -65,8 +63,7 @@ Customize top navigation bar colors and set an icon for the center to replace th
 
 ### Screenshots
 
-- [Custom navigaton bar color](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/navigationBarColor_custom.png)
-- [Alternate title button icon ](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/titleButtonIcon.png)
+[![Custom navigaton bar color](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/navigationBarColor_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/navigationBarColor_custom.png) [![Alternate title button icon ](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/titleButtonIcon.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/titleButtonIcon.png)
 
 ---
 
@@ -86,8 +83,7 @@ Include a "Back", "Menu" and "Cart" button in the top nav along with the locatio
 
 ### Screenshots
 
-- [Disable Three-button Menu Bar](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/useThreeButtonsBarStyle_no.png)
-- [Enable Three-button Menu Bar](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/useThreeButtonsBarStyle_yes.png)
+[![Disable Three-button Menu Bar](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/useThreeButtonsBarStyle_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/useThreeButtonsBarStyle_no.png) [![Enable Three-button Menu Bar](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/useThreeButtonsBarStyle_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/useThreeButtonsBarStyle_yes.png)
 
 ---
 
@@ -107,8 +103,7 @@ Override side menu behavior to slide from right side instead of left side
 
 ### Screenshots
 
-- [Slide Side Menu from Right - Closed](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/slideSideMenuFromRight_closed.png)
-- [Slide Side Menu from Right - Open](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/slideSideMenuFromRight_open.png)
+[![Slide Side Menu from Right - Closed](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/slideSideMenuFromRight_closed.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/slideSideMenuFromRight_closed.png) [![Slide Side Menu from Right - Open](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/slideSideMenuFromRight_open.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/slideSideMenuFromRight_open.png)
 
 ---
 
@@ -128,8 +123,7 @@ Specify an image file to use as the Back button in the top nav
 
 ### Screenshots
 
-- [Default Back button icon](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/iconForBackButton_default.png)
-- [Custom Back button icon](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/iconForBackButton_custom.png)
+[![Default Back button icon](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForBackButton_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForBackButton_default.png) [![Custom Back button icon](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForBackButton_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForBackButton_custom.png)
 
 ---
 
@@ -149,8 +143,7 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 
 ### Screenshots
 
-- [Default Fonts](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/customFonts_default.png)
-- [Custom Fonts](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/customFonts_custom.png)
+[![Default Fonts](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/customFonts_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/customFonts_default.png) [![Custom Fonts](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/customFonts_custom.png](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/customFonts_custom.png)
 
 ---
 
@@ -170,8 +163,7 @@ Change the loading GIF from the default
 
 ### Screenshots
 
-- [Default Loading GIF](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/setLoadingGIF_default.png)
-- [Custom Loading GIF](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/setLoadingGIF_custom.png)
+[![Default Loading GIF](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLoadingGIF_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLoadingGIF_default.png) [![Custom Loading GIF](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLoadingGIF_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLoadingGIF_custom.png)
 
 ---
 
@@ -195,11 +187,7 @@ Specify one or more of currency, language and country, which overrides the abili
 
 ### Screenshots
 
-- [Default Localization](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/setLocalizationCode_default.png)
-- [Only Currency specified](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/setLocalizationCode_currency.png)
-- [Only Language specified](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/setLocalizationCode_language.png)
-- [Only Country specified](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/setLocalizationCode_country.png)
-- [Multiple Localizations Specified](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/setLocalizationCode_multi.png)
+[![Default Localization](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLocalizationCode_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLocalizationCode_default.png) [![Only Currency specified](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLocalizationCode_currency.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLocalizationCode_currency.png) [![Only Language specified](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLocalizationCode_language.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLocalizationCode_language.png) [![Only Country specified](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLocalizationCode_country.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLocalizationCode_country.png) [![Multiple Localizations Specified](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLocalizationCode_multi.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLocalizationCode_multi.png)
 
 ---
 
@@ -219,8 +207,7 @@ Allow user to change country in featured products view
 
 ### Screenshots
 
-- [Country Selection in Featured Products Disabled](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/selectCountryInFeaturedProducts_no.png)
-- [Country Selection in Featured Products Enabled](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/selectCountryInFeaturedProducts_yes.png)
+[![Country Selection in Featured Products Disabled](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/selectCountryInFeaturedProducts_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/selectCountryInFeaturedProducts_no.png) [![Country Selection in Featured Products Enabled](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/selectCountryInFeaturedProducts_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/selectCountryInFeaturedProducts_yes.png)
 
 ---
 
@@ -240,8 +227,7 @@ Hide Category/Search view in Featured Products screen.  Default is NO
 
 ### Screenshots
 
-- [Show Categories in Featured Products](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/hideCategoriesInFeaturedProducts_no.png)
-- [Hide Categories in Featured Products](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/hideCategoriesInFeaturedProducts_yes.png)
+[![Show Categories in Featured Products](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideCategoriesInFeaturedProducts_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideCategoriesInFeaturedProducts_no.png) [![Hide Categories in Featured Products](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideCategoriesInFeaturedProducts_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideCategoriesInFeaturedProducts_yes.png)
 
 ---
 
@@ -259,9 +245,7 @@ Set whether photos are arranged automatically, manually, or up to the user (defa
 [self.printIO setPhotoArrangement:PIO_PHOTO_ARRANGEMENT_AUTO];
 ```
 
-- [Photo Arrangement - User Choice](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/setPhotoArrangement_choose.png)
-- [Photo Arrangement - Automatic](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/setPhotoArrangement_auto.png)
-- [Photo Arrangement - Manual](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/setPhotoArrangement_manual.png)
+[![Photo Arrangement - User Choice](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPhotoArrangement_choose.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPhotoArrangement_choose.png) [![Photo Arrangement - Automatic](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPhotoArrangement_auto.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPhotoArrangement_auto.png) [![Photo Arrangement - Manual](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPhotoArrangement_manual.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPhotoArrangement_manual.png)
 
 ---
 
@@ -297,8 +281,7 @@ Specify an image file to use as the Add Photos button in the Customize Product v
 
 ### Screenshots
 
-- [Default Add Photo button](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/iconForAddPhotosButton_default.png)
-- [Custom Add Photo button](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/iconForAddPhotosButton_custom.png)
+[![Default Add Photo button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForAddPhotosButton_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForAddPhotosButton_default.png) [![Custom Add Photo button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForAddPhotosButton_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForAddPhotosButton_custom.png)
 
 ---
 
@@ -318,8 +301,7 @@ Set visibility of toolbar in customize product view.  Default is YES, and which 
 
 ### Screenshots
 
-- [Show Editing Toolbar in Customize Product View](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/showToolbarInCustomizeProduct_yes.png)
-- [Show Editing Toolbar in Customize Product View](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/showToolbarInCustomizeProduct_no.png)
+[![Show Editing Toolbar in Customize Product View](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/showToolbarInCustomizeProduct_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/showToolbarInCustomizeProduct_yes.png) [![Show Editing Toolbar in Customize Product View](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/showToolbarInCustomizeProduct_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/showToolbarInCustomizeProduct_no.png)
 
 ---
 
@@ -337,8 +319,7 @@ Set visibility of images list in customize product view
 [self.printIO hideImagesListInCustomizeProduct:NO];
 ```
 
-- [Hide Images List in Customize Products](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/hideImageListInCustomizeProduct_yes.png)
-- [Show Images List in Customize Products](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/hideImageListInCustomizeProduct_no.png)
+[![Hide Images List in Customize Products](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideImageListInCustomizeProduct_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideImageListInCustomizeProduct_yes.png) [![Show Images List in Customize Products](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideImageListInCustomizeProduct_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideImageListInCustomizeProduct_no.png)
 
 ---
 
@@ -357,8 +338,7 @@ Change shopping cart icon and indicate whether to badge with number of products
 [self.printIO iconForShoppingCart:[[NSBundle mainBundle]pathForResource:@"pb_icon_cart_black" ofType:@"png"] withNumberOfProducts:YES];
 ```
 
-- [Default Shopping Cart Icon](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/iconForShoppingCart_default-badged.png)
-- [Custom Shopping Cart Icon](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/iconForShoppingCart_custom-badged.png)
+[![Default Shopping Cart Icon](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForShoppingCart_default-badged.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForShoppingCart_default-badged.png) [![Custom Shopping Cart Icon](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForShoppingCart_custom-badged.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForShoppingCart_custom-badged.png)
 
 ---
 
@@ -393,8 +373,7 @@ Remove plus sign from 'Add More Products' button
 
 ### Screenshots
 
-- [Remove Plus from Add More Products Button](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/removePlusFromAddMoreProductsButton_yes.png)
-- [Include Plus on Add More Products Button](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/removePlusFromAddMoreProductsButton_no.png)
+[![Remove Plus from Add More Products Button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/removePlusFromAddMoreProductsButton_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/removePlusFromAddMoreProductsButton_yes.png) [![Include Plus on Add More Products Button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/removePlusFromAddMoreProductsButton_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/removePlusFromAddMoreProductsButton_no.png)
 
 ---
 
@@ -431,12 +410,7 @@ NSMutableArray *photoSources = [[NSMutableArray alloc]init];
 
 ### Screenshots
 
-- [Side Menu - Include All Sources](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/availablePhotoSources_side-menu_include-all.png)
-- [Side Menu - Change Source  Order](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/availablePhotoSources_side-menu_change-order.png)
-- [Side Menu - Include Select Sources ](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/availablePhotoSources_side-menu_include-fewer.png)
-- [Customize Product - Include All Sources](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/availablePhotoSources_customize-product_include-all.png)
-- [Customize Product - Change Source Order](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/availablePhotoSources_customize-product_change-order.png)
-- [Customize Product - Include Select Sources](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/availablePhotoSources_customize-product_include-fewer.png)
+[![Side Menu - Include All Sources](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_side-menu_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_side-menu_include-all.png) [![Side Menu - Change Source  Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_side-menu_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_side-menu_change-order.png) [![Side Menu - Include Select Sources ](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_side-menu_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_side-menu_include-fewer.png) [![Customize Product - Include All Sources](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_customize-product_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_customize-product_include-all.png) [![Customize Product - Change Source Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_customize-product_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_customize-product_change-order.png) [![Customize Product - Include Select Sources](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_customize-product_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_customize-product_include-fewer.png)
 
 ---
 
@@ -507,7 +481,7 @@ Set the passed image as the thumbnail for the single photo template on the custo
 
 ### Screenshots
 
-- [Set Passed Image as Thumb for Single Photo Template](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/setPassedImageAsThumbForOnePhotoTemplate.png)
+[![Set Passed Image as Thumb for Single Photo Template](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPassedImageAsThumbForOnePhotoTemplate.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPassedImageAsThumbForOnePhotoTemplate.png)
 
 ---
 
@@ -528,8 +502,7 @@ Enable side menu and configure icon and background.  If `nil` for either, a defa
 
 ### Screenshots
 
-- [Default Side Menu options](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/useSideMenuWithMenuIcon_default.png)
-- [Custom Side Menu options](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/useSideMenuWithMenuIcon_custom.png)
+[![Default Side Menu options](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/useSideMenuWithMenuIcon_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/useSideMenuWithMenuIcon_default.png) [![Custom Side Menu options](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/useSideMenuWithMenuIcon_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/useSideMenuWithMenuIcon_custom.png)
 
 ---
 
@@ -558,9 +531,7 @@ NSArray *buttons = [NSArray arrayWithObjects:
 
 ### Screenshots
 
-- [Side Menu buttons - Include All](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/side-menu_buttons_include-all.png)
-- [Side Menu buttons - Change Order](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/side-menu_buttons_change-order.png)
-- [Side Menu buttons - Include Select ](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/side-menu_buttons_include-fewer.png)
+[![Side Menu buttons - Include All](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_buttons_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_buttons_include-all.png) [![Side Menu buttons - Change Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_buttons_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_buttons_change-order.png) [![Side Menu buttons - Include Select ](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_buttons_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_buttons_include-fewer.png)
 
 ---
 Configure Side Menu Options
@@ -579,9 +550,9 @@ NSArray *options = [NSArray arrayWithObjects:
     [[PIOSideMenuButton alloc]initWithType:PIO_SM_CHANGE_LANGUAGE]
 nil];
 
-- [Side Menu option buttons - Include All](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/side-menu_options_include-all.png)
-- [Side Menu option buttons - Change Order](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/side-menu_options_change-order.png)
-- [Side Menu option buttons - Include Select](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/side-menu_options_include_fewer.png)
+### Screenshots
+
+[![Side Menu option buttons - Include All](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_options_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_options_include-all.png) [![Side Menu option buttons - Change Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_options_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_options_change-order.png) [![Side Menu option buttons - Include Select](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_options_include_fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_options_include_fewer.png)
 
 ---
 
@@ -620,9 +591,7 @@ NSArray *options = [NSArray arrayWithObjects:
 
 ### Screenshots
 
-- [Side Menu info buttons - Include All](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/side-menu_info_include-all.png)
-- [Side Menu info buttons - Change Order](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/side-menu_info_change-order.png)
-- [Side Menu info buttons - Include Select](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/side-menu_info_include-fewer.png)
+[![Side Menu info buttons - Include All](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_info_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_info_include-all.png) [![Side Menu info buttons - Change Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_info_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_info_change-order.png) [![Side Menu info buttons - Include Select](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_info_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_info_include-fewer.png)
 
 ---
 
@@ -642,7 +611,7 @@ Set the text to be included when a user clicks the Share this app button.  Note:
 
 ### Screenshots
 
-- [Custom Share Text](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/setShareText.png)
+[![Custom Share Text](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setShareText.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setShareText.png)
 
 ---
 
@@ -687,8 +656,7 @@ After specifying your configuration for the different portions of the side menu,
 
 ### Screenshots
 
-- [Default build of Side Menu](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/side-menu_built_default.png)
-- [Custom build of Side Menu](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/side-menu_built_custom.png)
+[![Default build of Side Menu](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_built_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_built_default.png) [![Custom build of Side Menu](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_built_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_built_custom.png)
 
 ---
 
@@ -724,7 +692,7 @@ Enable the terms and conditions link form control on the payment page and specif
 
 ### Screenshots
 
-- [Custom Terms & Conditions control](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/termsAndConditionsURL.png)
+[![Custom Terms & Conditions control](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/termsAndConditionsURL.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/termsAndConditionsURL.png)
 
 ---
 
@@ -744,8 +712,7 @@ Specify an image file to use as the help icon in customize product view
 
 ### Screenshots
 
-- [Default Help button](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/iconForHelpButtonInCustomizeProduct_default.png)
-- [Custom Help button](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/iconForHelpButtonInCustomizeProduct_custom.png)
+[![Default Help button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForHelpButtonInCustomizeProduct_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForHelpButtonInCustomizeProduct_default.png) [![Custom Help button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForHelpButtonInCustomizeProduct_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForHelpButtonInCustomizeProduct_custom.png)
 
 ---
 
@@ -765,8 +732,7 @@ Hide icon for Upload Instructions text in Photo Sources screen. Default value is
 
 ### Screenshots
 
-- [Show icon for upload instructions](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/hideIconForUplaodInstructions_no.png)
-- [Hide icon for upload instructions](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/hideIconForUplaodInstructions_yes.png)
+[![Show icon for upload instructions](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideIconForUplaodInstructions_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideIconForUplaodInstructions_no.png) [![Hide icon for upload instructions](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideIconForUplaodInstructions_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideIconForUplaodInstructions_yes.png)
 
 ---
 
@@ -790,8 +756,8 @@ Set Pop up balloon in Customize Product screen
 
 ### Screenshots
 
-- [Default Help Pop-up](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/setPopUpWithImage_default.png)
-- [Custom Help Pop-up](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/setPopUpWithImage_custom.png)
+[![Default Help Pop-up](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPopUpWithImage_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPopUpWithImage_default.png)
+[![Custom Help Pop-up](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPopUpWithImage_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPopUpWithImage_custom.png)
 
 ---
 
@@ -820,9 +786,7 @@ NSArray *editButtons = [NSArray arrayWithObjects:
 
 ### Screenshots
 
-- [Editing buttons - Include All](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/imageEditorShowButtons_include-all.png)
-- [Editing buttons - Change Order](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/imageEditorShowButtons_change-order.png)
-- [Editing buttons - Show Select](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/imageEditorShowButtons_include-fewer.png)
+[![Editing buttons - Include All](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/imageEditorShowButtons_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/imageEditorShowButtons_include-all.png) [![Editing buttons - Change Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/imageEditorShowButtons_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/imageEditorShowButtons_change-order.png) [![Editing buttons - Show Select](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/imageEditorShowButtons_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/imageEditorShowButtons_include-fewer.png)
 
 ---
 
@@ -842,8 +806,7 @@ Hide logo when user is in checkout flow
 
 ### Screenshots
 
-- [Remove Logo from Checkout](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/removeLogoFromCheckout_yes.png)
-- [Show Logo in Checkout](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/removeLogoFromCheckout_no.png)
+[![Remove Logo from Checkout](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/removeLogoFromPaymentScreen_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/removeLogoFromPaymentScreen_yes.png) [![Show Logo in Checkout](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/removeLogoFromPaymentScreen_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/removeLogoFromPaymentScreen_no.png)
 
 ---
 
@@ -891,5 +854,4 @@ Set opening transition style when entering Print.IO.  Options are to have it sli
 
 ### Screenshots
 
-- [Opening transition from bottom](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/openWithOption_bottom.png)
-- [Opening transition from right](https://raw.githubusercontent.com/kilsey/pio_docs/master/ios_sdk/assets/images/openWithOption_right.png)
+[![Opening transition from bottom](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/openWithOption_bottom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/openWithOption_bottom.png) [![Opening transition from right](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/openWithOption_right.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/openWithOption_right.png)
