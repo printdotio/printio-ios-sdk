@@ -143,7 +143,7 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 
 ### Screenshots
 
-[![Default Fonts](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/customFonts_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/customFonts_default.png) [![Custom Fonts](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/customFonts_custom.png](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/customFonts_custom.png)
+[![Default Fonts](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/customFonts_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/customFonts_default.png) [![Custom Fonts](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/customFonts_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/customFonts_custom.png)
 
 ---
 
@@ -319,6 +319,8 @@ Set visibility of images list in customize product view
 [self.printIO hideImagesListInCustomizeProduct:NO];
 ```
 
+### Screenshots
+
 [![Hide Images List in Customize Products](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideImageListInCustomizeProduct_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideImageListInCustomizeProduct_yes.png) [![Show Images List in Customize Products](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideImageListInCustomizeProduct_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideImageListInCustomizeProduct_no.png)
 
 ---
@@ -337,6 +339,8 @@ Change shopping cart icon and indicate whether to badge with number of products
 ``` Objective-C
 [self.printIO iconForShoppingCart:[[NSBundle mainBundle]pathForResource:@"pb_icon_cart_black" ofType:@"png"] withNumberOfProducts:YES];
 ```
+
+### Screenshots
 
 [![Default Shopping Cart Icon](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForShoppingCart_default-badged.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForShoppingCart_default-badged.png) [![Custom Shopping Cart Icon](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForShoppingCart_custom-badged.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForShoppingCart_custom-badged.png)
 
@@ -534,7 +538,8 @@ NSArray *buttons = [NSArray arrayWithObjects:
 [![Side Menu buttons - Include All](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_buttons_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_buttons_include-all.png) [![Side Menu buttons - Change Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_buttons_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_buttons_change-order.png) [![Side Menu buttons - Include Select ](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_buttons_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_buttons_include-fewer.png)
 
 ---
-Configure Side Menu Options
+
+## Configure Side Menu Options
 
 Create array of option buttons, which will be displayed in the middle section of the side menu.  The option button display order in the application will correspond to their place in the array.  Please note that these options will be overridden if you specify a currency, country or language elsewhere in your application.
 
@@ -552,7 +557,7 @@ nil];
 
 ### Screenshots
 
-[![Side Menu option buttons - Include All](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_options_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_options_include-all.png) [![Side Menu option buttons - Change Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_options_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_options_change-order.png) [![Side Menu option buttons - Include Select](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_options_include_fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_options_include_fewer.png)
+[![Side Menu option buttons - Include All](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_options_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_options_include-all.png) [![Side Menu option buttons - Change Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_options_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_options_change-order.png) [![Side Menu option buttons - Include Select](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_options_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_options_include-fewer.png)
 
 ---
 
