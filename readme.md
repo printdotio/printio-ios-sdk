@@ -2,9 +2,9 @@
 
 The Print.IO SDK for iOS enables you to integrate the capabilities of our platform into your iOS applications.
 
-Our SDK allows you to select which features and functionality you need as well as to customize the look and feel of different UI elements. Customization can be performed via [code level options](https://github.com/printdotio/printio-ios-sdk/blob/gh-pages/ios_sdk_customization.md) and/or [XML configuration](https://github.com/printdotio/printio-ios-sdk/blob/master/customization.xml.md). Details for how to customize various parts of the installation can be found in the [CUSTOMIZATION.md][6] document, which is also distributed with the SDK.
+Our SDK allows you to select which features and functionality you need as well as to customize the look and feel of different UI elements. Customization can be performed via [code level options](https://github.com/printdotio/printio-ios-sdk/blob/gh-pages/ios_sdk_customization.md) and/or [XML configuration](https://github.com/printdotio/printio-ios-sdk/blob/master/customization.xml.md). Details for how to customize various parts of the installation can be found in the [CUSTOMIZATION.md](https://github.com/printdotio/printio-ios-sdk/blob/master/CUSTOMIZATION.md) document, which is also distributed with the SDK.
 
-The Print.IO SDK also offers the ability to send push notifications from your app. More information on configuration and usage can be found in the [Push Notifications][https://github.com/printdotio/printio-ios-sdk/blob/master/PUSH_NOTIFICATIONS.md] documentation.
+The Print.IO SDK also offers the ability to send push notifications from your app. More information on configuration and usage can be found in the [Push Notifications](https://github.com/printdotio/printio-ios-sdk/blob/master/PUSH_NOTIFICATIONS.md) documentation.
 
 # Project Setup
 
@@ -20,7 +20,7 @@ For the latest versions, please visit [Apple's iOS Dev Center](http://developer.
 
 You must be using the latest version of Apple's LLVM compiler. You should not have a problem if you're using a fresh install of Xcode 5.x, which uses this compiler by default. However, if you are working on an older project, or have upgraded from an older version of Xcode, make sure you're not using GCC.
 
-The minimum iOS version supported by the SDK is iOS 6.1. The main reasons for this requirement are our use of ARC ([Automatic Reference Counting][http://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html]) and our reliance on a number of Apple frameworks and libraries which require iOS 6.1.
+The minimum iOS version supported by the SDK is iOS 6.1. The main reasons for this requirement are our use of ARC ([Automatic Reference Counting](http://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html)) and our reliance on a number of Apple frameworks and libraries which require iOS 6.1.
 
 
 # Configuration
@@ -70,7 +70,7 @@ The Print.io SDK depends on some frameworks, so you'll need to add them to any t
 
 Make sure `PrintIOBundle.bundle` is included in your target's "Copy Bundle Resources" build phase.
 
-![Make sure our bundle is included in the build phase][images/screenshot_copy_bundle_resources.png?raw=true]
+![Make sure our bundle is included in the build phase](https://github.com/printdotio/printio-ios-sdk/blob/gh-pages/images/screenshot_copy_bundle_resources.png?raw=true)
 
 
 ## 4. Add other linker flags
@@ -81,7 +81,7 @@ Update your target's (or project's) build settings to include the following "Oth
 - -lstdc++
 - -lc++
 
-![Update your linker flags accordingly][images/screenshot_linker_flags.png?raw=true]
+![Update your linker flags accordingly](https://github.com/printdotio/printio-ios-sdk/blob/gh-pages/images/screenshot_linker_flags.png?raw=true)
 
 
 ## 5. Import headers
