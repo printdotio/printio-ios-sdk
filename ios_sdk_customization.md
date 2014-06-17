@@ -568,9 +568,9 @@ Set the passed image as the thumbnail for the single photo template on the custo
 
 ### Screenshots
 
-| Photo as Thumb |
-| :---- |
-| [![Set Passed Image as Thumb for Single Photo Template](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPassedImageAsThumbForOnePhotoTemplate.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPassedImageAsThumbForOnePhotoTemplate.png) |
+| Passed Photo | Photo as Thumb |
+| :---- | :---- |
+| ![Passed Photo](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/passed_photo.png) | [![Set Passed Image as Thumb for Single Photo Template](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPassedImageAsThumbForOnePhotoTemplate.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPassedImageAsThumbForOnePhotoTemplate.png) |
 
 ---
 
