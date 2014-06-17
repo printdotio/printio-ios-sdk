@@ -35,7 +35,11 @@ Set status bar theme and display options.  statusBarDark being set to YES will r
 
 ### Screenshots
 
-[![Status Bar - Hidden](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/statusBar_hide.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/statusBar_hide.png) [![Status Bar - Visible - Dark text](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/statusBar_show-dark.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/statusBar_show-dark.png) [![Status Bar - Visible - Light Text](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/statusBar_show-light.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/statusBar_show-light.png)
+| Hidden | Visible - Dark Text | Visible - Light Text |
+| :---- | :---- | :---- |
+| [![Status Bar - Hidden](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/statusBar_hide.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/statusBar_hide.png) | [![Status Bar - Visible - Dark text](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/statusBar_show-dark.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/statusBar_show-dark.png) | [![Status Bar - Visible - Light Text](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/statusBar_show-light.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/statusBar_show-light.png) |
+
+_Note: The status bar background in the "light text" example was changed only to make the text clear.  The ability to change the background is available through the [`navigationBarColor` settings](#navigation-bar-settings)_
 
 ---
 
@@ -63,7 +67,9 @@ Customize top navigation bar colors and set an icon for the center to replace th
 
 ### Screenshots
 
-[![Custom navigaton bar color](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/navigationBarColor_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/navigationBarColor_custom.png) [![Alternate title button icon ](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/titleButtonIcon.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/titleButtonIcon.png)
+| Custom Color | Custom Menu Icon |
+|  :---- | :---- |
+| [![Custom navigation bar color](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/navigationBarColor_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/navigationBarColor_custom.png) |  [![Alternate title button icon ](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/titleButtonIcon.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/titleButtonIcon.png) |
 
 ---
 
@@ -83,7 +89,9 @@ Include a "Back", "Menu" and "Cart" button in the top nav along with the locatio
 
 ### Screenshots
 
-[![Disable Three-button Menu Bar](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/useThreeButtonsBarStyle_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/useThreeButtonsBarStyle_no.png) [![Enable Three-button Menu Bar](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/useThreeButtonsBarStyle_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/useThreeButtonsBarStyle_yes.png)
+| Default | 3-Button Menu Bar |
+| :---- | :---- |
+| [![Disable Three-button Menu Bar](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/useThreeButtonsBarStyle_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/useThreeButtonsBarStyle_no.png) |  [![Enable Three-button Menu Bar](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/useThreeButtonsBarStyle_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/useThreeButtonsBarStyle_yes.png) |
 
 ---
 
@@ -103,7 +111,9 @@ Override side menu behavior to slide from right side instead of left side
 
 ### Screenshots
 
-[![Slide Side Menu from Right - Closed](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/slideSideMenuFromRight_closed.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/slideSideMenuFromRight_closed.png) [![Slide Side Menu from Right - Open](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/slideSideMenuFromRight_open.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/slideSideMenuFromRight_open.png)
+| Menu Closed | Menu Open |
+| :---- | :---- |
+| [![Slide Side Menu from Right - Closed](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/slideSideMenuFromRight_closed.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/slideSideMenuFromRight_closed.png) |  [![Slide Side Menu from Right - Open](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/slideSideMenuFromRight_open.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/slideSideMenuFromRight_open.png) |
 
 ---
 
@@ -123,7 +133,9 @@ Specify an image file to use as the Back button in the top nav
 
 ### Screenshots
 
-[![Default Back button icon](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForBackButton_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForBackButton_default.png) [![Custom Back button icon](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForBackButton_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForBackButton_custom.png)
+| Default | Custom |
+| :---- | :---- |
+| [![Default Back button icon](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForBackButton_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForBackButton_default.png) | [![Custom Back button icon](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForBackButton_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForBackButton_custom.png) |
 
 ---
 
@@ -143,7 +155,9 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 
 ### Screenshots
 
-[![Default Fonts](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/customFonts_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/customFonts_default.png) [![Custom Fonts](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/customFonts_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/customFonts_custom.png)
+| Default | Custom Fonts |
+| :---- | :---- |
+| [![Default Fonts](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/customFonts_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/customFonts_default.png) | [![Custom Fonts](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/customFonts_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/customFonts_custom.png) |
 
 ---
 
@@ -163,7 +177,9 @@ Change the loading GIF from the default
 
 ### Screenshots
 
-[![Default Loading GIF](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLoadingGIF_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLoadingGIF_default.png) [![Custom Loading GIF](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLoadingGIF_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLoadingGIF_custom.png)
+| Default | Custom Loading GIF |
+| :---- | :---- |
+| [![Default Loading GIF](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLoadingGIF_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLoadingGIF_default.png) | [![Custom Loading GIF](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLoadingGIF_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLoadingGIF_custom.png) |
 
 ---
 
@@ -187,7 +203,13 @@ Specify one or more of currency, language and country, which overrides the abili
 
 ### Screenshots
 
-[![Default Localization](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLocalizationCode_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLocalizationCode_default.png) [![Only Currency specified](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLocalizationCode_currency.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLocalizationCode_currency.png) [![Only Language specified](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLocalizationCode_language.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLocalizationCode_language.png) [![Only Country specified](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLocalizationCode_country.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLocalizationCode_country.png) [![Multiple Localizations Specified](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLocalizationCode_multi.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLocalizationCode_multi.png)
+| Default | Currency Pre-set | Language Pre-set |
+| :---- | :---- | :---- |
+[![Default Localization](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLocalizationCode_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLocalizationCode_default.png) | [![Only Currency specified](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLocalizationCode_currency.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLocalizationCode_currency.png) | [![Only Language specified](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLocalizationCode_language.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLocalizationCode_language.png) |
+
+| Country Pre-set | Multiple Pre-set |
+| :---- | :---- |
+| [![Only Country specified](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLocalizationCode_country.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLocalizationCode_country.png) | [![Multiple Localizations Specified](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setLocalizationCode_multi.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setLocalizationCode_multi.png) |
 
 ---
 
@@ -207,11 +229,13 @@ Allow user to change country in featured products view
 
 ### Screenshots
 
-[![Country Selection in Featured Products Disabled](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/selectCountryInFeaturedProducts_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/selectCountryInFeaturedProducts_no.png) [![Country Selection in Featured Products Enabled](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/selectCountryInFeaturedProducts_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/selectCountryInFeaturedProducts_yes.png)
+| Default | Enabled |
+| :---- | :---- |
+| [![Country Selection in Featured Products Disabled](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/selectCountryInFeaturedProducts_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/selectCountryInFeaturedProducts_no.png) | [![Country Selection in Featured Products Enabled](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/selectCountryInFeaturedProducts_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/selectCountryInFeaturedProducts_yes.png) |
 
 ---
 
-## Category Control Visibile
+## Category Control Bar Visibile
 
 Hide Category/Search view in Featured Products screen.  Default is NO
 
@@ -227,7 +251,9 @@ Hide Category/Search view in Featured Products screen.  Default is NO
 
 ### Screenshots
 
-[![Show Categories in Featured Products](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideCategoriesInFeaturedProducts_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideCategoriesInFeaturedProducts_no.png) [![Hide Categories in Featured Products](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideCategoriesInFeaturedProducts_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideCategoriesInFeaturedProducts_yes.png)
+| Default | Hidden |
+| :---- | :---- |
+| [![Show Categories in Featured Products](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideCategoriesInFeaturedProducts_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideCategoriesInFeaturedProducts_no.png) | [![Hide Categories in Featured Products](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideCategoriesInFeaturedProducts_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideCategoriesInFeaturedProducts_yes.png) |
 
 ---
 
@@ -245,7 +271,11 @@ Set whether photos are arranged automatically, manually, or up to the user (defa
 [self.printIO setPhotoArrangement:PIO_PHOTO_ARRANGEMENT_AUTO];
 ```
 
-[![Photo Arrangement - User Choice](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPhotoArrangement_choose.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPhotoArrangement_choose.png) [![Photo Arrangement - Automatic](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPhotoArrangement_auto.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPhotoArrangement_auto.png) [![Photo Arrangement - Manual](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPhotoArrangement_manual.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPhotoArrangement_manual.png)
+### Screenshots
+
+| Default | Auto-arrange | Manual Arrange |
+| :---- | :---- | :---- |
+| [![Photo Arrangement - User Choice](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPhotoArrangement_choose.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPhotoArrangement_choose.png) |  [![Photo Arrangement - Automatic](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPhotoArrangement_auto.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPhotoArrangement_auto.png) | [![Photo Arrangement - Manual](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPhotoArrangement_manual.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPhotoArrangement_manual.png) |
 
 ---
 
@@ -281,7 +311,9 @@ Specify an image file to use as the Add Photos button in the Customize Product v
 
 ### Screenshots
 
-[![Default Add Photo button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForAddPhotosButton_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForAddPhotosButton_default.png) [![Custom Add Photo button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForAddPhotosButton_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForAddPhotosButton_custom.png)
+| Default | Custom Button |
+| :---- | :---- |
+| [![Default Add Photo button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForAddPhotosButton_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForAddPhotosButton_default.png) | [![Custom Add Photo button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForAddPhotosButton_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForAddPhotosButton_custom.png) |
 
 ---
 
@@ -301,7 +333,9 @@ Set visibility of toolbar in customize product view.  Default is YES, and which 
 
 ### Screenshots
 
-[![Show Editing Toolbar in Customize Product View](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/showToolbarInCustomizeProduct_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/showToolbarInCustomizeProduct_yes.png) [![Show Editing Toolbar in Customize Product View](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/showToolbarInCustomizeProduct_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/showToolbarInCustomizeProduct_no.png)
+| Default | Hidden |
+| :---- | :---- |
+| [![Show Editing Toolbar in Customize Product View](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/showToolbarInCustomizeProduct_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/showToolbarInCustomizeProduct_yes.png) | [![Show Editing Toolbar in Customize Product View](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/showToolbarInCustomizeProduct_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/showToolbarInCustomizeProduct_no.png) |
 
 ---
 
@@ -321,7 +355,9 @@ Set visibility of images list in customize product view
 
 ### Screenshots
 
-[![Hide Images List in Customize Products](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideImageListInCustomizeProduct_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideImageListInCustomizeProduct_yes.png) [![Show Images List in Customize Products](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideImageListInCustomizeProduct_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideImageListInCustomizeProduct_no.png)
+| Default | Hidden |
+| :---- | :---- |
+| [![Show Images List in Customize Products](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideImageListInCustomizeProduct_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideImageListInCustomizeProduct_no.png) | [![Hide Images List in Customize Products](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideImageListInCustomizeProduct_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideImageListInCustomizeProduct_yes.png) |
 
 ---
 
@@ -342,7 +378,9 @@ Change shopping cart icon and indicate whether to badge with number of products
 
 ### Screenshots
 
-[![Default Shopping Cart Icon](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForShoppingCart_default-badged.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForShoppingCart_default-badged.png) [![Custom Shopping Cart Icon](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForShoppingCart_custom-badged.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForShoppingCart_custom-badged.png)
+| Default | Custom Icon |
+| :---- | :---- |
+| [![Default Shopping Cart Icon](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForShoppingCart_default-badged.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForShoppingCart_default-badged.png) | [![Custom Shopping Cart Icon](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForShoppingCart_custom-badged.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForShoppingCart_custom-badged.png) |
 
 ---
 
@@ -352,7 +390,7 @@ Change Logo icon which is used on cart and confirmation screens
 
 | Parameter/Method | Options - Details |
 | :---- | :---- |
-| `changeLogo` | Specify image included in application |
+| `go` | Specify image included in application |
 
 ### Code Sample
 
@@ -360,7 +398,36 @@ Change Logo icon which is used on cart and confirmation screens
 [self.printIO changeLogo:@"icon1"];
 ```
 
+### Screenshots
+
+| Default | Custom |
+| :---- | :---- |
+| TBD | TBD |
+
 ---
+
+## Remove Logo from Checkout
+
+Hide logo when user is in checkout flow
+
+| Parameter/Method | Options - Details |
+| :---- | :---- |
+| `removeLogoFromPaymentScreen` | YES, NO |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO removeLogoFromPaymentScreen:YES];
+```
+
+### Screenshots
+
+| Default | Hidden |
+| :---- | :---- |
+| [![Show Logo in Checkout](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/removeLogoFromPaymentScreen_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/removeLogoFromPaymentScreen_no.png) | [![Remove Logo from Checkout](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/removeLogoFromPaymentScreen_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/removeLogoFromPaymentScreen_yes.png) |
+
+---
+
 ## Configure Add More Products button
 
 Remove plus sign from 'Add More Products' button
@@ -377,13 +444,15 @@ Remove plus sign from 'Add More Products' button
 
 ### Screenshots
 
-[![Remove Plus from Add More Products Button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/removePlusFromAddMoreProductsButton_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/removePlusFromAddMoreProductsButton_yes.png) [![Include Plus on Add More Products Button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/removePlusFromAddMoreProductsButton_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/removePlusFromAddMoreProductsButton_no.png)
+| Default | Hidden |
+| :---- | :---- |
+| [![Include Plus on Add More Products Button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/removePlusFromAddMoreProductsButton_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/removePlusFromAddMoreProductsButton_no.png) | [![Remove Plus from Add More Products Button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/removePlusFromAddMoreProductsButton_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/removePlusFromAddMoreProductsButton_yes.png) |
 
 ---
 
 ## Configure Photo Sources
 
-Required step to configure which photo sources you would like to include in your application.
+Required step to configure which photo sources you would like to offer within your application.  The order in which you include the photo sources will determine the order in which they are displayed for both the side menu and select photo sources step within the Customize Product view.  The iOS Camera Roll is not displayed in the side menu.
 
 | Parameter/Method | Options - Details |
 | :---- | :---- |
@@ -414,7 +483,21 @@ NSMutableArray *photoSources = [[NSMutableArray alloc]init];
 
 ### Screenshots
 
-[![Side Menu - Include All Sources](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_side-menu_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_side-menu_include-all.png) [![Side Menu - Change Source  Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_side-menu_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_side-menu_change-order.png) [![Side Menu - Include Select Sources ](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_side-menu_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_side-menu_include-fewer.png) [![Customize Product - Include All Sources](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_customize-product_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_customize-product_include-all.png) [![Customize Product - Change Source Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_customize-product_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_customize-product_change-order.png) [![Customize Product - Include Select Sources](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_customize-product_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_customize-product_include-fewer.png)
+#### Side Menu Photo Sources
+
+| Include All | Change Order | Include Some |
+| :---- | :---- | :---- |
+| [![Side Menu - Include All Sources](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_side-menu_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_side-menu_include-all.png) | [![Side Menu - Change Source  Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_side-menu_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_side-menu_change-order.png) | [![Side Menu - Include Select Sources ](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_side-menu_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_side-menu_include-fewer.png) |
+
+_Note: The iOS Camera Roll will not be displayed in this view_
+
+#### Customize Product Photo Sources
+
+| Include All | Change Order | Include Some |
+| :---- | :---- | :---- |
+| [![Customize Product - Include All Sources](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_customize-product_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_customize-product_include-all.png) | [![Customize Product - Change Source Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_customize-product_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_customize-product_change-order.png) | [![Customize Product - Include Select Sources](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/availablePhotoSources_customize-product_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/availablePhotoSources_customize-product_include-fewer.png) |
+
+_Note: Only 6 photo sources can be displayed in this view, including the iOS Camera Roll_
 
 ---
 
@@ -485,32 +568,40 @@ Set the passed image as the thumbnail for the single photo template on the custo
 
 ### Screenshots
 
-[![Set Passed Image as Thumb for Single Photo Template](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPassedImageAsThumbForOnePhotoTemplate.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPassedImageAsThumbForOnePhotoTemplate.png)
+| Photo as Thumb |
+| :---- |
+| [![Set Passed Image as Thumb for Single Photo Template](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPassedImageAsThumbForOnePhotoTemplate.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPassedImageAsThumbForOnePhotoTemplate.png) |
 
 ---
 
-## Enable Side Menu
+## Side Menu Controls
 
-Enable side menu and configure icon and background.  If `nil` for either, a default will be used instead.  This step is required to configure following side menu options.
+To enable the side menu, simply include the default method below and pass `nil` for the configuration options.  To customize the side menu icon, pass an image to the method.  To set the background color, just pass a color value to the method.  If `nil` for either, a default will be used instead.  This step is required to configure following side menu options.
 
 | Parameter/Method | Options - Details |
 | :---- | :---- |
-| `useSideMenuWithMenuIcon` | specify image in application for menu icon |
-| `background` | specify color for side menu background |
+| `useSideMenuWithMenuIcon` | `nil`, specify image in application for menu icon |
+| `background` | `nil`, specify color for side menu background |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO useSideMenuWithMenuIcon:[[NSBundle mainBundle]pathForResource:@"pb_menu" ofType:@"png"] background:nil];
+// Enable default side menu with no customization
+[self.printIO useSideMenuWithMenuIcon:nil background:nil];
+
+// Enable custom side menu with specific menu icon and background color
+[self.printIO useSideMenuWithMenuIcon:[[NSBundle mainBundle]pathForResource:@"pb_menu" ofType:@"png"] background:[UIColor colorWithRed:26.0/255.0 green:188.0/255.0 blue:156.0/255.0 alpha:255.0/255.0]];
 ```
 
 ### Screenshots
 
-[![Default Side Menu options](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/useSideMenuWithMenuIcon_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/useSideMenuWithMenuIcon_default.png) [![Custom Side Menu options](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/useSideMenuWithMenuIcon_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/useSideMenuWithMenuIcon_custom.png)
+| Default | Custom Icon/Color |
+| :---- | :---- |
+| [![Default Side Menu options](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/useSideMenuWithMenuIcon_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/useSideMenuWithMenuIcon_default.png) | [![Custom Side Menu options](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/useSideMenuWithMenuIcon_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/useSideMenuWithMenuIcon_custom.png) |
 
 ---
 
-Configure Side Menu Buttons
+## Configure Side Menu Buttons
 
 Create array of buttons, which will be displayed in the upper section of the side menu.  The button display order in the application will correspond to their place in the array.
 
@@ -535,7 +626,9 @@ NSArray *buttons = [NSArray arrayWithObjects:
 
 ### Screenshots
 
-[![Side Menu buttons - Include All](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_buttons_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_buttons_include-all.png) [![Side Menu buttons - Change Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_buttons_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_buttons_change-order.png) [![Side Menu buttons - Include Select ](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_buttons_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_buttons_include-fewer.png)
+| Include All | Change Order | Include Some |
+| :---- | :---- | :---- |
+| [![Side Menu buttons - Include All](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_buttons_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_buttons_include-all.png) | [![Side Menu buttons - Change Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_buttons_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_buttons_change-order.png) | [![Side Menu buttons - Include Select ](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_buttons_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_buttons_include-fewer.png) |
 
 ---
 
@@ -557,13 +650,15 @@ nil];
 
 ### Screenshots
 
-[![Side Menu option buttons - Include All](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_options_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_options_include-all.png) [![Side Menu option buttons - Change Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_options_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_options_change-order.png) [![Side Menu option buttons - Include Select](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_options_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_options_include-fewer.png)
+| Include All | Change Order | Include Some |
+| :---- | :---- | :---- |
+| [![Side Menu option buttons - Include All](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_options_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_options_include-all.png) | [![Side Menu option buttons - Change Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_options_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_options_change-order.png) | [![Side Menu option buttons - Include Select](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_options_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_options_include-fewer.png) |
 
 ---
 
 ## Photo Source menu items
 
-Photo source button configuration is automatically set based on the photo sources you include
+_Please note that photo source button configuration is automatically set [based on the photo sources you include](#configure-photo-sources)_
 
 ---
 
@@ -596,7 +691,9 @@ NSArray *options = [NSArray arrayWithObjects:
 
 ### Screenshots
 
-[![Side Menu info buttons - Include All](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_info_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_info_include-all.png) [![Side Menu info buttons - Change Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_info_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_info_change-order.png) [![Side Menu info buttons - Include Select](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_info_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_info_include-fewer.png)
+| Include All | Change Order | Include Some |
+| :---- | :---- | :---- |
+| [![Side Menu info buttons - Include All](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_info_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_info_include-all.png) | [![Side Menu info buttons - Change Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_info_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_info_change-order.png) | [![Side Menu info buttons - Include Select](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_info_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_info_include-fewer.png) |
 
 ---
 
@@ -616,7 +713,9 @@ Set the text to be included when a user clicks the Share this app button.  Note:
 
 ### Screenshots
 
-[![Custom Share Text](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setShareText.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setShareText.png)
+| Custom Share Text |
+| :---- |
+| [![Custom Share Text](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setShareText.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setShareText.png) |
 
 ---
 
@@ -661,29 +760,15 @@ After specifying your configuration for the different portions of the side menu,
 
 ### Screenshots
 
-[![Default build of Side Menu](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_built_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_built_default.png) [![Custom build of Side Menu](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_built_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_built_custom.png)
-
----
-
-## Open Print.IO
-
-Open Print.IO with configured options (required)
-
-| Parameter/Method | Options - Details |
+| Default | Custom |
 | :---- | :---- |
-| `open` | N/A |
-
-### Code Sample
-
-``` Objective-C
-[self.printIO open];
-```
+| [![Default build of Side Menu](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_built_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_built_default.png) | [![Custom build of Side Menu](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_built_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_built_custom.png) |
 
 ---
 
 ## Specify Terms & Conditions location
 
-Enable the terms and conditions link form control on the payment page and specify the URL to be loaded (in Safari)
+Enable the terms and conditions link form control on the payment page and specify the URL to be loaded (in Safari).  By default, the terms and conditions are not shown.
 
 | Parameter/Method | Options - Details |
 | :---- | :---- |
@@ -697,7 +782,9 @@ Enable the terms and conditions link form control on the payment page and specif
 
 ### Screenshots
 
-[![Custom Terms & Conditions control](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/termsAndConditionsURL.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/termsAndConditionsURL.png)
+| Default | T&C Visible |
+| :---- | :---- |
+| [![Custom Terms & Conditions control](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/termsAndConditionsURL_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/termsAndConditionsURL_no.png) | [![Custom Terms & Conditions control](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/termsAndConditionsURL_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/termsAndConditionsURL_yes.png) |
 
 ---
 
@@ -717,7 +804,9 @@ Specify an image file to use as the help icon in customize product view
 
 ### Screenshots
 
-[![Default Help button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForHelpButtonInCustomizeProduct_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForHelpButtonInCustomizeProduct_default.png) [![Custom Help button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForHelpButtonInCustomizeProduct_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForHelpButtonInCustomizeProduct_custom.png)
+| Default | Custom Icon |
+| :---- | :---- |
+| [![Default Help button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForHelpButtonInCustomizeProduct_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForHelpButtonInCustomizeProduct_default.png) | [![Custom Help button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForHelpButtonInCustomizeProduct_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForHelpButtonInCustomizeProduct_custom.png) |
 
 ---
 
@@ -737,13 +826,15 @@ Hide icon for Upload Instructions text in Photo Sources screen. Default value is
 
 ### Screenshots
 
-[![Show icon for upload instructions](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideIconForUplaodInstructions_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideIconForUplaodInstructions_no.png) [![Hide icon for upload instructions](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideIconForUplaodInstructions_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideIconForUplaodInstructions_yes.png)
+| Default | Visible |
+| :---- | :---- |
+| [![Show icon for upload instructions](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideIconForUplaodInstructions_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideIconForUplaodInstructions_no.png) | [![Hide icon for upload instructions](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/hideIconForUplaodInstructions_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/hideIconForUplaodInstructions_yes.png) |
 
 ---
 
-## Customize Help Pop-Up
+## Customize Help Balloon
 
-Set Pop up balloon in Customize Product screen
+Customize the help balloon on the Customize Product screen.
 
 | Parameter/Method | Options - Details |
 | :---- | :---- |
@@ -761,7 +852,9 @@ Set Pop up balloon in Customize Product screen
 
 ### Screenshots
 
-[![Default Help Pop-up](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPopUpWithImage_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPopUpWithImage_default.png) [![Custom Help Pop-up](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPopUpWithImage_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPopUpWithImage_custom.png)
+| Default | Custom |
+| :---- | :---- |
+| [![Default Help Pop-up](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPopUpWithImage_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPopUpWithImage_default.png) | [![Custom Help Pop-up](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPopUpWithImage_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPopUpWithImage_custom.png) |
 
 ---
 
@@ -790,27 +883,9 @@ NSArray *editButtons = [NSArray arrayWithObjects:
 
 ### Screenshots
 
-[![Editing buttons - Include All](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/imageEditorShowButtons_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/imageEditorShowButtons_include-all.png) [![Editing buttons - Change Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/imageEditorShowButtons_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/imageEditorShowButtons_change-order.png) [![Editing buttons - Show Select](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/imageEditorShowButtons_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/imageEditorShowButtons_include-fewer.png)
-
----
-
-## Remove Logo from Checkout
-
-Hide logo when user is in checkout flow
-
-| Parameter/Method | Options - Details |
-| :---- | :---- |
-| `removeLogoFromPaymentScreen` | YES, NO |
-
-### Code Sample
-
-``` Objective-C
-[self.printIO removeLogoFromPaymentScreen:YES];
-```
-
-### Screenshots
-
-[![Remove Logo from Checkout](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/removeLogoFromPaymentScreen_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/removeLogoFromPaymentScreen_yes.png) [![Show Logo in Checkout](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/removeLogoFromPaymentScreen_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/removeLogoFromPaymentScreen_no.png)
+| Include All | Change Order | Include Some |
+| :---- | :---- | :---- |
+| [![Editing buttons - Include All](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/imageEditorShowButtons_include-all.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/imageEditorShowButtons_include-all.png) | [![Editing buttons - Change Order](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/imageEditorShowButtons_change-order.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/imageEditorShowButtons_change-order.png) | [![Editing buttons - Show Select](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/imageEditorShowButtons_include-fewer.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/imageEditorShowButtons_include-fewer.png) |
 
 ---
 
@@ -848,14 +923,26 @@ Set Braintree encryption key for staging and production mode. By default, keys f
 
 ---
 
-## Opening Transition Style
+## SDK Opening Direction
 
-Set opening transition style when entering Print.IO.  Options are to have it slide up from the bottom, or in from the right side.
+Set opening transition direction when entering the Print.IO SDK.  Your options are to have it slide up from the bottom, or in from the right side.
 
 | Parameter/Method | Options - Details |
 | :---- | :---- |
 | `openWithOption` | `PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT`,  `PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM` |
 
-### Screenshots
+---
 
-[![Opening transition from bottom](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/openWithOption_bottom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/openWithOption_bottom.png) [![Opening transition from right](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/openWithOption_right.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/openWithOption_right.png)
+## Open Print.IO
+
+Open Print.IO with configured options (required)
+
+| Parameter/Method | Options - Details |
+| :---- | :---- |
+| `open` | N/A |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO open];
+```
