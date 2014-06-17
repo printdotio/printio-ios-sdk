@@ -402,7 +402,7 @@ Change Logo icon which is used on cart and confirmation screens
 
 | Default | Custom |
 | :---- | :---- |
-| TBD | TBD |
+| [![Default Logo](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/changeLogo_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/changeLogo_no.png) | [![Custom Logo](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/changeLogo_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/changeLogo_yes.png) |
 
 ---
 
@@ -570,7 +570,7 @@ Set the passed image as the thumbnail for the single photo template on the custo
 
 | Passed Photo | Photo as Thumb |
 | :---- | :---- |
-| ![Passed Photo](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/passed_photo.png) | [![Set Passed Image as Thumb for Single Photo Template](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPassedImageAsThumbForOnePhotoTemplate.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPassedImageAsThumbForOnePhotoTemplate.png) |
+| ![Passed Photo](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/passed_photo.jpg) | [![Set Passed Image as Thumb for Single Photo Template](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPassedImageAsThumbForOnePhotoTemplate.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPassedImageAsThumbForOnePhotoTemplate.png) |
 
 ---
 
