@@ -1,7 +1,7 @@
 
-# Customization of UI elements in customization.xml
+# XML Customization of UI elements
 
-## "Choose Country" screen
+## Choose Country screen
 
 ### Code Sample
 
