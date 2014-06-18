@@ -4,6 +4,8 @@ The following steps walk through all of the required options to get a working SD
 
 # Required Steps
 
+Each of these steps are required in order to create an applicaton using the Print.IO SDK.
+
 - Change Logo on payment page and order completion page
     - If no logo desired, would you prefer to hide it?
 - Change payment name on Paypal screen
@@ -14,7 +16,9 @@ The following steps walk through all of the required options to get a working SD
 - Set up Social accounts with different providers
 - Set up Parse account if push notifications are desired
 
-# Optional Step Checklist
+# Optional Steps
+
+These options are not all required, however many are recommended to offer a great experience to your users.
 
 ## General UI
 
