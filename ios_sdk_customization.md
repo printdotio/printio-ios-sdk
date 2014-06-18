@@ -4,7 +4,7 @@
 
 Path to XML customization file for setting background and font colors on buttons
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `customizationXML` | Specify path to XML file in application |
 
@@ -22,7 +22,7 @@ NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];
 
 Set status bar theme and display options.  statusBarDark being set to YES will result in the status bar icons and text being rendered in black (and the opposite results in white).  Setting the status bar to hidden will hide it from the user for a full-screen experience.  
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `statusBarDark` | YES, NO |
 | `hidden` | YES, NO |
@@ -47,7 +47,7 @@ _Note: The status bar background in the "light text" example was changed only to
 
 Customize top navigation bar colors and set an icon for the center to replace the page title.  If titleButtonIcon is nil, current page title will be shown.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `navigationBarColor` | Specify color |
 | `titleColor` | Specify color |
@@ -77,7 +77,7 @@ Customize top navigation bar colors and set an icon for the center to replace th
 
 Include a "Back", "Menu" and "Cart" button in the top nav along with the location text.  The default is NO.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `useThreeButtonsBarStyle` | YES, NO |
 
@@ -99,7 +99,7 @@ Include a "Back", "Menu" and "Cart" button in the top nav along with the locatio
 
 Override side menu behavior to slide from right side instead of left side
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `slideSideMenuFromRight` | YES, NO |
 
@@ -121,7 +121,7 @@ Override side menu behavior to slide from right side instead of left side
 
 Specify an image file to use as the Back button in the top nav
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `iconForBackButton` | Specify image file in application |
 
@@ -143,7 +143,7 @@ Specify an image file to use as the Back button in the top nav
 
 Set custom fonts across the application  (must include 4; can repeat; and array order corresponds to Light, Medium, Regular, Bold)
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `customFonts` | Any 4 .ttf or .otf files included in application |
 
@@ -165,9 +165,9 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 
 Change the loading GIF from the default
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
-| `setLoadingGIF` | Specify GIF included in application |
+| `setLoadingGIF` | Specify GIF file name without file extension |
 
 ### Code Sample
 
@@ -187,7 +187,7 @@ Change the loading GIF from the default
 
 Specify one or more of currency, language and country, which overrides the ability to select a different options from the side menu.  A specified country also overrides the ability to select a different option in the Featured Product view, if it's enabled)
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `currencyCode` | Three-letter currency code |
 | `languageCode` | Two-letter language code |
@@ -217,7 +217,7 @@ Specify one or more of currency, language and country, which overrides the abili
 
 Allow user to change country in featured products view
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `selectCountryInFeaturedProducts` | YES, NO |
 
@@ -239,7 +239,7 @@ Allow user to change country in featured products view
 
 Hide Category/Search view in Featured Products screen.  Default is NO
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `hideCategoriesInFeaturedProducts` | YES, NO |
 
@@ -261,7 +261,7 @@ Hide Category/Search view in Featured Products screen.  Default is NO
 
 Set whether photos are arranged automatically, manually, or up to the user (default is CHOOSE)
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `setPhotoArrangement` | `PIO_PHOTO_ARRANGEMENT_CHOOSE`, `PIO_PHOTO_ARRANGEMENT_AUTO`, `PIO_PHOTO_ARRANGEMENT_MANUAL` |
 
@@ -283,7 +283,7 @@ Set whether photos are arranged automatically, manually, or up to the user (defa
 
 Show custom help overlay when user is about to start editing image in Customize Product view.  No default included, setting an available image enables this feature.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `showHelpDialogWithImage` | Specify image included in application |
 
@@ -299,7 +299,7 @@ Show custom help overlay when user is about to start editing image in Customize 
 
 Specify an image file to use as the Add Photos button in the Customize Product view
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `iconForAddPhotosButton` | Specify image file in application |
 
@@ -321,9 +321,10 @@ Specify an image file to use as the Add Photos button in the Customize Product v
 
 Set visibility of toolbar in customize product view.  Default is YES, and which editing tools are shown is also configurable using the PIO_BUTTON_IMAGE_EDITOR settings
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
-| `showToolbarInCustomizeProduct` | YES,NO and Specify image included in application if desired |
+| `showToolbarInCustomizeProduct` | YES, NO |
+| `backgroundImage` | Specify image included in application |
 
 ### Code Sample
 
@@ -343,7 +344,7 @@ Set visibility of toolbar in customize product view.  Default is YES, and which 
 
 Set visibility of images list in customize product view
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `hideImageListInCustomizeProduct` | YES,NO |
 
@@ -365,7 +366,7 @@ Set visibility of images list in customize product view
 
 Change shopping cart icon and indicate whether to badge with number of products
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `iconForShoppingCart` | Specify image included in application |
 | `withNumberOfProducts` | YES, NO |
@@ -388,9 +389,9 @@ Change shopping cart icon and indicate whether to badge with number of products
 
 Change Logo icon which is used on cart and confirmation screens
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
-| `go` | Specify image included in application |
+| `changeLogo` | Specify file name of image, without extension |
 
 ### Code Sample
 
@@ -410,7 +411,7 @@ Change Logo icon which is used on cart and confirmation screens
 
 Hide logo when user is in checkout flow
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `removeLogoFromPaymentScreen` | YES, NO |
 
@@ -432,7 +433,7 @@ Hide logo when user is in checkout flow
 
 Remove plus sign from 'Add More Products' button
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `removePlusFromAddMoreProductsButton` | YES, NO |
 
@@ -454,7 +455,7 @@ Remove plus sign from 'Add More Products' button
 
 Required step to configure which photo sources you would like to offer within your application.  The order in which you include the photo sources will determine the order in which they are displayed for both the side menu and select photo sources step within the Customize Product view.  The iOS Camera Roll is not displayed in the side menu.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `availablePhotoSources` | Include one or more PIO_SM_PHOTOSOURCES |
 | `PIO_SM_PHONE` | include the iOS Camera Roll |
@@ -505,7 +506,7 @@ _Note: Only 6 photo sources can be displayed in this view, including the iOS Cam
 
 It is possible to pass one or more photos directly into the application.  This is helpful when you would like to sell a prints from specific asset or group of assets.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `images` | Specify image or photo url in application |
 
@@ -514,7 +515,9 @@ It is possible to pass one or more photos directly into the application.  This i
 ``` Objective-C
 UIImage *image1 = [UIImage imageNamed:@"dream.jpg"];
 UIImage *image2 = [UIImage imageNamed:@"thunder.jpg"];
-NSArray *images = [NSArray arrayWithObjects:image1, image2, nil];
+NSString *image3 = @"http://cdn.print.io/site-assets/HomepageHeroBg2.jpg";
+
+NSArray *images = [NSArray arrayWithObjects:image1, image2, image3, @"http://cdn.print.io/site-assets/HomepageProductsBg.jpg", nil];
 [self.printIO images:images];
 ```
 
@@ -524,7 +527,7 @@ NSArray *images = [NSArray arrayWithObjects:image1, image2, nil];
 
 When passing one or more photos to the SDK, you can disable photo sources so that the user may only select from the images you've provided.  The result of this setting is that photo sources will not be available in the side menu and the photo source step will be skipped in the customize product view.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `disablePhotoSourcesWhenImagesArePassedIn` | YES, NO |
 
@@ -540,7 +543,7 @@ When passing one or more photos to the SDK, you can disable photo sources so tha
 
 When passing a photo to the SDK, you can disable the photo source step within the customize product view when a user selects the single photo template.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `disablePhotoSourcesForOnePhotoTemplate` | YES, NO |
 
@@ -556,7 +559,7 @@ When passing a photo to the SDK, you can disable the photo source step within th
 
 Set the passed image as the thumbnail for the single photo template on the customize product view.  This is currently supported for Canvas Wraps and Framed Prints
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `setPassedImageAsThumbForOnePhotoTemplate` | YES, NO |
 
@@ -578,7 +581,7 @@ Set the passed image as the thumbnail for the single photo template on the custo
 
 To enable the side menu, simply include the default method below and pass `nil` for the configuration options.  To customize the side menu icon, pass an image to the method.  To set the background color, just pass a color value to the method.  If `nil` for either, a default will be used instead.  This step is required to configure following side menu options.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `useSideMenuWithMenuIcon` | `nil`, specify image in application for menu icon |
 | `background` | `nil`, specify color for side menu background |
@@ -605,7 +608,7 @@ To enable the side menu, simply include the default method below and pass `nil` 
 
 Create array of buttons, which will be displayed in the upper section of the side menu.  The button display order in the application will correspond to their place in the array.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `PIO_SM_SEARCH_BAR` | include Search field |
 | `PIO_SM_EXIT_BUTTON` | include Exit Application button |
@@ -636,7 +639,7 @@ NSArray *buttons = [NSArray arrayWithObjects:
 
 Create array of option buttons, which will be displayed in the middle section of the side menu.  The option button display order in the application will correspond to their place in the array.  Please note that these options will be overridden if you specify a currency, country or language elsewhere in your application.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `PIO_SM_CHANGE_CURRENCY` | include Change Currency button |
 | `PIO_SM_CHANGE_COUNTRY` | include Change Country button |
@@ -666,7 +669,7 @@ _Please note that photo source button configuration is automatically set [based 
 
 Create array of secondary info buttons, which will be displayed in the lower section of the side menu.  The info button display order in the application will correspond to their place in the array.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `PIO_SM_PRICING_CHART` | include Pricing Chart button |
 | `PIO_SM_SHARE_APP` | include Share App button |
@@ -701,7 +704,7 @@ NSArray *options = [NSArray arrayWithObjects:
 
 Set the text to be included when a user clicks the Share this app button.  Note: This option is set outside of the side menu object.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `setShareText` | Text string, can include URL |
 
@@ -723,7 +726,7 @@ Set the text to be included when a user clicks the Share this app button.  Note:
 
 After specifying your configuration for the different portions of the side menu, you need to build it with all of the assicated buttons, options, info items and labels.  You can also set a background image for your buttons.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `sideMenuAddButtons` |  |
 | `options` | sets options section |
@@ -770,7 +773,7 @@ After specifying your configuration for the different portions of the side menu,
 
 Enable the terms and conditions link form control on the payment page and specify the URL to be loaded (in Safari).  By default, the terms and conditions are not shown.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `termsAndConditionsURL` | Text string containing URL |
 
@@ -792,7 +795,7 @@ Enable the terms and conditions link form control on the payment page and specif
 
 Specify an image file to use as the help icon in customize product view
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `iconForHelpButtonInCustomizeProduct` | Specify image file in application |
 
@@ -814,7 +817,7 @@ Specify an image file to use as the help icon in customize product view
 
 Hide icon for Upload Instructions text in Photo Sources screen. Default value is NO.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `hideIconForUploadInstructions` | YES, NO |
 
@@ -836,7 +839,7 @@ Hide icon for Upload Instructions text in Photo Sources screen. Default value is
 
 Customize the help balloon on the Customize Product screen.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `setPopUpWithImage` | Specify image file in application |
 | `text` | Text string for background |
@@ -862,13 +865,9 @@ Customize the help balloon on the Customize Product screen.
 
 Set which buttons will be visible in Image Editor toolbar, display order in app will correspond to place in array. By default, all buttons are visible.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
-| `imageEditorShowButtons` |  |
-| `PIO_BUTTON_IMAGE_EDITOR_INFO` | include Info button |
-| `PIO_BUTTON_IMAGE_EDITOR_ROTATE` | include Rotate button |
-| `PIO_BUTTON_IMAGE_EDITOR_EDIT_TEXT` | include Text button |
-| `PIO_BUTTON_IMAGE_EDITOR_EFFECTS` | include Effects button |
+| `imageEditorShowButtons` | `PIO_BUTTON_IMAGE_EDITOR_INFO`, `PIO_BUTTON_IMAGE_EDITOR_ROTATE`, `PIO_BUTTON_IMAGE_EDITOR_EDIT_TEXT`, `PIO_BUTTON_IMAGE_EDITOR_EFFECTS` |
 
 ### Code Sample
 
@@ -893,10 +892,10 @@ NSArray *editButtons = [NSArray arrayWithObjects:
 
 Set PayPal's client ids, for both modes, staging and production. Default values are client ids from PrintIO.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
-| `setPayPalStagingClientID` | N/A |
-| `productionClientID` | N/A |
+| `setPayPalStagingClientID` | (String value) staging clientID provided by PayPal |
+| `productionClientID` | (String value) production clientID provided by PayPal |
 
 ### Code Sample
 
@@ -910,10 +909,10 @@ Set PayPal's client ids, for both modes, staging and production. Default values 
 
 Set Braintree encryption key for staging and production mode. By default, keys from Print.IO will be used.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
-| `setBraintreeStagingEncryptionKey` | N/A |
-| `productionEncryptionKey` | N/A |
+| `setBraintreeStagingEncryptionKey` | (String value) staging encryption key provided by Braintree |
+| `productionEncryptionKey` | (String value) production encryption key provided by Braintree |
 
 ### Code Sample
 
@@ -927,7 +926,7 @@ Set Braintree encryption key for staging and production mode. By default, keys f
 
 Set opening transition direction when entering the Print.IO SDK.  Your options are to have it slide up from the bottom, or in from the right side.
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `openWithOption` | `PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT`,  `PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM` |
 
@@ -937,7 +936,7 @@ Set opening transition direction when entering the Print.IO SDK.  Your options a
 
 Open Print.IO with configured options (required)
 
-| Parameter/Method | Options - Details |
+| Method | Parameters - Options |
 | :---- | :---- |
 | `open` | N/A |
 
