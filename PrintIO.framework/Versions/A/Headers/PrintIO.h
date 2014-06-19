@@ -482,6 +482,27 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)termsAndConditionsURL:(NSURL *)url;
 
+/**
+ Provide text for "How It Works" screen
+ 
+ @params text Text
+ */
+- (void)setHowItWorksText:(NSString *)text;
+
+/**
+ Provide text for "About" screen
+ 
+ @param text Text
+ */
+- (void)setAboutText:(NSString *)text;
+
+/**
+ Enable option to share on facebook and get extra deal
+ 
+ @param set Default value is NO
+ */
+- (void)enableShareOnFacebookDeal:(BOOL)set;
+
 #pragma mark - Steps
 
 /**
