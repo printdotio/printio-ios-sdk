@@ -8,7 +8,10 @@ Each of these steps are required in order to create an applicaton using the Prin
 
 - Change Logo on payment page and order completion page
     - If no logo desired, would you prefer to hide it?
-- Change payment name on Paypal screen
+- Change partner name
+    - on Paypal screen
+    - on About button in side menu
+    - on Navigation bar for About and How it Works views
 - Include proper recipe ID
 - Submit staging orders for testing purposes
 - Edit "How it works" text to not say Hellopics/Print.IO
