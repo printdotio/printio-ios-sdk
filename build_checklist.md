@@ -6,18 +6,17 @@ The following steps walk through all of the required options to get a working SD
 
 Each of these steps are required in order to create an applicaton using the Print.IO SDK.
 
+- Include proper recipe ID
 - Change Logo on payment page and order completion page
     - If no logo desired, would you prefer to hide it?
 - Change partner name
     - on Paypal screen
     - on About button in side menu
     - on Navigation bar for About and How it Works views
-- Include proper recipe ID
-- Submit staging orders for testing purposes
-- Edit "How it works" text to not say Hellopics/Print.IO
 - Include custom text for Share this app on FB and Rate Our App (default is Hellopics text)
 - Set up Social accounts with different providers
 - Set up Parse account if push notifications are desired
+- Submit staging orders for testing purposes
 
 # Optional Steps
 
