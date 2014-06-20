@@ -185,6 +185,28 @@ rightButtonBackgroundColor:(UIColor *)rColor
  backgroundImageForButtons:(NSString *)path;
 
 /**
+ Hide 'Options' header in Side Menu
+ */
+- (void)sideMenuHideOptionsHeader:(BOOL)set;
+
+/**
+ Hide 'Accounts' header in Side Menu
+ */
+- (void)sideMenuHideAccountsHeader:(BOOL)set;
+
+/**
+ Hide 'Info' header in Side Menu
+ */
+- (void)sideMenuHideInfoHeader:(BOOL)set;
+
+/**
+ Show 'Options' section as a list
+ 
+ @param set Default value is NO
+ */
+- (void)sideMenuShowOptionsAsList:(BOOL)set;
+
+/**
  Slide side menu from right. Default value is NO.
  
  @param set Default value is NO.
@@ -201,14 +223,34 @@ rightButtonBackgroundColor:(UIColor *)rColor
 #pragma mark - Featured Products
 
 /**
- Set country on Featured Products screen instead on First screen. Default value is NO.
- */
-- (void)selectCountryInFeaturedProducts:(BOOL)set;
-
-/**
  Hide category+search view on Featured Products screen. Default value is NO;
  */
 - (void)hideCategoriesInFeaturedProducts:(BOOL)hide;
+
+/**
+ Set country on Featured Products screen instead on First screen.
+ 
+ @param set Default value is NO.
+ @param color Background color.
+ */
+- (void)selectCountryInFeaturedProducts:(BOOL)set
+                        backgroundColor:(UIColor *)color;
+
+/**
+ Change title on Featured Products screen
+ 
+ @param title New title
+ */
+- (void)setTitleForFeaturedProductsScreen:(NSString *)title;
+
+/**
+ Change label text color on items in list
+ 
+ @param lColor Text color for left label
+ @param rColor Text color for right item
+ */
+- (void)featuredProductsLeftLabelTextColor:(UIColor *)lColor
+                       rightLabelTextColor:(UIColor *)rColor;
 
 
 #pragma mark - Photo Sources
@@ -502,6 +544,21 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param set Default value is NO
  */
 - (void)enableShareOnFacebookDeal:(BOOL)set;
+
+/**
+ Set url link to facebook page e.g. 'fb://profile/642169949144369'
+ 
+ @param urlS link to page
+ */
+- (void)setLikeUsOnFacebookUrl:(NSString *)urlS;
+
+/**
+ Set application id from apple store, used for 'Rate Our App'
+ option in side menu. e.g '731593327'
+ 
+ @param appID application id
+ */
+- (void)setAppIDFromAppleStore:(NSString *)appID;
 
 #pragma mark - Steps
 
