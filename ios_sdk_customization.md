@@ -427,6 +427,64 @@ Hide logo when user is in checkout flow
 | :---- | :---- |
 | [![Show Logo in Checkout](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/removeLogoFromPaymentScreen_no.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/removeLogoFromPaymentScreen_no.png) | [![Remove Logo from Checkout](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/removeLogoFromPaymentScreen_yes.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/removeLogoFromPaymentScreen_yes.png) |
 
+--
+
+## Set Partner/Payee Name
+
+It is encouraged that you set a partner name to override the default.  This will appear at the top of the About and How it Works views, as well as on the checkout and Paypal screens.
+
+| Parameter/Method | Options - Details |
+| :- | :- |
+| `payeeName` | Text string |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO payeeName:@"Partner Name"];
+```
+---
+
+## Set "About" Text
+
+Allows you to customize the text content of the About page to fit your application's brand and voice
+
+| Parameter/Method | Options - Details |
+| :- | :- |
+| `setAboutText` | Text string, can use `\n` to include line breaks |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setAboutText:@
+        "Our Mission is to foster creative individuality and bring on-demand printed products to people all over the world. We hope to surround people with their favorite memories and brands, to remind them of the better things in life, improving the world one creation at a time.\n\n"
+        "We have an unwavering commitment to quality and customer satisfaction. If you\'re not happy, we\'re not happy. That\'s why we go the extra mile to insure that we carry the highest quality products, printed by the best printers, at the best possible prices.\n\n"
+        "We have print facilities all over the world, so whether you\'re in the USA, India, or Laos, we can ship to you! Since inception, we\'ve shipped to over 100 countries."
+    ];
+```
+
+---
+
+## Set "How it Works" Text
+
+Allows you to customize the text content of the How it Works page to fit your application's brand and voice
+
+| Parameter/Method | Options - Details |
+| :- | :- |
+| `setHowItWorksText` | Text string, can use `\n` to include line breaks |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setHowItWorksText:@
+        "1. Browse through our selection of products and choose the item or items you would like to purchase. We carry the highest quality products, printed by the best printers, at the best possible prices.\n\n"
+        "2. Customize your item. Choose the size, shape, layout and product options you like best.\n\n"
+        "3. Upload your images, or designs. Import from your phone, Instagram, Facebook, Flickr, Picasa, or Dropbox.\n\n"
+        "4. Ship to any country in the world! Specify your location and choose shipping method. We\'ve shipped to over 100 countries and counting.\n\n"
+        "5. Pay using PayPal or the credit card of your choice. Our custom credit card imaging system makes it easier than ever to pay! All of your credit card info is automatically entered with one simple photo.\n\n"
+        "6. Enjoy! We place the utmost importance on quality and customer satisfaction. We know you\'ll love the products! Enjoy."
+    ];
+```
+
 ---
 
 ## Configure Add More Products button
@@ -929,6 +987,22 @@ Set opening transition direction when entering the Print.IO SDK.  Your options a
 | Method | Parameters - Options |
 | :---- | :---- |
 | `openWithOption` | `PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT`,  `PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM` |
+
+---
+
+## Enable Facebook Share Deal
+
+Offer your users a special deal if they share your application on Facebook!  Just include this method with a value of "YES" to enable it.
+
+| Method | Parameters - Options |
+| :- | :- |
+| `enableShareOnFacebookDeal` | YES |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO enableShareOnFacebookDeal:YES];
+```
 
 ---
 

@@ -10,9 +10,8 @@ Each of these steps are required in order to create an applicaton using the Prin
 - Change Logo on payment page and order completion page
     - If no logo desired, would you prefer to hide it?
 - Change partner name
-    - on Paypal screen
-    - on About button in side menu
-    - on Navigation bar for About and How it Works views
+- Change "How it Works" copy
+- Change "About" copy
 - Include custom text for Share this app on FB and Rate Our App (default is Hellopics text)
 - Set up Social accounts with different providers
 - Set up Parse account if push notifications are desired
@@ -39,6 +38,7 @@ These options are not all required, however many are recommended to offer a grea
 - Would you like to include a "Back", "Menu" and "Cart" button in the top nav along with the location text?
 - Will you use a custom icon for the back button?
 - When entering the SDK, would you like it to open from the bottom or the right side?
+- Would you like to offer your users a special deal for sharing the app on Facebook?
 
 ## Localization Preferences
 
