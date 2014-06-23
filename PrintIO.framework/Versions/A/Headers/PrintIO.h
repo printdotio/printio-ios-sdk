@@ -121,6 +121,14 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)useThreeButtonsBarStyle:(BOOL)set;
 
+/**
+ Set colors for navigation bar with "Save to" shopping cart button
+ */
+- (void)navigationBarSaveToCartBackgroundColor:(UIColor *)bcgColor
+                                    titleColor:(UIColor *)titleColor
+                         buttonBackgroundColor:(UIColor *)btnBcgColor
+                              buttonTitleColor:(UIColor *)btnTitleColor;
+
 #pragma mark - Side Menu
 
 /**
