@@ -8,7 +8,7 @@ The Print.IO SDK also offers the ability to send push notifications from your ap
 
 # Beginning to Develop with the SDK
 
-- Get started with the Print.IO SDK by going through our [Project Setup & Prerequisites guide](https://github.com/printdotio/printio-ios-sdk/blob/gh-pages/quick_start.md).
+- Get started with the Print.IO SDK by going through our [Project Setup & Prerequisites guide](https://github.com/printdotio/printio-ios-sdk/blob/gh-pages/project_setup.md).
 - If you'd like a little more guidance, you can refer to our [Quick Start code](https://github.com/printdotio/printio-ios-sdk/blob/gh-pages/quick_start.md).
 - For in depth descriptions of the in-code customization options available, see our [SDK customization document](https://github.com/printdotio/printio-ios-sdk/blob/gh-pages/ios_sdk_customization.md).
 - To learn more about what customization options are available via XML configuration, see our [XML customization document](https://github.com/printdotio/printio-ios-sdk/blob/gh-pages/xml_customization.md).
