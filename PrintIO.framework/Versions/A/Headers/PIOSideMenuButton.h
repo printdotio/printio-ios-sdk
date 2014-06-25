@@ -15,6 +15,7 @@
 @property (nonatomic, strong) NSString *iconPathSelected;
 
 @property (nonatomic, assign) float fontSize;
+@property (nonatomic, assign) float fontSizeOfTitle;
 
 @property (nonatomic, strong) UIColor *textColor;
 

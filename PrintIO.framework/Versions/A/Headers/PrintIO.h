@@ -260,6 +260,29 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)featuredProductsLeftLabelTextColor:(UIColor *)lColor
                        rightLabelTextColor:(UIColor *)rColor;
 
+/**
+ Set background image on Featured Products screen
+ 
+ @param imagePath Path to image file.
+ */
+- (void)featuredProductsSetBackgroungImage:(NSString *)imagePath;
+
+#pragma mark - Product Details
+
+/**
+ Show title below navigation bar on Product Details screen
+ 
+ @param set Default value is NO
+ */
+- (void)productDetailsShowTitleBelowNavBar:(BOOL)set;
+
+/**
+ Show menu button in navigation bar on Product Details screen
+ 
+ @param set Default value is NO
+ */
+- (void)productDetailsShowMenuBtnInNavBar:(BOOL)set;
+
 
 #pragma mark - Photo Sources
 
@@ -413,6 +436,14 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)setPopUpWithImage:(NSString *)path text:(NSString *)text textColor:(UIColor *)textColor;
 
 /**
+ Set time of visibility for Double Tap ballon in Customize Product screen
+ 
+ @param timeInSeconds Time in seconds. Set -1 if ballon should be visible all the time.
+                      Default time is 10 seconds.
+ */
+- (void)doubleTapBallonVisibilityTime:(int)timeInSeconds;
+
+/**
  Show custom dialog for helping user how to edit a photo
  
  @param Path to image.
@@ -447,6 +478,28 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)removePlusFromAddMoreProductsButton:(BOOL)remove;
 
+/**
+ Change title for "Shopping Cart" screen
+ 
+ @param title New title
+ */
+- (void)setTitleForShoppingCart:(NSString *)title;
+
+/**
+ Customize 'Add More Products' button
+ 
+ @param title New title for button
+ @param iconPath Path to icon file. Default is nil.
+ */
+- (void)customizeAddMoreProductButton:(NSString *)title icon:(NSString *)iconPath;
+
+/**
+ Change icon for Back button on Shopping Cart screen
+ 
+ @param iconPath Path to icon file. Default is nil.
+ */
+- (void)shoppingCartBackButtonIcon:(NSString *)iconPath;
+
 #pragma mark - Payment screen
 
 /**
@@ -470,6 +523,45 @@ rightButtonBackgroundColor:(UIColor *)rColor
  Set language code
  */
 - (void)languageCode:(NSString *)languageCode;
+
+#pragma mark - Shipping Addresses screen
+
+/**
+ Show plus sign on 'Add Shipping Address' button
+ 
+ @param set Default value is NO
+ */
+- (void)showPlusSignOnAddButton:(BOOL)set;
+
+#pragma mark - Order Completed screen
+
+/**
+ Change title for 'Order Completed' screen
+ 
+ @param title New title
+ */
+- (void)setTitleForOrderCompletedScreen:(NSString *)title;
+
+/**
+ Change icon for company logo on 'Order Completed' screen
+ 
+ @param iconPath File path to icon
+ */
+- (void)setIconForOrderCompletedScreen:(NSString *)iconPath;
+
+/**
+ Change company message below company logo on 'Order Completed' screen
+ 
+ @param message New message
+ */
+- (void)setMessageForOrderCompletedScreen:(NSMutableAttributedString *)message;
+
+/**
+ Change function of 'Close' button on 'Order Completed' screen
+ 
+ @param set Default value is NO
+ */
+- (void)orderCompletedScreenCloseButtonShouldPerformBack:(BOOL)set;
 
 #pragma mark - Other Customization
 
@@ -591,6 +683,11 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param options Array of PIOVariantOption objects. Pass 'color' with Case Style option
  */
 - (void)setVariantsOptions:(NSArray *)options;
+
+/**
+ Change title for 'Customization Options' screen
+ */
+- (void)setTitleForChooseOptionsScreen:(NSString *)title;
 
 #pragma mark - Push Notifications
 
