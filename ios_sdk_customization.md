@@ -215,16 +215,18 @@ Specify one or more of currency, language and country, which overrides the abili
 
 ## Select Country Bar
 
-Allow user to change country in featured products view
+Allow user to change country in featured products view and specify a color for the background of the control.
 
 | Method | Parameters - Options |
 | :---- | :---- |
 | `selectCountryInFeaturedProducts` | YES, NO |
+| `backgroundColor` | Specify color for background of country selection bar |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO selectCountryInFeaturedProducts:NO];
+[self.printIO selectCountryInFeaturedProducts:NO
+    backgroundColor:[UIColor colorWithRed:26.0/255.0 green:188.0/255.0 blue:156.0/255.0 alpha:255.0/255.0]];
 ```
 
 ### Screenshots
@@ -370,6 +372,8 @@ Change shopping cart icon and indicate whether to badge with number of products
 | :---- | :---- |
 | `iconForShoppingCart` | Specify image included in application |
 | `withNumberOfProducts` | YES, NO |
+| `labelPosition` | CGpoint-lposition for label |
+| `textColor` | Specify color for label text |
 
 ### Code Sample
 
@@ -673,6 +677,9 @@ Create array of buttons, which will be displayed in the upper section of the sid
 | `PIO_SM_PRODUCTS` | include Products button |
 | `PIO_SM_FEATURED_PRODUCTS` | include Featured Products button |
 | `PIO_SM_VIEW_CART` | include Shopping Cart button |
+| `PIO_SM_SHARE_WITH_IMAGE` | include Share with Image button |
+| `PIO_SM_EMAIL_SUPPORT` | include Email Support button |
+| `PIO_SM_HELP` | include Help button |
 
 ### Code Sample
 
@@ -682,6 +689,9 @@ NSArray *buttons = [NSArray arrayWithObjects:
     [[PIOSideMenuButton alloc]initWithType:PIO_SM_EXIT_BUTTON],
     [[PIOSideMenuButton alloc]initWithType:PIO_SM_PRODUCTS],
     [[PIOSideMenuButton alloc]initWithType:PIO_SM_FEATURED_PRODUCTS],
+    [[PIOSideMenuButton alloc]initWithType:PIO_SM_SHARE_WITH_IMAGE],
+    [[PIOSideMenuButton alloc]initWithType:PIO_SM_EMAIL_SUPPORT],
+    [[PIOSideMenuButton alloc]initWithType:PIO_SM_HELP],
     [[PIOSideMenuButton alloc]initWithType:PIO_SM_VIEW_CART], nil];
 ```
 
@@ -703,11 +713,15 @@ Create array of option buttons, which will be displayed in the middle section of
 | `PIO_SM_CHANGE_COUNTRY` | include Change Country button |
 | `PIO_SM_CHANGE_LANGUAGE` | include Change Language button |
 
+### Code Sample
+
+``` Objective-C
 NSArray *options = [NSArray arrayWithObjects:  
     [[PIOSideMenuButton alloc]initWithType:PIO_SM_CHANGE_CURRENCY],
     [[PIOSideMenuButton alloc]initWithType:PIO_SM_CHANGE_COUNTRY],
     [[PIOSideMenuButton alloc]initWithType:PIO_SM_CHANGE_LANGUAGE]
 nil];
+```
 
 ### Screenshots
 
@@ -824,6 +838,23 @@ After specifying your configuration for the different portions of the side menu,
 | Default | Custom |
 | :---- | :---- |
 | [![Default build of Side Menu](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_built_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_built_default.png) | [![Custom build of Side Menu](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/side-menu_built_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/side-menu_built_custom.png) |
+
+---
+
+## Specify Font Size for Side Menu Button Text
+
+You can specify the font size of the text on the side menu buttons.
+
+| Method | Parameters - Options |
+| :- | :- |
+| `fontSizeOfTitle` | Font size, in points |
+
+### Code Sample
+
+``` Objective-C
+PIOSSideMenuButton *btnFb = [[PIOSideMenuButton alloc]initWithType:PIO_SM_FACEBOOK];
+btnFb.fontSizeOfTitle = 11.0;
+```
 
 ---
 
@@ -1019,3 +1050,349 @@ Open Print.IO with configured options (required)
 ``` Objective-C
 [self.printIO open];
 ```
+
+---
+
+
+## Like on Facebook URL
+
+| Method | Parameters - Options |
+| :- | :- |
+| `setLikeUsOnFacebookUrl` | Text string for Facebook URL |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setLikeUsOnFacebookUrl:@"fb://page/642169949144369"];
+```
+
+---
+
+## Apple Store App ID
+
+Set the ID for your application in the App Store so that your users can submit ratings
+
+| Method | Parameters - Options |
+| :- | :- |
+| `setAppIDFromAppleStore` | Text string for numeric application ID |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setAppIDFromAppleStore:@"731593327"];
+```
+
+---
+
+## Hide Side Menu Headers
+
+You can hide some or all of the headers for the side menu sections.  The default for all is NO.
+
+| Method | Parameters - Options |
+| :- | :- |
+| `sideMenuHideOptionsHeader` | YES, NO |
+| `sideMenuHideAccountsHeader` | YES, NO |
+| `sideMenuHideInfoHeader` | YES, NO |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO sideMenuHideOptionsHeader:YES];
+[self.printIO sideMenuHideAccountsHeader:YES];
+[self.printIO sideMenuHideInfoHeader:YES];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+## Show Localization Options as a Vertical List
+
+Instead of displaying localization options horizonally, you can instead choose to stack them in a vertical list.  The default is NO.
+
+| Method | Parameters - Options |
+| :- | :- |
+| `sideMenuShowOptionsAsList` | YES, NO |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO sideMenuShowOptionsAsList:YES];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Save to Cart Button
+
+Allows customization of the "Save to Cart" button.
+
+| Method | Parameters - Options |
+| :- | :- |
+| `navigationBarSaveToCartBackgroundColor` |  |
+| `titleColor` |  |
+| `buttonBackgroundColor ` |  |
+| `buttonTitleColor` |  |
+
+### Code Sample
+
+``` Objective-C
+navigationBarSaveToCartBackgroundColor
+    titleColor
+    buttonBackgroundColor
+    buttonTitleColor
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Featured Products Background Image
+
+Allows you to specify a background image for the Featured Products view
+
+| Method | Parameters - Options |
+| :- | :- |
+| `featuredProductsSetBackgroundImage` | Specify image file in application |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO featuredProductsSetBackgroundImage:[[NSBundle mainBundle]pathForResource:@"someBackgroundImage" ofType:@"png"]];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Set Help Balloon Visibility Duration
+
+Customize the how many seconds the editing help balloon is visible for in the customize product view.  The default time is 10 seconds and `-1` means it will always be visible.
+
+| Method | Parameters - Options |
+| :- | :- |
+| `doubleTapBalloonVisibilityTime` | Number of seconds to show, `-1` shows permanently |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO doubleTapBalloonVisibilityTime:4];
+```
+
+---
+
+## Show Plus Sign on Add Shipping Address Button
+
+Allows you to set whether to prepend a plus sign before the "Add Shipping Address" button on the Shipping Address management screen
+
+| Method | Parameters - Options |
+| :- | :- |
+| `showPlusSignOnAddButton` | YES, NO |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO showPlusSignOnAddButton:YES];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Shopping Cart Title
+
+Customize the title for the Shopping Cart.  Default value is "Shopping Cart"
+
+| Method | Parameters - Options |
+| :- | :- |
+| `setTitleForShoppingCart` | String |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setTitleForShoppingCart:@"Cart"];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+## Featured Products Title
+
+Customize the title for the Featured Products screen.  Default value is "Featured Products"
+
+| Method | Parameters - Options |
+| :- | :- |
+| `setTitleForFeaturedProducts` | String |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setTitleForFeaturedProductsScreen:@"Awesome Items"];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Customize Add More Product Button
+
+Change the text and icon for the "Add More Products" button.
+
+| Method | Parameters - Options |
+| :- | :- |
+| `customizeAddMoreProductButton` | String for button text |
+| `icon` | Specify image in application |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO customizeAddMoreProductButton:@"Keep Shopping"
+    icon:[[NSBundle mainBundle]pathForResource:@"someIcon" ofType:@"png"]];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Customize Back Button in Shopping Cart
+
+Customize the icon for the back button in the Shopping Cart screen
+
+| Method | Parameters - Options |
+| :- | :- |
+| `shoppingCartBackButtonIcon` | Specify image in application |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO shoppingCartBackButtonIcon:[[NSBundle mainBundle]pathForResource:@"someIcon" ofType:@"png"]];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Customize Order Completed Screen
+
+Customize the title, icon and message on the Order Completed screen.  You can also set whether the close button should exit the SDK or perform a back operation (default is exit).
+
+| Method | Parameters - Options |
+| :- | :- |
+| `setTitleForOrderCompletedScreen` | String |
+| `setIconForOrderCompletedScreen` | Specify image in application |
+| `setMessageForOrderCompletedScreen` | String |
+| `orderCompletedScreenCloseButtonShouldPerformBack` | YES, NO |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setTitleForOrderCompletedScreen:@"Great Success!"];
+[self.printIO setIconForOrderCompletedScreen:[[NSBundle mainBundle]pathForResource:@"someIcon" ofType:@"png"]];
+[self.printIO setMessageForOrderCompletedScreen:@"Excellent, you have successfully ordered some great products! \n\n Hang on, they will be on their way soon!"];
+[self.printIO orderCompletedScreenCloseButtonShouldPerformBack:YES];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Product Detail Screen Navigation Bar Settings
+
+Customize the title location and whether the menu button is displayed in the menu bar on the Product Detail screen.  The defaults for both are NO.
+
+| Method | Parameters - Options |
+| :- | :- |
+| `productDetailsShowTitleBelowNavBar` | YES, NO |
+| `productDetailsShowMenuBtnInNavBar` | YES, NO |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO productDetailsShowTitleBelowNavBar:YES];
+[self.printIO productDetailsShowMenuBtnInNavBar:YES];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Set Title for Photo Sources Screen
+
+Customize the title on the photo sources screen.
+
+| Method | Parameters - Options |
+| :- | :- |
+| `setTitleForPhotoSourcesScreen` | String |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setTitleForPhotoSourcesScreen:@"Select Photos"];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Hide Photo Sources in Side Menu
+
+Customize the title on the photo sources screen.  Default value is NO.
+
+| Method | Parameters - Options |
+| :- | :- |
+| `hidePhotoSourcesInSideMenu` | YES, NO |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO hidePhotoSourcesInSideMenu:YES];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Customize Choose Country Screen
+
+Set a title and/or the visibility of the search icon in the Choose Country Screen.
+
+| Method | Parameters - Options |
+| :- | :- |
+| `setTitleForChooseCountryScreen` | String |
+| `hideSearchIconInChooseCountryScreen` | YES, NO |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setTitleForChooseCountryScreen:@"Where you at?"];
+[self.printIO hideSearchIconInChooseCountryScreen:YES];
+```
+
+### Screenshots
+
+_Coming Soon_
