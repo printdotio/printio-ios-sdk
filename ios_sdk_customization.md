@@ -438,7 +438,7 @@ Hide logo when user is in checkout flow
 It is encouraged that you set a partner name to override the default.  This will appear at the top of the About and How it Works views, as well as on the checkout and Paypal screens.
 
 | Parameter/Method | Options - Details |
-| :- | :- |
+| :---- | :---- |
 | `payeeName` | Text string |
 
 ### Code Sample
@@ -453,7 +453,7 @@ It is encouraged that you set a partner name to override the default.  This will
 Allows you to customize the text content of the About page to fit your application's brand and voice
 
 | Parameter/Method | Options - Details |
-| :- | :- |
+| :---- | :---- |
 | `setAboutText` | Text string, can use `\n` to include line breaks |
 
 ### Code Sample
@@ -473,7 +473,7 @@ Allows you to customize the text content of the About page to fit your applicati
 Allows you to customize the text content of the How it Works page to fit your application's brand and voice
 
 | Parameter/Method | Options - Details |
-| :- | :- |
+| :---- | :---- |
 | `setHowItWorksText` | Text string, can use `\n` to include line breaks |
 
 ### Code Sample
@@ -846,7 +846,7 @@ After specifying your configuration for the different portions of the side menu,
 You can specify the font size of the text on the side menu buttons.
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `fontSizeOfTitle` | Font size, in points |
 
 ### Code Sample
@@ -1026,7 +1026,7 @@ Set opening transition direction when entering the Print.IO SDK.  Your options a
 Offer your users a special deal if they share your application on Facebook!  Just include this method with a value of "YES" to enable it.
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `enableShareOnFacebookDeal` | YES |
 
 ### Code Sample
@@ -1057,7 +1057,7 @@ Open Print.IO with configured options (required)
 ## Like on Facebook URL
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `setLikeUsOnFacebookUrl` | Text string for Facebook URL |
 
 ### Code Sample
@@ -1073,7 +1073,7 @@ Open Print.IO with configured options (required)
 Set the ID for your application in the App Store so that your users can submit ratings
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `setAppIDFromAppleStore` | Text string for numeric application ID |
 
 ### Code Sample
@@ -1089,7 +1089,7 @@ Set the ID for your application in the App Store so that your users can submit r
 You can hide some or all of the headers for the side menu sections.  The default for all is NO.
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `sideMenuHideOptionsHeader` | YES, NO |
 | `sideMenuHideAccountsHeader` | YES, NO |
 | `sideMenuHideInfoHeader` | YES, NO |
@@ -1111,7 +1111,7 @@ _Coming Soon_
 Instead of displaying localization options horizonally, you can instead choose to stack them in a vertical list.  The default is NO.
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `sideMenuShowOptionsAsList` | YES, NO |
 
 ### Code Sample
@@ -1131,7 +1131,7 @@ _Coming Soon_
 Allows customization of the "Save to Cart" button.
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `navigationBarSaveToCartBackgroundColor` |  |
 | `titleColor` |  |
 | `buttonBackgroundColor ` |  |
@@ -1157,7 +1157,7 @@ _Coming Soon_
 Allows you to specify a background image for the Featured Products view
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `featuredProductsSetBackgroundImage` | Specify image file in application |
 
 ### Code Sample
@@ -1177,7 +1177,7 @@ _Coming Soon_
 Customize the how many seconds the editing help balloon is visible for in the customize product view.  The default time is 10 seconds and `-1` means it will always be visible.
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `doubleTapBalloonVisibilityTime` | Number of seconds to show, `-1` shows permanently |
 
 ### Code Sample
@@ -1193,7 +1193,7 @@ Customize the how many seconds the editing help balloon is visible for in the cu
 Allows you to set whether to prepend a plus sign before the "Add Shipping Address" button on the Shipping Address management screen
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `showPlusSignOnAddButton` | YES, NO |
 
 ### Code Sample
@@ -1213,7 +1213,7 @@ _Coming Soon_
 Customize the title for the Shopping Cart.  Default value is "Shopping Cart"
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `setTitleForShoppingCart` | String |
 
 ### Code Sample
@@ -1232,7 +1232,7 @@ _Coming Soon_
 Customize the title for the Featured Products screen.  Default value is "Featured Products"
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `setTitleForFeaturedProducts` | String |
 
 ### Code Sample
@@ -1252,7 +1252,7 @@ _Coming Soon_
 Change the text and icon for the "Add More Products" button.
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `customizeAddMoreProductButton` | String for button text |
 | `icon` | Specify image in application |
 
@@ -1274,7 +1274,7 @@ _Coming Soon_
 Customize the icon for the back button in the Shopping Cart screen
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `shoppingCartBackButtonIcon` | Specify image in application |
 
 ### Code Sample
@@ -1294,7 +1294,7 @@ _Coming Soon_
 Customize the title, icon and message on the Order Completed screen.  You can also set whether the close button should exit the SDK or perform a back operation (default is exit).
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `setTitleForOrderCompletedScreen` | String |
 | `setIconForOrderCompletedScreen` | Specify image in application |
 | `setMessageForOrderCompletedScreen` | String |
@@ -1320,7 +1320,7 @@ _Coming Soon_
 Customize the title location and whether the menu button is displayed in the menu bar on the Product Detail screen.  The defaults for both are NO.
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `productDetailsShowTitleBelowNavBar` | YES, NO |
 | `productDetailsShowMenuBtnInNavBar` | YES, NO |
 
@@ -1342,7 +1342,7 @@ _Coming Soon_
 Customize the title on the photo sources screen.
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `setTitleForPhotoSourcesScreen` | String |
 
 ### Code Sample
@@ -1362,7 +1362,7 @@ _Coming Soon_
 Customize the title on the photo sources screen.  Default value is NO.
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `hidePhotoSourcesInSideMenu` | YES, NO |
 
 ### Code Sample
@@ -1382,7 +1382,7 @@ _Coming Soon_
 Set a title and/or the visibility of the search icon in the Choose Country Screen.
 
 | Method | Parameters - Options |
-| :- | :- |
+| :---- | :---- |
 | `setTitleForChooseCountryScreen` | String |
 | `hideSearchIconInChooseCountryScreen` | YES, NO |
 
