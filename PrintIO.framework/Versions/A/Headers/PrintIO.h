@@ -405,9 +405,11 @@ rightButtonBackgroundColor:(UIColor *)rColor
  
  @param aToken Valid access token for session
  @param username Username
+ @param baseUrl Base url for Photobucket
  */
 - (void)setPhotobucketAccessToken:(NSString *)aToken
-                         userName:(NSString *)username;
+                         userName:(NSString *)username
+                          baseURL:(NSString *)baseUrl;
 
 /**
  Change title for Photo Sources screen
@@ -535,6 +537,11 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param iconPath Path to icon file. Default is nil.
  */
 - (void)shoppingCartBackButtonIcon:(NSString *)iconPath;
+
+/**
+ Get number of items in shopping cart
+ */
++ (NSInteger)numberOfItemsInShoppingCart;
 
 #pragma mark - Payment screen
 
@@ -695,6 +702,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param appID application id
  */
 - (void)setAppIDFromAppleStore:(NSString *)appID;
+
+/**
+ Turn off logs
+ 
+ @param set Default value is NO
+ */
+- (void)turnOffLogs:(BOOL)set;
 
 #pragma mark - Steps
 
