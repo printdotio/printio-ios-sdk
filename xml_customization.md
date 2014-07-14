@@ -42,6 +42,21 @@
 
 ---
 
+## Product Details screen icons
+
+``` XML
+<customization>
+    <screen name="product_details">
+        <image_view name="icon_1" image_name="icon_small_details" image_format="png"/>
+        <image_view name="icon_2" image_name="icon_small_shipping" image_format="png"/>
+        <image_view name="icon_3" image_name="icon_small_quality_g" image_format="png"/>
+    </screen>
+<customization>
+```
+
+
+---
+
 ## Two-button Dialog
 
 ### Code Sample
