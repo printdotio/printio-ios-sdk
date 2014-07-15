@@ -252,9 +252,25 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)hideSearchIconInChooseCountryScreen:(BOOL)set;
 
-#pragma mark - Featured Products
+/**
+ Change placeholder text in search bar, and set magnifying glass vissible or hidden
+ 
+ @param text Placeholder text
+ @param set Default value is NO
+ */
+- (void)setPlaceholderTextForSearchBarInChooseCountryScreen:(NSString *)text
+                                        hideMagnifyingGlass:(BOOL)set;
 
 /**
+ Change the color of navigation bar in 'Choose Country' screen
+ 
+ @param color Color to set
+ */
+- (void)setNavigationBarBackgroundColorForChooseCountryScreen:(UIColor *)color;
+
+#pragma mark - Featured Products
+
+/**›
  Hide category+search view on Featured Products screen. Default value is NO;
  */
 - (void)hideCategoriesInFeaturedProducts:(BOOL)hide;
