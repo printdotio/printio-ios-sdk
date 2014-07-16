@@ -408,6 +408,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
              redirectUrl:(NSString *)redirectUrl;
 
 /**
+ Set access token for Facebook
+ 
+ @param aToken Valid access token for session
+ */
+- (void)setFacebookAccessToken:(NSString *)aToken;
+
+/**
  Set username and password for Photobucket (autologin)
  
  @param userName Username or email for Photobucket account
