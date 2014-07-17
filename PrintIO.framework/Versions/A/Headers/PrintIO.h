@@ -506,6 +506,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)showHelpDialogWithImage:(NSString *)imagePath;
 
+/**
+ Disable Preview screen for product
+ 
+ @param set Default value is NO
+ */
+- (void)disablePreviewScreen:(BOOL)set;
+
 #pragma mark - Image Editor
 
 /**
@@ -732,6 +739,22 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param set Default value is NO
  */
 - (void)turnOffLogs:(BOOL)set;
+
+/**
+ Change background color on positive buttons (Yes, Next, Ok, Save, Buy It, Create It...)
+ 
+ @param bColor Background color
+ @param tColor Title color
+ */
+- (void)setPositiveButtonsBackgroundColor:(UIColor *)bColor titleColor:(UIColor *)tColor;
+
+/**
+ Change background color on negative buttons (No, Back, Cancel, Close...)
+ 
+ @param bColor Background color
+ @param tColor Title color
+ */
+- (void)setNegativeButtonsBackgroundColor:(UIColor *)bColor titleColor:(UIColor *)tColor;
 
 #pragma mark - Steps
 
