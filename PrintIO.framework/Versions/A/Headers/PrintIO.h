@@ -785,6 +785,16 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setTitleForChooseOptionsScreen:(NSString *)title;
 
+#pragma mark - Google Analytics
+
+/**
+ Set tracking id for Google Analytics. If tracking id is not provided, 
+ analytics are disabled.
+ 
+ @param trackingID Tracking ID provided by Google
+ */
+- (void)setTrackingIDForGoogleAnalytics:(NSString *)trackingID;
+
 #pragma mark - Push Notifications
 
 /**
