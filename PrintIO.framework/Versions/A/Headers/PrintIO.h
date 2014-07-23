@@ -18,7 +18,7 @@ enum {
     PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT,
     PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM,
     
-    PRINTIO_SCREEN_SHOPING_CART
+    PRINTIO_SCREEN_SHOPPING_CART
 };
 
 @protocol PrintIODelegate <NSObject>
@@ -79,7 +79,7 @@ enum {
  Jumps to screen
  
  @param screen Screen:
-    PRINTIO_SCREEN_SHOPING_CART
+    PRINTIO_SCREEN_SHOPPING_CART
  */
 - (void)goToScreen:(int)screen;
 
@@ -380,7 +380,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 /**
  Hide icon for Upload Instructions text in Photo Sources screen. Default value is NO.
  */
-- (void)hideIconForUplaodInstructions:(BOOL)hide;
+- (void)hideIconForUploadInstructions:(BOOL)hide;
 
 /**
  Set Instagram credentials. By default, PrintIO credentials are used.
