@@ -278,7 +278,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 /**
  Set country on Featured Products screen instead on First screen.
  
- @param set Default value is NO.
+ @param set Default value is YES.
  @param color Background color.
  */
 - (void)selectCountryInFeaturedProducts:(BOOL)set
@@ -606,6 +606,14 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)showPlusSignOnAddButton:(BOOL)set;
 
+/**
+ Change highlight color for address selection on 'Select Address'
+ screen
+ 
+ @param color New color. Default is light green.
+ */
+- (void)colorForAddressSelection:(UIColor *)color;
+
 #pragma mark - Order Completed screen
 
 /**
@@ -755,6 +763,36 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param tColor Title color
  */
 - (void)setNegativeButtonsBackgroundColor:(UIColor *)bColor titleColor:(UIColor *)tColor;
+
+#pragma mark - Fonts
+
+/**
+ Change light fonts size
+ 
+ @param Increase/decrease font size by 'value'
+ */
+- (void)changeSizeOfLightFontsBy:(float)value;
+
+/**
+ Change medium fonts size
+ 
+ @param Increase/decrease font size by 'value'
+ */
+- (void)changeSizeOfMediumFontsBy:(float)value;
+
+/**
+ Change regular fonts size
+ 
+ @param Increase/decrease font size by 'value'
+ */
+- (void)changeSizeOfRegularFontsBy:(float)value;
+
+/**
+ Change bold fonts size
+ 
+ @param Increase/decrease font size by 'value'
+ */
+- (void)changeSizeOfBoldFontsBy:(float)value;
 
 #pragma mark - Steps
 
