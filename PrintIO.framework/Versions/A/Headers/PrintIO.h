@@ -13,13 +13,15 @@
 enum {
     PRINTIO_STAGING,
     PRINTIO_PRODUCTION,
-    
-    PRINTIO_OPTION_PRESENT_VIEW_FROM_LEFT,
-    PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT,
-    PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM,
-    
-    PRINTIO_SCREEN_SHOPPING_CART
 };
+
+enum {
+    PRINTIO_OPTION_PRESENT_VIEW_FROM_LEFT = 1 << 0,
+    PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT = 1 << 1,
+    PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM = 1 << 2,
+    
+    PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART = 1 << 3
+}Options;
 
 @protocol PrintIODelegate <NSObject>
 
@@ -63,10 +65,11 @@ enum {
 /**
  Open widget with option
  
- @param option Set the option how the view opens
+ @param option Set the options
     PRINTIO_OPTION_PRESENT_VIEW_FROM_LEFT,
     PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT,
-    PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM
+    PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM,
+    PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART
  */
 - (void)openWithOption:(int)option;
 
@@ -79,7 +82,7 @@ enum {
  Jumps to screen
  
  @param screen Screen:
-    PRINTIO_SCREEN_SHOPPING_CART
+    PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART
  */
 - (void)goToScreen:(int)screen;
 
