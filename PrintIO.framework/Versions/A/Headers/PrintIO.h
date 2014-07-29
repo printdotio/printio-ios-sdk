@@ -826,6 +826,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setTitleForChooseOptionsScreen:(NSString *)title;
 
+/**
+ Auto selects one photo template for selected productID
+ 
+ @param productID productID of selected product
+ */
+- (void)autoSelectOnePhotoTemplateForProductID:(NSInteger)productID;
+
 #pragma mark - Google Analytics
 
 /**
