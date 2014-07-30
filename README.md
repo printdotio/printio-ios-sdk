@@ -13,3 +13,7 @@ The Print.IO SDK also offers the ability to send push notifications from your ap
 - For in depth descriptions of the in-code customization options available, see our [SDK customization document](https://github.com/printdotio/printio-ios-sdk/blob/gh-pages/ios_sdk_customization.md).
 - To learn more about what customization options are available via XML configuration, see our [XML customization document](https://github.com/printdotio/printio-ios-sdk/blob/gh-pages/xml_customization.md).
 - For a more comprehensive demonstration of the PrintIO SDK, please see the [PrintIOSDKSample app](https://github.com/printdotio/printio-ios-example)
+
+# Staging Enviornment Testing Values
+
+https://developers.braintreepayments.com/ios+ruby/reference/general/testing
