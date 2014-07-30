@@ -482,8 +482,10 @@ rightButtonBackgroundColor:(UIColor *)rColor
  Change icon for Help Button on Customize Product screen
  
  @param imagePath Path to image file.
+ @param visible Default value is YES
  */
-- (void)iconForHelpButtonInCustomizeProduct:(NSString *)imagePath;
+- (void)iconForHelpButtonInCustomizeProduct:(NSString *)imagePath
+                                    visible:(BOOL)visible;
 
 /**
  Set Pop up balloon in Customize Product screen
@@ -662,7 +664,8 @@ rightButtonBackgroundColor:(UIColor *)rColor
 /**
  Set custom fonts from main app bundle.
  
- @param fonts Array of string values contain font name and type with exact order (light, medium, regular, bold). Example: [@"font_light.otf", @"font_medium.otf", @"font_regular.otf", @"font_bold.otf"]. Array must have four items, and fonts can be diplicated.
+ @param fonts Array of string values contain font name and type with exact order (light, medium, regular, bold). Example: [@"font_light.otf", @"font_medium.otf", @"font_regular.otf", @"font_bold.otf"]. Array must have four items, and fonts can be diplicated. Array also accepts
+    system (normal, bold and italic) UIFont objects.
  */
 - (void)customFonts:(NSArray *)fonts;
 
