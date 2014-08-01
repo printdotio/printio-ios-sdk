@@ -45,6 +45,17 @@ enum {
 @property (nonatomic, weak) id<PrintIODelegate> delegate;
 
 /**
+ Init PrintIO widget. To get view controller, use '[self.printIO viewController]'
+ 
+ @param type Set environment to staging or live, use PRINTIO_STAGING or PRINTIO_PRODUCTION
+ @param pRecipeId Production recipeId provided by PrintIO
+ @param sRecipeId Staging recipeId provided by PrintIO
+ */
+- (id)initWithEnvironment:(int)type
+       productionRecipeId:(NSString *)pRecipeId
+          stagingRecipeId:(NSString *)sRecipeId;
+
+/**
  Init PrintIO widget with parent view controller.
  
  @param viewController Parent view controller. From this view controller, widget will open.
@@ -85,6 +96,11 @@ enum {
     PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART
  */
 - (void)goToScreen:(int)screen;
+
+/**
+ Returns PrintIO view controller. Set all options before calling this method
+ */
+- (id)viewController;
 
 #pragma mark - Navigation Bar
 
@@ -486,6 +502,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)iconForHelpButtonInCustomizeProduct:(NSString *)imagePath
                                     visible:(BOOL)visible;
+
+/**
+ Change icon for 'Save' button on Customize Product screen
+ 
+ @param imagePath Path to image file.
+*/
+- (void)iconForSaveButtonInCustomizeProduct:(NSString *)imagePath;
 
 /**
  Set Pop up balloon in Customize Product screen
