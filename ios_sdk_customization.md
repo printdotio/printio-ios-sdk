@@ -1396,3 +1396,6 @@ Set a title and/or the visibility of the search icon in the Choose Country Scree
 ### Screenshots
 
 _Coming Soon_
+
+
+## Ivans new methods
