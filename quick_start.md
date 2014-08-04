@@ -1,6 +1,8 @@
 # PrintIO Sample Code
 
-Below is sample code for launching a customized PrintIO widget.  For reference, all in-code customization options are included.  We also allow customization of certain elements via an [XML file][8].
+Below is sample code for launching a customized PrintIO widget.  For reference, almost all in-code customization options are included.  
+
+Additionally, There are some items we also allow customization of via an [XML file][8].
 
 Be sure to follow the Project Setup guide above before attempting to use the Print.IO sample code.
 
