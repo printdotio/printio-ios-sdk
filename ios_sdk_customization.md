@@ -1440,3 +1440,24 @@ Change background color on negative buttons (No, Back, Cancel, Close...)
 _Coming Soon_
 
 ---
+
+Customize Fonts Size throughout SDK
+Change light, medium, regular and bold fonts sizes
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `changeSizeOfLightFontsBy` | Increase/decrease Light font size by 'value' |
+| `changeSizeOfMediumFontsBy` | Increase/decrease Medium font size by 'value' |
+| `changeSizeOfRegularFontsBy` | Increase/decrease Regular font size by 'value' |
+| `changeSizeOfBoldFontsBy` | Increase/decrease Bold font size by 'value' |
+
+### Code Sample
+
+[self.printIO changeSizeOfLightFontsBy:2.0]
+[self.printIO changeSizeOfMediumFontsBy:2.0]
+[self.printIO changeSizeOfRegularFontsBy:2.0]
+[self.printIO changeSizeOfBoldFontsBy:2.0]
+
+### Screenshots
+
+_Coming Soon_
