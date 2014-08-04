@@ -1484,3 +1484,22 @@ analytics are disabled.
 _Coming Soon_
 
 ---
+
+## Set Logs
+Turn off logs. Default value is NO
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `turnOffLogs` | YES, NO |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO turnOffLogs:YES];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+
