@@ -393,3 +393,7 @@
   [18]: https://lh6.googleusercontent.com/-TjmbGv4RTsY/Uuv4kKY_-KI/AAAAAAAABaM/-pO0royMH5g/w487-h410-no/13.png
   [19]: https://lh6.googleusercontent.com/-Os6CO1SseJg/Uuv4knkwGqI/AAAAAAAABaU/7Ut_TX2UbBM/w497-h429-no/14.png
   [20]: https://lh4.googleusercontent.com/-_IK-PtpI2k4/U3N5n5qD0eI/AAAAAAAABj8/0QUNDtKl9_4/w665-h499-no/SDK+Customization+%25286%2529.png
+
+## Ivans new methods
+
+
