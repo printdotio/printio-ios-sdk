@@ -1520,3 +1520,23 @@ Register device to receive push notifications
 ### Screenshots
 
 _Coming Soon_
+
+---
+## ApplicationId and ApiKey for Push Notifications
+Set applicationId and apiKey provided from parse.com
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setParseApplicationId` | Application ID |
+| `apiKey` | Rest API Key |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setParseApplicationId:@"appId"];
+[self.printIO apiKey:@"apiKey"];
+```
+
+### Screenshots
+
+_Coming Soon_
