@@ -1502,4 +1502,21 @@ Turn off logs. Default value is NO
 
 _Coming Soon_
 
+---
 
+## Push Notifications
+Register device to receive push notifications
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `registerDeviceToken` | Device token |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO registerDeviceToken:@"deviceToken"];
+```
+
+### Screenshots
+
+_Coming Soon_
