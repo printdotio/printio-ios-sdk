@@ -1463,3 +1463,24 @@ Change light, medium, regular and bold fonts sizes
 ### Screenshots
 
 _Coming Soon_
+
+---
+## Google Analytics
+Set tracking id for Google Analytics. If tracking id is not provided, 
+analytics are disabled.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setTrackingIDForGoogleAnalytics` | Tracking ID provided by Google |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setTrackingIDForGoogleAnalytics:@"track-id"];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
