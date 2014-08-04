@@ -34,7 +34,7 @@ The Print.io SDK depends on some frameworks, so you'll need to add them to any t
 - AudioToolbox.framework
 - AVFoundation.framework
 - CFNetwork.framework
-- CoreGraphic.framework
+- CoreGraphics.framework
 - CoreMedia.framework
 - CoreLocation.framework
 - CoreVideo.framework
