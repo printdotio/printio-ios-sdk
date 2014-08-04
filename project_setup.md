@@ -87,7 +87,7 @@ Include the following line to make the SDK available to your code:
 
 To launch the PrintIO widget, create and display an instance of PrintIO.
 
-### Option 1: Modal Presentation
+### Modal Presentation
 
 ``` Objective-C
 - (void)startPrintIO
@@ -108,7 +108,7 @@ To launch the PrintIO widget, create and display an instance of PrintIO.
 
 
 
-### Option 2: Use PrintIODelegate methods
+### Use PrintIODelegate methods
 
 You can also use our ```PrintIODelegate``` methods in your presenting view controller:
 
