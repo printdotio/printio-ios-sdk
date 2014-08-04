@@ -6,10 +6,10 @@ The following steps walk through all of the required options to get a working SD
 
 Each of these steps are required in order to create an applicaton using the Print.IO SDK.
 
-- Include proper recipe ID
+- Use the proper recipe ID for your account (Make sure the staging & live recipes you use match the correct URL)
 - Change Logo on payment page and order completion page
-    - If no logo desired, would you prefer to hide it?
-- Change partner name
+    - If no logo desired, You can choose to hide the logo
+- Change partner name to your partner name
 - Change "How it Works" copy
 - Change "About" copy
 - Include custom text for Share this app on FB and Rate Our App (default is Hellopics text)
