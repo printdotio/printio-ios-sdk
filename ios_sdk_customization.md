@@ -1522,7 +1522,7 @@ Register device to receive push notifications
 _Coming Soon_
 
 ---
-## ApplicationId and ApiKey for Push Notifications
+## ApplicationID and APIKey for Push Notifications
 Set applicationId and apiKey provided from parse.com
 
 | Method | Parameters - Options |
@@ -1540,3 +1540,28 @@ Set applicationId and apiKey provided from parse.com
 ### Screenshots
 
 _Coming Soon_
+
+---
+
+## Notification Pop Up
+Display notification pop up from bottom of screen. On tap it will dismiss notification.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `showNotification` | Dictionary provided from didReceiveRemoteNotification |
+| `backgroundColor` | Background color for notification pop up |
+| `textColor` | Text color |
+
+### Code Sample
+
+``` Objective-C
+howNotification:(NSDictionary:@"userInfo"];
+backgroundColor:[UIColor backgroundColor];
+titleColor:[UIColor whiteColor];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
