@@ -1409,6 +1409,13 @@ Change background color on positive buttons (Yes, Next, Ok, Save, Buy It, Create
 | `setPositiveButtonsBackgroundColor` | Background color |
 | `titleColor` | Title color |
 
+### Code Sample
+
+``` Objective-C
+[self.printIO setPositiveButtonsBackgroundColor:[UIColor blueColor]
+                                             titleColor:[UIColor whiteColor]];
+```
+
 ### Screenshots
 
 _Coming Soon_
