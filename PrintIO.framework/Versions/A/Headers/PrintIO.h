@@ -196,6 +196,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param infoTitle Title for this section
  @param infoTitleColor Title color
  @param infoColor Background color for this section
+ @param backgroundImageForButtons Path to file
  
  */
 - (void)sideMenuAddButtons:(NSArray *)buttons
@@ -254,6 +255,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param set Default value is NO
  */
 - (void)hidePhotoSourcesInSideMenu:(BOOL)set;
+
+/**
+ Set background image on Side Menu
+ 
+ @param path Image path
+ */
+- (void)sideMenuBackgroungImage:(NSString *)path;
 
 #pragma mark - Choose Country Screen
 
@@ -362,6 +370,26 @@ rightButtonBackgroundColor:(UIColor *)rColor
  In order to show photo sources to user, 'usePhotoSources' has to be enabled.
  */
 - (void)availablePhotoSources:(NSArray *)vPhotoSources;
+
+/**
+ When user enters 'Select Photos' screen, selected photo source will be opened by default.
+ If an album id is passed in, if exist, that album will be opened.
+ 
+ @param pSource Photo source:
+ 
+ PIO_SM_FACEBOOK
+ PIO_SM_INSTAGRAM
+ PIO_SM_PICASA
+ PIO_SM_FLICKR
+ PIO_SM_DROPBOX
+ PIO_SM_PHOTOBUCKET
+ PIO_SM_PHONE
+ 
+ @param albumId Album id (Currently works only for PIO_SM_PHOTOBUCKET photo source)
+ 
+ */
+- (void)setDefaultPhotoSource:(NSInteger)pSource
+                      albumId:(NSString *)albumId;
 
 /**
  Pass in images URLs or UIImage objects.
@@ -541,6 +569,14 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)disablePreviewScreen:(BOOL)set;
 
+/**
+ Set same photo on front and back side of product. 
+ Currently it only supports PRODUCT_THROW_PILLOWS.
+ 
+ @param productId Product id
+ */
+- (void)setSamePhotoOnFrontAndBackSideOfProduct:(NSInteger)productId;
+
 #pragma mark - Image Editor
 
 /**
@@ -600,6 +636,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
  Get number of items in shopping cart
  */
 + (NSInteger)numberOfItemsInShoppingCart;
+
+/**
+ Hides 'Edit' button on 'Shopping Cart' screen
+ 
+ @param set Default value is NO
+ */
+- (void)hideEditButtonInShoppingCart:(BOOL)set;
 
 #pragma mark - Payment screen
 
