@@ -2,7 +2,7 @@
 
 The following steps walk through all of the required options to get a working SDK implementation up and running and properly configured.
 
-# Required Steps
+# Required Steps to put SDK into your app
 
 Each of these steps are required in order to create an applicaton using the Print.IO SDK.
 
@@ -130,3 +130,10 @@ These options are not all required, however many are recommended to offer a grea
 - If accepting credit card payments, have you set up your Braintree account?
     - Staging Encryption Key
     - Production Encryption Key
+    - 
+    - 
+    - 
+
+# Required Steps to make SDK into a full app
+
+
