@@ -1407,8 +1407,8 @@ Change background color on positive buttons (Yes, Next, Ok, Save, Buy It, Create
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `setPositiveButtonsBackgroundColor` | Background color |
-| `titleColor` | Title color |
+| `setPositiveButtonsBackgroundColor` | Specify color for Background |
+| `titleColor` | Specify color for Title |
 
 ### Code Sample
 
@@ -1426,8 +1426,8 @@ Change background color on negative buttons (No, Back, Cancel, Close...)
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `setNegativeButtonsBackgroundColor` | Background color |
-| `titleColor` | Title color |
+| `setNegativeButtonsBackgroundColor` | Specify color for Background |
+| `titleColor` | Specify color for Title |
 
 ### Code Sample
 
