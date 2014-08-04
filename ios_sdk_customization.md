@@ -1397,10 +1397,11 @@ Set a title and/or the visibility of the search icon in the Choose Country Scree
 
 _Coming Soon_
 
+---
 
 ## Ivans new methods
 
-## Positive buttons
+## Positive Buttons
 Change background color on positive buttons (Yes, Next, Ok, Save, Buy It, Create It...) 
 
 
@@ -1412,8 +1413,7 @@ Change background color on positive buttons (Yes, Next, Ok, Save, Buy It, Create
 ### Code Sample
 
 ``` Objective-C
-[self.printIO setPositiveButtonsBackgroundColor:[UIColor blueColor]
-                                             titleColor:[UIColor whiteColor]];
+[self.printIO setPositiveButtonsBackgroundColor:[UIColor blueColor] titleColor:[UIColor whiteColor]];
 ```
 
 ### Screenshots
@@ -1421,4 +1421,22 @@ Change background color on positive buttons (Yes, Next, Ok, Save, Buy It, Create
 _Coming Soon_
 
 ---
+## Negative Buttons
+Change background color on negative buttons (No, Back, Cancel, Close...)
 
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setNegativeButtonsBackgroundColor` | Background color |
+| `titleColor` | Title color |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setNegativeButtonsBackgroundColor:[UIColor redColor] titleColor:[UIColor whiteColor]];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
