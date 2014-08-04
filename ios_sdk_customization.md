@@ -1441,7 +1441,7 @@ _Coming Soon_
 
 ---
 
-Customize Fonts Size throughout SDK
+## Customize Fonts Size throughout SDK
 Change light, medium, regular and bold fonts sizes
 
 | Method | Parameters - Options |
@@ -1453,10 +1453,12 @@ Change light, medium, regular and bold fonts sizes
 
 ### Code Sample
 
+``` Objective-C
 [self.printIO changeSizeOfLightFontsBy:2.0]
 [self.printIO changeSizeOfMediumFontsBy:2.0]
 [self.printIO changeSizeOfRegularFontsBy:2.0]
 [self.printIO changeSizeOfBoldFontsBy:2.0]
+```
 
 ### Screenshots
 
