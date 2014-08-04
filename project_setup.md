@@ -92,7 +92,7 @@ To launch the PrintIO widget, create and display an instance of PrintIO.
 ``` Objective-C
 - (void)startPrintIO
 {
-    // kRecipeId is developer defined and provided by PrintIO
+    // RecipeId is developer defined and provided by PrintIO Account and Sales Team
     PrintIO *printIO = [[PrintIO alloc]initWithViewController:vc
                                                   environment:kEnvironment
                                            productionRecipeId:pRecipeId
