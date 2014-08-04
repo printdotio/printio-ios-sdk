@@ -1399,3 +1399,19 @@ _Coming Soon_
 
 
 ## Ivans new methods
+
+## Positive buttons
+Change background color on positive buttons (Yes, Next, Ok, Save, Buy It, Create It...) 
+
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setPositiveButtonsBackgroundColor` | Background color |
+| `titleColor` | Title color |
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
