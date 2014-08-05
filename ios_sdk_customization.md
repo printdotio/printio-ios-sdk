@@ -915,7 +915,7 @@ Hide icon for Upload Instructions text in Photo Sources screen. Default value is
 ### Code Sample
 
 ``` Objective-C
-[self.printIO hideIconForUplaodInstructions:YES];
+[self.printIO hideIconForUploadInstructions:YES];
 ```
 
 ### Screenshots
