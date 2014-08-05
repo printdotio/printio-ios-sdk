@@ -1552,7 +1552,7 @@ Display notification pop up from bottom of screen. On tap it will dismiss notifi
 | `backgroundColor` | Background color for notification pop up |
 | `textColor` | Text color |
 
-### Code Sample
+### Code Sample.
 
 ``` Objective-C
 howNotification:(NSDictionary:@"userInfo"];
@@ -1560,8 +1560,9 @@ backgroundColor:[UIColor backgroundColor];
 titleColor:[UIColor whiteColor];
 ```
 
-### Screenshots
+### Screenshots.
 
 _Coming Soon_
+
 
 ---
