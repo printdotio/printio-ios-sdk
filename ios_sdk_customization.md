@@ -146,11 +146,13 @@ Set custom fonts across the application  (must include 4; can repeat; and array 
 | Method | Parameters - Options |
 | :---- | :---- |
 | `customFonts` | Any 4 .ttf or .otf files included in application |
+| `switchCustomFonts` | ON, OFF |
 
 ### Code Sample
 
 ``` Objective-C
-NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_Bold.ttf"]; [self.printIO customFonts:fonts];
+NSArray *fonts = @[@"timess.ttf", @"timess.ttf",@"aubrey.ttf", @"CaviarDreams_Bold.ttf"];
+[self.printIO customFonts:fonts];
 ```
 
 ### Screenshots
