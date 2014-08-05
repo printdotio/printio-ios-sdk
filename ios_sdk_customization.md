@@ -1554,7 +1554,7 @@ Display notification pop up from bottom of screen. On tap it will dismiss notifi
 | `backgroundColor` | Background color for notification pop up |
 | `textColor` | Text color |
 
-### Code Sample.
+### Code Sample
 
 ``` Objective-C
 howNotification:(NSDictionary:@"userInfo"];
@@ -1562,9 +1562,25 @@ backgroundColor:[UIColor backgroundColor];
 titleColor:[UIColor whiteColor];
 ```
 
-### Screenshots.
+### Screenshots
 
 _Coming Soon_
 
-
 ---
+
+Hide/Show Edit button on Shopping Cart screen
+User is able to Hide od Show 'Edit' button on 'Shopping Cart' screen. Default value is NO.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `hideEditButtonInShoppingCart` | YES, NO |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO hideEditButtonInShoppingCart:YES];
+```
+
+### Screenshots
+
+_Coming Soon_
