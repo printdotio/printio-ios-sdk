@@ -618,6 +618,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)setTitleForShoppingCart:(NSString *)title;
 
 /**
+ Toggle 'Add more products' button on the Shopping Cart screen.
+ 
+ @param showsButton Button visibility flag. Default is YES.
+ */
+- (void)setShowsAddMoreProductsInShoppingCart:(BOOL)showsAddButton;
+
+/**
  Customize 'Add More Products' button
  
  @param title New title for button
@@ -643,6 +650,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param set Default value is NO
  */
 - (void)hideEditButtonInShoppingCart:(BOOL)set;
+
+/**
+ Set promo code to get discount
+ 
+ @param promoCode Promo code
+ */
+- (void)setPromoCode:(NSString *)promoCode;
 
 #pragma mark - Payment screen
 
@@ -730,7 +744,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 /**
  Set custom fonts from main app bundle.
  
- @param fonts Array of string values contain font name and type with exact order (light, medium, regular, bold). Example: [@"font_light.otf", @"font_medium.otf", @"font_regular.otf", @"font_bold.otf"]. Array must have four items, and fonts can be diplicated. Array also accepts
+ @param fonts Array of string values that contains font name and type with the exact order (light, medium, regular, bold). Example: [@"font_light.otf", @"font_medium.otf", @"font_regular.otf", @"font_bold.otf"]. Array must have four items, and fonts can be duplicated. Array also accepts
     system (normal, bold and italic) UIFont objects.
  */
 - (void)customFonts:(NSArray *)fonts;
