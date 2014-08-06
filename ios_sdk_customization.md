@@ -372,15 +372,24 @@ Change shopping cart icon and indicate whether to badge with number of products
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `iconForShoppingCart` | Specify image included in application |
-| `withNumberOfProducts` | YES, NO |
-| `labelPosition` | CGpoint-lposition for label |
-| `textColor` | Specify color for label text |
+| `iconForShoppingCart` | Path to image file |
+| `withNumberOfProducts` | Set to YES if image has red circle for number of items in cart |
+| `labelPosition` | Position of label with number of products in cart |
+| `textColor` | Text color of label with number of products in cart |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO iconForShoppingCart:[[NSBundle mainBundle]pathForResource:@"pb_icon_cart_black" ofType:@"png"] withNumberOfProducts:YES];
+[self.printIO iconForShoppingCart:[[NSBundle mainBundle]pathForResource:@"mg_cart_new" ofType:@"png"]
+                 withNumberOfProducts:YES
+                        labelPosition:CGPointZero
+                            textColor:[UIColor whiteColor]];
+    
+[self.printIO extraData:[NSMutableDictionary dictionaryWithObjectsAndKeys:
+                             [NSNumber numberWithInt:1], ED_PARTNERS_ID,
+                             [NSNumber numberWithInt:path], ED_MG_PATH_NUMBER, nil]];
+[self.printIO payeeName:@"Mirrorgram"];
+[self.printIO setPassedImageAsThumbForOnePhotoTemplate:YES];
 ```
 
 ### Screenshots
