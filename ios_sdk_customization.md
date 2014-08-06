@@ -1615,3 +1615,20 @@ Button visibility flag. Default is YES.
 _Coming Soon_
 
 ---
+
+## Set background image on Side Menu
+Change side menu background image using method:
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `sideMenuBackgroungImage` | Image path |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO sideMenuBackgroungImage:@"path"];
+```
+
+### Screenshots
+
+_Coming Soon_
