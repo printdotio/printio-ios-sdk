@@ -1584,3 +1584,24 @@ User is able to Hide od Show 'Edit' button on 'Shopping Cart' screen. Default va
 ### Screenshots
 
 _Coming Soon_
+
+---
+
+## Visibility for Add More Products button on the Shopping Cart screen
+Button visibility flag. Default is YES.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `showsAddButton` | YES, NO |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO showsAddButton:YES];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
