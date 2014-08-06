@@ -1578,7 +1578,7 @@ _Coming Soon_
 
 ---
 
-Hide/Show Edit button on Shopping Cart screen
+## Hide/Show Edit button on Shopping Cart screen
 User is able to Hide od Show 'Edit' button on 'Shopping Cart' screen. Default value is NO.
 
 | Method | Parameters - Options |
