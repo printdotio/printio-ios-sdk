@@ -1597,7 +1597,7 @@ Button visibility flag. Default is YES.
 ### Code Sample
 
 ``` Objective-C
-[self.printIO showsAddButton:YES];
+[self.printIO setShowsAddMoreProductsInShoppingCart:YES];
 ```
 
 ### Screenshots
