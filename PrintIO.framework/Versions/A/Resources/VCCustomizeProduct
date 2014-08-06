@@ -1,0 +1,2284 @@
+//
+//  VCCustomizeProduct1.m
+//  PictureApp_iOS
+//
+//  Created by Boro Perisic on 2/8/13.
+//  Copyright (c) 2013 PrintIO. All rights reserved.
+//
+
+#import "VCCustomizeProduct.h"
+#import "PMRectMask.h"
+#import "Constants.h"
+#import "Utils.h"
+#import "UIImageView+PIONetworking.h"
+#import "VCSelectPhotos.h"
+#import "FakeDelegate.h"
+#import "SVProgressHUD.h"
+#import "CP_Helper.h"
+#import "HPProgress.h"
+#import "VCSelectColor.h"
+#import "ImgManipCreator.h"
+#import "NSBundle+Utils.h"
+#import "UIImage+Utils.h"
+#import "PIO3DDummyPreview.h"
+#import "MFSideMenu.h"
+#import "GenericPhoto.h"
+#import "APIClient.h"
+#import "PIOTemplatesView.h"
+
+////////////////////////////////////////////////////////
+//
+// btnBuyIt and btnBack should be removed
+// but bntBuyIt hold positions for other
+// views.
+//
+////////////////////////////////////////////////////////
+
+static int const HEIGHT_SCROLL_IMAGES_LIST = 56;
+static int const HEIGHT_VIEW_TAB_BAR = 56;
+
+static int const TAG_TEMPLATES_VIEW = 123;
+static int const TAG_BTN_USE_SAME_FOR_BACK_SIDE = 124;
+
+@interface VCCustomizeProduct () <APIClientDelegate, PIOTemplatesViewDelegate>
+
+@property (nonatomic, strong) NSMutableArray *parsedPieces;
+@property (nonatomic, strong) NSMutableArray *imagesForDownload;
+
+@property (nonatomic, strong) ImageEditor *imageEditor;
+
+@property (nonatomic, assign) BOOL isFromImageEditor;
+@property (nonatomic, assign) BOOL isFromAddMorePhotos;
+@property (nonatomic, assign) BOOL statusBarVisibilityValue;
+@property (nonatomic, assign) BOOL isPreviewMoved;
+@property (nonatomic, assign) BOOL isViewHolderMoved;
+@property (nonatomic, assign) BOOL isPillowLoaded;
+@property (nonatomic, assign) BOOL isClickedUseSameForBackSide;
+
+@property (nonatomic, assign) NSInteger sameTemplateBothSidesProductId;
+
+@property (nonatomic, strong) APIClient *apiClient;
+
+@end
+
+@implementation VCCustomizeProduct
+
+#pragma mark - View Lifecycle
+
+- (void)viewDidLoad
+{
+    self.statusBarVisibilityValue = PIO_isStatusBarHidden();
+    [[[FakeDelegate sharedInstance]pioSettings]setHideStatusBar:YES];
+    
+    [super viewDidLoad];
+    
+    self.isFromImageEditor = NO;
+    self.isFromAddMorePhotos = NO;
+    self.isPreviewMoved = NO;
+    self.isViewHolderMoved = NO;
+    self.isPillowLoaded = NO;
+    self.isClickedUseSameForBackSide = NO;
+    self.sameTemplateBothSidesProductId = [[[FakeDelegate sharedInstance]pioSettings]custSamePhotoOnFrontAndBackOfProduct];
+    
+    if (self.sameTemplateBothSidesProductId == PRODUCT_THROW_PILLOWS()){
+        [self makeTemplatesSame];
+    }
+    
+    product = [[FakeDelegate sharedInstance]selectedProduct];
+    
+    [self customizeFontsAndText];
+    [self showBackBarWithSEL:@selector(onClickBack)];
+    
+    // Init
+    rects = [[NSMutableArray alloc]init];
+    pmImageDownloader = [[PMImageDownloader alloc]init];
+    pmImageDownloader.delegate = self;
+    
+    pTemplate = [[FakeDelegate sharedInstance] selectedGlobalTemplate];
+    
+    if (product.productId == PRODUCT_THROW_PILLOWS()){
+        pTemplate = [[[FakeDelegate sharedInstance] selectedGlobalTemplates] valueForKey:self.isPillowFrontSide ? @"0" : @"1"];
+    }
+    
+    [self setTabsUnselected];
+    [self showOrHideAddMoreImagesBtn];
+    
+    // Check if needs to hide tabbar or images list
+    if (PIO_hideImageListInCustomizationProduct()){
+        [self hideImagesList];
+    }
+    
+    if (!PIO_showTabBarInCustomizationProduct()){
+        [self hideTabBar];
+    }
+    
+    [self customizeToolbar];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [[[FakeDelegate sharedInstance]pioSettings]setHideStatusBar:YES];
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    LogDev(@"parsedPieces: %@", self.parsedPieces);
+    
+    [super viewDidAppear:animated];
+    [PrintIOGoogleAnalytics trackScreen:@"Customize product"];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        // Check does Navigation bar needs to be visible or hidden
+        [self.navigationController setNavigationBarHidden:NO animated:NO];
+        [self showNavigationBar];
+        
+        if (HP_useSideMenu()){
+            self.navigationController.menuContainerViewController.enableSwype = NO;
+        }
+    });
+    
+    // Show "Use same..." button for Throw Pillows
+    if (product.productId == PRODUCT_THROW_PILLOWS() && self.sameTemplateBothSidesProductId != PRODUCT_THROW_PILLOWS()){
+        [self showUseSameForBackSideButton];
+    }
+    
+    // Check if we have images
+    if ((![[FakeDelegate sharedInstance]selectedImages] || ![[FakeDelegate sharedInstance]selectedImages].count) &&
+        !self.isEdit){
+        [SVProgressHUD showErrorWithStatus:@"No photos available. Please check photo sources or passed image(s)."];
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self.navigationController popViewControllerAnimated:YES];
+        });
+        
+        return;
+    }
+    
+    if (self.isFromImageEditor){
+        self.isFromImageEditor = NO;
+        return;
+    }
+    
+    if (self.isFromAddMorePhotos){
+        
+        // Refresh horizontal scroll view with new images
+        [self initViewWORemovingPieces];
+        
+        return;
+    }
+    
+    [self initViewWithDelay];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    if (self.isFromImageEditor || self.isFromAddMorePhotos){
+        self.isFromImageEditor = NO;
+        return;
+    }
+    
+    [self.pmHolderView removeAllItems];
+    [self.pmTopLayers removeAllLayers];
+    [self.pmBaseView removeAllLayers];
+    [self.pmSurfaceMask removeAllMasks];
+    
+    [[[FakeDelegate sharedInstance]pioSettings]setHideStatusBar:self.statusBarVisibilityValue];
+    self.navigationController.menuContainerViewController.enableSwype = YES;
+}
+
+- (void)customizeFontsAndText
+{
+    if (product.productId == PRODUCT_THROW_PILLOWS()){
+        
+        self.lblTitle.hidden = NO;
+        self.lblTitle.font = PIO_fontWithName(FONT_LT(), 15.0);
+        self.lblTitle.text = self.isPillowFrontSide ?
+        
+        HPLocalizedStringWithKey(@"cp_throw_pillow_front_side") : HPLocalizedStringWithKey(@"cp_throw_pillow_back_side");
+        
+        if (PIO_buttonInNavBarIcon() ||
+            [[[FakeDelegate sharedInstance]pioSettings]partnersID] == PARTNER_MIRRORGRAM){
+            Utils_moveViewToY(self.lblTitle, 7 + 44);
+        }
+        
+    } else {
+        [self.lblTitle setHidden:YES];
+    }
+    
+    // Label title on bottom
+    [CP_Helper setTitleOnBottom:self.lblTitleDown product:product];
+    
+    // Tab bar buttons
+    self.btnTabOptions.titleLabel.font = PIO_fontWithName(FONT_LT(), 12.5);
+    self.btnTabEffects.titleLabel.font = PIO_fontWithName(FONT_LT(), 12.5);
+    self.btnTabLayout.titleLabel.font = PIO_fontWithName(FONT_LT(), 12.5);
+    self.btnTabText.titleLabel.font = PIO_fontWithName(FONT_LT(), 12.5);
+    
+    // Colored line bellow tabbar
+    [CP_Helper customizeColoredLineBellowTabbar:self.view];
+    
+    self.view.backgroundColor = HP_getTitleBarColor();
+    
+    [[HPCustomization instance]customizeScreen:HP_SCREEN_CUSTOMIZE_PRODUCT
+                                      elements:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                (UIButton *)[self.view viewWithTag:1804], HP_NAME_BUTTON_HELP, nil]];
+}
+
+#pragma mark - Some delegation methods
+
+/**
+ This method is called when UI becomes ready for user interaction. It is called after user clicks
+ on Manual Arrange photos, and after all image pieces are placed on product
+ */
+- (void)finishedAllProcesses
+{
+    
+}
+
+#pragma mark - Init
+
+- (void)initViewWORemovingPieces
+{
+    [self.imagesForDownload removeAllObjects];
+    [self.imagesForDownload addObjectsFromArray:[[[FakeDelegate sharedInstance]selectedImages] allValues]];
+    
+    if (self.imagesForDownload.count){
+        [pmImageDownloader addItemsForDownload:self.imagesForDownload];
+    }
+}
+
+- (void)initViewWithDelay
+{
+    [self checkIfIsPreview];
+    
+    double delayInSeconds = .5;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        
+        // First clear all layers
+        [self.pmTopLayers removeAllLayers];
+        [self.pmBaseView removeAllLayers];
+        
+        [self initView];
+    });
+}
+
+- (void)checkIfIsPreview
+{
+    // Check if is Preview
+    if (self.isPreview && self.isEdit){
+        [self removeViewWithTAG:TAG_VIEW_PREVIEW];
+        
+        UIView *viewPreview = [[[NSBundle sdkBundle]loadNibNamed:(HP_isiPhone5() ? @"CP_Preview-568h" : @"CP_Preview") owner:self options:nil]objectAtIndex:0];
+        viewPreview.tag = TAG_VIEW_PREVIEW;
+        
+        [CP_Helper customizePreviewView:viewPreview productType:product.productId];
+        [CP_Helper populateProductInfo:product previewView:viewPreview];
+        
+        [self hideElementsOnPreview:YES];
+        [self customizePreviewForNavigationBar:viewPreview];
+        
+        if (PIO_isStatusBarHidden()){
+            Utils_moveViewByY(viewPreview, HP_isiOS7() ? PIO_buttonInNavBarIcon() ? 22 : 0 : 0);
+        }
+        
+        if (product.productId == PRODUCT_THROW_PILLOWS()){
+            
+            if (!self.isPillowLoaded){
+                self.isPillowLoaded = YES;
+            } else {
+                Utils_moveViewToY(viewPreview, -44);
+            }
+        }
+        
+        [self.view addSubview:viewPreview];
+    } else {
+        [CP_Helper showDoubleTapHelpInView:self.view];
+    }
+}
+
+- (void)initView
+{
+    LogDev(@"initView isEdit:%i", self.isEdit);
+    
+    // Pillow preview flag
+    BOOL isTemplateNil = NO;
+    
+    [self.imagesForDownload removeAllObjects];
+    [self.imagesForDownload addObjectsFromArray:[[[FakeDelegate sharedInstance]selectedImages] allValues]];
+    
+    if (rects){
+        [rects removeAllObjects];
+    }
+    
+    [self.pmSurfaceMask removeAllMasks];
+    
+    // NOT EDIT MODE
+    if (!self.isEdit){
+        selectedColor = [[FakeDelegate sharedInstance]selectedGlobalColor];
+        
+        [pmImageDownloader addItemsForDownload:self.imagesForDownload];
+        [CP_Helper showDoubleTapHelpInView:self.view];
+        
+    } else {
+        // EDIT MODE
+        
+        // Set case color from db
+        selectedColor = product.productDetails.color;
+        [[FakeDelegate sharedInstance] setSelectedGlobalColor:selectedColor];
+        
+        // Pillow preview
+        BOOL isTemplateNil = NO;
+        
+        if (product.productId == PRODUCT_THROW_PILLOWS()){
+            pTemplate = [[SQLDao loadTemplatesForProduct:product]
+                         valueForKey:self.isPillowFrontSide ? @"0" : @"1"];
+            
+            // Check if it is a solid color back side
+            if (!pTemplate){
+                isTemplateNil = YES;
+                pTemplate = [[SQLDao loadTemplatesForProduct:product] valueForKey:@"0"];
+            }
+            
+            int rectsInTemplate = [Utils templateGetNumOfImage:pTemplate];
+            NSArray *rectsFromDb = ((Product *)[SQLDao loadProductFromCart:product.productDBid]).rects;
+            
+            product.rects = [[NSMutableArray alloc] initWithArray:
+                             [rectsFromDb objectsAtIndexes: self.isPillowFrontSide ?
+                              [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, rectsInTemplate)] :
+                              [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(rectsFromDb.count - rectsInTemplate, rectsInTemplate)]]];
+            
+            // Find number of images per pillow side
+            product.productDetails.gridType = [NSString stringWithFormat:@"%i image%@", rectsInTemplate, rectsInTemplate == 1 ? @"" : @"s"];
+            
+            // Refresh it in preview screen
+            [CP_Helper populateProductInfo:product previewView:[self.view viewWithTag:TAG_VIEW_PREVIEW]];
+            
+            [self.pmHolderView removeAllItems];
+            
+        } else {
+            
+            // Get Template and BuildInfo from DB
+            pTemplate = [SQLDao loadTemplateForProduct:product];
+            product.rects = ((Product *)[SQLDao loadProductFromCart:product.productDBid]).rects;
+        }
+    }
+    
+    // Create Masks and Rects
+    NSArray *designs = [Utils templateGetHPLayers:pTemplate layerType:HPLAYER_TYPE_DESIGN];
+    
+    if (designs.count == 0){
+        return;
+    }
+    
+    HPLayer *layer = [designs objectAtIndex:0];
+    
+    [self prepareSurfaceMask];
+    
+    // Check if are views in center of white space, and center it
+    if (self.isPreview && product.productId == PRODUCT_SHOWER_CURTAINS()){
+        //self.viewPanel.center = self.view.center;
+        CGRect frame = self.viewPanel.frame;
+        frame.origin.y = self.btnBuyIt.frame.origin.y + self.btnBuyIt.frame.size.height + 40;
+        self.viewPanel.frame = frame;
+    } else {
+        [self setViewInCenterOfScreen];
+        [PMImageUtils checkViewsPositionAndCenterIt:self.pmBaseView parentView:self.viewPanel layer:layer];
+    }
+    
+    // ***** Add Layers *****
+    
+    // Set Color layer
+    [self.pmBaseView addColorLayer:[selectedColor getColor]];
+    
+    // Set Base Image
+    if (layer.backgroundImageUrl){
+        NSURL *url = [[NSURL alloc]initWithString:layer.backgroundImageUrl];
+        NSURL *rUrl = [[NSURL alloc]initWithString:layer.overlayImageUrl];
+        [self.pmBaseView addLayerWithURL:url reserveLayerURL:rUrl];
+    }
+    
+    // Set Overlay Image
+    if (layer.overlayImageUrl){
+        
+        // TEST
+        //layer.overlayImageUrl = @"https://lh3.googleusercontent.com/-Brfjk8lxt-c/Ut6ss2lOxZI/AAAAAAAABDw/7DG5EG0AiTk/w380-h593-no/iPhone5-overlay-new.png";
+        
+        NSURL *url = [[NSURL alloc]initWithString:layer.overlayImageUrl];
+        [self.pmTopLayers addLayerWithURL:url reserveLayerURL:url];
+    }
+    
+    // Check if HolderView contains items, and refresh it
+    NSArray *holderViewPmImages = [self.pmHolderView getPmImagesFromHolder];
+    
+    if (holderViewPmImages.count){
+        [self processPMImagesFromHolderView:holderViewPmImages startPosition:0];
+    }
+    
+    if (self.isEdit && !isTemplateNil){
+        // We have pmImages in DB, this is EDIT PRODUCT mode or Preview
+        [self getPMImagesFromDB];
+    }
+    
+    //    LogDev(@"CUSTOMIZE__baseImageUrl=%@", layer.backgroundImageUrl);
+    //    LogDev(@"CUSTOMIZE__overlayImageUrl=%@", layer.overlayImageUrl);
+    //    LogDev(@"CUSTOMIZE__canvasSize px w=%i h=%i", layer.width, layer.height);
+    //    LogDev(@"CUSTOMIZE__canvasRation=%f", canvasRatio);
+    //    LogDev(@"CUSTOMIZE__templateImageUrl=%@", pTemplate.imageUrl);
+    //    LogDev(@"CUSTOMIZE__selectedColor=%@", selectedColor.colorHex);
+}
+
+- (void)setViewInCenterOfScreen
+{
+    int yCenter = ([self.view viewWithTag:1804].frame.origin.y - (self.btnBuyIt.frame.origin.y + self.btnBuyIt.frame.size.height)) / 2 + (self.btnBuyIt.frame.origin.y + self.btnBuyIt.frame.size.height);
+    self.viewPanel.center = CGPointMake(160, yCenter);
+}
+
+- (void)showOrHideAddMoreImagesBtn
+{
+    CGRect scrollHorizontalF = self.scrollHorizontal.frame;
+    
+    if (HP_usePhotoSources()){
+        
+        self.btnAddMorePhotos.hidden = NO;
+        scrollHorizontalF.origin.x = 64;
+        scrollHorizontalF.size.width = 254;
+    } else {
+        
+        self.btnAddMorePhotos.hidden = YES;
+        scrollHorizontalF.origin.x = 3;
+        scrollHorizontalF.size.width = 315;
+    }
+    
+    self.scrollHorizontal.frame = scrollHorizontalF;
+}
+
+#pragma mark - Single/Multi photo grid selected
+
+- (void)placeSinglePhoto
+{
+    if (rects.count && singlePMImage){
+        PMRectMask *mask = [rects objectAtIndex:0];
+        
+        //[self.pmHolderView addImagePiece:singlePMImage toRect:mask];
+        
+        // Crop base image, not thumb
+        editingImage = singlePMImage;
+        editingMask = mask;
+        
+        if (editingImage != nil){
+            
+            [self setPMImageForEdit:YES];
+            
+            __weak VCCustomizeProduct *wSelf = self;
+            
+            [self.imageEditor finishEditing:^(UIImage *captureImage, CGAffineTransform transform, CGPoint center) {
+                [wSelf processImage:captureImage transform:transform center:center];
+                
+                [wSelf finishedAllProcesses];
+                // [wSelf addPiecesToHorView:self.parsedPieces];
+            }];
+        }
+    }
+}
+
+- (void)randomArrangePhotos
+{
+    if (rects.count && multiPMImages){
+        
+        NSInteger count = multiPMImages.count;
+        
+        [HPProgress showWithStatus:PIO_textForLoadingDialog()];
+        
+        int positions[count];
+        tempArr = [[NSMutableArray alloc]init];
+        for (int i=0; i<count; i++){
+            positions[i] = rand() % count;
+            
+            for(int j=0; j<i; j++) if (positions[j]==positions[i]) i--;
+        }
+        
+        for (int i=0;i<count;i++){
+            [tempArr addObject:[NSNumber numberWithInt:positions[i]]];
+        }
+        
+        [self processMultipleImages:count startPosition:0];
+        
+        [HPProgress dismiss];
+    }
+}
+NSMutableArray *tempArr;
+
+- (void)processMultipleImages:(int)count startPosition:(int)position
+{
+    PMRectMask *mask = [rects objectAtIndex:position];
+    // [self.pmHolderView addImagePiece:[multiPMImages objectAtIndex:[[tempArr objectAtIndex:position]intValue]] toRect:mask];
+    
+    // Crop base image, not thumb
+    editingImage = [multiPMImages objectAtIndex:[[tempArr objectAtIndex:position]intValue]];
+    editingMask = mask;
+    
+    if (editingImage){
+        
+        [self setPMImageForEdit:YES];
+        
+        __weak VCCustomizeProduct *wSelf = self;
+        
+        [self.imageEditor finishEditing:^(UIImage *captureImage, CGAffineTransform transform, CGPoint center) {
+            [wSelf processImage:captureImage transform:transform center:center];
+            
+            if (position < count - 1){
+                [wSelf processMultipleImages:count startPosition:(position + 1)];
+            } else {
+                
+                // Finished with adding images to product
+                [wSelf finishedAllProcesses];
+                // [wSelf addPiecesToHorView:self.parsedPieces];
+            }
+        }];
+    }
+}
+
+#pragma mark - Buttons
+
+- (void)buyItOrSaveIt
+{
+    // Check if design is complete
+    NSInteger numOfPMImagesInHolder = [self.pmHolderView getPmImagesFromHolder].count;
+    
+    if ((product.productId == PRODUCT_WOOD_PRINTS() || product.productId == PRODUCT_FLEECE_BLANKETS() ||
+         product.productId == PRODUCT_BEACH_BAGS() || product.productId == PRODUCT_CANVAS_WRAPS() ||
+         product.productId == PRODUCT_FRAMED_PRINTS())
+        && numOfPMImagesInHolder < [self.pmSurfaceMask rects].count){
+        
+        [self showDialogWithText:HPLocalizedStringWithKey(@"cp_complete_design") title:@"" selector:nil];
+        return;
+    }
+    
+    // Check if products lives in memory, but it's deleted from shopping cart
+    BOOL isDeleted = NO;
+    if (product.productDBid != 0){
+        isDeleted = YES;
+        
+        NSArray *productsFromCart = [SQLDao loadAllProductsFromCart];
+        for (Product *p in productsFromCart){
+            if (p.productDBid == product.productDBid){
+                isDeleted = NO;
+                break;
+            } else {
+                isDeleted = YES;
+            }
+        }
+    }
+    
+    BOOL isUpdate = self.isEdit || (product.productDBid != 0 && !isDeleted && !self.isEdit);
+    
+    LogDev(@"isUpdate: %i", isUpdate);
+    
+    if (!isUpdate){
+        // create uniq productId for Database, productDBId;
+        product.productDBid = (int)[[NSDate date] timeIntervalSince1970];
+        product.rects = [self.pmSurfaceMask rects];
+    }
+    
+    [self addProductInDB:isUpdate];
+    [self addPMIMagesInDB];
+    [self addTemplateInDB];
+    
+    // Save Image Pieces
+    [self saveImagePieces:isUpdate];
+}
+
+- (void)goNext
+{
+    LogDev(@"productId: %i", product.productId);
+    LogDev(@"isPillowFrontSide: %i", self.isPillowFrontSide);
+    LogDev(@"rects=%@", rects);
+    
+    // Check do we have images in PMHolderView
+    if (![self.pmHolderView getPmImagesFromHolder] ||
+        ![self.pmHolderView getPmImagesFromHolder].count){
+        
+        [SVProgressHUD showErrorWithStatus:@" Please use Auto Arrange option, or manualy drag and drop photos on product, in order to buy it."];
+        return;
+    }
+    
+    if ([[FakeDelegate sharedInstance]selectedGlobalTemplate]){
+        
+        NSString *selectedSKU;
+        
+        if (product.productId == PRODUCT_THROW_PILLOWS() &&
+            [[[FakeDelegate sharedInstance]selectedGlobalTemplates] valueForKey:@"1"] != nil){
+            
+            selectedSKU = ((ProductTemplate *)[[[FakeDelegate sharedInstance]selectedGlobalTemplates] valueForKey:@"1"]).sku;
+        } else {
+            selectedSKU = [[FakeDelegate sharedInstance]selectedGlobalTemplate].sku;
+        }
+        
+        LogDev(@"selectedSKU=%@", selectedSKU);
+        
+        hpExtraOffer = [[HPExtraOffer alloc]initWithSKU:selectedSKU currentPrice:product.priceInfo inViewController:self];
+        hpExtraOffer.delegate = self;
+        
+        if ([hpExtraOffer checkForExtraOffer] && !self.isEdit) {
+            
+            NSString *titleS = @"Share this deal with your Facebook Friends to get this great $3 deal!";
+            NSMutableAttributedString *title = [[NSMutableAttributedString alloc]initWithString:titleS];
+            
+            [self showDialogWithText:title
+                         selectorYes:@selector(onClickOfferShare:)
+                          selectorNo:@selector(onClickOfferCancel:)
+                          buttonsTag:566
+                        leftBtnTitle:[[NSMutableAttributedString alloc]initWithString:@"Cancel Deal"]
+                       rightBtnTitle:[[NSMutableAttributedString alloc]initWithString:@"Share"]
+                        deleteDialog:NO
+                          dataHolder:nil];
+        } else {
+            [self buyItOrSaveIt];
+        }
+    } else {
+        [self buyItOrSaveIt];
+    }
+}
+
+- (IBAction)onClickOfferCancel:(id)sender
+{
+    [self buyItOrSaveIt];
+    [hpExtraOffer declineOffer];
+}
+
+- (IBAction)onClickOfferShare:(id)sender
+{
+    [hpExtraOffer acceptOffer];
+}
+
+- (void)onClickBack
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)onClickInfoMain:(id)sender
+{
+    [self showDialogWithText:[[NSMutableAttributedString alloc]initWithString:HPLocalizedStringWithKey(@"cp_help")]
+                 selectorYes:nil
+                  selectorNo:@selector(onClickWatchVideo:)
+                  buttonsTag:987
+                leftBtnTitle:[[NSMutableAttributedString alloc]initWithString:HPLocalizedStringWithKey(@"cp_btn_help_watch_video")]
+               rightBtnTitle:[[NSMutableAttributedString alloc]initWithString:HPLocalizedStringWithKey(@"cp_btn_help_ok")]
+                deleteDialog:NO
+                  dataHolder:nil];
+}
+
+- (IBAction)onClickWatchVideo:(id)sender
+{
+    [self showGIFAnimation:@"gif_select_product"
+                  selector:@selector(tapOnGIF)
+                  duration:7.0
+                  onFinish:^(NSObject *obj) {
+                      [self.navigationController setNavigationBarHidden:NO animated:NO];
+                  }];
+}
+
+- (IBAction)onClickAddImages:(id)sender
+{
+    self.isFromAddMorePhotos = YES;
+    
+    VCSelectPhotos *vc = [[VCSelectPhotos alloc]initWithNibName:@"VCSelectPhotos" bundle:[NSBundle sdkBundle]];
+    vc.isFromEdit = YES;
+    vc.isFromAddMorePhotos = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)onClickPreview_otherSide:(id)sender
+{
+    if (product.productId == PRODUCT_THROW_PILLOWS()){
+        self.isPillowFrontSide = ! self.isPillowFrontSide;
+        
+        self.lblTitle.text = self.isPillowFrontSide ? HPLocalizedStringWithKey(@"cp_throw_pillow_front_side") : HPLocalizedStringWithKey(@"cp_throw_pillow_back_side");
+        [self initViewWithDelay];
+    }
+}
+
+- (IBAction)onClickPreview_edit:(id)sender
+{
+    [self hideElementsOnPreview:NO];
+    [self removeViewWithTAG:TAG_VIEW_PREVIEW];
+    self.isPreview = NO;
+    
+    [self setViewInCenterOfScreen];
+    
+    // Check does Navigation bar needs to be visible or hidden
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+    [self showNavigationBar];
+    
+    // Check if user trys to edit back side (solid color) of pillow
+    if (product.productId == PRODUCT_THROW_PILLOWS()){
+        ProductTemplate *pTemp = [[SQLDao loadTemplatesForProduct:product]
+                                  valueForKey:self.isPillowFrontSide ? @"0" : @"1"];
+        if (pTemp == nil){
+            self.isPillowFrontSide = YES;
+            [self customizeFontsAndText];
+            [self initViewWithDelay];
+        }
+    }
+}
+
+- (void)ClickOnRandomArrange_DialogMP
+{
+    if ([Utils templateGetHPLayers:pTemplate layerType:HPLAYER_TYPE_IMAGE].count == 1){
+        [self placeSinglePhoto];
+    } else {
+        [self randomArrangePhotos];
+    }
+    [self hideDialog];
+}
+
+- (void)ClickOnManualArrange_DialogMP
+{
+    [self hideDialog];
+    
+    [self finishedAllProcesses];
+    // [self addPiecesToHorView:self.parsedPieces];
+}
+
+#pragma mark - HPExtraOffer Delegate
+
+- (void)HPExtraOffer_OnSuccessfulShare:(PriceInfo *)priceInfo
+{
+    product.priceInfo = priceInfo;
+    [self buyItOrSaveIt];
+}
+
+#pragma mark - ImageEditor methods and Delegate
+
+- (void)showEditView
+{
+    self.isFromImageEditor = YES;
+    
+    [self setPMImageForEdit:HP_isWrappedProduct(product)];
+    
+    [self.navigationController presentViewController:self.imageEditor animated:YES completion:^{
+        
+        [self.imageEditor.view setNeedsDisplay];
+    }];
+}
+
+- (void)ImageEditorOnProccessImageFinished:(UIImage *)image transform:(CGAffineTransform)transform center:(CGPoint)center
+{
+    [self processImage:image transform:transform center:center];
+}
+
+- (void)ImageEditorDismiss
+{
+    self.isFromImageEditor = YES;
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
+#pragma mark - Process image
+
+- (void)processImage:(UIImage *)image transform:(CGAffineTransform)transform center:(CGPoint)center
+{
+    editingImage.image = image;
+    editingImage.savedEditTransform = transform;
+    editingImage.savedEditCenter = center;
+    
+    [self.pmHolderView addImagePiece:editingImage toRect:editingMask];
+    [self.pmHolderView refresh];
+    
+    [self refreshHorizontalViewSelectedImages];
+}
+
+- (void)processPMImagesFromHolderView:(NSArray *)items startPosition:(int)position
+{
+    editingImage = [items objectAtIndex:position];
+    editingMask = editingImage.rectMask;
+    
+    if (editingImage != nil){
+        
+        [self setPMImageForEdit:NO];
+        
+        __weak VCCustomizeProduct *wSelf = self;
+        
+        [self.imageEditor finishEditing:^(UIImage *captureImage, CGAffineTransform transform, CGPoint center) {
+            [wSelf processImage:captureImage transform:transform center:center];
+            
+            if (position < items.count - 1){
+                [wSelf processPMImagesFromHolderView:items startPosition:(position + 1)];
+            }
+        }];
+    }
+}
+
+#pragma mark - Crop Image and Save
+
+- (void)createThumbAndGoToCart
+{
+    __weak VCCustomizeProduct *wSelf = self;
+    
+    [PMImageUtils captureImageFromView:self.viewPanel onCaptureFinished:^(UIImage *capture) {
+        [ImageStore saveThumbnailForProduct:product image:capture isSecond:(product.productId == PRODUCT_THROW_PILLOWS() && !wSelf.isPillowFrontSide)];
+        
+        if (product.productId == PRODUCT_THROW_PILLOWS() &&
+            wSelf.isPillowFrontSide &&
+            [[[FakeDelegate sharedInstance]selectedGlobalTemplates] valueForKey:@"1"]){
+            
+            if (self.sameTemplateBothSidesProductId == PRODUCT_THROW_PILLOWS() ||
+                self.isClickedUseSameForBackSide){
+                
+                wSelf.isPillowFrontSide = NO;
+                [[FakeDelegate sharedInstance]selectedProduct].cartNumOfItems = 1;
+                
+                [rects removeAllObjects];
+                [self.pmSurfaceMask removeAllMasks];
+                [wSelf prepareSurfaceMask];
+                
+                [wSelf goNext];
+                
+                return;
+                
+            } else {
+                VCCustomizeProduct *vc = [[VCCustomizeProduct alloc]init];
+                vc.isPillowFrontSide = NO;
+                vc.isEdit = wSelf.isEdit;
+                [[FakeDelegate sharedInstance]selectedProduct].cartNumOfItems = 1;
+                
+                NSArray *pmImages = [wSelf.pmHolderView getPmImagesFromHolder];
+                NSMutableArray *usedImages = [NSMutableArray new];
+                
+                for (PMImage *pm in pmImages){
+                    [usedImages addObject:pm.thumbUrl];
+                }
+                vc.pillowUsedImages = usedImages;
+                [wSelf.navigationController pushViewController:vc animated:NO];
+                
+                return;
+            }
+        }
+        
+        if (!wSelf.isEdit){
+            [wSelf onClickShoppingCart:nil];
+        } else if (product.productId == PRODUCT_THROW_PILLOWS() && wSelf.isEdit){
+            //[wSelf.navigationController popToRootViewControllerAnimated:YES];
+            [wSelf onClickShoppingCart:nil];
+        } else {
+            [wSelf.navigationController popViewControllerAnimated:YES];
+        }
+    } onError:^(NSString *errMsg) {
+        [SVProgressHUD showErrorWithStatus:errMsg];
+    }];
+}
+
+- (void)saveImagePieces:(BOOL)isUpdate
+{
+    NSArray *piecesForSave = [self.pmHolderView getPmImagesFromHolder];
+    
+    if (piecesForSave.count){
+        [HPProgress showWithStatus:HPLocalizedStringWithKey(@"cp_progress_processing_images")];
+        [self saveImagePiecesRec:piecesForSave position:0 isUpdate:isUpdate];
+    } else {
+        [self createThumbAndGoToCart];
+    }
+}
+
+- (void)saveImagePiecesRec:(NSArray *)pieces position:(int)position isUpdate:(BOOL)isUpdate
+{
+    PMImage *pi = [pieces objectAtIndex:position];
+    
+    editingImage = pi;
+    editingMask = pi.rectMask;
+    
+    if (editingImage != nil){
+        
+        __weak VCCustomizeProduct *wSelf = self;
+        
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            BOOL isImageSaved = [wSelf.imageEditor saveImagePiece:editingMask
+                                                     editingImage:editingImage
+                                                      productDBId:product.productDBid
+                                                           isEdit:wSelf.isEdit];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (isImageSaved){
+                    if (position < pieces.count - 1){
+                        [wSelf saveImagePiecesRec:pieces position:(position + 1) isUpdate:isUpdate];
+                    } else {
+                        [HPProgress dismiss];
+                        [wSelf createThumbAndGoToCart];
+                    }
+                } else {
+                    [SQLDao deleteProductFromCart:product];
+                    [HPProgress dismiss];
+                }
+            });
+        });
+    }
+}
+
+- (void)setPMImageForEdit:(BOOL)shoudResetTransform
+{
+    _imageEditor = nil;
+    [self.imageEditor setWrapImageInCanvas:HP_isWrappedProduct(product)];
+    [self.imageEditor setPMImageForEdit:editingImage mask:editingMask shouldResetTransform:shoudResetTransform];
+}
+
+#pragma mark - Other
+
+- (void)addProductInDB:(BOOL)isUpdate
+{
+    product.productDetails.color = selectedColor;
+    
+    if (product.productId == PRODUCT_THROW_PILLOWS()) {
+        
+        NSArray *rectsFromDB = ((Product *)[SQLDao loadProductFromCart:product.productDBid]).rects;
+        NSMutableArray *rectsToAdd = [NSMutableArray new];
+        
+        if (self.isPillowFrontSide){
+            for (PMRectMask *rm in rectsFromDB){
+                if (rm.rectId >= 500){
+                    [rectsToAdd addObject:rm];
+                }
+            }
+            [rectsToAdd insertObjects:[self.pmSurfaceMask rects] atIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, [self.pmSurfaceMask rects].count)]];
+        } else {
+            
+            for (PMRectMask *rm in rectsFromDB){
+                if (rm.rectId < 500){
+                    [rectsToAdd addObject:rm];
+                }
+            }
+            [rectsToAdd addObjectsFromArray:[self.pmSurfaceMask rects]];
+        }
+        
+        product.rects = rectsToAdd;
+    }
+    
+    [SQLDao addProductToCart:product isUpdate:isUpdate];
+}
+
+- (void)addPMIMagesInDB
+{
+    if (product.productId == PRODUCT_THROW_PILLOWS()) {
+        
+        NSArray *pmImagesFromDB = [SQLDao loadPMImagesForProductLocaly:product];
+        NSMutableArray *imagesToAdd = [NSMutableArray new];
+        [SQLDao deletePMImagesForProduct:product];
+        
+        if (self.isPillowFrontSide){
+            for (PMImage *pm in pmImagesFromDB){
+                if (pm.rectId >= 500){
+                    [imagesToAdd addObject:pm];
+                }
+            }
+            [imagesToAdd insertObjects:[self.pmHolderView getPmImagesFromHolder] atIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, [self.pmHolderView getPmImagesFromHolder].count)]];
+            
+        } else {
+            for (PMImage *pm in pmImagesFromDB){
+                if (pm.rectId < 500){
+                    [imagesToAdd addObject:pm];
+                }
+            }
+            
+            if (self.sameTemplateBothSidesProductId == PRODUCT_THROW_PILLOWS() ||
+                self.isClickedUseSameForBackSide){
+                for (PMImage *pmImage in [self.pmHolderView getPmImagesFromHolder]){
+                    pmImage.rectId += 499;
+                    pmImage.rectMask.rectId += 499;
+                }
+            }
+            [imagesToAdd addObjectsFromArray:[self.pmHolderView getPmImagesFromHolder]];
+        }
+        
+        [SQLDao addPMImagesToProduct:product images:imagesToAdd];
+        
+    } else {
+        [SQLDao deletePMImagesForProduct:product];
+        [SQLDao addPMImagesToProduct:product images:[self.pmHolderView getPmImagesFromHolder]];
+    }
+}
+
+- (void)addTemplateInDB
+{
+    if (product.productId == PRODUCT_THROW_PILLOWS()) {
+        
+        NSDictionary *templatesFromDB = [SQLDao loadTemplatesForProduct:product];
+        [SQLDao deleteTemplateForProduct:product];
+        
+        if (self.isPillowFrontSide){
+            [SQLDao addPMTemplateToProduct:product pTemplate:pTemplate];
+            
+            if ([templatesFromDB valueForKey:@"1"]){
+                [SQLDao addPMTemplateToProduct:product pTemplate:[templatesFromDB valueForKey:@"1"]];
+            }
+            
+        } else {
+            if ([templatesFromDB valueForKey:@"0"]){
+                [SQLDao addPMTemplateToProduct:product pTemplate:[templatesFromDB valueForKey:@"0"]];
+            }
+            
+            [SQLDao addPMTemplateToProduct:product pTemplate:pTemplate];
+        }
+        
+    } else {
+        [SQLDao deleteTemplateForProduct:product];
+        [SQLDao addPMTemplateToProduct:product pTemplate:pTemplate];
+    }
+}
+
+- (void)getPMImagesFromDB
+{
+    SQLDao *dao = [[SQLDao alloc]init];
+    dao.delegate = self;
+    
+    [HPProgress showWithStatus:PIO_textForLoadingDialog()];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), ^{
+        [dao loadPMImagesForProduct:product];
+    });
+}
+
+- (void)onGetPMImagesFromDB:(NSMutableArray *)pmImages
+{
+    if (product.productId == PRODUCT_THROW_PILLOWS()){
+        int numberOfPmImages = [Utils templateGetNumOfImage:pTemplate];
+        
+        pmImages = [[NSMutableArray alloc] initWithArray:
+                    [pmImages objectsAtIndexes: self.isPillowFrontSide ?
+                     [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, numberOfPmImages)] :
+                     [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(pmImages.count - numberOfPmImages, numberOfPmImages)]]];
+    }
+    NSMutableSet *set = [[NSMutableSet alloc]init];
+    for (PMImage *pmImage in pmImages){
+        [set addObject:pmImage.thumbUrl];
+    }
+    
+    NSMutableArray *uniqPieces = [[NSMutableArray alloc]init];
+    for (NSString *url in set.allObjects){
+        for (PMImage *pm in pmImages){
+            if ([pm.thumbUrl isEqualToString:url]){
+                [uniqPieces addObject:pm];
+                break;
+            }
+        }
+    }
+    
+    // block for main thread
+    void(^onGetImages)(void) = ^void{
+        
+        [HPProgress dismiss];
+        
+        if (pmImages.count){
+            
+            __weak VCCustomizeProduct *wSelf = self;
+            
+            [self processImagesFromDB:pmImages position:0 onFinished:^{
+                
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    
+                    // Fill horizontal scroll
+                    [wSelf.parsedPieces removeAllObjects];
+                    [wSelf.parsedPieces addObjectsFromArray:uniqPieces];
+                    [wSelf addPiecesToHorView:uniqPieces];
+                });
+            }];
+        }
+    };
+    
+    dispatch_async(dispatch_get_main_queue(), onGetImages);
+}
+
+- (void)processImagesFromDB:(NSArray *)pmImages position:(int)position onFinished:(void(^)(void))onFinished
+{
+    __block int pos = position;
+    
+    PMImage *pmImage = [pmImages objectAtIndex:pos];
+    
+    // Set thumbnail
+    if (pmImage.imageProviderType == IMAGE_TYPE_PHONE){
+        if (pmImage.thumbFromPhone != nil){
+            pmImage.image = [UIImage imageWithCGImage:pmImage.thumbFromPhone];
+            
+        }
+    } else {
+        NSURL *thumbUrl = [NSURL URLWithString:pmImage.thumbUrl];
+        [pmImage setImageWithURL:thumbUrl placeholderImage:[UIImage imageNamedFromBundle:@"placeholder_grid"]];
+    }
+    pmImage.baseImage = [UIImage imageWithContentsOfFile:pmImage.baseImageLocalPath];
+    
+    PMRectMask *rectMask;
+    for (PMRectMask *r in rects){
+        if (pmImage.rectId == r.rectId){
+            rectMask = r;
+            break;
+        }
+    }
+    
+    if (rectMask != nil){
+        // Put transform on Thumbs
+        editingImage = pmImage;
+        editingMask = rectMask;
+        [self setPMImageForEdit:NO];
+        
+        __weak VCCustomizeProduct *wSelf = self;
+        
+        [self.imageEditor finishEditing:^(UIImage *captureImage, CGAffineTransform transform, CGPoint center) {
+            
+            [wSelf processImage:captureImage transform:transform center:center];
+            pos++;
+            
+            if (pos < pmImages.count){
+                [wSelf processImagesFromDB:pmImages position:pos onFinished:onFinished];
+                
+            } else  {
+                if (self.isPreview){
+                    
+                    PIO3DDummyPreview *pdp = [[PIO3DDummyPreview alloc]initWithLayer:self.viewPanel.layer];
+                    [pdp preview3D];
+                }
+                onFinished();
+            }
+        }];
+    }
+}
+
+- (void)prepareSurfaceMask
+{
+    // Create Masks and Rects
+    NSArray *designs = [Utils templateGetHPLayers:pTemplate layerType:HPLAYER_TYPE_DESIGN];
+    
+    if (designs.count == 0){
+        return;
+    }
+    
+    HPLayer *layer = [designs objectAtIndex:0];
+    
+    CGSize canvasSizeFromServer = CGSizeMake(layer.width, layer.height); // in pixels
+    canvasRatio = [PMImageUtils calculateRatioForCanvasSize:canvasSizeFromServer forView:self.pmBaseView];
+    [self addSurfaceMask:canvasSizeFromServer];
+}
+
+- (void)addSurfaceMask:(CGSize)canvasSizeFromServer
+{
+    if (!self.isEdit){
+        BOOL isRetina = HP_isRetinaDisplay();
+        
+        int x = product.productId == PRODUCT_THROW_PILLOWS() && !self.isPillowFrontSide  ? 500 : 1;
+        
+        for (HPLayer *layer in [Utils templateGetHPLayers:pTemplate layerType:HPLAYER_TYPE_IMAGE]){
+            
+            PMRectMask *rm = [[PMRectMask alloc]initWithHPLayer:layer canvasRatio:canvasRatio baseLayerSize:self.pmBaseView.frame.size canvasFromServerSize:canvasSizeFromServer isRetina:isRetina];
+            rm.rectId = x;
+            
+            [rects addObject:rm];
+            
+            x++;
+        }
+        
+    } else {
+        rects = product.rects;
+    }
+    LogDev(@"addSurfaceMask=%@", rects);
+    
+    [self.pmSurfaceMask addMasks:rects];
+    self.pmSurfaceMask.hidden = YES;
+}
+
+- (void)tapOnGIF
+{
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+    
+    for (UIView *view in self.view.subviews){
+        if (view.tag == GIF_VIEW_TAG){
+            [view removeFromSuperview];
+        }
+    }
+}
+
+- (void)showUseSameForBackSideButton
+{
+    [self removeViewWithTAG:TAG_BTN_USE_SAME_FOR_BACK_SIDE];
+    static int btnWidth = 100;
+    
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake((self.view.frame.size.width - btnWidth) / 2, self.viewPanel.frame.origin.y + self.viewPanel.frame.size.height - 36 , btnWidth, 36)];
+    [btn addTarget:self action:@selector(onClickUseSameForBackSide) forControlEvents:UIControlEventTouchUpInside];
+    btn.titleLabel.numberOfLines = 2;
+    [btn setBackgroundColor:[UIColor grayColor]];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    btn.titleLabel.font = PIO_fontWithName(FONT_LT(), 14.0);
+    [btn setTitle:@"Use same for back side and save" forState:UIControlStateNormal];
+    btn.showsTouchWhenHighlighted = YES;
+
+    [self.view addSubview:btn];
+}
+
+- (void)onClickUseSameForBackSide
+{
+    self.isClickedUseSameForBackSide = YES;
+    [self makeTemplatesSame];
+    [self goNext];
+}
+
+- (void)makeTemplatesSame
+{
+    // Make both sides of throw pillow the same
+    ProductTemplate *frontSideTemplate = [[[FakeDelegate sharedInstance]selectedGlobalTemplates]valueForKey:@"0"];
+    ProductTemplate *backSideTemplate = [[[FakeDelegate sharedInstance]selectedGlobalTemplates]valueForKey:@"1"];
+    
+    if (backSideTemplate){
+        [[[FakeDelegate sharedInstance]selectedGlobalTemplates]setValue:frontSideTemplate forKey:@"1"];
+    }
+}
+
+#pragma mark - PMImagesDownloader Delegate
+
+- (void)PMImageDownloaderOnParsePMImages:(NSMutableArray *)pieces
+{
+    LogDev(@"PMImageDownloaderOnParsePMImages: %@", pieces);
+    
+    if (!pieces.count){
+        return;
+    }
+    
+    if (self.isFromAddMorePhotos){
+        self.isFromAddMorePhotos = NO;
+        
+        [self.parsedPieces addObjectsFromArray:pieces];
+    } else {
+        self.parsedPieces = pieces;
+    }
+    
+    // If is back side of pillow, use unused images
+    NSMutableArray *tempPieces;
+    if (product.productId == PRODUCT_THROW_PILLOWS() && !self.isPillowFrontSide && self.pillowUsedImages != nil){
+        
+        tempPieces = [[NSMutableArray alloc]initWithArray:pieces];
+        
+        for (PMImage *pm in pieces){
+            for (NSString *usedPmthumbUrl in self.pillowUsedImages){
+                if ([pm.thumbUrl isEqualToString:usedPmthumbUrl]){
+                    [tempPieces removeObject:pm];
+                    break;
+                }
+            }
+        }
+        
+        NSInteger numOfAreas =[Utils templateGetHPLayers:pTemplate layerType:HPLAYER_TYPE_IMAGE].count;
+        
+        if (tempPieces.count < numOfAreas){
+            
+            int m = 0;
+            
+            for (int x = 0; x < numOfAreas; x++){
+                [tempPieces addObject:[pieces objectAtIndex:m]];
+                m++;
+                
+                if (m == pieces.count){
+                    m = 0;
+                }
+            }
+        }
+        
+    } else {
+        tempPieces = pieces;
+    }
+    
+    if (tempPieces.count){
+        if ([Utils templateGetHPLayers:pTemplate layerType:HPLAYER_TYPE_IMAGE].count  == 1){
+            singlePMImage = [tempPieces objectAtIndex:0];
+        } else {
+            multiPMImages = nil;
+            multiPMImages = [[NSMutableArray alloc]init];
+            
+            NSInteger numOfAreas =[Utils templateGetHPLayers:pTemplate layerType:HPLAYER_TYPE_IMAGE].count;
+            
+            if (tempPieces.count < numOfAreas){
+                
+                int m = 0;
+                
+                for (int x = 0; x < numOfAreas; x++){
+                    [multiPMImages addObject:[tempPieces objectAtIndex:m]];
+                    m++;
+                    
+                    if (m == tempPieces.count){
+                        m = 0;
+                    }
+                }
+            } else if (tempPieces.count == numOfAreas){
+                
+                [multiPMImages addObjectsFromArray:tempPieces];
+            } else {
+                
+                for (int x = 0; x < numOfAreas; x++){
+                    [multiPMImages addObject:[tempPieces objectAtIndex:x]];
+                }
+            }
+        }
+    }
+}
+
+- (void)PMImageDownloaderOnDownloadAllImages
+{
+    LogDev(@"PMImageDownloaderOnDownloadAllImages");
+    
+    if (!self.parsedPieces.count){
+        return;
+    }
+    
+    if (!isLoaded){
+        isLoaded = YES;
+        
+        if ([Utils templateGetHPLayers:pTemplate layerType:HPLAYER_TYPE_IMAGE].count == 1){
+            [self placeSinglePhoto];
+        } else {
+            [self showDialog];
+        }
+        
+        if (PIO_showDoubleTapScreen()){
+            [self showCustomDoubleTapScreen];
+        }
+    }
+    
+    [self addPiecesToHorView:self.parsedPieces];
+}
+
+#pragma mark - HorizontalList View with PMImages
+
+- (void)refreshHorizontalViewSelectedImages
+{
+    double delayInSeconds = 0.2;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    
+    __weak VCCustomizeProduct *wSelf = self;
+    
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        // First uncheck all items
+        for (UIView *v in wSelf.scrollHorizontal.subviews){
+            if ([v isKindOfClass:[PMImage class]]){
+                [((PMImage *)v) setChecked:NO];
+            }
+        }
+        
+        for (PMImage *pmImage in [wSelf.pmHolderView getPmImagesFromHolder]){
+            for (UIView *v in wSelf.scrollHorizontal.subviews){
+                if ([v isKindOfClass:[PMImage class]] && ([((PMImage *)v).thumbUrl isEqualToString:pmImage.thumbUrl])){
+                    [((PMImage *)v) setChecked:YES];
+                    [((PMImage *)v) setNeedsDisplay];
+                }
+            }
+        }
+        [wSelf.scrollHorizontal setNeedsDisplay];
+    });
+}
+
+- (void)addPiecesToHorView:(NSMutableArray *)wPieces
+{
+    NSMutableArray *pieces = [[NSMutableArray alloc]initWithArray:wPieces];
+    
+    self.scrollHorizontal.contentSize = CGSizeZero;
+    
+    for (UIView *view in self.scrollHorizontal.subviews){
+        [view removeFromSuperview];
+    }
+    
+    for (PMImage *piece in pieces){
+        
+        piece.frame = CGRectMake(0, 3, 49, 49);
+        piece.delegate = self;
+        piece.userInteractionEnabled = YES;
+        
+        // Add border if there's backgound
+        if (PIO_bcgImageForToolbarInCustProduct()){
+            piece.layer.borderColor = [[UIColor whiteColor]CGColor];
+            piece.layer.borderWidth = 1.5;
+            piece.layer.cornerRadius = 1.0;
+        }
+        
+        // Set thumbnail
+        if (piece.imageProviderType == IMAGE_TYPE_PHONE){
+            
+            piece.image = [UIImage imageWithCGImage:piece.thumbFromPhone];
+        } else if (piece.imageProviderType == IMAGE_TYPE_DROPBOX || piece.imageProviderType == IMAGE_TYPE_WEB ||
+                   piece.imageProviderType == IMAGE_TYPE_NATIVE ){
+            piece.image = [UIImage imageWithContentsOfFile:piece.thumbUrl];
+        } else {
+            
+            NSURL *thumbUrl = [NSURL URLWithString:piece.thumbUrl];
+            [piece setImageWithURL:thumbUrl placeholderImage:[UIImage imageNamedFromBundle:@"placeholder_grid"]];
+        }
+        
+        [self addPieceToHorView:piece];
+    }
+    
+    [self.scrollHorizontal setContentOffset:CGPointMake(1, 0) animated:YES];
+}
+
+- (void)addPieceToHorView:(PMImage *)pmImage
+{
+    CGSize contentSize = self.scrollHorizontal.contentSize;
+    CGRect viewFrame = pmImage.frame;
+    
+    viewFrame.origin.x = contentSize.width + 3;
+    
+    contentSize.height = pmImage.frame.size.height;
+    contentSize.width += pmImage.frame.size.width + 8;
+    
+    pmImage.frame = viewFrame;
+    pmImage.startCenter = pmImage.center;
+    
+    [self.scrollHorizontal addSubview:pmImage];
+    self.scrollHorizontal.contentSize = contentSize;
+}
+
+#pragma mark - Preview View
+
+- (void)hideElementsOnPreview:(BOOL)hide
+{
+    self.btnBuyIt.hidden = hide;
+    
+    for (int i=1802; i<1806; i++){
+        [self.view viewWithTag:i].hidden = hide;
+    }
+}
+
+#pragma mark - TabBar - Actions
+
+- (IBAction)onClickTabText:(id)sender
+{
+    [PrintIOGoogleAnalytics trackEvent:[[PrintIOGAEvent alloc]initWithCategory:GAEvent_CategoryCustScreenButtons
+                                                                        action:@"Select option in tabbar"
+                                                                         label:@"Text" value:1]];
+    [self showTab:TAB_TEXT];
+    [self showDialogWithText:HPLocalizedStringWithKey(@"coming_soon") title:@"" selector:@selector(setTabsUnselected)];
+}
+
+- (IBAction)onClickTabEffects:(id)sender
+{
+    [PrintIOGoogleAnalytics trackEvent:[[PrintIOGAEvent alloc]initWithCategory:GAEvent_CategoryCustScreenButtons
+                                                                        action:@"Select option in tabbar"
+                                                                         label:@"Effects" value:1]];
+    [self showTab:TAB_EFFECTS];
+    [self showDialogWithText:HPLocalizedStringWithKey(@"coming_soon") title:@"" selector:@selector(setTabsUnselected)];
+}
+
+- (IBAction)onClickTabLayout:(id)sender
+{
+    [PrintIOGoogleAnalytics trackEvent:[[PrintIOGAEvent alloc]initWithCategory:GAEvent_CategoryCustScreenButtons
+                                                                        action:@"Select option in tabbar"
+                                                                         label:@"Layout" value:1]];
+    [self showTab:TAB_LAYOUT];
+    //[self showDialogWithText:HPLocalizedStringWithKey(@"coming_soon") title:@"" selector:@selector(setTabsUnselected)];
+    
+    if ([Utils isViewWithTAG:TAG_TEMPLATES_VIEW subviewOfView:self.view]){
+        [self removeViewWithTAG:TAG_TEMPLATES_VIEW];
+    } else {
+        [self.apiClient getProductTemplatesForSKU:pTemplate.sku];
+    }
+}
+
+- (IBAction)onClickTabOptions:(id)sender
+{
+    [PrintIOGoogleAnalytics trackEvent:[[PrintIOGAEvent alloc]initWithCategory:GAEvent_CategoryCustScreenButtons
+                                                                        action:@"Select option in tabbar"
+                                                                         label:@"Options" value:1]];
+    [self showTab:TAB_OPTIONS];
+    
+    if (![self removeViewWithTAG:TOOLBAR_POPUP]){
+        
+        NSArray *items;
+        UIView *itemsView;
+        
+        if (product.productId == PRODUCT_PHONE_CASES() ||
+            product.productId == PRODUCT_TABLET_CASES() ||
+            product.productId == PRODUCT_THROW_PILLOWS()) {
+            
+            items = [NSArray arrayWithObjects:
+                     [NSNumber numberWithInt:TOOLBAR_ITEM_BACKGROUND],
+                     [NSNumber numberWithInt:TOOLBAR_ITEM_SHUFFLE], nil];
+            itemsView = [CP_Helper toolbarPopUpForItems:items];
+            
+            [((UIButton *)[itemsView viewWithTag:TOOLBAR_ITEM_BACKGROUND]) addTarget:self
+                                                                              action:@selector(onClickTabOptionsBackground:)
+                                                                    forControlEvents:UIControlEventTouchUpInside];
+            [((UIButton *)[itemsView viewWithTag:TOOLBAR_ITEM_SHUFFLE]) addTarget:self
+                                                                           action:@selector(onClickTabOptionsShuffle:)
+                                                                 forControlEvents:UIControlEventTouchUpInside];
+            
+        } else {
+            
+            items = [NSArray arrayWithObjects:[NSNumber numberWithInt:TOOLBAR_ITEM_SHUFFLE], nil];
+            itemsView = [CP_Helper toolbarPopUpForItems:items];
+            
+            [((UIButton *)[itemsView viewWithTag:TOOLBAR_ITEM_SHUFFLE]) addTarget:self
+                                                                           action:@selector(onClickTabOptionsShuffle:)
+                                                                 forControlEvents:UIControlEventTouchUpInside];
+        }
+        
+        [CP_Helper customizeTabOptions:itemsView color:COLOR_LIGHT_PURPLE];
+        [Utils addAnimatedView:itemsView onView:self.view];
+        
+        Utils_moveViewToX(itemsView, self.btnTabOptions.frame.origin.x);
+        Utils_moveViewToY(itemsView, self.viewTabBar.frame.origin.y - itemsView.frame.size.height - 44);
+        
+    } else {
+        [self setTabsUnselected];
+    }
+}
+
+- (void)showTab:(int)tabId
+{
+    [self removeTabBarViewsAndUnselectExcept:tabId];
+    
+    switch (tabId) {
+        case TAB_TEXT:
+        {
+            self.tabItem0.backgroundColor = COLOR_LIGHT_BLUE;
+            [self.btnTabText setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            [self.btnTabText setImage:[UIImage imageNamedFromBundle:@"icon_abc_white"]
+                             forState:UIControlStateNormal];
+        }
+            break;
+            
+        case TAB_EFFECTS:
+        {
+            self.tabItem1.backgroundColor = COLOR_LIGHT_GREEN;
+            [self.btnTabEffects setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            [self.btnTabEffects setImage:[UIImage imageNamedFromBundle:@"icon_effects_white"]
+                                forState:UIControlStateNormal];
+        }
+            break;
+            
+        case TAB_LAYOUT:
+        {
+            self.tabItem2.backgroundColor = COLOR_LIGHT_RED;
+            [self.btnTabLayout setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            [self.btnTabLayout setImage:[UIImage imageNamedFromBundle:@"icon_layout_white"]
+                               forState:UIControlStateNormal];
+        }
+            break;
+            
+        case TAB_OPTIONS:
+        {
+            self.tabItem3.backgroundColor = COLOR_LIGHT_PURPLE;
+            [self.btnTabOptions setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            [self.btnTabOptions setImage:[UIImage imageNamedFromBundle:@"icon_options_white"]
+                                forState:UIControlStateNormal];
+        }
+            break;
+    }
+}
+
+- (void)removeTabBarViewsAndUnselectExcept:(int)tabId
+{
+    for (int i = TAB_TEXT; i<=TAB_LAYOUT; i++){
+        if (i != tabId){
+            [self removeViewWithTAG:i];
+        }
+    }
+    [self setTabsUnselected];
+}
+
+- (void)removeTabBarViewsAndUnselectTabBarItems
+{
+    [self removeTabBarViews];
+    [self setTabsUnselected];
+}
+
+- (void)removeTabBarViews
+{
+    for (int i = TAB_TEXT; i<=TAB_LAYOUT; i++){
+        [self removeViewWithTAG:i];
+    }
+}
+
+- (void)setTabsUnselected
+{
+    self.tabItem0.backgroundColor = [UIColor clearColor];
+    self.tabItem1.backgroundColor = [UIColor clearColor];
+    self.tabItem2.backgroundColor = [UIColor clearColor];
+    self.tabItem3.backgroundColor = [UIColor clearColor];
+    
+    [self.btnTabText setTitleColor:COLOR_LIGHT_BLUE forState:UIControlStateNormal];
+    [self.btnTabEffects setTitleColor:COLOR_LIGHT_GREEN forState:UIControlStateNormal];
+    [self.btnTabLayout setTitleColor:COLOR_LIGHT_RED forState:UIControlStateNormal];
+    [self.btnTabOptions setTitleColor:COLOR_LIGHT_PURPLE forState:UIControlStateNormal];
+    
+    [self.btnTabText setImage:[UIImage imageNamedFromBundle:@"icon_abc"] forState:UIControlStateNormal];
+    [self.btnTabEffects setImage:[UIImage imageNamedFromBundle:@"icon_effects"] forState:UIControlStateNormal];
+    [self.btnTabLayout setImage:[UIImage imageNamedFromBundle:@"icon_layout"] forState:UIControlStateNormal];
+    [self.btnTabOptions setImage:[UIImage imageNamedFromBundle:@"icon_options"] forState:UIControlStateNormal];
+}
+
+#pragma mark - TabBar Sub buttons - Edit Tools
+
+#pragma mark - TabBar Sub buttons - Options
+
+- (IBAction)onClickTabOptionsBackground:(id)sender
+{
+    [self removeTabBarViewsAndUnselectTabBarItems];
+    [self removeViewWithTAG:TOOLBAR_POPUP];
+    
+    VCSelectColor *vc = [[VCSelectColor alloc]initWithNibName:@"VCSelectColor" bundle:[NSBundle sdkBundle]];
+    vc.isFromTabBar = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)onClickTabOptionsShuffle:(id)sender
+{
+    [self removeTabBarViewsAndUnselectTabBarItems];
+    [self removeViewWithTAG:TOOLBAR_POPUP];
+    [self randomArrangePhotos];
+}
+
+#pragma mark - Touch handling - PMImage pieces (horizontal scroll)
+
+- (void)onTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event onPiece:(PMImage *)piece
+{
+    // IF file doesn't exist on locationd, than download is still in progress
+    if (![[NSFileManager defaultManager] fileExistsAtPath:piece.baseImageLocalPath]){
+        [self showDialogWithText:HPLocalizedStringWithKey(@"cp_warning_download_in_progress") title:@"" selector:nil];
+        return;
+    }
+    
+    self.pmSurfaceMask.hidden = NO;
+    movingImage = piece;
+    
+    for (UITouch *touch in touches) {
+        [self dispatchFirstTouchAtPoint:[NSValue valueWithCGPoint:[touch locationInView:self.pmBaseView]]];
+    }
+}
+
+- (void)onTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    movingImage.alpha = 0.5;
+    
+    for (UITouch *touch in touches) {
+        [self dispatchTouchEvent:[touch view] toPosition:[touch locationInView:self.pmBaseView]];
+    }
+}
+
+- (void)onTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    self.scrollHorizontal.scrollEnabled = YES;
+    
+    [self.pmSurfaceMask redrawView];
+    self.pmSurfaceMask.hidden = YES;
+    movingImage.alpha = 1.0;
+    
+    for (UITouch *touch in touches) {
+        [self dispatchTouchEndEvent:[touch view] toPosition:[touch locationInView:self.pmBaseView]];
+    }
+}
+
+#pragma mark - Touch handling - Main View
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    if (self.isPreview){
+        return;
+    }
+    
+    self.pmSurfaceMask.hidden = NO;
+    
+    UITouch *touch = [touches anyObject];
+    NSUInteger tapCount = [touch tapCount];
+    
+    switch (tapCount) {
+        case 1:
+            selectorObject = [NSValue valueWithCGPoint:[touch locationInView:self.pmBaseView]];
+            [self performSelector:@selector(dispatchFirstTouchAtPoint:)
+                       withObject:selectorObject
+                       afterDelay:.3];
+            break;
+        case 2:
+            [NSObject cancelPreviousPerformRequestsWithTarget:self
+                                                     selector:@selector(dispatchFirstTouchAtPoint:)
+                                                       object:selectorObject];
+            [self performSelector:@selector(dispatchDoubleClick:)
+                       withObject:[NSValue valueWithCGPoint:[touch locationInView:self.pmBaseView]]
+                       afterDelay:.3];
+            break;
+    }
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    if (self.isPreview){
+        return;
+    }
+    
+    movingImage.alpha = 0.5;
+    
+    for (UITouch *touch in touches) {
+        [self dispatchTouchEvent:[touch view] toPosition:[touch locationInView:self.pmBaseView]];
+    }
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    if (self.isPreview){
+        return;
+    }
+    
+    [self hideGrid];
+    
+    [NSObject cancelPreviousPerformRequestsWithTarget:self
+                                             selector:@selector(dispatchFirstTouchAtPoint:)
+                                               object:selectorObject];
+    
+    for (UITouch *touch in touches) {
+        // Sends to the dispatch method, which will make sure the appropriate subview is acted upon
+        [self dispatchTouchEndEventForChangingPlaces:[touch view] toPosition:[touch locationInView:self.pmBaseView]];
+    }
+}
+
+#pragma mark - Dispatch Touches
+
+- (void)dispatchFirstTouchAtPoint:(NSValue *)touchV
+{
+    CGPoint touchPoint = [touchV CGPointValue];
+    
+    for (PMRectMask *rectMask in rects){
+        if (CGRectContainsPoint(rectMask.rect, touchPoint)){
+            
+            // Touch is over this rect
+            [rectMask setSelected:YES];
+            
+            // Check is PMImage already placed in this rect
+            if ([self.pmHolderView getItemFromRectMask:rectMask] != nil){
+                
+                // We already have PMImage placed in this rect. Move it with touch.
+                movingImageFromCase = [self.pmHolderView getItemFromRectMask:rectMask];
+                movingImageFromCasePreview = [[UIImageView alloc]initWithImage:movingImageFromCase.image];
+                movingImageFromCasePreview.frame = CGRectMake(touchPoint.x, touchPoint.y, 100, 100);
+                movingImageFromCasePreview.center = touchPoint;
+                movingImageFromCasePreview.clipsToBounds = YES;
+                movingImageFromCasePreview.contentMode = UIViewContentModeScaleAspectFit;
+                movingImageFromCasePreview.alpha = 0.5;
+                movingImageFromCasePreview.tag = 7432;
+                [self.view addSubview:movingImageFromCasePreview];
+                break;
+            }
+            
+        } else {
+            [rectMask setSelected:NO];
+        }
+        [self.pmSurfaceMask redrawView];
+    }
+}
+
+- (void)dispatchTouchEvent:(UIView *)theView toPosition:(CGPoint)position
+{
+    for (PMRectMask *rectMask in rects){
+        if (CGRectContainsPoint(rectMask.rect, position)){
+            
+            // Touch is moving over this rect
+            [rectMask setSelected:YES];
+            
+        } else {
+            [rectMask setSelected:NO];
+        }
+        [self.pmSurfaceMask redrawView];
+    }
+    
+    if (movingImageFromCase != nil){
+        movingImageFromCasePreview.center = position;
+    }
+}
+
+- (void)dispatchTouchEndEventForChangingPlaces:(UIView *)theView toPosition:(CGPoint)position
+{
+    // Check if we have movingImage, if so, remove it from pmHolderView
+    if (movingImageFromCase != nil){
+        
+        if (CGRectContainsPoint(movingImageFromCase.rectMask.rect, position)){
+            
+            // We are dropping piece onto same place
+            movingImage = nil;
+            movingImageFromCase = nil;
+            [self removeViewWithTAG:7432];
+            return;
+        } else {
+            movingImage = movingImageFromCase;
+            [self.pmHolderView removeItem:movingImageFromCase];
+            [self refreshHorizontalViewSelectedImages];
+        }
+    }
+    
+    for (PMRectMask *rectMask in rects){
+        if (CGRectContainsPoint(rectMask.rect, position)){
+            
+            // Unselect rect
+            [rectMask setSelected:NO];
+            [self.pmSurfaceMask redrawView];
+            
+            if (movingImage != nil){
+                
+                // Reset transformation of moving image
+                movingImage.transform = HP_resetTransform();
+                movingImage.savedEditTransform = HP_resetTransform();
+                movingImage.matrix = HP_matrixReset();
+                
+                // Take imagePiece from selected position, and place it in old position
+                PMImage *takenPMImage = [self.pmHolderView getItemFromRectMask:rectMask];
+                
+                // Reset transformation of image which will replace moving image
+                takenPMImage.transform = HP_resetTransform();
+                takenPMImage.savedEditTransform = HP_resetTransform();
+                takenPMImage.matrix = HP_matrixReset();
+                
+                editingImage = takenPMImage;
+                editingMask = movingImage.rectMask;
+                
+                [self setPMImageForEdit:HP_isWrappedProduct(product)];
+                
+                __weak VCCustomizeProduct *wSelf = self;
+                
+                [self.imageEditor finishEditing:^(UIImage *captureImage, CGAffineTransform transform, CGPoint center) {
+                    [wSelf processImage:captureImage transform:transform center:center];
+                    
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        
+                        editingImage = movingImage;
+                        editingMask = rectMask;
+                        
+                        [wSelf setPMImageForEdit:HP_isWrappedProduct(product)];
+                        [wSelf.imageEditor finishEditing:^(UIImage *captureImage, CGAffineTransform transform, CGPoint center) {
+                            [wSelf processImage:captureImage transform:transform center:center];
+                            [wSelf.pmHolderView refresh];
+                            
+                            movingImage = nil;
+                            movingImageFromCase = nil;
+                        }];
+                    });
+                }];
+            }
+            break;
+        }
+    }
+    
+    [self removeViewWithTAG:7432];
+}
+
+- (void)dispatchTouchEndEvent:(UIView *)theView toPosition:(CGPoint)position
+{
+    // Check if we have movingImage, if so, remove it from pmHolderView
+    if (movingImageFromCase != nil){
+        movingImage = movingImageFromCase;
+        [self.pmHolderView removeItem:movingImageFromCase];
+    }
+    
+    for (PMRectMask *rectMask in rects){
+        if (CGRectContainsPoint(rectMask.rect, position)){
+            
+            // Unselect rect
+            [rectMask setSelected:NO];
+            [self.pmSurfaceMask redrawView];
+            
+            if (movingImage != nil){
+                movingImage.center = rectMask.center;
+                movingImage.transform = CGAffineTransformIdentity;
+                movingImage.matrix = HP_matrixReset();
+                movingImage.savedEditCenter = rectMask.center;
+                movingImage.savedEditTransform = HP_resetTransform();
+                
+                [self.pmHolderView addImagePiece:movingImage toRect:rectMask];
+                
+                // Crop base image, not thumb
+                editingImage = [self.pmHolderView getItemFromRectMask:rectMask];
+                editingMask = rectMask;
+                
+                if (editingImage != nil){
+#if LOG_DISABLE
+                    float startTime = CACurrentMediaTime();
+                    LogDev(@"\n\n*********************\nEdit Image proces started at: %f", startTime);
+#endif
+                    [self setPMImageForEdit:YES];
+#if LOG_DISABLE
+                    LogDev(@"Second step completion time: %f", CACurrentMediaTime() - startTime);
+#endif
+                    __weak VCCustomizeProduct *wSelf = self;
+                    
+                    [self.imageEditor finishEditing:^(UIImage *captureImage, CGAffineTransform transform, CGPoint center) {
+                        [wSelf processImage:captureImage transform:transform center:center];
+                    }];
+#if LOG_DISABLE
+                    LogDev(@"Second step completion time: %f", CACurrentMediaTime() - startTime);
+#endif
+                }
+            }
+            break;
+        }
+    }
+    movingImage = nil;
+    movingImageFromCase = nil;
+    
+    [self removeViewWithTAG:7432];
+}
+
+- (void)dispatchDoubleClick:(NSValue *)touchV
+{
+    movingImageFromCase = nil;
+    [self removeViewWithTAG:7432];
+    
+    CGPoint touchPoint = [touchV CGPointValue];
+    
+    for (PMRectMask *rectMask in rects){
+        if (CGRectContainsPoint(rectMask.rect, touchPoint)){
+            
+            // Touch is over this rect
+            [rectMask setSelected:NO];
+            
+            editingImage = [self.pmHolderView getItemFromRectMask:rectMask];
+            editingMask = rectMask;
+            
+            if (editingImage != nil){
+                [self showEditView];
+            }
+            
+            [self.pmSurfaceMask redrawView];
+        }
+    }
+}
+
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    movingImage = nil;
+    movingImageFromCase = nil;
+    
+    [NSObject cancelPreviousPerformRequestsWithTarget:self
+                                             selector:@selector(dispatchFirstTouchAtPoint:)
+                                               object:nil];
+    
+    
+    [self removeViewWithTAG:7432];
+}
+
+- (void)hideGrid
+{
+    //[self.pmBaseView fadeView:NO];
+    [self.pmSurfaceMask redrawView];
+    self.pmSurfaceMask.hidden = YES;
+    movingImage.alpha = 1.0;
+}
+
+#pragma mark - UIGestureRecognizerDelegate
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    return ![gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]] && ![gestureRecognizer isKindOfClass:[UITapGestureRecognizer class]];
+}
+
+#pragma mark - Photo Arrangement Dialog
+
+- (void)showDialog
+{
+    // Check for if dev changed this option
+    switch (PIO_photoArrangementOption()) {
+            
+        case PIO_PHOTO_ARRANGEMENT_CHOOSE:
+        {
+            if (self.dialogArrangePhotos == nil){
+                _dialogArrangePhotos = [[[NSBundle sdkBundle] loadNibNamed:(HP_isiPhone5() ? @"CP_ArrangePhotos-568h" : @"CP_ArrangePhotos")
+                                                                     owner:self options:nil] objectAtIndex:0];
+                [CP_Helper customizeDialogArrangeFonts:self.dialogArrangePhotos];
+                
+                // Add selectors on Buttons
+                [((UIButton *)[_dialogArrangePhotos viewWithTag:10]) addTarget:self
+                                                                        action:@selector(ClickOnRandomArrange_DialogMP)
+                                                              forControlEvents:UIControlEventTouchUpInside];
+                
+                [((UIButton *)[_dialogArrangePhotos viewWithTag:11]) addTarget:self
+                                                                        action:@selector(ClickOnManualArrange_DialogMP)
+                                                              forControlEvents:UIControlEventTouchUpInside];
+            }
+            
+            self.dialogArrangePhotos.alpha = 0.0;
+            [self.view addSubview:self.dialogArrangePhotos];
+            
+            [UIView beginAnimations:nil context:NULL];
+            [UIView setAnimationDuration:0.5];
+            [UIView setAnimationDelegate:self];
+            self.dialogArrangePhotos.alpha = 1.0;
+            [UIView commitAnimations];
+        }
+            break;
+            
+        case PIO_PHOTO_ARRANGEMENT_MANUAL:
+            [self ClickOnManualArrange_DialogMP];
+            break;
+            
+        case PIO_PHOTO_ARRANGEMENT_AUTO:
+            [self ClickOnRandomArrange_DialogMP];
+            break;
+    }
+}
+
+- (void)hideDialog
+{
+    self.dialogArrangePhotos.alpha = 1.0;
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.5];
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationDidStopSelector:@selector(myAnimationStopped:finished:context:)];
+    self.dialogArrangePhotos.alpha = 0.0;
+    [UIView commitAnimations];
+}
+
+- (void)myAnimationStopped:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context
+{
+    [self.dialogArrangePhotos removeFromSuperview];
+}
+
+#pragma mark - Utils
+
+- (void)hideTabBar
+{
+    self.viewTabBar.hidden = YES;
+    
+    // Move other elements down for tab bar height
+    self.scrollHorizontal.transform = CGAffineTransformMakeTranslation(0, HEIGHT_VIEW_TAB_BAR);
+    self.btnAddMorePhotos.transform = CGAffineTransformMakeTranslation(0, HEIGHT_VIEW_TAB_BAR);
+    
+    // CGAffineTransformMakeTranslation doesn't work !!!
+    CGPoint center = self.lblTitleDown.center;
+    center.y += HEIGHT_VIEW_TAB_BAR;
+    self.lblTitleDown.center = center;
+    
+    center = [self.view viewWithTag:1804].center;
+    center.y += HEIGHT_VIEW_TAB_BAR;
+    [self.view viewWithTag:1804].center = center;
+}
+
+- (void)hideImagesList
+{
+    self.scrollHorizontal.hidden = YES;
+    self.btnAddMorePhotos.hidden = YES;
+    
+    // Move other views
+    self.lblTitleDown.transform = CGAffineTransformMakeTranslation(0, HEIGHT_SCROLL_IMAGES_LIST);
+    [self.view viewWithTag:1804].transform = CGAffineTransformMakeTranslation(0, HEIGHT_SCROLL_IMAGES_LIST);
+}
+
+- (void)showNavigationBar
+{
+    self.btnBuyIt.hidden = YES;
+    
+    [self showMenuButtonInNavBar];
+    [self adjustNavBarForiOSVersionWithBackgroundColor:PIO_colorForNavBarSaveToCartBcg()];
+    
+    if (!self.isPreview){
+        
+        NSString *title = @"Save to";
+        
+        if (product.productId == PRODUCT_THROW_PILLOWS() &&
+            self.isPillowFrontSide  &&
+            self.sameTemplateBothSidesProductId != PRODUCT_THROW_PILLOWS())
+        {
+            
+            title = @"Next";
+            
+            [self showRightNavButton:title
+                                icon:nil
+                          background:PIO_colorForNavBarSaveToCartBtnBcg()
+                            selector:@selector(goNext)];
+        } else {
+            [self showRightNavButtonSaveToCart:title
+                                      selector:@selector(goNext)];
+        }
+    } else {
+        [self showRightNavButton:@"Edit"
+                            icon:nil
+                      background:PIO_colorForNavBarSaveToCartBtnBcg()
+                        selector:@selector(onClickPreview_edit:)];
+        
+        if (HP_isiOS7() && !self.isPreviewMoved){
+            self.isPreviewMoved = YES;
+            
+            Utils_moveViewByY([self.view viewWithTag:TAG_VIEW_PREVIEW], -44);
+        }
+    }
+    
+    if (HP_isiOS7() && !self.isViewHolderMoved){
+        self.isViewHolderMoved = YES;
+        
+        Utils_moveViewByY([self.view viewWithTag:TAG_VIEW_HOLDER], -44);
+    }
+}
+
+- (void)customizePreviewForNavigationBar:(UIView *)viewPreview
+{
+    if (PIO_buttonInNavBarIcon()){// ||
+        //[[[FakeDelegate sharedInstance]pioSettings]partnersID] == PARTNER_MIRRORGRAM){
+        
+        [viewPreview viewWithTag:20].hidden = YES;
+        [viewPreview viewWithTag:21].hidden = YES;
+        
+        if (HP_isiOS7()){
+            CGRect frame = viewPreview.frame;
+            frame.origin.y = - (44 + 22);
+            viewPreview.frame = frame;
+        } else {
+            CGRect frame = viewPreview.frame;
+            frame.origin.y = -44;
+            viewPreview.frame = frame;
+        }
+    }
+}
+
+- (void)customizeToolbar
+{
+    // Help Button
+    if ([[[FakeDelegate sharedInstance]pioSettings]custHideHelpIconInCustProdScreen]){
+        [self.view viewWithTag:TAG_BTN_HELP].hidden = YES;
+        
+    } else if (PIO_iconForHelpBtnInCustomizeProduct()){
+        [(UIButton *)[self.view viewWithTag:TAG_BTN_HELP] setBackgroundImage:nil forState:UIControlStateNormal];
+        [(UIButton *)[self.view viewWithTag:TAG_BTN_HELP] setBackgroundColor:[UIColor clearColor]];
+        [(UIButton *)[self.view viewWithTag:TAG_BTN_HELP] setImage:PIO_iconForHelpBtnInCustomizeProduct() forState:UIControlStateNormal];
+        [(UIButton *)[self.view viewWithTag:TAG_BTN_HELP] setTitle:@"" forState:UIControlStateNormal];
+    }
+    
+    if (self.btnAddMorePhotos.hidden && self.scrollHorizontal.hidden)
+        return;
+    
+    // Background view
+    if (PIO_bcgImageForToolbarInCustProduct()){
+        int yPos = !self.scrollHorizontal.hidden ? self.scrollHorizontal.frame.origin.y :
+        self.btnAddMorePhotos.frame.origin.y;
+        yPos -= 2;
+        int height = self.scrollHorizontal.frame.size.height > 10 ? self.scrollHorizontal.frame.size.height : self.btnAddMorePhotos.frame.size.height;
+        height += 10;
+        
+        UIImageView *iv = [[UIImageView alloc]initWithFrame:CGRectMake(0, yPos, 320, height)];
+        iv.contentMode = UIViewContentModeScaleAspectFill;
+        iv.clipsToBounds = YES;
+        iv.image = PIO_bcgImageForToolbarInCustProduct();
+        
+        [[self.view viewWithTag:TAG_VIEW_HOLDER] insertSubview:iv atIndex:0];
+    }
+    
+    // Icon Add Photos
+    if (PIO_imageForAddPhotosBtnInCustProduct()){
+        [self.btnAddMorePhotos setImage:PIO_imageForAddPhotosBtnInCustProduct() forState:UIControlStateNormal];
+    }
+}
+
+#pragma mark - API Client Delegate
+
+- (void)APIErrorOccurred:(NSString *)errMsg
+{
+    [SVProgressHUD showErrorWithStatus:errMsg];
+}
+
+- (void)APIGetProductTemplates:(NSMutableArray *)templates
+{
+    [self removeViewWithTAG:TAG_TEMPLATES_VIEW];
+    
+    if (!templates.count){
+        [SVProgressHUD showErrorWithStatus:@"No templates available."];
+        return;
+    }
+    
+    float height = (templates.count / 2 + templates.count % 2) * (kCellHeight + 6) + 6;
+    float yPos = 0.0;
+    
+    if (height < self.viewTabBar.frame.origin.y){
+        yPos = self.viewTabBar.frame.origin.y - height - 44.0;
+    } else {
+        yPos = 0.0;
+        height = self.viewTabBar.frame.origin.y;
+    }
+    
+    PIOTemplatesView *pTemplatesView = [[PIOTemplatesView alloc]initWithTemplates:templates frame:CGRectMake(0, yPos, 320, height)];
+    pTemplatesView.tag = TAG_TEMPLATES_VIEW;
+    pTemplatesView.mDelegate = self;
+    
+    [self.view addSubview:pTemplatesView];
+}
+
+#pragma mark - PIOTemplatesView Delegate
+
+- (void)PIOTemplatesView_OnTemplateSelect:(ProductTemplate *)template
+{
+    [self removeViewWithTAG:TAG_TEMPLATES_VIEW];
+    
+    [[FakeDelegate sharedInstance]setSelectedGlobalTemplate:template];
+    pTemplate = [[FakeDelegate sharedInstance] selectedGlobalTemplate];
+    
+    isLoaded = NO;
+    [self.pmHolderView removeAllItems];
+    
+    if (!self.isEdit){
+        [self initViewWithDelay];
+        
+    } else {
+        self.isEdit = NO;
+        
+        if (rects){
+            [rects removeAllObjects];
+        }
+        
+        [self.pmSurfaceMask removeAllMasks];
+        [self prepareSurfaceMask];
+        
+        [self PMImageDownloaderOnParsePMImages:self.parsedPieces];
+        [self PMImageDownloaderOnDownloadAllImages];
+        
+        self.isEdit = YES;
+    }
+}
+
+#pragma mark - Inits
+
+- (id)init
+{
+    self = [super initWithNibName:(HP_isiPhone5() ? @"VCCustomizeProduct-568h" : @"VCCustomizeProduct") bundle:[NSBundle sdkBundle]];
+    
+    if (self){
+        
+    }
+    return self;
+}
+
+- (ImageEditor *)imageEditor
+{
+    if (!_imageEditor){
+        _imageEditor = [[ImageEditor alloc]initWithNibName:(HP_isiPhone5() ? @"ImageEditor-568h" : @"ImageEditor")
+                                                    bundle:[NSBundle sdkBundle]
+                                                 productId:product.productId];
+        _imageEditor.delegate = self;
+    }
+    return _imageEditor;
+}
+
+- (NSMutableArray *)imagesForDownload
+{
+    if (!_imagesForDownload){
+        _imagesForDownload = [[NSMutableArray alloc]init];
+    }
+    return _imagesForDownload;
+}
+
+- (NSMutableArray *)parsedPieces
+{
+    if (!_parsedPieces){
+        _parsedPieces = [[NSMutableArray alloc]init];
+    }
+    return _parsedPieces;
+}
+
+- (APIClient *)apiClient
+{
+    if (!_apiClient){
+        _apiClient = [[APIClient alloc]init];
+        _apiClient.delegate = self;
+    }
+    
+    return _apiClient;
+}
+
+@end

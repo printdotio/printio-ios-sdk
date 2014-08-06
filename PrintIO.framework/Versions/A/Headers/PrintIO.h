@@ -750,9 +750,17 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)customFonts:(NSArray *)fonts;
 
 /**
- Change "Loading" GIF animation
+ Toggles UIActivityIndicatorView on the loading view instead of the loading gif image. Calling this method will override the gif image if it has previously been set.
  
- @param fileName File name of GIF
+ @param style UIActivityIndicatorView's style.
+ */
+
+- (void)setLoadingActivityIndicatorViewStyle:(UIActivityIndicatorViewStyle)style;
+
+/**
+ Changes "Loading" GIF animation image. Calling this method will override the UIActivityIndicatorViewStyle if has previously been set.
+ 
+ @param fileName GIF image file name.
  */
 - (void)setLoadingGIF:(NSString *)fileName;
 
