@@ -141,7 +141,8 @@ Specify an image file to use as the Back button in the top nav
 
 ## Custom Fonts
 
-Set custom fonts across the application  (must include 4; can repeat; and array order corresponds to Light, Medium, Regular, Bold)
+Array of string values that contains font name and type with the exact order (light, medium, regular, bold). 
+Example: [@"font_light.otf", @"font_medium.otf", @"font_regular.otf", @"font_bold.otf"]. Array must have four items, and fonts can be duplicated. Array also accepts system (normal, bold and italic) UIFont objects.
 
 | Method | Parameters - Options |
 | :---- | :---- |
