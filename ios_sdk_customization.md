@@ -1699,3 +1699,21 @@ Changes "Loading" GIF animation image. Calling this method will override the UIA
 _Coming Soon_
 
 ---
+
+## Jumps to screen
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setJumpToScreen` | `PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART` |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setJumpToScreen:PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
