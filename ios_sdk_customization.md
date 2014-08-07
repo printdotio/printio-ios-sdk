@@ -117,18 +117,18 @@ Override side menu behavior to slide from right side instead of left side
 
 ---
 
-## Set Back button icon
+## Set Back Button Icon
 
 Specify an image file to use as the Back button in the top nav
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `iconForBackButton` | Specify image file in application |
+| `setIconForBackButton` | Specify image file in application |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO iconForBackButton:[[NSBundle mainBundle]pathForResource:@"mg_back_new" ofType:@"png"]];
+[self.printIO setIconForBackButton:[[NSBundle mainBundle]pathForResource:@"mg_back_new" ofType:@"png"]];
 ```
 
 ### Screenshots
