@@ -1634,3 +1634,29 @@ Change side menu background image using method:
 _Coming Soon_
 
 ---
+
+## Parent View Controller
+Init PrintIO widget with parent view controller
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `initWithViewController` | Parent view controller. From this view controller, widget will open |
+| `environment` | Set environment to staging or live, use `PRINTIO_STAGING` or `PRINTIO_PRODUCTION` |
+| `productionRecipeId` | Production recipeId provided by PrintIO |
+| `stagingRecipeId` | Staging recipeId provided by PrintIO |
+
+### Code Sample
+
+``` Objective-C
+_printIO = [[PrintIO alloc]initWithViewController:self
+                                              environment:isProduction ? PRINTIO_PRODUCTION : PRINTIO_STAGING
+                                       productionRecipeId:@"f255af6f-9614-4fe2-aa8b-1b77b936d9d6"
+                                       //productionRecipeId:@"46f999dd-814d-428f-b0ff-47954b4181b2"
+                                          stagingRecipeId:@"00000000-0000-0000-0000-000000000000"];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
