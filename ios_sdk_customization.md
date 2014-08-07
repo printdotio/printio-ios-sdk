@@ -1648,10 +1648,9 @@ Init PrintIO widget with parent view controller
 ### Code Sample
 
 ``` Objective-C
-_printIO = [[PrintIO alloc]initWithViewController:self
+PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
                                               environment:isProduction ? PRINTIO_PRODUCTION : PRINTIO_STAGING
                                        productionRecipeId:@"f255af6f-9614-4fe2-aa8b-1b77b936d9d6"
-                                       //productionRecipeId:@"46f999dd-814d-428f-b0ff-47954b4181b2"
                                           stagingRecipeId:@"00000000-0000-0000-0000-000000000000"];
 ```
 
