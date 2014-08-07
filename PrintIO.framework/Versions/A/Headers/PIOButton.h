@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PIOPublicConstants.h"
 
 @interface PIOButton : NSObject
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, assign) NSInteger type;
 
-- (id)initWithType:(NSInteger)sType;
+- (id)initWithType:(PIOButtons)sType;
 
 @end

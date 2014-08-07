@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ProductIds.h"
 #import "PIOPublicConstants.h"
-
+#import <UIKit/UIKit.h>
 enum {
     PRINTIO_STAGING,
     PRINTIO_PRODUCTION,
@@ -85,17 +85,35 @@ enum {
 - (void)openWithOption:(int)option;
 
 /**
+ Present widget from view controller with option
+ 
+ @param option Set the options
+    PRINTIO_OPTION_PRESENT_VIEW_FROM_LEFT,
+    PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT,
+    PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM,
+    PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART
+ */
+- (void)presentFromViewController:(UIViewController *)viewController
+                       withOption:(int)option;
+
+/**
  Close widget.
  */
 - (void)close:(NSInteger)flag;
 
 /**
+ DEPRECATED
+ */
+- (void)goToScreen:(int)screen
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setJumpToScreen:(NSInteger)screen' instead of this");
+
+/**
  Jumps to screen
  
  @param screen Screen:
-    PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART
+ PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART
  */
-- (void)goToScreen:(int)screen;
+- (void)setJumpToScreen:(NSInteger)screen;
 
 /**
  Returns PrintIO view controller. Set all options before calling this method
@@ -121,32 +139,68 @@ rightButtonBackgroundColor:(UIColor *)rColor
            titleButtonIcon:(NSString *)iPath;
 
 /**
+ DEPRECATED
+ */
+- (void)iconForBackButton:(NSString *)path
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForBackButton:(NSString *)iconPath' instead of this");
+
+/**
  Set icon for back button.
  
  @param path Path to image file.
  */
-- (void)iconForBackButton:(NSString *)path;
+- (void)setIconForBackButton:(NSString *)iconPath;
 
 /**
- Set status bar style and visibility. Default value is light and visible.
+ DEPRECATED
  */
 - (void)statusBarDark:(BOOL)dark
-               hidden:(BOOL)hidden;
+               hidden:(BOOL)hidden
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setStatusBarDark:(BOOL)dark hidden:(BOOL)hidden' instead of this");
+
+/**
+ Set status bar style and visibility.
+ 
+ @param dark Default value is NO
+ @param hidden Default value is NO
+ */
+- (void)setStatusBarDark:(BOOL)dark
+                  hidden:(BOOL)hidden;
+
+/**
+ DEPRECATED
+ */
+- (void)useThreeButtonsBarStyle:(BOOL)set
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setThreeButtonsNavigationBarSytle:(BOOL)set' instead of this");
 
 /**
  Set three buttons Back, Menu and Cart button in navigation bar for Featured Products screen
  
  @param set Default value is NO
  */
-- (void)useThreeButtonsBarStyle:(BOOL)set;
+- (void)setThreeButtonsNavigationBarSytle:(BOOL)set;
 
 /**
- Set colors for navigation bar with "Save to" shopping cart button
+ DEPRECATED
  */
 - (void)navigationBarSaveToCartBackgroundColor:(UIColor *)bcgColor
                                     titleColor:(UIColor *)titleColor
                          buttonBackgroundColor:(UIColor *)btnBcgColor
-                              buttonTitleColor:(UIColor *)btnTitleColor;
+                              buttonTitleColor:(UIColor *)btnTitleColor
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UIColor *)bcgColor titleColor:(UIColor *)titleColor buttonBackgroundColor:(UIColor *)btnBcgColor buttonTitleColor:(UIColor *)btnTitleColor' instead of this");
+
+/**
+ Set colors scheme for navigation bar with "Save to" shopping cart button
+ 
+ @param bcgColor Navigation bar background color
+ @param titleColor Navigation bar title color
+ @param btnBcgColor Button's background color
+ @param btnTitleColor Button's title color
+ */
+- (void)setNavigationBarSaveToCartBackgroundColor:(UIColor *)bcgColor
+                                       titleColor:(UIColor *)titleColor
+                            buttonBackgroundColor:(UIColor *)btnBcgColor
+                                 buttonTitleColor:(UIColor *)btnTitleColor;
 
 #pragma mark - Side Menu
 
@@ -303,13 +357,20 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)hideCategoriesInFeaturedProducts:(BOOL)hide;
 
 /**
- Set country on Featured Products screen instead on First screen.
+ DEPRECATED
+ */
+- (void)selectCountryInFeaturedProducts:(BOOL)set
+                        backgroundColor:(UIColor *)color
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setCountryInFeaturedProducts:(BOOL)set backgroundColor:(UIColor *)color' instead of this");
+
+/**
+ Select country on Featured Products screen.
  
  @param set Default value is YES.
  @param color Background color.
  */
-- (void)selectCountryInFeaturedProducts:(BOOL)set
-                        backgroundColor:(UIColor *)color;
+- (void)setCountryInFeaturedProducts:(BOOL)set
+                     backgroundColor:(UIColor *)color;
 
 /**
  Change title on Featured Products screen
@@ -319,20 +380,33 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)setTitleForFeaturedProductsScreen:(NSString *)title;
 
 /**
- Change label text color on items in list
- 
- @param lColor Text color for left label
- @param rColor Text color for right item
+ DEPRECATED
  */
 - (void)featuredProductsLeftLabelTextColor:(UIColor *)lColor
-                       rightLabelTextColor:(UIColor *)rColor;
+                       rightLabelTextColor:(UIColor *)rColor
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setFeaturedProductsLeftLabelTextColor:(UIColor *)lColor rightLabelTextColor:(UIColor *)rColor' instead of this");
+
+/**
+ Change label's color on items in list on Featured Products screen
+ 
+ @param lColor Text color for left label
+ @param rColor Text color for right label
+ */
+- (void)setFeaturedProductsLeftLabelTextColor:(UIColor *)lColor
+                          rightLabelTextColor:(UIColor *)rColor;
+
+/**
+ DEPRECATED
+ */
+- (void)featuredProductsSetBackgroundImage:(NSString *)imagePath
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setFeaturedProductsBackgroungImage:(NSString *)imagePath' instead of this");
 
 /**
  Set background image on Featured Products screen
  
  @param imagePath Path to image file.
  */
-- (void)featuredProductsSetBackgroundImage:(NSString *)imagePath;
+- (void)setFeaturedProductsBackgroungImage:(NSString *)imagePath;
 
 #pragma mark - Product Details
 
@@ -354,9 +428,15 @@ rightButtonBackgroundColor:(UIColor *)rColor
 #pragma mark - Photo Sources
 
 /**
+ DEPRECATED
+ */
+- (void)availablePhotoSources:(NSArray *)vPhotoSources
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setAvailablePhotoSources:(NSArray *)vPhotoSources' instead of this");
+
+/**
  Set available photo sources
  
- @param Array of PIOSideMenuButton objects, represents which types of photo sources will be
+ @param photoSources Array of PIOSideMenuButton objects, represents which types of photo sources will be
  available to user. Types:
  
  PIO_SM_FACEBOOK
@@ -366,10 +446,8 @@ rightButtonBackgroundColor:(UIColor *)rColor
  PIO_SM_DROPBOX
  PIO_SM_PHOTOBUCKET
  PIO_SM_PHONE
- 
- In order to show photo sources to user, 'usePhotoSources' has to be enabled.
  */
-- (void)availablePhotoSources:(NSArray *)vPhotoSources;
+- (void)setAvailablePhotoSources:(NSArray *)photoSources;
 
 /**
  When user enters 'Select Photos' screen, selected photo source will be opened by default.
@@ -392,11 +470,17 @@ rightButtonBackgroundColor:(UIColor *)rColor
                       albumId:(NSString *)albumId;
 
 /**
+ DEPRECATED
+ */
+- (void)images:(NSArray *)images
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setImages:(NSArray *)images' instead of this");
+
+/**
  Pass in images URLs or UIImage objects.
  
  @param images Array of image urls or/and UIImage objects
  */
-- (void)images:(NSArray *)images;
+- (void)setImages:(NSArray *)images;
 
 /**
  If user pass in images usinig method 'images', this method can disable photo sources,
@@ -516,11 +600,24 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)setPhotoArrangement:(NSInteger)option;
 
 /**
+ DEPRECATED
+ */
+- (void)iconForAddPhotosButton:(NSString *)imagePath
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForAddPhotosButton:(NSString *)imagePath' instead of this");
+
+/**
  Change image for "Add photos" button in Customize Product screen
  
  @param imagePath Path to image file.
  */
-- (void)iconForAddPhotosButton:(NSString *)imagePath;
+- (void)setIconForAddPhotosButton:(NSString *)imagePath;
+
+/**
+ DEPRECATED
+ */
+- (void)iconForHelpButtonInCustomizeProduct:(NSString *)imagePath
+                                    visible:(BOOL)visible
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForHelpButtonInCustomizeProduct:(NSString *)imagePath visible:(BOOL)visible' instead of this");
 
 /**
  Change icon for Help Button on Customize Product screen
@@ -528,15 +625,21 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param imagePath Path to image file.
  @param visible Default value is YES
  */
-- (void)iconForHelpButtonInCustomizeProduct:(NSString *)imagePath
-                                    visible:(BOOL)visible;
+- (void)setIconForHelpButtonInCustomizeProduct:(NSString *)imagePath
+                                       visible:(BOOL)visible;
+
+/**
+ DEPRECATED
+*/
+- (void)iconForSaveButtonInCustomizeProduct:(NSString *)imagePath
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForSaveButtonInCustomizeProduct:(NSString *)imagePath' instead of this");
 
 /**
  Change icon for 'Save' button on Customize Product screen
  
  @param imagePath Path to image file.
-*/
-- (void)iconForSaveButtonInCustomizeProduct:(NSString *)imagePath;
+ */
+- (void)setIconForSaveButtonInCustomizeProduct:(NSString *)imagePath;
 
 /**
  Set Pop up balloon in Customize Product screen
@@ -548,12 +651,18 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)setPopUpWithImage:(NSString *)path text:(NSString *)text textColor:(UIColor *)textColor;
 
 /**
+ DEPRECATED
+ */
+- (void)doubleTapBalloonVisibilityTime:(int)timeInSeconds
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setDoubleTapBalloonVisibilityTime:(int)timeInSeconds' instead of this");
+
+/**
  Set time of visibility for Double Tap ballon in Customize Product screen
  
  @param timeInSeconds Time in seconds. Set -1 if ballon should be visible all the time.
-                      Default time is 10 seconds.
+ Default time is 10 seconds.
  */
-- (void)doubleTapBalloonVisibilityTime:(int)timeInSeconds;
+- (void)setDoubleTapBalloonVisibilityTime:(int)timeInSeconds;
 
 /**
  Show custom dialog for helping user how to edit a photo
@@ -593,6 +702,15 @@ rightButtonBackgroundColor:(UIColor *)rColor
 #pragma mark - Shopping Cart
 
 /**
+ DEPRECATED
+ */
+- (void)iconForShoppingCart:(NSString *)path
+       withNumberOfProducts:(BOOL)set
+              labelPosition:(CGPoint)lPosition
+                  textColor:(UIColor *)tColor
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForShoppingCart:(NSString *)path withNumberOfProducts:(BOOL)set labelPosition:(CGPoint)lPosition textColor:(UIColor *)tColor' instead of this");
+
+/**
  Set custom icon for Shopping Cart
  
  @param path Path to image file.
@@ -600,10 +718,10 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param lPosition Position of label with number of products in cart
  @param tColor Text color of label with number of products in cart
  */
-- (void)iconForShoppingCart:(NSString *)path
-       withNumberOfProducts:(BOOL)set
-              labelPosition:(CGPoint)lPosition
-                  textColor:(UIColor *)tColor;
+- (void)setIconForShoppingCart:(NSString *)path
+          withNumberOfProducts:(BOOL)set
+                 labelPosition:(CGPoint)lPosition
+                     textColor:(UIColor *)tColor;
 
 /**
  Remove plus sign from "Add more products" button. By default, sign is visible.
@@ -633,11 +751,17 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)customizeAddMoreProductButton:(NSString *)title icon:(NSString *)iconPath;
 
 /**
+ DEPRECATED
+ */
+- (void)shoppingCartBackButtonIcon:(NSString *)iconPath
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForShoppingCartBackButton:(NSString *)iconPath' instead of this");
+
+/**
  Change icon for Back button on Shopping Cart screen
  
  @param iconPath Path to icon file. Default is nil.
  */
-- (void)shoppingCartBackButtonIcon:(NSString *)iconPath;
+- (void)setIconForShoppingCartBackButton:(NSString *)iconPath;
 
 /**
  Get number of items in shopping cart
@@ -668,19 +792,43 @@ rightButtonBackgroundColor:(UIColor *)rColor
 #pragma mark - Country, Currency and Language
 
 /**
- Set country code
+ DEPRECATED
  */
-- (void)countryCode:(NSString *)countryCode;
+- (void)countryCode:(NSString *)countryCode
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setCountryCode:(NSString *)countryCode' instead of this");
+
+/**
+ Set country code
+ 
+ @param countryCode Country code
+ */
+- (void)setCountryCode:(NSString *)countryCode;
+
+/**
+ DEPRECATED
+ */
+- (void)currencyCode:(NSString *)currencyCode
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setCurrencyCode:(NSString *)currencyCode' instead of this");
 
 /**
  Set currency code
+ 
+ @param currencyCode Currency code
  */
-- (void)currencyCode:(NSString *)currencyCode;
+- (void)setCurrencyCode:(NSString *)currencyCode;
+
+/**
+ DEPRECATED
+ */
+- (void)languageCode:(NSString *)languageCode
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setLanguageCode:(NSString *)languageCode' instead of this");
 
 /**
  Set language code
+ 
+ @param languageCode Language code
  */
-- (void)languageCode:(NSString *)languageCode;
+- (void)setLanguageCode:(NSString *)languageCode;
 
 #pragma mark - Shipping Addresses screen
 
@@ -692,12 +840,18 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)showPlusSignOnAddButton:(BOOL)set;
 
 /**
+ DEPRECATED
+ */
+- (void)colorForAddressSelection:(UIColor *)color
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setColorForAddressSelection:(UIColor *)color' instead of this");
+
+/**
  Change highlight color for address selection on 'Select Address'
  screen
  
  @param color New color. Default is light green.
  */
-- (void)colorForAddressSelection:(UIColor *)color;
+- (void)setColorForAddressSelection:(UIColor *)color;
 
 #pragma mark - Order Completed screen
 
@@ -732,6 +886,12 @@ rightButtonBackgroundColor:(UIColor *)rColor
 #pragma mark - Other Customization
 
 /**
+ DEPRECATED
+ */
+- (void)customizationXML:(NSData *)xmlData
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setCustomizationXML:(NSData *)xmlData' instead of this");
+
+/**
  Import customization XML file
  
  @param xmlData Customization xml file.
@@ -739,15 +899,21 @@ rightButtonBackgroundColor:(UIColor *)rColor
  Example: NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"customization" ofType:@"xml"];
  NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];
  */
-- (void)customizationXML:(NSData *)xmlData;
+- (void)setCustomizationXML:(NSData *)xmlData;
+
+/**
+ DEPRECATED
+ */
+- (void)customFonts:(NSArray *)fonts
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setFonts:(NSArray *)fonts' instead of this");
 
 /**
  Set custom fonts from main app bundle.
  
  @param fonts Array of string values that contains font name and type with the exact order (light, medium, regular, bold). Example: [@"font_light.otf", @"font_medium.otf", @"font_regular.otf", @"font_bold.otf"]. Array must have four items, and fonts can be duplicated. Array also accepts
-    system (normal, bold and italic) UIFont objects.
+ system (normal, bold and italic) UIFont objects.
  */
-- (void)customFonts:(NSArray *)fonts;
+- (void)setFonts:(NSArray *)fonts;
 
 /**
  Toggles UIActivityIndicatorView on the loading view instead of the loading gif image. Calling this method will override the gif image if it has previously been set.
@@ -772,32 +938,57 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)setLoadingText:(NSString *)lText;
 
 /**
+ DEPRECATED
+ */
+- (void)iconForHelpButton:(NSString *)imagePath
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForHelpButton:(NSString *)imagePath' instead of this");
+
+/**
  Change icon for Help Button
  
  @param imagePath Path for image file
  */
-- (void)iconForHelpButton:(NSString *)imagePath;
+- (void)setIconForHelpButton:(NSString *)imagePath;
 
 /**
- Change logo in SDK
- 
- @param logo Logo file name
+ DEPRECATED
  */
-- (void)changeLogo:(NSString *)logo;
+- (void)changeLogo:(NSString *)logo
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setLogoFileName:(NSString *)fileName' instead of this");
 
 /**
- Set payee name
+ Change partner's logo in SDK
+ 
+ @param fileName File name of logo image, without file type extension.
+ Image file needs to be stored in main bundle.
+ */
+- (void)setLogoFileName:(NSString *)fileName;
+
+/**
+ DEPRECATED
+ */
+- (void)payeeName:(NSString *)payeeName
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setPayeeName:(NSString *)payeeName' instead of this");
+
+/**
+ Set payee name for order processing
  
  @param payeeName Payee name
  */
-- (void)payeeName:(NSString *)payeeName;
+- (void)setPayeeName:(NSString *)payeeName;
 
 /**
- Set url to Terms and Conditions
- 
- @params url If not set, options will be hidden
+ DEPRECATED
  */
-- (void)termsAndConditionsURL:(NSURL *)url;
+- (void)termsAndConditionsURL:(NSURL *)url
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead of this");
+
+/**
+ Set url for Terms and Conditions
+ 
+ @params url If not set, this option will be hidden
+ */
+- (void)setTermsAndConditionsURL:(NSURL *)url;
 
 /**
  Provide text for "How It Works" screen
@@ -989,10 +1180,16 @@ rightButtonBackgroundColor:(UIColor *)rColor
 #pragma mark - For Partners
 
 /**
+ DEPRECATED
+ */
+- (void)extraData:(NSMutableDictionary *)extraData
+DEPRECATED_MSG_ATTRIBUTE(" Use 'setExtraData:(NSMutableDictionary *)extraData' instead of this");
+
+/**
  Set extra data
  
  @param extraData Additional data for partners. Requered parameter is ED_PARTNERS_ID
  */
-- (void)extraData:(NSMutableDictionary *)extraData;
+- (void)setExtraData:(NSMutableDictionary *)extraData;
 
 @end
