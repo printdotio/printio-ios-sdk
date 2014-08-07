@@ -1660,7 +1660,7 @@ _Coming Soon_
 
 ---
 
-## Toggles UIActivityIndicatorView on the Loading View instead of the Loading GIF Image
+## Loading View instead of the Loading GIF Image
 Calling this method will override the gif image if it has previously been set.
 
 | Method | Parameters - Options |
@@ -1701,6 +1701,7 @@ _Coming Soon_
 ---
 
 ## Jumps to screen
+Jump directly to Shopping Cart screen.
 
 | Method | Parameters - Options |
 | :---- | :---- |
