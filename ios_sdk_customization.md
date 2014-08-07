@@ -1659,3 +1659,43 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 _Coming Soon_
 
 ---
+
+## Toggles UIActivityIndicatorView on the Loading View instead of the Loading GIF Image
+Calling this method will override the gif image if it has previously been set.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setLoadingActivityIndicatorViewStyle` | UIActivityIndicatorView's style |
+
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setLoadingActivityIndicatorViewStyle:@"style"];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Loading GIF Animation Image
+Changes "Loading" GIF animation image. Calling this method will override the UIActivityIndicatorViewStyle if has previously been set.
+
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setLoadingGIF` | GIF image file name |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setLoadingGIF:@"mg_loader"];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
