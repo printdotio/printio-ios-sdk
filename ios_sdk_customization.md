@@ -1632,3 +1632,5 @@ Change side menu background image using method:
 ### Screenshots
 
 _Coming Soon_
+
+---
