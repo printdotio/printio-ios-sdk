@@ -9,14 +9,6 @@
 #ifndef PrintIO_PIOPublicConstants_h
 #define PrintIO_PIOPublicConstants_h
 
-// Buttons
-typedef enum {
-    PIO_BUTTON_IMAGE_EDITOR_INFO,
-    PIO_BUTTON_IMAGE_EDITOR_ROTATE,
-    PIO_BUTTON_IMAGE_EDITOR_EDIT_TEXT,
-    PIO_BUTTON_IMAGE_EDITOR_EFFECTS
-}PIOButtons;
-
 typedef enum {
     PIO_SM_EXIT_BUTTON,
     PIO_SM_SEARCH_BAR,
@@ -45,7 +37,12 @@ typedef enum {
     PIO_SM_RATE_APP,
     PIO_SM_ABOUT,
     PIO_SM_HOW_IT_WORKS,
-    PIO_SM_PAST_ORDERS
+    PIO_SM_PAST_ORDERS,
+    
+    PIO_BUTTON_IMAGE_EDITOR_INFO,
+    PIO_BUTTON_IMAGE_EDITOR_ROTATE,
+    PIO_BUTTON_IMAGE_EDITOR_EDIT_TEXT,
+    PIO_BUTTON_IMAGE_EDITOR_EFFECTS
 }PIOSideMenuButtons;
 
 typedef enum {

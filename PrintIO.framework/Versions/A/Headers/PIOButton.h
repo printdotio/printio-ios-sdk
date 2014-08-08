@@ -14,6 +14,6 @@
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, assign) NSInteger type;
 
-- (id)initWithType:(PIOButtons)sType;
+- (id)initWithType:(PIOSideMenuButtons)sType;
 
 @end

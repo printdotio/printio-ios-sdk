@@ -724,6 +724,21 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForShoppingCart:(NSString *)path withNumb
                      textColor:(UIColor *)tColor;
 
 /**
+ Set custom icon for Shopping Cart
+ 
+ @param path Path to image file.
+ @param set Set to YES to show number of items in cart.
+ @param labelPosition Position of label with number of products in cart
+ @param circleColor Color of label background (circle background)
+ @param textColor Text color of label with number of products in cart
+ */
+- (void)setIconForShoppingCart:(NSString *)path
+          withNumberOfProducts:(BOOL)set
+                 labelPosition:(CGPoint)labelPosition
+                   circleColor:(UIColor *)circleColor
+                     textColor:(UIColor *)textColor;
+
+/**
  Remove plus sign from "Add more products" button. By default, sign is visible.
  */
 - (void)removePlusFromAddMoreProductsButton:(BOOL)remove;
