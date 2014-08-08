@@ -18,19 +18,19 @@ NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];
 
 ---
 
-## Status Bar Settings
+## Set Status Bar Style and Visibility
 
 Set status bar theme and display options.  statusBarDark being set to YES will result in the status bar icons and text being rendered in black (and the opposite results in white).  Setting the status bar to hidden will hide it from the user for a full-screen experience.  
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `statusBarDark` | YES, NO |
+| `setStatusBarDark` | YES, NO |
 | `hidden` | YES, NO |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO statusBarDark:NO hidden:YES];
+[self.printIO setStatusBarDark:NO hidden:YES];
 ```
 
 ### Screenshots
