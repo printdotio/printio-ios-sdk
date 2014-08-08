@@ -222,13 +222,13 @@ Allow user to change country in featured products view and specify a color for t
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `selectCountryInFeaturedProducts` | YES, NO |
+| `setCountryInFeaturedProducts` | YES, NO |
 | `backgroundColor` | Specify color for background of country selection bar |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO selectCountryInFeaturedProducts:NO
+[self.printIO setCountryInFeaturedProducts:NO
     backgroundColor:[UIColor colorWithRed:26.0/255.0 green:188.0/255.0 blue:156.0/255.0 alpha:255.0/255.0]];
 ```
 
