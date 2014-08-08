@@ -1169,12 +1169,12 @@ Allows you to specify a background image for the Featured Products view
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `featuredProductsSetBackgroundImage` | Specify image file in application |
+| `setFeaturedProductsBackgroungImage` | Specify image file in application |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO featuredProductsSetBackgroundImage:[[NSBundle mainBundle]pathForResource:@"someBackgroundImage" ofType:@"png"]];
+[self.printIO setFeaturedProductsBackgroungImage:[[NSBundle mainBundle]pathForResource:@"someBackgroundImage" ofType:@"png"]];
 ```
 
 ### Screenshots
