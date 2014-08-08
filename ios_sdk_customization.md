@@ -75,16 +75,16 @@ Customize top navigation bar colors and set an icon for the center to replace th
 
 ## User Three-button Menu Bar
 
-Include a "Back", "Menu" and "Cart" button in the top nav along with the location text.  The default is NO.
+Include a "Back", "Menu" and "Cart" button in the top nav along with the location text for Featured Products screen.  The default is NO.
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `useThreeButtonsBarStyle` | YES, NO |
+| `setThreeButtonsNavigationBarSytle` | YES, NO |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO useThreeButtonsBarStyle:YES];
+[self.printIO setThreeButtonsNavigationBarSytle:YES];
 ```
 
 ### Screenshots
@@ -1138,24 +1138,23 @@ _Coming Soon_
 
 ---
 
-## Save to Cart Button
-
-Allows customization of the "Save to Cart" button.
+## Save to Shopping Cart Button
+Set colors scheme for navigation bar with "Save to" shopping cart button.
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `navigationBarSaveToCartBackgroundColor` |  |
-| `titleColor` |  |
-| `buttonBackgroundColor ` |  |
-| `buttonTitleColor` |  |
+| `setNavigationBarSaveToCartBackgroundColor` | Navigation bar background color |
+| `titleColor` | Navigation bar title color |
+| `buttonBackgroundColor ` | Button's background color |
+| `buttonTitleColor` | Button's title color |
 
 ### Code Sample
 
 ``` Objective-C
-navigationBarSaveToCartBackgroundColor
-    titleColor
-    buttonBackgroundColor
-    buttonTitleColor
+[self.printIO setNavigationBarSaveToCartBackgroundColor:nil
+                                              titleColor:[UIColor whiteColor]
+                                   buttonBackgroundColor:nil
+                                        buttonTitleColor:[UIColor whiteColor]];
 ```
 
 ### Screenshots
