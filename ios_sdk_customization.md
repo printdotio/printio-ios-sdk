@@ -1717,3 +1717,23 @@ Jump directly to Shopping Cart screen.
 _Coming Soon_
 
 ---
+
+## Change Label's Color on Items in list on Featured Products screen
+Set text color for left label and right lable on Featured Products screen.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setFeaturedProductsLeftLabelTextColor` | `Text color for left label` |
+| `rightLabelTextColor` | `Text color for right label` |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO featuredProductsLeftLabelTextColor:nil rightLabelTextColor:mgOrange];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
