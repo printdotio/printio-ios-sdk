@@ -18,19 +18,19 @@ NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];
 
 ---
 
-## Status Bar Settings
+## Set Status Bar Style and Visibility
 
 Set status bar theme and display options.  statusBarDark being set to YES will result in the status bar icons and text being rendered in black (and the opposite results in white).  Setting the status bar to hidden will hide it from the user for a full-screen experience.  
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `statusBarDark` | YES, NO |
+| `setStatusBarDark` | YES, NO |
 | `hidden` | YES, NO |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO statusBarDark:NO hidden:YES];
+[self.printIO setStatusBarDark:NO hidden:YES];
 ```
 
 ### Screenshots
@@ -75,16 +75,16 @@ Customize top navigation bar colors and set an icon for the center to replace th
 
 ## User Three-button Menu Bar
 
-Include a "Back", "Menu" and "Cart" button in the top nav along with the location text.  The default is NO.
+Include a "Back", "Menu" and "Cart" button in the top nav along with the location text for Featured Products screen.  The default is NO.
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `useThreeButtonsBarStyle` | YES, NO |
+| `setThreeButtonsNavigationBarSytle` | YES, NO |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO useThreeButtonsBarStyle:YES];
+[self.printIO setThreeButtonsNavigationBarSytle:YES];
 ```
 
 ### Screenshots
@@ -117,18 +117,18 @@ Override side menu behavior to slide from right side instead of left side
 
 ---
 
-## Set Back button icon
+## Set Back Button Icon
 
 Specify an image file to use as the Back button in the top nav
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `iconForBackButton` | Specify image file in application |
+| `setIconForBackButton` | Specify image file in application |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO iconForBackButton:[[NSBundle mainBundle]pathForResource:@"mg_back_new" ofType:@"png"]];
+[self.printIO setIconForBackButton:[[NSBundle mainBundle]pathForResource:@"mg_back_new" ofType:@"png"]];
 ```
 
 ### Screenshots
@@ -222,13 +222,13 @@ Allow user to change country in featured products view and specify a color for t
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `selectCountryInFeaturedProducts` | YES, NO |
+| `setCountryInFeaturedProducts` | YES, NO |
 | `backgroundColor` | Specify color for background of country selection bar |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO selectCountryInFeaturedProducts:NO
+[self.printIO setCountryInFeaturedProducts:NO
     backgroundColor:[UIColor colorWithRed:26.0/255.0 green:188.0/255.0 blue:156.0/255.0 alpha:255.0/255.0]];
 ```
 
@@ -1138,24 +1138,23 @@ _Coming Soon_
 
 ---
 
-## Save to Cart Button
-
-Allows customization of the "Save to Cart" button.
+## Save to Shopping Cart Button
+Set colors scheme for navigation bar with "Save to" shopping cart button.
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `navigationBarSaveToCartBackgroundColor` |  |
-| `titleColor` |  |
-| `buttonBackgroundColor ` |  |
-| `buttonTitleColor` |  |
+| `setNavigationBarSaveToCartBackgroundColor` | Navigation bar background color |
+| `titleColor` | Navigation bar title color |
+| `buttonBackgroundColor ` | Button's background color |
+| `buttonTitleColor` | Button's title color |
 
 ### Code Sample
 
 ``` Objective-C
-navigationBarSaveToCartBackgroundColor
-    titleColor
-    buttonBackgroundColor
-    buttonTitleColor
+[self.printIO setNavigationBarSaveToCartBackgroundColor:nil
+                                              titleColor:[UIColor whiteColor]
+                                   buttonBackgroundColor:nil
+                                        buttonTitleColor:[UIColor whiteColor]];
 ```
 
 ### Screenshots
@@ -1170,12 +1169,12 @@ Allows you to specify a background image for the Featured Products view
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `featuredProductsSetBackgroundImage` | Specify image file in application |
+| `setFeaturedProductsBackgroungImage` | Specify image file in application |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO featuredProductsSetBackgroundImage:[[NSBundle mainBundle]pathForResource:@"someBackgroundImage" ofType:@"png"]];
+[self.printIO setFeaturedProductsBackgroungImage:[[NSBundle mainBundle]pathForResource:@"someBackgroundImage" ofType:@"png"]];
 ```
 
 ### Screenshots
@@ -1660,7 +1659,7 @@ _Coming Soon_
 
 ---
 
-## Toggles UIActivityIndicatorView on the Loading View instead of the Loading GIF Image
+## Loading View instead of the Loading GIF Image
 Calling this method will override the gif image if it has previously been set.
 
 | Method | Parameters - Options |
@@ -1692,6 +1691,45 @@ Changes "Loading" GIF animation image. Calling this method will override the UIA
 
 ``` Objective-C
 [self.printIO setLoadingGIF:@"mg_loader"];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Jumps to screen
+Jump directly to Shopping Cart screen.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setJumpToScreen` | `PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART` |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setJumpToScreen:PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Change Label's Color on Items in list on Featured Products screen
+Set text color for left label and right lable on Featured Products screen.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setFeaturedProductsLeftLabelTextColor` | `Text color for left label` |
+| `rightLabelTextColor` | `Text color for right label` |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO featuredProductsLeftLabelTextColor:nil rightLabelTextColor:mgOrange];
 ```
 
 ### Screenshots
