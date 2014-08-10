@@ -1045,6 +1045,12 @@ Set opening transition direction when entering the Print.IO SDK.  Your options a
 | :---- | :---- |
 | `openWithOption` | `PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT`,  `PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM` |
 
+### Code Sample
+
+``` Objective-C
+[self.printIO openWithOption:PRINTIO_OPTION_PRESENT_VIEW_FROM_LEFT | PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART];
+```
+
 ---
 
 ## Enable Facebook Share Deal
