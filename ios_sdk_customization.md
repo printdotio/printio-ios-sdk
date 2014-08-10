@@ -300,18 +300,18 @@ Show custom help overlay when user is about to start editing image in Customize 
 
 ---
 
-## Set Add Photos button icon
+## Set Add Photos Button Icon
 
 Specify an image file to use as the Add Photos button in the Customize Product view
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `iconForAddPhotosButton` | Specify image file in application |
+| `setIconForAddPhotosButton` | Specify image file in application |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO iconForAddPhotosButton:[[NSBundle mainBundle]pathForResource:@"mg_add_photos" ofType:@"png"]];
+[self.printIO setIconForAddPhotosButton:[[NSBundle mainBundle]pathForResource:@"mg_add_photos" ofType:@"png"]];
 ```
 
 ### Screenshots
@@ -582,7 +582,7 @@ It is possible to pass one or more photos directly into the application.  This i
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `images` | Specify image or photo url in application |
+| `setImages` | Specify image or photo url in application |
 
 ### Code Sample
 
@@ -591,8 +591,8 @@ UIImage *image1 = [UIImage imageNamed:@"dream.jpg"];
 UIImage *image2 = [UIImage imageNamed:@"thunder.jpg"];
 NSString *image3 = @"http://cdn.print.io/site-assets/HomepageHeroBg2.jpg";
 
-NSArray *images = [NSArray arrayWithObjects:image1, image2, image3, @"http://cdn.print.io/site-assets/HomepageProductsBg.jpg", nil];
-[self.printIO images:images];
+NSArray *setImages = [NSArray arrayWithObjects:image1, image2, image3, @"http://cdn.print.io/site-assets/HomepageProductsBg.jpg", nil];
+[self.printIO setImages:images];
 ```
 
 ---
@@ -894,16 +894,17 @@ Enable the terms and conditions link form control on the payment page and specif
 
 ## Set Help Icon
 
-Specify an image file to use as the help icon in customize product view
+Specify an image file to use as the help icon in customize product view. Default value is YES
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `iconForHelpButtonInCustomizeProduct` | Specify image file in application |
+| `setIconForHelpButtonInCustomizeProduct` | Specify image file in application |
+| `visible` | YES, NO |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO iconForHelpButtonInCustomizeProduct:[[NSBundle mainBundle]pathForResource:@"mg_icon_question_mark" ofType:@"png"]];
+[self.printIO setIconForHelpButtonInCustomizeProduct:[[NSBundle mainBundle]pathForResource:@"mg_icon_question_mark" ofType:@"png"]];
 ```
 
 ### Screenshots
