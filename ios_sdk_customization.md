@@ -1808,3 +1808,26 @@ Additional data for partners. Requered parameter is ED_PARTNERS_ID
 _Coming Soon_
 
 ---
+
+## Set Access Token for Photobucket
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setPhotobucketAccessToken` | Valid access token for session |
+| `userName` | Username |
+| `baseURL` | Base url for Photobucket |
+
+### Code Sample
+
+``` Objective-C
+NEED TO CHECK SAMPLE CODE FOR THIS METHOD
+[self.printIO setPhotobucketAccessToken:(NSString *)aToken
+                         userName:(NSString *)username
+                          baseURL:(NSString *)baseUrl];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
