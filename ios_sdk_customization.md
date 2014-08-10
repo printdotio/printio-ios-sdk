@@ -395,18 +395,18 @@ Change shopping cart icon and indicate whether to badge with number of products
 
 ---
 
-## Set Logo
+## Set Logo Icon
 
-Change Logo icon which is used on cart and confirmation screens
+Change prtner's logo icon which is used on cart and confirmation screens. File name of logo image, without file type extension. Image file needs to be stored in main bundle
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `changeLogo` | Specify file name of image, without extension |
+| `setLogoFileName` | Specify file name of image, without extension |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO changeLogo:@"icon1"];
+[self.printIO setLogoFileName:@"icon1"];
 ```
 
 ### Screenshots
@@ -445,12 +445,12 @@ It is encouraged that you set a partner name to override the default.  This will
 
 | Parameter/Method | Options - Details |
 | :---- | :---- |
-| `payeeName` | Text string |
+| `setPayeeName` | Text string |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO payeeName:@"Partner Name"];
+[self.printIO setPayeeName:@"Partner Name"];
 ```
 ---
 
@@ -870,12 +870,12 @@ Enable the terms and conditions link form control on the payment page and specif
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `termsAndConditionsURL` | Text string containing URL |
+| `setTermsAndConditionsURL` | Text string containing URL |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO termsAndConditionsURL:[NSURL URLWithString:@"http://www.wikihow.com/images/sampledocs/9/Terms-and-Conditions.txt"]];
+[self.printIO setTermsAndConditionsURL:[NSURL URLWithString:@"http://www.wikihow.com/images/sampledocs/9/Terms-and-Conditions.txt"]];
 ```
 
 ### Screenshots
@@ -886,7 +886,7 @@ Enable the terms and conditions link form control on the payment page and specif
 
 ---
 
-## Set Help Icon
+## Set Help Icon on Customization Screen
 
 Specify an image file to use as the help icon in customize product view. Default value is YES
 
@@ -906,6 +906,25 @@ Specify an image file to use as the help icon in customize product view. Default
 | Default | Custom Icon |
 | :---- | :---- |
 | [![Default Help button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForHelpButtonInCustomizeProduct_default.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForHelpButtonInCustomizeProduct_default.png) | [![Custom Help button](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/iconForHelpButtonInCustomizeProduct_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/iconForHelpButtonInCustomizeProduct_custom.png) |
+
+---
+
+## Change Icon for Help Button
+Specify an image file to use as the help icon throughout the app
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setIconForHelpButton` | Specify image file in application |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setIconForHelpButton:[[NSBundle mainBundle]pathForResource:@"mg_icon_question_mark" ofType:@"png"]];
+```
+
+### Screenshots
+
+_Coming Soon_
 
 ---
 
@@ -1771,3 +1790,21 @@ _Coming Soon_
 
 ---
 
+## Set Extra Data
+Additional data for partners. Requered parameter is ED_PARTNERS_ID
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setExtraData` | `ED_PARTNERS_ID` |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setExtraData:extraData];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
