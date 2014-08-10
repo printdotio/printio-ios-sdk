@@ -1837,3 +1837,22 @@ NEED TO CHECK SAMPLE CODE FOR THIS METHOD
 _Coming Soon_
 
 ---
+
+## Set Products Variants Options
+NEED EXPLENATION
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setVariantsOptions` | Array of PIOVariantOption objects. Pass 'color' with Case Style option |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setVariantsOptions:options];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
