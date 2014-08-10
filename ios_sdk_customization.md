@@ -6,14 +6,14 @@ Path to XML customization file for setting background and font colors on buttons
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `customizationXML` | Specify path to XML file in application |
+| `setCustomizationXML` | Specify path to XML file in application |
 
 ### Code example
 
 ```Objective-C
-NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"customization" ofType:@"xml"];
-NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];
-[self.printIO customizationXML:xmlData];
+ NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"customization" ofType:@"xml"];
+ NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];
+[self.printIO setCustomizationXML:xmlData];
 ```
 
 ---
@@ -146,14 +146,14 @@ Example: [@"font_light.otf", @"font_medium.otf", @"font_regular.otf", @"font_bol
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `customFonts` | Any 4 .ttf or .otf files included in application |
+| `setFonts` | Any 4 .ttf or .otf files included in application |
 | `switchCustomFonts` | ON, OFF |
 
 ### Code Sample
 
 ``` Objective-C
 NSArray *fonts = @[@"timess.ttf", @"timess.ttf",@"aubrey.ttf", @"CaviarDreams_Bold.ttf"];
-[self.printIO customFonts:fonts];
+[self.printIO setFonts:fonts];
 ```
 
 ### Screenshots
@@ -585,7 +585,7 @@ UIImage *image1 = [UIImage imageNamed:@"dream.jpg"];
 UIImage *image2 = [UIImage imageNamed:@"thunder.jpg"];
 NSString *image3 = @"http://cdn.print.io/site-assets/HomepageHeroBg2.jpg";
 
-NSArray *setImages = [NSArray arrayWithObjects:image1, image2, image3, @"http://cdn.print.io/site-assets/HomepageProductsBg.jpg", nil];
+NSArray *images = [NSArray arrayWithObjects:image1, image2, image3, @"http://cdn.print.io/site-assets/HomepageProductsBg.jpg", nil];
 [self.printIO setImages:images];
 ```
 
