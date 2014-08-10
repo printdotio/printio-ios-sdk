@@ -1749,3 +1749,25 @@ Change icon for 'Save to' button on Customize Product screen
 ### Screenshots
 
 _Coming Soon_
+
+---
+
+## Highlight Color for Address Selection
+Change highlight color for address selection on 'Select Address' screen
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setColorForAddressSelection` | New color. Default is light green |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setColorForAddressSelection:mgAddressSelectionColor];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
