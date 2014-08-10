@@ -1738,3 +1738,20 @@ Set text color for left label and right lable on Featured Products screen.
 _Coming Soon_
 
 ---
+
+## Set 'Save to' Icon
+Change icon for 'Save to' button on Customize Product screen
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setIconForSaveButtonInCustomizeProduct` | Path to image file |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setIconForSaveButtonInCustomizeProduct:[[NSBundle mainBundle]pathForResource:@"icon_cart_white" ofType:@"png"]];
+```
+
+### Screenshots
+
+_Coming Soon_
