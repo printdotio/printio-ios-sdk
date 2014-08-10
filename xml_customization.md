@@ -161,7 +161,8 @@
 ``` XML
 <customization>
     <screen name="add_address">
-        <button name="button_save" bcg_color="#446723" font_color="#ffffff" />
+        <button name="button_pick" bcg_color="#00c5cc" font_color="#ffffff" />
+        <button name="button_save" bcg_color="#00c5cc" font_color="#ffffff" />
     </screen>
 </customization>
 ```
