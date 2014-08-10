@@ -531,7 +531,7 @@ Required step to configure which photo sources you would like to offer within yo
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `availablePhotoSources` | Include one or more PIO_SM_PHOTOSOURCES |
+| `setAvailablePhotoSources` | Include one or more PIO_SM_PHOTOSOURCES |
 | `PIO_SM_PHONE` | include the iOS Camera Roll |
 | `PIO_SM_INSTAGRAM` | include Instagram |
 | `PIO_SM_FACEBOOK` | include Facebook |
@@ -553,7 +553,7 @@ NSMutableArray *photoSources = [[NSMutableArray alloc]init];
 [photoSources addObject:[[PIOSideMenuButton alloc]initWithType:PIO_SM_DROPBOX]];
 [photoSources addObject:[[PIOSideMenuButton alloc]initWithType:PIO_SM_PHOTOBUCKET]];  
 
-[self.printIO availablePhotoSources:photoSources];
+[self.printIO setAvailablePhotoSources:photoSources];
 ```
 
 ### Screenshots
