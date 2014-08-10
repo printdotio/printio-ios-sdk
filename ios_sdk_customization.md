@@ -192,16 +192,16 @@ Specify one or more of currency, language and country, which overrides the abili
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `currencyCode` | Three-letter currency code |
-| `languageCode` | Two-letter language code |
-| `countryCode` | Two-letter country code |
+| `setCurrencyCode` | Three-letter currency code |
+| `setLanguageCode` | Two-letter language code |
+| `setCountryCode` | Two-letter country code |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO currencyCode:@"USD"];
-[self.printIO languageCode:@"en"];
-[self.printIO countryCode:@"US"];
+[self.printIO setCurrencyCode:@"USD"];
+[self.printIO setLanguageCode:@"en"];
+[self.printIO setCountryCode:@"US"];
 ```
 
 ### Screenshots
@@ -373,7 +373,7 @@ Change shopping cart icon and indicate whether to badge with number of products
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `iconForShoppingCart` | Path to image file |
+| `setIconForShoppingCart` | Path to image file |
 | `withNumberOfProducts` | Set to YES if image has red circle for number of items in cart |
 | `labelPosition` | Position of label with number of products in cart |
 | `textColor` | Text color of label with number of products in cart |
@@ -381,16 +381,10 @@ Change shopping cart icon and indicate whether to badge with number of products
 ### Code Sample
 
 ``` Objective-C
-[self.printIO iconForShoppingCart:[[NSBundle mainBundle]pathForResource:@"mg_cart_new" ofType:@"png"]
+[self.printIO setIconForShoppingCart:[[NSBundle mainBundle]pathForResource:@"mg_cart_new" ofType:@"png"]
                  withNumberOfProducts:YES
                         labelPosition:CGPointZero
                             textColor:[UIColor whiteColor]];
-    
-[self.printIO extraData:[NSMutableDictionary dictionaryWithObjectsAndKeys:
-                             [NSNumber numberWithInt:1], ED_PARTNERS_ID,
-                             [NSNumber numberWithInt:path], ED_MG_PATH_NUMBER, nil]];
-[self.printIO payeeName:@"Mirrorgram"];
-[self.printIO setPassedImageAsThumbForOnePhotoTemplate:YES];
 ```
 
 ### Screenshots
@@ -1190,12 +1184,12 @@ Customize the how many seconds the editing help balloon is visible for in the cu
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `doubleTapBalloonVisibilityTime` | Number of seconds to show, `-1` shows permanently |
+| `setDoubleTapBalloonVisibilityTime` | Number of seconds to show, `-1` shows permanently |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO doubleTapBalloonVisibilityTime:4];
+[self.printIO setDoubleTapBalloonVisibilityTime:4];
 ```
 
 ---
@@ -1287,12 +1281,12 @@ Customize the icon for the back button in the Shopping Cart screen
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `shoppingCartBackButtonIcon` | Specify image in application |
+| `setIconForShoppingCartBackButton` | Specify image in application |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO shoppingCartBackButtonIcon:[[NSBundle mainBundle]pathForResource:@"someIcon" ofType:@"png"]];
+[self.printIO setIconForShoppingCartBackButton:[[NSBundle mainBundle]pathForResource:@"someIcon" ofType:@"png"]];
 ```
 
 ### Screenshots
