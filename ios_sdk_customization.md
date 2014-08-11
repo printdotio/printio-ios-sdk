@@ -2059,3 +2059,25 @@ Currently it only supports PRODUCT_THROW_PILLOWS.
 _Coming Soon_
 
 ---
+
+## Present Widget from View Controller with Option
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `presentFromViewController` | Product id |
+| `withOption` | Set the options `PRINTIO_OPTION_PRESENT_VIEW_FROM_LEFT`, `PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT`, `PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM`, `PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART` |
+
+### Code Sample
+
+CHECK THIS SAMPLE CODE
+
+``` Objective-C
+[self.printIO presentFromViewController:(UIViewController *)viewController
+                       withOption:(int)option];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
