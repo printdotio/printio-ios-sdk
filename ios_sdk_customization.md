@@ -1976,3 +1976,24 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:(id)viewController
 _Coming Soon_
 
 ---
+
+## Returns PrintIO view controller
+Set all options before calling this method.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `viewController` |  |
+
+### Code Sample
+
+CHECK THIS SAMPLE CODE
+
+``` Objective-C
+[self.printIO viewController:SET];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
