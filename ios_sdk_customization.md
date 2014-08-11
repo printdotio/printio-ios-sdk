@@ -1895,3 +1895,19 @@ Change placeholder text in search bar, and set magnifying glass vissible or hidd
 _Coming Soon_
 
 ---
+
+## Set Access Token for Facebook
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setFacebookAccessToken` | Valid access token for session |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setFacebookAccessToken:aToken];
+```
+
+### Screenshots
+
+_Coming Soon_
