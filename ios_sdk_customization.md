@@ -1911,3 +1911,25 @@ _Coming Soon_
 ### Screenshots
 
 _Coming Soon_
+
+---
+
+## Disable Preview screen for Item
+Disable Preview screen for products on Shopping Cart screen. Default value is NO.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `disablePreviewScreen` | YES, NO |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO disablePreviewScreen:NO];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
