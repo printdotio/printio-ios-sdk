@@ -397,4 +397,21 @@
 
 ## Ivans new methods
 
+## Double Click Photo to Edit
+
+### Code Sample
+
+``` XML
+<customization>
+    <screen name="customize_product">
+        <image_view name="pop_uo_image_view" image_name="mg_double_tap_balloon" image_format="png" />
+        <label name="pop_up_label" font_color="446723" title="what ever you want" />
+    </screen>
+</customization>
+```
+### Screenshots
+
+coming soon
+
+---
 
