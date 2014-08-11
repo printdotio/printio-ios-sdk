@@ -2021,3 +2021,24 @@ CHECK THIS SAMPLE CODE
 _Coming Soon_
 
 ---
+
+## Set Promo Code to Get Discount
+Add Promo code to get discount for products on Shopping cart screen.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setPromoCode` | Promo code |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setPromoCode:promoCode];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+
