@@ -1856,3 +1856,20 @@ NEED EXPLENATION
 _Coming Soon_
 
 ---
+
+## Get Number of Items in Shopping Cart
+Get the number of items in the shopping cart without opening the SDK and waiting for the data from on close.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `numberOfItemsInShoppingCart` | Specify string |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO numberOfItemsInShoppingCart:number];
+```
+
+### Screenshots
+
+_Coming Soon_
