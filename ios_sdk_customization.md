@@ -1997,3 +1997,27 @@ CHECK THIS SAMPLE CODE
 _Coming Soon_
 
 ---
+
+## Set Default Photo Source
+When user enters 'Select Photos' screen, selected photo source will be opened by default.
+If an album id is passed in, if exist, that album will be opened.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setDefaultPhotoSource` | Photo source |
+| `albumId` | Album id (Currently works only for PIO_SM_PHOTOBUCKET photo source) |
+
+### Code Sample
+
+CHECK THIS SAMPLE CODE
+
+``` Objective-C
+[self.printIO setDefaultPhotoSource:(NSInteger)pSource
+                      albumId:(NSString *)albumId];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
