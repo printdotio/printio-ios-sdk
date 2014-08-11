@@ -1873,3 +1873,25 @@ Get the number of items in the shopping cart without opening the SDK and waiting
 ### Screenshots
 
 _Coming Soon_
+
+---
+
+## Set Placeholder Text and Magnifying Glass visibility in Search bar
+Change placeholder text in search bar, and set magnifying glass vissible or hidden
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setPlaceholderTextForSearchBarInChooseCountryScreen` | Placeholder text |
+| `hideMagnifyingGlass` | YES, NO |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setPlaceholderTextForSearchBarInChooseCountryScreen:@"  " hideMagnifyingGlass:YES];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
