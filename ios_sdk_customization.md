@@ -1951,3 +1951,28 @@ _Coming Soon_
 
 ---
 
+## Init PrintIO Widget
+To get view controller, use '[self.printIO viewController]'
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `initWithEnvironment` | Set environment to staging or live, use PRINTIO_STAGING or PRINTIO_PRODUCTION |
+| `productionRecipeId` | Production recipeId provided by PrintIO |
+| `stagingRecipeId` | Staging recipeId provided by PrintIO |
+
+### Code Sample
+
+CHECK THIS SAMPLE CODE
+
+``` Objective-C
+PrintIO *printIO = [[PrintIO alloc]initWithViewController:(id)viewController
+                 environment:(int)type
+          productionRecipeId:(NSString *)pRecipeId
+             stagingRecipeId:(NSString *)sRecipeId];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
