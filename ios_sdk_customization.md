@@ -1933,3 +1933,21 @@ _Coming Soon_
 
 ---
 
+##  Auto Selects One Photo Template for Selected ProductID
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `autoSelectOnePhotoTemplateForProductID` | productID of selected product |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO autoSelectOnePhotoTemplateForProductID:productID];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
