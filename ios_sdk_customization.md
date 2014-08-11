@@ -2041,4 +2041,21 @@ _Coming Soon_
 
 ---
 
+## Set Same Photo on Front and Back Side of Product
+Currently it only supports PRODUCT_THROW_PILLOWS.
 
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setSamePhotoOnFrontAndBackSideOfProduct` | Product id |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setSamePhotoOnFrontAndBackSideOfProduct:productId];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
