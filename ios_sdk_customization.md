@@ -1266,7 +1266,7 @@ Customize the title for the Featured Products screen.  Default value is "Feature
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `setTitleForFeaturedProducts` | String |
+| `setTitleForFeaturedProductsScreen` | String |
 
 ### Code Sample
 
