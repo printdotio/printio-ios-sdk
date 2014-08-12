@@ -376,6 +376,7 @@ Change shopping cart icon and indicate whether to badge with number of products
 | `setIconForShoppingCart` | Path to image file |
 | `withNumberOfProducts` | Set to YES if image has red circle for number of items in cart |
 | `labelPosition` | Position of label with number of products in cart |
+| `circleColor` | Color of label background (circle background) |
 | `textColor` | Text color of label with number of products in cart |
 
 ### Code Sample
@@ -384,7 +385,8 @@ Change shopping cart icon and indicate whether to badge with number of products
 [self.printIO setIconForShoppingCart:[[NSBundle mainBundle]pathForResource:@"mg_cart_new" ofType:@"png"]
                  withNumberOfProducts:YES
                         labelPosition:CGPointZero
-                            textColor:[UIColor whiteColor]];
+                        circleColor: [UIColor redColor]
+                        textColor:[UIColor whiteColor]];
 ```
 
 ### Screenshots
