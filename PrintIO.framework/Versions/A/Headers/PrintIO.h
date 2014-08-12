@@ -46,6 +46,7 @@ enum {
 
 /**
  Init PrintIO widget. To get view controller, use '[self.printIO viewController]'
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#init-printio-widget
  
  @param type Set environment to staging or live, use PRINTIO_STAGING or PRINTIO_PRODUCTION
  @param pRecipeId Production recipeId provided by PrintIO
@@ -57,6 +58,7 @@ enum {
 
 /**
  Init PrintIO widget with parent view controller.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#parent-view-controller
  
  @param viewController Parent view controller. From this view controller, widget will open.
  @param type Set environment to staging or live, use PRINTIO_STAGING or PRINTIO_PRODUCTION
@@ -75,23 +77,25 @@ enum {
 
 /**
  Open widget with option
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#sdk-opening-direction
  
  @param option Set the options
-    PRINTIO_OPTION_PRESENT_VIEW_FROM_LEFT,
-    PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT,
-    PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM,
-    PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART
+ PRINTIO_OPTION_PRESENT_VIEW_FROM_LEFT,
+ PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT,
+ PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM,
+ PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART
  */
 - (void)openWithOption:(int)option;
 
 /**
  Present widget from view controller with option
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#present-widget-from-view-controller-with-option
  
  @param option Set the options
-    PRINTIO_OPTION_PRESENT_VIEW_FROM_LEFT,
-    PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT,
-    PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM,
-    PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART
+ PRINTIO_OPTION_PRESENT_VIEW_FROM_LEFT,
+ PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT,
+ PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM,
+ PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART
  */
 - (void)presentFromViewController:(UIViewController *)viewController
                        withOption:(int)option;
@@ -109,6 +113,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setJumpToScreen:(NSInteger)screen' instead of th
 
 /**
  Jumps to screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#jumps-to-screen
  
  @param screen Screen:
  PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART
@@ -117,6 +122,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setJumpToScreen:(NSInteger)screen' instead of th
 
 /**
  Returns PrintIO view controller. Set all options before calling this method
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#returns-printio-view-controller
  */
 - (id)viewController;
 
@@ -124,6 +130,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setJumpToScreen:(NSInteger)screen' instead of th
 
 /**
  Change navigation bar color and title font color.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#navigation-bar-settings
  
  @param color Color for title bar (navigation bar). If nil default color is used.
  @param tColor Color of fonts on title bar. If nil default color is used.
@@ -146,6 +153,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForBackButton:(NSString *)iconPath' inste
 
 /**
  Set icon for back button.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-back-button-icon
  
  @param path Path to image file.
  */
@@ -160,6 +168,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setStatusBarDark:(BOOL)dark hidden:(BOOL)hidden'
 
 /**
  Set status bar style and visibility.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-status-bar-style-and-visibility
  
  @param dark Default value is NO
  @param hidden Default value is NO
@@ -175,6 +184,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setThreeButtonsNavigationBarSytle:(BOOL)set' ins
 
 /**
  Set three buttons Back, Menu and Cart button in navigation bar for Featured Products screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#user-three-button-menu-bar
  
  @param set Default value is NO
  */
@@ -191,6 +201,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
 
 /**
  Set colors scheme for navigation bar with "Save to" shopping cart button
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#save-to-shopping-cart-button
  
  @param bcgColor Navigation bar background color
  @param titleColor Navigation bar title color
@@ -206,6 +217,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
 
 /**
  Use Side Menu with options:
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#side-menu-controls
  
  @param mIconPath Path to image for Menu icon. If nil, default icon will be used.
  @param bcgColor Background color for Side Menu. If nil, default will be used.
@@ -215,6 +227,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
 
 /**
  Set which options to use in side menu
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#configure-side-menu-buttons
  
  @param buttons Array of PIOSideMenuButton objects of types:
  PIO_SM_EXIT_BUTTON,
@@ -226,6 +239,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
  PIO_SM_EMAIL_SUPPORT
  PIO_SM_HELP
  
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#configure-side-menu-options
  @param options Array of PIOSideMenuButton objects of types:
  PIO_SM_CHANGE_CURRENCY,
  PIO_SM_CHANGE_COUNTRY,
@@ -238,6 +252,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
  @param aTitleColor Title color
  @param accountsColor Background color for this section
  
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#configure-side-menu-info-options
  @param info Array of PIOSideMenuButton objects of types:
  PIO_SM_PRICING_CHART,
  PIO_SM_SHARE_APP,
@@ -252,6 +267,8 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
  @param infoColor Background color for this section
  @param backgroundImageForButtons Path to file
  
+ 
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#construct-side-menu
  */
 - (void)sideMenuAddButtons:(NSArray *)buttons
                    options:(NSArray *)options
@@ -269,21 +286,25 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
 
 /**
  Hide 'Options' header in Side Menu
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#hide-side-menu-headers
  */
 - (void)sideMenuHideOptionsHeader:(BOOL)set;
 
 /**
  Hide 'Accounts' header in Side Menu
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#hide-side-menu-headers
  */
 - (void)sideMenuHideAccountsHeader:(BOOL)set;
 
 /**
  Hide 'Info' header in Side Menu
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#hide-side-menu-headers
  */
 - (void)sideMenuHideInfoHeader:(BOOL)set;
 
 /**
  Show 'Options' section as a list
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#show-localization-options-as-a-vertical-list
  
  @param set Default value is NO
  */
@@ -291,6 +312,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
 
 /**
  Slide side menu from right. Default value is NO.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#slide-side-menu-from-right-side
  
  @param set Default value is NO.
  */
@@ -298,6 +320,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
 
 /**
  This is option from Side Menu, in order to use it, Side Menu needs to be enabled first.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#custom-share-text
  
  @param shareText Text that will be used for sharing. May contains link also.
  */
@@ -305,6 +328,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
 
 /**
  Hide photo sources section in Side Menu
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#hide-photo-sources-in-side-menu
  
  @param set Default value is NO
  */
@@ -312,6 +336,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
 
 /**
  Set background image on Side Menu
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-background-image-on-side-menu
  
  @param path Image path
  */
@@ -321,6 +346,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
 
 /**
  Change title on 'Choose Country' screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#customize-choose-country-screen
  
  @param title New title
  */
@@ -335,6 +361,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
 
 /**
  Change placeholder text in search bar, and set magnifying glass vissible or hidden
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-placeholder-text-and-magnifying-glass-visibility-in-search-bar
  
  @param text Placeholder text
  @param set Default value is NO
@@ -353,6 +380,8 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
 
 /**›
  Hide category+search view on Featured Products screen. Default value is NO;
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#category-control-bar-visibile
+ 
  */
 - (void)hideCategoriesInFeaturedProducts:(BOOL)hide;
 
@@ -365,6 +394,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setCountryInFeaturedProducts:(BOOL)set backgroun
 
 /**
  Select country on Featured Products screen.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#select-country-bar
  
  @param set Default value is YES.
  @param color Background color.
@@ -374,6 +404,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setCountryInFeaturedProducts:(BOOL)set backgroun
 
 /**
  Change title on Featured Products screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#featured-products-title
  
  @param title New title
  */
@@ -388,6 +419,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setFeaturedProductsLeftLabelTextColor:(UIColor *
 
 /**
  Change label's color on items in list on Featured Products screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#change-labels-color-on-items-in-list-on-featured-products-screen
  
  @param lColor Text color for left label
  @param rColor Text color for right label
@@ -403,6 +435,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setFeaturedProductsBackgroungImage:(NSString *)i
 
 /**
  Set background image on Featured Products screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#featured-products-background-image
  
  @param imagePath Path to image file.
  */
@@ -412,6 +445,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setFeaturedProductsBackgroungImage:(NSString *)i
 
 /**
  Show title below navigation bar on Product Details screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#product-detail-screen-navigation-bar-settings
  
  @param set Default value is NO
  */
@@ -435,6 +469,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setAvailablePhotoSources:(NSArray *)vPhotoSource
 
 /**
  Set available photo sources
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#configure-photo-sources
  
  @param photoSources Array of PIOSideMenuButton objects, represents which types of photo sources will be
  available to user. Types:
@@ -452,6 +487,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setAvailablePhotoSources:(NSArray *)vPhotoSource
 /**
  When user enters 'Select Photos' screen, selected photo source will be opened by default.
  If an album id is passed in, if exist, that album will be opened.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-default-photo-source
  
  @param pSource Photo source:
  
@@ -477,6 +513,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setImages:(NSArray *)images' instead of this");
 
 /**
  Pass in images URLs or UIImage objects.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#pass-photo-to-sdk
  
  @param images Array of image urls or/and UIImage objects
  */
@@ -485,6 +522,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setImages:(NSArray *)images' instead of this");
 /**
  If user pass in images usinig method 'images', this method can disable photo sources,
  forcing user to use only passed photos.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#photo-source-visibility---passing-any
  
  This method overrides method 'availablePhotoSources'
  */
@@ -493,6 +531,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setImages:(NSArray *)images' instead of this");
 /**
  Disable photo sources only if image is passed in, and user selects template with
  one photo.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#photo-source-visibility---passing-for-single-photo-template
  */
 - (void)disablePhotoSourcesForOnePhotoTemplate:(BOOL)disable;
 
@@ -503,13 +542,14 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setImages:(NSArray *)images' instead of this");
 
 /**
  Set passed in image as thumbnail for templates with one photo.
- 
  Right now, only supports Canvas Wraps and Framed Prints
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-passed-image-as-thumbnail
  */
 - (void)setPassedImageAsThumbForOnePhotoTemplate:(BOOL)set;
 
 /**
  Hide icon for Upload Instructions text in Photo Sources screen. Default value is NO.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#upload-instructions-icon-visible
  */
 - (void)hideIconForUploadInstructions:(BOOL)hide;
 
@@ -540,6 +580,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setImages:(NSArray *)images' instead of this");
 
 /**
  Set access token for Facebook
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-access-token-for-facebook
  
  @param aToken Valid access token for session
  */
@@ -556,6 +597,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setImages:(NSArray *)images' instead of this");
 
 /**
  Set access token for Photobucket
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-access-token-for-photobucket
  
  @param aToken Valid access token for session
  @param username Username
@@ -567,6 +609,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setImages:(NSArray *)images' instead of this");
 
 /**
  Change title for Photo Sources screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-title-for-photo-sources-screens
  
  @param title New title
  */
@@ -576,6 +619,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setImages:(NSArray *)images' instead of this");
 
 /**
  Show/hide tab bar in Customize Product screen. Default value is YES
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#toolbar-visible
  
  @param show Set show/hide
  @param imagePath Path to image file.
@@ -585,11 +629,13 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setImages:(NSArray *)images' instead of this");
 
 /**
  Hide list with images in customization screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#images-list-visible
  */
 - (void)hideImagesListInCustomizeProduct:(BOOL)hide;
 
 /**
  Set photo(s) arrangement in Customize Product screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#auto-arrange-photos
  
  @param
  PIO_PHOTO_ARRANGEMENT_CHOOSE,
@@ -607,6 +653,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForAddPhotosButton:(NSString *)imagePath'
 
 /**
  Change image for "Add photos" button in Customize Product screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-add-photos-button-icon
  
  @param imagePath Path to image file.
  */
@@ -621,6 +668,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForHelpButtonInCustomizeProduct:(NSString
 
 /**
  Change icon for Help Button on Customize Product screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-help-icon-on-customization-screen
  
  @param imagePath Path to image file.
  @param visible Default value is YES
@@ -630,12 +678,13 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForHelpButtonInCustomizeProduct:(NSString
 
 /**
  DEPRECATED
-*/
+ */
 - (void)iconForSaveButtonInCustomizeProduct:(NSString *)imagePath
 DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForSaveButtonInCustomizeProduct:(NSString *)imagePath' instead of this");
 
 /**
  Change icon for 'Save' button on Customize Product screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-save-to-icon
  
  @param imagePath Path to image file.
  */
@@ -643,6 +692,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForSaveButtonInCustomizeProduct:(NSString
 
 /**
  Set Pop up balloon in Customize Product screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#customize-help-balloon
  
  @param path Path to background image.
  @param text Balloon text.
@@ -658,6 +708,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setDoubleTapBalloonVisibilityTime:(int)timeInSec
 
 /**
  Set time of visibility for Double Tap ballon in Customize Product screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-help-balloon-visibility-duration
  
  @param timeInSeconds Time in seconds. Set -1 if ballon should be visible all the time.
  Default time is 10 seconds.
@@ -666,6 +717,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setDoubleTapBalloonVisibilityTime:(int)timeInSec
 
 /**
  Show custom dialog for helping user how to edit a photo
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#custom-editing-help-button-icon
  
  @param Path to image.
  */
@@ -673,14 +725,16 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setDoubleTapBalloonVisibilityTime:(int)timeInSec
 
 /**
  Disable Preview screen for product
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#disable-preview-screen-for-item
  
  @param set Default value is NO
  */
 - (void)disablePreviewScreen:(BOOL)set;
 
 /**
- Set same photo on front and back side of product. 
+ Set same photo on front and back side of product.
  Currently it only supports PRODUCT_THROW_PILLOWS.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-same-photo-on-front-and-back-side-of-product
  
  @param productId Product id
  */
@@ -690,6 +744,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setDoubleTapBalloonVisibilityTime:(int)timeInSec
 
 /**
  Set which buttons will be visible in Image Editor toolbar. By default, all buttons are visible.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#configure-editing-buttons
  
  @param buttons Array of PIOButton objects of types:
  PIO_BUTTON_IMAGE_EDITOR_INFO,
@@ -725,6 +780,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForShoppingCart:(NSString *)path withNumb
 
 /**
  Set custom icon for Shopping Cart
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#cart-icon-and-badging
  
  @param path Path to image file.
  @param set Set to YES to show number of items in cart.
@@ -740,11 +796,13 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForShoppingCart:(NSString *)path withNumb
 
 /**
  Remove plus sign from "Add more products" button. By default, sign is visible.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#configure-add-more-products-button
  */
 - (void)removePlusFromAddMoreProductsButton:(BOOL)remove;
 
 /**
  Change title for "Shopping Cart" screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#shopping-cart-title
  
  @param title New title
  */
@@ -752,6 +810,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForShoppingCart:(NSString *)path withNumb
 
 /**
  Toggle 'Add more products' button on the Shopping Cart screen.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#visibility-for-add-more-products-button-on-the-shopping-cart-screen
  
  @param showsButton Button visibility flag. Default is YES.
  */
@@ -759,6 +818,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForShoppingCart:(NSString *)path withNumb
 
 /**
  Customize 'Add More Products' button
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#customize-add-more-product-button
  
  @param title New title for button
  @param iconPath Path to icon file. Default is nil.
@@ -773,6 +833,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForShoppingCartBackButton:(NSString *)ico
 
 /**
  Change icon for Back button on Shopping Cart screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#customize-back-button-in-shopping-cart
  
  @param iconPath Path to icon file. Default is nil.
  */
@@ -780,11 +841,13 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForShoppingCartBackButton:(NSString *)ico
 
 /**
  Get number of items in shopping cart
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#get-number-of-items-in-shopping-cart
  */
 + (NSInteger)numberOfItemsInShoppingCart;
 
 /**
  Hides 'Edit' button on 'Shopping Cart' screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#hideshow-edit-button-on-shopping-cart-screen
  
  @param set Default value is NO
  */
@@ -792,6 +855,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForShoppingCartBackButton:(NSString *)ico
 
 /**
  Set promo code to get discount
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-promo-code-to-get-discount
  
  @param promoCode Promo code
  */
@@ -801,6 +865,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForShoppingCartBackButton:(NSString *)ico
 
 /**
  Remove logo from Payment and Order Confirmation screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#remove-logo-from-checkout
  */
 - (void)removeLogoFromPaymentScreen:(BOOL)remove;
 
@@ -814,6 +879,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setCountryCode:(NSString *)countryCode' instead 
 
 /**
  Set country code
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#specify-localizations
  
  @param countryCode Country code
  */
@@ -827,6 +893,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setCurrencyCode:(NSString *)currencyCode' instea
 
 /**
  Set currency code
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#specify-localizations
  
  @param currencyCode Currency code
  */
@@ -840,6 +907,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setLanguageCode:(NSString *)languageCode' instea
 
 /**
  Set language code
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#specify-localizations
  
  @param languageCode Language code
  */
@@ -849,6 +917,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setLanguageCode:(NSString *)languageCode' instea
 
 /**
  Show plus sign on 'Add Shipping Address' button
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#show-plus-sign-on-add-shipping-address-button
  
  @param set Default value is NO
  */
@@ -863,6 +932,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setColorForAddressSelection:(UIColor *)color' in
 /**
  Change highlight color for address selection on 'Select Address'
  screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#highlight-color-for-address-selection
  
  @param color New color. Default is light green.
  */
@@ -872,6 +942,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setColorForAddressSelection:(UIColor *)color' in
 
 /**
  Change title for 'Order Completed' screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#customize-order-completed-screen
  
  @param title New title
  */
@@ -908,6 +979,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setCustomizationXML:(NSData *)xmlData' instead o
 
 /**
  Import customization XML file
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#xml-customization-file
  
  @param xmlData Customization xml file.
  
@@ -924,6 +996,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setFonts:(NSArray *)fonts' instead of this");
 
 /**
  Set custom fonts from main app bundle.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#custom-fonts
  
  @param fonts Array of string values that contains font name and type with the exact order (light, medium, regular, bold). Example: [@"font_light.otf", @"font_medium.otf", @"font_regular.otf", @"font_bold.otf"]. Array must have four items, and fonts can be duplicated. Array also accepts
  system (normal, bold and italic) UIFont objects.
@@ -932,6 +1005,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setFonts:(NSArray *)fonts' instead of this");
 
 /**
  Toggles UIActivityIndicatorView on the loading view instead of the loading gif image. Calling this method will override the gif image if it has previously been set.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#loading-view-instead-of-the-loading-gif-image
  
  @param style UIActivityIndicatorView's style.
  */
@@ -940,6 +1014,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setFonts:(NSArray *)fonts' instead of this");
 
 /**
  Changes "Loading" GIF animation image. Calling this method will override the UIActivityIndicatorViewStyle if has previously been set.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#loading-gif
  
  @param fileName GIF image file name.
  */
@@ -960,6 +1035,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setIconForHelpButton:(NSString *)imagePath' inst
 
 /**
  Change icon for Help Button
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#change-icon-for-help-button
  
  @param imagePath Path for image file
  */
@@ -973,6 +1049,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setLogoFileName:(NSString *)fileName' instead of
 
 /**
  Change partner's logo in SDK
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-logo-icon
  
  @param fileName File name of logo image, without file type extension.
  Image file needs to be stored in main bundle.
@@ -987,6 +1064,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setPayeeName:(NSString *)payeeName' instead of t
 
 /**
  Set payee name for order processing
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-partnerpayee-name
  
  @param payeeName Payee name
  */
@@ -1000,6 +1078,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Set url for Terms and Conditions
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#specify-terms--conditions-location
  
  @params url If not set, this option will be hidden
  */
@@ -1007,6 +1086,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Provide text for "How It Works" screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-how-it-works-text
  
  @params text Text
  */
@@ -1014,6 +1094,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Provide text for "About" screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-about-text
  
  @param text Text
  */
@@ -1021,6 +1102,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Enable option to share on facebook and get extra deal
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#enable-facebook-share-deal
  
  @param set Default value is NO
  */
@@ -1028,6 +1110,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Set url link to facebook page e.g. 'fb://profile/642169949144369'
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#like-on-facebook-url
  
  @param urlS link to page
  */
@@ -1036,6 +1119,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 /**
  Set application id from apple store, used for 'Rate Our App'
  option in side menu. e.g '731593327'
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#apple-store-app-id
  
  @param appID application id
  */
@@ -1043,6 +1127,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Turn off logs
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-logs
  
  @param set Default value is NO
  */
@@ -1050,6 +1135,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Change background color on positive buttons (Yes, Next, Ok, Save, Buy It, Create It...)
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#positive-buttons
  
  @param bColor Background color
  @param tColor Title color
@@ -1058,6 +1144,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Change background color on negative buttons (No, Back, Cancel, Close...)
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#negative-buttons
  
  @param bColor Background color
  @param tColor Title color
@@ -1068,6 +1155,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Change light fonts size
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#customize-fonts-size-throughout-sdk
  
  @param Increase/decrease font size by 'value'
  */
@@ -1113,6 +1201,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Set products variants options
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-products-variants-options
  
  @param options Array of PIOVariantOption objects. Pass 'color' with Case Style option
  */
@@ -1125,6 +1214,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Auto selects one photo template for selected productID
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#auto-selects-one-photo-template-for-selected-productid
  
  @param productID productID of selected product
  */
@@ -1132,6 +1222,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Disable auto recognition and selection of iPhone model
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#disable-auto-recognition-and-selection-of-iphone-model
  
  @param set Default value is NO
  */
@@ -1140,8 +1231,9 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 #pragma mark - Google Analytics
 
 /**
- Set tracking id for Google Analytics. If tracking id is not provided, 
+ Set tracking id for Google Analytics. If tracking id is not provided,
  analytics are disabled.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#google-analytics
  
  @param trackingID Tracking ID provided by Google
  */
@@ -1151,6 +1243,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Set applicationId and apiKey provided from parse.com
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#applicationid-and-apikey-for-push-notifications
  
  @param appId application id
  @param apiKey rest api key
@@ -1160,6 +1253,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Register device to receive push notifications
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#push-notifications
  
  @param deviceToken Device token
  */
@@ -1167,6 +1261,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Display notification pop up from bottom of screen. On tap it will dismiss notification.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#notification-pop-up
  
  @param userInfo Dictionary provided from didReceiveRemoteNotification
  @param backgroundColor Background color for notification pop up
@@ -1181,6 +1276,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 /**
  Set PayPal's client ids, for both modes, staging and production. Default values are
  client ids from PrintIO
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-paypal-credentials
  
  @param sClientId Client id for staging mode
  @param pClientId Client id for production mode
@@ -1209,6 +1305,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setExtraData:(NSMutableDictionary *)extraData' i
 
 /**
  Set extra data
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-extra-data
  
  @param extraData Additional data for partners. Requered parameter is ED_PARTNERS_ID
  */
