@@ -11,8 +11,8 @@ Path to XML customization file for setting background and font colors on buttons
 ### Code example
 
 ```Objective-C
- NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"customization" ofType:@"xml"];
- NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];
+NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"customization" ofType:@"xml"];
+NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];
 [self.printIO setCustomizationXML:xmlData];
 ```
 
@@ -2074,6 +2074,27 @@ CHECK THIS SAMPLE CODE
 ``` Objective-C
 [self.printIO presentFromViewController:(UIViewController *)viewController
                        withOption:(int)option];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Disable Auto Recognition and Selection of iPhone model
+Disable auto recognition and selection of iPhone model on Choose Options screen. Default value is NO.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `disableAutoRecognizePhoneModel` | YES, NO |
+
+### Code Sample
+
+CHECK THIS SAMPLE CODE
+
+``` Objective-C
+[self.printIO disableAutoRecognizePhoneModel:YES];
 ```
 
 ### Screenshots
