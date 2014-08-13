@@ -109,16 +109,13 @@ enum {
  DEPRECATED
  */
 - (void)goToScreen:(int)screen
-DEPRECATED_MSG_ATTRIBUTE(" Use 'setJumpToScreen:(NSInteger)screen' instead of this");
+DEPRECATED_MSG_ATTRIBUTE(" Use 'openWithOption:(int)option' instead of this");
 
 /**
- Jumps to screen
- https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#jumps-to-screen
- 
- @param screen Screen:
- PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART
+ DEPRECATED
  */
-- (void)setJumpToScreen:(NSInteger)screen;
+- (void)setJumpToScreen:(NSInteger)screen
+DEPRECATED_MSG_ATTRIBUTE(" Use 'openWithOption:(int)option' instead of this");
 
 /**
  Returns PrintIO view controller. Set all options before calling this method
