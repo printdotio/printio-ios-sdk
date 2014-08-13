@@ -1140,7 +1140,7 @@ You can hide some or all of the headers for the side menu sections.  The default
 
 | Default | Custom |
 | :---- | :---- |
-| ![Test Test](https://plus.google.com/photos/104549198671666005884/albums/6047054341229652801/6047054354684471522?pid=6047054354684471522&oid=104549198671666005884) | [![Custom Help Pop-up](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPopUpWithImage_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPopUpWithImage_custom.png) |
+| ![Test Test]() | [![Custom Help Pop-up](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPopUpWithImage_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPopUpWithImage_custom.png) |
 
 ---
 
@@ -2105,6 +2105,11 @@ CHECK THIS SAMPLE CODE
 
 ### Screenshots
 
-_Coming Soon_
+![enter image description here][1]
 
 ---
+
+![enter link description here][1]
+
+
+  [1]: https://lh5.googleusercontent.com/-18qrMfgPFUA/U1agy25l1aI/AAAAAAAABhI/21Bg4E2MfOY/w284-h199-no/c_sta_bar.png
