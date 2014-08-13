@@ -2105,8 +2105,9 @@ CHECK THIS SAMPLE CODE
 
 ### Screenshots
 
-![enter image description here][1]
+![enter image description here][2]
 
 ---
 
   [1]: https://lh5.googleusercontent.com/-18qrMfgPFUA/U1agy25l1aI/AAAAAAAABhI/21Bg4E2MfOY/w284-h199-no/c_sta_bar.png
+  [2]: https://plus.google.com/photos/104549198671666005884/albums/6047054341229652801/6047054354684471522?pid=6047054354684471522&oid=104549198671666005884
