@@ -1138,7 +1138,11 @@ You can hide some or all of the headers for the side menu sections.  The default
 
 ### Screenshots
 
-_Coming Soon_
+| Default | Custom |
+| :---- | :---- |
+| [(https://www.dropbox.com/s/40gvh59jh8l5j30/img_options.jpg)] | [![Custom Help Pop-up](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/sm/setPopUpWithImage_custom.png)](https://raw.githubusercontent.com/printdotio/printio-ios-sdk/gh-pages/images/setPopUpWithImage_custom.png) |
+
+---
 
 ## Show Localization Options as a Vertical List
 
