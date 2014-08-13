@@ -2109,7 +2109,4 @@ CHECK THIS SAMPLE CODE
 
 ---
 
-![enter link description here][1]
-
-
   [1]: https://lh5.googleusercontent.com/-18qrMfgPFUA/U1agy25l1aI/AAAAAAAABhI/21Bg4E2MfOY/w284-h199-no/c_sta_bar.png
