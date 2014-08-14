@@ -20,7 +20,8 @@ enum {
     PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT = 1 << 1,
     PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM = 1 << 2,
     
-    PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART = 1 << 3
+    PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART = 1 << 3,
+    PRINTIO_ENABLE_BACK_BUTTON = 1 << 4
 }Options;
 
 @protocol PrintIODelegate <NSObject>
@@ -488,18 +489,18 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setAvailablePhotoSources:(NSArray *)vPhotoSource
  
  @param pSource Photo source:
  
- PIO_SM_FACEBOOK
- PIO_SM_INSTAGRAM
- PIO_SM_PICASA
- PIO_SM_FLICKR
- PIO_SM_DROPBOX
- PIO_SM_PHOTOBUCKET
- PIO_SM_PHONE
+ PIO_PS_FACEBOOK
+ PIO_PS_INSTAGRAM
+ PIO_PS_PICASA
+ PIO_PS_FLICKR
+ PIO_PS_DROPBOX
+ PIO_PS_PHOTOBUCKET
+ PIO_PS_PHONE
  
  @param albumId Album id (Currently works only for PIO_SM_PHOTOBUCKET photo source)
  
  */
-- (void)setDefaultPhotoSource:(NSInteger)pSource
+- (void)setDefaultPhotoSource:(PIOPhotoSources)pSource
                       albumId:(NSString *)albumId;
 
 /**

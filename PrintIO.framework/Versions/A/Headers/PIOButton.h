@@ -14,6 +14,9 @@
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, assign) NSInteger type;
 
+@property (nonatomic, strong) UIColor *titleColor;
+@property (nonatomic, strong) UIColor *iconColor;
+
 - (id)initWithType:(PIOSideMenuButtons)sType;
 
 @end
