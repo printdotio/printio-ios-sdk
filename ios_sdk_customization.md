@@ -2011,14 +2011,14 @@ If an album id is passed in, if exist, that album will be opened.
 | Method | Parameters - Options |
 | :---- | :---- |
 | `setDefaultPhotoSource` | Photo source |
-| `albumId` | Album id (Currently works only for PIO_SM_PHOTOBUCKET photo source) |
+| `albumId` | Album id (Currently works only for PIO_PS_PHOTOBUCKET photo source) |
 
 ### Code Sample
 
 CHECK THIS SAMPLE CODE
 
 ``` Objective-C
-[self.printIO setDefaultPhotoSource:(NSInteger)pSource
+[self.printIO setDefaultPhotoSource:(PIOPhotoSources)pSource
                       albumId:(NSString *)albumId];
 ```
 
