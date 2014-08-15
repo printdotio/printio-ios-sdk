@@ -1045,7 +1045,7 @@ Set opening transition direction when entering the Print.IO SDK.  Your options a
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `openWithOption` | `PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT`,  `PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM` |
+| `openWithOption` | `PRINTIO_OPTION_PRESENT_VIEW_FROM_LEFT`, `PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT`, `PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM`, `PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART` |
 
 ### Code Sample
 
