@@ -2163,7 +2163,24 @@ _Coming Soon_
 
 ---
 
+## Set Navigation Bar on Choose Country screen 
+Change the color of navigation bar in 'Choose Country' screen
 
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setNavigationBarBackgroundColorForChooseCountryScreen` | Color to set |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setNavigationBarBackgroundColorForChooseCountryScreen:color];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
 
 
   [1]: https://lh5.googleusercontent.com/-18qrMfgPFUA/U1agy25l1aI/AAAAAAAABhI/21Bg4E2MfOY/w284-h199-no/c_sta_bar.png
