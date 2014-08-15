@@ -2219,5 +2219,91 @@ _Coming Soon_
 
 ---
 
+Set Instagram Credentials
+By default, PrintIO credentials are used.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setInstagramClientID` |  | NEED PARAMETERS
+| `redirectUrl` |  | NEED PARAMETERS
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setInstagramClientID:clientId
+                 redirectUrl:redirectUrl];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Set Flickr Credentials
+By default, PrintIO credentials are used.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setFlickrKey` |  | NEED PARAMETERS
+| `secretKey` |  | NEED PARAMETERS
+| `redirectUrl` |  | NEED PARAMETERS
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setFlickrKey:key
+           secretKey:secretKey
+         redirectUrl:redirectUrl];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Set Dropbox Credenials
+By default, PrintIO credentials are used.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setDropboxKey` |  | NEED PARAMETERS
+| `redirectUrl` |  | NEED PARAMETERS
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setDropboxKey:key
+          redirectUrl:redirectUrl];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Set Facebook Credentials
+By default, PrintIO credentials are used.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setFacebookAppId` |  | NEED PARAMETERS
+| `redirectUrl` |  | NEED PARAMETERS
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setFacebookAppId:appId
+             redirectUrl:redirectUrl];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
   [1]: https://lh5.googleusercontent.com/-18qrMfgPFUA/U1agy25l1aI/AAAAAAAABhI/21Bg4E2MfOY/w284-h199-no/c_sta_bar.png
   [2]: https://lh3.googleusercontent.com/-dMzy5uf-6Cc/U-tz5ZxyaOI/AAAAAAAAAA0/LVXNnGjb3CU/w200-h355-no/img_options.jpg
