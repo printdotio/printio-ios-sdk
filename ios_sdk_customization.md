@@ -2219,7 +2219,7 @@ _Coming Soon_
 
 ---
 
-Set Instagram Credentials
+## Set Instagram Credentials
 By default, PrintIO credentials are used.
 
 | Method | Parameters - Options |
