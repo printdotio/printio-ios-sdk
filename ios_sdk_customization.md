@@ -1073,7 +1073,7 @@ Offer your users a special deal if they share your application on Facebook!  Jus
 
 ## Open Print.IO
 
-Open Print.IO with configured options (required)
+Open Print.IO with configured options (required). Open widget by presenting view from bottom
 
 | Method | Parameters - Options |
 | :---- | :---- |
