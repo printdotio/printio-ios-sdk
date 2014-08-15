@@ -1039,13 +1039,13 @@ Set Braintree encryption key for staging and production mode. By default, keys f
 
 ---
 
-## SDK Opening Direction
+## Starting SDK Widget
 
 Set opening transition direction when entering the Print.IO SDK.  Your options are to have it slide up from the bottom, or in from the right side.
 
 | Method | Parameters - Options |
 | :---- | :---- |
-| `openWithOption` | `PRINTIO_OPTION_PRESENT_VIEW_FROM_LEFT`, `PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT`, `PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM`, `PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART` |
+| `openWithOption` | `PRINTIO_OPTION_PRESENT_VIEW_FROM_LEFT`, `PRINTIO_OPTION_PRESENT_VIEW_FROM_RIGHT`, `PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM`, `PRINTIO_JUMP_TO_SCREEN_SHOPPING_CART`, `PRINTIO_ENABLE_BACK_BUTTON` |
 
 ### Code Sample
 
