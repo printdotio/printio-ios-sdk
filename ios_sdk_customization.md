@@ -2105,9 +2105,45 @@ CHECK THIS SAMPLE CODE
 
 ### Screenshots
 
-![enter image description here][2]
+![enter image description here][]
 
 ---
 
+## Jumps Directly to Product
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `goToProductId` | Product identifier can be found in ProductIds.h and starts with PRODUCT_ |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO goToProductId:productId];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Jumps Directly to Product with SKU
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `goToProductId` | Product identifier can be found in ProductIds.h and starts with PRODUCT_ |
+| `withSKU` | SKU for selected product |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO goToProductId:productId withSKU:sku];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
   [1]: https://lh5.googleusercontent.com/-18qrMfgPFUA/U1agy25l1aI/AAAAAAAABhI/21Bg4E2MfOY/w284-h199-no/c_sta_bar.png
   [2]: https://lh3.googleusercontent.com/-dMzy5uf-6Cc/U-tz5ZxyaOI/AAAAAAAAAA0/LVXNnGjb3CU/w200-h355-no/img_options.jpg
