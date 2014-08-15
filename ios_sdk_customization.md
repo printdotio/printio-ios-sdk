@@ -2143,5 +2143,28 @@ _Coming Soon_
 _Coming Soon_
 
 ---
+
+## Change Title for 'Customization Options' screen
+Allows you to customize the text content of the Customization Option page to fit your application's brand
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setTitleForChooseOptionsScreen` | Text String |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setTitleForChooseOptionsScreen:@"CHOOSE OPTIONS"];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+
+
+
   [1]: https://lh5.googleusercontent.com/-18qrMfgPFUA/U1agy25l1aI/AAAAAAAABhI/21Bg4E2MfOY/w284-h199-no/c_sta_bar.png
   [2]: https://lh3.googleusercontent.com/-dMzy5uf-6Cc/U-tz5ZxyaOI/AAAAAAAAAA0/LVXNnGjb3CU/w200-h355-no/img_options.jpg
