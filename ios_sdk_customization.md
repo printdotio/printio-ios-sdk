@@ -2015,11 +2015,9 @@ If an album id is passed in, if exist, that album will be opened.
 
 ### Code Sample
 
-CHECK THIS SAMPLE CODE
-
 ``` Objective-C
-[self.printIO setDefaultPhotoSource:(PIOPhotoSources)pSource
-                      albumId:(NSString *)albumId];
+[self.printIO setDefaultPhotoSource:pSource
+                      albumId:albumId];
 ```
 
 ### Screenshots
