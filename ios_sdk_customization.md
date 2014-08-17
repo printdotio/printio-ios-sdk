@@ -2325,5 +2325,24 @@ _Coming Soon_
 
 ---
 
+## Change Title of Loading Dialog
+Allows you to change title of loading pop up.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setLoadingText` | New title for loading dialog |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setLoadingText:lText];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
   [1]: https://lh5.googleusercontent.com/-18qrMfgPFUA/U1agy25l1aI/AAAAAAAABhI/21Bg4E2MfOY/w284-h199-no/c_sta_bar.png
   [2]: https://lh3.googleusercontent.com/-dMzy5uf-6Cc/U-tz5ZxyaOI/AAAAAAAAAA0/LVXNnGjb3CU/w200-h355-no/img_options.jpg
