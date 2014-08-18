@@ -55,6 +55,12 @@ typedef NS_ENUM (NSInteger, PIOPhotoSources) {
     PIO_PS_PHONE = 5006
 };
 
+typedef NS_OPTIONS (NSInteger, PIOScreens)
+{
+    PIO_SCREEN_FEATURED_PRODUCTS = 1 << 0,
+    PIO_SCREEN_PRODUCT_DETAILS = 1 << 1
+};
+
 typedef enum {
     PIO_PHOTO_ARRANGEMENT_CHOOSE,
     PIO_PHOTO_ARRANGEMENT_AUTO,

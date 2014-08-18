@@ -393,14 +393,23 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
 DEPRECATED_MSG_ATTRIBUTE(" Use 'setCountryInFeaturedProducts:(BOOL)set backgroundColor:(UIColor *)color' instead of this");
 
 /**
- Select country on Featured Products screen.
- https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#select-country-bar
- 
- @param set Default value is YES.
+ DEPRECATED
  @param color Background color.
  */
 - (void)setCountryInFeaturedProducts:(BOOL)set
-                     backgroundColor:(UIColor *)color;
+                     backgroundColor:(UIColor *)color
+DEPRECATED_MSG_ATTRIBUTE(" Use 'showCountrySelectionOnScreen:(PIOScreens)screen backgroundColor:(UIColor *)color' instead of this");
+
+/**
+ Show country selection. By default, country selection is always shown on Featured/All products
+ 
+ @param screen Screen:
+ 
+ PIO_SCREEN_FEATURED_PRODUCTS
+ PIO_SCREEN_PRODUCT_DETAILS
+ */
+- (void)showCountrySelectionOnScreen:(PIOScreens)screen
+                     backgroundColor:(UIColor *)backgroundColor;
 
 /**
  Change title on Featured Products screen
