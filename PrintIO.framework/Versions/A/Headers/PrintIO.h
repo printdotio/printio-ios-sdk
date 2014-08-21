@@ -407,6 +407,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'showCountrySelectionOnScreen:(PIOScreens)screen 
  
  PIO_SCREEN_FEATURED_PRODUCTS
  PIO_SCREEN_PRODUCT_DETAILS
+ PIO_SCREEN_OPTIONS
  */
 - (void)showCountrySelectionOnScreen:(PIOScreens)screen
                      backgroundColor:(UIColor *)backgroundColor;

@@ -43,6 +43,7 @@ typedef enum {
     PIO_SM_DROPBOX = 5004,
     PIO_SM_PHOTOBUCKET = 5005,
     PIO_SM_PHONE = 5006,
+    PIO_SM_NONE
 }PIOSideMenuButtons;
 
 typedef NS_ENUM (NSInteger, PIOPhotoSources) {
@@ -58,7 +59,8 @@ typedef NS_ENUM (NSInteger, PIOPhotoSources) {
 typedef NS_OPTIONS (NSInteger, PIOScreens)
 {
     PIO_SCREEN_FEATURED_PRODUCTS = 1 << 0,
-    PIO_SCREEN_PRODUCT_DETAILS = 1 << 1
+    PIO_SCREEN_PRODUCT_DETAILS = 1 << 1,
+    PIO_SCREEN_OPTIONS = 1 << 2
 };
 
 typedef enum {
