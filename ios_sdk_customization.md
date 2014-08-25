@@ -2344,7 +2344,7 @@ _Coming Soon_
 
 ---
 
-##  Open widget
+##  Open Widget
 Presenting view from bottom.
 
 | Method | Parameters - Options |
@@ -2363,7 +2363,7 @@ _Coming Soon_
 
 ---
 
-## Close widget
+## Close Widget
 This method is used for closing application.
 
 | Method | Parameters - Options |
@@ -2374,6 +2374,27 @@ This method is used for closing application.
 
 ``` Objective-C
 [self.printIO close:YES];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Show Country Selection
+By default, country selection is always shown on Featured/All products
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `showCountrySelectionOnScreen` |  `PIO_SCREEN_FEATURED_PRODUCTS`, `PIO_SCREEN_PRODUCT_DETAILS`, `PIO_SCREEN_OPTIONS` |
+| `backgroundColor` | Specify color |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO showCountrySelectionOnScreen:(PIOScreens)screen
+                     backgroundColor:color];
 ```
 
 ### Screenshots
