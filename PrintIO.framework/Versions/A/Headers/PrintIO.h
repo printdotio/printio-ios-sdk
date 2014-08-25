@@ -73,6 +73,7 @@ enum {
 
 /**
  Open widget by presenting view from bottom
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#open-widget
  */
 - (void)open;
 
@@ -104,7 +105,8 @@ enum {
                        withOption:(int)option;
 
 /**
- Close widget.
+ Close widget
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#close-widget-1
  */
 - (void)close:(NSInteger)flag;
 
@@ -354,6 +356,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
 
 /**
  Hide search icon from navigation bar on 'Choose Country' screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#customize-choose-country-screen
  
  @param set Default value is NO
  */
@@ -371,6 +374,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
 
 /**
  Change the color of navigation bar in 'Choose Country' screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-navigation-bar-on-choose-country-screen
  
  @param color Color to set
  */
@@ -402,6 +406,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'showCountrySelectionOnScreen:(PIOScreens)screen 
 
 /**
  Show country selection. By default, country selection is always shown on Featured/All products
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#show-country-selection
  
  @param screen Screen:
  
@@ -463,6 +468,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setFeaturedProductsBackgroungImage:(NSString *)i
 
 /**
  Show menu button in navigation bar on Product Details screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#product-detail-screen-navigation-bar-settings
  
  @param set Default value is NO
  */
@@ -547,6 +553,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setImages:(NSArray *)images' instead of this");
 
 /**
  Set passed in image to be first in row for all photo sources.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-passed-in-image-to-be-first-in-row
  */
 - (void)setPassedImageFirstInPhotoSources:(BOOL)set;
 
@@ -565,12 +572,14 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setImages:(NSArray *)images' instead of this");
 
 /**
  Set Instagram credentials. By default, PrintIO credentials are used.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-instagram-credentials
  */
 - (void)setInstagramClientID:(NSString *)clientId
                  redirectUrl:(NSString *)redirectUrl;
 
 /**
  Set Flickr credentials. By default, PrintIO credentials are used.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-flickr-credentials
  */
 - (void)setFlickrKey:(NSString *)key
            secretKey:(NSString *)secretKey
@@ -578,12 +587,14 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setImages:(NSArray *)images' instead of this");
 
 /**
  Set Dropbox credentials. By default, PrintIO credentials are used.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-dropbox-credenials
  */
 - (void)setDropboxKey:(NSString *)key
           redirectUrl:(NSString *)redirectUrl;
 
 /**
  Set Facebook credentials. By default, PrintIO credentials are used.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-facebook-credentials
  */
 - (void)setFacebookAppId:(NSString *)appId
              redirectUrl:(NSString *)redirectUrl;
@@ -598,6 +609,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setImages:(NSArray *)images' instead of this");
 
 /**
  Set username and password for Photobucket (autologin)
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-username-and-password-for-photobucket-autologin
  
  @param userName Username or email for Photobucket account
  @param password Password
@@ -960,6 +972,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setColorForAddressSelection:(UIColor *)color' in
 
 /**
  Change icon for company logo on 'Order Completed' screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#customize-order-completed-screen
  
  @param iconPath File path to icon
  */
@@ -967,6 +980,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setColorForAddressSelection:(UIColor *)color' in
 
 /**
  Change company message below company logo on 'Order Completed' screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#customize-order-completed-screen
  
  @param message New message
  */
@@ -974,6 +988,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setColorForAddressSelection:(UIColor *)color' in
 
 /**
  Change function of 'Close' button on 'Order Completed' screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#customize-order-completed-screen
  
  @param set Default value is NO
  */
@@ -1032,6 +1047,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setFonts:(NSArray *)fonts' instead of this");
 
 /**
  Change title of loading dialog
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#change-title-of-loading-dialog
  
  @param lText New title for loading dialog.
  */
@@ -1173,6 +1189,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Change medium fonts size
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#customize-fonts-size-throughout-sdk
  
  @param Increase/decrease font size by 'value'
  */
@@ -1180,6 +1197,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Change regular fonts size
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#customize-fonts-size-throughout-sdk
  
  @param Increase/decrease font size by 'value'
  */
@@ -1187,6 +1205,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Change bold fonts size
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#customize-fonts-size-throughout-sdk
  
  @param Increase/decrease font size by 'value'
  */
@@ -1196,6 +1215,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Jumps directly to product.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#jumps-directly-to-product
  
  @param productId Product identifier can be found in ProductIds.h and starts with PRODUCT_
  */
@@ -1203,6 +1223,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Jumps directly to product with sku
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#jumps-directly-to-product-with-sku
  
  @param productId Product identifier can be found in ProductIds.h and starts with PRODUCT_
  @param sku SKU for selected product
@@ -1219,6 +1240,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Change title for 'Customization Options' screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#change-title-for-customization-options-screen
  */
 - (void)setTitleForChooseOptionsScreen:(NSString *)title;
 
@@ -1298,6 +1320,7 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
 
 /**
  Set Braintree encryption key for staging and production mode. By default, keys from PrintIO will be used
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-braintree-credentials
  
  @param sEncKey Encryption key for staging mode
  @param pEncKey Encryption key for production mode
