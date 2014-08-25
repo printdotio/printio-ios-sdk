@@ -2344,5 +2344,43 @@ _Coming Soon_
 
 ---
 
+##  Open widget
+Presenting view from bottom.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `open` | Set the options |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO open:PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
+## Close widget
+This method is used for closing application.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `close` | YES, NO |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO close:YES];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
   [1]: https://lh5.googleusercontent.com/-18qrMfgPFUA/U1agy25l1aI/AAAAAAAABhI/21Bg4E2MfOY/w284-h199-no/c_sta_bar.png
   [2]: https://lh3.googleusercontent.com/-dMzy5uf-6Cc/U-tz5ZxyaOI/AAAAAAAAAA0/LVXNnGjb3CU/w200-h355-no/img_options.jpg
