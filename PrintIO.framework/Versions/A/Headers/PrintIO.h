@@ -776,6 +776,13 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setDoubleTapBalloonVisibilityTime:(int)timeInSec
  */
 - (void)imageEditorShowButtons:(NSArray *)buttons;
 
+/**
+ Hide 'Watch Video' button on Customize Product screen
+ 
+ @param hide Default value is NO
+ */
+- (void)hideWatchVideoButton:(BOOL)hide;
+
 #pragma mark - Shopping Cart
 
 /**
