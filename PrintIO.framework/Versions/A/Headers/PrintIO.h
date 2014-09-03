@@ -148,6 +148,20 @@ rightButtonBackgroundColor:(UIColor *)rColor
            titleButtonIcon:(NSString *)iPath;
 
 /**
+ Set background image on Navigation Bar
+ 
+ @param imagePath Path to image file.
+ */
+- (void)setNavigationBarBackground:(NSString *)imagePath;
+
+/**
+ Set navigation bar background image on 'Customize Product' screen
+ 
+ @param imagePath Path to image file.
+ */
+- (void)setNavigationBarBackgroundForCustomizeProduct:(NSString *)imagePath;
+
+/**
  DEPRECATED
  */
 - (void)iconForBackButton:(NSString *)path
