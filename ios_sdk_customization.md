@@ -1893,7 +1893,8 @@ Change placeholder text in search bar, and set magnifying glass vissible or hidd
 ### Code Sample
 
 ``` Objective-C
-[self.printIO setPlaceholderTextForSearchBarInChooseCountryScreen:@"  " hideMagnifyingGlass:YES];
+[self.printIO setPlaceholderTextForSearchBarInChooseCountryScreen:text
+                                        hideMagnifyingGlass:YES];
 ```
 
 ### Screenshots
