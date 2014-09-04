@@ -2466,6 +2466,6 @@ _Coming Soon_
 
   [1]: https://lh5.googleusercontent.com/-18qrMfgPFUA/U1agy25l1aI/AAAAAAAABhI/21Bg4E2MfOY/w284-h199-no/c_sta_bar.png
   [2]: https://lh3.googleusercontent.com/-dMzy5uf-6Cc/U-tz5ZxyaOI/AAAAAAAAAA0/LVXNnGjb3CU/w200-h355-no/img_options.jpg
-  [3]: https://lh5.googleusercontent.com/-7ErCMpE6Qjs/VAh3ce_9Z4I/AAAAAAAAADI/VDaNtdN1F7g/w394-h700-no/iOS%2BSimulator%2BScreen%2Bshot%2BSep%2B3%2C%2B2014%2C%2B3.30.13%2BPM.png
-  [4]: https://lh6.googleusercontent.com/-T7oLO9Hh_Ho/VAh3cut7zDI/AAAAAAAAADE/n8EMJie0WUI/w394-h700-no/iOS%2BSimulator%2BScreen%2Bshot%2BSep%2B3%2C%2B2014%2C%2B4.23.41%2BPM.png
+  [3]: https://lh3.googleusercontent.com/-6rmAemSOBEY/VAh6rAlIZwI/AAAAAAAAAEE/0qWg-OxGqbw/w200-h355-no/iOS-Simulator-Screen-shot-Sep-3%2C-2014%2C-3.30.png
+  [4]: https://lh5.googleusercontent.com/-8-Ton221C5c/VAh6rivMwsI/AAAAAAAAAEA/vQ__jXatViU/w200-h355-no/iOS-Simulator-Screen-shot-Sep-3%2C-2014%2C-4.23.png
  
