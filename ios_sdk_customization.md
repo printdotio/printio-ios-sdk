@@ -2455,7 +2455,11 @@ _Coming Soon_
 
 ### Screenshots
 
-![enter image description here][4]
+| Normal Navigation Bar | Custom Navigation Bar |
+| :---- | :---- |
+| [4] | [4] |
+
+
 
 ---
 
