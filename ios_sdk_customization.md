@@ -2437,7 +2437,9 @@ _Coming Soon_
 
 ### Screenshots
 
-![enter image description here][3]
+| Normal Navigation Bar | Custom Navigation Bar |
+| :---- | :---- |
+| ![enter image description here][5] | ![enter image description here][3] |
 
 ---
 
@@ -2455,9 +2457,9 @@ _Coming Soon_
 
 ### Screenshots
 
-| Normal Navigation Bar | Custom Navigation Bar |
+| Normal Navigation Bar on Customization screen | Custom Navigation Bar on Customization screen |
 | :---- | :---- |
-| ![enter image description here][4] | ![enter image description here][4] |
+| ![enter image description here][6] | ![enter image description here][4] |
 
 
 
@@ -2468,4 +2470,6 @@ _Coming Soon_
   [2]: https://lh3.googleusercontent.com/-dMzy5uf-6Cc/U-tz5ZxyaOI/AAAAAAAAAA0/LVXNnGjb3CU/w200-h355-no/img_options.jpg
   [3]: https://lh3.googleusercontent.com/-6rmAemSOBEY/VAh6rAlIZwI/AAAAAAAAAEE/0qWg-OxGqbw/w200-h355-no/iOS-Simulator-Screen-shot-Sep-3%2C-2014%2C-3.30.png
   [4]: https://lh5.googleusercontent.com/-8-Ton221C5c/VAh6rivMwsI/AAAAAAAAAEA/vQ__jXatViU/w200-h355-no/iOS-Simulator-Screen-shot-Sep-3%2C-2014%2C-4.23.png
+  [5]: https://lh3.googleusercontent.com/-oJAAS7x9BEs/VAh6rKp2zWI/AAAAAAAAAD4/W19hHeHsRvk/w200-h355-no/IMG_211270.png
+  [6]: https://lh4.googleusercontent.com/-cmZZPtiE190/VAh6q3DQYnI/AAAAAAAAAD8/K97LSv2hUwU/w200-h355-no/IMG_227111.png
  
