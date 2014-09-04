@@ -2423,5 +2423,45 @@ _Coming Soon_
 
 ---
 
+## Set Background Image on Navigation Bar
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setNavigationBarBackground` |  Path to image file |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setNavigationBarBackground[[NSBundle mainBundle]pathForResource:@"navbariphone" ofType:@"png"]];
+```
+
+### Screenshots
+
+![enter image description here][3]
+
+---
+
+## Set Navigation Bar Background Image on 'Customize Product' screen
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setNavigationBarBackgroundForCustomizeProduct` |  Path to image file |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setNavigationBarBackgroundForCustomizeProduct:[[NSBundle mainBundle]pathForResource:@"navbariphone1" ofType:@"png"]];
+```
+
+### Screenshots
+
+![enter image description here][4]
+
+---
+
+
   [1]: https://lh5.googleusercontent.com/-18qrMfgPFUA/U1agy25l1aI/AAAAAAAABhI/21Bg4E2MfOY/w284-h199-no/c_sta_bar.png
   [2]: https://lh3.googleusercontent.com/-dMzy5uf-6Cc/U-tz5ZxyaOI/AAAAAAAAAA0/LVXNnGjb3CU/w200-h355-no/img_options.jpg
+  [3]: https://lh5.googleusercontent.com/-7ErCMpE6Qjs/VAh3ce_9Z4I/AAAAAAAAADI/VDaNtdN1F7g/w394-h700-no/iOS%2BSimulator%2BScreen%2Bshot%2BSep%2B3%2C%2B2014%2C%2B3.30.13%2BPM.png
+  [4]: https://lh6.googleusercontent.com/-T7oLO9Hh_Ho/VAh3cut7zDI/AAAAAAAAADE/n8EMJie0WUI/w394-h700-no/iOS%2BSimulator%2BScreen%2Bshot%2BSep%2B3%2C%2B2014%2C%2B4.23.41%2BPM.png
+ 
