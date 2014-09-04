@@ -2457,7 +2457,7 @@ _Coming Soon_
 
 | Normal Navigation Bar | Custom Navigation Bar |
 | :---- | :---- |
-| [4] | [4] |
+| ![enter image description here][4] | ![enter image description here][4] |
 
 
 
