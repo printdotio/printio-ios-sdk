@@ -29,6 +29,8 @@ The Print.io SDK depends on some frameworks, so you'll need to add them to any t
 
 - Accounts.framework
 - Accelerate.framework
+- AddressBook.framework
+- AddressBookUI.framework
 - AssetsLibrary.framework
 - AdSupport.framework
 - AudioToolbox.framework
@@ -45,6 +47,7 @@ The Print.io SDK depends on some frameworks, so you'll need to add them to any t
 - PrintIO.framework
 - MessageUI.framework
 - MobileCoreServices.framework
+- libc++.dylib
 - libsqlite3.dylib
 - libxml2.2.dylib
 - libz.dylib
