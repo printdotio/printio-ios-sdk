@@ -24,6 +24,9 @@
 
 @property (nonatomic, strong) NSObject *dataHolder;
 
+@property (nonatomic, assign) CGPoint circlePoint;
+@property (nonatomic, strong) UIColor *circleColor;
+
 - (id)initWithTitle:(NSString *)sTitle type:(NSInteger)sType iconPath:(NSString *)sIconPath;
 
 @end

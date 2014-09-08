@@ -592,6 +592,13 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setImages:(NSArray *)images' instead of this");
                  redirectUrl:(NSString *)redirectUrl;
 
 /**
+ Set access token for Instagram
+ 
+ @param accessToken Valid access token for session
+ */
+- (void)setInstagramAccessToken:(NSString *)accessToken;
+
+/**
  Set Flickr credentials. By default, PrintIO credentials are used.
  https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-flickr-credentials
  */
