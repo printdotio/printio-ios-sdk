@@ -2241,6 +2241,24 @@ _Coming Soon_
 
 ---
 
+## Set Access Token for Instagram
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setInstagramAccessToken` | Valid access token for session |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setInstagramAccessToken:accessToken];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
 ## Set Flickr Credentials
 By default, PrintIO credentials are used.
 
