@@ -2479,7 +2479,24 @@ _Coming Soon_
 | :---- | :---- |
 | ![enter image description here][6] | ![enter image description here][4] |
 
+---
 
+## Help Text for Customize Product screen
+Specify an text to use it on Customization screen
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `setCustomizationHelpText` |  Text string |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO setCustomizationHelpText:text];
+```
+
+### Screenshots
+
+_Coming Soon_
 
 ---
 
