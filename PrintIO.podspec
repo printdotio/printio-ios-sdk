@@ -25,8 +25,7 @@ Pod::Spec.new do |s|
   s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/PrintIO"' }
   s.resource = 'PrintIOBundle.bundle'
   s.preserve_paths = 'PrintIO.framework/*'
-  s.frameworks = 'PrintIO', 'CoreFoundation', 'XCTest', 'AddressBookUI', 'CoreText', 'UIKit', 'Twitter', 'StoreKit', 'Security', 'SystemConfiguration', 'Social', 'QuartzCore', 'OpenGLES', 'MobileCoreServices', 'MobileCoreServices', 'MessageUI', 'ImageIO', 'Foundation', 'CoreTelephony', 'CoreImage', 'CoreVideo', 'CoreLocation', 'CoreMedia', 'CoreGraphics', 'CFNetwork', 'AVFoundation', 'AudioToolbox', 'AdSupport', 'AssetsLibrary', 'Accelerate', 'Accounts'
-  s.libraries = 'z', 'sqlite3', 'xml2.2', 'PayPalMobile'
-  s.dependency 'PayPal-iOS-SDK'
+  s.frameworks = 'Accounts','Accelerate','AddressBook','AddressBookUI','AssetsLibrary','AdSupport','AudioToolbox','AVFoundation','CFNetwork','CoreGraphics','CoreMedia','CoreLocation','CoreVideo','CoreImage','CoreTelephony','Foundation','ImageIO','PrintIO', 'MessageUI', 'MobileCoreServices','OpenGLES','QuartzCore','Social','SystemConfiguration','Security','StoreKit','Twitter','UIKit'  
+  s.libraries = 'z', 'sqlite3', 'xml2.2', 'c++'
 
 end
