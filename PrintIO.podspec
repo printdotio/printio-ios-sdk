@@ -24,8 +24,9 @@ Pod::Spec.new do |s|
   s.source_files = 'PrintIO.framework/Versions/A/Headers/PrintIO.h'
   s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/PrintIO"' }
   s.resource = 'PrintIOBundle.bundle'
-  s.preserve_paths = 'PrintIO.framework/*'
-  s.frameworks = 'Accounts','Accelerate','AddressBook','AddressBookUI','AssetsLibrary','AdSupport','AudioToolbox','AVFoundation','CFNetwork','CoreGraphics','CoreMedia','CoreLocation','CoreVideo','CoreImage','CoreTelephony','Foundation','ImageIO','PrintIO', 'MessageUI', 'MobileCoreServices','OpenGLES','QuartzCore','Social','SystemConfiguration','Security','StoreKit','Twitter','UIKit'  
+  s.preserve_paths = 'PrintIO.framework/*', '"$(PODS_ROOT)/PrintIO.framework/*"'
+  s.vendored_frameworks = 'PrintIO.framework'
+  s.frameworks = 'Accounts','Accelerate','AddressBook','AddressBookUI','AssetsLibrary','AdSupport','AudioToolbox','AVFoundation','CFNetwork','CoreGraphics','CoreMedia','CoreLocation','CoreVideo','CoreImage','CoreTelephony','Foundation','ImageIO', 'MessageUI', 'MobileCoreServices','OpenGLES','QuartzCore','Social','SystemConfiguration','Security','StoreKit','Twitter','UIKit'
   s.libraries = 'z', 'sqlite3', 'xml2.2', 'c++'
 
 end
