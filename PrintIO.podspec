@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'PrintIO.framework/Versions/A/Headers/PrintIO.h'
-  s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/PrintIO"' }
+  s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/PrintIO"', 'OTHER_LDFLAGS' => '-framework PrintIO' }
   s.resource = 'PrintIOBundle.bundle'
   s.preserve_paths = 'PrintIO.framework/*'
   s.vendored_frameworks = 'PrintIO.framework'
