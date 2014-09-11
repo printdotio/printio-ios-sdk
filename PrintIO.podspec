@@ -21,7 +21,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.1'
   s.requires_arc = true
 
-  s.source_files = 'PrintIO.framework/Versions/A/Headers/PrintIO.h'
+  s.source_files = 'PrintIO.framework/Versions/A/Headers/PrintIO.h', 'PrintIO.framework/Versions/A/Headers/PIOButton.h',
+  'PrintIO.framework/Versions/A/Headers/PIOPublicConstants.h', 'PrintIO.framework/Versions/A/Headers/PIOSideMenuButton.h', 'PrintIO.framework/Versions/A/Headers/PIOVariantOption.h', 'PrintIO.framework/Versions/A/Headers/ProductIds.h'
   s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/PrintIO"', 'OTHER_LDFLAGS' => '-framework PrintIO' }
   s.resource = 'PrintIOBundle.bundle'
   s.preserve_paths = 'PrintIO.framework/*'
