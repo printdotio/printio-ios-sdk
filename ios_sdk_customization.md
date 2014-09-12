@@ -2500,8 +2500,8 @@ _Coming Soon_
 
 ---
 
-## Set Quality Guaranee Text
-Change Quality Guaranee text on Product Details screen
+## Set Quality Guarantee Text
+Change Quality Guarantee text on Product Details screen
 
 | Method | Parameters - Options |
 | :---- | :---- |
