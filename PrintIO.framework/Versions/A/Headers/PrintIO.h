@@ -339,8 +339,9 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setNavigationBarSaveToCartBackgroundColor:(UICol
  https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#custom-share-text
  
  @param shareText Text that will be used for sharing. May contains link also.
+ @param additionalText Text used when sharing with image.
  */
-- (void)setShareText:(NSString *)shareText;
+- (void)setShareText:(NSString *)shareText additionalText:(NSString *)additionalText;
 
 /**
  Hide photo sources section in Side Menu
