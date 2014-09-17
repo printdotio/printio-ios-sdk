@@ -787,11 +787,13 @@ Set the text to be included when a user clicks the Share this app button.  Note:
 | Method | Parameters - Options |
 | :---- | :---- |
 | `setShareText` | Text string, can include URL |
+| `additionalText` | Text used when sharing with image |
 
 ### Code Sample
 
 ``` Objective-C
-[self.printIO setShareText:@"Check out this awesome app to print your photos with: https://itunes.apple.com/us/app/hellopics/id731593327?mt=8"];
+[self.printIO setShareText:@"Check out this awesome app to print your photos with: https://itunes.apple.com/us/app/hellopics/id731593327?mt=8"]
+                      additionalText:[(NSString *) additionalText];
 ```
 
 ### Screenshots
