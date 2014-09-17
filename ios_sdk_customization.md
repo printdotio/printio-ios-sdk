@@ -782,7 +782,7 @@ NSArray *options = [NSArray arrayWithObjects:
 
 ## Custom Share Text
 
-Set the text to be included when a user clicks the Share this app button.  Note: This option is set outside of the side menu object.
+Set the text to be included when a user clicks the Share this app button.  Note: This is option from Side Menu, in order to use it, Side Menu needs to be enabled first.
 
 | Method | Parameters - Options |
 | :---- | :---- |
