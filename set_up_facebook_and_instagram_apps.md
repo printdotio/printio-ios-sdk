@@ -10,6 +10,8 @@
 | :---- | :---- |
 | ![enter image description here][1] |
 
+NOTE: This is the sample wideo how to set up Facebook app: https://dl.dropboxusercontent.com/u/19321066/fb_auth.m4v
+
 ---
 
 
