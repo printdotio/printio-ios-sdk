@@ -23,8 +23,8 @@ https://dl.dropboxusercontent.com/u/19321066/fb_auth.m4v
 ### Facebook Settings -> Advanced:
 
 - **Native or desktop app?** - NO
-- **Deauthorize Callback URL** - empty
-- **Server IP Whitelist, Update Settings IP Whitelist** - empty
+- **Deauthorize Callback URL** - Empty
+- **Server IP Whitelist, Update Settings IP Whitelist** - Empty
 - **Client OAuth Login** - YES
 - **App Secret Proof for Server API calls** - NO
 - **Embedded browser OAuth Login** - NO
