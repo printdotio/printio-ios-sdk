@@ -19,6 +19,17 @@ https://dl.dropboxusercontent.com/u/19321066/fb_auth.m4v
 - **Enforce signed header:** needs to be unchecked
 - **Redirect URI:** http://spark.mode/ (this is an example URI), everything else stays default
 - **Bundle is:** bundle.identifier
+- 
+### Facebook Settings -> Advanced:
+
+- **Native or desktop app?** - NO
+- **Deauthorize Callback URL** - empty
+- **Server IP Whitelist, Update Settings IP Whitelist** - empty
+- **Client OAuth Login** - YES
+- **App Secret Proof for Server API calls** - NO
+- **Embedded browser OAuth Login** - NO
+- **Require 2-factor reauthorization** - NO
+- **Valid OAuth redirect URIs** - put 'http://spark.mode' (this is an example)
 
 ---
 
