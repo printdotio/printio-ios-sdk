@@ -34,6 +34,11 @@ https://dl.dropboxusercontent.com/u/19321066/fb_auth.m4v
 ### User Photos Permission to Facebook app
 Here is the link how to do it: https://dl.dropboxusercontent.com/u/19321066/user_photos.m4v
 
+**To add user_photos, we're being asked to provide the following:**
+- App Notes
+
+
+
 ---
 
 
