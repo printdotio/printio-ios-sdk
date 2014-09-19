@@ -1,4 +1,4 @@
-# Guide for "How to Set Up Facebook and Instagram aplications"
+# How to Set Up Facebook and Instagram apps
 
 ## Facebook app
 
