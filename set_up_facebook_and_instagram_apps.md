@@ -44,7 +44,6 @@ Here is the link how to do it: https://dl.dropboxusercontent.com/u/19321066/user
 | :---- | :---- |
 | ![enter image description here][2] |
 
----
 
 | iOS Simulator Build |
 | :---- | :---- |
