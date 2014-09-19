@@ -13,15 +13,10 @@
 ### NOTE: This is the sample video how to set up your Facebook app: 
 https://dl.dropboxusercontent.com/u/19321066/fb_auth.m4v
 
-### Check these settings and set:
+### Facebook Settings - Advanced:
 
-- **Disable implicit OAuth:** needs to be unchecked
-- **Enforce signed header:** needs to be unchecked
 - **Redirect URI:** http://spark.mode/ (this is an example URI), everything else stays default
 - **Bundle is:** bundle.identifier
-
-### Facebook Settings -> Advanced:
-
 - **Native or desktop app?** - NO
 - **Deauthorize Callback URL** - Empty
 - **Server IP Whitelist, Update Settings IP Whitelist** - Empty
@@ -51,6 +46,14 @@ Here is the link how to do it: https://dl.dropboxusercontent.com/u/19321066/user
 
 ---
 
+## Instagram app
+
+### Check these settings and set:
+
+- **Disable implicit OAuth:** needs to be unchecked
+- **Enforce signed header:** needs to be unchecked
+
+---
 
 [1]: https://lh6.googleusercontent.com/-k0q4YoDHHRw/VBwaKzePCLI/AAAAAAAAAFI/D6VUhe0dLB0/w825-h553-no/testfb.jpg
 [2]: https://lh4.googleusercontent.com/-QPlzqejfPlQ/VBwjPfQjLRI/AAAAAAAAAF8/vqG8-auuz_s/w639-h510-no/notes%2Bfor%2Buser%2Bphotos.png
