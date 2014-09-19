@@ -60,6 +60,7 @@ Here is the link how to do it: https://dl.dropboxusercontent.com/u/19321066/user
 
 - **Disable implicit OAuth:** needs to be unchecked
 - **Enforce signed header:** needs to be unchecked
+- **Redirect URI:** - sparkmode://auth (this is an example) everything else stays default
 
 ---
 
