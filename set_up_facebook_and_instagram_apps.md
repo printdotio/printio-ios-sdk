@@ -16,8 +16,8 @@ https://dl.dropboxusercontent.com/u/19321066/fb_auth.m4v
 ### Check these settings and set:
 
 - **Disable implicit OAuth:** needs to be unchecked
-- **Enforce signed header:** unchecked
-- **Redirect URI:** http://spark.mode/ (this is an example URI), everything else stays default.
+- **Enforce signed header:** needs to be unchecked
+- **Redirect URI:** http://spark.mode/ (this is an example URI), everything else stays default
 - **Bundle is:** bundle.identifier
 
 ---
