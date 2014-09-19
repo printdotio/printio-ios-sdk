@@ -31,6 +31,9 @@ https://dl.dropboxusercontent.com/u/19321066/fb_auth.m4v
 - **Require 2-factor reauthorization** - NO
 - **Valid OAuth redirect URIs** - http://spark.mode (this is an example)
 
+### User Photos Permission to Facebook app
+Here is the link how to do it: https://dl.dropboxusercontent.com/u/19321066/user_photos.m4v
+
 ---
 
 
