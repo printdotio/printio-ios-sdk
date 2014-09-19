@@ -50,6 +50,12 @@ Here is the link how to do it: https://dl.dropboxusercontent.com/u/19321066/user
 
 - Go to http://instagram.com/developer/. Register your application, and set up "Developer Signup".
 
+### Screenshots
+
+| Manage Clients |
+| :---- | :---- |
+| ![enter image description here][4] |
+
 ### Check these settings and set:
 
 - **Disable implicit OAuth:** needs to be unchecked
@@ -60,3 +66,4 @@ Here is the link how to do it: https://dl.dropboxusercontent.com/u/19321066/user
 [1]: https://lh6.googleusercontent.com/-k0q4YoDHHRw/VBwaKzePCLI/AAAAAAAAAFI/D6VUhe0dLB0/w825-h553-no/testfb.jpg
 [2]: https://lh4.googleusercontent.com/-QPlzqejfPlQ/VBwjPfQjLRI/AAAAAAAAAF8/vqG8-auuz_s/w639-h510-no/notes%2Bfor%2Buser%2Bphotos.png
 [3]: https://lh3.googleusercontent.com/-mdnBh3-W4kg/VBwjMi3DQbI/AAAAAAAAAF0/xhQQ_8OAMW0/w633-h510-no/provide%2Byour%2BiOS%2Bapp.png
+[4]: https://lh3.googleusercontent.com/-p84uH4exjS8/VBxFqgq0ECI/AAAAAAAAAGk/3SJqWaCZXpM/w765-h447-no/instagramapp.png
