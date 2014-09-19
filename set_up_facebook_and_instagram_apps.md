@@ -29,7 +29,7 @@ https://dl.dropboxusercontent.com/u/19321066/fb_auth.m4v
 - **App Secret Proof for Server API calls** - NO
 - **Embedded browser OAuth Login** - NO
 - **Require 2-factor reauthorization** - NO
-- **Valid OAuth redirect URIs** - 'http://spark.mode' (this is an example)
+- **Valid OAuth redirect URIs** - http://spark.mode (this is an example)
 
 ---
 
