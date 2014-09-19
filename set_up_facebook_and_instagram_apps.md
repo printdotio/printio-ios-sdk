@@ -16,6 +16,7 @@ https://dl.dropboxusercontent.com/u/19321066/fb_auth.m4v
 ### Check these settings and set:
 
 **Disable implicit OAuth:** needs to be unchecked
+
 **Enforce signed header:** unchecked
 
 ---
