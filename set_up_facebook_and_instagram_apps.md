@@ -2,7 +2,7 @@
 
 ## Facebook app
 
-- Goes to https://developers.facebook.com/. Choose an existing app or type the name of your new one, select iOS platform to get started. Set up all necessary things.
+- Go to https://developers.facebook.com/. Choose an existing app or type the name of your new one, select iOS platform to get started. Set up all necessary things.
 
 ### Screenshots
 
@@ -10,8 +10,13 @@
 | :---- | :---- |
 | ![enter image description here][1] |
 
-###NOTE: This is the sample video how to set up your Facebook app: 
+### NOTE: This is the sample video how to set up your Facebook app: 
 https://dl.dropboxusercontent.com/u/19321066/fb_auth.m4v
+
+### Check these settings and set:
+
+**Disable implicit OAuth:** needs to be unchecked
+**Enforce signed header:** unchecked
 
 ---
 
