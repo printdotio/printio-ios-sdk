@@ -48,6 +48,8 @@ Here is the link how to do it: https://dl.dropboxusercontent.com/u/19321066/user
 
 ## Instagram app
 
+- Go to http://instagram.com/developer/. Register your application, and set up "Developer Signup".
+
 ### Check these settings and set:
 
 - **Disable implicit OAuth:** needs to be unchecked
