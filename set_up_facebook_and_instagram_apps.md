@@ -34,12 +34,25 @@ https://dl.dropboxusercontent.com/u/19321066/fb_auth.m4v
 ### User Photos Permission to Facebook app
 Here is the link how to do it: https://dl.dropboxusercontent.com/u/19321066/user_photos.m4v
 
-**To add user_photos, we're being asked to provide the following:**
+**To add user_photos, you were being asked to provide the following:**
 - App Notes
+- iOS Simulator Build
 
+### Screenshots
 
+| App Notes |
+| :---- | :---- |
+| ![enter image description here][2] |
+
+---
+
+| iOS Simulator Build |
+| :---- | :---- |
+| ![enter image description here][3] |
 
 ---
 
 
 [1]: https://lh6.googleusercontent.com/-k0q4YoDHHRw/VBwaKzePCLI/AAAAAAAAAFI/D6VUhe0dLB0/w825-h553-no/testfb.jpg
+[2]: https://lh4.googleusercontent.com/-QPlzqejfPlQ/VBwjPfQjLRI/AAAAAAAAAF8/vqG8-auuz_s/w639-h510-no/notes%2Bfor%2Buser%2Bphotos.png
+[3]: https://lh3.googleusercontent.com/-mdnBh3-W4kg/VBwjMi3DQbI/AAAAAAAAAF0/xhQQ_8OAMW0/w633-h510-no/provide%2Byour%2BiOS%2Bapp.png
