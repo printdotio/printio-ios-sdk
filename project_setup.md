@@ -27,37 +27,14 @@ Copy the `PrintIO.framework` and `PrintIOBundle.bundle` files into your project 
 
 The Print.io SDK depends on some frameworks, so you'll need to add them to any target's "Link Binary With Libraries" Build Phase.  Make sure your app is being linked against all the following libraries:
 
-- Accounts.framework
-- Accelerate.framework
-- AddressBook.framework
-- AddressBookUI.framework
-- AssetsLibrary.framework
-- AdSupport.framework
-- AudioToolbox.framework
 - AVFoundation.framework
-- CFNetwork.framework
-- CoreGraphics.framework
+- AudioToolbox.framework
 - CoreMedia.framework
 - CoreLocation.framework
-- CoreVideo.framework
-- CoreImage.framework
-- CoreTelephony.framework
 - Foundation.framework
-- ImageIO.framework
-- PrintIO.framework
-- MessageUI.framework
-- MobileCoreServices.framework
-- libc++.dylib
+- libxml2.dylib
 - libsqlite3.dylib
-- libxml2.2.dylib
-- libz.dylib
-- OpenGLES.framework
-- QuartzCore.framework
-- Social.framework
-- SystemConfiguration.framework
-- Security.framework
-- StoreKit.framework
-- Twitter.framework
+- PrintIO.framework
 - UIKit.framework
 
 
