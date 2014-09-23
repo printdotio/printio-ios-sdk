@@ -4,8 +4,8 @@
 
 In order to follow this guide, you must have the following software installed on or downloaded to your system:
 
-- iOS 6.1 SDK (or newer)
-- Xcode 5.*
+- iOS 7.* SDK (or newer)
+- Xcode 6.*
 - Print.IO SDK
 
 For the latest versions, please visit [Apple's iOS Dev Center](http://developer.apple.com/devcenter/ios/).
