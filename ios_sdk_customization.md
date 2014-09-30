@@ -1572,8 +1572,8 @@ Set applicationId and apiKey provided from parse.com
 ### Code Sample
 
 ``` Objective-C
-[self.printIO setParseApplicationId:@"appId"];
-[self.printIO apiKey:@"apiKey"];
+[self.printIO setParseApplicationId:@"appId" 
+                             apiKey:@"apiKey"];
 ```
 
 ### Screenshots
