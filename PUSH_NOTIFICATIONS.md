@@ -88,7 +88,7 @@ If the Personal Information Exchange (.p12) option is grayed out in the export s
 
 Note that you've just enabled Push Notification for your app in development mode. Prior to releasing your application on the App Store, you will need to repeat steps 1 through 7 of this section, but select "Production Push SSL Certificate" in step 2 instead, as covered in Section 7.
 
-Valid p12 certificate you'll send to PrintIO support, in order to continue with process of implementation push notifications.
+Valid p12 certificate you'll upload to Parse.com and continue with steps described there. Once you create an app on Parse.com, use applicationID and apiKey (REST Client) to set up Parse notifications in PrintIO SDK. Look at sample code below, how to set up push notifications.
 
 Usage
 -----
