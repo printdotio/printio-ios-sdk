@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 HelloPics. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "PIOPublicConstants.h"
 
 @interface PIOButton : NSObject
