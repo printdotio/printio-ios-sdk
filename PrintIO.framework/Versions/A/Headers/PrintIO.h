@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ProductIds.h"
+#import "PaymentOptions.h"
 #import "PIOPublicConstants.h"
 #import <UIKit/UIKit.h>
 enum {
@@ -1346,6 +1347,10 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setTermsAndConditionsURL:(NSURL *)url' instead o
          backgroundColor:(UIColor *)bcgColor
                textColor:(UIColor *)textColor;
 
+#pragma mark - Payment settings
+
+-(void)setPaymentOptions:(PaymentOptions)paymentOptions;
+
 #pragma mark - PayPal settings
 
 /**
@@ -1386,5 +1391,12 @@ DEPRECATED_MSG_ATTRIBUTE(" Use 'setExtraData:(NSMutableDictionary *)extraData' i
  @param extraData Additional data for partners. Requered parameter is ED_PARTNERS_ID
  */
 - (void)setExtraData:(NSMutableDictionary *)extraData;
+
+/**
+ Root controller flag. Set to YES if the PrintIO widget is the root controller of your application.
+ 
+ @param isRootController Root controller flag.
+ */
+-(void)setIsRootController:(BOOL)isRootController;
 
 @end
