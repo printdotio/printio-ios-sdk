@@ -2521,6 +2521,25 @@ _Coming Soon_
 
 ---
 
+## Set Visibility for Coming Soon Products
+Hide/Show coming soon products from product's list. Default value is NO.
+
+| Method | Parameters - Options |
+| :---- | :---- |
+| `hideComingSoonProducts` |  YES, NO |
+
+### Code Sample
+
+``` Objective-C
+[self.printIO hideComingSoonProducts:NO];
+```
+
+### Screenshots
+
+_Coming Soon_
+
+---
+
 
 
   [1]: https://lh5.googleusercontent.com/-18qrMfgPFUA/U1agy25l1aI/AAAAAAAABhI/21Bg4E2MfOY/w284-h199-no/c_sta_bar.png
