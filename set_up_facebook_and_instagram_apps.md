@@ -44,6 +44,41 @@ Here is the link how to do it: https://dl.dropboxusercontent.com/u/19321066/user
 | :---- | :---- |
 | ![enter image description here][3] |
 
+### Notes for user_photos
+
+Please explain how you are using user_photos to enhance a person's in-app experience.
+
+Our app allows users to create custom-printed products with their own photos and images. By using user_photos in our app, users are able to pull their favorite photos from Facebook to print on the products of their choosing. 
+
+How it works: 
+1. In the app, user selects the product they would like to customize with their photos 
+2. Selects Facebook from the image sources options 
+3. Sees the Facebook login interface
+3. Logs in
+4. Selects the photos they want from their albums
+5. Applies photos to the customized design of selected products
+
+
+Please provide step-by-step instructions so our review team can reproduce how you are using user_photos in your app. 
+
+
+1. Open the app
+2. Tap "Enter SparkMode" 
+3. Tap the "S" icon at the top of the screen
+4. Select "Go to Make Mode" in the modal
+5. Select "Canvas Wraps"
+6. Tap "Create It"
+7. Select Square
+8. Select 6x6 inch
+9. Select "Black Wrap"
+10. Select "3 images" 
+11. Select "Facebook" in the top right 
+12. Log into Facebook
+13. Select images from Facebook albums. 
+14. Tap "Next" in the bottom right and proceed to the canvas layout 
+
+This process can be replicated for any other product.
+
 ---
 
 ## Instagram app
