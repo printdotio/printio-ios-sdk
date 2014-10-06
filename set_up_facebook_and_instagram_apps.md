@@ -46,11 +46,12 @@ Here is the link how to do it: https://dl.dropboxusercontent.com/u/19321066/user
 
 ### Notes for user_photos
 
-Please explain how you are using user_photos to enhance a person's in-app experience.
+**Please explain how you are using user_photos to enhance a person's in-app experience.**
 
 Our app allows users to create custom-printed products with their own photos and images. By using user_photos in our app, users are able to pull their favorite photos from Facebook to print on the products of their choosing. 
 
-How it works: 
+**How it works:**
+
 1. In the app, user selects the product they would like to customize with their photos 
 2. Selects Facebook from the image sources options 
 3. Sees the Facebook login interface
@@ -59,7 +60,7 @@ How it works:
 5. Applies photos to the customized design of selected products
 
 
-Please provide step-by-step instructions so our review team can reproduce how you are using user_photos in your app. 
+**Please provide step-by-step instructions so our review team can reproduce how you are using user_photos in your app.** 
 
 
 1. Open the app
