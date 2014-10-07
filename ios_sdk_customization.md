@@ -1268,7 +1268,7 @@ _Coming Soon_
 ---
 ## Featured Products Title
 
-Customize the title for the Featured Products screen.  Default value is "Featured Products"
+Customize the title for the Featured Products screen.  Default value is "Products"
 
 | Method | Parameters - Options |
 | :---- | :---- |
