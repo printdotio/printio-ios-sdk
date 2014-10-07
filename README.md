@@ -1,5 +1,5 @@
-printio-ios-sdk
-===============
+PrintIO iOS SDK Development
+===========================
 
 SDK that enables the printing of any photo, from any source, onto any product!
 
