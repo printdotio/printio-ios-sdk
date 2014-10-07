@@ -242,7 +242,7 @@ Allow user to change country in featured products view and specify a color for t
 
 ## Category Control Bar Visibile
 
-Hide Category/Search view in Featured Products screen.  Default is NO
+Hide Category/Search view in Featured Products screen.  Default value is NO
 
 | Method | Parameters - Options |
 | :---- | :---- |
