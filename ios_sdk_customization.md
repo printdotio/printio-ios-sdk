@@ -1747,7 +1747,7 @@ _Coming Soon_
 ---
 
 ## Change Label's Color on Items in list on Featured Products screen
-Set text color for left label and right lable on Featured Products screen.
+Set text color for left label and right label on Featured Products screen.
 
 | Method | Parameters - Options |
 | :---- | :---- |
