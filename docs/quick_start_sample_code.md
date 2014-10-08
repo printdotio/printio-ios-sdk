@@ -1,12 +1,7 @@
 # PrintIO iOS SDK Basic Usage
 
-Below is sample code for launching a customized PrintIO widget.  For reference, almost all in-code customization options are included.  
+Below is sample code for launching a PrintIO widget. Be sure to follow the Project Setup guide above before attempting to use the PrintIO sample code.
 
-Additionally, There are some items we also allow customization of via an [XML file][8].
-
-Be sure to follow the Project Setup guide above before attempting to use the PrintIO sample code.
-
-Example how to run PrintIO widget:
 
 ``` Objective-C
 - (IBAction)runPrintIO:(id)sender
