@@ -39,6 +39,9 @@ Developer SDK Customization Reference
       - [-setTitleForFeaturedProductsScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforfeaturedproductsscreen)
       - [-setFeaturedProductsLeftLabelTextColor:rightLabelTextColor](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsleftlabeltextcolorrightlabeltextcolor)
       - [-setFeaturedProductsBackgroungImage](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsbackgroungimage)
+   - [Screen 'Product Details']
+      - [-productDetailsShowTitleBelowNavBar]
+      - [-productDetailsShowMenuBtnInNavBar]
    
 ### Initialization
 
@@ -440,4 +443,23 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param imagePath Path to image file.
  */
 - (void)setFeaturedProductsBackgroungImage:(NSString *)imagePath;
+```
+##Screen 'Product Details'
+######- productDetailsShowTitleBelowNavBar
+```Objective-C
+/**
+ Show title below navigation bar on Product Details screen
+
+ @param set Default value is NO
+ */
+- (void)productDetailsShowTitleBelowNavBar:(BOOL)set;
+```
+######- productDetailsShowMenuBtnInNavBar
+```Objective-C
+/**
+ Show menu button in navigation bar on Product Details screen
+
+ @param set Default value is NO
+ */
+- (void)productDetailsShowMenuBtnInNavBar:(BOOL)set;
 ```
