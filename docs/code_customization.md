@@ -7,6 +7,11 @@ Developer SDK Customization Reference
       - [initWithEnvironment](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithenvironment)
       - [initWithViewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithviewcontroller)
    - [Opening and closing](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#opening-and-closing)
+      - [open](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--open)
+      - [openWithOption](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--openwithoption)
+      - [presentFromViewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--presentfromviewcontroller)
+      - [viewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--viewcontroller)
+      - [close](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--close)
    - Navigation bar
    - Side menu
    - Screens
@@ -44,12 +49,14 @@ Developer SDK Customization Reference
 ```
 ### Opening and closing
 
+######- open
 ``` Objective-C
 /**
  Open widget by presenting view from bottom
  */
 - (void)open;
 ```
+######- openWithOption
 ``` Objective-C
 /**
  Open widget with option
@@ -63,6 +70,7 @@ Developer SDK Customization Reference
  */
 - (void)openWithOption:(int)option;
 ```
+######- presentFromViewController
 ``` Objective-C
 /**
  Present widget from view controller with option
@@ -77,12 +85,14 @@ Developer SDK Customization Reference
 - (void)presentFromViewController:(UIViewController *)viewController
                        withOption:(int)option;
 ```
+######- viewController
 ``` Objective-C
 /**
  Returns PrintIO view controller. Set all options before calling this method
  */
 - (id)viewController;
 ```
+######- close
 ``` Objective-C
 /**
  Close widget
