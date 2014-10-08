@@ -21,7 +21,7 @@ Developer SDK Customization Reference
       - [-setThreeButtonsNavigationBarSytle](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setThreeButtonsNavigationBarSytle)
       - [-setNavigationBarSaveToCartBackgroundColor:titleColor:buttonBackgroundColor:buttonTitleColor](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setNavigationBarSaveToCartBackgroundColortitleColorbuttonBackgroundColorbuttonTitleColor)
    - [Side menu](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#side-menu)
-      - [-useSideMenuWithMenuIcon:background](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--useSideMenuWithMenuIconbackground)
+      - [-useSideMenuWithMenuIcon:background](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--usesidemenuwithmenuiconbackground)
       - [-sideMenuAddButtons](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sideMenuAddButtons)
       - [-sideMenuHideOptionsHeader](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sideMenuHideOptionsHeader)
       - [-sideMenuHideAccountsHeader](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sideMenuHideAccountsHeader)
