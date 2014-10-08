@@ -42,8 +42,26 @@ Developer SDK Customization Reference
    - [Screen 'Product Details'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-product-details)
       - [-productDetailsShowTitleBelowNavBar](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
       - [-productDetailsShowMenuBtnInNavBar](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
-   - [Photo sources]
-      -
+   - [Photo sources](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#photo-sources)
+      - [-setAvailablePhotoSources](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources)
+      - [-setDefaultPhotoSource:albumId](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdefaultphotosourcealbumid)
+      - [-setImages](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setimages)
+      - [-disablePhotoSourcesWhenImagesArePassedIn](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablephotosourceswhenimagesarepassedin)
+      - [-disablePhotoSourcesForOnePhotoTemplate](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablephotosourcesforonephototemplate)
+      - [-setPassedImageFirstInPhotoSources](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpassedimagefirstinphotosources)
+      - [-setPassedImageAsThumbForOnePhotoTemplate](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpassedimageasthumbforonephototemplate)
+      - [-hideIconForUploadInstructions](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideiconforuploadinstructions)
+      - [-setInstagramClientID:redirectUrl](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setinstagramclientidredirecturl)
+      - [-setInstagramAccessToken](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setinstagramaccesstoken)
+      - [-setFlickrKey:secretKey:redirectUrl](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setflickrkeysecretkeyredirecturl)
+      - [-setDropboxKey:redirectUrl](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdropboxkeyredirecturl)
+      - [-setFacebookAppId:redirectUrl](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfacebookappidredirecturl)
+      - [-setFacebookAccessToken](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfacebookaccesstoken)
+      - [-setPhotobucketUsername:password](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setphotobucketusernamepassword)
+      - [-setPhotobucketAccessToken:userName:baseURL](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setphotobucketaccesstokenusernamebaseurl)
+      - [-setTitleForPhotoSourcesScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforphotosourcesscreen)
+      
+
 
 
 ### Initialization
