@@ -76,6 +76,12 @@ Developer SDK Customization Reference
 ```
 ``` Objective-C
 /**
+ Returns PrintIO view controller. Set all options before calling this method
+ */
+- (id)viewController;
+```
+``` Objective-C
+/**
  Close widget
  */
 - (void)close:(NSInteger)flag;
