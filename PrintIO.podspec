@@ -1,5 +1,5 @@
 
-d::Spec.new do |s|
+Pod::Spec.new do |s|
   s.name             = "PrintIO"
   s.version          = "1.0.1"
 
