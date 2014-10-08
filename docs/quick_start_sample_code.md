@@ -43,6 +43,51 @@ You can also use our ```PrintIODelegate``` methods in your presenting view contr
 
 Delegate method ```PrintIOWidgetOnCloseWithData``` provides key/value pairs:
 
+```
+{
+    flag = 0;
+    "num_of_items_in_shopping_cart" = 3; // number of current items in shopping cart
+    "order_data" = "";
+}
+```
+after successful order:
+
+```
+    "order_data" = {
+        items = (                       // items from cart, included in order
+            {
+             ship_options = (           // json string with shipping options
+                "{
+                 "price" : "$6.00",
+                 "method_type" : "Standard",
+                 "carrier_name" : "Standard",
+                 "name" : "Standard",
+                 "ship_option_id" : "1",
+                 "days_till_delivery" : "12"
+                }"
+             );
+             skus = (                   // array of skus included in order
+                "ThickPrints_4x6_24set"
+             );
+            }
+        );
+        order_id = "Stive7-a3e";        // order id
+        overall = "$17.99";             // total price including shipping
+        "shipping_info" = {             // shipping info for order
+            city = "SANTA MONICA";
+            country = "United States";
+            country_code = US;
+            email = "test@test.com";
+            first_name = John;
+            last_name = Stivens;
+            phone = 1234567890;
+            state = CA;
+            street = "320 WILSHIRE BLVD";
+            street2 = "";
+            zip_code = "90401-1315";
+        };
+    };
+```
 
 
 [8]: https://github.com/printdotio/printio-ios-sdk/blob/master/docs/customization.xml.md
