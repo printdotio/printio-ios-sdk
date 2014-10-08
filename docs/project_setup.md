@@ -110,4 +110,4 @@ You can also use our ```PrintIODelegate``` methods in your presenting view contr
 - Braintree Credit Card Testing Values
 https://developers.braintreepayments.com/ios+ruby/reference/general/testing
 
-That's it - now you're ready to develop an amazing application using the Print.IO SDK!
+That's it - now you're ready to develop an amazing application using the PrintIO SDK!
