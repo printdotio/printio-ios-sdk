@@ -1,0 +1,1 @@
+Move docs to /docs
