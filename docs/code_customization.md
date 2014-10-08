@@ -4,7 +4,7 @@ Developer SDK Customization Reference
 ### Sections:
 
    - [Initialization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#initialization)
-   - Opening and closing
+   - [Opening and closing](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#opening-and-closing)
    - Navigation bar
    - Side menu
    - Screens
