@@ -27,8 +27,12 @@ Developer SDK Customization Reference
       - [-sideMenuHideAccountsHeader](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuhideaccountsheader)
       - [-sideMenuHideInfoHeader](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuhideinfoheader)
       - [-sideMenuShowOptionsAsList](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenushowoptionsaslist)
-   - Screens
-   - 
+   - [Screen 'Choose Country']
+      - [setTitleForChooseCountryScreen]
+      - [hideSearchIconInChooseCountryScreen]
+      - [setPlaceholderTextForSearchBarInChooseCountryScreen:hideMagnifyingGlass]
+      - [setNavigationBarBackgroundColorForChooseCountryScreen]
+   - [Screen 'Products']
    
 ### Initialization
 
@@ -327,4 +331,43 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param path Image path
  */
 - (void)sideMenuBackgroungImage:(NSString *)path;
+```
+##Screen 'Choose Country'
+######- setTitleForChooseCountryScreen
+```Objective-C
+/**
+ Change title on 'Choose Country' screen
+
+ @param title New title
+ */
+- (void)setTitleForChooseCountryScreen:(NSString *)title;
+```
+######- hideSearchIconInChooseCountryScreen
+```Objective-C
+/**
+ Hide search icon from navigation bar on 'Choose Country' screen
+
+ @param set Default value is NO
+ */
+- (void)hideSearchIconInChooseCountryScreen:(BOOL)set;
+```
+######- setPlaceholderTextForSearchBarInChooseCountryScreen:hideMagnifyingGlass
+```Objective-C
+/**
+ Change placeholder text in search bar, and set magnifying glass vissible or hidden
+
+ @param text Placeholder text
+ @param set Default value is NO
+ */
+- (void)setPlaceholderTextForSearchBarInChooseCountryScreen:(NSString *)text
+                                        hideMagnifyingGlass:(BOOL)set;
+```
+######- setNavigationBarBackgroundColorForChooseCountryScreen
+```Objective-C
+/**
+ Change the color of navigation bar in 'Choose Country' screen
+
+ @param color Color to set
+ */
+- (void)setNavigationBarBackgroundColorForChooseCountryScreen:(UIColor *)color;
 ```
