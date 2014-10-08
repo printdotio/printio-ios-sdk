@@ -43,7 +43,7 @@ You can also use our ```PrintIODelegate``` methods in your presenting view contr
 
 Delegate method ```PrintIOWidgetOnCloseWithData``` provides key/value pairs:
 
-```
+``` Objective-C
 {
     flag = 0;
     "num_of_items_in_shopping_cart" = 3; // number of current items in shopping cart
@@ -52,7 +52,7 @@ Delegate method ```PrintIOWidgetOnCloseWithData``` provides key/value pairs:
 ```
 after successful order:
 
-```
+``` Objective-C
     "order_data" = {
         items = (                       // items from cart, included in order
             {
