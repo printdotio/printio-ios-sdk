@@ -7,12 +7,19 @@ Developer SDK Customization Reference
       - [-initWithEnvironment](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithenvironment)
       - [-initWithViewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithviewcontroller)
    - [Opening and closing](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#opening-and-closing)
-      - [open](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--open)
-      - [openWithOption](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--openwithoption)
-      - [presentFromViewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--presentfromviewcontroller)
-      - [viewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--viewcontroller)
-      - [close](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--close)
-   - Navigation bar
+      - [-open](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--open)
+      - [-openWithOption](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--openwithoption)
+      - [-presentFromViewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--presentfromviewcontroller)
+      - [-viewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--viewcontroller)
+      - [-close](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--close)
+   - [Navigation bar](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#navigation-bar)
+      - [-navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon]
+      - [-setNavigationBarBackground]
+      - [-setNavigationBarBackgroundForCustomizeProduct]
+      - [-setIconForBackButton]
+      - [-setStatusBarDark:hidden]
+      - [-setThreeButtonsNavigationBarSytle]
+      - [-setNavigationBarSaveToCartBackgroundColor:titleColor:buttonBackgroundColor:buttonTitleColor]
    - Side menu
    - Screens
    - 
@@ -101,6 +108,7 @@ Developer SDK Customization Reference
 ```
 ### Navigation bar
 
+######- navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon
 ```Objective-C
 /**
  Change navigation bar color and title font color.
@@ -118,6 +126,7 @@ Developer SDK Customization Reference
 rightButtonBackgroundColor:(UIColor *)rColor
            titleButtonIcon:(NSString *)iPath;
 ```
+######- setNavigationBarBackground
 ```Objective-C
 /**
  Set background image on Navigation Bar
@@ -126,6 +135,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setNavigationBarBackground:(NSString *)imagePath;
 ```
+######- setNavigationBarBackgroundForCustomizeProduct
 ```Objective-C
 /**
  Set navigation bar background image on 'Customize Product' screen
@@ -134,6 +144,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setNavigationBarBackgroundForCustomizeProduct:(NSString *)imagePath;
 ```
+######- setIconForBackButton
 ```Objective-C
 /**
  Set icon for back button.
@@ -142,6 +153,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setIconForBackButton:(NSString *)iconPath;
 ```
+######- setStatusBarDark:hidden
 ```Objective-C
 /**
  Set status bar style and visibility.
@@ -152,6 +164,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)setStatusBarDark:(BOOL)dark
                   hidden:(BOOL)hidden;
 ```
+######- setThreeButtonsNavigationBarSytle
 ```Objective-C
 /**
  Set three buttons Back, Menu and Cart button in navigation bar for Featured Products screen
@@ -160,6 +173,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setThreeButtonsNavigationBarSytle:(BOOL)set;
 ```
+######- setNavigationBarSaveToCartBackgroundColor:titleColor:buttonBackgroundColor:buttonTitleColor
 ```Objective-C
 /**
  Set colors scheme for navigation bar with "Save to" shopping cart button
