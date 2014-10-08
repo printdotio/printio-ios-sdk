@@ -13,13 +13,13 @@ Developer SDK Customization Reference
       - [-viewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--viewcontroller)
       - [-close](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--close)
    - [Navigation bar](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#navigation-bar)
-      - [-navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon]
-      - [-setNavigationBarBackground]
-      - [-setNavigationBarBackgroundForCustomizeProduct]
-      - [-setIconForBackButton]
-      - [-setStatusBarDark:hidden]
-      - [-setThreeButtonsNavigationBarSytle]
-      - [-setNavigationBarSaveToCartBackgroundColor:titleColor:buttonBackgroundColor:buttonTitleColor]
+      - [-navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#navigationBarColortitleColorleftButtonBackgroundColorrightButtonBackgroundColortitleButtonIcon)
+      - [-setNavigationBarBackground](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#setNavigationBarBackground)
+      - [-setNavigationBarBackgroundForCustomizeProduct](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#setNavigationBarBackgroundForCustomizeProduct)
+      - [-setIconForBackButton](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#setIconForBackButton)
+      - [-setStatusBarDark:hidden](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#setStatusBarDarkhidden)
+      - [-setThreeButtonsNavigationBarSytle](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#setThreeButtonsNavigationBarSytle)
+      - [-setNavigationBarSaveToCartBackgroundColor:titleColor:buttonBackgroundColor:buttonTitleColor](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#setNavigationBarSaveToCartBackgroundColortitleColorbuttonBackgroundColorbuttonTitleColor)
    - Side menu
    - Screens
    - 
