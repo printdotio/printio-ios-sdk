@@ -1445,8 +1445,6 @@ _Coming Soon_
 
 ---
 
-## Ivans new methods
-
 ## Positive Buttons
 Change background color on positive buttons (Yes, Next, Ok, Save, Buy It, Create It...) 
 
