@@ -11,17 +11,35 @@ Example how to run PrintIO widget:
 ``` Objective-C
 - (IBAction)runPrintIO:(id)sender
 {
-    // UI CUSTOMIZATION
-    //----------------------------------------------------------------------
-    // Options to customize the UI ranging from general/overall to specific views
+    // RecipeId is developer defined and provided by PrintIO Account and Sales Team
+    PrintIO *printIO = [[PrintIO alloc]initWithViewController:vc
+                                                  environment:kEnvironment
+                                           productionRecipeId:pRecipeId
+                                              stagingRecipeId:sRecipeId];
 
+    // Set Delegate
+    [printIO setDelegate:self];
+
+    // Customization goes here....
+    // ...
     
-    // OPEN WIDGET
-    //----------------------------------------------------------------------
-    [self.printIO open];
+    // Start widget
+    [printIO open];
 };
 ```
 
+You can also use our ```PrintIODelegate``` methods in your presenting view controller:
+
+``` Objective-C
+- (void)PrintIOWidgetOnOpen
+{
+    NSLog(@"PrintIOWidgetOnOpened");
+}
+- (void)PrintIOWidgetOnCloseWithData:(NSDictionary *)data
+{
+    NSLog(@"Returned data: %@", data);
+}
+```
 
 
 [8]: https://github.com/printdotio/printio-ios-sdk/blob/master/docs/customization.xml.md
