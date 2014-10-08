@@ -27,11 +27,11 @@ Developer SDK Customization Reference
       - [-sideMenuHideAccountsHeader](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuhideaccountsheader)
       - [-sideMenuHideInfoHeader](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuhideinfoheader)
       - [-sideMenuShowOptionsAsList](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenushowoptionsaslist)
-   - [Screen 'Choose Country']
-      - [setTitleForChooseCountryScreen]
-      - [hideSearchIconInChooseCountryScreen]
-      - [setPlaceholderTextForSearchBarInChooseCountryScreen:hideMagnifyingGlass]
-      - [setNavigationBarBackgroundColorForChooseCountryScreen]
+   - [Screen 'Choose Country'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-choose-country)
+      - [setTitleForChooseCountryScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchoosecountryscreen)
+      - [hideSearchIconInChooseCountryScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidesearchiconinchoosecountryscreen)
+      - [setPlaceholderTextForSearchBarInChooseCountryScreen:hideMagnifyingGlass](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setplaceholdertextforsearchbarinchoosecountryscreenhidemagnifyingglass)
+      - [setNavigationBarBackgroundColorForChooseCountryScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackgroundcolorforchoosecountryscreen)
    - [Screen 'Products']
    
 ### Initialization
