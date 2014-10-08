@@ -105,7 +105,7 @@ You can also use our ```PrintIODelegate``` methods in your presenting view contr
 
 # Basic Testing
 
-### Staging Enviornment Testing Values
+### Staging Environment Testing Values
 
 - Braintree Credit Card Testing Values
 https://developers.braintreepayments.com/ios+ruby/reference/general/testing
