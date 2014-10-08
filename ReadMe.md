@@ -15,7 +15,7 @@ The PrintIO SDK also offers the ability to send push notifications from your app
 
 - Get started with the PrintIO SDK by going through our [Project Setup & Prerequisites guide](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/project_setup.md).
 - If you'd like a little more guidance, you can refer to our [Basic usage code](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/quick_start_sample_code.md).
-- For in depth descriptions of the in-code customization options available, see our [SDK customization document](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/ios_sdk_customization.md).
+- For in depth descriptions of the in-code customization options available, see our [SDK customization document](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md).
 - To learn more about what customization options are available via XML configuration, see our [XML customization document](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/xml_customization.md) ([an example XML customization file](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/customization.xml.md)).
 - For a more comprehensive demonstration of the PrintIO SDK, please see the [PrintIOSDKSample app](https://github.com/printdotio/printio-ios-example)
 
