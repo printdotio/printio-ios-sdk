@@ -28,11 +28,17 @@ Developer SDK Customization Reference
       - [-sideMenuHideInfoHeader](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuhideinfoheader)
       - [-sideMenuShowOptionsAsList](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenushowoptionsaslist)
    - [Screen 'Choose Country'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-choose-country)
-      - [setTitleForChooseCountryScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchoosecountryscreen)
-      - [hideSearchIconInChooseCountryScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidesearchiconinchoosecountryscreen)
-      - [setPlaceholderTextForSearchBarInChooseCountryScreen:hideMagnifyingGlass](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setplaceholdertextforsearchbarinchoosecountryscreenhidemagnifyingglass)
-      - [setNavigationBarBackgroundColorForChooseCountryScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackgroundcolorforchoosecountryscreen)
+      - [-setTitleForChooseCountryScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchoosecountryscreen)
+      - [-hideSearchIconInChooseCountryScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidesearchiconinchoosecountryscreen)
+      - [-setPlaceholderTextForSearchBarInChooseCountryScreen:hideMagnifyingGlass](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setplaceholdertextforsearchbarinchoosecountryscreenhidemagnifyingglass)
+      - [-setNavigationBarBackgroundColorForChooseCountryScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackgroundcolorforchoosecountryscreen)
    - [Screen 'Products']
+      - [-hideCategoriesInFeaturedProducts](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecategoriesinfeaturedproducts)
+      - [-hideComingSoonProducts](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecomingsoonproducts)
+      - [-showCountrySelectionOnScreen:backgroundColor](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showcountryselectiononscreenbackgroundcolor)
+      - [-setTitleForFeaturedProductsScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforfeaturedproductsscreen)
+      - [-setFeaturedProductsLeftLabelTextColor:rightLabelTextColor](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsleftlabeltextcolorrightlabeltextcolor)
+      - [-setFeaturedProductsBackgroungImage](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsbackgroungimage)
    
 ### Initialization
 
