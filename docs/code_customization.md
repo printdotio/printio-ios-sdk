@@ -371,3 +371,67 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setNavigationBarBackgroundColorForChooseCountryScreen:(UIColor *)color;
 ```
+##Screen 'Products'
+######- hideCategoriesInFeaturedProducts
+```Objective-C
+
+/**
+ Hide category+search view on Featured Products screen. Default value is NO;
+
+ */
+- (void)hideCategoriesInFeaturedProducts:(BOOL)hide;
+```
+######- hideComingSoonProducts
+```Objective-C
+/**
+ Hide coming soon products from product's list
+ 
+ @param hide Default value is NO
+ */
+- (void)hideComingSoonProducts:(BOOL)hide;
+```
+######- showCountrySelectionOnScreen:backgroundColor
+```Objective-C
+/**
+ Show country selection. By default, country selection is always shown on Featured/All products
+
+ @param screen Screen:
+ 
+ PIO_SCREEN_FEATURED_PRODUCTS
+ PIO_SCREEN_PRODUCT_DETAILS
+ PIO_SCREEN_OPTIONS
+ */
+- (void)showCountrySelectionOnScreen:(PIOScreens)screen
+                     backgroundColor:(UIColor *)backgroundColor;
+```
+######- setTitleForFeaturedProductsScreen
+```Objective-C
+/**
+ Change title on Featured Products screen
+
+ @param title New title
+ */
+- (void)setTitleForFeaturedProductsScreen:(NSString *)title;
+```
+######- setFeaturedProductsLeftLabelTextColor:rightLabelTextColor
+```Objective-C
+/**
+ Change label's color on items in list on Featured Products screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#change-labels-color-on-items-in-list-on-featured-products-screen
+ 
+ @param lColor Text color for left label
+ @param rColor Text color for right label
+ */
+- (void)setFeaturedProductsLeftLabelTextColor:(UIColor *)lColor
+                          rightLabelTextColor:(UIColor *)rColor;
+```
+######- setFeaturedProductsBackgroungImage
+```Objective-C
+/**
+ Set background image on Featured Products screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#featured-products-background-image
+ 
+ @param imagePath Path to image file.
+ */
+- (void)setFeaturedProductsBackgroungImage:(NSString *)imagePath;
+```
