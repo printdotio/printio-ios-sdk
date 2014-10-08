@@ -42,7 +42,10 @@ Developer SDK Customization Reference
    - [Screen 'Product Details'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-product-details)
       - [-productDetailsShowTitleBelowNavBar](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
       - [-productDetailsShowMenuBtnInNavBar](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
-   
+   - [Photo sources]
+      -
+
+
 ### Initialization
 
 ######- initWithEnvironment
@@ -462,4 +465,180 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param set Default value is NO
  */
 - (void)productDetailsShowMenuBtnInNavBar:(BOOL)set;
+```
+##Photo sources
+######- setAvailablePhotoSources
+```Objective-C
+/**
+ Set available photo sources
+
+ @param photoSources Array of PIOSideMenuButton objects, represents which types of photo sources will be
+ available to user. Types:
+   PIO_SM_FACEBOOK
+   PIO_SM_INSTAGRAM
+   PIO_SM_PICASA
+   PIO_SM_FLICKR
+   PIO_SM_DROPBOX
+   PIO_SM_PHOTOBUCKET
+   PIO_SM_PHONE
+ */
+- (void)setAvailablePhotoSources:(NSArray *)photoSources;
+```
+######- setDefaultPhotoSource:albumId
+```Objective-C
+/**
+ When user enters 'Select Photos' screen, selected photo source will be opened by default.
+ If an album id is passed in, if exist, that album will be opened.
+ 
+ @param pSource Photo source:
+   PIO_PS_FACEBOOK
+   PIO_PS_INSTAGRAM
+   PIO_PS_PICASA
+   PIO_PS_FLICKR
+   PIO_PS_DROPBOX
+   PIO_PS_PHOTOBUCKET
+   PIO_PS_PHONE
+ 
+ @param albumId Album id (Currently works only for PIO_SM_PHOTOBUCKET photo source)
+ 
+ */
+- (void)setDefaultPhotoSource:(PIOPhotoSources)pSource
+                      albumId:(NSString *)albumId;
+```
+######- setImages
+```Objective-C
+/**
+ Pass in images URLs or UIImage objects.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#pass-photo-to-sdk
+ 
+ @param images Array of image urls or/and UIImage objects
+ */
+- (void)setImages:(NSArray *)images;
+```
+######- disablePhotoSourcesWhenImagesArePassedIn
+```Objective-C
+/**
+ If user pass in images usinig method 'images', this method can disable photo sources,
+ forcing user to use only passed photos.
+
+ This method overrides method 'availablePhotoSources'
+ */
+- (void)disablePhotoSourcesWhenImagesArePassedIn:(BOOL)disable;
+```
+######- disablePhotoSourcesForOnePhotoTemplate
+```Objective-C
+/**
+ Disable photo sources only if image is passed in, and user selects template with
+ one photo.
+ */
+- (void)disablePhotoSourcesForOnePhotoTemplate:(BOOL)disable;
+```
+######- setPassedImageFirstInPhotoSources
+```Objective-C
+/**
+ Set passed in image to be first in row for all photo sources.
+ */
+- (void)setPassedImageFirstInPhotoSources:(BOOL)set;
+```
+######- setPassedImageAsThumbForOnePhotoTemplate
+```Objective-C
+/**
+ Set passed in image as thumbnail for templates with one photo.
+ Right now, only supports Canvas Wraps and Framed Prints
+ */
+- (void)setPassedImageAsThumbForOnePhotoTemplate:(BOOL)set;
+```
+######- hideIconForUploadInstructions
+```Objective-C
+/**
+ Hide icon for Upload Instructions text in Photo Sources screen. Default value is NO.
+ */
+- (void)hideIconForUploadInstructions:(BOOL)hide;
+```
+######- setInstagramClientID:redirectUrl
+```Objective-C
+/**
+ Set Instagram credentials. By default, PrintIO credentials are used.
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-instagram-credentials
+ */
+- (void)setInstagramClientID:(NSString *)clientId
+                 redirectUrl:(NSString *)redirectUrl;
+```
+######- setInstagramAccessToken
+```Objective-C
+/**
+ Set access token for Instagram
+ 
+ @param accessToken Valid access token for session
+ */
+- (void)setInstagramAccessToken:(NSString *)accessToken;
+```
+######- setFlickrKey:secretKey:redirectUrl
+```Objective-C
+/**
+ Set Flickr credentials. By default, PrintIO credentials are used.
+ */
+- (void)setFlickrKey:(NSString *)key
+           secretKey:(NSString *)secretKey
+         redirectUrl:(NSString *)redirectUrl;
+```
+######- setDropboxKey:redirectUrl
+```Objective-C
+/**
+ Set Dropbox credentials. By default, PrintIO credentials are used.
+ */
+- (void)setDropboxKey:(NSString *)key
+          redirectUrl:(NSString *)redirectUrl;
+```
+######- setFacebookAppId:redirectUrl
+```Objective-C
+/**
+ Set Facebook credentials. By default, PrintIO credentials are used.
+ */
+- (void)setFacebookAppId:(NSString *)appId
+             redirectUrl:(NSString *)redirectUrl;
+```
+######- setFacebookAccessToken
+```Objective-C
+/**
+ Set access token for Facebook
+
+ @param aToken Valid access token for session
+ */
+- (void)setFacebookAccessToken:(NSString *)aToken;
+```
+######- setPhotobucketUsername:password
+```Objective-C
+/**
+ Set username and password for Photobucket (autologin)
+
+ @param userName Username or email for Photobucket account
+ @param password Password
+ */
+- (void)setPhotobucketUsername:(NSString *)userName
+                      password:(NSString *)password;
+```
+######- setPhotobucketAccessToken:userName:baseURL
+```Objective-C
+/**
+ Set access token for Photobucket
+
+ @param aToken Valid access token for session
+ @param username Username
+ @param baseUrl Base url for Photobucket
+ */
+- (void)setPhotobucketAccessToken:(NSString *)aToken
+                         userName:(NSString *)username
+                          baseURL:(NSString *)baseUrl;
+```
+######- setTitleForPhotoSourcesScreen
+```Objective-C
+/**
+ Change title for Photo Sources screen
+ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-title-for-photo-sources-screens
+ 
+ @param title New title
+ */
+- (void)setTitleForPhotoSourcesScreen:(NSString *)title;
+
 ```
