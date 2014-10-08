@@ -32,7 +32,7 @@ Developer SDK Customization Reference
       - [-hideSearchIconInChooseCountryScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidesearchiconinchoosecountryscreen)
       - [-setPlaceholderTextForSearchBarInChooseCountryScreen:hideMagnifyingGlass](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setplaceholdertextforsearchbarinchoosecountryscreenhidemagnifyingglass)
       - [-setNavigationBarBackgroundColorForChooseCountryScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackgroundcolorforchoosecountryscreen)
-   - [Screen 'Products']
+   - [Screen 'Products'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-products)
       - [-hideCategoriesInFeaturedProducts](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecategoriesinfeaturedproducts)
       - [-hideComingSoonProducts](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecomingsoonproducts)
       - [-showCountrySelectionOnScreen:backgroundColor](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showcountryselectiononscreenbackgroundcolor)
