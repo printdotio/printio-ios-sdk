@@ -4,6 +4,8 @@ Developer SDK Customization Reference
 ### Sections:
 
    - [Initialization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#initialization)
+      - [initWithEnvironment](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#initwithenvironment)
+      - [initWithViewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#initwithviewcontroller)
    - [Opening and closing](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#opening-and-closing)
    - Navigation bar
    - Side menu
@@ -12,6 +14,7 @@ Developer SDK Customization Reference
    
 ### Initialization
 
+######- initWithEnvironment
 ``` Objective-C
 /**
  Init PrintIO widget. To get view controller, use '[self.printIO viewController]'
@@ -24,7 +27,7 @@ Developer SDK Customization Reference
        productionRecipeId:(NSString *)pRecipeId
           stagingRecipeId:(NSString *)sRecipeId;
 ```
-
+######- initWithViewController
 ``` Objective-C
 /**
  Init PrintIO widget with parent view controller.
