@@ -1,6 +1,6 @@
 # Introduction
 
-The Print.IO SDK for iOS enables you to integrate the capabilities of our platform into your iOS applications.
+The PrintIO SDK for iOS enables you to integrate the capabilities of our platform into your iOS applications.
 
 Our SDK allows you to select which features and functionality you need as well as to customize the look and feel of different UI elements. Customization can be performed via code level options and/or XML configuration.
 
