@@ -4,7 +4,7 @@ Developer SDK Customization Reference
 ### Sections:
 
    - [Initialization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#initialization)
-      - ```[-initWithEnvironment]```(https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithenvironment)
+      - [-initWithEnvironment](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithenvironment)
       - [-initWithViewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithviewcontroller)
    - [Opening and closing](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#opening-and-closing)
       - [-open](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--open)
@@ -21,6 +21,12 @@ Developer SDK Customization Reference
       - [-setThreeButtonsNavigationBarSytle](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#setThreeButtonsNavigationBarSytle)
       - [-setNavigationBarSaveToCartBackgroundColor:titleColor:buttonBackgroundColor:buttonTitleColor](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#setNavigationBarSaveToCartBackgroundColortitleColorbuttonBackgroundColorbuttonTitleColor)
    - Side menu
+      - [-useSideMenuWithMenuIcon:background]
+      - [-sideMenuAddButtons]
+      - [-sideMenuHideOptionsHeader]
+      - [-sideMenuHideAccountsHeader]
+      - [-sideMenuHideInfoHeader]
+      - [-sideMenuShowOptionsAsList]
    - Screens
    - 
    
@@ -188,4 +194,137 @@ rightButtonBackgroundColor:(UIColor *)rColor
                                        titleColor:(UIColor *)titleColor
                             buttonBackgroundColor:(UIColor *)btnBcgColor
                                  buttonTitleColor:(UIColor *)btnTitleColor;
+```
+###Side menu
+######- useSideMenuWithMenuIcon:background
+```Objective-C
+/**
+ Use Side Menu with options:
+
+ @param mIconPath Path to image for Menu icon. If nil, default icon will be used.
+ @param bcgColor Background color for Side Menu. If nil, default will be used.
+ */
+- (void)useSideMenuWithMenuIcon:(NSString *)mIconPath
+                     background:(UIColor *)bcgColor;
+```
+######- sideMenuAddButtons
+```Objective-C
+/**
+ Set which options to use in side menu
+
+ @param buttons Array of PIOSideMenuButton objects of types:
+ PIO_SM_EXIT_BUTTON,
+ PIO_SM_SEARCH_BAR,
+ PIO_SM_PRODUCTS,
+ PIO_SM_FEATURED_PRODUCTS,
+ PIO_SM_VIEW_CART,
+ PIO_SM_SHARE_WITH_IMAGE,
+ PIO_SM_EMAIL_SUPPORT
+ PIO_SM_HELP
+ PIO_SM_CHANGE_CURRENCY,
+ PIO_SM_CHANGE_COUNTRY,
+ PIO_SM_CHANGE_LANGUAGE
+ 
+ @param optionsTitle Title for this section
+ @param oTitleColor Title color
+ @param optionsColor Background color for this section
+ @param accountsTitle Title for this section
+ @param aTitleColor Title color
+ @param accountsColor Background color for this section
+ 
+ @param info Array of PIOSideMenuButton objects of types:
+ PIO_SM_PRICING_CHART,
+ PIO_SM_SHARE_APP,
+ PIO_SM_LIKE_US_FB,
+ PIO_SM_RATE_APP,
+ PIO_SM_ABOUT,
+ PIO_SM_HOW_IT_WORKS,
+ PIO_SM_PAST_ORDERS
+ 
+ @param infoTitle Title for this section
+ @param infoTitleColor Title color
+ @param infoColor Background color for this section
+ @param backgroundImageForButtons Path to file
+ 
+ */
+- (void)sideMenuAddButtons:(NSArray *)buttons
+                   options:(NSArray *)options
+              optionsTitle:(NSString *)optionsTitle
+         optionsTitleColor:(UIColor *)oTitleColor
+              optionsColor:(UIColor *)optionsColor
+             accountsTitle:(NSString *)accountsTitle
+        accountsTitleColor:(UIColor *)aTitleColor
+             accountsColor:(UIColor *)accountsColor
+                      info:(NSArray *)info
+                 infoTitle:(NSString *)infoTitle
+            infoTitleColor:(UIColor *)iTitleColor
+                 infoColor:(UIColor *)infoColor
+ backgroundImageForButtons:(NSString *)path;
+```
+######- sideMenuHideOptionsHeader
+```Objective-C
+/**
+ Hide 'Options' header in Side Menu
+ */
+- (void)sideMenuHideOptionsHeader:(BOOL)set;
+```
+######- sideMenuHideAccountsHeader
+```Objective-C
+/**
+ Hide 'Accounts' header in Side Menu
+ */
+- (void)sideMenuHideAccountsHeader:(BOOL)set;
+```
+######- sideMenuHideInfoHeader
+```Objective-C
+/**
+ Hide 'Info' header in Side Menu
+ */
+- (void)sideMenuHideInfoHeader:(BOOL)set;
+```
+######- sideMenuShowOptionsAsList
+```Objective-C
+/**
+ Show 'Options' section as a list
+
+ @param set Default value is NO
+ */
+- (void)sideMenuShowOptionsAsList:(BOOL)set;
+```
+######- slideSideMenuFromRight
+```Objective-C
+/**
+ Slide side menu from right. Default value is NO.
+
+ @param set Default value is NO.
+ */
+- (void)slideSideMenuFromRight:(BOOL)set;
+```
+######- setShareText:additionalText
+```Objective-C
+/**
+ This is option from Side Menu, in order to use it, Side Menu needs to be enabled first.
+
+ @param shareText Text that will be used for sharing. May contains link also.
+ @param additionalText Text used when sharing with image.
+ */
+- (void)setShareText:(NSString *)shareText additionalText:(NSString *)additionalText;
+```
+######- hidePhotoSourcesInSideMenu
+```Objective-C
+/**
+ Hide photo sources section in Side Menu
+
+ @param set Default value is NO
+ */
+- (void)hidePhotoSourcesInSideMenu:(BOOL)set;
+```
+######- sideMenuBackgroungImage
+```Objective-C
+/**
+ Set background image on Side Menu
+
+ @param path Image path
+ */
+- (void)sideMenuBackgroungImage:(NSString *)path;
 ```
