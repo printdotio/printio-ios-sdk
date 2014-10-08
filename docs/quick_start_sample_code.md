@@ -41,5 +41,8 @@ You can also use our ```PrintIODelegate``` methods in your presenting view contr
 }
 ```
 
+Delegate method ```PrintIOWidgetOnCloseWithData``` provides key/value pairs:
+
+
 
 [8]: https://github.com/printdotio/printio-ios-sdk/blob/master/docs/customization.xml.md
