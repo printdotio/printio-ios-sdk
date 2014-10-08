@@ -46,14 +46,14 @@ Delegate method ```PrintIOWidgetOnCloseWithData``` provides key/value pairs:
 ``` Objective-C
 {
     flag = 0;
-    "num_of_items_in_shopping_cart" = 3; // number of current items in shopping cart
-    "order_data" = "";
+    num_of_items_in_shopping_cart = 3;  // number of current items in shopping cart
+    order_data = "";
 }
 ```
 after successful order:
 
 ``` Objective-C
-    "order_data" = {
+    order_data = {
         items = (                       // items from cart, included in order
             {
              ship_options = (           // json string with shipping options
@@ -73,15 +73,15 @@ after successful order:
         );
         order_id = "Stive7-a3e";        // order id
         overall = "$17.99";             // total price including shipping
-        "shipping_info" = {             // shipping info for order
+        shipping_info = {               // shipping info for order
             city = "SANTA MONICA";
             country = "United States";
-            country_code = US;
+            country_code = "US";
             email = "test@test.com";
-            first_name = John;
-            last_name = Stivens;
-            phone = 1234567890;
-            state = CA;
+            first_name = "John";
+            last_name = "Stivens";
+            phone = "1234567890";
+            state = "CA";
             street = "320 WILSHIRE BLVD";
             street2 = "";
             zip_code = "90401-1315";
