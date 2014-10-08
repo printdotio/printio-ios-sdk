@@ -1,12 +1,13 @@
-# Developer SDK Customization Reference
+Developer SDK Customization Reference
+=====================================
 
-Sections:
+### Sections:
 
-   - navigation bar
-   - side menu
-   - screens
+   - Navigation bar
+   - Side menu
+   - Screens
 
-## XML Customization file
+### XML Customization file
 
 Path to XML customization file for setting background and font colors on buttons
 
