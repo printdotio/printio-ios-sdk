@@ -131,7 +131,12 @@ Developer SDK Customization Reference
       - [-setIconForOrderCompletedScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforordercompletedscreen)
       - [-setMessageForOrderCompletedScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setmessageforordercompletedscreen)
       - [-orderCompletedScreenCloseButtonShouldPerformBack](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--ordercompletedscreenclosebuttonshouldperformback)
-
+   - [Google Analytics]()
+      - [-setTrackingIDForGoogleAnalytics]()
+   - [Push Notifications]()
+      - [-setParseApplicationId:apiKey]()
+      - [-registerDeviceToken]()
+      - [-showNotification:backgroundColor:textColor]()
 
 ### Initialization
 
@@ -1329,4 +1334,49 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)orderCompletedScreenCloseButtonShouldPerformBack:(BOOL)set;
 
+```
+###Google Analytics 
+######- setTrackingIDForGoogleAnalytics
+```Objective-C
+/**
+ Set tracking id for Google Analytics. If tracking id is not provided,
+ analytics are disabled.
+
+ @param trackingID Tracking ID provided by Google
+ */
+- (void)setTrackingIDForGoogleAnalytics:(NSString *)trackingID;
+```
+###Push Notifications
+######- setParseApplicationId:apiKey
+```Objective-C
+/**
+ Set applicationId and apiKey provided from parse.com
+
+ @param appId application id
+ @param apiKey rest api key
+ */
++ (void)setParseApplicationId:(NSString *)appId
+                       apiKey:(NSString *)apiKey;
+```
+######- registerDeviceToken
+```Objective-C
+/**
+ Register device to receive push notifications
+
+ @param deviceToken Device token
+ */
++ (void)registerDeviceToken:(NSData *)deviceToken;
+```
+######- showNotification:backgroundColor:textColor
+```Objective-C
+/**
+ Display notification pop up from bottom of screen. On tap it will dismiss notification.
+
+ @param userInfo Dictionary provided from didReceiveRemoteNotification
+ @param backgroundColor Background color for notification pop up
+ @param textColor Text color
+ */
++ (void)showNotification:(NSDictionary *)userInfo
+         backgroundColor:(UIColor *)bcgColor
+               textColor:(UIColor *)textColor;
 ```
