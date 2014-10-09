@@ -56,6 +56,7 @@ Developer SDK Customization Reference
    - [Screen 'Product Details'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-product-details)
       - [-productDetailsShowTitleBelowNavBar](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
       - [-productDetailsShowMenuBtnInNavBar](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
+      - [-setQualityGuaranteeText]()
    - [Photo sources](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#photo-sources)
       - [-setAvailablePhotoSources](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources)
       - [-setDefaultPhotoSource:albumId](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdefaultphotosourcealbumid)
@@ -86,7 +87,7 @@ Developer SDK Customization Reference
       - [-showHelpDialogWithImage](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showhelpdialogwithimage)
       - [-disablePreviewScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablepreviewscreen)
       - [-setSamePhotoOnFrontAndBackSideOfProduct](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setsamephotoonfrontandbacksideofproduct)
-      - [-setCustomizationHelpText]()
+      - [-setCustomizationHelpText](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcustomizationhelptext)
    - [Screen 'Image Editor'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-image-editor)
       - [-imageEditorShowButtons](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--imageeditorshowbuttons)
       - [-hideWatchVideoButton](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidewatchvideobutton)
@@ -649,6 +650,15 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param set Default value is NO
  */
 - (void)productDetailsShowMenuBtnInNavBar:(BOOL)set;
+```
+######- setQualityGuaranteeText
+```Objective-C
+/**
+ Provide Quality Guarantee text for Product Details screen
+ 
+ @param text Quality Guarantee text
+ */
+- (void)setQualityGuaranteeText:(NSString *)text;
 ```
 ###Photo sources
 ######- setAvailablePhotoSources
