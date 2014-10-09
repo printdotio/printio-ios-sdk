@@ -6,7 +6,7 @@ Developer SDK Customization Reference
    - [Initialization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#initialization)
       - [-initWithEnvironment](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithenvironment)
       - [-initWithViewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithviewcontroller)
-      - [-setIsRootController]()
+      - [-setIsRootController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setisrootcontroller)
    - [Opening and closing](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#opening-and-closing)
       - [-open](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--open)
       - [-openWithOption](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--openwithoption)
