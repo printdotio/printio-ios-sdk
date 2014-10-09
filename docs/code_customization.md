@@ -21,6 +21,10 @@ Developer SDK Customization Reference
    - [General UI customization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#general-ui-customization)
       - [-setCustomizationXML](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcustomizationxml)
       - [-setFonts](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfonts)
+      - [-changeSizeOfLightFontsBy](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--changesizeoflightfontsby)
+      - [-changeSizeOfMediumFontsBy](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--changesizeofmediumfontsby)
+      - [-changeSizeOfRegularFontsBy](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--changesizeofregularfontsby)
+      - [-changeSizeOfBoldFontsBy](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--changesizeofboldfontsby)
       - [-setLoadingActivityIndicatorViewStyle](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setloadingactivityindicatorviewstyle)
       - [-setLoadingGIF](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setloadinggif)
       - [-setLoadingText](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setloadingtext)
@@ -204,6 +208,34 @@ Developer SDK Customization Reference
  Close widget
  */
 - (void)close:(NSInteger)flag;
+```
+######- goToProductId
+```Objective-C
+/**
+ Jumps directly to product.
+
+ @param productId Product identifier can be found in ProductIds.h and starts with PRODUCT_
+ */
+- (void)goToProductId:(int)productId;
+```
+######- goToProductId:withSKU
+```Objective-C
+/**
+ Jumps directly to product with sku
+
+ @param productId Product identifier can be found in ProductIds.h and starts with PRODUCT_
+ @param sku SKU for selected product
+ */
+- (void)goToProductId:(int)productId withSKU:(NSString *)sku;
+```
+######- setVariantsOptions
+```Objective-C
+/**
+ Set products variants options
+
+ @param options Array of PIOVariantOption objects. Pass 'color' with Case Style option
+ */
+- (void)setVariantsOptions:(NSArray *)options;
 ```
 ###Utils
 ######- turnOffLogs
