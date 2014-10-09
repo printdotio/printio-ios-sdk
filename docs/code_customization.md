@@ -26,6 +26,8 @@ Developer SDK Customization Reference
       - [-setLoadingText](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setloadingtext)
       - [-setIconForHelpButton](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforhelpbutton)
       - [-setLogoFileName](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setlogofilename)
+      - [-setPositiveButtonsBackgroundColor](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpositivebuttonsbackgroundcolor)
+      - [-setNegativeButtonsBackgroundColor](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnegativebuttonsbackgroundcolor)
    - [Navigation bar](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#navigation-bar)
       - [-navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--navigationbarcolortitlecolorleftbuttonbackgroundcolorrightbuttonbackgroundcolortitlebuttonicon)
       - [-setNavigationBarBackground](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackground)
@@ -263,6 +265,42 @@ Developer SDK Customization Reference
  system (normal, bold and italic) UIFont objects.
  */
 - (void)setFonts:(NSArray *)fonts;
+```
+######- changeSizeOfLightFontsBy
+```Objective-C
+/**
+ Change light fonts size
+
+ @param Increase/decrease font size by 'value'
+ */
+- (void)changeSizeOfLightFontsBy:(float)value;
+```
+######- changeSizeOfMediumFontsBy
+```Objective-C
+/**
+ Change medium fonts size
+
+ @param Increase/decrease font size by 'value'
+ */
+- (void)changeSizeOfMediumFontsBy:(float)value;
+```
+######- changeSizeOfRegularFontsBy
+```Objective-C
+/**
+ Change regular fonts size
+
+ @param Increase/decrease font size by 'value'
+ */
+- (void)changeSizeOfRegularFontsBy:(float)value;
+```
+######- changeSizeOfBoldFontsBy
+```Objective-C
+/**
+ Change bold fonts size
+
+ @param Increase/decrease font size by 'value'
+ */
+- (void)changeSizeOfBoldFontsBy:(float)value;
 ```
 ######- setLoadingActivityIndicatorViewStyle
 ```Objective-C
