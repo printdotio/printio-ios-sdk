@@ -60,7 +60,8 @@ Developer SDK Customization Reference
       - [-setPhotobucketUsername:password](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setphotobucketusernamepassword)
       - [-setPhotobucketAccessToken:userName:baseURL](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setphotobucketaccesstokenusernamebaseurl)
       - [-setTitleForPhotoSourcesScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforphotosourcesscreen)
-      
+   - [Screen 'Customize/Edit Product']
+   - [Screen 'Image Editor']
 
 
 
@@ -658,5 +659,139 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param title New title
  */
 - (void)setTitleForPhotoSourcesScreen:(NSString *)title;
+
+```
+##Screen 'Customize/Edit Product'
+######- showToolbarInCustomizeProduct:backgroundImage
+```Objective-C
+/**
+ Show/hide tab bar in Customize Product screen. Default value is YES
+
+ @param show Set show/hide
+ @param imagePath Path to image file.
+ */
+- (void)showToolbarInCustomizeProduct:(BOOL)show
+                      backgroundImage:(NSString *)imagePath;
+```
+######- hideImagesListInCustomizeProduct
+```Objective-C
+/**
+ Hide list with images in customization screen
+ */
+- (void)hideImagesListInCustomizeProduct:(BOOL)hide;
+```
+######- setPhotoArrangement
+```Objective-C
+/**
+ Set photo(s) arrangement in Customize Product screen
+
+ @param
+ PIO_PHOTO_ARRANGEMENT_CHOOSE,
+ PIO_PHOTO_ARRANGEMENT_AUTO,
+ PIO_PHOTO_ARRANGEMENT_MANUAL
+ 
+ */
+- (void)setPhotoArrangement:(NSInteger)option;
+```
+######- setIconForAddPhotosButton
+```Objective-C
+/**
+ Change image for "Add photos" button in Customize Product screen
+
+ @param imagePath Path to image file.
+ */
+- (void)setIconForAddPhotosButton:(NSString *)imagePath;
+```
+######- setIconForHelpButtonInCustomizeProduct:visible
+```Objective-C
+/**
+ Change icon for Help Button on Customize Product screen
+
+ @param imagePath Path to image file.
+ @param visible Default value is YES
+ */
+- (void)setIconForHelpButtonInCustomizeProduct:(NSString *)imagePath
+                                       visible:(BOOL)visible;
+```
+######- setIconForSaveButtonInCustomizeProduct
+```Objective-C
+/**
+ Change icon for 'Save' button on Customize Product screen
+
+ @param imagePath Path to image file.
+ */
+- (void)setIconForSaveButtonInCustomizeProduct:(NSString *)imagePath;
+```
+######- setPopUpWithImage:text:textColor
+```Objective-C
+/**
+ Set Pop up balloon in Customize Product screen
+
+ @param path Path to background image.
+ @param text Balloon text.
+ @param textColor Text color.
+ */
+- (void)setPopUpWithImage:(NSString *)path text:(NSString *)text textColor:(UIColor *)textColor;
+```
+######- setDoubleTapBalloonVisibilityTime
+```Objective-C
+/**
+ Set time of visibility for Double Tap ballon in Customize Product screen
+
+ @param timeInSeconds Time in seconds. Set -1 if ballon should be visible all the time.
+ Default time is 10 seconds.
+ */
+- (void)setDoubleTapBalloonVisibilityTime:(int)timeInSeconds;
+```
+######- showHelpDialogWithImage
+```Objective-C
+/**
+ Show custom dialog for helping user how to edit a photo
+
+ @param Path to image.
+ */
+- (void)showHelpDialogWithImage:(NSString *)imagePath;
+```
+######- disablePreviewScreen
+```Objective-C
+/**
+ Disable Preview screen for product
+
+ @param set Default value is NO
+ */
+- (void)disablePreviewScreen:(BOOL)set;
+```
+######- setSamePhotoOnFrontAndBackSideOfProduct
+```Objective-C
+/**
+ Set same photo on front and back side of product.
+ Currently it only supports PRODUCT_THROW_PILLOWS.
+
+ @param productId Product id
+ */
+- (void)setSamePhotoOnFrontAndBackSideOfProduct:(NSInteger)productId;
+```
+##Screen 'Image Editor'
+######- imageEditorShowButtons
+```Objective-C
+/**
+ Set which buttons will be visible in Image Editor toolbar. By default, all buttons are visible.
+
+ @param buttons Array of PIOButton objects of types:
+ PIO_BUTTON_IMAGE_EDITOR_INFO,
+ PIO_BUTTON_IMAGE_EDITOR_ROTATE,
+ PIO_BUTTON_IMAGE_EDITOR_EDIT_TEXT,
+ PIO_BUTTON_IMAGE_EDITOR_EFFECTS
+ */
+- (void)imageEditorShowButtons:(NSArray *)buttons;
+```
+######- hideWatchVideoButton
+```Objective-C
+/**
+ Hide 'Watch Video' button on Customize Product screen
+ 
+ @param hide Default value is NO
+ */
+- (void)hideWatchVideoButton:(BOOL)hide;
 
 ```
