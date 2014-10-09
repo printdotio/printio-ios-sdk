@@ -75,7 +75,7 @@ Developer SDK Customization Reference
    - [Screen 'Image Editor'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-image-editor)
       - [-imageEditorShowButtons](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--imageeditorshowbuttons)
       - [-hideWatchVideoButton](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidewatchvideobutton)
-
+   - [Screen 'Shopping Cart']
 
 
 ### Initialization
@@ -807,4 +807,106 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)hideWatchVideoButton:(BOOL)hide;
 
+```
+##Screen 'Shopping Cart'
+######- setIconForShoppingCart:withNumberOfProducts:labelPosition:textColor
+```Objective-C
+/**
+ Set custom icon for Shopping Cart
+ 
+ @param path Path to image file.
+ @param set Set to YES if image has red circle for number of items in cart.
+ @param lPosition Position of label with number of products in cart
+ @param tColor Text color of label with number of products in cart
+ */
+- (void)setIconForShoppingCart:(NSString *)path
+          withNumberOfProducts:(BOOL)set
+                 labelPosition:(CGPoint)lPosition
+                     textColor:(UIColor *)tColor;
+```
+######- setIconForShoppingCart:withNumberOfProducts:labelPosition:circleColor:textColor
+```Objective-C
+/**
+ Set custom icon for Shopping Cart
+
+ @param path Path to image file.
+ @param set Set to YES to show number of items in cart.
+ @param labelPosition Position of label with number of products in cart
+ @param circleColor Color of label background (circle background)
+ @param textColor Text color of label with number of products in cart
+ */
+- (void)setIconForShoppingCart:(NSString *)path
+          withNumberOfProducts:(BOOL)set
+                 labelPosition:(CGPoint)labelPosition
+                   circleColor:(UIColor *)circleColor
+                     textColor:(UIColor *)textColor;
+```
+######- removePlusFromAddMoreProductsButton
+```Objective-C
+/**
+ Remove plus sign from "Add more products" button. By default, sign is visible.
+ */
+- (void)removePlusFromAddMoreProductsButton:(BOOL)remove;
+```
+######- setTitleForShoppingCart
+```Objective-C
+/**
+ Change title for "Shopping Cart" screen
+
+ @param title New title
+ */
+- (void)setTitleForShoppingCart:(NSString *)title;
+```
+######- setShowsAddMoreProductsInShoppingCart
+```Objective-C
+/**
+ Toggle 'Add more products' button on the Shopping Cart screen.
+
+ @param showsButton Button visibility flag. Default is YES.
+ */
+- (void)setShowsAddMoreProductsInShoppingCart:(BOOL)showsAddButton;
+```
+######- customizeAddMoreProductButton
+```Objective-C
+/**
+ Customize 'Add More Products' button
+
+ @param title New title for button
+ @param iconPath Path to icon file. Default is nil.
+ */
+- (void)customizeAddMoreProductButton:(NSString *)title icon:(NSString *)iconPath;
+```
+######- setIconForShoppingCartBackButton
+```Objective-C
+/**
+ Change icon for Back button on Shopping Cart screen
+
+ @param iconPath Path to icon file. Default is nil.
+ */
+- (void)setIconForShoppingCartBackButton:(NSString *)iconPath;
+```
+######- numberOfItemsInShoppingCart
+```Objective-C
+/**
+ Get number of items in shopping cart
+ */
++ (NSInteger)numberOfItemsInShoppingCart;
+```
+######- hideEditButtonInShoppingCart
+```Objective-C
+/**
+ Hides 'Edit' button on 'Shopping Cart' screen
+
+ @param set Default value is NO
+ */
+- (void)hideEditButtonInShoppingCart:(BOOL)set;
+```
+######- setPromoCode
+```Objective-C
+/**
+ Set promo code to get discount
+
+ @param promoCode Promo code
+ */
+- (void)setPromoCode:(NSString *)promoCode;
 ```
