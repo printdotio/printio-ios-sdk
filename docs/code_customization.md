@@ -12,6 +12,8 @@ Developer SDK Customization Reference
       - [-presentFromViewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--presentfromviewcontroller)
       - [-viewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--viewcontroller)
       - [-close](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--close)
+   - [Utils]()
+      - [-turnOffLogs]()
    - [Country, Currency and Language](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#country-currency-and-language)
       - [-setCountryCode](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcountrycode)
       - [-setCurrencyCode](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcurrencycode)
@@ -41,6 +43,8 @@ Developer SDK Customization Reference
       - [-sideMenuShowOptionsAsList](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenushowoptionsaslist)
       - [-setHowItWorksText](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sethowitworkstext)
       - [-setAboutText](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setabouttext)
+      - [-setLikeUsOnFacebookUrl](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setlikeusonfacebookurl)
+      - [-setAppIDFromAppleStore](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setappidfromapplestore)
    - [Screen 'Choose Country'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-choose-country)
       - [-setTitleForChooseCountryScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchoosecountryscreen)
       - [-hideSearchIconInChooseCountryScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidesearchiconinchoosecountryscreen)
@@ -198,6 +202,16 @@ Developer SDK Customization Reference
  Close widget
  */
 - (void)close:(NSInteger)flag;
+```
+###Utils
+######- turnOffLogs
+```Objective-C
+/**
+ Turn off logs
+
+ @param set Default value is NO
+ */
+- (void)turnOffLogs:(BOOL)set;
 ```
 ###Country, Currency and Language
 ######- setCountryCode
