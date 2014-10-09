@@ -123,7 +123,7 @@ Developer SDK Customization Reference
       - [-removeLogoFromPaymentScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removelogofrompaymentscreen)
       - [-setPayeeName](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpayeename)
       - [-setTermsAndConditionsURL](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settermsandconditionsurl)
-      - [-setPaymentOptions]()
+      - [-setPaymentOptions](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpaymentoptions)
    - [Screen 'Shipping Addresses'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-shipping-addresses)
       - [-showPlusSignOnAddButton](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showplussignonaddbutton)
       - [-setColorForAddressSelection](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcolorforaddressselection)
@@ -1287,6 +1287,29 @@ rightButtonBackgroundColor:(UIColor *)rColor
  PaymentOptionAll
  */
 - (void)setPaymentOptions:(PaymentOptions)paymentOptions;
+```
+######- setPayPalStagingClientId:productionClientId
+```Objective-C
+/**
+ Set PayPal's client ids, for both modes, staging and production. Default values are
+ client ids from PrintIO
+
+ @param sClientId Client id for staging mode
+ @param pClientId Client id for production mode
+ */
+- (void)setPayPalStagingClientId:(NSString *)sClientId
+              productionClientId:(NSString *)pClientId;
+```
+######- setBraintreeStagingEncryptionKey:productionEncryptionKey
+```Objective-C
+/**
+ Set Braintree encryption key for staging and production mode. By default, keys from PrintIO will be used
+
+ @param sEncKey Encryption key for staging mode
+ @param pEncKey Encryption key for production mode
+ */
+- (void)setBraintreeStagingEncryptionKey:(NSString *)sEncKey
+                 productionEncryptionKey:(NSString *)pEncKey;
 ```
 ###Screen 'Shipping Addresses'
 ######- showPlusSignOnAddButton
