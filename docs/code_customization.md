@@ -12,8 +12,8 @@ Developer SDK Customization Reference
       - [-presentFromViewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--presentfromviewcontroller)
       - [-viewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--viewcontroller)
       - [-close](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--close)
-   - [Utils]()
-      - [-turnOffLogs]()
+   - [Utils](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#utils)
+      - [-turnOffLogs](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--turnofflogs)
    - [Country, Currency and Language](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#country-currency-and-language)
       - [-setCountryCode](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcountrycode)
       - [-setCurrencyCode](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcurrencycode)
@@ -310,6 +310,26 @@ Developer SDK Customization Reference
  Image file needs to be stored in main bundle.
  */
 - (void)setLogoFileName:(NSString *)fileName;
+```
+######- setPositiveButtonsBackgroundColor
+```Objective-C
+/**
+ Change background color on positive buttons (Yes, Next, Ok, Save, Buy It, Create It...)
+
+ @param bColor Background color
+ @param tColor Title color
+ */
+- (void)setPositiveButtonsBackgroundColor:(UIColor *)bColor titleColor:(UIColor *)tColor;
+```
+######- setNegativeButtonsBackgroundColor
+```Objective-C
+/**
+ Change background color on negative buttons (No, Back, Cancel, Close...)
+
+ @param bColor Background color
+ @param tColor Title color
+ */
+- (void)setNegativeButtonsBackgroundColor:(UIColor *)bColor titleColor:(UIColor *)tColor;
 ```
 ### Navigation bar
 ######- navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon
