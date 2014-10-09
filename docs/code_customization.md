@@ -12,6 +12,7 @@ Developer SDK Customization Reference
       - [-presentFromViewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--presentfromviewcontroller)
       - [-viewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--viewcontroller)
       - [-close](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--close)
+   - [Country, Currency and Language]()
    - [Navigation bar](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#navigation-bar)
       - [-navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--navigationbarcolortitlecolorleftbuttonbackgroundcolorrightbuttonbackgroundcolortitlebuttonicon)
       - [-setNavigationBarBackground](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackground)
@@ -173,8 +174,34 @@ Developer SDK Customization Reference
  */
 - (void)close:(NSInteger)flag;
 ```
-### Navigation bar
+###Country, Currency and Language
+######- setCountryCode
+```Objective-C
+/**
+ Set country code
 
+ @param countryCode Country code
+ */
+- (void)setCountryCode:(NSString *)countryCode;
+```
+######- setCurrencyCode
+```Objective-C
+ Set currency code
+
+ @param currencyCode Currency code
+ */
+- (void)setCurrencyCode:(NSString *)currencyCode;
+```
+######- setLanguageCode
+```Objective-C
+/**
+ Set language code
+
+ @param languageCode Language code
+ */
+- (void)setLanguageCode:(NSString *)languageCode;
+```
+### Navigation bar
 ######- navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon
 ```Objective-C
 /**
@@ -389,7 +416,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)sideMenuBackgroungImage:(NSString *)path;
 ```
-##Screen 'Choose Country'
+###Screen 'Choose Country'
 ######- setTitleForChooseCountryScreen
 ```Objective-C
 /**
@@ -428,7 +455,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setNavigationBarBackgroundColorForChooseCountryScreen:(UIColor *)color;
 ```
-##Screen 'Products'
+###Screen 'Products'
 ######- hideCategoriesInFeaturedProducts
 ```Objective-C
 
@@ -492,7 +519,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setFeaturedProductsBackgroungImage:(NSString *)imagePath;
 ```
-##Screen 'Product Details'
+###Screen 'Product Details'
 ######- productDetailsShowTitleBelowNavBar
 ```Objective-C
 /**
@@ -511,7 +538,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)productDetailsShowMenuBtnInNavBar:(BOOL)set;
 ```
-##Photo sources
+###Photo sources
 ######- setAvailablePhotoSources
 ```Objective-C
 /**
@@ -680,14 +707,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
 ```Objective-C
 /**
  Change title for Photo Sources screen
- https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#set-title-for-photo-sources-screens
- 
+
  @param title New title
  */
 - (void)setTitleForPhotoSourcesScreen:(NSString *)title;
 
 ```
-##Screen 'Customize/Edit Product'
+###Screen 'Customize/Edit Product'
 ######- showToolbarInCustomizeProduct:backgroundImage
 ```Objective-C
 /**
@@ -797,7 +823,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setSamePhotoOnFrontAndBackSideOfProduct:(NSInteger)productId;
 ```
-##Screen 'Image Editor'
+###Screen 'Image Editor'
 ######- imageEditorShowButtons
 ```Objective-C
 /**
@@ -821,7 +847,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)hideWatchVideoButton:(BOOL)hide;
 
 ```
-##Screen 'Shopping Cart'
+###Screen 'Shopping Cart'
 ######- setIconForShoppingCart:withNumberOfProducts:labelPosition:textColor
 ```Objective-C
 /**
@@ -923,7 +949,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setPromoCode:(NSString *)promoCode;
 ```
-##Screen 'Payment Options'
+###Screen 'Payment Options'
 ######- removeLogoFromPaymentScreen
 ```Objective-C
 /**
