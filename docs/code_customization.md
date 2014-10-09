@@ -16,6 +16,7 @@ Developer SDK Customization Reference
       - [-setCountryCode](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcountrycode)
       - [-setCurrencyCode](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcurrencycode)
       - [-setLanguageCode](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setlanguagecode)
+   - [General UI customization]()
    - [Navigation bar](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#navigation-bar)
       - [-navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--navigationbarcolortitlecolorleftbuttonbackgroundcolorrightbuttonbackgroundcolortitlebuttonicon)
       - [-setNavigationBarBackground](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackground)
@@ -211,6 +212,76 @@ Developer SDK Customization Reference
  @param languageCode Language code
  */
 - (void)setLanguageCode:(NSString *)languageCode;
+```
+###General UI customization
+######- setCustomizationXML
+```Objective-C
+/**
+ Import customization XML file
+
+ @param xmlData Customization xml file.
+ 
+ Example: NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"customization" ofType:@"xml"];
+ NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];
+ */
+- (void)setCustomizationXML:(NSData *)xmlData;
+```
+######- setFonts
+```Objective-C
+/**
+ Set custom fonts from main app bundle.
+
+ @param fonts Array of string values that contains font name and type with the exact order (light, medium, regular, bold). Example: [@"font_light.otf", @"font_medium.otf", @"font_regular.otf", @"font_bold.otf"]. Array must have four items, and fonts can be duplicated. Array also accepts
+ system (normal, bold and italic) UIFont objects.
+ */
+- (void)setFonts:(NSArray *)fonts;
+```
+######- setLoadingActivityIndicatorViewStyle
+```Objective-C
+/**
+ Toggles UIActivityIndicatorView on the loading view instead of the loading gif image. 
+ Calling this method will override the gif image if it has previously been set.
+
+ @param style UIActivityIndicatorView's style.
+ */
+- (void)setLoadingActivityIndicatorViewStyle:(UIActivityIndicatorViewStyle)style;
+```
+######- setLoadingGIF
+```Objective-C
+/**
+ Changes "Loading" GIF animation image. Calling this method will override the UIActivityIndicatorViewStyle if has previously been set.
+
+ @param fileName GIF image file name.
+ */
+- (void)setLoadingGIF:(NSString *)fileName;
+```
+######- setLoadingText
+```Objective-C
+/**
+ Change title of loading dialog
+
+ @param lText New title for loading dialog.
+ */
+- (void)setLoadingText:(NSString *)lText;
+```
+######- setIconForHelpButton
+```Objective-C
+/**
+ Change icon for Help Button
+
+ @param imagePath Path for image file
+ */
+- (void)setIconForHelpButton:(NSString *)imagePath;
+```
+######- setLogoFileName
+```Objective-C
+/**
+ Change partner's logo in SDK
+
+ @param fileName File name of logo image, without file type extension.
+ Image file needs to be stored in main bundle.
+ */
+- (void)setLogoFileName:(NSString *)fileName;
 ```
 ### Navigation bar
 ######- navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon
