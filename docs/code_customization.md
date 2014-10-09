@@ -92,7 +92,8 @@ Developer SDK Customization Reference
       - [-setPromoCode](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpromocode)
    - [Screen 'Payment Options'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-payment-options)
       - [-removeLogoFromPaymentScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removelogofrompaymentscreen)
-      
+   - [Screen 'Shipping Addresses']()
+   - [Screen 'Order Completed']()
 
 
 ### Initialization
@@ -960,5 +961,65 @@ rightButtonBackgroundColor:(UIColor *)rColor
  Remove logo from Payment and Order Confirmation screen
  */
 - (void)removeLogoFromPaymentScreen:(BOOL)remove;
+
+```
+###Screen 'Shipping Addresses'
+######- showPlusSignOnAddButton
+```Objective-C
+#pragma mark - Shipping Addresses screen
+
+/**
+ Show plus sign on 'Add Shipping Address' button
+
+ @param set Default value is NO
+ */
+- (void)showPlusSignOnAddButton:(BOOL)set;
+```
+######- setColorForAddressSelection
+```Objective-C
+/**
+ Change highlight color for address selection on 'Select Address'
+ screen
+
+ @param color New color. Default is light green.
+ */
+- (void)setColorForAddressSelection:(UIColor *)color;
+```
+###Screen 'Order Completed'
+######- setTitleForOrderCompletedScreen
+```Objective-C
+/**
+ Change title for 'Order Completed' screen
+
+ @param title New title
+ */
+- (void)setTitleForOrderCompletedScreen:(NSString *)title;
+```
+######- setIconForOrderCompletedScreen
+```Objective-C
+/**
+ Change icon for company logo on 'Order Completed' screen
+
+ @param iconPath File path to icon
+ */
+- (void)setIconForOrderCompletedScreen:(NSString *)iconPath;
+```
+######- setMessageForOrderCompletedScreen
+```Objective-C
+/**
+ Change company message below company logo on 'Order Completed' screen
+
+ @param message New message
+ */
+- (void)setMessageForOrderCompletedScreen:(NSMutableAttributedString *)message;
+```
+######- orderCompletedScreenCloseButtonShouldPerformBack
+```Objective-C
+/**
+ Change function of 'Close' button on 'Order Completed' screen
+
+ @param set Default value is NO
+ */
+- (void)orderCompletedScreenCloseButtonShouldPerformBack:(BOOL)set;
 
 ```
