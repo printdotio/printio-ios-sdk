@@ -86,6 +86,7 @@ Developer SDK Customization Reference
       - [-showHelpDialogWithImage](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showhelpdialogwithimage)
       - [-disablePreviewScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablepreviewscreen)
       - [-setSamePhotoOnFrontAndBackSideOfProduct](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setsamephotoonfrontandbacksideofproduct)
+      - [-setCustomizationHelpText]()
    - [Screen 'Image Editor'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-image-editor)
       - [-imageEditorShowButtons](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--imageeditorshowbuttons)
       - [-hideWatchVideoButton](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidewatchvideobutton)
@@ -933,6 +934,15 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param productId Product id
  */
 - (void)setSamePhotoOnFrontAndBackSideOfProduct:(NSInteger)productId;
+```
+######- setCustomizationHelpText
+```Objective-C
+/**
+ Provide help text for Customize Product screen
+ 
+ @param text Help text
+ */
+- (void)setCustomizationHelpText:(NSString *)text;
 ```
 ###Screen 'Image Editor'
 ######- imageEditorShowButtons
