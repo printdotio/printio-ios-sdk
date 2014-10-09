@@ -35,7 +35,7 @@ Developer SDK Customization Reference
       - [-setLogoFileName](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setlogofilename)
       - [-setPositiveButtonsBackgroundColor](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpositivebuttonsbackgroundcolor)
       - [-setNegativeButtonsBackgroundColor](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnegativebuttonsbackgroundcolor)
-      - [-setTitleForChooseOptionsScreen]()
+      - [-setTitleForChooseOptionsScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchooseoptionsscreen)
    - [Navigation bar](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#navigation-bar)
       - [-navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--navigationbarcolortitlecolorleftbuttonbackgroundcolorrightbuttonbackgroundcolortitlebuttonicon)
       - [-setNavigationBarBackground](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackground)
@@ -977,7 +977,24 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param title New title
  */
 - (void)setTitleForPhotoSourcesScreen:(NSString *)title;
+```
+######- autoSelectOnePhotoTemplateForProductID
+```Objective-C
+/**
+ Auto selects one photo template for selected productID
 
+ @param productID productID of selected product
+ */
+- (void)autoSelectOnePhotoTemplateForProductID:(NSInteger)productID;
+```
+######- disableAutoRecognizePhoneModel
+```Objective-C
+/**
+ Disable auto recognition and selection of iPhone model
+
+ @param set Default value is NO
+ */
+- (void)disableAutoRecognizePhoneModel:(BOOL)set;
 ```
 ###Screen 'Customize/Edit Product'
 ######- showToolbarInCustomizeProduct:backgroundImage
