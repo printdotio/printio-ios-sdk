@@ -56,7 +56,7 @@ Developer SDK Customization Reference
    - [Screen 'Product Details'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-product-details)
       - [-productDetailsShowTitleBelowNavBar](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
       - [-productDetailsShowMenuBtnInNavBar](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
-      - [-setQualityGuaranteeText]()
+      - [-setQualityGuaranteeText](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setqualityguaranteetext)
    - [Photo sources](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#photo-sources)
       - [-setAvailablePhotoSources](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources)
       - [-setDefaultPhotoSource:albumId](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdefaultphotosourcealbumid)
@@ -72,6 +72,7 @@ Developer SDK Customization Reference
       - [-setDropboxKey:redirectUrl](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdropboxkeyredirecturl)
       - [-setFacebookAppId:redirectUrl](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfacebookappidredirecturl)
       - [-setFacebookAccessToken](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfacebookaccesstoken)
+      - [-enableShareOnFacebookDeal]()
       - [-setPhotobucketUsername:password](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setphotobucketusernamepassword)
       - [-setPhotobucketAccessToken:userName:baseURL](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setphotobucketaccesstokenusernamebaseurl)
       - [-setTitleForPhotoSourcesScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforphotosourcesscreen)
@@ -800,6 +801,15 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param aToken Valid access token for session
  */
 - (void)setFacebookAccessToken:(NSString *)aToken;
+```
+######- enableShareOnFacebookDeal
+```Objective-C
+/**
+ Enable option to share on facebook and get extra deal
+
+ @param set Default value is NO
+ */
+- (void)enableShareOnFacebookDeal:(BOOL)set;
 ```
 ######- setPhotobucketUsername:password
 ```Objective-C
