@@ -6,6 +6,7 @@ Developer SDK Customization Reference
    - [Initialization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#initialization)
       - [-initWithEnvironment](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithenvironment)
       - [-initWithViewController](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithviewcontroller)
+      - [-setIsRootController]()
    - [Opening and closing](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#opening-and-closing)
       - [-open](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--open)
       - [-openWithOption](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--openwithoption)
@@ -124,6 +125,8 @@ Developer SDK Customization Reference
       - [-setPayeeName](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpayeename)
       - [-setTermsAndConditionsURL](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settermsandconditionsurl)
       - [-setPaymentOptions](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpaymentoptions)
+      - [-setPayPalStagingClientId:productionClientId](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpaypalstagingclientidproductionclientid)
+      - [-setBraintreeStagingEncryptionKey:productionEncryptionKey](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setbraintreestagingencryptionkeyproductionencryptionkey)
    - [Screen 'Shipping Addresses'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-shipping-addresses)
       - [-showPlusSignOnAddButton](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showplussignonaddbutton)
       - [-setColorForAddressSelection](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcolorforaddressselection)
@@ -168,6 +171,15 @@ Developer SDK Customization Reference
                  environment:(int)type
           productionRecipeId:(NSString *)pRecipeId
              stagingRecipeId:(NSString *)sRecipeId;
+```
+######- setIsRootController
+```Objective-C
+/**
+ Root controller flag. Set to YES if the PrintIO widget is the root controller of your application.
+ 
+ @param isRootController Root controller flag.
+ */
+-(void)setIsRootController:(BOOL)isRootController;
 ```
 ### Opening and closing
 
