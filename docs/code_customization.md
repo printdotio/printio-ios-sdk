@@ -35,6 +35,7 @@ Developer SDK Customization Reference
       - [-setLogoFileName](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setlogofilename)
       - [-setPositiveButtonsBackgroundColor](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpositivebuttonsbackgroundcolor)
       - [-setNegativeButtonsBackgroundColor](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnegativebuttonsbackgroundcolor)
+      - [-setTitleForChooseOptionsScreen]()
    - [Navigation bar](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#navigation-bar)
       - [-navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--navigationbarcolortitlecolorleftbuttonbackgroundcolorrightbuttonbackgroundcolortitlebuttonicon)
       - [-setNavigationBarBackground](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackground)
@@ -403,6 +404,13 @@ Developer SDK Customization Reference
  @param tColor Title color
  */
 - (void)setNegativeButtonsBackgroundColor:(UIColor *)bColor titleColor:(UIColor *)tColor;
+```
+######- setTitleForChooseOptionsScreen
+```Objective-C
+/**
+ Change title for 'Customization Options' screen
+ */
+- (void)setTitleForChooseOptionsScreen:(NSString *)title;
 ```
 ### Navigation bar
 ######- navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon
