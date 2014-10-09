@@ -86,7 +86,8 @@ Developer SDK Customization Reference
       - [-numberOfItemsInShoppingCart](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--numberofitemsinshoppingcart)
       - [-hideEditButtonInShoppingCart](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideeditbuttoninshoppingcart)
       - [-setPromoCode](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpromocode)
-      - 
+   - [Screen 'Payment Options']()
+      
 
 
 ### Initialization
@@ -920,4 +921,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param promoCode Promo code
  */
 - (void)setPromoCode:(NSString *)promoCode;
+```
+##Screen 'Payment Options'
+######- removeLogoFromPaymentScreen
+```Objective-C
+/**
+ Remove logo from Payment and Order Confirmation screen
+ */
+- (void)removeLogoFromPaymentScreen:(BOOL)remove;
+
 ```
