@@ -100,6 +100,7 @@ Developer SDK Customization Reference
       - [-setPromoCode](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpromocode)
    - [Screen 'Payment Options'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-payment-options)
       - [-removeLogoFromPaymentScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removelogofrompaymentscreen)
+      - [-setPayeeName]()
    - [Screen 'Shipping Addresses'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-shipping-addresses)
       - [-showPlusSignOnAddButton](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showplussignonaddbutton)
       - [-setColorForAddressSelection](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcolorforaddressselection)
@@ -1046,6 +1047,15 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)removeLogoFromPaymentScreen:(BOOL)remove;
 
+```
+######- setPayeeName
+```Objective-C
+/**
+ Set payee name for order processing
+
+ @param payeeName Payee name
+ */
+- (void)setPayeeName:(NSString *)payeeName;
 ```
 ###Screen 'Shipping Addresses'
 ######- showPlusSignOnAddButton
