@@ -100,7 +100,8 @@ Developer SDK Customization Reference
       - [-setPromoCode](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpromocode)
    - [Screen 'Payment Options'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-payment-options)
       - [-removeLogoFromPaymentScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removelogofrompaymentscreen)
-      - [-setPayeeName]()
+      - [-setPayeeName](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpayeename)
+      - [-setTermsAndConditionsURL]()
    - [Screen 'Shipping Addresses'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-shipping-addresses)
       - [-showPlusSignOnAddButton](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showplussignonaddbutton)
       - [-setColorForAddressSelection](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcolorforaddressselection)
@@ -1056,6 +1057,15 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param payeeName Payee name
  */
 - (void)setPayeeName:(NSString *)payeeName;
+```
+######- setTermsAndConditionsURL
+```Objective-C
+/**
+ Set url for Terms and Conditions
+
+ @params url If not set, this option will be hidden
+ */
+- (void)setTermsAndConditionsURL:(NSURL *)url;
 ```
 ###Screen 'Shipping Addresses'
 ######- showPlusSignOnAddButton
