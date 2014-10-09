@@ -60,8 +60,21 @@ Developer SDK Customization Reference
       - [-setPhotobucketUsername:password](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setphotobucketusernamepassword)
       - [-setPhotobucketAccessToken:userName:baseURL](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setphotobucketaccesstokenusernamebaseurl)
       - [-setTitleForPhotoSourcesScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforphotosourcesscreen)
-   - [Screen 'Customize/Edit Product']
-   - [Screen 'Image Editor']
+   - [Screen 'Customize/Edit Product'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-customizeedit-product)
+      - [-showToolbarInCustomizeProduct:backgroundImage](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showtoolbarincustomizeproductbackgroundimage)
+      - [-hideImagesListInCustomizeProduct](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideimageslistincustomizeproduct)
+      - [-setPhotoArrangement](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setphotoarrangement)
+      - [-setIconForAddPhotosButton](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforaddphotosbutton)
+      - [-setIconForHelpButtonInCustomizeProduct:visible](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforhelpbuttonincustomizeproductvisible)
+      - [-setIconForSaveButtonInCustomizeProduct](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforsavebuttonincustomizeproduct)
+      - [-setPopUpWithImage:text:textColor](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpopupwithimagetexttextcolor)
+      - [-setDoubleTapBalloonVisibilityTime](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdoubletapballoonvisibilitytime)
+      - [-showHelpDialogWithImage](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showhelpdialogwithimage)
+      - [-disablePreviewScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablepreviewscreen)
+      - [-setSamePhotoOnFrontAndBackSideOfProduct](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setsamephotoonfrontandbacksideofproduct)
+   - [Screen 'Image Editor'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-image-editor)
+      - [-imageEditorShowButtons](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--imageeditorshowbuttons)
+      - [-hideWatchVideoButton](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidewatchvideobutton)
 
 
 
