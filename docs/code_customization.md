@@ -123,6 +123,7 @@ Developer SDK Customization Reference
       - [-removeLogoFromPaymentScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removelogofrompaymentscreen)
       - [-setPayeeName](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpayeename)
       - [-setTermsAndConditionsURL](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settermsandconditionsurl)
+      - [-setPaymentOptions]()
    - [Screen 'Shipping Addresses'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-shipping-addresses)
       - [-showPlusSignOnAddButton](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showplussignonaddbutton)
       - [-setColorForAddressSelection](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcolorforaddressselection)
@@ -131,12 +132,12 @@ Developer SDK Customization Reference
       - [-setIconForOrderCompletedScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforordercompletedscreen)
       - [-setMessageForOrderCompletedScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setmessageforordercompletedscreen)
       - [-orderCompletedScreenCloseButtonShouldPerformBack](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--ordercompletedscreenclosebuttonshouldperformback)
-   - [Google Analytics]()
-      - [-setTrackingIDForGoogleAnalytics]()
-   - [Push Notifications]()
-      - [-setParseApplicationId:apiKey]()
-      - [-registerDeviceToken]()
-      - [-showNotification:backgroundColor:textColor]()
+   - [Google Analytics](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#google-analytics)
+      - [-setTrackingIDForGoogleAnalytics](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settrackingidforgoogleanalytics)
+   - [Push Notifications](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#push-notifications)
+      - [-setParseApplicationId:apiKey](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setparseapplicationidapikey)
+      - [-registerDeviceToken](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--registerdevicetoken)
+      - [-showNotification:backgroundColor:textColor](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--shownotificationbackgroundcolortextcolor)
 
 ### Initialization
 
@@ -1274,6 +1275,18 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @params url If not set, this option will be hidden
  */
 - (void)setTermsAndConditionsURL:(NSURL *)url;
+```
+######- setPaymentOptions
+```Objective-C
+/**
+ Set Payment option
+ 
+ @param paymentOptions:
+ PaymentOptionPayPal
+ PaymentOptionCreditCard
+ PaymentOptionAll
+ */
+- (void)setPaymentOptions:(PaymentOptions)paymentOptions;
 ```
 ###Screen 'Shipping Addresses'
 ######- showPlusSignOnAddButton
