@@ -92,8 +92,14 @@ Developer SDK Customization Reference
       - [-setPromoCode](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpromocode)
    - [Screen 'Payment Options'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-payment-options)
       - [-removeLogoFromPaymentScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removelogofrompaymentscreen)
-   - [Screen 'Shipping Addresses']()
-   - [Screen 'Order Completed']()
+   - [Screen 'Shipping Addresses'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-shipping-addresses)
+      - [-showPlusSignOnAddButton](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showplussignonaddbutton)
+      - [-setColorForAddressSelection](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcolorforaddressselection)
+   - [Screen 'Order Completed'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-order-completed)
+      - [-setTitleForOrderCompletedScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforordercompletedscreen)
+      - [-setIconForOrderCompletedScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforordercompletedscreen)
+      - [-setMessageForOrderCompletedScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setmessageforordercompletedscreen)
+      - [-orderCompletedScreenCloseButtonShouldPerformBack](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--ordercompletedscreenclosebuttonshouldperformback)
 
 
 ### Initialization
