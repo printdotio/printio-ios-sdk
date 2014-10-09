@@ -72,7 +72,7 @@ Developer SDK Customization Reference
       - [-setDropboxKey:redirectUrl](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdropboxkeyredirecturl)
       - [-setFacebookAppId:redirectUrl](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfacebookappidredirecturl)
       - [-setFacebookAccessToken](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfacebookaccesstoken)
-      - [-enableShareOnFacebookDeal]()
+      - [-enableShareOnFacebookDeal](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--enableshareonfacebookdeal)
       - [-setPhotobucketUsername:password](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setphotobucketusernamepassword)
       - [-setPhotobucketAccessToken:userName:baseURL](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setphotobucketaccesstokenusernamebaseurl)
       - [-setTitleForPhotoSourcesScreen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforphotosourcesscreen)
@@ -529,6 +529,25 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param text About text
  */
 - (void)setAboutText:(NSString *)text;
+```
+######- setLikeUsOnFacebookUrl
+```Objective-C
+/**
+ Set url link to facebook page e.g. 'fb://profile/642169949144369'
+ 
+ @param urlS link to page
+ */
+- (void)setLikeUsOnFacebookUrl:(NSString *)urlS;
+```
+######- setAppIDFromAppleStore
+```Objective-C
+/**
+ Set application id from apple store, used for 'Rate Our App'
+ option in side menu. e.g '731593327'
+
+ @param appID application id
+ */
+- (void)setAppIDFromAppleStore:(NSString *)appID;
 ```
 ###Screen 'Choose Country'
 ######- setTitleForChooseCountryScreen
