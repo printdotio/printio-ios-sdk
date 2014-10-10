@@ -53,3 +53,57 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+###Image Preview
+```XML
+<customization>
+  <screen name="image_preview">
+    <button name="button_close"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
+###Shopping Cart
+```XML
+<customization>
+  <screen name="shopping_cart">
+    <button name="button_edit"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <button name="button_check_out"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
+###Add Address
+```XML
+<customization>
+  <screen name="add_address">
+    <button name="button_save"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <button name="button_pick"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
+###Address Validation
+```XML
+<customization>
+  <screen name="address_validation">
+    <button name="button_accept"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <button name="button_edit"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <button name="button_edit_down"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
+###Select Address
+```XML
+<customization>
+  <screen name="select_address">
+    <button name="button_edit"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <button name="button_add"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
+###Shipment Review
+```XML
+<customization>
+  <screen name="shipment_review">
+    <button name="button_enter"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <button name="button_remove"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
