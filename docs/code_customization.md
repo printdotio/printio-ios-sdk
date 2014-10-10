@@ -1124,6 +1124,10 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setPlaceholderTextForSearchBarInChooseCountryScreen:@"Search..."
+                                         hideMagnifyingGlass:NO];
+//... other customization
+[printIO open];
 ```
 ######- setNavigationBarBackgroundColorForChooseCountryScreen
 ```Objective-C
@@ -1136,6 +1140,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setNavigationBarBackgroundColorForChooseCountryScreen:[UIColor redColor]];
+//... other customization
+[printIO open];
 ```
 ###Screen 'Products'
 ######- hideCategoriesInFeaturedProducts
@@ -1149,6 +1156,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO hideCategoriesInFeaturedProducts:YES];
+//... other customization
+[printIO open];
 ```
 ######- hideComingSoonProducts
 ```Objective-C
@@ -1161,6 +1171,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO hideComingSoonProducts:YES];
+//... other customization
+[printIO open];
 ```
 ######- showCountrySelectionOnScreen:backgroundColor
 ```Objective-C
@@ -1178,6 +1191,10 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO showCountrySelectionOnScreen:PIO_SCREEN_PRODUCT_DETAILS
+                      backgroundColor:[UIColor redColor]];
+//... other customization
+[printIO open];
 ```
 ######- setTitleForFeaturedProductsScreen
 ```Objective-C
@@ -1190,6 +1207,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setTitleForFeaturedProductsScreen:@"Title"];
+//... other customization
+[printIO open];
 ```
 ######- setFeaturedProductsLeftLabelTextColor:rightLabelTextColor
 ```Objective-C
@@ -1205,6 +1225,10 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setFeaturedProductsLeftLabelTextColor:[UIColor redColor]
+                           rightLabelTextColor:[UIColor blueColor]];
+//... other customization
+[printIO open];
 ```
 ######- setFeaturedProductsBackgroungImage
 ```Objective-C
