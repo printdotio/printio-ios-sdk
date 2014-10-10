@@ -1,7 +1,7 @@
 Developer SDK Customization reference (XML)
 ===========================================
 
-Some UI elements can be customized via XML code. In order to use it, create XML file with customization, and load it in via method [*-setCustomizationXML*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcustomizationxml).
+Some UI elements can be customized via XML code. In order to use it, create XML file with customization, and load it using method [*-setCustomizationXML*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcustomizationxml).
 
   - [**Screens**]()
     - [*Choose Country*]()
@@ -31,8 +31,8 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
 ```XML
 <customization>
   <screen name="choose_country">
-    <button name="button_no" bcg_color="#D1D1D1" font_color="#2277D4" />
-    <button name="button_yes" bcg_color="#2277D4" font_color="#ffffff"/>
+    <button name="button_no"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <button name="button_yes" title="title" bcg_color="#2277D4" font_color="#ffffff"/>
   </screen>
 </customization>
 ```
