@@ -157,12 +157,9 @@ Developer SDK Customization Reference
 ```
 ```Objective-C
 // Sample code
-- (void)initPrintIO
-{
     PrintIO *printIO = [[PrintIO alloc]initWithEnvironment:PRINTIO_STAGING
                                         productionRecipeId:nil
                                            stagingRecipeId:@"00000000-0000-0000-0000-000000000000"];
-}
 ```
 ######- initWithViewController
 ``` Objective-C
