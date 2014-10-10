@@ -421,8 +421,13 @@ NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];
 /**
  Set custom fonts from main app bundle.
 
- @param fonts Array of string values that contains font name and type with the exact order (light, medium, regular, bold). Example: [@"font_light.otf", @"font_medium.otf", @"font_regular.otf", @"font_bold.otf"]. Array must have four items, and fonts can be duplicated. Array also accepts
- system (normal, bold and italic) UIFont objects.
+ @param fonts Array of string values that contains font name and type with the exact 
+ order (light, medium, regular, bold). 
+ 
+ Example: [@"font_light.otf", @"font_medium.otf", @"font_regular.otf", @"font_bold.otf"]. 
+ 
+ Array must have four items, and fonts can be duplicated. Array also accepts system 
+ (normal, bold and italic) UIFont objects.
  */
 - (void)setFonts:(NSArray *)fonts;
 ```
@@ -512,6 +517,9 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 ```
 **Sample code:**
 ```Objective-C
+[printIO setLoadingGIF:@"mg_loader"];
+//... other customization
+[printIO open];
 ```
 ######- setLoadingText
 ```Objective-C
@@ -524,6 +532,9 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 ```
 **Sample code:**
 ```Objective-C
+[printIO setLoadingText:@"Loading..."];
+//... other customization
+[printIO open];
 ```
 ######- setIconForHelpButton
 ```Objective-C
@@ -536,6 +547,9 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 ```
 **Sample code:**
 ```Objective-C
+[printIO setIconForHelpButton:[[NSBundle mainBundle]pathForResource:@"icon" ofType:@"png"]];
+//... other customization
+[printIO open];
 ```
 ######- setLogoFileName
 ```Objective-C
@@ -549,6 +563,9 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 ```
 **Sample code:**
 ```Objective-C
+[printIO setLogoFileName:@"mg_s_logo"];
+//... other customization
+[printIO open];
 ```
 ######- setPositiveButtonsBackgroundColor
 ```Objective-C
@@ -562,6 +579,9 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 ```
 **Sample code:**
 ```Objective-C
+[printIO setPositiveButtonsBackgroundColor:[UIColor greenColor] titleColor:[UIColor whiteColor]];
+//... other customization
+[printIO open];
 ```
 ######- setNegativeButtonsBackgroundColor
 ```Objective-C
@@ -575,6 +595,9 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 ```
 **Sample code:**
 ```Objective-C
+[printIO setNegativeButtonsBackgroundColor:[UIColor redColor] titleColor:[UIColor whiteColor]];
+//... other customization
+[printIO open];
 ```
 ######- setTitleForChooseOptionsScreen
 ```Objective-C
@@ -585,6 +608,9 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 ```
 **Sample code:**
 ```Objective-C
+[printIO setTitleForChooseOptionsScreen:@"Title"];
+//... other customization
+[printIO open];
 ```
 ### Navigation bar
 ######- navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon
@@ -607,6 +633,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
 ```
 **Sample code:**
 ```Objective-C
+[printIO navigationBarColor:[UIColor colorWithRed:240.0/255.0 green:94.0/255.0 blue:79.0/255.0 alpha:1.0]
+                 titleColor:[UIColor whiteColor]
+  leftButtonBackgroundColor:[UIColor clearColor]
+ rightButtonBackgroundColor:[UIColor colorWithRed:34.0/255.0 green:119.0/255.0 blue:212.0/255.0 alpha:1.0]
+            titleButtonIcon:nil];
+//... other customization
+[printIO open];
 ```
 ######- setNavigationBarBackground
 ```Objective-C
@@ -619,6 +652,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
 ```
 **Sample code:**
 ```Objective-C
+[printIO setNavigationBarBackground:[[NSBundle mainBundle]pathForResource:@"header" ofType:@"png"]];
+//... other customization
+[printIO open];
 ```
 ######- setNavigationBarBackgroundForCustomizeProduct
 ```Objective-C
@@ -631,6 +667,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
 ```
 **Sample code:**
 ```Objective-C
+[printIO setNavigationBarBackgroundForCustomizeProduct:[[NSBundle mainBundle]pathForResource:@"header" ofType:@"png"]];
+//... other customization
+[printIO open];
 ```
 ######- setIconForBackButton
 ```Objective-C
@@ -643,6 +682,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
 ```
 **Sample code:**
 ```Objective-C
+[printIO setIconForBackButton:[[NSBundle mainBundle]pathForResource:@"back" ofType:@"png"]];
+//... other customization
+[printIO open];
 ```
 ######- setStatusBarDark:hidden
 ```Objective-C
@@ -657,6 +699,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
 ```
 **Sample code:**
 ```Objective-C
+[printIO setStatusBarDark:NO hidden:YES];
+//... other customization
+[printIO open];
 ```
 ######- setThreeButtonsNavigationBarSytle
 ```Objective-C
@@ -669,6 +714,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
 ```
 **Sample code:**
 ```Objective-C
+[printIO setThreeButtonsNavigationBarSytle:YES];
+//... other customization
+[printIO open];
 ```
 ######- setNavigationBarSaveToCartBackgroundColor:titleColor:buttonBackgroundColor:buttonTitleColor
 ```Objective-C
@@ -688,6 +736,12 @@ rightButtonBackgroundColor:(UIColor *)rColor
 ```
 **Sample code:**
 ```Objective-C
+[printIO setNavigationBarSaveToCartBackgroundColor:[UIColor greyColor]
+                                        titleColor:[UIColor whiteColor]
+                             buttonBackgroundColor:[UIColor redColor]
+                                  buttonTitleColor:[UIColor whiteColor]];
+//... other customization
+[printIO open];
 ```
 ###Side menu
 ######- useSideMenuWithMenuIcon:background
@@ -703,6 +757,10 @@ rightButtonBackgroundColor:(UIColor *)rColor
 ```
 **Sample code:**
 ```Objective-C
+[printIO useSideMenuWithMenuIcon:[[NSBundle mainBundle]pathForResource:@"mg_icon_menu" ofType:@"png"] 
+                      background:[UIColor blackColor]];
+//... other customization
+[printIO open];
 ```
 ######- sideMenuAddButtons
 ```Objective-C
