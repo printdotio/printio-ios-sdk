@@ -1,6 +1,8 @@
 Developer SDK Customization reference (XML)
 ===========================================
 
+Some UI elements can be customized via XML code. In order to use it, create XML file with customization, and load it in via method [*-setCustomizationXML*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcustomizationxml).
+
   - [**Screens**]()
     - [*Choose Country*]()
     - [*Product Details*]()
