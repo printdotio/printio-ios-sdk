@@ -24,3 +24,13 @@ Developer SDK Customization reference (XML)
     - [*Dialog Address Type*]()
     - [*Dialog Loading*]()
     - [*Dialog Select ZIP Code*]()
+
+###Choose Country
+```XML
+<customization>
+  <screen name="choose_country">
+    <button name="button_no" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <button name="button_yes" bcg_color="#2277D4" font_color="#ffffff"/>
+  </screen>
+</customization>
+```
