@@ -355,6 +355,11 @@ PIOVariantOption *option2 = [[PIOVariantOption alloc]initWithProductId:PRODUCT_T
  */
 - (void)setCountryCode:(NSString *)countryCode;
 ```
+**Sample code:**
+```Objective-C
+[printIO setCountryCode:@"US"];
+[printIO open];
+```
 ######- setCurrencyCode
 ```Objective-C
 /**
@@ -363,6 +368,12 @@ PIOVariantOption *option2 = [[PIOVariantOption alloc]initWithProductId:PRODUCT_T
  @param currencyCode Currency code
  */
 - (void)setCurrencyCode:(NSString *)currencyCode;
+```
+**Sample code:**
+```Objective-C
+[printIO setCurrencyCode:@"usd"];
+//... other customization
+[printIO open];
 ```
 ######- setLanguageCode
 ```Objective-C
@@ -373,6 +384,12 @@ PIOVariantOption *option2 = [[PIOVariantOption alloc]initWithProductId:PRODUCT_T
  */
 - (void)setLanguageCode:(NSString *)languageCode;
 ```
+**Sample code:**
+```Objective-C
+[printIO setLanguageCode:@"en"];
+//...
+[printIO open];
+```
 ###General UI customization
 ######- setCustomizationXML
 ```Objective-C
@@ -380,11 +397,17 @@ PIOVariantOption *option2 = [[PIOVariantOption alloc]initWithProductId:PRODUCT_T
  Import customization XML file
 
  @param xmlData Customization xml file.
- 
- Example: NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"customization" ofType:@"xml"];
- NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];
  */
 - (void)setCustomizationXML:(NSData *)xmlData;
+```
+**Sample code:**
+```Objective-C
+NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"customization" ofType:@"xml"];
+NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];
+
+[printIO setCustomizationXML:xmlData];
+//...
+[printIO open];
 ```
 ######- setFonts
 ```Objective-C
