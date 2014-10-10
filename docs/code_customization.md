@@ -176,6 +176,13 @@ PrintIO *printIO = [[PrintIO alloc]initWithEnvironment:PRINTIO_STAGING
           productionRecipeId:(NSString *)pRecipeId
              stagingRecipeId:(NSString *)sRecipeId;
 ```
+**Sample code:**
+```Objective-C
+PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
+                                              environment:PRINTIO_STAGING
+                                       productionRecipeId:nil
+                                          stagingRecipeId:@"00000000-0000-0000-0000-000000000000"];
+```
 ######- setIsRootController
 ```Objective-C
 /**
@@ -185,6 +192,10 @@ PrintIO *printIO = [[PrintIO alloc]initWithEnvironment:PRINTIO_STAGING
  */
 -(void)setIsRootController:(BOOL)isRootController;
 ```
+**Sample code:**
+```Objective-C
+[printIO setIsRootController:NO];
+```
 ### Opening and closing
 
 ######- open
@@ -193,6 +204,14 @@ PrintIO *printIO = [[PrintIO alloc]initWithEnvironment:PRINTIO_STAGING
  Open widget by presenting view from bottom
  */
 - (void)open;
+```
+**Sample code:**
+```Objective-C
+PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
+                                              environment:PRINTIO_STAGING
+                                       productionRecipeId:nil
+                                          stagingRecipeId:@"00000000-0000-0000-0000-000000000000"];
+[printIO open];
 ```
 ######- openWithOption
 ``` Objective-C
@@ -207,6 +226,14 @@ PrintIO *printIO = [[PrintIO alloc]initWithEnvironment:PRINTIO_STAGING
  PRINTIO_ENABLE_BACK_BUTTON
  */
 - (void)openWithOption:(int)option;
+```
+**Sample code:**
+```Objective-C
+PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
+                                              environment:PRINTIO_STAGING
+                                       productionRecipeId:nil
+                                          stagingRecipeId:@"00000000-0000-0000-0000-000000000000"];
+[printIO openWithOption:PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM | PRINTIO_ENABLE_BACK_BUTTON];
 ```
 ######- presentFromViewController
 ``` Objective-C
