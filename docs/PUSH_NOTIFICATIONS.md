@@ -94,7 +94,7 @@ Usage
 -----
 
 In your app delegate, add these lines:
-
+```Objective-C
     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     {
         ...
@@ -121,9 +121,9 @@ In your app delegate, add these lines:
         
         return YES;
     }
-    
+```
 And implement these two methods:
-
+```Objective-C
     - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
     {
         [PrintIO registerDeviceToken:deviceToken];
@@ -135,7 +135,7 @@ And implement these two methods:
                   backgroundColor:[UIColor blackColor]
                         textColor:[UIColor whiteColor]];
     }
-
+```
   [1]: https://github.com/printdotio/printio-ios-sdk/blob/master/README.md
   [2]: https://lh6.googleusercontent.com/-xDd4rPCn2jE/U3oNPzK0ZeI/AAAAAAAAAA0/770rPVb8u7o/s800/1.png
   [3]: https://developer.apple.com/membercenter/index.action
