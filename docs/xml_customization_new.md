@@ -36,3 +36,20 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+###Product Details
+```XML
+<customization>
+  <screen name="product_details">
+    <button name="button_create"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" bcg_image_name="bcg_image_name" bcg_image_format="image_format" />
+    <image_view name="icon_1" image_name="image_name" image_format="image_format" />
+    <image_view name="icon_2" image_name="image_name" image_format="image_format" />
+    <image_view name="icon_3" image_name="image_name" image_format="image_format" />
+    <image_view name="icon_4" image_name="image_name" image_format="image_format" />
+    <label name="label_1" title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <label name="label_2" title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <label name="label_3" title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <label name="label_4" title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <label name="label_5" title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
