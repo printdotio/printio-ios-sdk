@@ -442,6 +442,10 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
  */
 - (void)changeSizeOfLightFontsBy:(float)value;
 ```
+**Sample code:**
+```Objective-C
+[printIO changeSizeOfLightFontsBy:-1.0];
+```
 ######- changeSizeOfMediumFontsBy
 ```Objective-C
 /**
@@ -450,6 +454,10 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
  @param Increase/decrease font size by 'value'
  */
 - (void)changeSizeOfMediumFontsBy:(float)value;
+```
+**Sample code:**
+```Objective-C
+[printIO changeSizeOfMediumFontsBy:-1.0];
 ```
 ######- changeSizeOfRegularFontsBy
 ```Objective-C
@@ -460,6 +468,10 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
  */
 - (void)changeSizeOfRegularFontsBy:(float)value;
 ```
+**Sample code:**
+```Objective-C
+[printIO changeSizeOfRegularFontsBy:-1.0];
+```
 ######- changeSizeOfBoldFontsBy
 ```Objective-C
 /**
@@ -468,6 +480,10 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
  @param Increase/decrease font size by 'value'
  */
 - (void)changeSizeOfBoldFontsBy:(float)value;
+```
+**Sample code:**
+```Objective-C
+[printIO changeSizeOfBoldFontsBy:-1.0];
 ```
 ######- setLoadingActivityIndicatorViewStyle
 ```Objective-C
@@ -479,6 +495,12 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
  */
 - (void)setLoadingActivityIndicatorViewStyle:(UIActivityIndicatorViewStyle)style;
 ```
+**Sample code:**
+```Objective-C
+[printIO setLoadingActivityIndicatorViewStyle:UIActivityIndicatorViewStyleGray];
+//... other customization
+[printIO open];
+```
 ######- setLoadingGIF
 ```Objective-C
 /**
@@ -487,6 +509,9 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
  @param fileName GIF image file name.
  */
 - (void)setLoadingGIF:(NSString *)fileName;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setLoadingText
 ```Objective-C
@@ -497,6 +522,9 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
  */
 - (void)setLoadingText:(NSString *)lText;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setIconForHelpButton
 ```Objective-C
 /**
@@ -505,6 +533,9 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
  @param imagePath Path for image file
  */
 - (void)setIconForHelpButton:(NSString *)imagePath;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setLogoFileName
 ```Objective-C
@@ -516,6 +547,9 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
  */
 - (void)setLogoFileName:(NSString *)fileName;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setPositiveButtonsBackgroundColor
 ```Objective-C
 /**
@@ -525,6 +559,9 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
  @param tColor Title color
  */
 - (void)setPositiveButtonsBackgroundColor:(UIColor *)bColor titleColor:(UIColor *)tColor;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setNegativeButtonsBackgroundColor
 ```Objective-C
@@ -536,12 +573,18 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
  */
 - (void)setNegativeButtonsBackgroundColor:(UIColor *)bColor titleColor:(UIColor *)tColor;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setTitleForChooseOptionsScreen
 ```Objective-C
 /**
  Change title for 'Customization Options' screen
  */
 - (void)setTitleForChooseOptionsScreen:(NSString *)title;
+```
+**Sample code:**
+```Objective-C
 ```
 ### Navigation bar
 ######- navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon
@@ -562,6 +605,9 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 rightButtonBackgroundColor:(UIColor *)rColor
            titleButtonIcon:(NSString *)iPath;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setNavigationBarBackground
 ```Objective-C
 /**
@@ -570,6 +616,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param imagePath Path to image file.
  */
 - (void)setNavigationBarBackground:(NSString *)imagePath;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setNavigationBarBackgroundForCustomizeProduct
 ```Objective-C
@@ -580,6 +629,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setNavigationBarBackgroundForCustomizeProduct:(NSString *)imagePath;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setIconForBackButton
 ```Objective-C
 /**
@@ -588,6 +640,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param path Path to image file.
  */
 - (void)setIconForBackButton:(NSString *)iconPath;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setStatusBarDark:hidden
 ```Objective-C
@@ -600,6 +655,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)setStatusBarDark:(BOOL)dark
                   hidden:(BOOL)hidden;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setThreeButtonsNavigationBarSytle
 ```Objective-C
 /**
@@ -608,6 +666,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param set Default value is NO
  */
 - (void)setThreeButtonsNavigationBarSytle:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setNavigationBarSaveToCartBackgroundColor:titleColor:buttonBackgroundColor:buttonTitleColor
 ```Objective-C
@@ -625,6 +686,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
                             buttonBackgroundColor:(UIColor *)btnBcgColor
                                  buttonTitleColor:(UIColor *)btnTitleColor;
 ```
+**Sample code:**
+```Objective-C
+```
 ###Side menu
 ######- useSideMenuWithMenuIcon:background
 ```Objective-C
@@ -636,6 +700,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)useSideMenuWithMenuIcon:(NSString *)mIconPath
                      background:(UIColor *)bcgColor;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- sideMenuAddButtons
 ```Objective-C
@@ -691,12 +758,18 @@ rightButtonBackgroundColor:(UIColor *)rColor
                  infoColor:(UIColor *)infoColor
  backgroundImageForButtons:(NSString *)path;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- sideMenuHideOptionsHeader
 ```Objective-C
 /**
  Hide 'Options' header in Side Menu
  */
 - (void)sideMenuHideOptionsHeader:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- sideMenuHideAccountsHeader
 ```Objective-C
@@ -705,12 +778,18 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)sideMenuHideAccountsHeader:(BOOL)set;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- sideMenuHideInfoHeader
 ```Objective-C
 /**
  Hide 'Info' header in Side Menu
  */
 - (void)sideMenuHideInfoHeader:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- sideMenuShowOptionsAsList
 ```Objective-C
@@ -721,6 +800,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)sideMenuShowOptionsAsList:(BOOL)set;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- slideSideMenuFromRight
 ```Objective-C
 /**
@@ -729,6 +811,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param set Default value is NO.
  */
 - (void)slideSideMenuFromRight:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setShareText:additionalText
 ```Objective-C
@@ -740,6 +825,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setShareText:(NSString *)shareText additionalText:(NSString *)additionalText;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- hidePhotoSourcesInSideMenu
 ```Objective-C
 /**
@@ -748,6 +836,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param set Default value is NO
  */
 - (void)hidePhotoSourcesInSideMenu:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- sideMenuBackgroungImage
 ```Objective-C
@@ -758,6 +849,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)sideMenuBackgroungImage:(NSString *)path;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setHowItWorksText
 ```Objective-C
 /**
@@ -766,6 +860,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @params text Text
  */
 - (void)setHowItWorksText:(NSString *)text;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setAboutText
 ```Objective-C
@@ -776,6 +873,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setAboutText:(NSString *)text;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setLikeUsOnFacebookUrl
 ```Objective-C
 /**
@@ -784,6 +884,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param urlS link to page
  */
 - (void)setLikeUsOnFacebookUrl:(NSString *)urlS;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setAppIDFromAppleStore
 ```Objective-C
@@ -795,6 +898,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setAppIDFromAppleStore:(NSString *)appID;
 ```
+**Sample code:**
+```Objective-C
+```
 ###Screen 'Choose Country'
 ######- setTitleForChooseCountryScreen
 ```Objective-C
@@ -805,6 +911,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setTitleForChooseCountryScreen:(NSString *)title;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- hideSearchIconInChooseCountryScreen
 ```Objective-C
 /**
@@ -813,6 +922,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param set Default value is NO
  */
 - (void)hideSearchIconInChooseCountryScreen:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setPlaceholderTextForSearchBarInChooseCountryScreen:hideMagnifyingGlass
 ```Objective-C
@@ -825,6 +937,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)setPlaceholderTextForSearchBarInChooseCountryScreen:(NSString *)text
                                         hideMagnifyingGlass:(BOOL)set;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setNavigationBarBackgroundColorForChooseCountryScreen
 ```Objective-C
 /**
@@ -833,6 +948,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param color Color to set
  */
 - (void)setNavigationBarBackgroundColorForChooseCountryScreen:(UIColor *)color;
+```
+**Sample code:**
+```Objective-C
 ```
 ###Screen 'Products'
 ######- hideCategoriesInFeaturedProducts
@@ -844,6 +962,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)hideCategoriesInFeaturedProducts:(BOOL)hide;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- hideComingSoonProducts
 ```Objective-C
 /**
@@ -852,6 +973,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param hide Default value is NO
  */
 - (void)hideComingSoonProducts:(BOOL)hide;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- showCountrySelectionOnScreen:backgroundColor
 ```Objective-C
@@ -867,6 +991,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)showCountrySelectionOnScreen:(PIOScreens)screen
                      backgroundColor:(UIColor *)backgroundColor;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setTitleForFeaturedProductsScreen
 ```Objective-C
 /**
@@ -875,6 +1002,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param title New title
  */
 - (void)setTitleForFeaturedProductsScreen:(NSString *)title;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setFeaturedProductsLeftLabelTextColor:rightLabelTextColor
 ```Objective-C
@@ -888,6 +1018,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)setFeaturedProductsLeftLabelTextColor:(UIColor *)lColor
                           rightLabelTextColor:(UIColor *)rColor;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setFeaturedProductsBackgroungImage
 ```Objective-C
 /**
@@ -897,6 +1030,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param imagePath Path to image file.
  */
 - (void)setFeaturedProductsBackgroungImage:(NSString *)imagePath;
+```
+**Sample code:**
+```Objective-C
 ```
 ###Screen 'Product Details'
 ######- productDetailsShowTitleBelowNavBar
@@ -908,6 +1044,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)productDetailsShowTitleBelowNavBar:(BOOL)set;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- productDetailsShowMenuBtnInNavBar
 ```Objective-C
 /**
@@ -917,6 +1056,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)productDetailsShowMenuBtnInNavBar:(BOOL)set;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setQualityGuaranteeText
 ```Objective-C
 /**
@@ -925,6 +1067,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param text Quality Guarantee text
  */
 - (void)setQualityGuaranteeText:(NSString *)text;
+```
+**Sample code:**
+```Objective-C
 ```
 ###Photo sources
 ######- setAvailablePhotoSources
@@ -943,6 +1088,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
    PIO_SM_PHONE
  */
 - (void)setAvailablePhotoSources:(NSArray *)photoSources;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setDefaultPhotoSource:albumId
 ```Objective-C
@@ -965,6 +1113,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)setDefaultPhotoSource:(PIOPhotoSources)pSource
                       albumId:(NSString *)albumId;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setImages
 ```Objective-C
 /**
@@ -974,6 +1125,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param images Array of image urls or/and UIImage objects
  */
 - (void)setImages:(NSArray *)images;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- disablePhotoSourcesWhenImagesArePassedIn
 ```Objective-C
@@ -985,6 +1139,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)disablePhotoSourcesWhenImagesArePassedIn:(BOOL)disable;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- disablePhotoSourcesForOnePhotoTemplate
 ```Objective-C
 /**
@@ -993,12 +1150,18 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)disablePhotoSourcesForOnePhotoTemplate:(BOOL)disable;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setPassedImageFirstInPhotoSources
 ```Objective-C
 /**
  Set passed in image to be first in row for all photo sources.
  */
 - (void)setPassedImageFirstInPhotoSources:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setPassedImageAsThumbForOnePhotoTemplate
 ```Objective-C
@@ -1008,12 +1171,18 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setPassedImageAsThumbForOnePhotoTemplate:(BOOL)set;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- hideIconForUploadInstructions
 ```Objective-C
 /**
  Hide icon for Upload Instructions text in Photo Sources screen. Default value is NO.
  */
 - (void)hideIconForUploadInstructions:(BOOL)hide;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setInstagramClientID:redirectUrl
 ```Objective-C
@@ -1024,6 +1193,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)setInstagramClientID:(NSString *)clientId
                  redirectUrl:(NSString *)redirectUrl;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setInstagramAccessToken
 ```Objective-C
 /**
@@ -1032,6 +1204,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param accessToken Valid access token for session
  */
 - (void)setInstagramAccessToken:(NSString *)accessToken;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setFlickrKey:secretKey:redirectUrl
 ```Objective-C
@@ -1042,6 +1217,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
            secretKey:(NSString *)secretKey
          redirectUrl:(NSString *)redirectUrl;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setDropboxKey:redirectUrl
 ```Objective-C
 /**
@@ -1050,6 +1228,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)setDropboxKey:(NSString *)key
           redirectUrl:(NSString *)redirectUrl;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setFacebookAppId:redirectUrl
 ```Objective-C
 /**
@@ -1057,6 +1238,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setFacebookAppId:(NSString *)appId
              redirectUrl:(NSString *)redirectUrl;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setFacebookAccessToken
 ```Objective-C
@@ -1067,6 +1251,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setFacebookAccessToken:(NSString *)aToken;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- enableShareOnFacebookDeal
 ```Objective-C
 /**
@@ -1075,6 +1262,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param set Default value is NO
  */
 - (void)enableShareOnFacebookDeal:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setPhotobucketUsername:password
 ```Objective-C
@@ -1086,6 +1276,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setPhotobucketUsername:(NSString *)userName
                       password:(NSString *)password;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setPhotobucketAccessToken:userName:baseURL
 ```Objective-C
@@ -1100,6 +1293,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
                          userName:(NSString *)username
                           baseURL:(NSString *)baseUrl;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setTitleForPhotoSourcesScreen
 ```Objective-C
 /**
@@ -1108,6 +1304,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param title New title
  */
 - (void)setTitleForPhotoSourcesScreen:(NSString *)title;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- autoSelectOnePhotoTemplateForProductID
 ```Objective-C
@@ -1118,6 +1317,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)autoSelectOnePhotoTemplateForProductID:(NSInteger)productID;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- disableAutoRecognizePhoneModel
 ```Objective-C
 /**
@@ -1126,6 +1328,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param set Default value is NO
  */
 - (void)disableAutoRecognizePhoneModel:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
 ```
 ###Screen 'Customize/Edit Product'
 ######- showToolbarInCustomizeProduct:backgroundImage
@@ -1139,12 +1344,18 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)showToolbarInCustomizeProduct:(BOOL)show
                       backgroundImage:(NSString *)imagePath;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- hideImagesListInCustomizeProduct
 ```Objective-C
 /**
  Hide list with images in customization screen
  */
 - (void)hideImagesListInCustomizeProduct:(BOOL)hide;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setPhotoArrangement
 ```Objective-C
@@ -1159,6 +1370,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setPhotoArrangement:(NSInteger)option;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setIconForAddPhotosButton
 ```Objective-C
 /**
@@ -1167,6 +1381,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param imagePath Path to image file.
  */
 - (void)setIconForAddPhotosButton:(NSString *)imagePath;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setIconForHelpButtonInCustomizeProduct:visible
 ```Objective-C
@@ -1179,6 +1396,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)setIconForHelpButtonInCustomizeProduct:(NSString *)imagePath
                                        visible:(BOOL)visible;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setIconForSaveButtonInCustomizeProduct
 ```Objective-C
 /**
@@ -1187,6 +1407,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param imagePath Path to image file.
  */
 - (void)setIconForSaveButtonInCustomizeProduct:(NSString *)imagePath;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setPopUpWithImage:text:textColor
 ```Objective-C
@@ -1199,6 +1422,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setPopUpWithImage:(NSString *)path text:(NSString *)text textColor:(UIColor *)textColor;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setDoubleTapBalloonVisibilityTime
 ```Objective-C
 /**
@@ -1209,6 +1435,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setDoubleTapBalloonVisibilityTime:(int)timeInSeconds;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- showHelpDialogWithImage
 ```Objective-C
 /**
@@ -1218,6 +1447,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)showHelpDialogWithImage:(NSString *)imagePath;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- disablePreviewScreen
 ```Objective-C
 /**
@@ -1226,6 +1458,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param set Default value is NO
  */
 - (void)disablePreviewScreen:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setSamePhotoOnFrontAndBackSideOfProduct
 ```Objective-C
@@ -1237,6 +1472,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setSamePhotoOnFrontAndBackSideOfProduct:(NSInteger)productId;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setCustomizationHelpText
 ```Objective-C
 /**
@@ -1245,6 +1483,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param text Help text
  */
 - (void)setCustomizationHelpText:(NSString *)text;
+```
+**Sample code:**
+```Objective-C
 ```
 ###Screen 'Image Editor'
 ######- imageEditorShowButtons
@@ -1260,6 +1501,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)imageEditorShowButtons:(NSArray *)buttons;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- hideWatchVideoButton
 ```Objective-C
 /**
@@ -1268,7 +1512,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param hide Default value is NO
  */
 - (void)hideWatchVideoButton:(BOOL)hide;
-
+```
+**Sample code:**
+```Objective-C
 ```
 ###Screen 'Shopping Cart'
 ######- setIconForShoppingCart:withNumberOfProducts:labelPosition:textColor
@@ -1285,6 +1531,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
           withNumberOfProducts:(BOOL)set
                  labelPosition:(CGPoint)lPosition
                      textColor:(UIColor *)tColor;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setIconForShoppingCart:withNumberOfProducts:labelPosition:circleColor:textColor
 ```Objective-C
@@ -1303,12 +1552,18 @@ rightButtonBackgroundColor:(UIColor *)rColor
                    circleColor:(UIColor *)circleColor
                      textColor:(UIColor *)textColor;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- removePlusFromAddMoreProductsButton
 ```Objective-C
 /**
  Remove plus sign from "Add more products" button. By default, sign is visible.
  */
 - (void)removePlusFromAddMoreProductsButton:(BOOL)remove;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setTitleForShoppingCart
 ```Objective-C
@@ -1319,6 +1574,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setTitleForShoppingCart:(NSString *)title;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setShowsAddMoreProductsInShoppingCart
 ```Objective-C
 /**
@@ -1327,6 +1585,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param showsButton Button visibility flag. Default is YES.
  */
 - (void)setShowsAddMoreProductsInShoppingCart:(BOOL)showsAddButton;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- customizeAddMoreProductButton
 ```Objective-C
@@ -1338,6 +1599,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)customizeAddMoreProductButton:(NSString *)title icon:(NSString *)iconPath;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setIconForShoppingCartBackButton
 ```Objective-C
 /**
@@ -1347,12 +1611,18 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setIconForShoppingCartBackButton:(NSString *)iconPath;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- numberOfItemsInShoppingCart
 ```Objective-C
 /**
  Get number of items in shopping cart
  */
 + (NSInteger)numberOfItemsInShoppingCart;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- hideEditButtonInShoppingCart
 ```Objective-C
@@ -1363,6 +1633,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)hideEditButtonInShoppingCart:(BOOL)set;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setPromoCode
 ```Objective-C
 /**
@@ -1371,6 +1644,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param promoCode Promo code
  */
 - (void)setPromoCode:(NSString *)promoCode;
+```
+**Sample code:**
+```Objective-C
 ```
 ###Screen 'Payment Options'
 ######- removeLogoFromPaymentScreen
@@ -1381,6 +1657,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)removeLogoFromPaymentScreen:(BOOL)remove;
 
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setPayeeName
 ```Objective-C
 /**
@@ -1390,6 +1669,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setPayeeName:(NSString *)payeeName;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setTermsAndConditionsURL
 ```Objective-C
 /**
@@ -1398,6 +1680,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @params url If not set, this option will be hidden
  */
 - (void)setTermsAndConditionsURL:(NSURL *)url;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setPaymentOptions
 ```Objective-C
@@ -1411,6 +1696,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setPaymentOptions:(PaymentOptions)paymentOptions;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setPayPalStagingClientId:productionClientId
 ```Objective-C
 /**
@@ -1423,6 +1711,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)setPayPalStagingClientId:(NSString *)sClientId
               productionClientId:(NSString *)pClientId;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setBraintreeStagingEncryptionKey:productionEncryptionKey
 ```Objective-C
 /**
@@ -1433,6 +1724,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setBraintreeStagingEncryptionKey:(NSString *)sEncKey
                  productionEncryptionKey:(NSString *)pEncKey;
+```
+**Sample code:**
+```Objective-C
 ```
 ###Screen 'Shipping Addresses'
 ######- showPlusSignOnAddButton
@@ -1446,6 +1740,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)showPlusSignOnAddButton:(BOOL)set;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setColorForAddressSelection
 ```Objective-C
 /**
@@ -1455,6 +1752,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param color New color. Default is light green.
  */
 - (void)setColorForAddressSelection:(UIColor *)color;
+```
+**Sample code:**
+```Objective-C
 ```
 ###Screen 'Order Completed'
 ######- setTitleForOrderCompletedScreen
@@ -1466,6 +1766,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setTitleForOrderCompletedScreen:(NSString *)title;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- setIconForOrderCompletedScreen
 ```Objective-C
 /**
@@ -1474,6 +1777,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param iconPath File path to icon
  */
 - (void)setIconForOrderCompletedScreen:(NSString *)iconPath;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- setMessageForOrderCompletedScreen
 ```Objective-C
@@ -1484,6 +1790,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setMessageForOrderCompletedScreen:(NSMutableAttributedString *)message;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- orderCompletedScreenCloseButtonShouldPerformBack
 ```Objective-C
 /**
@@ -1492,7 +1801,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param set Default value is NO
  */
 - (void)orderCompletedScreenCloseButtonShouldPerformBack:(BOOL)set;
-
+```
+**Sample code:**
+```Objective-C
 ```
 ###Google Analytics 
 ######- setTrackingIDForGoogleAnalytics
@@ -1504,6 +1815,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param trackingID Tracking ID provided by Google
  */
 - (void)setTrackingIDForGoogleAnalytics:(NSString *)trackingID;
+```
+**Sample code:**
+```Objective-C
 ```
 ###Push Notifications
 ######- setParseApplicationId:apiKey
@@ -1517,6 +1831,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
 + (void)setParseApplicationId:(NSString *)appId
                        apiKey:(NSString *)apiKey;
 ```
+**Sample code:**
+```Objective-C
+```
 ######- registerDeviceToken
 ```Objective-C
 /**
@@ -1525,6 +1842,9 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param deviceToken Device token
  */
 + (void)registerDeviceToken:(NSData *)deviceToken;
+```
+**Sample code:**
+```Objective-C
 ```
 ######- showNotification:backgroundColor:textColor
 ```Objective-C
@@ -1538,4 +1858,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 + (void)showNotification:(NSDictionary *)userInfo
          backgroundColor:(UIColor *)bcgColor
                textColor:(UIColor *)textColor;
+```
+**Sample code:**
+```Objective-C
 ```
