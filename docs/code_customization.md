@@ -1711,6 +1711,10 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setIconForHelpButtonInCustomizeProduct:[[NSBundle mainBundle]pathForResource:@"icon" ofType:@"png"] 
+                                        visible:YES];
+//... other customization
+[printIO open];
 ```
 ######- setIconForSaveButtonInCustomizeProduct
 ```Objective-C
@@ -1723,6 +1727,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setIconForSaveButtonInCustomizeProduct:[[NSBundle mainBundle]pathForResource:@"icon" ofType:@"png"]];
+//... other customization
+[printIO open];
 ```
 ######- setPopUpWithImage:text:textColor
 ```Objective-C
@@ -1737,6 +1744,11 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setPopUpWithImage:[[NSBundle mainBundle]pathForResource:@"image" ofType:@"png"]
+                      text:@"Double tap..." 
+                 textColor:[UIColor whiteColor]];
+//... other customization
+[printIO open];
 ```
 ######- setDoubleTapBalloonVisibilityTime
 ```Objective-C
@@ -1750,6 +1762,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setDoubleTapBalloonVisibilityTime:3];
+//... other customization
+[printIO open];
 ```
 ######- showHelpDialogWithImage
 ```Objective-C
@@ -1762,6 +1777,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO showHelpDialogWithImage:[[NSBundle mainBundle]pathForResource:@"image" ofType:@"png"]];
+//... other customization
+[printIO open];
 ```
 ######- disablePreviewScreen
 ```Objective-C
@@ -1774,6 +1792,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO disablePreviewScreen:YES];
+//... other customization
+[printIO open];
 ```
 ######- setSamePhotoOnFrontAndBackSideOfProduct
 ```Objective-C
@@ -1787,6 +1808,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setSamePhotoOnFrontAndBackSideOfProduct:PRODUCT_THROW_PILLOWS()];
+//... other customization
+[printIO open];
 ```
 ######- setCustomizationHelpText
 ```Objective-C
@@ -1799,6 +1823,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setCustomizationHelpText:@"Help text..."];
+//... other customization
+[printIO open];
 ```
 ###Screen 'Image Editor'
 ######- imageEditorShowButtons
@@ -1816,6 +1843,13 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+NSArray *buttons = @[[PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_INFO],
+                     [PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_ROTATE],
+                     [PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_EDIT_TEXT],
+                     [PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_EFFECTS]];
+[printIO imageEditorShowButtons:buttons];
+//... other customization
+[printIO open];
 ```
 ######- hideWatchVideoButton
 ```Objective-C
@@ -1828,6 +1862,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO hideWatchVideoButton:YES];
+//... other customization
+[printIO open];
 ```
 ###Screen 'Shopping Cart'
 ######- setIconForShoppingCart:withNumberOfProducts:labelPosition:textColor
@@ -1847,6 +1884,12 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setIconForShoppingCart:[[NSBundle mainBundle]pathForResource:@"cart" ofType:@"png"]
+           withNumberOfProducts:YES
+                  labelPosition:CGPointZero
+                      textColor:[UIColor whiteColor]];
+//... other customization
+[printIO open];
 ```
 ######- setIconForShoppingCart:withNumberOfProducts:labelPosition:circleColor:textColor
 ```Objective-C
@@ -1867,6 +1910,13 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setIconForShoppingCart:[[NSBundle mainBundle]pathForResource:@"cart" ofType:@"png"]
+           withNumberOfProducts:YES
+                  labelPosition:CGPointZero
+                    circleColor:[UIColor redColor]
+                      textColor:[UIColor whiteColor]];
+//... other customization
+[printIO open];
 ```
 ######- removePlusFromAddMoreProductsButton
 ```Objective-C
@@ -1877,6 +1927,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO removePlusFromAddMoreProductsButton:YES];
+//... other customization
+[printIO open];
 ```
 ######- setTitleForShoppingCart
 ```Objective-C
@@ -1889,6 +1942,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setTitleForShoppingCart:@"Title"];
+//... other customization
+[printIO open];
 ```
 ######- setShowsAddMoreProductsInShoppingCart
 ```Objective-C
@@ -1901,6 +1957,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setShowsAddMoreProductsInShoppingCart:YES];
+//... other customization
+[printIO open];
 ```
 ######- customizeAddMoreProductButton
 ```Objective-C
@@ -1914,6 +1973,10 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO customizeAddMoreProductButton:@"MAKE MORE PRODUCTS" 
+                                  icon:[[NSBundle mainBundle]pathForResource:@"icon" ofType:@"png"]];
+//... other customization
+[printIO open];
 ```
 ######- setIconForShoppingCartBackButton
 ```Objective-C
@@ -1926,6 +1989,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setIconForShoppingCartBackButton:[[NSBundle mainBundle]pathForResource:@"icon" ofType:@"png"]];
+//... other customization
+[printIO open];
 ```
 ######- numberOfItemsInShoppingCart
 ```Objective-C
@@ -1936,6 +2002,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 ```
 ######- hideEditButtonInShoppingCart
 ```Objective-C
@@ -1948,6 +2015,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO hideEditButtonInShoppingCart:YES];
+//... other customization
+[printIO open];
 ```
 ######- setPromoCode
 ```Objective-C
@@ -1960,6 +2030,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[print setPromoCode:@"12345"];
+//... other customization
+[printIO open];
 ```
 ###Screen 'Payment Options'
 ######- removeLogoFromPaymentScreen
@@ -1972,6 +2045,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO removeLogoFromPaymentScreen:YES];
+//... other customization
+[printIO open];
 ```
 ######- setPayeeName
 ```Objective-C
@@ -1984,6 +2060,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setPayeeName:@"Your app name"];
+//... other customization
+[printIO open];
 ```
 ######- setTermsAndConditionsURL
 ```Objective-C
@@ -1996,6 +2075,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setTermsAndConditionsURL:[NSURL URLWithString:@"http://yourapp.com/terms.html"]];
+//... other customization
+[printIO open];
 ```
 ######- setPaymentOptions
 ```Objective-C
@@ -2011,6 +2093,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setPaymentOptions:PaymentOptionAll];
+//... other customization
+[printIO open];
 ```
 ######- setPayPalStagingClientId:productionClientId
 ```Objective-C
@@ -2026,6 +2111,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setPayPalStagingClientId:@"s_client_id" productionClientId:@"p_client_id"];
+//... other customization
+[printIO open];
 ```
 ######- setBraintreeStagingEncryptionKey:productionEncryptionKey
 ```Objective-C
@@ -2040,6 +2128,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setBraintreeStagingEncryptionKey:@"s_enc_key" productionEncryptionKey:@"p_enc_key"];
+//... other customization
+[printIO open];
 ```
 ###Screen 'Shipping Addresses'
 ######- showPlusSignOnAddButton
@@ -2055,6 +2146,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO showPlusSignOnAddButton:YES];
+//... other customization
+[printIO open];
 ```
 ######- setColorForAddressSelection
 ```Objective-C
@@ -2068,6 +2162,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setColorForAddressSelection:[UIColor redColor]];
+//... other customization
+[printIO open];
 ```
 ###Screen 'Order Completed'
 ######- setTitleForOrderCompletedScreen
@@ -2081,6 +2178,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setTitleForOrderCompletedScreen:@"Title"];
+//... other customization
+[printIO open];
 ```
 ######- setIconForOrderCompletedScreen
 ```Objective-C
@@ -2093,6 +2193,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setIconForOrderCompletedScreen:[[NSBundle mainBundle]pathForResource:@"icon" ofType:@"png"]];
+//... other customization
+[printIO open];
 ```
 ######- setMessageForOrderCompletedScreen
 ```Objective-C
@@ -2105,6 +2208,10 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+NSMutableAttributedString *message = [[NSMutableAttributedString alloc]initWithString:@"Message..."];
+[printIO setMessageForOrderCompletedScreen:message];
+//... other customization
+[printIO open];
 ```
 ######- orderCompletedScreenCloseButtonShouldPerformBack
 ```Objective-C
@@ -2117,6 +2224,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO orderCompletedScreenCloseButtonShouldPerformBack:NO];
+//... other customization
+[printIO open];
 ```
 ###Google Analytics 
 ######- setTrackingIDForGoogleAnalytics
@@ -2131,6 +2241,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setTrackingIDForGoogleAnalytics:@"tracking_id"];
+//... other customization
+[printIO open];
 ```
 ###Push Notifications
 ######- setParseApplicationId:apiKey
@@ -2146,6 +2259,9 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setParseApplicationId:@"app_id" apiKey:@"api_key"];
+//... other customization
+[printIO open];
 ```
 ######- registerDeviceToken
 ```Objective-C
