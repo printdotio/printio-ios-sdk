@@ -250,6 +250,14 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 - (void)presentFromViewController:(UIViewController *)viewController
                        withOption:(int)option;
 ```
+**Sample code:**
+```Objective-C
+PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
+                                              environment:PRINTIO_STAGING
+                                       productionRecipeId:nil
+                                          stagingRecipeId:@"00000000-0000-0000-0000-000000000000"];
+[printIO presentFromViewController:self withOption:PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM];
+```
 ######- viewController
 ``` Objective-C
 /**
@@ -257,12 +265,20 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
  */
 - (id)viewController;
 ```
+**Sample code:**
+```Objective-C
+[printIO viewController];
+```
 ######- close
 ``` Objective-C
 /**
  Close widget
  */
 - (void)close:(NSInteger)flag;
+```
+**Sample code:**
+```Objective-C
+[printIO close];
 ```
 ######- goToProductId
 ```Objective-C
@@ -272,6 +288,11 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
  @param productId Product identifier can be found in ProductIds.h and starts with PRODUCT_
  */
 - (void)goToProductId:(int)productId;
+```
+**Sample code:**
+```Objective-C
+[printIO goToProductId:PRODUCT_PHONE_CASES()];
+[printIO open];
 ```
 ######- goToProductId:withSKU
 ```Objective-C
@@ -283,6 +304,11 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
  */
 - (void)goToProductId:(int)productId withSKU:(NSString *)sku;
 ```
+**Sample code:**
+```Objective-C
+[printIO goToProductId:PRODUCT_PHONE_CASES() withSKU:@"PhoneCase-iphone5S-Matte"];
+[printIO open];
+```
 ######- setVariantsOptions
 ```Objective-C
 /**
@@ -291,6 +317,19 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
  @param options Array of PIOVariantOption objects. Pass 'color' with Case Style option
  */
 - (void)setVariantsOptions:(NSArray *)options;
+```
+**Sample code:**
+```Objective-C
+// Galaxy Note 10.0
+PIOVariantOption *option1 = [[PIOVariantOption alloc]initWithProductId:PRODUCT_TABLET_CASES()
+                                                              optionId:@"db7b1f755f10457cb2aef7ee9bf58177"
+                                                               valueId:@"db0440e48e2c43d4851ed784af35263f"];
+// Case Sytle Glossy
+PIOVariantOption *option2 = [[PIOVariantOption alloc]initWithProductId:PRODUCT_TABLET_CASES()
+                                                              optionId:@"2729db9407ba441d9bd257cc158d8ce9"
+                                                               valueId:@"0058706aaaa7482585a09ac5437f4009"];
+[printIO setVariantsOptions:@[option1, option2];
+[printIO open];
 ```
 ###Utils
 ######- turnOffLogs
@@ -301,6 +340,10 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
  @param set Default value is NO
  */
 - (void)turnOffLogs:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
+[printIO turnOffLogs:YES];
 ```
 ###Country, Currency and Language
 ######- setCountryCode
