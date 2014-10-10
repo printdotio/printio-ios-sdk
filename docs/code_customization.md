@@ -155,7 +155,7 @@ Developer SDK Customization Reference
        productionRecipeId:(NSString *)pRecipeId
           stagingRecipeId:(NSString *)sRecipeId;
 ```
-Sample code
+**Sample code:**
 ```Objective-C
 PrintIO *printIO = [[PrintIO alloc]initWithEnvironment:PRINTIO_STAGING
                                     productionRecipeId:nil
