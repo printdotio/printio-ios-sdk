@@ -2259,9 +2259,31 @@ NSMutableAttributedString *message = [[NSMutableAttributedString alloc]initWithS
 ```
 **Sample code:**
 ```Objective-C
-[printIO setParseApplicationId:@"app_id" apiKey:@"api_key"];
-//... other customization
-[printIO open];
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+  ...
+
+  // Set Parse application id and api key
+  [PrintIO setParseApplicationId:kAppID apiKey:kApiKey];
+
+  // Register for push notifications
+  if ([application respondsToSelector:@selector(isRegisteredForRemoteNotifications)]) {
+
+    // iOS 8 Notifications
+    [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:
+    (UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
+
+    [application registerForRemoteNotifications];
+  } else {
+
+     // iOS < 8 Notifications
+     [application registerForRemoteNotificationTypes:
+     (UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert)];
+  }
+  // ...
+
+  return YES;
+}
 ```
 ######- registerDeviceToken
 ```Objective-C
@@ -2274,6 +2296,10 @@ NSMutableAttributedString *message = [[NSMutableAttributedString alloc]initWithS
 ```
 **Sample code:**
 ```Objective-C
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+  [PrintIO registerDeviceToken:deviceToken];
+}
 ```
 ######- showNotification:backgroundColor:textColor
 ```Objective-C
@@ -2290,4 +2316,10 @@ NSMutableAttributedString *message = [[NSMutableAttributedString alloc]initWithS
 ```
 **Sample code:**
 ```Objective-C
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+  [PrintIO showNotification:userInfo
+            backgroundColor:[UIColor blackColor]
+                  textColor:[UIColor whiteColor]];
+}
 ```
