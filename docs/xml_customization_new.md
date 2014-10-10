@@ -191,3 +191,30 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+###Dialog Address Type
+```XML
+<customization>
+  <screen name="dialog_address_type">
+    <button name="button_left"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" image_name="image_name" image_format="image_format" />
+    <button name="button_right"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" image_name="image_name" image_format="image_format"/>
+    <label name="label_left" title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <label name="label_right" title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
+###Dialog Loading
+```XML
+<customization>
+  <screen name="dialog_loading">
+    <button name="button_1"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
+###Dialog Select ZIP Code
+```XML
+<customization>
+  <screen name="button_cancel">
+    <button name="button_1"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
