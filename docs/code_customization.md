@@ -1242,6 +1242,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setFeaturedProductsBackgroungImage:[[NSBundle mainBundle] pathForResource:@"bcg" ofType:@"png"]];
+//... other customization
+[printIO open];
 ```
 ###Screen 'Product Details'
 ######- productDetailsShowTitleBelowNavBar
@@ -1255,6 +1258,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO productDetailsShowTitleBelowNavBar:YES];
+//... other customization
+[printIO open];
 ```
 ######- productDetailsShowMenuBtnInNavBar
 ```Objective-C
@@ -1267,6 +1273,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO productDetailsShowMenuBtnInNavBar:YES];
+//... other customization
+[printIO open];
 ```
 ######- setQualityGuaranteeText
 ```Objective-C
@@ -1279,6 +1288,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setQualityGuaranteeText:@"Quality Guarantee text goes here."];
+//... other customization
+[printIO open];
 ```
 ###Photo sources
 ######- setAvailablePhotoSources
@@ -1300,6 +1312,26 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+// Instagram
+PIOSideMenuButton *btnSInstagram = [[PIOSideMenuButton alloc]initWithType:PIO_SM_INSTAGRAM];
+btnSInstagram.iconPath = [[NSBundle mainBundle]pathForResource:@"instagram" ofType:@"png"];
+btnSInstagram.iconPathSelected = [[NSBundle mainBundle]pathForResource:@"instagram_selected" ofType:@"png"];
+btnSInstagram.textColor = [UIColor blackColor];
+btnSInstagram.useBoldFonts = YES;
+    
+// Phone
+PIOSideMenuButton *btnSPhone = [[PIOSideMenuButton alloc]initWithType:PIO_SM_PHONE];
+    
+// Facebook
+PIOSideMenuButton *btnSFacebook = [[PIOSideMenuButton alloc]initWithType:PIO_SM_FACEBOOK];
+btnSFacebook.iconPath = [[NSBundle mainBundle]pathForResource:@"facebook" ofType:@"png"];
+btnSFacebook.iconPathSelected = [[NSBundle mainBundle]pathForResource:@"facebook_selected" ofType:@"png"];
+btnSFacebook.textColor = [UIColor blackColor];
+btnSFacebook.useBoldFonts = YES;
+    
+[printIO setAvailablePhotoSources:[NSArray arrayWithObjects:btnSPhone, btnSInstagram, btnSFacebook, nil]];
+//... other customization
+[printIO open];
 ```
 ######- setDefaultPhotoSource:albumId
 ```Objective-C
@@ -1324,6 +1356,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setDefaultPhotoSource:PIO_PS_FACEBOOK albumId:@""];
+//... other customization
+[printIO open];
 ```
 ######- setImages
 ```Objective-C
@@ -1337,6 +1372,11 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+UIImage *image = ...
+NSArray *images = @[@"http://www.google.com/landscape.jpeg", image]; 
+[printIO setImages:images];
+//... other customization
+[printIO open];
 ```
 ######- disablePhotoSourcesWhenImagesArePassedIn
 ```Objective-C
@@ -1350,6 +1390,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO disablePhotoSourcesWhenImagesArePassedIn:YES];
+//... other customization
+[printIO open];
 ```
 ######- disablePhotoSourcesForOnePhotoTemplate
 ```Objective-C
@@ -1361,6 +1404,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO disablePhotoSourcesForOnePhotoTemplate:YES];
+//... other customization
+[printIO open];
 ```
 ######- setPassedImageFirstInPhotoSources
 ```Objective-C
@@ -1371,6 +1417,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setPassedImageFirstInPhotoSources:YES];
+//... other customization
+[printIO open];
 ```
 ######- setPassedImageAsThumbForOnePhotoTemplate
 ```Objective-C
@@ -1382,6 +1431,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setPassedImageAsThumbForOnePhotoTemplate:YES];
+//... other customization
+[printIO open];
 ```
 ######- hideIconForUploadInstructions
 ```Objective-C
@@ -1392,6 +1444,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO hideIconForUploadInstructions:YES];
+//... other customization
+[printIO open];
 ```
 ######- setInstagramClientID:redirectUrl
 ```Objective-C
@@ -1404,6 +1459,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setInstagramClientID:@"client_id" redirectUrl:@"redirect_url"];
+//... other customization
+[printIO open];
 ```
 ######- setInstagramAccessToken
 ```Objective-C
@@ -1416,6 +1474,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setInstagramAccessToken:@"access_token"];
+//... other customization
+[printIO open];
 ```
 ######- setFlickrKey:secretKey:redirectUrl
 ```Objective-C
@@ -1428,6 +1489,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setFlickrKey:@"flick_key" secretKey:@"secret_key" redirectUrl:@"redirect_url"];
+//... other customization
+[printIO open];
 ```
 ######- setDropboxKey:redirectUrl
 ```Objective-C
@@ -1439,6 +1503,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setDropboxKey:@"dropbox_key" redirectUrl:@"redirect_url"];
+//... other customization
+[printIO open];
 ```
 ######- setFacebookAppId:redirectUrl
 ```Objective-C
@@ -1450,6 +1517,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setFacebookAppId:@"fb_app_id" redirectUrl:@"redirect_url"];
+//... other customization
+[printIO open];
 ```
 ######- setFacebookAccessToken
 ```Objective-C
@@ -1462,6 +1532,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setFacebookAccessToken:@"access_token"];
+//... other customization
+[printIO open];
 ```
 ######- enableShareOnFacebookDeal
 ```Objective-C
@@ -1474,6 +1547,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO enableShareOnFacebookDeal:YES];
+//... other customization
+[printIO open];
 ```
 ######- setPhotobucketUsername:password
 ```Objective-C
@@ -1488,6 +1564,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setPhotobucketUsername:@"user_name" password:@"password"];
+//... other customization
+[printIO open];
 ```
 ######- setPhotobucketAccessToken:userName:baseURL
 ```Objective-C
@@ -1504,6 +1583,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setPhotobucketAccessToken:@"access_token" userName:@"user_name" baseURL:@"base_url"];
+//... other customization
+[printIO open];
 ```
 ######- setTitleForPhotoSourcesScreen
 ```Objective-C
@@ -1516,6 +1598,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setTitleForPhotoSourcesScreen:@"Title"];
+//... other customization
+[printIO open];
 ```
 ######- autoSelectOnePhotoTemplateForProductID
 ```Objective-C
@@ -1528,6 +1613,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO autoSelectOnePhotoTemplateForProductID:PRODUCT_PHONE_CASES()];
+//... other customization
+[printIO open];
 ```
 ######- disableAutoRecognizePhoneModel
 ```Objective-C
@@ -1540,6 +1628,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO disableAutoRecognizePhoneModel:YES];
+//... other customization
+[printIO open];
 ```
 ###Screen 'Customize/Edit Product'
 ######- showToolbarInCustomizeProduct:backgroundImage
@@ -1555,6 +1646,10 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO showToolbarInCustomizeProduct:NO
+                       backgroundImage:[[NSBundle mainBundle]pathForResource:@"toolbar_bcg" ofType:@"png"]];
+//... other customization
+[printIO open];
 ```
 ######- hideImagesListInCustomizeProduct
 ```Objective-C
@@ -1565,6 +1660,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO hideImagesListInCustomizeProduct:YES];
+//... other customization
+[printIO open];
 ```
 ######- setPhotoArrangement
 ```Objective-C
@@ -1581,6 +1679,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setPhotoArrangement:PIO_PHOTO_ARRANGEMENT_AUTO];
+//... other customization
+[printIO open];
 ```
 ######- setIconForAddPhotosButton
 ```Objective-C
@@ -1593,6 +1694,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setIconForAddPhotosButton:[[NSBundle mainBundle]pathForResource:@"add_photos" ofType:@"png"]];
+//... other customization
+[printIO open];
 ```
 ######- setIconForHelpButtonInCustomizeProduct:visible
 ```Objective-C
