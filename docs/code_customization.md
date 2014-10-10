@@ -211,6 +211,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
                                               environment:PRINTIO_STAGING
                                        productionRecipeId:nil
                                           stagingRecipeId:@"00000000-0000-0000-0000-000000000000"];
+//... other customization
 [printIO open];
 ```
 ######- openWithOption
@@ -233,6 +234,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
                                               environment:PRINTIO_STAGING
                                        productionRecipeId:nil
                                           stagingRecipeId:@"00000000-0000-0000-0000-000000000000"];
+//... other customization
 [printIO openWithOption:PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM | PRINTIO_ENABLE_BACK_BUTTON];
 ```
 ######- presentFromViewController
@@ -256,6 +258,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
                                               environment:PRINTIO_STAGING
                                        productionRecipeId:nil
                                           stagingRecipeId:@"00000000-0000-0000-0000-000000000000"];
+//... other customization
 [printIO presentFromViewController:self withOption:PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM];
 ```
 ######- viewController
@@ -292,6 +295,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 **Sample code:**
 ```Objective-C
 [printIO goToProductId:PRODUCT_PHONE_CASES()];
+//... other customization
 [printIO open];
 ```
 ######- goToProductId:withSKU
@@ -307,6 +311,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 **Sample code:**
 ```Objective-C
 [printIO goToProductId:PRODUCT_PHONE_CASES() withSKU:@"PhoneCase-iphone5S-Matte"];
+//... other customization
 [printIO open];
 ```
 ######- setVariantsOptions
@@ -329,6 +334,7 @@ PIOVariantOption *option2 = [[PIOVariantOption alloc]initWithProductId:PRODUCT_T
                                                               optionId:@"2729db9407ba441d9bd257cc158d8ce9"
                                                                valueId:@"0058706aaaa7482585a09ac5437f4009"];
 [printIO setVariantsOptions:@[option1, option2];
+//... other customization
 [printIO open];
 ```
 ###Utils
@@ -358,6 +364,7 @@ PIOVariantOption *option2 = [[PIOVariantOption alloc]initWithProductId:PRODUCT_T
 **Sample code:**
 ```Objective-C
 [printIO setCountryCode:@"US"];
+//... other customization
 [printIO open];
 ```
 ######- setCurrencyCode
@@ -387,7 +394,7 @@ PIOVariantOption *option2 = [[PIOVariantOption alloc]initWithProductId:PRODUCT_T
 **Sample code:**
 ```Objective-C
 [printIO setLanguageCode:@"en"];
-//...
+//... other customization
 [printIO open];
 ```
 ###General UI customization
@@ -406,7 +413,7 @@ NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"customization" ofTy
 NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];
 
 [printIO setCustomizationXML:xmlData];
-//...
+//... other customization
 [printIO open];
 ```
 ######- setFonts
@@ -418,6 +425,13 @@ NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];
  system (normal, bold and italic) UIFont objects.
  */
 - (void)setFonts:(NSArray *)fonts;
+```
+**Sample code:**
+```Objective-C
+NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_Bold.ttf"];
+[printIO setFonts:fonts];
+//... other customization
+[printIO open];
 ```
 ######- changeSizeOfLightFontsBy
 ```Objective-C
