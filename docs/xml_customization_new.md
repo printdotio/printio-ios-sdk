@@ -184,8 +184,10 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
 ```XML
 <customization>
   <screen name="dialog_two_buttons">
-    <button name="button_left"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
-    <button name="button_right"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <button name="button_left"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" image_name="image_name" image_format="image_format" />
+    <button name="button_right"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" image_name="image_name" image_format="image_format"/>
+    <label name="label_left" title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <label name="label_right" title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
   </screen>
 </customization>
 ```
