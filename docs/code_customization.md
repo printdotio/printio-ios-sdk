@@ -912,6 +912,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO sideMenuHideOptionsHeader:YES];
+//... other customization
+[printIO open];
 ```
 ######- sideMenuHideAccountsHeader
 ```Objective-C
@@ -922,6 +925,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO sideMenuHideAccountsHeader:YES];
+//... other customization
+[printIO open];
 ```
 ######- sideMenuHideInfoHeader
 ```Objective-C
@@ -932,6 +938,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO sideMenuHideInfoHeader:YES];
+//... other customization
+[printIO open];
 ```
 ######- sideMenuShowOptionsAsList
 ```Objective-C
@@ -944,6 +953,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO sideMenuShowOptionsAsList:YES];
+//... other customization
+[printIO open];
 ```
 ######- slideSideMenuFromRight
 ```Objective-C
@@ -956,6 +968,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO slideSideMenuFromRight:YES];
+//... other customization
+[printIO open];
 ```
 ######- setShareText:additionalText
 ```Objective-C
@@ -969,6 +984,10 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setShareText:@"I'm using YouApp! Here is a <a href=\"https://itunes.apple.com/US/app/id559500608?mt=8\">link</a> for you to download." 
+       additionalText:@"Made in #YourApp @YourApp"];
+//... other customization
+[printIO open];
 ```
 ######- hidePhotoSourcesInSideMenu
 ```Objective-C
@@ -981,6 +1000,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO hidePhotoSourcesInSideMenu:YES];
+//... other customization
+[printIO open];
 ```
 ######- sideMenuBackgroungImage
 ```Objective-C
@@ -993,6 +1015,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO sideMenuBackgroungImage:[[NSBundle mainBundle]pathForResource:@"sm_bcg" ofType:@"png"]];
+//... other customization
+[printIO open];
 ```
 ######- setHowItWorksText
 ```Objective-C
@@ -1005,6 +1030,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setHowItWorksText:@"A lot of text..."];
+//... other customization
+[printIO open];
 ```
 ######- setAboutText
 ```Objective-C
@@ -1017,6 +1045,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setAboutText:@"About text is..."];
+//... other customization
+[printIO open];
 ```
 ######- setLikeUsOnFacebookUrl
 ```Objective-C
@@ -1029,6 +1060,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setLikeUsOnFacebookUrl:@"fb://profile/642169949144369"];
+//... other customization
+[printIO open];
 ```
 ######- setAppIDFromAppleStore
 ```Objective-C
@@ -1042,6 +1076,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setAppIDFromAppleStore:@"731593327"];
+//... other customization
+[printIO open];
 ```
 ###Screen 'Choose Country'
 ######- setTitleForChooseCountryScreen
@@ -1055,6 +1092,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO setTitleForChooseCountryScreen:@"Title"];
+//... other customization
+[printIO open];
 ```
 ######- hideSearchIconInChooseCountryScreen
 ```Objective-C
@@ -1067,6 +1107,9 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```
 **Sample code:**
 ```Objective-C
+[printIO hideSearchIconInChooseCountryScreen:YES];
+//... other customization
+[printIO open];
 ```
 ######- setPlaceholderTextForSearchBarInChooseCountryScreen:hideMagnifyingGlass
 ```Objective-C
