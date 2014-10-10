@@ -5,7 +5,7 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
 
   - [**Screens**]()
     - [*Choose Country*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/xml_customization_new.md#choose-country)
-    - [*Product Details*]()
+    - [*Product Details*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/xml_customization_new.md#product-details)
     - [*Image Preview*]()
     - [*Photo Sources*]()
     - [*Customize Product*]()
