@@ -9,7 +9,6 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
     - [*Image Preview*]()
     - [*Photo Sources*]()
     - [*Customize Product*]()
-    - [*Customize Product(List View)*]()
     - [*Image Editor*]()
     - [*Shopping Cart*]()
     - [*Add Address*]()
@@ -61,6 +60,37 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+###Photo Sources
+```XML
+<customization>
+  <screen name="photo_sources">
+    <button name="button_next"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <label name="label_title"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <label name="label_down"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
+###Customize Product
+```XML
+<customization>
+  <screen name="customize_product">
+    <button name="button_help" title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <image_view name="pop_up_image_view" image_name="image_name" image_format="image_format" />
+    <label name="pop_up_label" title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
+###Image Editor
+```XML
+<customization>
+  <screen name="image_editor">
+    <button name="button_1" title="title" bcg_color="#D1D1D1" font_color="#2277D4" image_name="image_name" image_format="image_format"/>
+    <button name="button_2" title="title" bcg_color="#D1D1D1" font_color="#2277D4" image_name="image_name" image_format="image_format"/>
+    <button name="button_3" title="title" bcg_color="#D1D1D1" font_color="#2277D4" image_name="image_name" image_format="image_format"/>
+    <button name="button_4" title="title" bcg_color="#D1D1D1" font_color="#2277D4" image_name="image_name" image_format="image_format"/>
+  </screen>
+</customization>
+```
 ###Shopping Cart
 ```XML
 <customization>
@@ -104,6 +134,58 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   <screen name="shipment_review">
     <button name="button_enter"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
     <button name="button_remove"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
+###Payment Options
+```XML
+<customization>
+  <screen name="payment_methods">
+    <button name="button_pay"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <button name="button_pay_down"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
+###Credit Card
+```XML
+<customization>
+  <screen name="credit_card">
+    <button name="button_1"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <button name="button_2"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
+###Payment Date Picker
+```XML
+<customization>
+  <screen name="payment_date_picker">
+    <button name="button_1"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
+###Order Confirmation
+```XML
+<customization>
+  <screen name="order_confirmation">
+    <button name="button_close"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
+###Dialog Two Buttons
+```XML
+<customization>
+  <screen name="dialog_two_buttons">
+    <button name="button_left"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <button name="button_right"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+  </screen>
+</customization>
+```
+###Dialog Arrange Photos
+```XML
+<customization>
+  <screen name="dialog_two_buttons">
+    <button name="button_left"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
+    <button name="button_right"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
   </screen>
 </customization>
 ```
