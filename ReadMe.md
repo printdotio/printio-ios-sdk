@@ -1,7 +1,7 @@
 PrintIO iOS SDK
 ===============
 
-The PrintIO SDK for iOS enables you to integrate the capabilities of our platform into your iOS applications.
+The PrintIO iOS SDK enables you to integrate our platforms commerce tools and connect to the largest international print on demand network.
 
 ![](https://dl.dropboxusercontent.com/u/19321066/printIO/printio_sdk_screens.png)
 
