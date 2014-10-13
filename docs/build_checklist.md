@@ -131,9 +131,6 @@ These options are not all required, however many are recommended to offer a grea
     - Staging Encryption Key
     - Production Encryption Key
     - 
-    - 
-    - 
 
-# Required Steps to make SDK into a full app
 
 
