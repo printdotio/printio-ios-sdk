@@ -15,5 +15,10 @@ Our SDK allows you to select which features and functionality you need as well a
 - [Basic usage code](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/quick_start_sample_code.md) if you'd like a little more guidance.
 - [SDK customization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md) for in depth descriptions of the in-code customization options available.
 - [XML customization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/xml_customization_new.md) for  customization options available via XML configuration.
+
+
+### Sample App SDK
 - [PrintIOSDKSample app](https://github.com/printdotio/printio-ios-example) for a more comprehensive demonstration of the PrintIO SDK.
+
+### Optional Services: Reference Docs
 - [Push Notifications](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/PUSH_NOTIFICATIONS.md) the PrintIO SDK also offers the ability to send push notifications from your app.
