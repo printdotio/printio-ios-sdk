@@ -1,28 +1,32 @@
 # API-Level Customizations
 
 
-By setting an account in print.io admin panel, You will receive a recipe ID (your partner key). You will receive from someone on our sales and accounts team a recipe ID for both the staging and live enviornments. 
+By setting an account in printio's admin panel, you will receive a recipe ID (your partner key). Please contact your account rep to make sure you obtain the recipe ID for both the staging and live enviornments. 
 
 
-This key or recipe ID will pass to your SDK instance or API call the specific values below:
+This key/recipe ID will pass your store specific information to your SDK instance or API call.
 
-The products you have choosen to offer
+Your store specific information includes:
 
-The order products are displayed on Product List Screen
+- The products you have choosen to offer
 
-The product display name
+- The sort order of products to be displayed
 
-The product pictures 
+- The display name of the product
 
-The Product Description and Product Details
+- Product pictures 
 
-Product Prices
+- Product Description and Product Details
 
-Shipping Prices
+- Product Prices
 
-Retail Prices
+- Shipping Prices
 
-The SKUs and options you have selected to offer for the product
+- Retail Prices or MSRP
+
+- Coupons
+
+- The specific SKUs and options you have selected to offer for each product
 
 
 
