@@ -76,6 +76,7 @@ Developer SDK Customization Reference
       - [*-setImages*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setimages)
       - [*-disablePhotoSourcesWhenImagesArePassedIn*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablephotosourceswhenimagesarepassedin)
       - [*-disablePhotoSourcesForOnePhotoTemplate*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablephotosourcesforonephototemplate)
+      - [*-enablePhotoSourcesInCustomizeProduct*]()
       - [*-setPassedImageFirstInPhotoSources*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpassedimagefirstinphotosources)
       - [*-setPassedImageAsThumbForOnePhotoTemplate*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpassedimageasthumbforonephototemplate)
       - [*-hideIconForUploadInstructions*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideiconforuploadinstructions)
@@ -1405,6 +1406,20 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 **Sample code:**
 ```Objective-C
 [printIO disablePhotoSourcesForOnePhotoTemplate:YES];
+//... other customization
+[printIO open];
+```
+######- enablePhotoSourcesInCustomizeProduct
+```Objective-C
+/**
+ Enables photo sources in Customize Product screen only, if they're disabled 
+ using methods 'disablePhotoSourcesWhenImagesArePassedIn' and 'disablePhotoSourcesForOnePhotoTemplate'
+ */
+- (void)enablePhotoSourcesInCustomizeProduct:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
+[printIO enablePhotoSourcesInCustomizeProduct:YES];
 //... other customization
 [printIO open];
 ```
