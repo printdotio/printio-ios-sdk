@@ -1115,7 +1115,7 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ######- setPlaceholderTextForSearchBarInChooseCountryScreen:hideMagnifyingGlass
 ```Objective-C
 /**
- Change placeholder text in search bar, and set magnifying glass vissible or hidden
+ Change placeholder text in search bar, and set magnifying glass visible or hidden
 
  @param text Placeholder text
  @param set Default value is NO
