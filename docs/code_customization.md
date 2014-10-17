@@ -1231,7 +1231,7 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 //... other customization
 [printIO open];
 ```
-######- setFeaturedProductsBackgroungImage
+######- setFeaturedProductsBackgroundImage
 ```Objective-C
 /**
  Set background image on Featured Products screen
@@ -1239,11 +1239,11 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
  
  @param imagePath Path to image file.
  */
-- (void)setFeaturedProductsBackgroungImage:(NSString *)imagePath;
+- (void)setFeaturedProductsBackgroundImage:(NSString *)imagePath;
 ```
 **Sample code:**
 ```Objective-C
-[printIO setFeaturedProductsBackgroungImage:[[NSBundle mainBundle] pathForResource:@"bcg" ofType:@"png"]];
+[printIO setFeaturedProductsBackgroundImage:[[NSBundle mainBundle] pathForResource:@"bcg" ofType:@"png"]];
 //... other customization
 [printIO open];
 ```
