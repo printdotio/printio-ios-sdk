@@ -21,6 +21,7 @@ extern int PRODUCT_CANVAS_POSTERS();
 extern int PRODUCT_COASTERS();
 extern int PRODUCT_DELUXE_MINIBOOK();
 extern int PRODUCT_DESKTOP_CALENDARS();
+extern int PRODUCT_DOG_BEDS();
 extern int PRODUCT_FLAT_CARDS();
 extern int PRODUCT_FLEECE_BLANKETS();
 extern int PRODUCT_FOLDED_CARDS();
