@@ -50,10 +50,15 @@ Developer SDK Customization Reference
       - [*-sideMenuHideAccountsHeader*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuhideaccountsheader)
       - [*-sideMenuHideInfoHeader*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuhideinfoheader)
       - [*-sideMenuShowOptionsAsList*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenushowoptionsaslist)
+      - [*-slideSideMenuFromRight*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--slidesidemenufromright)
+      - [*-setShareText:additionalText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setsharetextadditionaltext)
+      - [*-hidePhotoSourcesInSideMenu*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidephotosourcesinsidemenu)
+      - [*-sideMenuBackgroungImage*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenubackgroungimage)
       - [*-setHowItWorksText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sethowitworkstext)
       - [*-setAboutText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setabouttext)
       - [*-setLikeUsOnFacebookUrl*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setlikeusonfacebookurl)
       - [*-setAppIDFromAppleStore*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setappidfromapplestore)
+      - [*-hideVersionInSideMenu]()
    - [**Screen 'Choose Country'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-choose-country)
       - [*-setTitleForChooseCountryScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchoosecountryscreen)
       - [*-hideSearchIconInChooseCountryScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidesearchiconinchoosecountryscreen)
@@ -1078,6 +1083,21 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 **Sample code:**
 ```Objective-C
 [printIO setAppIDFromAppleStore:@"731593327"];
+//... other customization
+[printIO open];
+```
+######- hideVersionInSideMenu
+```Objective-C
+/**
+ Hide version label from side menu
+ 
+ @param set Default value is NO
+ */
+- (void)hideVersionInSideMenu:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
+[printIO hideVersionInSideMenu:YES];
 //... other customization
 [printIO open];
 ```
