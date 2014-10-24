@@ -510,7 +510,7 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [11]: https://lh6.googleusercontent.com/-ZmCY9Znsjjs/VEqB9PoGyPI/AAAAAAAAAXU/hG1YhP-UKKQ/w400-h710-no/shopping_cart_2.png
  [12]: https://lh5.googleusercontent.com/-vqluXSp35sw/VEqDkqJVCjI/AAAAAAAAAYA/NpssAZk_i5k/w400-h710-no/address_1_small.png
  [13]: https://lh6.googleusercontent.com/-hXRULeLMXEI/VEqDk5cd4bI/AAAAAAAAAYE/AH-8G9dIsa8/w400-h710-no/address_2_small.png
- [14]: https://lh5.googleusercontent.com/-oYMBrKojnsY/VEo5_CFCwuI/AAAAAAAAARE/9VBFUsFxg-Y/w501-h889-no/7.png
+ [14]: https://lh5.googleusercontent.com/-M6y6zFnKzUc/VEqFECsdrRI/AAAAAAAAAY0/NVFmEs6WKIM/w400-h710-no/payment_screen_small.png
  [15]: https://lh5.googleusercontent.com/-VbxBI_gobq0/VEo5_cP_ZfI/AAAAAAAAARA/B_IIM-A0F5k/w501-h889-no/8.png
  [16]: https://lh4.googleusercontent.com/-dGXV5Y7TfsM/VEo5_3Ge36I/AAAAAAAAARI/10CvQ6ggUpE/w501-h889-no/9.png
  [17]: https://lh4.googleusercontent.com/-y6knzKu8-j4/VEo52R9G9_I/AAAAAAAAAPY/o5TY9EK4Hr8/w501-h889-no/10.png
