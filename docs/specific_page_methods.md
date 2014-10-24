@@ -107,6 +107,8 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ## D. Select Photos screen
 
+![enter image description here][4]
+
 D1. Customize the title on the photo sources screen. Default value is "Select Photos".
 
 - setTitleForPhotoSourcesScreen
@@ -135,6 +137,73 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
+## E. Customization screen
+
+![enter image description here][4]
+
+E1. Set whether photos are arranged automatically, manually, or up to the user (default is CHOOSE).
+
+- setPhotoArrangement 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setphotoarrangement  
+
+E2. Specify an image file to use as the help icon in customize product view. Default value is YES.
+
+- setIconForHelpButtonInCustomizeProduct
+- visible
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforhelpbuttonincustomizeproductvisible 
+
+E3. Show custom help overlay when user is about to start editing image in Customize Product view.
+
+- showHelpDialogWithImage 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showhelpdialogwithimage
+
+E4. Specify an image file to use as the Add Photos button in the Customize Product view.
+
+- setIconForAddPhotosButton 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforaddphotosbutton 
+
+E5. Set visibility of toolbar in customize product view. Default is YES.
+
+- showToolbarInCustomizeProduct
+- backgroundImage 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showtoolbarincustomizeproductbackgroundimage
+
+E6. Set visibility of images list in customize product view. 
+	Missing in new docs
+
+- hideImageListInCustomizeProduct
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/ios_sdk_customization.md#images-list-visible 
+
+E7. Customize the Double tap balloon on the Customize Product screen.
+
+- setPopUpWithImage
+- text
+- textColor 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpopupwithimagetexttextcolor 
+
+E8. Customize the how many seconds the Double tap balloon is visible for in the customize product view. The default time is 10 seconds.
+
+- setDoubleTapBalloonVisibilityTime
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdoubletapballoonvisibilitytime
+
+E9. Hide/Show 'Watch Video' button on Customize Product screen. Default value is NO. 
+
+- hideWatchVideoButton 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidewatchvideobutton
+
+---
+
  [1]: https://lh6.googleusercontent.com/-2Lz2VAdbNd0/VEooKvJnY5I/AAAAAAAAALI/N1Tll8ZLrX8/w501-h889-no/1a.png
  [2]: https://lh5.googleusercontent.com/-8EfndISLMHY/VEou9zVdK9I/AAAAAAAAAL0/ye5r_Y5WRtA/w501-h889-no/IMG_2603.PNG
  [3]: https://lh4.googleusercontent.com/-2GyJzBSpHaw/VEo2t0ggo5I/AAAAAAAAAMc/jaXhKHZmFCQ/w501-h889-no/2.png
+ [4]: https://lh4.googleusercontent.com/-Ew1RyKW276Q/VEo538oemaI/AAAAAAAAAP0/XZj6R4p4_pI/w501-h889-no/3.png
+ [5]: https://lh5.googleusercontent.com/-nBgt-cpuyao/VEo549UpANI/AAAAAAAAAP8/xqoFbFy-0xI/w501-h889-no/4a.png
