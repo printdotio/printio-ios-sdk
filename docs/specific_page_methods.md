@@ -501,10 +501,10 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [2]: https://lh3.googleusercontent.com/-_977PRHV-xs/VEptrXemYmI/AAAAAAAAATk/Qxi83xKMO8o/w400-h710-no/product_details_screen_small.png
  [3]: https://lh3.googleusercontent.com/-KAeQ_QBdzmo/VEpwbALD7SI/AAAAAAAAAUU/pr6ZHCEeSC0/w400-h710-no/choose_options_small.png
  [4]: https://lh4.googleusercontent.com/-s9jvJicgTeE/VEpyGlJaWSI/AAAAAAAAAU4/a64rL_PUhIQ/w400-h710-no/select_photos_screen_small.png
- [5]: https://lh5.googleusercontent.com/-nBgt-cpuyao/VEo549UpANI/AAAAAAAAAP8/xqoFbFy-0xI/w501-h889-no/4a.png
- [6]: https://lh4.googleusercontent.com/-zERcUguYZHU/VEo57dT2_RI/AAAAAAAAAQM/G7iJi8ppcdI/w501-h889-no/4b.png
- [7]: https://lh3.googleusercontent.com/-wgqo4uBzSus/VEo58lNwlmI/AAAAAAAAAQY/fZhUTdxMloQ/w501-h889-no/4c.png
- [8]: https://lh3.googleusercontent.com/-ee0LOXe7UK4/VEo561H_pAI/AAAAAAAAAQI/j0TIZi4aaAQ/w501-h889-no/4d.png
+ [5]: https://lh5.googleusercontent.com/-mJ30WzblN2k/VEp4LTNo2TI/AAAAAAAAAV8/ZheRJT_lej8/w400-h710-no/image_arragament.png
+ [6]: https://lh5.googleusercontent.com/-nRXU-cjMcKY/VEp4Kl-HzgI/AAAAAAAAAV4/EF8KF80yics/w400-h710-no/customization_screen_1.png
+ [7]: https://lh3.googleusercontent.com/-ZNdiRfOLidA/VEp4K-_AqWI/AAAAAAAAAV0/stUQbOKIgwY/w400-h710-no/customization_screen_2.png
+ [8]: https://lh6.googleusercontent.com/-tEY8-_DukWo/VEp4KpwUFZI/AAAAAAAAAWA/1i2Hac3HtdU/w400-h710-no/customization_screen_3.png
  [9]: https://lh6.googleusercontent.com/-WT0k3Pkx7u4/VEo5-qR_5BI/AAAAAAAAARQ/KAA--VFZA0Q/w501-h889-no/4e.png
  [10]: https://lh6.googleusercontent.com/-yKVfa0_JrYo/VEo59RSIF0I/AAAAAAAAAQc/qn3gg2vmAvs/w501-h889-no/5.png
  [11]: https://lh5.googleusercontent.com/-XM3mGuk2YVk/VEo59x0taQI/AAAAAAAAARU/NcJ2rrR8grg/w501-h889-no/5a.png
