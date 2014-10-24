@@ -1,4 +1,4 @@
-## Choose Options
+## Choose Options screen
 
 ![enter image description here][1]
 
