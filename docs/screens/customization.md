@@ -1,7 +1,12 @@
 ## Customization screen
 
-![enter image description here][1] | ![enter image description here][2]
-![enter image description here][3] | ![enter image description here][4]
+![enter image description here][1] 
+---
+![enter image description here][2]
+---
+![enter image description here][3]
+---
+![enter image description here][4]
 
 A. Set whether photos are arranged automatically, manually, or up to the user (default is CHOOSE).
 
