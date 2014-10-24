@@ -64,5 +64,5 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.
 
 
 
- [1]: https://dl-web.dropbox.com/get/Public/1a.png
+ [1]: https://lh6.googleusercontent.com/-2Lz2VAdbNd0/VEooKvJnY5I/AAAAAAAAALI/N1Tll8ZLrX8/w501-h889-no/1a.png
 
