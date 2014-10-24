@@ -1,4 +1,4 @@
-## Select Photos
+## Select Photos screen
 
 ![enter image description here][1]
 
