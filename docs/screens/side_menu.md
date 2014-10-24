@@ -1,6 +1,7 @@
 ## Side Menu screen 
 
 ![enter image description here][1]
+---
 ![enter image description here][2]
 
 A. Change background color for Side Menu. Default value is black.
