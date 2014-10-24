@@ -374,6 +374,17 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
+## L. About screen
+
+![enter image description here][17]
+
+L1. Customize the text content of the About page to fit your application's brand and voice.
+
+- setAboutText 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setabouttext
+
+---
 
 
  [1]: https://lh6.googleusercontent.com/-2Lz2VAdbNd0/VEooKvJnY5I/AAAAAAAAALI/N1Tll8ZLrX8/w501-h889-no/1a.png
@@ -392,3 +403,4 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [14]: https://lh5.googleusercontent.com/-oYMBrKojnsY/VEo5_CFCwuI/AAAAAAAAARE/9VBFUsFxg-Y/w501-h889-no/7.png
  [15]: https://lh5.googleusercontent.com/-VbxBI_gobq0/VEo5_cP_ZfI/AAAAAAAAARA/B_IIM-A0F5k/w501-h889-no/8.png
  [16]: https://lh4.googleusercontent.com/-dGXV5Y7TfsM/VEo5_3Ge36I/AAAAAAAAARI/10CvQ6ggUpE/w501-h889-no/9.png
+ [17]: https://lh4.googleusercontent.com/-y6knzKu8-j4/VEo52R9G9_I/AAAAAAAAAPY/o5TY9EK4Hr8/w501-h889-no/10.png
