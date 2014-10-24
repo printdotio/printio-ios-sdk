@@ -270,6 +270,26 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
+## H. Select Address screen
+
+![enter image description here][12] 
+---
+![enter image description here][13]
+
+H1. Show/Hide plus sign on Add Shipping Address button. Default value is NO. 
+
+- showPlusSignOnAddButton 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showplussignonaddbutton
+
+H2. Change highlight color for address selection on Select Address screen (on click item from the address list). Default color is light green. 
+
+- setColorForAddressSelection 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcolorforaddressselection
+
+---
+
 
 
 
@@ -284,3 +304,5 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [9]: https://lh6.googleusercontent.com/-WT0k3Pkx7u4/VEo5-qR_5BI/AAAAAAAAARQ/KAA--VFZA0Q/w501-h889-no/4e.png
  [10]: https://lh6.googleusercontent.com/-yKVfa0_JrYo/VEo59RSIF0I/AAAAAAAAAQc/qn3gg2vmAvs/w501-h889-no/5.png
  [11]: https://lh5.googleusercontent.com/-XM3mGuk2YVk/VEo59x0taQI/AAAAAAAAARU/NcJ2rrR8grg/w501-h889-no/5a.png
+ [12]: https://lh3.googleusercontent.com/-5ChgOd8DXVg/VEo5-C0G80I/AAAAAAAAAQ0/woJc5E_7SDA/w501-h889-no/6a.png
+ [13]: https://lh3.googleusercontent.com/-EJxUOt_3-Gg/VEo5-rnAHVI/AAAAAAAAARM/tkPJlp925OA/w501-h889-no/6b.png
