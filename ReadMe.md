@@ -13,7 +13,7 @@ Our SDK allows you to select which features and functionality you need as well a
 
 - [Project Setup & Prerequisites guide](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/project_setup.md) get started with the PrintIO SDK.
 - [Basic usage code](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/quick_start_sample_code.md) if you'd like a little more guidance.
-- [SDK customization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md) for in depth descriptions of the in-code customization options available.
+- [SDK customization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md) for in-depth descriptions of the in-code customization options available.
 - [XML customization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/xml_customization_new.md) for  customization options available via XML configuration.
 - [API customization] (https://github.com/printdotio/printio-ios-sdk/blob/master/docs/api_customization.md) for store and product specific options that are controlled via the Print.io Admin Panel.
 
@@ -23,4 +23,4 @@ Our SDK allows you to select which features and functionality you need as well a
 
 ### Optional Services: Reference Docs
 - [Push Notifications](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/PUSH_NOTIFICATIONS.md) the PrintIO SDK also offers the ability to send push notifications from your app.
-- [Social Media Account Setup] (https://github.com/printdotio/printio-ios-sdk/blob/master/docs/SocialMediaAccountSetup.md) the Printio SDK allows you to change to your social media accounts. Use this guide if you have questions regarding what information and settings are needed.
+- [Social Media Account Setup] (https://github.com/printdotio/printio-ios-sdk/blob/master/docs/SocialMediaAccountSetup.md) the PrintIO SDK allows you to change to your social media accounts. Use this guide if you have questions regarding what information and settings are needed.
