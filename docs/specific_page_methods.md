@@ -8,7 +8,7 @@ Specific Page Methods
 - [**F. Image Editor screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#f-image-editor-screen)
 - [**G. Shopping Cart screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#g-shopping-cart-screen)
 - [**H. Select Address screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#h-select-address-screen)
-- [**I. Payment screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
+- [**I. Payment screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#i-payment-screen)
 - [**J. Order Completed screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
 - [**K. Choose Country screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
 - [**L. About screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
@@ -292,7 +292,7 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ## I. Payment screen
 
-![enter image description here][1]
+![enter image description here][14]
 
 I1. Hide logo when user is in checkout flow. Default value is YES.
 
