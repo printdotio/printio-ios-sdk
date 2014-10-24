@@ -294,6 +294,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)sideMenuBackgroungImage:(NSString *)path;
 
+/**
+ Hide version label from side menu
+ 
+ @param set Default value is NO
+ */
+- (void)hideVersionInSideMenu:(BOOL)set;
+
 #pragma mark - Choose Country Screen
 
 /**
