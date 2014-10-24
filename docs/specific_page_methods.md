@@ -3,7 +3,7 @@ Specific Page Methods
 - [**A. Products Screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#a-products-screen)
 - [**B. Product Details screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#product-details-screen)
 - [**C. Choose Options screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#c-choose-options)
-- [**D. Select Photos screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
+- [**D. Select Photos screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#d-select-photos-screen)
 - [**E. Customization screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
 - [**F. Image Editor screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
 - [**G Shopping Cart screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
