@@ -398,6 +398,104 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
+## N. Side Menu screen 
+
+![enter image description here][19]
+---
+![enter image description here][20]
+
+N1. Change background color for Side Menu. Default value is black.
+
+- background 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--usesidemenuwithmenuiconbackground
+
+N2. Set which options to use in side menu:
+
+- sideMenuAddButtons
+- options
+- optionsTitle
+- optionsTitleColor
+- optionsColor
+- accountsTitle
+- accountsTitleColor
+- accountsColor
+- info
+- infoTitle
+- infoTitleColor
+- infoColor
+- backgroundImageForButtons 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons
+
+N3. Hide “Options” header in Side Menu. default values is NO.
+
+- sideMenuHideOptionsHeader 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuhideoptionsheader
+
+N4. Hide “Accounts” header in Side Menu. default values is NO.
+
+- sideMenuHideAccountsHeader 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuhideaccountsheader
+
+N5. Hide “Info” header in Side Menu. Default values is NO.
+
+- sideMenuHideInfoHeader 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuhideinfoheader
+
+N6. Show “Options” section as a list. Default value is NO. 
+
+- sideMenuShowOptionsAsList 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenushowoptionsaslist
+
+N7. Set the text to be included when a user clicks the Share this app button. Note: This is option from Side Menu, in order to use it, Side Menu needs to be enabled first. 
+
+- setShareText 
+- additionalText 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setsharetextadditionaltext
+
+N8. Hide photo source section. Default value is NO.
+
+- hidePhotoSourcesInSideMenu 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidephotosourcesinsidemenu
+
+N9. Set background image on Side Menu. 
+
+- sideMenuBackgroungImage 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenubackgroungimage
+
+N10. Set url link to facebook page e.g. 'fb://profile/642169949144369'
+
+- setLikeUsOnFacebookUrl 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setlikeusonfacebookurl
+
+N11. Set Country Code. Default value is US.
+
+- setCountryCode 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcountrycode
+
+N12. Set Currency Code. Default value is USA. 
+
+- setCurrencyCode 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcurrencycode 
+
+N13. Set Language code. Default value is EN. 
+
+- setLanguageCode 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setlanguagecode 
+
+---
 
  [1]: https://lh6.googleusercontent.com/-2Lz2VAdbNd0/VEooKvJnY5I/AAAAAAAAALI/N1Tll8ZLrX8/w501-h889-no/1a.png
  [2]: https://lh5.googleusercontent.com/-8EfndISLMHY/VEou9zVdK9I/AAAAAAAAAL0/ye5r_Y5WRtA/w501-h889-no/IMG_2603.PNG
@@ -417,3 +515,5 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [16]: https://lh4.googleusercontent.com/-dGXV5Y7TfsM/VEo5_3Ge36I/AAAAAAAAARI/10CvQ6ggUpE/w501-h889-no/9.png
  [17]: https://lh4.googleusercontent.com/-y6knzKu8-j4/VEo52R9G9_I/AAAAAAAAAPY/o5TY9EK4Hr8/w501-h889-no/10.png
  [18]: https://lh5.googleusercontent.com/-LMQcAzZTwWc/VEo52jpq57I/AAAAAAAAAPk/GA5R8Jp3qrU/w501-h889-no/11.png
+ [19]: https://lh4.googleusercontent.com/-H3yjdwdOXsY/VEo52uqdBhI/AAAAAAAAAP4/NBYJGY-WDWs/w501-h889-no/12a.png
+ [20]: https://lh5.googleusercontent.com/-KgbunHao6t4/VEo53SdvKpI/AAAAAAAAAPo/6ftWE_SiqY0/w501-h889-no/12b.png
