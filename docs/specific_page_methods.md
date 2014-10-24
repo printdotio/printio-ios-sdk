@@ -36,8 +36,9 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 #### A3. Set text color for left label and right label on Items on Featured Products list.
 
 - setFeaturedProductsLeftLabelTextColor
+- rightLabelTextColor 
 
-rightLabelTextColor https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsleftlabeltextcolorrightlabeltextcolor
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsleftlabeltextcolorrightlabeltextcolor
 
 #### A4. Hide Category/Search view in Featured Products screen. Default value is NO.
 
