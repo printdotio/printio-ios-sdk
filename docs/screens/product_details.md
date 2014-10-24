@@ -1,0 +1,26 @@
+## Product Details screen
+
+![enter image description here][2]
+
+#### B1. Provide Quality Guarantee text for Product Details screen.
+
+- setQualityGuaranteeText
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setqualityguaranteetext
+
+#### B2. Show title below navigation bar on Product Details screen
+
+- productDetailsShowTitleBelowNavBar
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar
+ 
+
+#### B3. Show menu button in navigation bar on Product Details screen
+
+- productDetailsShowMenuBtnInNavBar
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar
+
+---
+
+[2]: https://lh5.googleusercontent.com/-8EfndISLMHY/VEou9zVdK9I/AAAAAAAAAL0/ye5r_Y5WRtA/w501-h889-no/IMG_2603.PNG
