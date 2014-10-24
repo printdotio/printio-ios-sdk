@@ -1,4 +1,4 @@
-## Products screen
+## Products
 
 ![enter image description here][1]
 
