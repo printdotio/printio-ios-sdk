@@ -515,5 +515,5 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [16]: https://lh6.googleusercontent.com/-XDjgGjKJIE8/VEqJxp4S9VI/AAAAAAAAAaI/cLvyFSpA2Ks/w400-h710-no/choose_country_screen_small.png
  [17]: https://lh3.googleusercontent.com/--WiedLmbxQ0/VEqL6IF3UUI/AAAAAAAAAas/rYrChLrud0s/w400-h710-no/about_screen_small.png
  [18]: https://lh6.googleusercontent.com/-hMjyXZjOlC4/VEqM0gWGkKI/AAAAAAAAAbY/8wrhdcq7awQ/w400-h710-no/how_it_works_screen_small.png
- [19]: https://lh4.googleusercontent.com/-H3yjdwdOXsY/VEo52uqdBhI/AAAAAAAAAP4/NBYJGY-WDWs/w501-h889-no/12a.png
- [20]: https://lh5.googleusercontent.com/-KgbunHao6t4/VEo53SdvKpI/AAAAAAAAAPo/6ftWE_SiqY0/w501-h889-no/12b.png
+ [19]: https://lh4.googleusercontent.com/-uk5_BqRVk5U/VEqSSHlCOrI/AAAAAAAAAcE/YV0eTj8NP6E/w400-h710-no/side_menu_1_small.png
+ [20]: https://lh3.googleusercontent.com/-93-n89CRYUs/VEqSSUnQ1-I/AAAAAAAAAcQ/IRdONVLTPKM/w400-h710-no/side_menu_2_small.png
