@@ -6,7 +6,7 @@ Specific Page Methods
 - [**D. Select Photos screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#d-select-photos-screen)
 - [**E. Customization screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#e-customization-screen)
 - [**F. Image Editor screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
-- [**G Shopping Cart screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
+- [**G. Shopping Cart screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
 - [**H. Select Address screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
 - [**I. Payment screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
 - [**J. Order Completed screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
@@ -139,8 +139,13 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ## E. Customization screen
 
-![enter image description here][5] ![enter image description here][6]
-![enter image description here][7] ![enter image description here][8]
+![enter image description here][5]
+---
+![enter image description here][6]
+---
+![enter image description here][7] 
+---
+![enter image description here][8]
 
 E1. Set whether photos are arranged automatically, manually, or up to the user (default is CHOOSE).
 
@@ -215,6 +220,57 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
+## G. Shopping Cart screen
+
+![enter image description here][10] 
+---
+![enter image description here][11]
+
+G1. Customize the title for the Shopping Cart. Default value is "Shopping Cart".
+
+- setTitleForShoppingCart 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforshoppingcart
+
+G2. Customize the icon for the back button in the Shopping Cart screen. 
+
+- setIconForShoppingCartBackButton 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartbackbutton
+
+G3. Method to Hide or Show “Edit” button on Shopping Cart screen. Default value is NO.
+
+- hideEditButtonInShoppingCart 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideeditbuttoninshoppingcart 
+
+G4. Visibility for Add More Products button. Default value is YES.
+
+- setShowsAddMoreProductsInShoppingCart 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setshowsaddmoreproductsinshoppingcart
+ 
+G5. Disable Preview screen for products on Shopping Cart screen (click on item in cart list). Default value is YES. 
+
+- disablePreviewScreen 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablepreviewscreen
+
+G6. Add Promo code to get discount for products on Shopping cart screen. 
+
+- setPromoCode 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpromocode
+
+G7. Remove plus sign from 'Add More Products' button. Default value is NO.
+
+- removePlusFromAddMoreProductsButton 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removeplusfromaddmoreproductsbutton
+
+---
+
+
 
 
  [1]: https://lh6.googleusercontent.com/-2Lz2VAdbNd0/VEooKvJnY5I/AAAAAAAAALI/N1Tll8ZLrX8/w501-h889-no/1a.png
@@ -226,3 +282,5 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [7]: https://lh3.googleusercontent.com/-wgqo4uBzSus/VEo58lNwlmI/AAAAAAAAAQY/fZhUTdxMloQ/w501-h889-no/4c.png
  [8]: https://lh3.googleusercontent.com/-ee0LOXe7UK4/VEo561H_pAI/AAAAAAAAAQI/j0TIZi4aaAQ/w501-h889-no/4d.png
  [9]: https://lh6.googleusercontent.com/-WT0k3Pkx7u4/VEo5-qR_5BI/AAAAAAAAARQ/KAA--VFZA0Q/w501-h889-no/4e.png
+ [10]: https://lh6.googleusercontent.com/-yKVfa0_JrYo/VEo59RSIF0I/AAAAAAAAAQc/qn3gg2vmAvs/w501-h889-no/5.png
+ [11]: https://lh5.googleusercontent.com/-XM3mGuk2YVk/VEo59x0taQI/AAAAAAAAARU/NcJ2rrR8grg/w501-h889-no/5a.png
