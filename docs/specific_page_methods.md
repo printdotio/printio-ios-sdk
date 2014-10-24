@@ -103,6 +103,37 @@ C2. Set the title for the Choose Options screen. Default value is "Choose Option
  
 https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchooseoptionsscreen
 
+---
+
+## D. Select Photos screen
+
+D1. Customize the title on the photo sources screen. Default value is "Select Photos".
+
+- setTitleForPhotoSourcesScreen
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforphotosourcesscreen
+
+D2. Hide icon for Upload Instructions text in Photo Sources screen. Default value is NO.
+
+- hideIconForUploadInstructions
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideiconforuploadinstructions
+
+
+D3. Required step to configure which photo sources you would like to offer within your application.
+
+- setAvailablePhotoSources
+- PIO_SM_PHONE
+- PIO_SM_INSTAGRAM
+- PIO_SM_FACEBOOK
+- PIO_SM_PICASA
+- PIO_SM_FLICKR
+- PIO_SM_DROPBOX
+- PIO_SM_PHOTOBUCKET
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources
+
+---
 
  [1]: https://lh6.googleusercontent.com/-2Lz2VAdbNd0/VEooKvJnY5I/AAAAAAAAALI/N1Tll8ZLrX8/w501-h889-no/1a.png
  [2]: https://lh5.googleusercontent.com/-8EfndISLMHY/VEou9zVdK9I/AAAAAAAAAL0/ye5r_Y5WRtA/w501-h889-no/IMG_2603.PNG
