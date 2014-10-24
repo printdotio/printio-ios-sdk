@@ -505,7 +505,7 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [6]: https://lh5.googleusercontent.com/-nRXU-cjMcKY/VEp4Kl-HzgI/AAAAAAAAAV4/EF8KF80yics/w400-h710-no/customization_screen_1.png
  [7]: https://lh3.googleusercontent.com/-ZNdiRfOLidA/VEp4K-_AqWI/AAAAAAAAAV0/stUQbOKIgwY/w400-h710-no/customization_screen_2.png
  [8]: https://lh6.googleusercontent.com/-tEY8-_DukWo/VEp4KpwUFZI/AAAAAAAAAWA/1i2Hac3HtdU/w400-h710-no/customization_screen_3.png
- [9]: https://lh6.googleusercontent.com/-WT0k3Pkx7u4/VEo5-qR_5BI/AAAAAAAAARQ/KAA--VFZA0Q/w501-h889-no/4e.png
+ [9]: https://lh4.googleusercontent.com/-Z7ZcraxxnBE/VEp--kcgiNI/AAAAAAAAAWs/6PdokZyNbX8/w400-h710-no/image_editor_screen.png
  [10]: https://lh6.googleusercontent.com/-yKVfa0_JrYo/VEo59RSIF0I/AAAAAAAAAQc/qn3gg2vmAvs/w501-h889-no/5.png
  [11]: https://lh5.googleusercontent.com/-XM3mGuk2YVk/VEo59x0taQI/AAAAAAAAARU/NcJ2rrR8grg/w501-h889-no/5a.png
  [12]: https://lh3.googleusercontent.com/-5ChgOd8DXVg/VEo5-C0G80I/AAAAAAAAAQ0/woJc5E_7SDA/w501-h889-no/6a.png
