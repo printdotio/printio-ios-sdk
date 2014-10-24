@@ -598,6 +598,77 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
+O. Change light fonts size. Default value is "-1.0".
+
+- changeSizeOfLightFontsBy
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--changesizeoflightfontsby
+
+---
+
+P. Change medium fonts size. Default value is "-1.0".
+
+- changeSizeOfMediumFontsBy
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--changesizeofmediumfontsby
+
+---
+
+Q. Change regular fonts size. Default value is "-1.0".
+
+- changeSizeOfRegularFontsBy
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--changesizeofregularfontsby
+
+---
+
+R. Change bold fonts size. Default value is "-1.0".
+
+- changeSizeOfBoldFontsBy
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--changesizeofboldfontsby
+
+---
+
+S. Loading View instead of the Loading GIF Image. Default value is "Gray" color.
+
+- setLoadingActivityIndicatorViewStyle
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setloadingactivityindicatorviewstyle
+
+---
+
+T. Change the loading GIF from the default. Default value is "printio.gif".
+
+- setLoadingGIF
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setloadinggif
+
+---
+
+U. Change title of loading dialog. Default value is "Loading...".
+
+- setLoadingText
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setloadingtext
+
+---
+
+V. Change icon for Help Button. Specify an image file to use as the help icon throughout the app.
+
+- setIconForHelpButton 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforhelpbutton
+
+---
+
+W. Change prtner's logo icon which is used on cart and confirmation screens. File name of logo image, without file type extension.
+
+- setLogoFileName
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setlogofilename
+
+---
 
  [1]: https://lh6.googleusercontent.com/-0WuWATsBvOc/VEprESzVF9I/AAAAAAAAATA/u-WMpFsB59A/w400-h710-no/products_screen_small.png
  [2]: https://lh3.googleusercontent.com/-_977PRHV-xs/VEptrXemYmI/AAAAAAAAATk/Qxi83xKMO8o/w400-h710-no/product_details_screen_small.png
