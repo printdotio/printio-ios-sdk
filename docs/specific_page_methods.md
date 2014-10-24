@@ -2,7 +2,7 @@ Specific Page Methods
 =====================
 - [**A. Products Screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#a-products-screen)
 - [**B. Product Details screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#product-details-screen)
-- [**C. Choose Options screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
+- [**C. Choose Options screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#c-choose-options)
 - [**D. Select Photos screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
 - [**E. Customization screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
 - [**F. Image Editor screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
@@ -89,6 +89,8 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ## C. Choose Options
 
+![enter image description here][3]
+
 C1. Disable auto recognition and selection of iPhone model. Default value is NO.
 
 - disableAutoRecognizePhoneModel 
@@ -104,4 +106,4 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
  [1]: https://lh6.googleusercontent.com/-2Lz2VAdbNd0/VEooKvJnY5I/AAAAAAAAALI/N1Tll8ZLrX8/w501-h889-no/1a.png
  [2]: https://lh5.googleusercontent.com/-8EfndISLMHY/VEou9zVdK9I/AAAAAAAAAL0/ye5r_Y5WRtA/w501-h889-no/IMG_2603.PNG
-
+ [3]: https://lh4.googleusercontent.com/-2GyJzBSpHaw/VEo2t0ggo5I/AAAAAAAAAMc/jaXhKHZmFCQ/w501-h889-no/2.png
