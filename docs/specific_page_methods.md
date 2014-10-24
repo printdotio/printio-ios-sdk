@@ -7,7 +7,7 @@ Specific Page Methods
 - [**E. Customization screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#e-customization-screen)
 - [**F. Image Editor screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#f-image-editor-screen)
 - [**G. Shopping Cart screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#g-shopping-cart-screen)
-- [**H. Select Address screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
+- [**H. Select Address screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#h-select-address-screen)
 - [**I. Payment screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
 - [**J. Order Completed screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
 - [**K. Choose Country screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
