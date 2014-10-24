@@ -1,6 +1,6 @@
-## Product Details screen
+## Product Details
 
-![enter image description here][2]
+![enter image description here][1]
 
 #### A. Provide Quality Guarantee text for Product Details screen.
 
@@ -23,4 +23,4 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
-[2]: https://lh5.googleusercontent.com/-8EfndISLMHY/VEou9zVdK9I/AAAAAAAAAL0/ye5r_Y5WRtA/w501-h889-no/IMG_2603.PNG
+[1]: https://lh5.googleusercontent.com/-8EfndISLMHY/VEou9zVdK9I/AAAAAAAAAL0/ye5r_Y5WRtA/w501-h889-no/IMG_2603.PNG
