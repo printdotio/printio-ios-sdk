@@ -338,6 +338,23 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
+## K. Choose Options screen
+
+![enter image description here][16]
+
+K1. Disable auto recognition and selection of iPhone model. Default value is NO.
+
+- disableAutoRecognizePhoneModel 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disableautorecognizephonemodel
+
+K2. Set the title for the Choose Options screen. Default value is "Choose Options".
+	
+- setTitleForChooseOptionsScreen
+ 
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchooseoptionsscreen
+
+---
 
 
  [1]: https://lh6.googleusercontent.com/-2Lz2VAdbNd0/VEooKvJnY5I/AAAAAAAAALI/N1Tll8ZLrX8/w501-h889-no/1a.png
@@ -355,3 +372,4 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [13]: https://lh3.googleusercontent.com/-EJxUOt_3-Gg/VEo5-rnAHVI/AAAAAAAAARM/tkPJlp925OA/w501-h889-no/6b.png
  [14]: https://lh5.googleusercontent.com/-oYMBrKojnsY/VEo5_CFCwuI/AAAAAAAAARE/9VBFUsFxg-Y/w501-h889-no/7.png
  [15]: https://lh5.googleusercontent.com/-VbxBI_gobq0/VEo5_cP_ZfI/AAAAAAAAARA/B_IIM-A0F5k/w501-h889-no/8.png
+ [16]: https://lh4.googleusercontent.com/-2GyJzBSpHaw/VEo2t0ggo5I/AAAAAAAAAMc/jaXhKHZmFCQ/w501-h889-no/2.png
