@@ -14,6 +14,8 @@ Specific Page Methods
 - [**L. About screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#l-about-screen)
 - [**M. How It Works screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#m-how-it-works-screen)
 - [**N. Side Menu**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#n-side-menu-screen)
+---
+- [**Full app Methods**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#full-app-methods)
 
 ---
 
