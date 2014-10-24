@@ -338,23 +338,42 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
-## K. Choose Options screen
+## K. Choose Country screen
 
 ![enter image description here][16]
 
-K1. Disable auto recognition and selection of iPhone model. Default value is NO.
+K1. Change title on Choose Country screen. Default value is “Choose Country”.
 
-- disableAutoRecognizePhoneModel 
+- setTitleForChooseCountryScreen 
 
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disableautorecognizephonemodel
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchoosecountryscreen
 
-K2. Set the title for the Choose Options screen. Default value is "Choose Options".
-	
-- setTitleForChooseOptionsScreen
- 
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchooseoptionsscreen
+K2. Hide search icon from navigation bar. Default value is Hidden. 
+
+- hideSearchIconInChooseCountryScreen 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidesearchiconinchoosecountryscreen
+
+K3. Change placeholder text in search bar.
+
+- setPlaceholderTextForSearchBarInChooseCountryScreen 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setplaceholdertextforsearchbarinchoosecountryscreenhidemagnifyingglass 
+
+K4. Set magnifying glass visible or hidden.
+
+- hideMagnifyingGlass 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setplaceholdertextforsearchbarinchoosecountryscreenhidemagnifyingglass 
+
+K5. Change the color of navigation bar in 'Choose Country' screen. Default color is white.
+
+- setNavigationBarBackgroundColorForChooseCountryScreen 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackgroundcolorforchoosecountryscreen
 
 ---
+
 
 
  [1]: https://lh6.googleusercontent.com/-2Lz2VAdbNd0/VEooKvJnY5I/AAAAAAAAALI/N1Tll8ZLrX8/w501-h889-no/1a.png
@@ -372,4 +391,4 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [13]: https://lh3.googleusercontent.com/-EJxUOt_3-Gg/VEo5-rnAHVI/AAAAAAAAARM/tkPJlp925OA/w501-h889-no/6b.png
  [14]: https://lh5.googleusercontent.com/-oYMBrKojnsY/VEo5_CFCwuI/AAAAAAAAARE/9VBFUsFxg-Y/w501-h889-no/7.png
  [15]: https://lh5.googleusercontent.com/-VbxBI_gobq0/VEo5_cP_ZfI/AAAAAAAAARA/B_IIM-A0F5k/w501-h889-no/8.png
- [16]: https://lh4.googleusercontent.com/-2GyJzBSpHaw/VEo2t0ggo5I/AAAAAAAAAMc/jaXhKHZmFCQ/w501-h889-no/2.png
+ [16]: https://lh4.googleusercontent.com/-dGXV5Y7TfsM/VEo5_3Ge36I/AAAAAAAAARI/10CvQ6ggUpE/w501-h889-no/9.png
