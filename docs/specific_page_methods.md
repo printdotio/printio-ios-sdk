@@ -64,7 +64,7 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.
 
 ## Product Details screen
 
-![enter image description here][1]
+![enter image description here][2]
 
 #### B1. Provide Quality Guarantee text for Product Details screen.
 
