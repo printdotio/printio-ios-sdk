@@ -4,10 +4,12 @@ Below is sample code for launching a PrintIO widget. Be sure to follow the Proje
 
 PrintIO widget works in two modes: staging and production. For both modes, 'recipeId' is required. Before you get production 'recipeId' from PrintIO, for staging mode use 'recipeId' below:
 
-```static NSString *const sRecipeId = @"00000000-0000-0000-0000-000000000000";```
+```Objective-C
+static NSString *const sRecipeId = @"00000000-0000-0000-0000-000000000000";
+```
 
 
-``` Objective-C
+```Objective-C
 - (IBAction)runPrintIO:(id)sender
 {
     // RecipeId is developer defined and provided by PrintIO Account and Sales Team
@@ -29,7 +31,7 @@ PrintIO widget works in two modes: staging and production. For both modes, 'reci
 
 You can also use our ```PrintIODelegate``` methods in your presenting view controller:
 
-``` Objective-C
+```Objective-C
 - (void)PrintIOWidgetOnOpen
 {
     NSLog(@"PrintIOWidgetOnOpened");
@@ -42,7 +44,7 @@ You can also use our ```PrintIODelegate``` methods in your presenting view contr
 
 Delegate method ```PrintIOWidgetOnCloseWithData``` provides key/value pairs:
 
-``` Objective-C
+```Objective-C
 {
     flag = 0;
     num_of_items_in_shopping_cart = 3;  // number of current items in shopping cart
@@ -51,7 +53,7 @@ Delegate method ```PrintIOWidgetOnCloseWithData``` provides key/value pairs:
 ```
 after successful order:
 
-``` Objective-C
+```Objective-C
     order_data = {
         items = (                       // items from cart, included in order
             {
