@@ -11,7 +11,7 @@ Specific Page Methods
 - [**I. Payment screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#i-payment-screen)
 - [**J. Order Completed screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#j-order-completed-screen)
 - [**K. Choose Country screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#k-choose-country-screen)
-- [**L. About screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
+- [**L. About screen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#l-about-screen)
 - [**M. How It Works screen**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
 - [**N. Side Menu**](https://github.com/printdotio/printio-ios-sdk/edit/master/docs/specific_page_methods.md)
 
