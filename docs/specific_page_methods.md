@@ -386,6 +386,18 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
+## M. How It Works screen
+
+![enter image description here][18]
+
+M1. Customize the text content of the How It Works page to fit your application's brand and voice. 
+
+- setHowItWorksText 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sethowitworkstext
+
+---
+
 
  [1]: https://lh6.googleusercontent.com/-2Lz2VAdbNd0/VEooKvJnY5I/AAAAAAAAALI/N1Tll8ZLrX8/w501-h889-no/1a.png
  [2]: https://lh5.googleusercontent.com/-8EfndISLMHY/VEou9zVdK9I/AAAAAAAAAL0/ye5r_Y5WRtA/w501-h889-no/IMG_2603.PNG
@@ -404,3 +416,4 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [15]: https://lh5.googleusercontent.com/-VbxBI_gobq0/VEo5_cP_ZfI/AAAAAAAAARA/B_IIM-A0F5k/w501-h889-no/8.png
  [16]: https://lh4.googleusercontent.com/-dGXV5Y7TfsM/VEo5_3Ge36I/AAAAAAAAARI/10CvQ6ggUpE/w501-h889-no/9.png
  [17]: https://lh4.googleusercontent.com/-y6knzKu8-j4/VEo52R9G9_I/AAAAAAAAAPY/o5TY9EK4Hr8/w501-h889-no/10.png
+ [18]: https://lh5.googleusercontent.com/-LMQcAzZTwWc/VEo52jpq57I/AAAAAAAAAPk/GA5R8Jp3qrU/w501-h889-no/11.png
