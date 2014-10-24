@@ -497,7 +497,7 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
- [1]: https://lh4.googleusercontent.com/-drQmTe-B59s/VEpqqb0AGPI/AAAAAAAAASY/RG4y1Npeq38/w500-h888-no/products_screen_small.png
+ [1]: https://lh6.googleusercontent.com/-0WuWATsBvOc/VEprESzVF9I/AAAAAAAAATA/u-WMpFsB59A/w400-h710-no/products_screen_small.png
  [2]: https://lh5.googleusercontent.com/-8EfndISLMHY/VEou9zVdK9I/AAAAAAAAAL0/ye5r_Y5WRtA/w501-h889-no/IMG_2603.PNG
  [3]: https://lh4.googleusercontent.com/-2GyJzBSpHaw/VEo2t0ggo5I/AAAAAAAAAMc/jaXhKHZmFCQ/w501-h889-no/2.png
  [4]: https://lh4.googleusercontent.com/-Ew1RyKW276Q/VEo538oemaI/AAAAAAAAAP0/XZj6R4p4_pI/w501-h889-no/3.png
