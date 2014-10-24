@@ -64,6 +64,8 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.
 
 ## Product Details screen
 
+![enter image description here][1]
+
 #### B1. Provide Quality Guarantee text for Product Details screen.
 
 - setQualityGuaranteeText
@@ -86,4 +88,5 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 
  [1]: https://lh6.googleusercontent.com/-2Lz2VAdbNd0/VEooKvJnY5I/AAAAAAAAALI/N1Tll8ZLrX8/w501-h889-no/1a.png
+ [2]: https://lh5.googleusercontent.com/-8EfndISLMHY/VEou9zVdK9I/AAAAAAAAAL0/ye5r_Y5WRtA/w501-h889-no/IMG_2603.PNG
 
