@@ -139,7 +139,8 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ## E. Customization screen
 
-![enter image description here][4]
+![enter image description here][5] ![enter image description here][6]
+![enter image description here][7] ![enter image description here][8]
 
 E1. Set whether photos are arranged automatically, manually, or up to the user (default is CHOOSE).
 
@@ -202,8 +203,26 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
+## F. Image Editor screen
+
+![enter image description here][9]
+
+F1. Set which buttons will be visible in Image Editor toolbar. By default, all buttons are visible.
+
+- imageEditorShowButtons
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--imageeditorshowbuttons
+
+---
+
+
+
  [1]: https://lh6.googleusercontent.com/-2Lz2VAdbNd0/VEooKvJnY5I/AAAAAAAAALI/N1Tll8ZLrX8/w501-h889-no/1a.png
  [2]: https://lh5.googleusercontent.com/-8EfndISLMHY/VEou9zVdK9I/AAAAAAAAAL0/ye5r_Y5WRtA/w501-h889-no/IMG_2603.PNG
  [3]: https://lh4.googleusercontent.com/-2GyJzBSpHaw/VEo2t0ggo5I/AAAAAAAAAMc/jaXhKHZmFCQ/w501-h889-no/2.png
  [4]: https://lh4.googleusercontent.com/-Ew1RyKW276Q/VEo538oemaI/AAAAAAAAAP0/XZj6R4p4_pI/w501-h889-no/3.png
  [5]: https://lh5.googleusercontent.com/-nBgt-cpuyao/VEo549UpANI/AAAAAAAAAP8/xqoFbFy-0xI/w501-h889-no/4a.png
+ [6]: https://lh4.googleusercontent.com/-zERcUguYZHU/VEo57dT2_RI/AAAAAAAAAQM/G7iJi8ppcdI/w501-h889-no/4b.png
+ [7]: https://lh3.googleusercontent.com/-wgqo4uBzSus/VEo58lNwlmI/AAAAAAAAAQY/fZhUTdxMloQ/w501-h889-no/4c.png
+ [8]: https://lh3.googleusercontent.com/-ee0LOXe7UK4/VEo561H_pAI/AAAAAAAAAQI/j0TIZi4aaAQ/w501-h889-no/4d.png
+ [9]: https://lh6.googleusercontent.com/-WT0k3Pkx7u4/VEo5-qR_5BI/AAAAAAAAARQ/KAA--VFZA0Q/w501-h889-no/4e.png
