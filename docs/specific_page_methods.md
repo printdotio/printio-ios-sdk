@@ -43,6 +43,7 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 #### A4. Hide Category/Search view in Featured Products screen. Default value is NO.
 
 - hideCategoriesInFeaturedProducts
+
 https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecategoriesinfeaturedproducts
 
 #### A5. Allow user to show/hide country on Products screen. Default value is YES. 
