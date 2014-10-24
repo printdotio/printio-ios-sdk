@@ -1,6 +1,8 @@
 ## Shopping Cart screen
 
-![enter image description here][1] ![enter image description here][2]
+![enter image description here][1] 
+---
+![enter image description here][2]
 
 A. Customize the title for the Shopping Cart. Default value is "Shopping Cart".
 
