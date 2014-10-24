@@ -1,6 +1,8 @@
 ## Select Address screen
 
-![enter image description here][1] ![enter image description here][2]
+![enter image description here][1] 
+---
+![enter image description here][2]
 
 A. Show/Hide plus sign on Add Shipping Address button. Default value is NO. 
 
