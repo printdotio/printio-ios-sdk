@@ -308,6 +308,37 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
+## J. Order Completed screen
+
+![enter image description here][15]
+
+J1. Change title for Order Completed screen. Default value is "Order Completed".
+
+- setTitleForOrderCompletedScreen 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforordercompletedscreen
+
+J2. Change icon for company logo.
+
+- setIconForOrderCompletedScreen 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforordercompletedscreen
+
+J3. Change company message below company logo.
+
+- setMessageForOrderCompletedScreen 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setmessageforordercompletedscreen
+
+J4. Change function of “Close” button on Order Completed screen.
+
+- orderCompletedScreenCloseButtonShouldPerformBack 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--ordercompletedscreenclosebuttonshouldperformback
+
+---
+
+
 
  [1]: https://lh6.googleusercontent.com/-2Lz2VAdbNd0/VEooKvJnY5I/AAAAAAAAALI/N1Tll8ZLrX8/w501-h889-no/1a.png
  [2]: https://lh5.googleusercontent.com/-8EfndISLMHY/VEou9zVdK9I/AAAAAAAAAL0/ye5r_Y5WRtA/w501-h889-no/IMG_2603.PNG
@@ -323,3 +354,4 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [12]: https://lh3.googleusercontent.com/-5ChgOd8DXVg/VEo5-C0G80I/AAAAAAAAAQ0/woJc5E_7SDA/w501-h889-no/6a.png
  [13]: https://lh3.googleusercontent.com/-EJxUOt_3-Gg/VEo5-rnAHVI/AAAAAAAAARM/tkPJlp925OA/w501-h889-no/6b.png
  [14]: https://lh5.googleusercontent.com/-oYMBrKojnsY/VEo5_CFCwuI/AAAAAAAAARE/9VBFUsFxg-Y/w501-h889-no/7.png
+ [15]: https://lh5.googleusercontent.com/-VbxBI_gobq0/VEo5_cP_ZfI/AAAAAAAAARA/B_IIM-A0F5k/w501-h889-no/8.png
