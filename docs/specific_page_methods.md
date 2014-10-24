@@ -290,7 +290,23 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
+## I. Payment screen
 
+![enter image description here][1]
+
+I1. Hide logo when user is in checkout flow. Default value is YES.
+
+- removeLogoFromPaymentScreen 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removelogofrompaymentscreen
+
+I2. Enable the terms and conditions link form control on the payment page and specify the URL to be loaded (in Safari). By default, the terms and conditions are not shown. 
+
+- setTermsAndConditionsURL 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settermsandconditionsurl 
+
+---
 
 
  [1]: https://lh6.googleusercontent.com/-2Lz2VAdbNd0/VEooKvJnY5I/AAAAAAAAALI/N1Tll8ZLrX8/w501-h889-no/1a.png
@@ -306,3 +322,4 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [11]: https://lh5.googleusercontent.com/-XM3mGuk2YVk/VEo59x0taQI/AAAAAAAAARU/NcJ2rrR8grg/w501-h889-no/5a.png
  [12]: https://lh3.googleusercontent.com/-5ChgOd8DXVg/VEo5-C0G80I/AAAAAAAAAQ0/woJc5E_7SDA/w501-h889-no/6a.png
  [13]: https://lh3.googleusercontent.com/-EJxUOt_3-Gg/VEo5-rnAHVI/AAAAAAAAARM/tkPJlp925OA/w501-h889-no/6b.png
+ [14]: https://lh5.googleusercontent.com/-oYMBrKojnsY/VEo5_CFCwuI/AAAAAAAAARE/9VBFUsFxg-Y/w501-h889-no/7.png
