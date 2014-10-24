@@ -139,13 +139,9 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ## E. Customization screen
 
-![enter image description here][5]
+![enter image description here][5] | ![enter image description here][6]
 ---
-![enter image description here][6]
----
-![enter image description here][7] 
----
-![enter image description here][8]
+![enter image description here][7] | ![enter image description here][8]
 
 E1. Set whether photos are arranged automatically, manually, or up to the user (default is CHOOSE).
 
