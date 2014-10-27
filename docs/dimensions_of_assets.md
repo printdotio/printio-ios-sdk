@@ -6,12 +6,11 @@ Available Photo sources
 
 ![enter image description here][1] 
 
-
-
 ---
 
 ![enter image description here][2] 
 
+---
 
 
 
