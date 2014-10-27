@@ -31,34 +31,24 @@ Specific Page Methods
 
 #### A2. Method to change background image for the Featured Products screen. Default appearance is white color.
 
-- setFeaturedProductsBackgroundImage
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsbackgroundimage
+- [**setFeaturedProductsBackgroundImage**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsbackgroundimage)
 
 #### A3. Set text color for left label and right label on Items on Featured Products list.
 
-- setFeaturedProductsLeftLabelTextColor
-- rightLabelTextColor 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsleftlabeltextcolorrightlabeltextcolor
+- [**setFeaturedProductsLeftLabelTextColor**]
+- [**rightLabelTextColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsleftlabeltextcolorrightlabeltextcolor)
 
 #### A4. Hide Category/Search view in Featured Products screen. Default value is NO.
 
-- hideCategoriesInFeaturedProducts
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecategoriesinfeaturedproducts
+- [**hideCategoriesInFeaturedProducts**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecategoriesinfeaturedproducts)
 
 #### A5. Allow user to show/hide country on Products screen. Default value is YES. 
 
-- showCountrySelectionOnScreen
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showcountryselectiononscreenbackgroundcolor
+- [**showCountrySelectionOnScreen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showcountryselectiononscreenbackgroundcolor)
 
 #### A6. Method to change background color on Select Country bar on Featured Products screen.
 
-- backgroundColor
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showcountryselectiononscreenbackgroundcolor
+- [**backgroundColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showcountryselectiononscreenbackgroundcolor)
 
 ---
 
