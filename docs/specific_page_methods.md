@@ -505,6 +505,10 @@ Full app Methods
 ===
 A. Back (negative) - Forward (positive) button change methods (Applies to whole app).
 
+![enter image description here][21] 
+
+---
+
 - setNegativeButtonsBackgroundColor 
  
 https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnegativebuttonsbackgroundcolor
@@ -716,3 +720,4 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [18]: https://lh6.googleusercontent.com/-hMjyXZjOlC4/VEqM0gWGkKI/AAAAAAAAAbY/8wrhdcq7awQ/w400-h710-no/how_it_works_screen_small.png
  [19]: https://lh4.googleusercontent.com/-uk5_BqRVk5U/VEqSSHlCOrI/AAAAAAAAAcE/YV0eTj8NP6E/w400-h710-no/side_menu_1_small.png
  [20]: https://lh3.googleusercontent.com/-93-n89CRYUs/VEqSSUnQ1-I/AAAAAAAAAcQ/IRdONVLTPKM/w400-h710-no/side_menu_2_small.png
+ [21]: https://lh6.googleusercontent.com/-kP7Z1nYl61E/VE4VMVzHCOI/AAAAAAAAAd8/VhZmk2EpavU/w400-h710-no/neg_pos_buttons_small.png
