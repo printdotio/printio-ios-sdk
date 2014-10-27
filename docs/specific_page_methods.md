@@ -287,9 +287,10 @@ G7. Remove plus sign from 'Add More Products' button. Default value is NO.
 
 https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removeplusfromaddmoreproductsbutton
 
-G8. Customize 'Add More Products' button.
+G8. Customize 'Add More Products' button. Plus sign is hidden by default. Default title is "Add More Products".
 
-customizeAddMoreProductButton
+- customizeAddMoreProductButton
+- icon
 
 https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--customizeaddmoreproductbutton
 
