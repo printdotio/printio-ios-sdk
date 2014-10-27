@@ -596,39 +596,7 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
-O. Change light fonts size. Default value is "-1.0".
-
-- changeSizeOfLightFontsBy
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--changesizeoflightfontsby
-
----
-
-P. Change medium fonts size. Default value is "-1.0".
-
-- changeSizeOfMediumFontsBy
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--changesizeofmediumfontsby
-
----
-
-Q. Change regular fonts size. Default value is "-1.0".
-
-- changeSizeOfRegularFontsBy
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--changesizeofregularfontsby
-
----
-
-R. Change bold fonts size. Default value is "-1.0".
-
-- changeSizeOfBoldFontsBy
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--changesizeofboldfontsby
-
----
-
-S. Loading View instead of the Loading GIF Image. Default value is "Gray" color.
+O. Loading View instead of the Loading GIF Image. Default value is "Gray" color.
 
 - setLoadingActivityIndicatorViewStyle
 
@@ -636,7 +604,7 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
-T. Change the loading GIF from the default. Default value is "printio.gif".
+P. Change the loading GIF from the default. Default value is "printio.gif".
 
 - setLoadingGIF
 
@@ -644,7 +612,7 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
-U. Change title of loading dialog. Default value is "Loading...".
+Q. Change title of loading dialog. Default value is "Loading...".
 
 - setLoadingText
 
@@ -652,7 +620,7 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
-V. Change icon for Help Button. Specify an image file to use as the help icon throughout the app.
+R. Change icon for Help Button. Specify an image file to use as the help icon throughout the app.
 
 - setIconForHelpButton 
 
@@ -660,7 +628,7 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
-W. Change prtner's logo icon which is used on cart and confirmation screens. File name of logo image, without file type extension.
+S. Change prtner's logo icon which is used on cart and confirmation screens. File name of logo image, without file type extension.
 
 - setLogoFileName
 
