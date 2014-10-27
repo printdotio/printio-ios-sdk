@@ -146,6 +146,7 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/iOS-Simulator-Screen-Shot-Oct-27%2C-2014%2C-6.29.47-PM.png)
 ###Payment Options
 ```XML
 <customization>
@@ -155,6 +156,7 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/iOS-Simulator-Screen-Shot-Oct-27%2C-2014%2C-6.29.50-PM.png)
 ###Credit Card
 ```XML
 <customization>
@@ -164,6 +166,7 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/iOS-Simulator-Screen-Shot-Oct-27%2C-2014%2C-6.30.02-PM.png)
 ###Payment Date Picker
 ```XML
 <customization>
@@ -172,6 +175,7 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/iOS-Simulator-Screen-Shot-Oct-27%2C-2014%2C-6.30.08-PM.png)
 ###Order Confirmation
 ```XML
 <customization>
