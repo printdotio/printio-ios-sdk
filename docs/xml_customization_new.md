@@ -97,6 +97,7 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/iOS-Simulator-Screen-Shot-Oct-27%2C-2014%2C-5.47.24-PM.png)
 ###Shopping Cart
 ```XML
 <customization>
