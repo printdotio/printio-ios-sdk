@@ -1,10 +1,11 @@
 Available Photo sources
 ====
-- Instagram icon on Side Menu
+1. Instagram icon on Side Menu
+- btn_side_menu_instagram_transparent.png - 270x124px
 
 ![enter image description here][1] 
 
-**btn_side_menu_instagram_transparent.png - 270x124px**
+
 
 ---
 
