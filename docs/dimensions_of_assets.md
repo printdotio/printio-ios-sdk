@@ -28,7 +28,7 @@ Available Photo sources
 ---
 ![enter image description here][6] 
 ---
-- btn_product.png
+- btn_product.png - 640x114px
 
 ![enter image description here][7] 
 ---
