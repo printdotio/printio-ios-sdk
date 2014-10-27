@@ -504,6 +504,14 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
+N14. Hide version label from side menu. Default value is NO.
+
+- hideVersionInSideMenu 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideversioninsidemenu
+
+---
+
 Full app Methods
 ===
 
