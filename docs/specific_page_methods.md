@@ -537,7 +537,7 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
-B. Methods to change header bar color (Might apply to the whole app)
+B. Methods to change header bar color (Might apply to the whole app).
 
 - navigationBarColor
 
@@ -654,7 +654,7 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
-U. Set status bar style and visibility
+U. Set status bar style and visibility.
 
 - setStatusBarDark
 - hidden 
