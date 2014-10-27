@@ -116,6 +116,7 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/iOS-Simulator-Screen-Shot-Oct-27%2C-2014%2C-6.15.20-PM.png)   ![](https://dl.dropboxusercontent.com/u/19321066/printIO/iOS-Simulator-Screen-Shot-Oct-27%2C-2014%2C-6.15.23-PM.png)
 ###Address Validation
 ```XML
 <customization>
@@ -126,15 +127,16 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/iOS-Simulator-Screen-Shot-Oct-27%2C-2014%2C-6.15.35-PM.png)
 ###Select Address
 ```XML
 <customization>
   <screen name="select_address">
-    <button name="button_edit"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
     <button name="button_add"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
   </screen>
 </customization>
 ```
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/iOS-Simulator-Screen-Shot-Oct-27%2C-2014%2C-6.16.01-PM.png)
 ###Shipment Review
 ```XML
 <customization>
