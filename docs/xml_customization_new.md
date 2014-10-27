@@ -102,7 +102,6 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
 ```XML
 <customization>
   <screen name="shopping_cart">
-    <button name="button_edit"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
     <button name="button_check_out"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
   </screen>
 </customization>
