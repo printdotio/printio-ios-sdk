@@ -215,6 +215,14 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
+E11. Change icon for 'Save' button on Customize Product screen.
+
+- setIconForSaveButtonInCustomizeProduct
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforsavebuttonincustomizeproduct
+
+---
+
 ## F. Image Editor screen
 
 ![enter image description here][9]
