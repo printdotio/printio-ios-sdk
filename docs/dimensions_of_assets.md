@@ -2,8 +2,11 @@ Available Photo sources
 ====
 - Instagram icon on Side Menu
 ![enter image description here][1] 
+
 **btn_side_menu_fb_transparent.png** - 270x124px
+
 ---
+
 ![enter image description here][2] 
 
 
