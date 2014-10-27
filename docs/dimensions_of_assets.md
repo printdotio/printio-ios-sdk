@@ -89,7 +89,7 @@ Available Photo sources
 
 ### "Double tap to edit photo" balloon on Customization screen.
 
-- icon_double_tap_green.png - 360x65
+- icon_double_tap_green.png - 360x65px
 
 ![enter image description here][21] 
 ---
@@ -128,6 +128,20 @@ Available Photo sources
 
 ---
 
+### Icon for Bussiness and Residential buttons on Checkout screen.
+
+- btn_business.png - 230x230px
+- btn_home.png - 230x230px
+
+![enter image description here][31] 
+---
+![enter image description here][32]
+---
+![enter image description here][33]
+
+---
+
+
 [1]: https://lh5.googleusercontent.com/-wt_63funsJw/VE6eNaeupuI/AAAAAAAAAwI/Hy5OdeL46qo/w270-h124-no/2-btn_side_menu_instagram_transparent.png
 [2]: https://lh6.googleusercontent.com/-OeJkQPC-i2E/VE6d-xzmBsI/AAAAAAAAAtM/fegDCP3r4eQ/w501-h889-no/1-ss_side_instagram.png
 [3]: https://lh6.googleusercontent.com/-8U5vp3ynRyQ/VE6d-53t0MI/AAAAAAAAAtE/8Y_322UaQKw/w270-h124-no/1-btn_side_menu_fb_transparent.png
@@ -158,6 +172,8 @@ Available Photo sources
 [28]: https://lh3.googleusercontent.com/-aOEQwvaFa0c/VE6eGflismI/AAAAAAAAAug/mTajhTb2Grc/s230-no/16-btn_arrange.png
 [29]: https://lh5.googleusercontent.com/-lJz0AopRQSw/VE6eG6jaxjI/AAAAAAAAAu0/5_mCIsMxE2s/s230-no/16-btn_drag_drop.png
 [30]: https://lh6.googleusercontent.com/-f8p3E3w9NGk/VE6eHZFoyrI/AAAAAAAAAuw/Q4JWMBzHBXU/w501-h889-no/16-ss_cust_random_manual.png
-
+[31]: https://lh6.googleusercontent.com/-DBuXsuN2NqM/VE6eIBrwnaI/AAAAAAAAAv4/mEH1NX4Rqac/s230-no/17-btn_business.png
+[32]: https://lh4.googleusercontent.com/-f9usyYWqxHk/VE6eIVQfhXI/AAAAAAAAAvI/bPUVtMHx89E/s230-no/17-btn_home.png
+[33]: https://lh4.googleusercontent.com/-CSofB2RxpYI/VE6eIvbxq-I/AAAAAAAAAvM/DJOX1qEYSHs/w501-h889-no/17-ss_address_type.png
 
 
