@@ -654,6 +654,15 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
+U. Set status bar style and visibility
+
+- setStatusBarDark
+- hidden 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setstatusbardarkhidden
+
+---
+
  [1]: https://lh6.googleusercontent.com/-0WuWATsBvOc/VEprESzVF9I/AAAAAAAAATA/u-WMpFsB59A/w400-h710-no/products_screen_small.png
  [2]: https://lh3.googleusercontent.com/-_977PRHV-xs/VEptrXemYmI/AAAAAAAAATk/Qxi83xKMO8o/w400-h710-no/product_details_screen_small.png
  [3]: https://lh3.googleusercontent.com/-KAeQ_QBdzmo/VEpwbALD7SI/AAAAAAAAAUU/pr6ZHCEeSC0/w400-h710-no/choose_options_small.png
