@@ -507,6 +507,8 @@ Full app Methods
 ![enter image description here][21] 
 ---
 ![enter image description here][22] 
+---
+![enter image description here][23]
 
 ---
 
@@ -725,3 +727,4 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [20]: https://lh3.googleusercontent.com/-93-n89CRYUs/VEqSSUnQ1-I/AAAAAAAAAcQ/IRdONVLTPKM/w400-h710-no/side_menu_2_small.png
  [21]: https://lh6.googleusercontent.com/-kP7Z1nYl61E/VE4VMVzHCOI/AAAAAAAAAd8/VhZmk2EpavU/w400-h710-no/neg_pos_buttons_small.png
  [22]: https://lh3.googleusercontent.com/-MeY4CXiiIkY/VE4cPLovmpI/AAAAAAAAAew/_xqVbYWebH0/w400-h710-no/header_bar_small.png
+ [23]: https://lh4.googleusercontent.com/-mWOM_pkRmis/VE4gyvf8CoI/AAAAAAAAAfk/CdNieQMItW8/w400-h710-no/fonts_small.png
