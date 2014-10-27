@@ -51,18 +51,16 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecategoriesinfeaturedproducts
 
 #### A5. Allow user to show/hide country on Products screen. Default value is YES. 
-	Missing in new docs
 
-- setCountryInFeaturedProducts
+- showCountrySelectionOnScreen
 
-https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#select-country-bar
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showcountryselectiononscreenbackgroundcolor
 
 #### A6. Method to change background color on Select Country bar on Featured Products screen.
-	Missing in new docs
 
 - backgroundColor
 
-https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#select-country-bar
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showcountryselectiononscreenbackgroundcolor
 
 ---
 
