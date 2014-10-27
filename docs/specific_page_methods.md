@@ -213,13 +213,17 @@ E10. Set navigation bar background image.
 
 https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackgroundforcustomizeproduct
 
----
-
 E11. Change icon for 'Save' button on Customize Product screen.
 
 - setIconForSaveButtonInCustomizeProduct
 
 https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforsavebuttonincustomizeproduct
+
+E12. Provide help text for Customize Product screen. 
+
+- setCustomizationHelpText
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcustomizationhelptext
 
 ---
 
