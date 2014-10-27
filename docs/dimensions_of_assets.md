@@ -141,6 +141,25 @@ Available Photo sources
 
 ---
 
+### Icons in tabbar on image editor screen.
+
+- icon_info_blue.png - 60x60px
+- icon_rotate_green.png - 86x88px
+- icon_abc_orange.png - 105x35px
+- icon_effects_purple.png - 92x102px
+
+![enter image description here][34] 
+---
+![enter image description here][35]
+---
+![enter image description here][36]
+---
+![enter image description here][37]
+---
+![enter image description here][38]
+
+---
+
 
 [1]: https://lh5.googleusercontent.com/-wt_63funsJw/VE6eNaeupuI/AAAAAAAAAwI/Hy5OdeL46qo/w270-h124-no/2-btn_side_menu_instagram_transparent.png
 [2]: https://lh6.googleusercontent.com/-OeJkQPC-i2E/VE6d-xzmBsI/AAAAAAAAAtM/fegDCP3r4eQ/w501-h889-no/1-ss_side_instagram.png
@@ -175,5 +194,9 @@ Available Photo sources
 [31]: https://lh6.googleusercontent.com/-DBuXsuN2NqM/VE6eIBrwnaI/AAAAAAAAAv4/mEH1NX4Rqac/s230-no/17-btn_business.png
 [32]: https://lh4.googleusercontent.com/-f9usyYWqxHk/VE6eIVQfhXI/AAAAAAAAAvI/bPUVtMHx89E/s230-no/17-btn_home.png
 [33]: https://lh4.googleusercontent.com/-CSofB2RxpYI/VE6eIvbxq-I/AAAAAAAAAvM/DJOX1qEYSHs/w501-h889-no/17-ss_address_type.png
-
+[34]: https://lh6.googleusercontent.com/-SF7v74n2MyA/VE6eKH8bkvI/AAAAAAAAAvo/s95LiYR_sw8/s60-no/18-icon_info_blue.png
+[35]: https://lh5.googleusercontent.com/-TV1K8_1HLzM/VE6eK4C1igI/AAAAAAAAAvk/ylr6r6FCopE/w86-h88-no/18-icon_rotate_green%402x.png
+[36]: https://lh6.googleusercontent.com/-GnBzumh64Ac/VE6eJc4jZCI/AAAAAAAAAvU/Yae1RYPr2u8/w105-h35-no/18-icon_abc_orange.png
+[37]: https://lh6.googleusercontent.com/-iiWR7-Sf-5E/VE6eJ63Z53I/AAAAAAAAAvc/dv1t6-qtHwc/w92-h102-no/18-icon_effects_purple.png
+[38]:
 
