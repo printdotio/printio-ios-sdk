@@ -573,46 +573,6 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ---
 
-H. Pass one or more photos directly into the application.
-
-- setImages  
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setimages
-
----
-
-I. When passing one or more photos to the SDK, you can disable photo sources so that the user may only select from the images you've provided.
-
-- disablePhotoSourcesWhenImagesArePassedIn 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablephotosourceswhenimagesarepassedin
-
----
-
-J. When passing a photo to the SDK, you can disable the photo source step within the customize product view when a user selects the single photo template.
-
-- disablePhotoSourcesForOnePhotoTemplate 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablephotosourcesforonephototemplate
-
----
-
-K. Allows you to add image to be first in row for all photo sources. 
-
-- setPassedImageFirstInPhotoSources 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpassedimagefirstinphotosources
-
----
-
-L. Set the passed image as the thumbnail for the single photo template on the customize product view.
-
-- setPassedImageAsThumbForOnePhotoTemplate 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpassedimageasthumbforonephototemplate
-
----
-
 M. Change shopping cart icon and indicate whether to badge with number of products.
 
 - setIconForShoppingCart
