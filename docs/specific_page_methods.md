@@ -625,6 +625,8 @@ M. Change shopping cart icon and indicate whether to badge with number of produc
 
 https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartwithnumberofproductslabelpositiontextcolor
 
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartwithnumberofproductslabelpositioncirclecolortextcolor
+
 ---
 
 N. Set custom fonts from main app bundle. 
