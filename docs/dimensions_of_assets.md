@@ -75,6 +75,19 @@ Available Photo sources
 ---
 ![enter image description here][18]
 
+---
+
+### Add To Cart icon from Customization screen.
+
+- icon_add_to_cart.png - 111x111px
+
+![enter image description here][19] 
+---
+![enter image description here][20]
+
+---
+
+
 
 
 
@@ -98,3 +111,5 @@ Available Photo sources
 [16]: https://lh5.googleusercontent.com/-quOs2KnracA/VE6eURaotOI/AAAAAAAAAyA/h5Q0lSPvKp8/w400-h710-no/9-ss_order_complete_logo.png
 [17]: https://lh4.googleusercontent.com/-hzLX918lUwo/VE6d_Bh0V2I/AAAAAAAAAtQ/YBKvdewssWs/s50-no/10-icon_help.png
 [18]: https://lh3.googleusercontent.com/-DygJSUoc6qQ/VE6eAuFABRI/AAAAAAAAAtg/GallTagPDKs/w501-h889-no/10-ss_cust_questionmark.png
+[19]: https://lh5.googleusercontent.com/-GP-GMjyKTEw/VE6eAorfVII/AAAAAAAAAtc/zY4dMcMkt1A/s111-no/11-icon_add_to_cart.png
+[20]: https://lh5.googleusercontent.com/-Z3hpj2fqtQs/VE6qVXMtH_I/AAAAAAAAAzs/-FFLgEVf0UA/w501-h889-no/ss_cust_add_fixed.png
