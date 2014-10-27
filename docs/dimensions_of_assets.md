@@ -55,9 +55,25 @@ Available Photo sources
 ![enter image description here][13] 
 ---
 ![enter image description here][14]
+ 
+---
 
+### Logo icon from Order Completed screen.
 
+- icon_logo.png - 71x80px
 
+![enter image description here][15] 
+---
+![enter image description here][16]
+
+---
+### Help icon from Customization screen.
+
+- icon_help.png - 50x50px
+
+![enter image description here][17] 
+---
+![enter image description here][18]
 
 
 
@@ -78,3 +94,7 @@ Available Photo sources
 [12]: https://lh4.googleusercontent.com/-eSTp48z-DYc/VE6eRAobvVI/AAAAAAAAAxM/FATzb9IoMgY/w501-h889-no/6-ss_howitworks.png
 [13]: https://lh5.googleusercontent.com/-tGhWtdpMG2c/VE6n3iFJSCI/AAAAAAAAAzE/SPuV4QnpQug/w75-h77-no/8black-icon_cart.png
 [14]: https://lh4.googleusercontent.com/-RrRTsEwhhBE/VE6eUOafBOI/AAAAAAAAAx4/pwk3UI0THI0/w501-h889-no/8-ss_cust_cart.png
+[15]: https://lh6.googleusercontent.com/-5oyM82J01pI/VE6eUACCRCI/AAAAAAAAAxw/ocgZfbkPcQo/w71-h80-no/9-icon_logo.png
+[16]: https://lh5.googleusercontent.com/-quOs2KnracA/VE6eURaotOI/AAAAAAAAAyA/h5Q0lSPvKp8/w400-h710-no/9-ss_order_complete_logo.png
+[17]: https://lh4.googleusercontent.com/-hzLX918lUwo/VE6d_Bh0V2I/AAAAAAAAAtQ/YBKvdewssWs/s50-no/10-icon_help.png
+[18]: https://lh3.googleusercontent.com/-DygJSUoc6qQ/VE6eAuFABRI/AAAAAAAAAtg/GallTagPDKs/w501-h889-no/10-ss_cust_questionmark.png
