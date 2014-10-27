@@ -87,7 +87,31 @@ Available Photo sources
 
 ---
 
+### "Double tap to edit photo" balloon on Customization screen.
 
+- icon_double_tap_green.png - 360x65
+
+![enter image description here][21] 
+---
+![enter image description here][22]
+
+---
+
+### Icon fot Product Details screen.
+
+- icon_details.png - 40x40px
+- icon_shipping_info.png - 42x40
+- icon_quality_guarantee.png - 40x40px
+
+![enter image description here][23] 
+---
+![enter image description here][24]
+---
+![enter image description here][25] 
+---
+![enter image description here][26]
+---
+![enter image description here][27]
 
 
 
@@ -113,3 +137,13 @@ Available Photo sources
 [18]: https://lh3.googleusercontent.com/-DygJSUoc6qQ/VE6eAuFABRI/AAAAAAAAAtg/GallTagPDKs/w501-h889-no/10-ss_cust_questionmark.png
 [19]: https://lh5.googleusercontent.com/-GP-GMjyKTEw/VE6eAorfVII/AAAAAAAAAtc/zY4dMcMkt1A/s111-no/11-icon_add_to_cart.png
 [20]: https://lh5.googleusercontent.com/-Z3hpj2fqtQs/VE6qVXMtH_I/AAAAAAAAAzs/-FFLgEVf0UA/w501-h889-no/ss_cust_add_fixed.png
+[21]: https://lh6.googleusercontent.com/-HZFL23xpzT0/VE6eCZeF25I/AAAAAAAAAtw/FJ4XGNxQpic/w360-h65-no/13-icon_double_tap_green.png
+[22]: https://lh5.googleusercontent.com/-Kcx1dKN4568/VE6eFBtcMlI/AAAAAAAAAv0/WOz8UWYvuOU/w501-h889-no/13-ss_cust_doubletap.png
+[23]: https://lh5.googleusercontent.com/-UOtPAscx-Fk/VE6eErfYiMI/AAAAAAAAAuA/jAc_c90rsEg/s40-no/14-icon_details.png
+[24]: https://lh4.googleusercontent.com/-w51tiK6R-80/VE6eFL30dbI/AAAAAAAAAuQ/nufcIWVll7U/w42-h40-no/14-icon_shipping_info.png
+[25]: https://lh6.googleusercontent.com/-inCfe2itlgM/VE6eFjhlStI/AAAAAAAAAvw/oltQ5CjOn8Y/s40-no/15-icon_quality_guarantee.png
+[26]: https://lh5.googleusercontent.com/-QG0yzfe1A4M/VE6eFW1bX3I/AAAAAAAAAuc/oQHY9tVFYnk/w501-h889-no/14-ss_createit_btns.png
+[27]: https://lh4.googleusercontent.com/-2sCN6E0PNZ4/VE6eGVzKj4I/AAAAAAAAAu8/T4IADLwY4dI/w501-h889-no/15-ss_createit_quality.png
+
+
+
