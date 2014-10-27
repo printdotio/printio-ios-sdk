@@ -1,0 +1,3 @@
+Available Photo sources
+====
+- Instagram
