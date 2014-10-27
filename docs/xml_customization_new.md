@@ -35,6 +35,7 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/iOS-Simulator-Screen-Shot-Oct-27%2C-2014%2C-5.07.36-PM.png)
 ###Product Details
 ```XML
 <customization>
@@ -48,7 +49,6 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
     <label name="label_2" title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
     <label name="label_3" title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
     <label name="label_4" title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
-    <label name="label_5" title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
   </screen>
 </customization>
 ```
