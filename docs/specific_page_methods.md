@@ -535,6 +535,8 @@ Full app Methods
 ![enter image description here][28]
 ---
 ![enter image description here][29]
+---
+![enter image description here][30]
 
 ---
 
@@ -722,4 +724,4 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [28]: https://lh6.googleusercontent.com/-lt-lro3tv8A/VE5LeJWLHTI/AAAAAAAAAmY/Ay2JFZzou8U/w400-h710-no/statusbar_small.png
  [29]: https://lh5.googleusercontent.com/-C41mgayr-BI/VE5eVC8ZQqI/AAAAAAAAAnQ/XftJpxIiJB4/w400-h710-no/side_menu_right_small.png
  [30]: https://lh5.googleusercontent.com/-85uZBozA-sI/VE5igASphOI/AAAAAAAAAn0/lHKZqa0KW94/w400-h710-no/side_menu_3_small.png
- 
+ [31]: https://lh6.googleusercontent.com/-qqM6LZx2iPI/VE5mRTHts_I/AAAAAAAAAog/GD9I2V5qFlk/w400-h710-no/coming_soon_small.png
