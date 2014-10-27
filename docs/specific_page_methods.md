@@ -207,6 +207,12 @@ E9. Hide/Show 'Watch Video' button on Customize Product screen. Default value is
 
 https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidewatchvideobutton
 
+E10. Set navigation bar background image.
+
+- setNavigationBarBackgroundForCustomizeProduct 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackgroundforcustomizeproduct
+
 ---
 
 ## F. Image Editor screen
@@ -514,6 +520,8 @@ Full app Methods
 ![enter image description here][26]
 ---
 ![enter image description here][27]
+---
+![enter image description here][27]
 
 ---
 
@@ -672,4 +680,5 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [24]: https://lh4.googleusercontent.com/-mWOM_pkRmis/VE4gyvf8CoI/AAAAAAAAAfk/CdNieQMItW8/w400-h710-no/fonts_small.png
  [25]: https://lh4.googleusercontent.com/-wk1EQuaLLWY/VE5B_6ev7OI/AAAAAAAAAjE/5gBQcNQ1LA0/w400-h710-no/loading_gif_small.png
  [26]: https://lh6.googleusercontent.com/-n2bGbuEDaCw/VE5A1WgftUI/AAAAAAAAAig/okTIDeogNac/w400-h710-no/logo_small.png
- [27]: https://lh4.googleusercontent.com/-kMMUs3pylqc/VE5EbxTzdcI/AAAAAAAAAjw/3fMKudHW2Nw/w400-h710-no/navbar_bg_small.png
+ [27]: https://lh6.googleusercontent.com/-eAe_m5cnfU0/VE5GU47PW9I/AAAAAAAAAkU/iIrk1gJqVRo/w400-h710-no/nav_bar_bg_small.png
+ [28]: https://lh6.googleusercontent.com/-jGDvAgbWc6c/VE5GkHVMtAI/AAAAAAAAAk0/H2Iz6udJCrY/w400-h710-no/navbar_bg_small.png
