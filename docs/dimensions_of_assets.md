@@ -97,7 +97,7 @@ Available Photo sources
 
 ---
 
-### Icon fot Product Details screen.
+### Icons for Product Details screen.
 
 - icon_details.png - 40x40px
 - icon_shipping_info.png - 42x40
@@ -113,7 +113,18 @@ Available Photo sources
 ---
 ![enter image description here][27]
 
+---
 
+### Icons for Autto/Random Arrange and Manual Drag & Drop buttons on Customization screen.
+
+- btn_arrange.png - 230x230px
+- btn_drag_drop.png - 230x230px
+
+![enter image description here][28] 
+---
+![enter image description here][29]
+---
+![enter image description here][30]
 
 ---
 
@@ -144,6 +155,9 @@ Available Photo sources
 [25]: https://lh6.googleusercontent.com/-inCfe2itlgM/VE6eFjhlStI/AAAAAAAAAvw/oltQ5CjOn8Y/s40-no/15-icon_quality_guarantee.png
 [26]: https://lh5.googleusercontent.com/-QG0yzfe1A4M/VE6eFW1bX3I/AAAAAAAAAuc/oQHY9tVFYnk/w501-h889-no/14-ss_createit_btns.png
 [27]: https://lh4.googleusercontent.com/-2sCN6E0PNZ4/VE6eGVzKj4I/AAAAAAAAAu8/T4IADLwY4dI/w501-h889-no/15-ss_createit_quality.png
+[28]: https://lh3.googleusercontent.com/-aOEQwvaFa0c/VE6eGflismI/AAAAAAAAAug/mTajhTb2Grc/s230-no/16-btn_arrange.png
+[29]: https://lh5.googleusercontent.com/-lJz0AopRQSw/VE6eG6jaxjI/AAAAAAAAAu0/5_mCIsMxE2s/s230-no/16-btn_drag_drop.png
+[30]: https://lh6.googleusercontent.com/-f8p3E3w9NGk/VE6eHZFoyrI/AAAAAAAAAuw/Q4JWMBzHBXU/w501-h889-no/16-ss_cust_random_manual.png
 
 
 
