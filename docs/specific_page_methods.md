@@ -522,8 +522,6 @@ N13. Set Language code. Default value is EN.
 
 https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setlanguagecode 
 
----
-
 N14. Hide version label from side menu. Default value is NO.
 
 - hideVersionInSideMenu 
