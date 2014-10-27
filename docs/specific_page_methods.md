@@ -320,17 +320,17 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 ![enter image description here][14]
 
-I1. Hide logo when user is in checkout flow. Default value is YES.
-
-- removeLogoFromPaymentScreen 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removelogofrompaymentscreen
-
-I2. Enable the terms and conditions link form control on the payment page and specify the URL to be loaded (in Safari). By default, the terms and conditions are not shown. 
+I1. Enable the terms and conditions link form control on the payment page and specify the URL to be loaded (in Safari). By default, the terms and conditions are not shown. 
 
 - setTermsAndConditionsURL 
 
 https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settermsandconditionsurl 
+
+I2. Hide logo when user is in checkout flow. Default value is YES.
+
+- removeLogoFromPaymentScreen 
+
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removelogofrompaymentscreen
 
 ---
 
