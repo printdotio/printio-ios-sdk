@@ -99,13 +99,13 @@ D2. Hide icon for Upload Instructions text in Photo Sources screen. Default valu
 D3. Required step to configure which photo sources you would like to offer within your application.
 
 - [**setAvailablePhotoSources**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources)
-- PIO_SM_PHONE
-- PIO_SM_INSTAGRAM
-- PIO_SM_FACEBOOK
-- PIO_SM_PICASA
-- PIO_SM_FLICKR
-- PIO_SM_DROPBOX
-- PIO_SM_PHOTOBUCKET
+- [**PIO_SM_PHONE**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources)
+- [**PIO_SM_INSTAGRAM**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources)
+- [**PIO_SM_FACEBOOK**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources)
+- [**PIO_SM_PICASA**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources)
+- [**PIO_SM_FLICKR**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources)
+- [**PIO_SM_DROPBOX**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources)
+- [**PIO_SM_PHOTOBUCKET**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources)
 
 ---
 
