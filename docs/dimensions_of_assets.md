@@ -155,8 +155,6 @@ Available Photo sources
 ![enter image description here][36]
 ---
 ![enter image description here][37]
----
-![enter image description here][38]
 
 ---
 
