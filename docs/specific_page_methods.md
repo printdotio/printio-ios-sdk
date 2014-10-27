@@ -410,6 +410,9 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 ![enter image description here][19]
 ---
 ![enter image description here][20]
+---
+![enter image description here][30]
+---
 
 N1. Change background color for Side Menu. Default value is black.
 
@@ -710,4 +713,5 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
  [27]: https://lh6.googleusercontent.com/-eAe_m5cnfU0/VE5GU47PW9I/AAAAAAAAAkU/iIrk1gJqVRo/w400-h710-no/nav_bar_bg_small.png
  [28]: https://lh6.googleusercontent.com/-lt-lro3tv8A/VE5LeJWLHTI/AAAAAAAAAmY/Ay2JFZzou8U/w400-h710-no/statusbar_small.png
  [29]: https://lh5.googleusercontent.com/-C41mgayr-BI/VE5eVC8ZQqI/AAAAAAAAAnQ/XftJpxIiJB4/w400-h710-no/side_menu_right_small.png
+ [30]: https://lh5.googleusercontent.com/-85uZBozA-sI/VE5igASphOI/AAAAAAAAAn0/lHKZqa0KW94/w400-h710-no/side_menu_3_small.png
  
