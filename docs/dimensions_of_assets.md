@@ -33,9 +33,18 @@ Available Photo sources
 ![enter image description here][7] 
 ---
 ![enter image description here][8] 
+---
+- btn_view_cart.png - 640x114px
 
+![enter image description here][9] 
+---
+![enter image description here][10] 
+---
+- btn_sm_how_works.png - 640x114px
 
-
+![enter image description here][11] 
+---
+![enter image description here][12]
 
 
 
@@ -59,3 +68,7 @@ Available Photo sources
 [6]: https://lh6.googleusercontent.com/-bQdpl1kyqDs/VE6eOYweqzI/AAAAAAAAAwk/kHsw7gsDrC8/w501-h889-no/3-ss_exit.png
 [7]: https://lh5.googleusercontent.com/-N3CTeLZB7bY/VE6eOeZ0TZI/AAAAAAAAAwY/smgiizg2y9Q/w640-h114-no/4-btn_product.png
 [8]: https://lh4.googleusercontent.com/-LWkTxCPb7dI/VE6ePYS8_kI/AAAAAAAAAw0/hdNayzVO3bw/w501-h889-no/4-ss_products.png
+[9]: https://lh4.googleusercontent.com/-p05SQCNQ_-o/VE6ePUzHrDI/AAAAAAAAAws/XTP7eG1Cy6s/w640-h114-no/5-btn_view_cart.png
+[10]: https://lh4.googleusercontent.com/-34YmPa6On38/VE6eQe0EIOI/AAAAAAAAAw8/oivNGaWi064/w501-h889-no/5-ss_cart.png
+[11]: https://lh4.googleusercontent.com/-sbw6pc2YQds/VE6eQY4Dl2I/AAAAAAAAAxA/Ffo3Odnrs6s/w640-h114-no/6-btn_sm_how_works.png
+[12]: https://lh4.googleusercontent.com/-eSTp48z-DYc/VE6eRAobvVI/AAAAAAAAAxM/FATzb9IoMgY/w501-h889-no/6-ss_howitworks.png
