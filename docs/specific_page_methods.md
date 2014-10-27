@@ -27,7 +27,9 @@ Specific Page Methods
 
 #### A1. Set the title for the Featured Products screen. Default value is "Products". 
 
-- setTitleForFeaturedProductsScreen
+```Objective-C
+setTitleForFeaturedProductsScreen
+```
  
 https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforfeaturedproductsscreen
 
