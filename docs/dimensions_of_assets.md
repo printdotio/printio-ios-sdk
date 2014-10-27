@@ -46,11 +46,15 @@ Available Photo sources
 ---
 ![enter image description here][12]
 
+---
 
+### Cart icon in the navigation bar.
 
+- icon_cart.png - 75x77px
 
-
-
+![enter image description here][13] 
+---
+![enter image description here][14]
 
 
 
@@ -72,3 +76,5 @@ Available Photo sources
 [10]: https://lh4.googleusercontent.com/-34YmPa6On38/VE6eQe0EIOI/AAAAAAAAAw8/oivNGaWi064/w501-h889-no/5-ss_cart.png
 [11]: https://lh4.googleusercontent.com/-sbw6pc2YQds/VE6eQY4Dl2I/AAAAAAAAAxA/Ffo3Odnrs6s/w640-h114-no/6-btn_sm_how_works.png
 [12]: https://lh4.googleusercontent.com/-eSTp48z-DYc/VE6eRAobvVI/AAAAAAAAAxM/FATzb9IoMgY/w501-h889-no/6-ss_howitworks.png
+[13]: https://lh6.googleusercontent.com/-mCMKbSz-twQ/VE6eStpwSrI/AAAAAAAAAxc/AfQXX3lFVWk/w75-h77-no/8-icon_cart.png
+[14]: https://lh4.googleusercontent.com/-RrRTsEwhhBE/VE6eUOafBOI/AAAAAAAAAx4/pwk3UI0THI0/w501-h889-no/8-ss_cust_cart.png
