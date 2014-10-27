@@ -58,22 +58,15 @@ Specific Page Methods
 
 #### B1. Provide Quality Guarantee text for Product Details screen.
 
-- setQualityGuaranteeText
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setqualityguaranteetext
+- [**setQualityGuaranteeText**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setqualityguaranteetext)
 
 #### B2. Show title below navigation bar on Product Details screen
 
-- productDetailsShowTitleBelowNavBar
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar
- 
+- [**productDetailsShowTitleBelowNavBar**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
 
 #### B3. Show menu button in navigation bar on Product Details screen
 
-- productDetailsShowMenuBtnInNavBar
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar
+- [**productDetailsShowMenuBtnInNavBar**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
 
 ---
 
@@ -83,15 +76,11 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 C1. Disable auto recognition and selection of iPhone model. Default value is NO.
 
-- disableAutoRecognizePhoneModel 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disableautorecognizephonemodel
+- [**disableAutoRecognizePhoneModel**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disableautorecognizephonemodel)
 
 C2. Set the title for the Choose Options screen. Default value is "Choose Options".
 	
-- setTitleForChooseOptionsScreen
- 
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchooseoptionsscreen
+- [**setTitleForChooseOptionsScreen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchooseoptionsscreen)
 
 ---
 
@@ -101,20 +90,15 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 D1. Customize the title on the photo sources screen. Default value is "Select Photos".
 
-- setTitleForPhotoSourcesScreen
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforphotosourcesscreen
+- [**setTitleForPhotoSourcesScreen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforphotosourcesscreen)
 
 D2. Hide icon for Upload Instructions text in Photo Sources screen. Default value is NO.
 
-- hideIconForUploadInstructions
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideiconforuploadinstructions
-
+- [**hideIconForUploadInstructions**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideiconforuploadinstructions)
 
 D3. Required step to configure which photo sources you would like to offer within your application.
 
-- setAvailablePhotoSources
+- [**setAvailablePhotoSources**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources)
 - PIO_SM_PHONE
 - PIO_SM_INSTAGRAM
 - PIO_SM_FACEBOOK
@@ -122,8 +106,6 @@ D3. Required step to configure which photo sources you would like to offer withi
 - PIO_SM_FLICKR
 - PIO_SM_DROPBOX
 - PIO_SM_PHOTOBUCKET
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources
 
 ---
 
@@ -139,79 +121,55 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 E1. Set whether photos are arranged automatically, manually, or up to the user (default is CHOOSE).
 
-- setPhotoArrangement 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setphotoarrangement  
+- [**setPhotoArrangement**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setphotoarrangement)
 
 E2. Specify an image file to use as the help icon in customize product view. Default value is YES.
 
-- setIconForHelpButtonInCustomizeProduct
-- visible
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforhelpbuttonincustomizeproductvisible 
+- [**setIconForHelpButtonInCustomizeProduct**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforhelpbuttonincustomizeproductvisible)
+- [**visible**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforhelpbuttonincustomizeproductvisible)
 
 E3. Show custom help overlay when user is about to start editing image in Customize Product view.
 
-- showHelpDialogWithImage 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showhelpdialogwithimage
+- [**showHelpDialogWithImage**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showhelpdialogwithimage)
 
 E4. Specify an image file to use as the Add Photos button in the Customize Product view.
 
-- setIconForAddPhotosButton 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforaddphotosbutton 
+- [**setIconForAddPhotosButton**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforaddphotosbutton)
 
 E5. Set visibility of toolbar in customize product view. Default is YES.
 
-- showToolbarInCustomizeProduct
-- backgroundImage 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showtoolbarincustomizeproductbackgroundimage
+- [**showToolbarInCustomizeProduct**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showtoolbarincustomizeproductbackgroundimage)
+- [**backgroundImage**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showtoolbarincustomizeproductbackgroundimage)
 
 E6. Set visibility of images list in customize product view. 
 
-- hideImagesListInCustomizeProduct
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideimageslistincustomizeproduct 
+- [**hideImagesListInCustomizeProduct**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideimageslistincustomizeproduct)
 
 E7. Customize the Double tap balloon on the Customize Product screen.
 
-- setPopUpWithImage
-- text
-- textColor 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpopupwithimagetexttextcolor 
+- [**setPopUpWithImage**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpopupwithimagetexttextcolor)
+- [**text**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpopupwithimagetexttextcolor)
+- [**textColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpopupwithimagetexttextcolor)
 
 E8. Customize the how many seconds the Double tap balloon is visible for in the customize product view. The default time is 10 seconds.
 
-- setDoubleTapBalloonVisibilityTime
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdoubletapballoonvisibilitytime
+- [**setDoubleTapBalloonVisibilityTime**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdoubletapballoonvisibilitytime)
 
 E9. Hide/Show 'Watch Video' button on Customize Product screen. Default value is NO. 
 
-- hideWatchVideoButton 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidewatchvideobutton
+- [**hideWatchVideoButton**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidewatchvideobutton)
 
 E10. Set navigation bar background image.
 
-- setNavigationBarBackgroundForCustomizeProduct 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackgroundforcustomizeproduct
+- [**setNavigationBarBackgroundForCustomizeProduct**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackgroundforcustomizeproduct)
 
 E11. Change icon for 'Save' button on Customize Product screen.
 
-- setIconForSaveButtonInCustomizeProduct
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforsavebuttonincustomizeproduct
+- [**setIconForSaveButtonInCustomizeProduct**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforsavebuttonincustomizeproduct)
 
 E12. Provide help text for Customize Product screen. 
 
-- setCustomizationHelpText
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcustomizationhelptext
+- [**setCustomizationHelpText**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcustomizationhelptext)
 
 ---
 
@@ -221,9 +179,7 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 F1. Set which buttons will be visible in Image Editor toolbar. By default, all buttons are visible.
 
-- imageEditorShowButtons
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--imageeditorshowbuttons
+- [**imageEditorShowButtons**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--imageeditorshowbuttons)
 
 ---
 
@@ -235,52 +191,36 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 G1. Customize the title for the Shopping Cart. Default value is "Shopping Cart".
 
-- setTitleForShoppingCart 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforshoppingcart
+- [**setTitleForShoppingCart**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforshoppingcart)
 
 G2. Customize the icon for the back button in the Shopping Cart screen. 
 
-- setIconForShoppingCartBackButton 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartbackbutton
+- [**setIconForShoppingCartBackButton**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartbackbutton)
 
 G3. Method to Hide or Show “Edit” button on Shopping Cart screen. Default value is NO.
 
-- hideEditButtonInShoppingCart 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideeditbuttoninshoppingcart 
+- [**hideEditButtonInShoppingCart**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideeditbuttoninshoppingcart)
 
 G4. Visibility for Add More Products button. Default value is YES.
 
-- setShowsAddMoreProductsInShoppingCart 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setshowsaddmoreproductsinshoppingcart
+- [**setShowsAddMoreProductsInShoppingCart**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setshowsaddmoreproductsinshoppingcart)
  
 G5. Disable Preview screen for products on Shopping Cart screen (click on item in cart list). Default value is YES. 
 
-- disablePreviewScreen 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablepreviewscreen
+- [**disablePreviewScreen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablepreviewscreen)
 
 G6. Add Promo code to get discount for products on Shopping cart screen. 
 
-- setPromoCode 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpromocode
+- [**setPromoCode**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpromocode)
 
 G7. Remove plus sign from 'Add More Products' button. Default value is NO.
 
-- removePlusFromAddMoreProductsButton 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removeplusfromaddmoreproductsbutton
+- [**removePlusFromAddMoreProductsButton**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removeplusfromaddmoreproductsbutton)
 
 G8. Customize 'Add More Products' button. Plus sign is hidden by default. Default title is "Add More Products".
 
-- customizeAddMoreProductButton
-- icon
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--customizeaddmoreproductbutton
+- [**customizeAddMoreProductButton**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--customizeaddmoreproductbutton)
+- [**icon**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--customizeaddmoreproductbutton)
 
 ---
 
@@ -292,15 +232,11 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 H1. Show/Hide plus sign on Add Shipping Address button. Default value is NO. 
 
-- showPlusSignOnAddButton 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showplussignonaddbutton
+- [**showPlusSignOnAddButton**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showplussignonaddbutton)
 
 H2. Change highlight color for address selection on Select Address screen (on click item from the address list). Default color is light green. 
 
-- setColorForAddressSelection 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcolorforaddressselection
+- [**setColorForAddressSelection**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcolorforaddressselection)
 
 ---
 
@@ -310,15 +246,11 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 I1. Enable the terms and conditions link form control on the payment page and specify the URL to be loaded (in Safari). By default, the terms and conditions are not shown. 
 
-- setTermsAndConditionsURL 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settermsandconditionsurl 
+- [**setTermsAndConditionsURL**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settermsandconditionsurl)
 
 I2. Hide logo when user is in checkout flow. Default value is YES.
 
-- removeLogoFromPaymentScreen 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removelogofrompaymentscreen
+- [**removeLogoFromPaymentScreen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removelogofrompaymentscreen)
 
 ---
 
@@ -328,27 +260,19 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 J1. Change title for Order Completed screen. Default value is "Order Completed".
 
-- setTitleForOrderCompletedScreen 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforordercompletedscreen
+- [**setTitleForOrderCompletedScreen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforordercompletedscreen)
 
 J2. Change icon for company logo.
 
-- setIconForOrderCompletedScreen 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforordercompletedscreen
+- [**setIconForOrderCompletedScreen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforordercompletedscreen)
 
 J3. Change company message below company logo.
 
-- setMessageForOrderCompletedScreen 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setmessageforordercompletedscreen
+- [**setMessageForOrderCompletedScreen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setmessageforordercompletedscreen)
 
 J4. Change function of “Close” button on Order Completed screen.
 
-- orderCompletedScreenCloseButtonShouldPerformBack 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--ordercompletedscreenclosebuttonshouldperformback
+- [**orderCompletedScreenCloseButtonShouldPerformBack**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--ordercompletedscreenclosebuttonshouldperformback)
 
 ---
 
@@ -358,33 +282,23 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 K1. Change title on Choose Country screen. Default value is “Choose Country”.
 
-- setTitleForChooseCountryScreen 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchoosecountryscreen
+- [**setTitleForChooseCountryScreen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchoosecountryscreen)
 
 K2. Hide search icon from navigation bar. Default value is Hidden. 
 
-- hideSearchIconInChooseCountryScreen 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidesearchiconinchoosecountryscreen
+- [**hideSearchIconInChooseCountryScreen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidesearchiconinchoosecountryscreen)
 
 K3. Change placeholder text in search bar.
 
-- setPlaceholderTextForSearchBarInChooseCountryScreen 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setplaceholdertextforsearchbarinchoosecountryscreenhidemagnifyingglass 
+- [**setPlaceholderTextForSearchBarInChooseCountryScreen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setplaceholdertextforsearchbarinchoosecountryscreenhidemagnifyingglass)
 
 K4. Set magnifying glass visible or hidden.
 
-- hideMagnifyingGlass 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setplaceholdertextforsearchbarinchoosecountryscreenhidemagnifyingglass 
+- [**hideMagnifyingGlass**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setplaceholdertextforsearchbarinchoosecountryscreenhidemagnifyingglass)
 
 K5. Change the color of navigation bar in 'Choose Country' screen. Default color is white.
 
-- setNavigationBarBackgroundColorForChooseCountryScreen 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackgroundcolorforchoosecountryscreen
+- [**setNavigationBarBackgroundColorForChooseCountryScreen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackgroundcolorforchoosecountryscreen)
 
 ---
 
@@ -394,9 +308,7 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 L1. Customize the text content of the About page to fit your application's brand and voice.
 
-- setAboutText 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setabouttext
+- [**setAboutText**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setabouttext)
 
 ---
 
@@ -406,9 +318,7 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 M1. Customize the text content of the How It Works page to fit your application's brand and voice. 
 
-- setHowItWorksText 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sethowitworkstext
+- [**setHowItWorksText**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sethowitworkstext)
 
 ---
 
@@ -423,100 +333,56 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 N1. Change background color for Side Menu. Default value is black.
 
-- background 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--usesidemenuwithmenuiconbackground
+- [**background**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--usesidemenuwithmenuiconbackground)
 
 N2. Set which options to use in side menu:
 
-- sideMenuAddButtons
-- options
-- optionsTitle
-- optionsTitleColor
-- optionsColor
-- accountsTitle
-- accountsTitleColor
-- accountsColor
-- info
-- infoTitle
-- infoTitleColor
-- infoColor
-- backgroundImageForButtons 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons
+- [**sideMenuAddButtons**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons)
+- [**options**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons)
+- [**optionsTitle**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons)
+- [**optionsTitleColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons)
+- [**optionsColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons)
+- [**accountsTitle**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons)
+- [**accountsTitleColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons)
+- [**accountsColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons)
+- [**info**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons)
+- [**infoTitle**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons)
+- [**infoTitleColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons)
+- [**infoColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons)
+- [**backgroundImageForButtons**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons)
 
 N3. Hide “Options” header in Side Menu. default values is NO.
 
-- sideMenuHideOptionsHeader 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuhideoptionsheader
+- [**sideMenuHideOptionsHeader**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuhideoptionsheader)
 
 N4. Hide “Accounts” header in Side Menu. default values is NO.
 
-- sideMenuHideAccountsHeader 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuhideaccountsheader
+- [**sideMenuHideAccountsHeader**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuhideaccountsheader)
 
 N5. Hide “Info” header in Side Menu. Default values is NO.
 
-- sideMenuHideInfoHeader 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuhideinfoheader
+- [**sideMenuHideInfoHeader**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuhideinfoheader)
 
 N6. Show “Options” section as a list. Default value is NO. 
 
-- sideMenuShowOptionsAsList 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenushowoptionsaslist
+- [**sideMenuShowOptionsAsList**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenushowoptionsaslist)
 
 N7. Set the text to be included when a user clicks the Share this app button. Note: This is option from Side Menu, in order to use it, Side Menu needs to be enabled first. 
 
-- setShareText 
-- additionalText 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setsharetextadditionaltext
+- [**setShareText**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setsharetextadditionaltext)
+- [**additionalText**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setsharetextadditionaltext)
 
 N8. Hide photo source section. Default value is NO.
 
-- hidePhotoSourcesInSideMenu 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidephotosourcesinsidemenu
+- [**hidePhotoSourcesInSideMenu**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidephotosourcesinsidemenu)
 
 N9. Set background image on Side Menu. 
 
-- sideMenuBackgroungImage 
+- [**sideMenuBackgroungImage**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenubackgroungimage)
 
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenubackgroungimage
+N10. Hide version label from side menu. Default value is NO.
 
-N10. Set url link to facebook page e.g. 'fb://profile/642169949144369'
-
-- setLikeUsOnFacebookUrl 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setlikeusonfacebookurl
-
-N11. Set Country Code. Default value is US.
-
-- setCountryCode 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcountrycode
-
-N12. Set Currency Code. Default value is USA. 
-
-- setCurrencyCode 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcurrencycode 
-
-N13. Set Language code. Default value is EN. 
-
-- setLanguageCode 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setlanguagecode 
-
-N14. Hide version label from side menu. Default value is NO.
-
-- hideVersionInSideMenu 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideversioninsidemenu
+- [**hideVersionInSideMenu**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideversioninsidemenu)
 
 ---
 
@@ -549,157 +415,117 @@ Full app Methods
 
 A. Back (negative) - Forward (positive) button change methods (Applies to whole app).
 
-- setNegativeButtonsBackgroundColor 
- 
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnegativebuttonsbackgroundcolor
+- [**setNegativeButtonsBackgroundColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnegativebuttonsbackgroundcolor)
 
-- setPositiveButtonsBackgroundColor
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpositivebuttonsbackgroundcolor
+- [**setPositiveButtonsBackgroundColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpositivebuttonsbackgroundcolor)
 
 ---
 
 B. Methods to change header bar color (Might apply to the whole app).
 
-- navigationBarColor
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--navigationbarcolortitlecolorleftbuttonbackgroundcolorrightbuttonbackgroundcolortitlebuttonicon
+- [**navigationBarColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--navigationbarcolortitlecolorleftbuttonbackgroundcolorrightbuttonbackgroundcolortitlebuttonicon)
 
 ---
 
 C. Method to change title color in navigation bar (Might apply to the whole app).
 
-- titleColor 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--navigationbarcolortitlecolorleftbuttonbackgroundcolorrightbuttonbackgroundcolortitlebuttonicon
+- [**titleColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--navigationbarcolortitlecolorleftbuttonbackgroundcolorrightbuttonbackgroundcolortitlebuttonicon)
 
 ---
 
 D. Method to change background colors for left and right buttons in navigation bar.
 
-- leftButtonBackgroundColor
-- rightButtonBackgroundColor 
- 
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--navigationbarcolortitlecolorleftbuttonbackgroundcolorrightbuttonbackgroundcolortitlebuttonicon
+- [**leftButtonBackgroundColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--navigationbarcolortitlecolorleftbuttonbackgroundcolorrightbuttonbackgroundcolortitlebuttonicon
+- [**rightButtonBackgroundColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--navigationbarcolortitlecolorleftbuttonbackgroundcolorrightbuttonbackgroundcolortitlebuttonicon
 
 ---
 
 E. Set an icon for the center to replace the page title. Default value is Nil.
 
-- titleButtonIcon 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--navigationbarcolortitlecolorleftbuttonbackgroundcolorrightbuttonbackgroundcolortitlebuttonicon
+- [**titleButtonIcon**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--navigationbarcolortitlecolorleftbuttonbackgroundcolorrightbuttonbackgroundcolortitlebuttonicon)
 
 ---
 
 F. Include a "Back", "Menu" and "Cart" button in the top navigation bar. The default value is NO.
 
-- setThreeButtonsNavigationBarSytle 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setthreebuttonsnavigationbarsytle
+- [**setThreeButtonsNavigationBarSytle**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setthreebuttonsnavigationbarsytle)
 
 ---
 
 G. Set Back button in the navigation bar.
 
-- setIconForBackButton 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforbackbutton
+- [**setIconForBackButton**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforbackbutton)
 
 ---
 
 M. Change shopping cart icon and indicate whether to badge with number of products.
 
-- setIconForShoppingCart
-- withNumberOfProducts
-- labelPosition
-- circleColor
-- textColor 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartwithnumberofproductslabelpositiontextcolor
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartwithnumberofproductslabelpositioncirclecolortextcolor
+- [**setIconForShoppingCart**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartwithnumberofproductslabelpositiontextcolor)
+- [**withNumberOfProducts**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartwithnumberofproductslabelpositiontextcolor)
+- [**labelPosition**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartwithnumberofproductslabelpositiontextcolor)
+- [**circleColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartwithnumberofproductslabelpositioncirclecolortextcolor)
+- [**textColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartwithnumberofproductslabelpositiontextcolor)
 
 ---
 
 N. Set custom fonts from main app bundle. 
 
-- setFonts 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfonts
+- [**setFonts**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfonts)
 
 ---
 
 O. Loading View instead of the Loading GIF Image. Default value is "Gray" color.
 
-- setLoadingActivityIndicatorViewStyle
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setloadingactivityindicatorviewstyle
+- [**setLoadingActivityIndicatorViewStyle**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setloadingactivityindicatorviewstyle)
 
 ---
 
 P. Change the loading GIF from the default. Default value is "printio.gif".
 
-- setLoadingGIF
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setloadinggif
+- [**setLoadingGIF**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setloadinggif)
 
 ---
 
 Q. Change title of loading dialog. Default value is "Loading...".
 
-- setLoadingText
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setloadingtext
+- [**setLoadingText**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setloadingtext)
 
 ---
 
 R. Change icon for Help Button. Specify an image file to use as the help icon throughout the app.
 
-- setIconForHelpButton 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforhelpbutton
+- [**setIconForHelpButton**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforhelpbutton)
 
 ---
 
 S. Change prtner's logo icon which is used on cart and confirmation screens. File name of logo image, without file type extension.
 
-- setLogoFileName
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setlogofilename
+- [**setLogoFileName**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setlogofilename)
 
 ---
 
 T. Set background image on Navigation Bar.
 
-- setNavigationBarBackground
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackground
+- [**setNavigationBarBackground**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackground)
 
 ---
 
 U. Set status bar style and visibility.
 
-- setStatusBarDark
-- hidden 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setstatusbardarkhidden
+- [**setStatusBarDark**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setstatusbardarkhidden)
+- [**hidden**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setstatusbardarkhidden)
 
 ---
 
 V. Slide side menu from right. Default value is NO.
 
-- slideSideMenuFromRight 
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--slidesidemenufromright
+- [**slideSideMenuFromRight**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--slidesidemenufromright)
 
 ---
 
 W. Hide coming soon products from product's list. Default value is NO.
 
-- hideComingSoonProducts
-
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecomingsoonproducts
+- [**hideComingSoonProducts**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecomingsoonproducts)
 
 ---
 
