@@ -5,12 +5,9 @@ Available Photo sources
 - btn_side_menu_instagram_transparent.png - 270x124px
 
 ![enter image description here][1] 
-
 ---
-
 ![enter image description here][2] 
 
----
 
 
 
