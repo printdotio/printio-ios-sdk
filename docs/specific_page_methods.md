@@ -503,11 +503,12 @@ https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customizatio
 
 Full app Methods
 ===
-A. Back (negative) - Forward (positive) button change methods (Applies to whole app).
 
 ![enter image description here][21] 
 
 ---
+
+A. Back (negative) - Forward (positive) button change methods (Applies to whole app).
 
 - setNegativeButtonsBackgroundColor 
  
