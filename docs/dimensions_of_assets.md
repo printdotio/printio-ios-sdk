@@ -198,5 +198,4 @@ Available Photo sources
 [35]: https://lh5.googleusercontent.com/-TV1K8_1HLzM/VE6eK4C1igI/AAAAAAAAAvk/ylr6r6FCopE/w86-h88-no/18-icon_rotate_green%402x.png
 [36]: https://lh6.googleusercontent.com/-GnBzumh64Ac/VE6eJc4jZCI/AAAAAAAAAvU/Yae1RYPr2u8/w105-h35-no/18-icon_abc_orange.png
 [37]: https://lh6.googleusercontent.com/-iiWR7-Sf-5E/VE6eJ63Z53I/AAAAAAAAAvc/dv1t6-qtHwc/w92-h102-no/18-icon_effects_purple.png
-[38]:
 
