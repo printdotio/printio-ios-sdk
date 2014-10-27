@@ -10,7 +10,7 @@ Available Photo sources
 
 ---
 
-Facebook icon on Side Menu
+### Facebook icon on Side Menu
 
 - btn_side_menu_fb_transparent.png - 270x124px
 
