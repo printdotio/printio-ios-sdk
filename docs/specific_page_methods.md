@@ -558,6 +558,6 @@ W. Hide coming soon products from product's list. Default value is NO.
  [27]: https://lh6.googleusercontent.com/-eAe_m5cnfU0/VE5GU47PW9I/AAAAAAAAAkU/iIrk1gJqVRo/w400-h710-no/nav_bar_bg_small.png
  [28]: https://lh6.googleusercontent.com/-lt-lro3tv8A/VE5LeJWLHTI/AAAAAAAAAmY/Ay2JFZzou8U/w400-h710-no/statusbar_small.png
  [29]: https://lh5.googleusercontent.com/-C41mgayr-BI/VE5eVC8ZQqI/AAAAAAAAAnQ/XftJpxIiJB4/w400-h710-no/side_menu_right_small.png
- [30]: https://lh5.googleusercontent.com/-85uZBozA-sI/VE5igASphOI/AAAAAAAAAn0/lHKZqa0KW94/w400-h710-no/side_menu_3_small.png
+ [30]: https://lh3.googleusercontent.com/-0JJSYLtreDk/VE6acsYdfrI/AAAAAAAAAsU/FMxScy4r5YM/w400-h710-no/side_menu_3_small.png
  [31]: https://lh6.googleusercontent.com/-qqM6LZx2iPI/VE5mRTHts_I/AAAAAAAAAog/GD9I2V5qFlk/w400-h710-no/coming_soon_small.png
  [32]: https://lh6.googleusercontent.com/-b5fl3PAFumg/VE5uIvhyucI/AAAAAAAAApY/8hkeii3l6fQ/w400-h710-no/tree_menu_but_small.png
