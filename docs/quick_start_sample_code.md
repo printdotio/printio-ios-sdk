@@ -90,5 +90,13 @@ after successful order:
     };
 ```
 
+# Basic Testing
+
+### Staging Environment Testing Values
+
+- Braintree Credit Card Testing Values
+https://developers.braintreepayments.com/ios+ruby/reference/general/testing
+
+That's it - now you're ready to develop an amazing application using the PrintIO SDK!
 
 [8]: https://github.com/printdotio/printio-ios-sdk/blob/master/docs/customization.xml.md
