@@ -18,6 +18,17 @@ Available Photo sources
 ---
 ![enter image description here][4] 
 
+---
+
+### Main buttons for Side Menu
+
+- btn_exit.png - 640x114px
+
+![enter image description here][5] 
+---
+![enter image description here][6] 
+
+---
 
 
 
@@ -41,3 +52,5 @@ Available Photo sources
 [2]: https://lh6.googleusercontent.com/-OeJkQPC-i2E/VE6d-xzmBsI/AAAAAAAAAtM/fegDCP3r4eQ/w501-h889-no/1-ss_side_instagram.png
 [3]: https://lh6.googleusercontent.com/-8U5vp3ynRyQ/VE6d-53t0MI/AAAAAAAAAtE/8Y_322UaQKw/w270-h124-no/1-btn_side_menu_fb_transparent.png
 [4]: https://lh5.googleusercontent.com/-h5Z0iYQV19I/VE6eNrYq6AI/AAAAAAAAAxQ/kxy7EBnLyDU/w501-h889-no/2-ss_side_fb.png
+[5]: https://lh3.googleusercontent.com/-ryjn65azPPY/VE6eN30srpI/AAAAAAAAAwM/IuOtZhFWIho/w640-h114-no/3-btn_exit.png
+[6]: https://lh6.googleusercontent.com/-bQdpl1kyqDs/VE6eOYweqzI/AAAAAAAAAwk/kHsw7gsDrC8/w501-h889-no/3-ss_exit.png
