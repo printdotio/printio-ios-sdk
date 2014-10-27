@@ -1,6 +1,6 @@
 Available Photo sources
 ====
-Instagram icon on Side Menu
+### Instagram icon on Side Menu
 
 - btn_side_menu_instagram_transparent.png - 270x124px
 
