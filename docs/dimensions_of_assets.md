@@ -190,7 +190,7 @@ Available Photo sources
 [27]: https://lh4.googleusercontent.com/-K10UPsVsEZY/VE62C3l5CLI/AAAAAAAAA2I/BuqkaIPXZbo/w400-h710-no/15-ss_createit_quality.png
 [28]: https://lh3.googleusercontent.com/-aOEQwvaFa0c/VE6eGflismI/AAAAAAAAAug/mTajhTb2Grc/s230-no/16-btn_arrange.png
 [29]: https://lh5.googleusercontent.com/-lJz0AopRQSw/VE6eG6jaxjI/AAAAAAAAAu0/5_mCIsMxE2s/s230-no/16-btn_drag_drop.png
-[30]: https://lh4.googleusercontent.com/-IfDz81pTaRk/VE6zwk6tYGI/AAAAAAAAA0c/ElbXh3igQvk/w501-h889-no/16-ss_cust_random_manual.png
+[30]: https://lh6.googleusercontent.com/-PClcw6fKscA/VE648hSAvtI/AAAAAAAAA5Y/MispLMpKUsA/w400-h710-no/16-ss_cust_random_manual.png
 [31]: https://lh6.googleusercontent.com/-DBuXsuN2NqM/VE6eIBrwnaI/AAAAAAAAAv4/mEH1NX4Rqac/s230-no/17-btn_business.png
 [32]: https://lh4.googleusercontent.com/-f9usyYWqxHk/VE6eIVQfhXI/AAAAAAAAAvI/bPUVtMHx89E/s230-no/17-btn_home.png
 [33]: https://lh4.googleusercontent.com/-rBH_OytOxtE/VE62LD3oz4I/AAAAAAAAA4A/fqCS0p0NzVQ/w400-h710-no/address.png
