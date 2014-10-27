@@ -88,6 +88,8 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
 ```XML
 <customization>
   <screen name="image_editor">
+    <button name="button_back" title="title" bcg_color="#D1D1D1" font_color="#2277D4" image_name="image_name" image_format="image_format"/>
+    <button name="button_save" title="title" bcg_color="#D1D1D1" font_color="#2277D4" image_name="image_name" image_format="image_format"/>
     <button name="button_1" title="title" bcg_color="#D1D1D1" font_color="#2277D4" image_name="image_name" image_format="image_format"/>
     <button name="button_2" title="title" bcg_color="#D1D1D1" font_color="#2277D4" image_name="image_name" image_format="image_format"/>
     <button name="button_3" title="title" bcg_color="#D1D1D1" font_color="#2277D4" image_name="image_name" image_format="image_format"/>
