@@ -155,6 +155,8 @@ Available Photo sources
 ![enter image description here][36]
 ---
 ![enter image description here][37]
+---
+![enter image description here][38]
 
 ---
 
@@ -172,7 +174,7 @@ Available Photo sources
 [11]: https://lh4.googleusercontent.com/-sbw6pc2YQds/VE6eQY4Dl2I/AAAAAAAAAxA/Ffo3Odnrs6s/w640-h114-no/6-btn_sm_how_works.png
 [12]: https://lh4.googleusercontent.com/-eSTp48z-DYc/VE6eRAobvVI/AAAAAAAAAxM/FATzb9IoMgY/w501-h889-no/6-ss_howitworks.png
 [13]: https://lh5.googleusercontent.com/-tGhWtdpMG2c/VE6n3iFJSCI/AAAAAAAAAzE/SPuV4QnpQug/w75-h77-no/8black-icon_cart.png
-[14]: https://lh4.googleusercontent.com/-RrRTsEwhhBE/VE6eUOafBOI/AAAAAAAAAx4/pwk3UI0THI0/w501-h889-no/8-ss_cust_cart.png
+[14]: https://lh4.googleusercontent.com/-B5s0TBVGPvw/VE6zyc6OK1I/AAAAAAAAA0w/SDAPycnBRds/w501-h889-no/8-ss_cust_cart.png
 [15]: https://lh6.googleusercontent.com/-5oyM82J01pI/VE6eUACCRCI/AAAAAAAAAxw/ocgZfbkPcQo/w71-h80-no/9-icon_logo.png
 [16]: https://lh5.googleusercontent.com/-quOs2KnracA/VE6eURaotOI/AAAAAAAAAyA/h5Q0lSPvKp8/w400-h710-no/9-ss_order_complete_logo.png
 [17]: https://lh4.googleusercontent.com/-hzLX918lUwo/VE6d_Bh0V2I/AAAAAAAAAtQ/YBKvdewssWs/s50-no/10-icon_help.png
@@ -188,12 +190,13 @@ Available Photo sources
 [27]: https://lh4.googleusercontent.com/-2sCN6E0PNZ4/VE6eGVzKj4I/AAAAAAAAAu8/T4IADLwY4dI/w501-h889-no/15-ss_createit_quality.png
 [28]: https://lh3.googleusercontent.com/-aOEQwvaFa0c/VE6eGflismI/AAAAAAAAAug/mTajhTb2Grc/s230-no/16-btn_arrange.png
 [29]: https://lh5.googleusercontent.com/-lJz0AopRQSw/VE6eG6jaxjI/AAAAAAAAAu0/5_mCIsMxE2s/s230-no/16-btn_drag_drop.png
-[30]: https://lh6.googleusercontent.com/-f8p3E3w9NGk/VE6eHZFoyrI/AAAAAAAAAuw/Q4JWMBzHBXU/w501-h889-no/16-ss_cust_random_manual.png
+[30]: https://lh4.googleusercontent.com/-IfDz81pTaRk/VE6zwk6tYGI/AAAAAAAAA0c/ElbXh3igQvk/w501-h889-no/16-ss_cust_random_manual.png
 [31]: https://lh6.googleusercontent.com/-DBuXsuN2NqM/VE6eIBrwnaI/AAAAAAAAAv4/mEH1NX4Rqac/s230-no/17-btn_business.png
 [32]: https://lh4.googleusercontent.com/-f9usyYWqxHk/VE6eIVQfhXI/AAAAAAAAAvI/bPUVtMHx89E/s230-no/17-btn_home.png
-[33]: https://lh4.googleusercontent.com/-CSofB2RxpYI/VE6eIvbxq-I/AAAAAAAAAvM/DJOX1qEYSHs/w501-h889-no/17-ss_address_type.png
+[33]: https://lh6.googleusercontent.com/-mS3SvCFJPEo/VE6zyC-_D6I/AAAAAAAAA0s/7PYOxFcg5SA/w501-h889-no/address.png
 [34]: https://lh6.googleusercontent.com/-SF7v74n2MyA/VE6eKH8bkvI/AAAAAAAAAvo/s95LiYR_sw8/s60-no/18-icon_info_blue.png
 [35]: https://lh5.googleusercontent.com/-TV1K8_1HLzM/VE6eK4C1igI/AAAAAAAAAvk/ylr6r6FCopE/w86-h88-no/18-icon_rotate_green%402x.png
 [36]: https://lh6.googleusercontent.com/-GnBzumh64Ac/VE6eJc4jZCI/AAAAAAAAAvU/Yae1RYPr2u8/w105-h35-no/18-icon_abc_orange.png
 [37]: https://lh6.googleusercontent.com/-iiWR7-Sf-5E/VE6eJ63Z53I/AAAAAAAAAvc/dv1t6-qtHwc/w92-h102-no/18-icon_effects_purple.png
+[38]: https://lh5.googleusercontent.com/-welbyln09rU/VE6zynESX9I/AAAAAAAAA00/HjkSlDc9wvc/w501-h889-no/18-ss_edit_info_all.png
 
