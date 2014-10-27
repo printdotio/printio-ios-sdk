@@ -7,7 +7,7 @@ PrintIO widget works in two modes: staging and production. For both modes, 'reci
 ```Objective-C
 static NSString *const sRecipeId = @"00000000-0000-0000-0000-000000000000";
 ```
-
+To request an account and production recipeId email Tricia@print.io.
 
 ```Objective-C
 - (IBAction)runPrintIO:(id)sender
