@@ -182,11 +182,10 @@ E5. Set visibility of toolbar in customize product view. Default is YES.
 https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showtoolbarincustomizeproductbackgroundimage
 
 E6. Set visibility of images list in customize product view. 
-	Missing in new docs
 
-- hideImageListInCustomizeProduct
+- hideImagesListInCustomizeProduct
 
-https://github.com/printdotio/printio-ios-sdk/blob/master/docs/ios_sdk_customization.md#images-list-visible 
+https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideimageslistincustomizeproduct 
 
 E7. Customize the Double tap balloon on the Customize Product screen.
 
