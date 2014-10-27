@@ -14,8 +14,9 @@ Our SDK allows you to select which features and functionality you need as well a
 - [Project Setup & Prerequisites guide](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/project_setup.md) get started with the PrintIO SDK.
 - [Basic usage code](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/quick_start_sample_code.md) if you'd like a little more guidance.
 - [SDK Reference](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md) list of all methods available within sdk, with description and sample code.
-- [XML customization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/xml_customization_new.md) for  customization options available via XML configuration.
-- [API customization] (https://github.com/printdotio/printio-ios-sdk/blob/master/docs/api_customization.md) for store and product specific options that are controlled via the Print.io Admin Panel.
+- [SDK Customization per screen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md)
+- [XML Customization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/xml_customization_new.md) for  customization options available via XML configuration.
+- [API Customization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/api_customization.md) for store and product specific options that are controlled via the Print.io Admin Panel.
 
 
 ### Sample App SDK: For Reference
