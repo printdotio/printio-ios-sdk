@@ -194,6 +194,7 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/iOS-Simulator-Screen-Shot-Oct-28%2C-2014%2C-10.10.21-AM.png)   ![](https://dl.dropboxusercontent.com/u/19321066/printIO/iOS-Simulator-Screen-Shot-Oct-28%2C-2014%2C-10.10.21-AMa.png)
 ###Dialog Arrange Photos
 ```XML
 <customization>
@@ -205,6 +206,7 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/iOS-Simulator-Screen-Shot-Oct-28%2C-2014%2C-10.11.37-AM.png)
 ###Dialog Address Type
 ```XML
 <customization>
@@ -216,6 +218,7 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/iOS-Simulator-Screen-Shot-Oct-28%2C-2014%2C-10.11.37-AMa.png)
 ###Dialog Loading
 ```XML
 <customization>
@@ -224,6 +227,7 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/iOS-Simulator-Screen-Shot-Oct-28%2C-2014%2C-10.13.01-AM.png)
 ###Dialog Select ZIP Code
 ```XML
 <customization>
@@ -232,3 +236,4 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/iOS-Simulator-Screen-Shot-Oct-28%2C-2014%2C-10.12.11-AM.png)
