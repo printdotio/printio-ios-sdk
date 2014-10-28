@@ -227,7 +227,7 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
 ###Dialog Select ZIP Code
 ```XML
 <customization>
-  <screen name="button_cancel">
+  <screen name="dialog_select_zip">
     <button name="button_1"  title="title" bcg_color="#D1D1D1" font_color="#2277D4" />
   </screen>
 </customization>
