@@ -125,6 +125,7 @@ Developer SDK Customization Reference
       - [*-hideEditButtonInShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideeditbuttoninshoppingcart)
       - [*-setPromoCode*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpromocode)
       - [*-hideCartButtonWhenCartIsEmpty*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecartbuttonwhencartisempty)
+      - [*-closeWidgetFromShoppingCart*]()
    - [**Screen 'Payment Options'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-payment-options)
       - [*-removeLogoFromPaymentScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removelogofrompaymentscreen)
       - [*-setPayeeName*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpayeename)
@@ -2082,6 +2083,21 @@ int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 **Sample code:**
 ```Objective-C
 [print hideCartButtonWhenCartIsEmpty:YES];
+//... other customization
+[printIO open];
+```
+######- closeWidgetFromShoppingCart
+```Objective-C
+/**
+ Close widget when tap on Back button in Shopping Cart screen
+ 
+ @param Default value is NO
+ */
+- (void)closeWidgetFromShoppingCart:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
+[print closeWidgetFromShoppingCart:YES];
 //... other customization
 [printIO open];
 ```
