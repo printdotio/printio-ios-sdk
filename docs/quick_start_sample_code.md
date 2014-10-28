@@ -7,7 +7,7 @@ PrintIO widget works in two modes: staging and production. For both modes, 'reci
 ```Objective-C
 static NSString *const sRecipeId = @"00000000-0000-0000-0000-000000000000";
 ```
-To request an account and production recipeId email Tricia@print.io.
+Please email Tricia@print.io to set up an account to get access to the Admin panel and to receive your stores recipeIds. RecipeId is your stores Unique account/API key. It holds all of your unique data for your store including products, prices, addresses, product images, and other details. 
 
 ```Objective-C
 - (IBAction)runPrintIO:(id)sender
