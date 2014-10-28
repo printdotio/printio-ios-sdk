@@ -124,6 +124,7 @@ Developer SDK Customization Reference
       - [*-numberOfItemsInShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--numberofitemsinshoppingcart)
       - [*-hideEditButtonInShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideeditbuttoninshoppingcart)
       - [*-setPromoCode*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpromocode)
+      - [*-hideCartButtonWhenCartIsEmpty]()
    - [**Screen 'Payment Options'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-payment-options)
       - [*-removeLogoFromPaymentScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removelogofrompaymentscreen)
       - [*-setPayeeName*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpayeename)
@@ -2066,6 +2067,21 @@ int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 **Sample code:**
 ```Objective-C
 [print setPromoCode:@"12345"];
+//... other customization
+[printIO open];
+```
+######- hideCartButtonWhenCartIsEmpty
+```Objective-C
+/**
+ Hides cart button from navigation bar, when cart is empty
+ 
+ @param set Default value is NO
+ */
+- (void)hideCartButtonWhenCartIsEmpty:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
+[print hideCartButtonWhenCartIsEmpty:YES];
 //... other customization
 [printIO open];
 ```
