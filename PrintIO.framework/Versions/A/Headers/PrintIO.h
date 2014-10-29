@@ -294,6 +294,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)sideMenuBackgroungImage:(NSString *)path;
 
+/**
+ Hide version label from side menu
+ 
+ @param set Default value is NO
+ */
+- (void)hideVersionInSideMenu:(BOOL)set;
+
 #pragma mark - Choose Country Screen
 
 /**
@@ -374,7 +381,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
  
  @param imagePath Path to image file.
  */
-- (void)setFeaturedProductsBackgroungImage:(NSString *)imagePath;
+- (void)setFeaturedProductsBackgroundImage:(NSString *)imagePath;
 
 #pragma mark - Product Details
 
@@ -730,6 +737,20 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param promoCode Promo code
  */
 - (void)setPromoCode:(NSString *)promoCode;
+
+/**
+ Hides cart button from navigation bar, when cart is empty
+ 
+ @param set Default value is NO
+ */
+- (void)hideCartButtonWhenCartIsEmpty:(BOOL)set;
+
+/**
+ Close widget when tap on Back button in Shopping Cart screen
+ 
+ @param Default value is NO
+ */
+- (void)closeWidgetFromShoppingCart:(BOOL)set;
 
 #pragma mark - Payment screen
 
