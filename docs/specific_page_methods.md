@@ -529,7 +529,7 @@ W. Hide coming soon products from product's list. Default value is NO.
 
 ---
 
-X. Hides cart button from navigation bar, when cart is empty.
+X. Hides cart button from navigation bar, when cart is empty. Default value is NO.
 
 - [**hideCartButtonWhenCartIsEmpty**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecartbuttonwhencartisempty)
 
