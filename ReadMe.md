@@ -17,7 +17,7 @@ Our SDK allows you to select which features and functionality you need as well a
 - [SDK Customization per screen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md) list with screenshots of customizable UI elements and relevant methods.
 - [XML Customization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/xml_customization_new.md) for  customization options available via XML configuration.
 - [API Customization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/api_customization.md) for store and product specific options that are controlled via the Print.io Admin Panel.
-
+- [Assets dimensions](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/dimensions_of_assets.md) is list with all assets that can be changed, and required sizes.
 
 ### Sample App SDK: For Reference
 - [PrintIOSDKSample app](https://github.com/printdotio/printio-ios-example) for a more comprehensive demonstration of the PrintIO SDK.
