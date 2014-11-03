@@ -35,7 +35,7 @@ Developer SDK Customization Reference
       - [*-setPositiveButtonsBackgroundColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpositivebuttonsbackgroundcolor)
       - [*-setNegativeButtonsBackgroundColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnegativebuttonsbackgroundcolor)
       - [*-setTitleForChooseOptionsScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchooseoptionsscreen)
-      - [*-setSelectionColor*]()
+      - [*-setSelectionColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setselectioncolor)
    - [**Navigation bar**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#navigation-bar)
       - [*-navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--navigationbarcolortitlecolorleftbuttonbackgroundcolorrightbuttonbackgroundcolortitlebuttonicon)
       - [*-setNavigationBarBackground*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackground)
