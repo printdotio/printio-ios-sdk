@@ -35,6 +35,7 @@ Developer SDK Customization Reference
       - [*-setPositiveButtonsBackgroundColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpositivebuttonsbackgroundcolor)
       - [*-setNegativeButtonsBackgroundColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnegativebuttonsbackgroundcolor)
       - [*-setTitleForChooseOptionsScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchooseoptionsscreen)
+      - [*-setSelectionColor*]()
    - [**Navigation bar**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#navigation-bar)
       - [*-navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--navigationbarcolortitlecolorleftbuttonbackgroundcolorrightbuttonbackgroundcolortitlebuttonicon)
       - [*-setNavigationBarBackground*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackground)
@@ -617,6 +618,21 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 **Sample code:**
 ```Objective-C
 [printIO setTitleForChooseOptionsScreen:@"Title"];
+//... other customization
+[printIO open];
+```
+######- setSelectionColor
+```Objective-C
+/**
+ Set selection color for product customization steps
+ 
+ @param color Selection color
+ */
+- (void)setSelectionColor:(UIColor *)color;
+```
+**Sample code:**
+```Objective-C
+[printIO setSelectionColor:[UIColor redColor]];
 //... other customization
 [printIO open];
 ```
