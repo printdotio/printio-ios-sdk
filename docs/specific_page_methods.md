@@ -82,6 +82,10 @@ C2. Set the title for the Choose Options screen. Default value is "Choose Option
 	
 - [**setTitleForChooseOptionsScreen**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchooseoptionsscreen)
 
+C3. Set selection color for product customization steps. Default value is "blue" color.
+
+- [**setSelectionColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setselectioncolor)
+
 ---
 
 ## D. Select Photos screen
@@ -541,7 +545,7 @@ X. Hides cart button from navigation bar, when cart is empty. Default value is N
 
  [1]: https://lh6.googleusercontent.com/-0WuWATsBvOc/VEprESzVF9I/AAAAAAAAATA/u-WMpFsB59A/w400-h710-no/products_screen_small.png
  [2]: https://lh3.googleusercontent.com/-_977PRHV-xs/VEptrXemYmI/AAAAAAAAATk/Qxi83xKMO8o/w400-h710-no/product_details_screen_small.png
- [3]: https://lh3.googleusercontent.com/-KAeQ_QBdzmo/VEpwbALD7SI/AAAAAAAAAUU/pr6ZHCEeSC0/w400-h710-no/choose_options_small.png
+ [3]: https://lh6.googleusercontent.com/-szA8wVe_IAM/VFfT9DkNfPI/AAAAAAAAA8M/yAA3HiyPYRg/w400-h710-no/choose_options_small.png
  [4]: https://lh6.googleusercontent.com/-aHkx0qEcCoU/VFfQjyvGhmI/AAAAAAAAA7g/DFkc8MlBbk4/w400-h710-no/select_photos_screen_small.png
  [5]: https://lh6.googleusercontent.com/-EgyUGcRsv_g/VE5x_F8GhzI/AAAAAAAAAp8/D8zvt7pNG9Q/w400-h710-no/image_arragament.png
  [6]: https://lh5.googleusercontent.com/-nRXU-cjMcKY/VEp4Kl-HzgI/AAAAAAAAAV4/EF8KF80yics/w400-h710-no/customization_screen_1.png
