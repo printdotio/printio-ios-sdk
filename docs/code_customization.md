@@ -98,6 +98,7 @@ Developer SDK Customization Reference
       - [*-setTitleForPhotoSourcesScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforphotosourcesscreen)
       - [*-autoSelectOnePhotoTemplateForProductID*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--autoselectonephototemplateforproductid)
       - [*-disableAutoRecognizePhoneModel*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disableautorecognizephonemodel)
+      - [**]()
    - [**Screen 'Customize/Edit Product'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-customizeedit-product)
       - [*-showToolbarInCustomizeProduct:backgroundImage*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showtoolbarincustomizeproductbackgroundimage)
       - [*-hideImagesListInCustomizeProduct*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideimageslistincustomizeproduct)
@@ -1682,6 +1683,21 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 **Sample code:**
 ```Objective-C
 [printIO disableAutoRecognizePhoneModel:YES];
+//... other customization
+[printIO open];
+```
+######- hideCartInPhotoSources
+```Objective-C
+/**
+ Hide shopping cart icon from Photo Sources screen
+ 
+ @param set Dafault value is NO
+ */
+- (void)hideCartInPhotoSources:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
+[printIO hideCartInPhotoSources:YES];
 //... other customization
 [printIO open];
 ```
