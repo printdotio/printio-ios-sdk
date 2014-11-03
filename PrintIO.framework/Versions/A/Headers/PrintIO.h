@@ -546,6 +546,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
  */
 - (void)setTitleForPhotoSourcesScreen:(NSString *)title;
 
+/**
+ Hide shopping cart icon from Photo Sources screen
+ 
+ @param set Dafault value is NO
+ */
+- (void)hideCartInPhotoSources:(BOOL)set;
+
 #pragma mark - Customize Product
 
 /**
@@ -1004,6 +1011,13 @@ rightButtonBackgroundColor:(UIColor *)rColor
 - (void)changeSizeOfBoldFontsBy:(float)value;
 
 #pragma mark - Steps
+
+/**
+ Set selection color for product customization steps
+ 
+ @param color Selection color
+ */
+- (void)setSelectionColor:(UIColor *)color;
 
 /**
  Jumps directly to product.
