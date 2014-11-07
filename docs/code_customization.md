@@ -72,6 +72,7 @@ Developer SDK Customization Reference
       - [*-setTitleForFeaturedProductsScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforfeaturedproductsscreen)
       - [*-setFeaturedProductsLeftLabelTextColor:rightLabelTextColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsleftlabeltextcolorrightlabeltextcolor)
       - [*-setFeaturedProductsBackgroundImage*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsbackgroundimage)
+      - [*-setFeaturedProductsDefaultView*]()
    - [**Screen 'Product Details'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-product-details)
       - [*-productDetailsShowTitleBelowNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
       - [*-productDetailsShowMenuBtnInNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
@@ -1283,6 +1284,23 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 **Sample code:**
 ```Objective-C
 [printIO setFeaturedProductsBackgroundImage:[[NSBundle mainBundle] pathForResource:@"bcg" ofType:@"png"]];
+//... other customization
+[printIO open];
+```
+######- setFeaturedProductsDefaultView
+```Objective-C
+/**
+ Set default view for Featured Products Screen
+ PIO_FP_FEATURED_PRODUCTS,
+ PIO_FP_ALL_PRODUCTS
+ 
+ @param viewType
+ */
+- (void)setFeaturedProductsDefaultView:(PIOFeatureProductsView)viewType;
+```
+**Sample code:**
+```Objective-C
+[printIO setFeaturedProductsDefaultView:PIO_FP_ALL_PRODUCTS];
 //... other customization
 [printIO open];
 ```
