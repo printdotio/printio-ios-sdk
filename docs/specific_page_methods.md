@@ -24,7 +24,9 @@ Specific Page Methods
 ## A. Products screen
 
 ![enter image description here][1]
+---
 ![enter image description here][33]
+---
 ![enter image description here][34]
 
 #### A1. Set the title for the Featured Products screen. Default value is "Products". 
