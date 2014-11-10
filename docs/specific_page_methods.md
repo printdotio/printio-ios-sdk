@@ -57,6 +57,7 @@ Specific Page Methods
 #### A7. Set default view for Featured Products Screen. Default value is PIO_FP_FEATURED_PRODUCTS.
 
 -[**setFeaturedProductsDefaultView**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsdefaultview)
+
 ---
 
 ## Product Details screen
