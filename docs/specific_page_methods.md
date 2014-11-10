@@ -24,6 +24,8 @@ Specific Page Methods
 ## A. Products screen
 
 ![enter image description here][1]
+![enter image description here][33]
+![enter image description here][34]
 
 #### A1. Set the title for the Featured Products screen. Default value is "Products". 
 
@@ -50,6 +52,9 @@ Specific Page Methods
 
 - [**backgroundColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showcountryselectiononscreenbackgroundcolor)
 
+#### A7. Set default view for Featured Products Screen. Default value is PIO_FP_FEATURED_PRODUCTS.
+
+-[**setFeaturedProductsDefaultView**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsdefaultview)
 ---
 
 ## Product Details screen
@@ -575,3 +580,5 @@ X. Hides cart button from navigation bar, when cart is empty. Default value is N
  [30]: https://lh3.googleusercontent.com/-0JJSYLtreDk/VE6acsYdfrI/AAAAAAAAAsU/FMxScy4r5YM/w400-h710-no/side_menu_3_small.png
  [31]: https://lh3.googleusercontent.com/-ZakjNVLYqXk/VFDHPANjPmI/AAAAAAAAA6w/3uSJ7dT6ikY/w400-h710-no/coming_soon_small.png
  [32]: https://lh6.googleusercontent.com/-b5fl3PAFumg/VE5uIvhyucI/AAAAAAAAApY/8hkeii3l6fQ/w400-h710-no/tree_menu_but_small.png
+ [33]: https://lh4.googleusercontent.com/-eJSOEqZGYJA/VGC9qoaYgtI/AAAAAAAAA9I/LHwwE_IUguc/w400-h710-no/featured_prod_small.png
+ [34]: https://lh5.googleusercontent.com/-n3WiQ_q7n4E/VGC9q2NAlRI/AAAAAAAAA9M/UIF7dEMw1Sc/w400-h710-no/all_prod_small.png
