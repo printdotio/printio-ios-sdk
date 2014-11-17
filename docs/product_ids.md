@@ -1,16 +1,8 @@
-##All product IDs for staging and production environment
-//
-//  ProductIds.m
-//  HelloPicsFramework
-//
-//  Created by Boro Perisic on 12/13/13.
-//  Copyright (c) 2013 Boro Perisic. All rights reserved.
-//
+## All product IDs for staging and production environment
 
-#import "ProductIds.h"
-#import "Constants.h"
+---
 
-@implementation ProductIds
+### ProductIds
 
 extern int PRODUCT_ACRYLIC_BLOCKS()
 {
@@ -477,6 +469,5 @@ extern int PRODUCT_WOVEN_BLANKETS()
     return isSDKStaging() ? 101 : 99;
 }
 
-@end
 
 ---
