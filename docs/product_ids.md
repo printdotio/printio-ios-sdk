@@ -17,70 +17,153 @@ extern int PRODUCT_ACRYLIC_BLOCKS()
 
 ---
 
+- ACRYLIC PRINTS
+
+```Objective-C
 extern int PRODUCT_ACRYLIC_PRINTS()
 {
     return isSDKStaging() ? 107 : 105;
 }
+```
 
+---
+
+- ACRYLIC TRAYS
+
+```Objective-C
 extern int PRODUCT_ACRYLIC_TRAYS()
 {
     return isSDKStaging() ? 115 : 113;
 }
+```
 
+---
+
+- BATH TOWELS
+
+```Objective-C
 extern int PRODUCT_BATH_TOWELS()
 {
     return isSDKStaging() ? 1132 : 135;
 }
+```
 
+---
+
+- BEACH TOWEL
+
+```Objective-C
 extern int PRODUCT_BEACH_TOWEL()
 {
     return isSDKStaging() ? 68 : 68;
 }
+```
 
+---
+
+- BOTTLE LABELS
+
+```Objective-C
 extern int PRODUCT_BOTTLE_LABELS()
 {
     return  isSDKStaging() ? 1124 : 126;
 }
+```
 
+---
+
+- BUMPER STICKERS
+
+```Objective-C
 extern int PRODUCT_BUMPER_STICKERS()
 {
     return isSDKStaging() ? 85 : 84;
 }
+```
 
+---
+
+- CALENDARS
+
+```Objective-C
 extern int PRODUCT_CALENDARS()
 {
     return isSDKStaging() ? 59 : 59;
 }
+```
 
+---
+
+- CANVAS MINIS
+
+```Objective-C
 extern int PRODUCT_CANVAS_MINIS()
 {
     return isSDKStaging() ? 1129 : 132;
 }
+```
 
+---
+
+- CANVAS POSTERS
+
+```Objective-C
 extern int PRODUCT_CANVAS_POSTERS()
 {
     return isSDKStaging() ? 1130 : 133;
 }
+```
 
+---
+
+- CANVAS WRAPS
+
+```Objective-C
 extern int PRODUCT_CANVAS_WRAPS()
 {
     return isSDKStaging() ? 43 : 43;
 }
+```
 
+---
+
+- CANVAS WRAPS STEP 3&4
+
+```Objective-C
 extern int PRODUCT_CANVAS_WRAPS_STEP_3_4()
 {
     return isSDKStaging() ? 1406 : 1406;
 }
+```
 
+---
+
+- CAR DECALS
+
+```Objective-C
 extern int PRODUCT_CAR_DECALS()
 {
     return isSDKStaging() ? 111 : 109;
 }
+```
 
+---
+
+- CLOTH NAPKINS
+
+```Objective-C
 extern int PRODUCT_CLOTH_NAPKINS()
 {
     return isSDKStaging() ? 1140 : 144;
 }
+```
+
+---
+
+```Objective-C
+
+```
+
 
 extern int PRODUCT_COASTERS()
 {
