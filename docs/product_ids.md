@@ -1,13 +1,20 @@
 ## All product IDs for staging and production environment
 
----
+On the left side are Staging IDs, and on the right side are Production IDs.
 
 ### ProductIds
 
+- ACRYLIC BLOCKS
+
+**Sample code:**
+```Objective-C
 extern int PRODUCT_ACRYLIC_BLOCKS()
 {
     return isSDKStaging() ? 47 : 47;
 }
+``` Objective-C
+
+---
 
 extern int PRODUCT_ACRYLIC_PRINTS()
 {
