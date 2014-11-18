@@ -12,7 +12,7 @@ extern int PRODUCT_ACRYLIC_BLOCKS()
 {
     return isSDKStaging() ? 47 : 47;
 }
-``` Objective-C
+```
 
 ---
 
