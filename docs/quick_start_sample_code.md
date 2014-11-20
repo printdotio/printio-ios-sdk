@@ -90,6 +90,21 @@ after successful order:
     };
 ```
 
+Delegate method called after successfully placing an order:
+```Objective-C
+/**
+@param printIO PrintIO widget(sender).
+@param data NSDictionary containing order data.
+ */
+- (void)printIO:(PrintIO*)printIO didCompleteOrderWithData:(NSDictionary*)data;
+```
+**Sample code:**
+```Objective-C
+[printIO didCompleteOrderWithData:data)];
+//... other customization
+[printIO open];
+```
+
 # Basic Testing
 
 ### Staging Environment Testing Values
