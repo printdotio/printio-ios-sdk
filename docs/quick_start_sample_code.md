@@ -98,12 +98,6 @@ Delegate method called after successfully placing an order:
  */
 - (void)printIO:(PrintIO*)printIO didCompleteOrderWithData:(NSDictionary*)data;
 ```
-**Sample code:**
-```Objective-C
-[printIO didCompleteOrderWithData:data)];
-//... other customization
-[printIO open];
-```
 
 # Basic Testing
 
