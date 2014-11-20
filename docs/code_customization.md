@@ -144,6 +144,7 @@ Developer SDK Customization Reference
       - [*-setIconForOrderCompletedScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforordercompletedscreen)
       - [*-setMessageForOrderCompletedScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setmessageforordercompletedscreen)
       - [*-orderCompletedScreenCloseButtonShouldPerformBack*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--ordercompletedscreenclosebuttonshouldperformback)
+      - [*didCompleteOrderWithData*]()
    - [**Google Analytics**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#google-analytics)
       - [*-setTrackingIDForGoogleAnalytics*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settrackingidforgoogleanalytics)
    - [**Push Notifications**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#push-notifications)
@@ -2342,6 +2343,23 @@ NSMutableAttributedString *message = [[NSMutableAttributedString alloc]initWithS
 **Sample code:**
 ```Objective-C
 [printIO orderCompletedScreenCloseButtonShouldPerformBack:NO];
+//... other customization
+[printIO open];
+```
+
+######- didCompleteOrderWithData
+```Objective-C
+/**
+ Called after successfully placing an order
+
+@param printIO PrintIO widget(sender).
+@param data NSDictionary containing order data.
+ */
+- (void)printIO:(PrintIO*)printIO didCompleteOrderWithData:(NSDictionary*)data;
+```
+**Sample code:**
+```Objective-C
+[printIO didCompleteOrderWithData:data)];
 //... other customization
 [printIO open];
 ```
