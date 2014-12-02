@@ -1365,6 +1365,7 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
    PIO_SM_DROPBOX
    PIO_SM_PHOTOBUCKET
    PIO_SM_PHONE
+   PIO_SM_PASSED_PHOTOS
  */
 - (void)setAvailablePhotoSources:(NSArray *)photoSources;
 ```
