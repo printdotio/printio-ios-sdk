@@ -72,6 +72,13 @@ Some UI elements can be customized via XML code. In order to use it, create XML 
   </screen>
 </customization>
 ```
+```XML
+<customization>
+<screen name="photo_sources">
+<button name="button_select_all" bcg_color="#446723" font_color="#ffffff" />
+</screen>
+</customization>
+```
 ![](https://dl.dropboxusercontent.com/u/19321066/printIO/iOS-Simulator-Screen-Shot-Oct-27%2C-2014%2C-5.35.32-PM.png)
 ###Customize Product
 ```XML
