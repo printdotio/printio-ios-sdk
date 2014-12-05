@@ -77,6 +77,7 @@ Developer SDK Customization Reference
       - [*-productDetailsShowTitleBelowNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
       - [*-productDetailsShowMenuBtnInNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
       - [*-setQualityGuaranteeText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setqualityguaranteetext)
+      - [*-setPriceTitleHidden*]
    - [**Photo sources**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#photo-sources)
       - [*-setAvailablePhotoSources*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources)
       - [*-setDefaultPhotoSource:albumId*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdefaultphotosourcealbumid)
@@ -1347,6 +1348,22 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 **Sample code:**
 ```Objective-C
 [printIO setQualityGuaranteeText:@"Quality Guarantee text goes here."];
+//... other customization
+[printIO open];
+```
+######- setPriceTitleHidden
+```Objective-C
+/**
+/**
+ Set 'Starting at' and 'Retail price' titles hidden
+ 
+ @param set Default value is NO
+ */
+- (void)setPriceTitleHidden:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
+[printIO setPriceTitleHidden:YES];
 //... other customization
 [printIO open];
 ```
