@@ -68,13 +68,17 @@ Specific Page Methods
 
 - [**setQualityGuaranteeText**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setqualityguaranteetext)
 
-#### B2. Show title below navigation bar on Product Details screen
+#### B2. Show title below navigation bar on Product Details screen.
 
 - [**productDetailsShowTitleBelowNavBar**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
 
 #### B3. Show menu button in navigation bar on Product Details screen
 
 - [**productDetailsShowMenuBtnInNavBar**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
+
+#### B4. Show/Hide 'Starting at' and 'Retail price' titles. Default value is NO.
+
+- [**setPriceTitleHidden**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpricetitlehidden)
 
 ---
 
