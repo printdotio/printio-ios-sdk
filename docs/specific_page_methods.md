@@ -556,7 +556,7 @@ X. Hides cart button from navigation bar, when cart is empty. Default value is N
 ---
 
  [1]: https://lh6.googleusercontent.com/-0WuWATsBvOc/VEprESzVF9I/AAAAAAAAATA/u-WMpFsB59A/w400-h710-no/products_screen_small.png
- [2]: https://lh3.googleusercontent.com/-_977PRHV-xs/VEptrXemYmI/AAAAAAAAATk/Qxi83xKMO8o/w400-h710-no/product_details_screen_small.png
+ [2]: https://lh6.googleusercontent.com/-cCpvw6nno0s/VIWg1Qg6slI/AAAAAAAAA_E/m72Gdy5xPD8/w400-h710-no/product_details_screen_small.png
  [3]: https://lh6.googleusercontent.com/-szA8wVe_IAM/VFfT9DkNfPI/AAAAAAAAA8M/yAA3HiyPYRg/w400-h710-no/choose_options_small.png
  [4]: https://lh6.googleusercontent.com/-aHkx0qEcCoU/VFfQjyvGhmI/AAAAAAAAA7g/DFkc8MlBbk4/w400-h710-no/select_photos_screen_small.png
  [5]: https://lh6.googleusercontent.com/-EgyUGcRsv_g/VE5x_F8GhzI/AAAAAAAAAp8/D8zvt7pNG9Q/w400-h710-no/image_arragament.png
