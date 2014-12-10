@@ -21,7 +21,7 @@ Specific Page Methods
 
 ---
 
-- [**Loading Modals**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#full-app-methods)
+- [**Loading Modals**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#loading-modelas)
 
 ---
 
