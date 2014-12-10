@@ -562,6 +562,14 @@ X. Hides cart button from navigation bar, when cart is empty. Default value is N
 Loading Modelas
 ===
 
+For all loading screens, we have methods to change GIF animation, Loading Text and View on the loading view instead of the loading gif image:
+
+- [**setLoadingActivityIndicatorViewStyle**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setloadingactivityindicatorviewstyle)
+- [**setLoadingGIF**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setloadinggif)
+- [**setLoadingText**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setloadingtext)
+
+---
+
 ![enter image description here][35]
 ---
 ![enter image description here][36]
