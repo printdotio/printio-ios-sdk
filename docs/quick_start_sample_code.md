@@ -29,7 +29,7 @@ Please email Tricia@print.io to set up an account to get access to the Admin pan
 };
 ```
 
-### You can also use our ```PrintIODelegate``` methods in your presenting view controller:
+#### You can also use our ```PrintIODelegate``` methods in your presenting view controller:
 
 ```Objective-C
 - (void)PrintIOWidgetOnOpen
