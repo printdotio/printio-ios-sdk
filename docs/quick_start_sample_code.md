@@ -1,13 +1,13 @@
 # PrintIO iOS SDK Basic Usage
 
-Below is sample code for launching a PrintIO widget. Be sure to follow the Project Setup guide before attempting to use the PrintIO sample code.
+##### Below is sample code for launching a PrintIO widget. Be sure to follow the Project Setup guide before attempting to use the PrintIO sample code.
 
-PrintIO widget works in two modes: staging and production. For both modes, 'recipeId' is required. Before you get production 'recipeId' from PrintIO, for staging mode use 'recipeId' below:
+##### PrintIO widget works in two modes: staging and production. For both modes, 'recipeId' is required. Before you get production 'recipeId' from PrintIO, for staging mode use 'recipeId' below:
 
 ```Objective-C
 static NSString *const sRecipeId = @"00000000-0000-0000-0000-000000000000";
 ```
-Please email Tricia@print.io to set up an account to get access to the Admin panel and to receive your stores recipeIds. RecipeId is your stores Unique account/API key. It holds all of your unique data for your store including products, prices, addresses, product images, and other details. 
+##### Please email Tricia@print.io to set up an account to get access to the Admin panel and to receive your stores recipeIds. RecipeId is your stores Unique account/API key. It holds all of your unique data for your store including products, prices, addresses, product images, and other details. 
 
 ```Objective-C
 - (IBAction)runPrintIO:(id)sender
