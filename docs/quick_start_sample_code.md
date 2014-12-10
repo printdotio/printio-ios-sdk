@@ -29,7 +29,7 @@ Please email Tricia@print.io to set up an account to get access to the Admin pan
 };
 ```
 
-You can also use our ```PrintIODelegate``` methods in your presenting view controller:
+### You can also use our ```PrintIODelegate``` methods in your presenting view controller:
 
 ```Objective-C
 - (void)PrintIOWidgetOnOpen
@@ -42,7 +42,7 @@ You can also use our ```PrintIODelegate``` methods in your presenting view contr
 }
 ```
 
-Delegate method ```PrintIOWidgetOnCloseWithData``` provides key/value pairs:
+### Delegate method ```PrintIOWidgetOnCloseWithData``` provides key/value pairs:
 
 ```Objective-C
 {
@@ -90,7 +90,8 @@ after successful order:
     };
 ```
 
-Delegate method called after successfully placing an order:
+### Delegate method called after successfully placing an order:
+
 ```Objective-C
 /**
 @param printIO PrintIO widget(sender).
