@@ -21,6 +21,10 @@ Specific Page Methods
 
 ---
 
+- [**Loading Modals**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/specific_page_methods.md#full-app-methods)
+
+---
+
 ## A. Products screen
 
 ![enter image description here][1]
