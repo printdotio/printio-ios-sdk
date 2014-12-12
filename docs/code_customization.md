@@ -1389,17 +1389,17 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 **Sample code:**
 ```Objective-C
 // Instagram
-PIOSideMenuButton *btnSInstagram = [[PIOSideMenuButton alloc]initWithType:PIO_SM_INSTAGRAM];
+PIOSideMenuButton *btnSInstagram = [[PIOSideMenuButton alloc]initWithTitle:@"Instagram" type:PIO_SM_INSTAGRAM];
 btnSInstagram.iconPath = [[NSBundle mainBundle]pathForResource:@"instagram" ofType:@"png"];
 btnSInstagram.iconPathSelected = [[NSBundle mainBundle]pathForResource:@"instagram_selected" ofType:@"png"];
 btnSInstagram.textColor = [UIColor blackColor];
 btnSInstagram.useBoldFonts = YES;
     
 // Phone
-PIOSideMenuButton *btnSPhone = [[PIOSideMenuButton alloc]initWithType:PIO_SM_PHONE];
+PIOSideMenuButton *btnSPhone = [[PIOSideMenuButton alloc]initWithTitle:@"Phone" type:PIO_SM_PHONE];
     
 // Facebook
-PIOSideMenuButton *btnSFacebook = [[PIOSideMenuButton alloc]initWithType:PIO_SM_FACEBOOK];
+PIOSideMenuButton *btnSFacebook = [[PIOSideMenuButton alloc]initWithTitle:@"Facebook" type:PIO_SM_FACEBOOK];
 btnSFacebook.iconPath = [[NSBundle mainBundle]pathForResource:@"facebook" ofType:@"png"];
 btnSFacebook.iconPathSelected = [[NSBundle mainBundle]pathForResource:@"facebook_selected" ofType:@"png"];
 btnSFacebook.textColor = [UIColor blackColor];
