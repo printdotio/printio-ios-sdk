@@ -1423,7 +1423,8 @@ btnSFacebook.useBoldFonts = YES;
    PIO_PS_DROPBOX
    PIO_PS_PHOTOBUCKET
    PIO_PS_PHONE
- 
+   PIO_PS_PASSED_PHOTOS // added in v1.0.34
+   
  @param albumId Album id (Currently works only for PIO_SM_PHOTOBUCKET photo source)
  
  */
