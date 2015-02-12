@@ -44,6 +44,7 @@ Developer SDK Customization Reference
       - [*-setStatusBarDark:hidden*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setstatusbardarkhidden)
       - [*-setThreeButtonsNavigationBarSytle*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setthreebuttonsnavigationbarsytle)
       - [*-setNavigationBarSaveToCartBackgroundColor:titleColor:buttonBackgroundColor:buttonTitleColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarsavetocartbackgroundcolortitlecolorbuttonbackgroundcolorbuttontitlecolor)
+      - [*-setBackButtonHidden*]
    - [**Side menu**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#side-menu)
       - [*-useSideMenuWithMenuIcon:background*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--usesidemenuwithmenuiconbackground)
       - [*-sideMenuAddButtons*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons)
@@ -770,6 +771,21 @@ rightButtonBackgroundColor:(UIColor *)rColor
                                         titleColor:[UIColor whiteColor]
                              buttonBackgroundColor:[UIColor redColor]
                                   buttonTitleColor:[UIColor whiteColor]];
+//... other customization
+[printIO open];
+```
+######- setBackButtonHidden
+```Objective-C
+/**
+ Set back button hidden
+ 
+ @param set Default value is NO
+ */
+- (void)setBackButtonHidden:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
+[printIO setBackButtonHidden:YES];
 //... other customization
 [printIO open];
 ```
