@@ -141,6 +141,8 @@ Developer SDK Customization Reference
    - [**Screen 'Shipping Addresses'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-shipping-addresses)
       - [*-showPlusSignOnAddButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showplussignonaddbutton)
       - [*-setColorForAddressSelection*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcolorforaddressselection)
+      - [*+clearShippingAddresses*]
+      - [*+clearBillingAddresses*]
    - [**Screen 'Order Completed'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-order-completed)
       - [*-setTitleForOrderCompletedScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforordercompletedscreen)
       - [*-setIconForOrderCompletedScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforordercompletedscreen)
@@ -2314,6 +2316,28 @@ int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 [printIO setColorForAddressSelection:[UIColor redColor]];
 //... other customization
 [printIO open];
+```
+######+ clearShippingAddresses
+```Objective-C
+/**
+ Remove all saved shipping addresses
+ */
++ (void)clearShippingAddresses;
+```
+**Sample code:**
+```Objective-C
+[PrintIO clearShippingAddresses];
+```
+######+ clearBillingAddresses
+```Objective-C
+/**
+ Remove all saved billing addresses
+ */
++ (void)clearBillingAddresses;
+```
+**Sample code:**
+```Objective-C
+[PrintIO clearBillingAddresses];
 ```
 ###Screen 'Order Completed'
 ######- setTitleForOrderCompletedScreen
