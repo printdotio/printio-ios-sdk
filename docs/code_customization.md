@@ -141,7 +141,7 @@ Developer SDK Customization Reference
    - [**Screen 'Shipping Addresses'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-shipping-addresses)
       - [*-showPlusSignOnAddButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showplussignonaddbutton)
       - [*-setColorForAddressSelection*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcolorforaddressselection)
-      - [*+clearShippingAddresses*]
+      - [*+clearShippingAddresses*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#-clearshippingaddresses)
       - [*+clearBillingAddresses*]
    - [**Screen 'Order Completed'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-order-completed)
       - [*-setTitleForOrderCompletedScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforordercompletedscreen)
