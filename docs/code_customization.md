@@ -130,7 +130,7 @@ Developer SDK Customization Reference
       - [*-setPromoCode*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpromocode)
       - [*-hideCartButtonWhenCartIsEmpty*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecartbuttonwhencartisempty)
       - [*-closeWidgetFromShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--closewidgetfromshoppingcart)
-      - [*+clearShoppingCart*]
+      - [*+clearShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#-clearshoppingcart)
    - [**Screen 'Payment Options'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-payment-options)
       - [*-removeLogoFromPaymentScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removelogofrompaymentscreen)
       - [*-setPayeeName*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpayeename)
