@@ -88,7 +88,7 @@ Developer SDK Customization Reference
       - [*-enablePhotoSourcesInCustomizeProduct*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--enablephotosourcesincustomizeproduct)
       - [*-setPassedImageFirstInPhotoSources*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpassedimagefirstinphotosources)
       - [*-setPassedImageAsThumbForOnePhotoTemplate*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpassedimageasthumbforonephototemplate)
-      - [*-setPreselectPassedImages:shouldPreselectPassedImages*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpassedimageasthumbforonephototemplate)
+      - [*-setPreselectPassedImages:shouldPreselectPassedImages*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpreselectpassedimagesshouldpreselectpassedimages)
       - [*-hideIconForUploadInstructions*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideiconforuploadinstructions)
       - [*-setInstagramClientID:redirectUrl*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setinstagramclientidredirecturl)
       - [*-setInstagramAccessToken*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setinstagramaccesstoken)
