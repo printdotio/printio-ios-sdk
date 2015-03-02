@@ -1506,6 +1506,19 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
+######- setPreselectPassedImages:shouldPreselectPassedImages
+```Objective-C
+/**
+ A flag that determines whether passed images are preselected on the 'Select Photos' screen.
+ */
+- (void)setPreselectPassedImages:(BOOL)shouldPreselectPassedImages;
+```
+**Sample code:**
+```Objective-C
+[printIO setPreselectPassedImages:YES];
+//... other customization
+[printIO open];
+```
 ######- enablePhotoSourcesInCustomizeProduct
 ```Objective-C
 /**
