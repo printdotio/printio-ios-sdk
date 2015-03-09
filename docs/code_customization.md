@@ -1326,7 +1326,7 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 //... other customization
 [printIO open];
 ```
-######- - (void)setAvailableProducts
+######- setAvailableProducts
 ```Objective-C
 /**
  Set available products. 
