@@ -74,6 +74,7 @@ Developer SDK Customization Reference
       - [*-setFeaturedProductsLeftLabelTextColor:rightLabelTextColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsleftlabeltextcolorrightlabeltextcolor)
       - [*-setFeaturedProductsBackgroundImage*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsbackgroundimage)
       - [*-setFeaturedProductsDefaultView*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsdefaultview)
+      - [*-setAvailableProducts*]()
    - [**Screen 'Product Details'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-product-details)
       - [*-productDetailsShowTitleBelowNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
       - [*-productDetailsShowMenuBtnInNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
@@ -1322,6 +1323,26 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 **Sample code:**
 ```Objective-C
 [printIO setFeaturedProductsDefaultView:PIO_FP_ALL_PRODUCTS];
+//... other customization
+[printIO open];
+```
+######- - (void)setAvailableProducts
+```Objective-C
+/**
+ Set available products. 
+ 
+ @param availableProducts List of product ids, which will be shown in product's list
+ 
+ Example:
+ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NSNumber numberWithInt:PRODUCT_PHONE_CASES()]];
+ 
+ */
+- (void)setAvailableProducts:(NSArray *)availableProducts;
+```
+**Sample code:**
+```Objective-C
+NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NSNumber numberWithInt:PRODUCT_PHONE_CASES()]];
+[printIO setAvailableProducts:availableProducts];
 //... other customization
 [printIO open];
 ```
