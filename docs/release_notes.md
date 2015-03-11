@@ -1,8 +1,9 @@
-**iOS Release Notes**
+iOS Release Notes
+========================
 
-1.0.49 (17)
-============
 
+**1.0.49 (17)**
+---
 **Features:**
 Custom Photo Source API - option to add a custom photo source
 Fixes to Cards: Text Too Small
