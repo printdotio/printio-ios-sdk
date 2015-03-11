@@ -1,6 +1,5 @@
 iOS Release Notes
-###
-
+=======================================
 
 **1.0.49 (17)**
 ---
@@ -12,23 +11,23 @@ iOS Release Notes
 * Deselect passed images - new method
 * Update the rules to be 1/3 of the size or less to show warning
 
----
+####
 
 **Bugs:** 
 * Side Menu - shows version number when missing one photo source
 * Customization screen - After changing layout template, loading popup stay visible on the screen
-Throw Pillows - app is crashing on back side of pillow
-setIconForShoppingCart: does not work
-Unable to by-pass photo sources view
-iPhone 4s: Text Object - After close image editor screen layout moves down and text run from Layout
-Customization screen: Help Dialog is clickable
-Canvas Posters - Missing preview image for grid view and images have low resolution on Product Details screen - sever side issue
-Tote Bags - bad build info on Customization screen - server side issue
-Customization screen - Doesn't want to add automatically image on the 1 image layout
-Flat cards - Can not add image on this Layout, shows Error toast message - server side issue
-Text Objects is removed when change Layout
-Unsupported products remain visible in cart list and causing a crash
-Throw Pillows - When edit pillow from Shopping cart, on Back side of pillow missing images
+* Throw Pillows - app is crashing on back side of pillow 
+* setIconForShoppingCart: does not work
+* Unable to by-pass photo sources view
+* iPhone 4s: Text Object - After close image editor screen layout moves down and text run from Layout
+* Customization screen: Help Dialog is clickable
+* Canvas Posters - Missing preview image for grid view and images have low resolution on Product Details screen - sever side issue
+* Tote Bags - bad build info on Customization screen - server side issue
+* Customization screen - Doesn't want to add automatically image on the 1 image layout
+* Flat cards - Can not add image on this Layout, shows Error toast message - server side issue
+* Text Objects is removed when change Layout
+* Unsupported products remain visible in cart list and causing a crash
+* Throw Pillows - When edit pillow from Shopping cart, on Back side of pillow missing images
 
 
 
