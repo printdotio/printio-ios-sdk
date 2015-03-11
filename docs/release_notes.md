@@ -9,12 +9,10 @@ iOS Release Notes
 * Updated design of double tap balloon
 * Add discount amount and coupon code used to order completed callback  - #382 github
 * Ability to filter what products show via method on client side not server side
-* Custom Photo Source API - option to add a custom photo source
+* Custom Photo Source API - option to add a custom photo source https://github.com/printdotio/printio-ios/blob/master/temp_photo_sources.md
 * Deselect passed images - new method
-* Update the rules to be 1/3 of the size or less to show warning
-* Added 7 new products - (CANVAS_POSTERS, RUGS, MEMENTOS, TOTE_BAGS, DOG_BEDS, CANVAS_MINIS, EVERYTHING_BAGS)
-* Customization screen: Resolution warning message - It should be an icon on the item and when you tap on it it gives you a message
-* Resolution Warnings on "book" products
+* Added 7 new products: Canvas Posters, Rugs, Mementos, Tote Bags, Dog Beds, Canvas Minis and Everything Bags
+* Added Resolution Warnings for photos which are smaller than 1/3 of requested size
 
 ####
 
