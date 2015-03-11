@@ -11,7 +11,7 @@ iOS Release Notes
 * New Product: Dog Beds
 * Deselect passed images - new method
 * Update the rules to be 1/3 of the size or less to show warning
----
+***
 **Bugs:** 
 * Side Menu - shows version number when missing one photo source
 * Customization screen - After changing layout template, loading popup stay visible on the screen
