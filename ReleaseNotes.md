@@ -28,5 +28,5 @@ iOS Release Notes
 * Coming soon products bug
 * Customization screen - Changing Layout doesn't work correctly from the shopping cart
 * Allow user to Place Order with a complete zero dollar value
-* Order Completed screen - "Coupon savings: is not same like on Payment screen
+* Order Completed screen - Coupon savings: is not same like on Payment screen
 
