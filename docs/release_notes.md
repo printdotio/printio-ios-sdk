@@ -5,16 +5,16 @@ iOS Release Notes
 **1.0.49 (17)**
 ---
 **Features:**
-Custom Photo Source API - option to add a custom photo source
-Fixes to Cards: Text Too Small
-New Product: Canvas Minis
-New Product: Dog Beds
-Deselect passed images - new method
-Update the rules to be 1/3 of the size or less to show warning
-
-Bugs: 
-Side Menu - shows version number when missing one photo source
-Customization screen - After changing layout template, loading popup stay visible on the screen
+* Custom Photo Source API - option to add a custom photo source
+* Fixes to Cards: Text Too Small
+* New Product: Canvas Minis
+* New Product: Dog Beds
+* Deselect passed images - new method
+* Update the rules to be 1/3 of the size or less to show warning
+---
+**Bugs:** 
+* Side Menu - shows version number when missing one photo source
+* Customization screen - After changing layout template, loading popup stay visible on the screen
 Throw Pillows - app is crashing on back side of pillow
 setIconForShoppingCart: does not work
 Unable to by-pass photo sources view
