@@ -4,21 +4,14 @@ iOS Release Notes
 **1.1.0 (18)**
 ---
 **Features:**
-* Merge photo sources into master
-* Merge branches into master
 * Add photo source public headers to framework target 
 * Rename photo-source specific classes to have PIO prefix to avoid duplicate symbols
-* Update design of double tap to edit popup
-* Send image public link instead of uploading image in order
+* Updated design of double tap balloon
 * Add discount amount and coupon code used to order completed callback  - #382 github
 * Ability to filter what products show via method on client side not server side
 * Custom Photo Source API - option to add a custom photo source
-* Fixes to Cards: Text Too Small
-* New Product: Canvas Minis
-* New Product: Dog Beds
 * Deselect passed images - new method
 * Update the rules to be 1/3 of the size or less to show warning
-* Ability to filter what products show via method on client side not server side
 * Added 7 new products - (CANVAS_POSTERS, RUGS, MEMENTOS, TOTE_BAGS, DOG_BEDS, CANVAS_MINIS, EVERYTHING_BAGS)
 * Customization screen: Resolution warning message - It should be an icon on the item and when you tap on it it gives you a message
 * Resolution Warnings on "book" products
