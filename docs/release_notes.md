@@ -1,5 +1,5 @@
 iOS Release Notes
-=======================================
+***
 
 **1.0.49 (17)**
 ---
@@ -55,7 +55,7 @@ iOS Release Notes
 * Allow user to Place Order with a complete zero dollar value
 * Facebook album images blocks UI 
 
-==========================
+***
 
 **1.0.51 (18)**
 ---
@@ -69,7 +69,7 @@ iOS Release Notes
 **Bugs:** 
 * iPhone 5: Select Photos screen - right side of photo sources is cutted
 
-=========================================
+***
 
 **1.0.52 (18)**
 ---
@@ -86,4 +86,4 @@ iOS Release Notes
 * Order Completed screen - "Coupon savings: is not same like on Payment screen
 * Warning popup is clickable, every time when click on popup opens new one
 
-=========================================
+***
