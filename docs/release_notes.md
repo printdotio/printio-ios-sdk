@@ -29,7 +29,7 @@ iOS Release Notes
 * Unsupported products remain visible in cart list and causing a crash
 * Throw Pillows - When edit pillow from Shopping cart, on Back side of pillow missing images
 
-===================================
+***
 
 **1.0.50 (17)**
 ---
