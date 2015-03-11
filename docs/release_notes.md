@@ -1,8 +1,9 @@
-iOS Release Notes
+**iOS Release Notes**
 
 1.0.49 (17)
+============
 
-Features:
+**Features:**
 Custom Photo Source API - option to add a custom photo source
 Fixes to Cards: Text Too Small
 New Product: Canvas Minis
