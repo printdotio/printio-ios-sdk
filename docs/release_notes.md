@@ -4,15 +4,13 @@ iOS Release Notes
 **1.1.0 (18)**
 ---
 **Features:**
-* Add photo source public headers to framework target 
-* Rename photo-source specific classes to have PIO prefix to avoid duplicate symbols
-* Updated design of double tap balloon
-* Add discount amount and coupon code used to order completed callback  - #382 github
-* Ability to filter what products show via method on client side not server side
-* Custom Photo Source API - option to add a custom photo source https://github.com/printdotio/printio-ios/blob/master/temp_photo_sources.md
-* Deselect passed images - new method
+* Custom photo sources API - option to add a custom photo source https://github.com/printdotio/printio-ios/blob/master/temp_photo_sources.md
 * Added 7 new products: Canvas Posters, Rugs, Mementos, Tote Bags, Dog Beds, Canvas Minis and Everything Bags
-* Added Resolution Warnings for photos which are smaller than 1/3 of requested size
+* Resolution Warnings for photos which are smaller than 1/3 of requested size
+* Updated design of double tap balloon
+* Ability to filter what products show via method on client side
+* Added new public method to deselect passed images
+* Renamed photo-source specific classes to have PIO prefix to avoid duplicate symbols
 
 ####
 
