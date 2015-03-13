@@ -8,7 +8,7 @@ iOS Release Notes
 * Added 7 new products: Canvas Posters, Rugs, Mementos, Tote Bags, Dog Beds, Canvas Minis and Everything Bags
 * Resolution Warnings for photos which are smaller than 1/3 of requested size
 * Updated design of double tap balloon
-* Ability to filter what products show via method on client side
+* Ability to filter what products show via method on client side https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailableproducts
 * Added new public method to deselect passed images
 * Renamed photo-source specific classes to have PIO prefix to avoid duplicate symbols
 
