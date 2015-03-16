@@ -104,6 +104,7 @@ Developer SDK Customization Reference
       - [*-autoSelectOnePhotoTemplateForProductID*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--autoselectonephototemplateforproductid)
       - [*-disableAutoRecognizePhoneModel*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disableautorecognizephonemodel)
       - [*-hideCartInPhotoSources*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecartinphotosources)
+      - [*-showSelectAllButton*]()
    - [**Screen 'Customize/Edit Product'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-customizeedit-product)
       - [*-showToolbarInCustomizeProduct:backgroundImage*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showtoolbarincustomizeproductbackgroundimage)
       - [*-hideImagesListInCustomizeProduct*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideimageslistincustomizeproduct)
@@ -1791,6 +1792,21 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 **Sample code:**
 ```Objective-C
 [printIO hideCartInPhotoSources:YES];
+//... other customization
+[printIO open];
+```
+######- showSelectAllButton
+```Objective-C
+/**
+ Show 'Select All' button on Photo Sources screen which selects all images in the current folder
+ 
+ @param shouldShow Default value is YES
+ */
+- (void)showSelectAllButton:(BOOL)shouldShow;
+```
+**Sample code:**
+```Objective-C
+[printIO showSelectAllButton:YES];
 //... other customization
 [printIO open];
 ```
