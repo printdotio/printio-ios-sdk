@@ -104,7 +104,7 @@ Developer SDK Customization Reference
       - [*-autoSelectOnePhotoTemplateForProductID*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--autoselectonephototemplateforproductid)
       - [*-disableAutoRecognizePhoneModel*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disableautorecognizephonemodel)
       - [*-hideCartInPhotoSources*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecartinphotosources)
-      - [*-showSelectAllButton*]()
+      - [*-showSelectAllButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showselectallbutton)
    - [**Screen 'Customize/Edit Product'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-customizeedit-product)
       - [*-showToolbarInCustomizeProduct:backgroundImage*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showtoolbarincustomizeproductbackgroundimage)
       - [*-hideImagesListInCustomizeProduct*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideimageslistincustomizeproduct)
