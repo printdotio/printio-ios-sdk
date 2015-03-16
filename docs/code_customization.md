@@ -154,7 +154,7 @@ Developer SDK Customization Reference
    - [**Google Analytics**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#google-analytics)
       - [*-setTrackingIDForGoogleAnalytics*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settrackingidforgoogleanalytics)
    - [**Push Notifications**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#push-notifications)
-      - [*-enablePushNotifications*]()
+      - [*-enablePushNotifications*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--enablepushnotifications)
       - [*-setParseApplicationId:apiKey*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setparseapplicationidapikey)
       - [*-registerDeviceToken*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--registerdevicetoken)
       - [*-showNotification:backgroundColor:textColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--shownotificationbackgroundcolortextcolor)
