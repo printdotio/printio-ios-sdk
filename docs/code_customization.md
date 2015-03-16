@@ -154,6 +154,7 @@ Developer SDK Customization Reference
    - [**Google Analytics**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#google-analytics)
       - [*-setTrackingIDForGoogleAnalytics*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settrackingidforgoogleanalytics)
    - [**Push Notifications**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#push-notifications)
+      - [*-enablePushNotifications*]()
       - [*-setParseApplicationId:apiKey*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setparseapplicationidapikey)
       - [*-registerDeviceToken*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--registerdevicetoken)
       - [*-showNotification:backgroundColor:textColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--shownotificationbackgroundcolortextcolor)
@@ -2470,6 +2471,21 @@ NSMutableAttributedString *message = [[NSMutableAttributedString alloc]initWithS
 [printIO open];
 ```
 ###Push Notifications
+######- enablePushNotifications
+```Objective-C
+/**
+ Enable push notification in SDK
+ 
+ @param set Default value is disabled
+ */
+- (void)enablePushNotifications:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
+[printIO enablePushNotifications:YES];
+//... other customization
+[printIO open];
+```
 ######- setParseApplicationId:apiKey
 ```Objective-C
 /**
