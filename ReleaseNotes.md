@@ -4,7 +4,7 @@ iOS Release Notes
 **1.1.9 (18)**
 ---
 **Features:**
-* Photo sources screen: 'Select/Deselect All' button customization added
+* [Photo sources screen: 'Select/Deselect All' button customization added](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showselectallbutton)
 * [New method to turn push notifications on](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--enablepushnotifications)
 * New products: Wall Calendars added
 * Added info popup "No printable media" for folders with non-image formats, or empty folders
