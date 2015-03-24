@@ -7,12 +7,12 @@ iOS Release Notes
 * Update the photo sources docs with class prefixes as well as correct versions of SDK
 * Select/Deselect All button - add methods for hide/visible and customization that button
 * New method to turn notifications on -> should be off by default
-* Paypal not appearing as a payment option #399
 * New products: Wall Calendars added
 
 ####
 
 **Bug fixes:** 
+* github issues fixes: #384, #391, #392, #393, #394, #396, #398, #399, #400, #402
 * Canvas Posters - Missing Overlay image
 * New Products v18 - Missing 1 image  Layout preview on customization screen
 * How It Works screen title is "Breakout Commerce" #384
