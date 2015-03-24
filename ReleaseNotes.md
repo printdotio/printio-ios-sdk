@@ -30,3 +30,9 @@ iOS Release Notes
 * Allow user to Place Order with a complete zero dollar value
 * Order Completed screen - Coupon savings: is not same like on Payment screen
 
+####
+
+**1.1.0 (18)**
+---
+**Features:**
+
