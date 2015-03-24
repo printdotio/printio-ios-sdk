@@ -8,41 +8,39 @@ iOS Release Notes
 * Select/Deselect All button - add methods for hide/visible and customization that button
 * New method to turn notifications on -> should be off by default
 * New products: Wall Calendars added
+* Added message "No printable media" for folders with non-image formats, or empty folders
 
 ####
 
 **Bug fixes:** 
 * github issues fixes: [#384](https://github.com/printdotio/printio-ios-sdk/issues/384), [#390](https://github.com/printdotio/printio-ios-sdk/issues/390), [#391](https://github.com/printdotio/printio-ios-sdk/issues/391), [#392](https://github.com/printdotio/printio-ios-sdk/issues/392), [#393](https://github.com/printdotio/printio-ios-sdk/issues/393), [#394](https://github.com/printdotio/printio-ios-sdk/issues/394), [#395](https://github.com/printdotio/printio-ios-sdk/issues/395), [#396](https://github.com/printdotio/printio-ios-sdk/issues/396), [#398](https://github.com/printdotio/printio-ios-sdk/issues/398), [#399](https://github.com/printdotio/printio-ios-sdk/issues/399), [#400](https://github.com/printdotio/printio-ios-sdk/issues/400), [#401](https://github.com/printdotio/printio-ios-sdk/issues/401), [#402](https://github.com/printdotio/printio-ios-sdk/issues/402), [#403](https://github.com/printdotio/printio-ios-sdk/issues/403), [#404](https://github.com/printdotio/printio-ios-sdk/issues/404)
 * Canvas Posters - Missing Overlay image
-* New Products v18 - Missing 1 image  Layout preview on customization screen
+* Missing 1 image  Layout preview on customization screen
 * Side Menu - Missing Info section
 * Coupons doesn't work correctly
-* Customization screen - Mousepads have silver background (should be black)
+* Customization screen - Mousepads have silver background
 * Select Photos screen - Need to add padding on the bottom of folders and inside the folders
 * Canvas Wraps - Black Wraps have silver background
 * Status bar visible - Bad UI on few places
 * Side Menu: Picasa - switch icon for login and logout
 * Phone source - "back" image is blinking on clicking on first few photo in folders
-* Fix select photos paddings
 * Facebook - load only 100 images in folder with 300+ images in it
 * Photo Sources - Preview Images don't fit to placeholders
 * Select Photos screen - missing numbers of images on folders
 * Photo sources - Change color on folder titles - should be silver/gray not black
 * Book products - From Shopping cart "Processing images" dialog stay visible until cancel it
-* Image Editor screen - Status bar overlapping nav buttons
-* Status bar ON: App is crashing when close Image preview on Product Details screen
-* iPhone 6/6+ collection view cell spacing
+* Image Editor screen - Status bar overlapping navigation bar buttons
+* App is crashing when close Image preview on Product Details screen when status bar is visible
+* iPhone 6/6+ photo sources cell spacing
 * Customization screen - Photos are duplicated when change Background Color
-* Landscape issues other than Photobucket's
+* Landscape mode issues
 * Customization screen - crash on resolution warning
-* Photobucket source - Add toast message to say "No printable media" in GIF Maker folder
-* Photobucket source - Cancel button from login screen killing whole app
-* Status bar ON: FB login screen - buttons are cutted on the bottom
-* Photobucket source - Missing number of images on folders
+* Cancel button on Login screen closes widget, Photobucket photo source
+* FB login screen - buttons are cutted on the bottom when status bar is visible
+* Missing number of images on folders for Photobucket photo source
 * Customization screen - Background Color doesn't work
 * Customization screen - *book products have unnecessary blink between loading and processing dialogs
-* Switch back to concurrent photo download in customization screen
-* Handle photobucket 401 response code
+* Concurrent photo download in customization screen
 
 ####
 
