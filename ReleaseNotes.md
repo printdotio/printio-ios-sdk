@@ -12,23 +12,15 @@ iOS Release Notes
 ####
 
 **Bug fixes:** 
-* github issues fixes: #384, #391, #392, #393, #394, #396, #398, #399, #400, #402
+* github issues fixes: #384, #390, #391, #392, #393, #394, #395, #396, #398, #399, #400, #401, #402, #403, #404
 * Canvas Posters - Missing Overlay image
 * New Products v18 - Missing 1 image  Layout preview on customization screen
-* How It Works screen title is "Breakout Commerce" #384
 * Side Menu - Missing Info section
-* Album text font change on Select Photos screen #394
-* Unnecessary screen for dog beds #391
-* Button colors on Select Photos screen have changed #396
-* GIF and video files appearing as printable media from phone source #392
 * Coupons doesn't work correctly
-* Select Photos screen not defaulting to preferred source #400
 * Customization screen - Mousepads have silver background (should be black)
 * Select Photos screen - Need to add padding on the bottom of folders and inside the folders
-* Photo source customization not working anymore. #402
 * Canvas Wraps - Black Wraps have silver background
 * Status bar visible - Bad UI on few places
-* Product preview layouts broken #398
 * Side Menu: Picasa - switch icon for login and logout
 * Phone source - "back" image is blinking on clicking on first few photo in folders
 * Fix select photos paddings
@@ -38,16 +30,10 @@ iOS Release Notes
 * Photo sources - Change color on folder titles - should be silver/gray not black
 * Book products - From Shopping cart "Processing images" dialog stay visible until cancel it
 * Image Editor screen - Status bar overlapping nav buttons
-* Number positioning in cart icon #393
-* Glossy and Lustre icons not appearing for Prints #404
 * Status bar ON: App is crashing when close Image preview on Product Details screen
 * iPhone 6/6+ collection view cell spacing
 * Customization screen - Photos are duplicated when change Background Color
-* Product preview shrinks after image edit on iPad #401
-* Entering SDK when device is in landscape mode #395
 * Landscape issues other than Photobucket's
-* Image quality warning doesn't show #390
-* Upload performance issues for high image-count products #403
 * Customization screen - crash on resolution warning
 * Photobucket source - Add toast message to say "No printable media" in GIF Maker folder
 * Photobucket source - Cancel button from login screen killing whole app
