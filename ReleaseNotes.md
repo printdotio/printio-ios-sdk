@@ -35,4 +35,67 @@ iOS Release Notes
 **1.1.9 (18)**
 ---
 **Features:**
+* Update the photo sources docs with class prefixes as well as correct versions of SDK
+* Select/Deselect All button - add methods for hide/visible and customization that button
+* New method to turn notifications on -> should be off by default
+* Remove old photo source classes
+* Paypal not appearing as a payment option #399
+
+####
+
+**Bug fixes:** 
+* Canvas Posters - Missing Overlay image
+* New Products v18 - Missing 1 image  Layout preview on customization screen
+* How It Works screen title is "Breakout Commerce" #384
+* Side Menu - Missing Info section
+* Album text font change on Select Photos screen #394
+* Unnecessary screen for dog beds #391
+* Button colors on Select Photos screen have changed #396
+* GIF and video files appearing as printable media from phone source #392
+* Coupons doesn't work correctly
+* Select Photos screen not defaulting to preferred source #400
+* Customization screen - Mousepads have silver background (should be black)
+* Select Photos screen - Need to add padding on the bottom of folders and inside the folders
+* Photo source customization not working anymore. #402
+* Canvas Wraps - Black Wraps have silver background
+* Status bar visible - Bad UI on few places
+* Product preview layouts broken #398
+* Side Menu: Picasa - switch icon for login and logout
+* Phone source - "back" image is blinking on clicking on first few photo in folders
+* Fix select photos paddings
+* Facebook - load only 100 images in folder with 300+ images in it
+* Photo Sources - Preview Images don't fit to placeholders
+* Select Photos screen - missing numbers of images on folders
+* Photo sources - Change color on folder titles - should be silver/gray not black
+* Book products - From Shopping cart "Processing images" dialog stay visible until cancel it
+* Image Editor screen - Status bar overlapping nav buttons
+* Number positioning in cart icon #393
+* Glossy and Lustre icons not appearing for Prints #404
+* Status bar ON: App is crashing when close Image preview on Product Details screen
+* iPhone 6/6+ collection view cell spacing
+* Customization screen - Photos are duplicated when change Background Color
+* Product preview shrinks after image edit on iPad #401
+* Entering SDK when device is in landscape mode #395
+* Landscape issues other than Photobucket's
+* Image quality warning doesn't show #390
+* Upload performance issues for high image-count products #403
+* Customization screen - crash on resolution warning
+* Wall Calendars - For each month always add one same image
+* Wall Calendars - When open item from shopping cart missing overlays
+* Wall Calendars - Loading popup never disappear on each screen
+* Photobucket source - Add toast message to say "No printable media" in GIF Maker folder
+* Photobucket source - Cancel button from login screen killing whole app
+* Status bar ON: FB login screen - buttons are cutted on the bottom
+* Photobucket source - Missing number of images on folders
+* Customization screen - Background Color doesn't work
+* Customization screen - *book products have unnecessary blink between loading and processing dialogs
+* Wall Calendars - Images are not saved on months
+* Switch back to concurrent photo download in customization screen
+* Handle photobucket 401 response code
+
+####
+
+
+
+
 
