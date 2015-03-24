@@ -49,16 +49,12 @@ iOS Release Notes
 * Image quality warning doesn't show #390
 * Upload performance issues for high image-count products #403
 * Customization screen - crash on resolution warning
-* Wall Calendars - For each month always add one same image
-* Wall Calendars - When open item from shopping cart missing overlays
-* Wall Calendars - Loading popup never disappear on each screen
 * Photobucket source - Add toast message to say "No printable media" in GIF Maker folder
 * Photobucket source - Cancel button from login screen killing whole app
 * Status bar ON: FB login screen - buttons are cutted on the bottom
 * Photobucket source - Missing number of images on folders
 * Customization screen - Background Color doesn't work
 * Customization screen - *book products have unnecessary blink between loading and processing dialogs
-* Wall Calendars - Images are not saved on months
 * Switch back to concurrent photo download in customization screen
 * Handle photobucket 401 response code
 
