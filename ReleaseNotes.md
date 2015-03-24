@@ -7,8 +7,8 @@ iOS Release Notes
 * Update the photo sources docs with class prefixes as well as correct versions of SDK
 * Select/Deselect All button - add methods for hide/visible and customization that button
 * New method to turn notifications on -> should be off by default
-* Remove old photo source classes
 * Paypal not appearing as a payment option #399
+* New products: Wall Calendars added
 
 ####
 
