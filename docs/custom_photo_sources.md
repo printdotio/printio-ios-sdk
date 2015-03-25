@@ -1,7 +1,7 @@
 Custom Photo Source API
 ===============
 
-Since version x.y there is an option to add a custom photo source.
+Since version 1.1.0 there is an option to add a custom photo source.
 
 ![](https://dl.dropboxusercontent.com/u/19321066/printIO/printio_sdk_screens.png)
 
@@ -22,17 +22,17 @@ Since version x.y you have an ability to add your own custom photo source api to
 
 ## Default implementation
 
-There are two entities you should get familiar with: PhotoSource and PhotoSourceItem protocols. 
+There are two entities you should get familiar with: PIOPhotoSource and PIOPhotoSourceItem protocols. 
 
-PhotoSource protocol describes everything from authentication, paging, caching, lazy image downloading to how your images and albums will be displayed on the screen.
+PIOPhotoSource protocol describes everything from authentication, paging, caching, lazy image downloading to how your images and albums will be displayed on the screen.
 
-PhotoSourceItem is a protocol that describes a single item that appears in the collection view. An image. An album. A folder. A back button.
+PIOPhotoSourceItem is a protocol that describes a single item that appears in the collection view. An image. An album. A folder. A back button.
 
 We have created a default implementation of these protocols which you are advised to use:
 
-    @interface DefaultPhotoSource : NSObject<PhotoSource>
+    @interface PIODefaultPhotoSource : NSObject<PIOPhotoSource>
 
-    @interface DefaultPhotoSourceItem : NSObject<PhotoSourceItem>
+    @interface PIODefaultPhotoSourceItem : NSObject<PIOPhotoSourceItem>
 
 What this basic implementation will do for you is:
 
@@ -90,23 +90,23 @@ and display it modally from the existing navigation controller. **Do not attempt
 
 ```Objective-C
     -(void)requestConcreteItems:(NSMutableArray*)items 
-                        forItem:(id<PhotoSourceItem>)item 
-                        inScope:(id<PhotoSourceItem>)currentScope 
+                        forItem:(id<PIOPhotoSourceItem>)item 
+                        inScope:(id<PIOPhotoSourceItem>)currentScope 
                            page:(NSUInteger)page 
                           count:(NSUInteger)count 
-          withCompletionHandler:(ItemsCompletionHandler)completionHandler 
-                   errorHandler:(PhotoSourceErrorHandler)errorHandler;
+          withCompletionHandler:(PIOItemsCompletionHandler)completionHandler 
+                   errorHandler:(PIOPhotoSourceErrorHandler)errorHandler;
 ```
 
 Lets go through the list of parameters:
 
 - items : NSMutableArray - A list of items to which you add your images to. If the user queries for a non-root folder, this array will contain the back button before being passed to you.
-- item : id< PhotoSourceItem > - The item that the user selected. In case of the first call(root) this item is nil.
-- currentScope : id< PhotoSourceItem > - This is where the request has been sent from.
+- item : id< PIOPhotoSourceItem > - The item that the user selected. In case of the first call(root) this item is nil.
+- currentScope : id< PIOPhotoSourceItem > - This is where the request has been sent from.
 - page : NSUInteger - Page number. If your photo source doesn't support paging, ignore this.
 - count : NSUInteger - Count per page. If your photo source doesn't support paging, ignore this.
-- completionHandler : ItemsCompletionHandler - A completion handler which you should call if the request was successful. 
-- errorHandler : PhotoSourceErrorHandler - An error handler which you should call if an error occurred.
+- completionHandler : PIOItemsCompletionHandler - A completion handler which you should call if the request was successful. 
+- errorHandler : PIOPhotoSourceErrorHandler - An error handler which you should call if an error occurred.
 
 6.After you return the list of items to the SDK, it will attempt to display them. We recognize two types of items: images(selectable) and everything else(not selectable). 
 
@@ -121,7 +121,7 @@ for each PhotoSourceItem.
 7.If you're using default implementations of PhotoSource and PhotoSourceItem, image download is pretty straightforward. DefaultPhotoSource will call DefaultPhotoSourceItem's 
 
 ```Objective-C
--(void)fetchImageInPhotoSource:(id<PhotoSource>)photoSource isThumbnail:(BOOL)thumbnail withCompletionHandler:(void(^)(UIImage*))imageFetchCompletionHandler
+-(void)fetchImageInPhotoSource:(id<PIOPhotoSource>)photoSource isThumbnail:(BOOL)thumbnail withCompletionHandler:(void(^)(UIImage*))imageFetchCompletionHandler
 ```
 
 method, which will delegate the call to the ImageDownloader. We have opted to decouple the downloading of the image from the photo source item, so it could be reused in other parts of the code without needing the actual item. What you need to do is create your own custom implementation which conforms to the ImageDownloader protocol and assign it to the DefaultPhotoSourceItems' property.
@@ -129,7 +129,7 @@ method, which will delegate the call to the ImageDownloader. We have opted to de
 For example:
 
 ```Objective-C
-_imageDownloader = [PhotoSourceItemImageDownloader imageDownloaderWithBlock:^(PIOPicasaPhoto* item, id<PhotoSource> photoSource, BOOL isThumbnail ,ImageDownloadCompletionHandler completionHandler){
+_imageDownloader = [PIOPhotoSourceItemImageDownloader imageDownloaderWithBlock:^(PIOPicasaPhoto* item, id<PhotoSource> photoSource, BOOL isThumbnail ,PIOImageDownloadCompletionHandler completionHandler){
             NSString* URLString;
             if(isThumbnail){
                 URLString = item.thumbnailUrl;
@@ -146,5 +146,5 @@ _imageDownloader = [PhotoSourceItemImageDownloader imageDownloaderWithBlock:^(PI
 
 ## Example
 
-You can see a full example [here](https://github.com/printdotio/printio-ios/blob/master/Picasa_h.md).
+Check out the [photo source example](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/Picasa.h), as well the [album item](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/picasa_album_item.h) and the [photo item](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/picasa_photo_item.h) examples.
 
