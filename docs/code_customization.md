@@ -69,6 +69,7 @@ Developer SDK Customization Reference
    - [**Screen 'Products'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-products)
       - [*-hideCategoriesInFeaturedProducts*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecategoriesinfeaturedproducts)
       - [*-hideComingSoonProducts*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecomingsoonproducts)
+      - [*-hideMuchMoreToCome*]()
       - [*-showCountrySelectionOnScreen:backgroundColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showcountryselectiononscreenbackgroundcolor)
       - [*-setTitleForFeaturedProductsScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforfeaturedproductsscreen)
       - [*-setFeaturedProductsLeftLabelTextColor:rightLabelTextColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsleftlabeltextcolorrightlabeltextcolor)
@@ -1237,6 +1238,21 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 **Sample code:**
 ```Objective-C
 [printIO hideComingSoonProducts:YES];
+//... other customization
+[printIO open];
+```
+######- hideMuchMoreToCome
+```Objective-C
+/**
+ Hide 'Much More To Come' footer in product's list
+ 
+ @param hide Default value is NO
+ */
+- (void)hideMuchMoreToCome:(BOOL)hide;
+```
+**Sample code:**
+```Objective-C
+[printIO hideMuchMoreToCome:YES];
 //... other customization
 [printIO open];
 ```
