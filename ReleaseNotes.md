@@ -1,6 +1,17 @@
 iOS Release Notes
 ==================================
 
+**1.1.12 (18)**
+---
+**Features:**
+
+####
+
+**Bug fixes:** 
+* github issues fixes: [#384](https://github.com/printdotio/printio-ios-sdk/issues/384),
+
+####
+
 **1.1.9 (18)**
 ---
 **Features:**
