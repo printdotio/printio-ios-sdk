@@ -4,9 +4,10 @@ iOS Release Notes
 **1.1.12 (18)**
 ---
 **Features:**
-* [Update photo sources docs](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/custom_photo_sources.md) 
+* [Updated photo sources docs](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/custom_photo_sources.md) 
 * [New public method to hide 'Much More To Come'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidemuchmoretocome)
 * [New public method to hide 'Coming soon products'](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecomingsoonproducts)
+* Added TextBundle.bundle. Include it in project, if you want to use text feature in PrintIO SDK.
 
 ####
 
@@ -19,8 +20,7 @@ iOS Release Notes
 * Instagram - Token disappear after a while
 * Shower Curtains - Missing overlays
 * Throw Pillows - Step 1: double text "With Zipper"
-* PIOOrderJSONCreator refactored
-* Display exact price instead of "starting at $x" on Product Details screen for products which have the same price for all Product Variants
+* Product's price fixes
 
 ####
 
