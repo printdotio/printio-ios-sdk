@@ -5,8 +5,8 @@ iOS Release Notes
 ---
 **Features:**
 * [Update photo sources docs:](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/custom_photo_sources.md) 
-* New public method to hide Much More To Come: [#409](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidemuchmoretocome)
-* New public method to hide-Coming soon products: [#409](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecomingsoonproducts)
+* [New public method to hide 'Much More To Come':](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidemuchmoretocome)
+* [New public method to hide 'Coming soon products':](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecomingsoonproducts)
 
 ####
 
