@@ -6,7 +6,6 @@ In order to follow this guide, you must have the following software installed on
 
 - iOS 7.* SDK (or newer)
 - Xcode 6.*
-- Print.IO SDK
 
 For the latest versions, please visit [Apple's iOS Dev Center](http://developer.apple.com/devcenter/ios/).
 
@@ -17,11 +16,13 @@ The minimum iOS version supported by the SDK is iOS 6.1. The main reasons for th
 
 # Configuration
 
-In order to use the SDK in an existing app, you must do the following:
+There are two ways to setup your app to use PrintIO SDK: [manually](#a_manual) or [using CocoaPods](#a_cocoapods).
+
+## Manual configuration <a name="a_manual"></a>
 
 ## 1. Add files
 
-Copy the `PrintIO.framework` and `PrintIOBundle.bundle` files into your project (select "Create groups for any added folders" if needed). The PrintIO Framework is a universal binary for use on iOS device and simulator architectures (armv7, arm7s, arm64 and i386).
+Copy the `PrintIO.framework`, `PrintIOBundle.bundle` and `TextBundle.bundle` files into your project (select "Create groups for any added folders" if needed). The PrintIO Framework is a universal binary for use on iOS device and simulator architectures (armv7, arm7s, arm64 and i386).
 
 ## 2. Link with frameworks
 
@@ -40,9 +41,9 @@ The Print.io SDK depends on some frameworks, so you'll need to add them to any t
 
 ## 3. Copy bundle resources
 
-Make sure `PrintIOBundle.bundle` is included in your target's "Copy Bundle Resources" build phase.
+Make sure `PrintIOBundle.bundle` and `TextBundle.bundle` are included in your target's "Copy Bundle Resources" build phase.
 
-![Make sure our bundle is included in the build phase](https://github.com/printdotio/printio-ios-sdk/blob/gh-pages/images/screenshot_copy_bundle_resources.png?raw=true)
+![Make sure our bundles are included in the Copy Bundle Resources](https://dl-web.dropbox.com/get/print.io/Screen%20Shot%202015-04-03%20at%201.06.25%20AM.png?_subject_uid=241786759&w=AACRCLd1iRkeAlHXTF1dBm03r8WejfKQRkvsx55sz3WfNg)
 
 
 ## 4. Add other linker flags
@@ -55,8 +56,21 @@ Update your target's (or project's) build settings to include the following "Oth
 
 ![Update your linker flags accordingly](https://github.com/printdotio/printio-ios-sdk/blob/gh-pages/images/screenshot_linker_flags.png?raw=true)
 
+## Configuration using CocoaPods <a name="a_cocoapods"></a>
 
-## 5. Import headers
+Our podspec currently has two subspecs: **Core** and **Text**. By default both will be included. 
+
+You can choose to omit text as it's an optional feature. This will result in `TextBundle.bundle` not being downloaded which would reduce the size of your app binaries.
+
+To include all features:
+`pod PrintIO`
+
+To omit the text:
+`pod PrintIO/Core`
+
+If you're not familiar with CocoaPods, please visit http://guides.cocoapods.org.
+
+## Start using PrintIO framework
 
 Include the following line to make the SDK available to your code:
 
