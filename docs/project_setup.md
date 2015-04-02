@@ -43,7 +43,7 @@ The Print.io SDK depends on some frameworks, so you'll need to add them to any t
 
 Make sure `PrintIOBundle.bundle` and `TextBundle.bundle` are included in your target's "Copy Bundle Resources" build phase.
 
-![Make sure our bundles are included in the Copy Bundle Resources](https://dl-web.dropbox.com/get/print.io/Screen%20Shot%202015-04-03%20at%201.06.25%20AM.png?_subject_uid=241786759&w=AACRCLd1iRkeAlHXTF1dBm03r8WejfKQRkvsx55sz3WfNg)
+![Make sure our bundles are included in the Copy Bundle Resources](https://dl.dropboxusercontent.com/s/k3kenaxduuvi8x6/bundles_ss.png?dl=0)
 
 
 ## 4. Add other linker flags
