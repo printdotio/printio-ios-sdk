@@ -4,10 +4,10 @@ iOS Release Notes
 **1.1.16 (18)**
 ---
 **Features:**
-* Add smaller version w/o text as an option to pod [#379](https://github.com/printdotio/printio-ios-sdk/issues/379)
-* Add project prefix to Photo Source implementations to avoid name collisions
+* Added smaller bundle version w/o text as an option to pod [#379](https://github.com/printdotio/printio-ios-sdk/issues/379)
+* Added project prefix to Photo Source implementations to avoid name collisions
 * [Update docs on cocoapods and separated text bundle](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/project_setup.md)
-* Add resolution warnings to photo sources for smallest zlayer in product
+* Added resolution warnings to photo sources for smallest Z layer in product
 
 ####
 
@@ -19,8 +19,6 @@ iOS Release Notes
 * iPhone 6 Plus - small UI changes
 * Duplicated Symbols Compile Error
 * Cocoapods & tags problem
-* High: Image Manip Errors
-* Dropbox - images are download on the phone and needs more time to load on customization screen
 * Checkout screen - All address fields are limited to five characters
 * Five digits ZIP for US
 * Shopping cart screen - keypad overlapping promo code fileds
