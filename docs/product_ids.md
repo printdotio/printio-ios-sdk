@@ -38,6 +38,16 @@ extern int PRODUCT_ACRYLIC_TRAYS()
 ```
 
 ---
+- ART POSTERS
+
+```Objective-C
+extern int PRODUCT_ART_POSTERS()
+{
+    return isSDKStaging() ? 1145 : 0;
+}
+```
+
+---
 
 - BATH TOWELS
 
@@ -50,7 +60,7 @@ extern int PRODUCT_BATH_TOWELS()
 
 ---
 
-- BEACH TOWEL
+- BEACH TOWELS
 
 ```Objective-C
 extern int PRODUCT_BEACH_TOWEL()
@@ -859,6 +869,16 @@ extern int PRODUCT_TABLET_CASES()
 extern int PRODUCT_TABLET_SKINS()
 {
     return isSDKStaging() ? 52 : 52;
+}
+```
+
+---
+- TABLETOP CANVAS WRAPS
+
+```Objective-C
+extern int PRODUCT_TABLETOP_CANVAS_WRAPS()
+{
+    return isSDKStaging() ? 1144 : 1144;
 }
 ```
 
