@@ -18,8 +18,8 @@ iOS Release Notes
 * New Product: Ottomans
 * New Product: Tabletop Canvases
 * New Product: Puzzles
-* Wall Calendars and Ottomans - Auto Populate
-* Fill in images based on size
+* Autopopulate images for empty spaces
+* Fill in images based on image size
 * Text feature - text below overlay image
 
 ####
