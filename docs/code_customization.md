@@ -86,7 +86,6 @@ Developer SDK Customization Reference
       - [*-setDefaultPhotoSource:albumId*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdefaultphotosourcealbumid)
       - [*-setImages*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setimages)
       - [*-disablePhotoSourcesWhenImagesArePassedIn*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablephotosourceswhenimagesarepassedin)
-      - [*-disablePhotoSourcesForOnePhotoTemplate*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablephotosourcesforonephototemplate)
       - [*-enablePhotoSourcesInCustomizeProduct*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--enablephotosourcesincustomizeproduct)
       - [*-setPassedImageFirstInPhotoSources*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpassedimagefirstinphotosources)
       - [*-setPassedImageAsThumbForOnePhotoTemplate*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpassedimageasthumbforonephototemplate)
@@ -1528,20 +1527,6 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 **Sample code:**
 ```Objective-C
 [printIO disablePhotoSourcesWhenImagesArePassedIn:YES];
-//... other customization
-[printIO open];
-```
-######- disablePhotoSourcesForOnePhotoTemplate
-```Objective-C
-/**
- Disable photo sources only if image is passed in, and user selects template with
- one photo.
- */
-- (void)disablePhotoSourcesForOnePhotoTemplate:(BOOL)disable;
-```
-**Sample code:**
-```Objective-C
-[printIO disablePhotoSourcesForOnePhotoTemplate:YES];
 //... other customization
 [printIO open];
 ```
