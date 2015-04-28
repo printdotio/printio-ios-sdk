@@ -4,6 +4,7 @@ iOS Release Notes
 **1.2.0 (19)**
 ---
 **Features:**
+* New Product: Layflat Photobooks
 * New Product: Art Poster
 * New Product: Stone Coaster
 * New Product: Pillow Shams
