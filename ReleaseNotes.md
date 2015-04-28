@@ -19,14 +19,8 @@ iOS Release Notes
 * New Product: Tabletop Canvases
 * New Product: Puzzles
 * Wall Calendars and Ottomans - Auto Populate
-* Fill in images based on size to layer size - so they auto try to match better than just in random order
-* Center Double tap photo to edit in middle of screen
+* Fill in images based on size
 * Text feature - text below overlay image
-* SDK Update: Hide this feature and turn it off by default: Should a passed photo be used as the thumbnail for the single photo template?
-* Permanently hide the + sign next to the Add More Products button in the shopping cart?
-* SDK Update: About and How it Works text make hidden by default
-* SDK Update: Make the logo hidden by default -> make it optional to add the logo
-* SDK Update: share and rate app (optional)
 
 ####
 
