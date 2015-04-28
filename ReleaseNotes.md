@@ -31,6 +31,67 @@ iOS Release Notes
 ####
 
 **Bug fixes:** 
+* github issues fixes: 
+[#228](https://github.com/printdotio/printio-ios-sdk/issues/228),
+[#309](https://github.com/printdotio/printio-ios-sdk/issues/309),
+[#380](https://github.com/printdotio/printio-ios-sdk/issues/380),
+[#392](https://github.com/printdotio/printio-ios-sdk/issues/392),
+[#416](https://github.com/printdotio/printio-ios-sdk/issues/416),
+[#420](https://github.com/printdotio/printio-ios-sdk/issues/420),
+[#422](https://github.com/printdotio/printio-ios-sdk/issues/422),
+[#423](https://github.com/printdotio/printio-ios-sdk/issues/423),
+[#426](https://github.com/printdotio/printio-ios-sdk/issues/426),
+[#429](https://github.com/printdotio/printio-ios-sdk/issues/429)
+* Customization screen - Save (to cart) button is not active until "double tap photo to edit" popup disappear
+* Art Posters: Step 1 - should say "Choose Size"
+* Art Posters: Remove prices from Step 1
+* HelloPics: Side Menu - Add "Order Status" button on the bottom
+* Everything Bags: Customization screen - Images are not visible on Layout
+* Flickr - Add pagination: load only 499 images in folder
+* Checkout: Choose from Contacts - allow user to add Zip Code bigger than 5 digits
+* Ottoman - Don't allow user to Save (to cart) before customize all sides
+* Wall Calendars & Photobooks- should return back on not completed page when try to save (to cart) not finished customization
+* Auto Populate: in cart list shows thumbnail of January 2015 page
+* Auto Populate: during progress dialog shows/disappears "double tap photo to edit" popup
+* Wall Calendars - app is crashing
+* Shower Curtains - Incorrect total cost
+* Photobooks: Rotate loading dialog to landscape mode after Add More Photos
+* Ottomans: Step 1 - should say "Choose Size"
+* Fix bottom of toolbar in iphone 6+
+* Canvas Wraps - BackgroundImageUrl is silver for black/white wraps
+* Professional Prints - On Admin Panel shows only one image
+* "Pull to refresh" text should be centered on iPhone 6 and 6 plus
+* Shower Curtains - Changing background color doesn’t work
+* Shower Curtains - Missing image preview for sizes
+* Fix toolbar in Image Editor for iPhone 6/6+
+* Tabletop Canvases - wrong final coordinate on admin panel for 5x7 inch size
+* iPhone 6 - Products screen: On some products preview images are cutted
+* Fix toolbar items on 6/6+ Customization screen
+* Throw Pillows: Customization screen - "Next" button is cutted on the right side on iPhone 6/6+
+* Canvas Posters and Art Posters - On Step 1 selectors stay visible when goes back
+* Choose Options screen - Missing Units (inch and cm) on some products
+* Pillow Shams - text "Step 2" is replaced
+* Pillow Shams - On Select Images screen, image counter shows zero (0/0)
+* Wall Calendars - Missing overlays after open calendars from Shopping cart
+* Pillow Shams - Text Object stay visible on all next new items
+* Throw Pillows - app is crashing
+* Remove gifs from photo source bug
+* Tabletop Canvases - Error on Admin Panel
+* Stone Coasters - 4 Different Coasters doesn't have overlays
+* Choose Options screen - Prices are shown on all Steps on some products
+* Check size warnings not appearing on customization screen.
+* Tote Bags - Corrupted build infos
+* Placemats - corrupted build info for 11x17 inch size
+* Acrylic Prints - app has crashed
+* Select Address screen - App is crashing when have contact with not valid Country
+* Photobooks - edit image not saved
+* Wall Calendar - Shows wrong preview image on Step 1
+* Video files are visible in phone source
+* Preselected images not loading on product customize screen
+* Photobooks - app is crashing
+* Products screen - Blue Selector not fit on item in list view on iPhone 6 plus 
+* Flat Card - doesn't work
+* Wall Calendars/Ottomans: Auto Populate - Always use one same image to finish customization
 
 ####
 
@@ -45,7 +106,6 @@ iOS Release Notes
 ####
 
 **Bug fixes:** 
-
 * github issues fixes: [#414](https://github.com/printdotio/printio-ios-sdk/issues/414)
 * Products screen - in list view images are cutted
 * Wall Calendars - "Double tap photo to edit" overlapping month picker
@@ -154,10 +214,3 @@ iOS Release Notes
 * Order Completed screen - Coupon savings: is not same like on Payment screen
 
 ####
-
-
-
-
-
-
-
