@@ -1,6 +1,38 @@
 iOS Release Notes
 ==================================
 
+**1.2.0 (19)**
+---
+**Features:**
+* New Product: Art Poster
+* New Product: Stone Coaster
+* New Product: Pillow Shams
+* New Product: Beach Towel
+* New Product: Glass Cutting Board
+* New Product: Cloth Napkins
+* New Product: Placemats
+* New Product: Hand Towels
+* New Product: Framed Canvases
+* New Product: Acrylic Prints
+* New Product: Ottomans
+* New Product: Tabletop Canvases
+* New Product: Puzzles
+* Wall Calendars and Ottomans - Auto Populate
+* Fill in images based on size to layer size - so they auto try to match better than just in random order
+* Center Double tap photo to edit in middle of screen
+* Text feature - text below overlay image
+* SDK Update: Hide this feature and turn it off by default: Should a passed photo be used as the thumbnail for the single photo template?
+* Permanently hide the + sign next to the Add More Products button in the shopping cart?
+* SDK Update: About and How it Works text make hidden by default
+* SDK Update: Make the logo hidden by default -> make it optional to add the logo
+* SDK Update: share and rate app (optional)
+
+####
+
+**Bug fixes:** 
+
+####
+
 **1.1.16 (18)**
 ---
 **Features:**
