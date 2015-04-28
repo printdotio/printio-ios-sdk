@@ -88,7 +88,6 @@ Developer SDK Customization Reference
       - [*-disablePhotoSourcesWhenImagesArePassedIn*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablephotosourceswhenimagesarepassedin)
       - [*-enablePhotoSourcesInCustomizeProduct*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--enablephotosourcesincustomizeproduct)
       - [*-setPassedImageFirstInPhotoSources*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpassedimagefirstinphotosources)
-      - [*-setPassedImageAsThumbForOnePhotoTemplate*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpassedimageasthumbforonephototemplate)
       - [*-setPreselectPassedImages:shouldPreselectPassedImages*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpreselectpassedimagesshouldpreselectpassedimages)
       - [*-hideIconForUploadInstructions*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideiconforuploadinstructions)
       - [*-setInstagramClientID:redirectUrl*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setinstagramclientidredirecturl)
@@ -1567,20 +1566,6 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 **Sample code:**
 ```Objective-C
 [printIO setPassedImageFirstInPhotoSources:YES];
-//... other customization
-[printIO open];
-```
-######- setPassedImageAsThumbForOnePhotoTemplate
-```Objective-C
-/**
- Set passed in image as thumbnail for templates with one photo.
- Right now, only supports Canvas Wraps and Framed Prints
- */
-- (void)setPassedImageAsThumbForOnePhotoTemplate:(BOOL)set;
-```
-**Sample code:**
-```Objective-C
-[printIO setPassedImageAsThumbForOnePhotoTemplate:YES];
 //... other customization
 [printIO open];
 ```
