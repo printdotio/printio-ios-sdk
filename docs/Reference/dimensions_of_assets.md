@@ -115,6 +115,13 @@ Available Photo sources
 
 ---
 
+### Icon for Back button
+
+- Icon size 79 x 44 pixels, 72 pixels/inch
+ 
+
+---
+
 ### Icons for Autto/Random Arrange and Manual Drag & Drop buttons on Customization screen.
 
 - btn_arrange.png - 230x230px
