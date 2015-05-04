@@ -76,6 +76,7 @@ Developer SDK Customization Reference
       - [*-setFeaturedProductsBackgroundImage*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsbackgroundimage)
       - [*-setFeaturedProductsDefaultView*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsdefaultview)
       - [*-setAvailableProducts*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailableproducts)
+      - [*-disableAnimationInProductsList*]
    - [**Screen 'Product Details'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-product-details)
       - [*-productDetailsShowTitleBelowNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
       - [*-productDetailsShowMenuBtnInNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
@@ -1359,6 +1360,22 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```Objective-C
 NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NSNumber numberWithInt:PRODUCT_PHONE_CASES()]];
 [printIO setAvailableProducts:availableProducts];
+//... other customization
+[printIO open];
+```
+######- disableAnimationInProductsList
+```Objective-C
+/**
+ Disable animation in product's list.
+ Available from SDK version 1.2.2
+ 
+ @param set Default value is NO
+ */
+- (void)disableAnimationInProductsList:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
+[printIO disableAnimationInProductsList:YES];
 //... other customization
 [printIO open];
 ```
