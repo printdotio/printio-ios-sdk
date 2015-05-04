@@ -76,7 +76,7 @@ Developer SDK Customization Reference
       - [*-setFeaturedProductsBackgroundImage*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsbackgroundimage)
       - [*-setFeaturedProductsDefaultView*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsdefaultview)
       - [*-setAvailableProducts*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailableproducts)
-      - [*-disableAnimationInProductsList*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disableanimationinproductslist)
+      - [*-enableAnimationInProductsList*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--enableanimationinproductslist)
    - [**Screen 'Product Details'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-product-details)
       - [*-productDetailsShowTitleBelowNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
       - [*-productDetailsShowMenuBtnInNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
@@ -1363,19 +1363,19 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 //... other customization
 [printIO open];
 ```
-######- disableAnimationInProductsList
+######- enableAnimationInProductsList
 ```Objective-C
 /**
- Disable animation in product's list.
+ Enable animation in product's list.
  Available from SDK version 1.2.2
  
  @param set Default value is NO
  */
-- (void)disableAnimationInProductsList:(BOOL)set;
+- (void)enableAnimationInProductsList:(BOOL)set;
 ```
 **Sample code:**
 ```Objective-C
-[printIO disableAnimationInProductsList:YES];
+[printIO enableAnimationInProductsList:YES];
 //... other customization
 [printIO open];
 ```
