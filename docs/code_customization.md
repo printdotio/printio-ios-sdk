@@ -69,7 +69,7 @@ Developer SDK Customization Reference
    - [**Screen 'Products'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-products)
       - [*-hideCategoriesInFeaturedProducts*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecategoriesinfeaturedproducts)
       - [*-hideComingSoonProducts*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecomingsoonproducts)
-      - [*-hideMuchMoreToCome*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidemuchmoretocome)
+      - [*-showMuchMoreToCome*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showmuchmoretocome)
       - [*-showCountrySelectionOnScreen:backgroundColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showcountryselectiononscreenbackgroundcolor)
       - [*-setTitleForFeaturedProductsScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforfeaturedproductsscreen)
       - [*-setFeaturedProductsLeftLabelTextColor:rightLabelTextColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsleftlabeltextcolorrightlabeltextcolor)
@@ -1240,18 +1240,18 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 //... other customization
 [printIO open];
 ```
-######- hideMuchMoreToCome
+######- showMuchMoreToCome
 ```Objective-C
 /**
- Hide 'Much More To Come' footer in product's list
+ Show 'Much More To Come' label in products list
  
- @param hide Default value is NO
+ @param show Default value is NO
  */
-- (void)hideMuchMoreToCome:(BOOL)hide;
+- (void)showMuchMoreToCome:(BOOL)show;
 ```
 **Sample code:**
 ```Objective-C
-[printIO hideMuchMoreToCome:YES];
+[printIO showMuchMoreToCome:YES];
 //... other customization
 [printIO open];
 ```
