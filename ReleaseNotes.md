@@ -1,55 +1,6 @@
 iOS Release Notes
 ==================================
 
-**1.2.11 (19)**
----
-**Features:**
-* New Product: Mugs
-* New Product: Wall Clings
-* Disable image rotation animation when scrolling through products [#433](https://github.com/printdotio/printio-ios-sdk/issues/433)
-* Much more to come method turned off by default
-* Photobooks v2 - added resolution warnings
-
-####
-
-**Bug fixes:** 
-* github issues fixes: 
-[#228](https://github.com/printdotio/printio-ios-sdk/issues/228),
-* Canvas Wraps - Image Wrap doesn't have background color on Customization screen
-* On staging - test new phone cases -> ask Vendor team when they are uploaded
-Add Max 252 Photos - app has crashed
-Default Photo Source not auto opening #431
-Product Details screen: Art Posters - "Paper" text is duplicated
-Picasa - when try to login, app has crashed
-Low: iPhone 6/6+ not pre-selected when choosing phone case
-Checkout screen - small UI changes
-Pillow Shams - "Luxe" material have the same price for different sizes
-SDK Update: remove specific text from SDK
-Picasa - remove video and gif files
-Product Details screen - not changing "Starting At" price after change currency
-Photobooks - Layout overlapping Save (to cart) button and it's cutted on the bottom side
-ONly on staging -> test new layflat Photobooks sizes are there and working well
-Art Posters - Change "Step 2" text
-"Step 1" should have same UI as Prints/Pro Prints
-Canvas Posters - Should center Preview Images on Choose Options screen
-Facebook - not working
-Wall Calendars - corrupted build info
-on hellopics on staging test new calendar design
-New Product: Duvet Covers - Missing prices for different sizes
-Photobooks - "Fun 4 All" template have only Black Spine
-Phone Case: Nexus 5 - Bad build info
-Customization screen - Loading dialog never disappear after "Add More Photos"
-Mugs: Choose Options screen - Missing price for sizes
-New Product: Wall Clings - Change text to say "Step 1: Choose Size"
-New Product: Wall Clings - App is crashing
-Low Priority: Remove double text "Size" from same screen
-Low Priority: Product Details screen - Side Menu is enabled when open Image Preview screen
-Metal prints - Corrupted build info
-Phone Case: Nexus 5 - Duplicated templates
-Photobooks - "Picture in Picture" template bug (image disappearing)
-
-####
-
 **1.2.0 (19)**
 ---
 **Features:**
