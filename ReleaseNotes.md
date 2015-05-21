@@ -7,7 +7,7 @@ iOS Release Notes
 * New Product: Mugs
 * New Product: Wall Clings
 * New Product: Duvet Covers
-* Disable image rotation animation when scrolling through products [#433](https://github.com/printdotio/printio-ios-sdk/issues/433)
+* Disable image rotation animation when scrolling through products [#433](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--enableanimationinproductslist)
 * Much more to come method turned off by default
 * Photobooks v2 - added resolution warnings
 * Prevent crashs when missing server side data
