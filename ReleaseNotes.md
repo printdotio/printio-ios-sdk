@@ -1,6 +1,50 @@
 iOS Release Notes
 ==================================
 
+**1.2.11 (19)**
+---
+**Features:**
+* New Product: Mugs
+* New Product: Wall Clings
+* New Product: Duvet Covers
+* Disable image rotation animation when scrolling through products [#433](https://github.com/printdotio/printio-ios-sdk/issues/433)
+* Much more to come method turned off by default
+* Photobooks v2 - added resolution warnings
+* Prevent crashs when missing server side data
+
+####
+
+**Bug fixes:** 
+* github issues fixes: 
+[#431](https://github.com/printdotio/printio-ios-sdk/issues/431),
+[#435](https://github.com/printdotio/printio-ios-sdk/issues/435)
+* Canvas Wraps - Image Wrap doesn't have background color on Customization screen
+* Add Max 252 Photos - app has crashed
+* Product Details screen: Art Posters - "Paper" text is duplicated
+* Picasa - when try to login, app has crashed
+* Checkout screen - small UI changes
+* Pillow Shams - "Luxe" material have the same price for different sizes
+* SDK Update: remove specific text from SDK
+* Picasa - remove video and gif files
+* Product Details screen - not changing "Starting At" price after change currency
+* Photobooks - Layout overlapping Save (to cart) button and it's cutted on the bottom side
+* Canvas Posters - Should center Preview Images on Choose Options screen
+* Facebook - not working
+* New Product: Duvet Covers - Missing prices for different sizes
+* Photobooks - "Fun 4 All" template have only Black Spine
+* Customization screen - Loading dialog never disappear after "Add More Photos"
+* Mugs: Choose Options screen - Missing price for sizes
+* Remove double text "Size" from same screen
+* Product Details screen - Side Menu is enabled when open Image Preview screen
+* Phone Case: Nexus 5 - Duplicated templates
+* Photobooks - "Picture in Picture" template bug (image disappearing)
+* Phone Case - Missing Glossy templates on Customization screen
+* Shopping cart screen - Tinybooks have bad thumbnail
+* Throw Pillows - Auto Arrange doesn't work on Back Side of pillow
+* Flickr - missing placeholder on folders
+
+####
+
 **1.2.0 (19)**
 ---
 **Features:**
