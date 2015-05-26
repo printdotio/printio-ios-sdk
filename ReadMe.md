@@ -27,3 +27,6 @@ Our SDK allows you to select which features and functionality you need as well a
 ### Optional Services: Reference Docs
 - [Push Notifications](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/Reference/PUSH_NOTIFICATIONS.md) the PrintIO SDK also offers the ability to send push notifications from your app.
 - [Social Media Account Setup] (https://github.com/printdotio/printio-ios-sdk/blob/master/docs/Reference/SocialMediaAccountSetup.md) the PrintIO SDK allows you to change to your social media accounts. Use this guide if you have questions regarding what information and settings are needed.
+
+
+*supports only iPhone app configuration
