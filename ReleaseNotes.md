@@ -1,6 +1,63 @@
 iOS Release Notes
 ==================================
 
+**1.2.18 (19)**
+---
+**Features:**
+* Metal Prints - Added new options: "Backing" and "Surface"
+* Photobooks add text support
+* Photobooks - show text layers from build info
+* Address Form screen - Added auto complete for non US countries
+* Handled better SDK when Internet connection is bad/poor
+* Photobooks Update v2: Added ability to add text anywhere on the book page vs. editing text areas that come from server
+
+####
+
+**Bug fixes:** 
+* github issues fixes: 
+[#437](https://github.com/printdotio/printio-ios-sdk/issues/437)
+* Phone Cases: Missing Names for phone templates when Country is not US
+* Metal Prints - Sizes are duplicated
+* Photobooks: Remove Transparency from "Replace Photo" screen
+* Flat Cards - Prices are missing
+* Flat Cards - Text Objects are doubling when changing layout
+* Changed text in dialog when missing some data from the server
+* Customization screen - Disable functionality in background when Layout screen is visible
+* Flat Cards - Keypad overlapping Text Objects
+* Flat Cards - Items in Step 2 and 3 are not centered
+* Separator shoud be removed from Options screen
+* Resolution warning dialog - Add padding between buttons
+* Photobooks Customization screen - Cancel button doesn't work correcly
+* Photobooks - Text is not saved on thumbnail from Cover Page
+* Photobooks - copy/paste functionality for text is not in landscape mode
+* Photobooks - Buttons are active in background when text object is opened
+* Photobooks - After reopen text object user can not edit it until click on the text
+* Completed screen: Removed scroll on order number
+* Photobooks - "Buttons line" stay visible when remove keypad from the screen
+* Photobooks - Changing fonts not working properly on second page (Title, Date, Description page)
+* Photobooks - Keypad is not on full screen on lower version of iOS then 8.3
+* Photobooks - Missing thumbnail  when Cancel "Progress images" dialog
+* Added Pading on "Deselect all" button
+* Select Address screen - Shows copy of Billing Address from Payment screen as new address item
+* Phone Case - Customization screen: Changing background color shows line on the right side of the Layout
+* Order Completed screen - Center text "Thank you for your purchase!"
+* Address Form screen - "Address suggestion" dialog should be closed when user selects "next" button
+* Photovbooks: Front Cover - Line crosses outside Layout
+* Photobooks - Fixed missing layout after app update
+* Phone Case - Shipping Options are wrong for some models
+* Photobucket source - Token disappear and not logged out 
+* Flat Cards - disable image editor screen when text objects is active
+* Photobooks - App is crashing on swipe between pages
+* Photobooks - Swipe between pages is slower
+* Tinybooks - Overlay is cut off
+* Customization screen - Placeholder on images are zoomed
+* Order Completed screen: missing symbol ":" on text
+* Shipment review screen - Text in buttons for Shipment methods should be centred
+* Side Menu - Search list is cutted
+* Phone&Tablet Cases - Preview Images for layouts are too big
+
+####
+
 **1.2.11 (19)**
 ---
 **Features:**
