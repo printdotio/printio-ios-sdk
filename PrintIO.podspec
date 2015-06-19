@@ -21,7 +21,6 @@ Pod::Spec.new do |s|
     'PrintIO.framework/Versions/A/Headers/PIOSideMenuButton.h',
     'PrintIO.framework/Versions/A/Headers/PIOVariantOption.h',
     'PrintIO.framework/Versions/A/Headers/ProductIds.h',
-
     'PrintIO.framework/Versions/A/Headers/PIODefaultPhotoSource.h',
     'PrintIO.framework/Versions/A/Headers/PIODefaultPhotoSourceItem.h',
     'PrintIO.framework/Versions/A/Headers/PIOPhotoSource.h',
