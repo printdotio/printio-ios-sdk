@@ -146,5 +146,5 @@ _imageDownloader = [PIOPhotoSourceItemImageDownloader imageDownloaderWithBlock:^
 
 ## Example
 
-Check out the [photo source example](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/Picasa.h), as well the [album item](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/picasa_album_item.h) and the [photo item](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/picasa_photo_item.h) examples.
+Check out the [photo source example](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/Photo-Sources/Picasa.h), as well the [album item](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/Photo-Sources/picasa_album_item.h) and the [photo item](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/Photo-Sources/picasa_photo_item.h) examples.
 
