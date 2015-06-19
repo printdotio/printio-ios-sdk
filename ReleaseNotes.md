@@ -9,7 +9,7 @@ iOS Release Notes
 * Photobooks - show text layers from build info
 * Address Form screen - Added auto complete for non US countries
 * Handled better SDK when Internet connection is bad/poor
-* Photobooks Update v2: Added ability to add text anywhere on the book page vs. editing text areas that come from server
+* Photobooks Update: Added ability to add text anywhere on the book page vs. editing text areas that come from server
 
 ####
 
@@ -42,7 +42,7 @@ iOS Release Notes
 * Phone Case - Customization screen: Changing background color shows line on the right side of the Layout
 * Order Completed screen - Center text "Thank you for your purchase!"
 * Address Form screen - "Address suggestion" dialog should be closed when user selects "next" button
-* Photovbooks: Front Cover - Line crosses outside Layout
+* Photobooks: Front Cover - Line crosses outside Layout
 * Photobooks - Fixed missing layout after app update
 * Phone Case - Shipping Options are wrong for some models
 * Photobucket source - Token disappear and not logged out 
@@ -54,7 +54,6 @@ iOS Release Notes
 * Order Completed screen: missing symbol ":" on text
 * Shipment review screen - Text in buttons for Shipment methods should be centred
 * Side Menu - Search list is cutted
-* Phone&Tablet Cases - Preview Images for layouts are too big
 
 ####
 
