@@ -8,7 +8,7 @@ iOS Release Notes
 ####
 
 **Bug fixes:** 
-* Change and hide AWS Security Keys
+* Changed and hidden AWS Security Keys
 * Payment screen - Incorrect total cost when add shipping coupon and change shipping method
 * Customization screen is broken after try to edit text object
 * Shopping Cart screen: Tinybooks - Thumbnail image have line on the right side
