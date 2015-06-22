@@ -1,13 +1,13 @@
 
 Pod::Spec.new do |s|
     s.name             = "PrintIO"
-    s.version          = "1.2.21"
+    s.version          = "1.2.22"
 
     s.summary          = "SDK that enables the printing of any photo, from any source, onto any product!"
     s.homepage         = "http://www.print.io"
     s.license          = { :type => 'Commercial', :file => 'LICENSE.md' }
     s.author           = { "PrintIO" => "boro@print.io" }
-    s.source           = { :git => "https://github.com/printdotio/printio-ios-sdk.git", :branch => "master", :tag => '1.2.21' }
+    s.source           = { :git => "https://github.com/printdotio/printio-ios-sdk.git", :branch => "master", :tag => '1.2.22' }
     s.social_media_url = "https://twitter.com/printdotio"
     s.platform     = :ios, '7.1'
     s.requires_arc = true
@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
     'PrintIO.framework/Versions/A/Headers/PIOPhotoSource.h',
     'PrintIO.framework/Versions/A/Headers/PIOPhotoSourceItem.h',
     'PrintIO.framework/Versions/A/Headers/PIOSessionManager.h',
+    'PrintIO.framework/Versions/A/Headers/PIOPhotoSourceError.h',
     'PrintIO.framework/Versions/A/Headers/PIOPhotoSourceItemImageDownloader.h'
 
     sc.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/**"',
