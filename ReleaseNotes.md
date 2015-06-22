@@ -1,6 +1,24 @@
 iOS Release Notes
 ==================================
 
+**1.2.22 (19)**
+---
+**Features:**
+
+####
+
+**Bug fixes:** 
+* Change and hide AWS Security Keys
+* Payment screen - Incorrect total cost when add shipping coupon and change shipping method
+* Customization screen is broken after try to edit text object
+* Shopping Cart screen: Tinybooks - Thumbnail image have line on the right side
+* Photobooks - Color picker stay frozen on Customization screen
+* Photobooks - Keypad is rotating in portrait mode
+* Photobooks - After reopen text object user can not edit it until click on the text
+* Phone Case - Shipping Options are wrong for some models
+
+####
+
 **1.2.18 (19)**
 ---
 **Features:**
