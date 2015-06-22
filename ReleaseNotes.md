@@ -4,6 +4,7 @@ iOS Release Notes
 **1.2.22 (19)**
 ---
 **Features:**
+* /
 
 ####
 
