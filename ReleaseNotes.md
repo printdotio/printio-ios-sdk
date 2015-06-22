@@ -1,7 +1,7 @@
 iOS Release Notes
 ==================================
 
-**1.2.22 (19)**
+**1.2.22 (19) CRUCIAL UPDATE**
 ---
 **Features:**
 * /
@@ -9,7 +9,7 @@ iOS Release Notes
 ####
 
 **Bug fixes:** 
-* Changed and hidden AWS Security Keys
+* Image Upload and order fixed **CRUCIAL UPDATE**
 * Payment screen - Incorrect total cost when add shipping coupon and change shipping method
 * Customization screen is broken after try to edit text object
 * Shopping Cart screen: Tinybooks - Thumbnail image have line on the right side
