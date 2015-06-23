@@ -84,7 +84,7 @@ Developer SDK Customization Reference
       - [*-setPriceTitleHidden*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpricetitlehidden)
    - [**Photo sources**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#photo-sources)
       - [*-setAvailablePhotoSources*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources)
-      - [*-setCustomPhotoSources*]()
+      - [*-setCustomPhotoSources*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcustomphotosources)
       - [*-setDefaultPhotoSource:albumId*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdefaultphotosourcealbumid)
       - [*-setImages*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setimages)
       - [*-disablePhotoSourcesWhenImagesArePassedIn*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablephotosourceswhenimagesarepassedin)
