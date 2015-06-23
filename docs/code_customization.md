@@ -84,6 +84,7 @@ Developer SDK Customization Reference
       - [*-setPriceTitleHidden*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpricetitlehidden)
    - [**Photo sources**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#photo-sources)
       - [*-setAvailablePhotoSources*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources)
+      - [*-setCustomPhotoSources*]()
       - [*-setDefaultPhotoSource:albumId*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdefaultphotosourcealbumid)
       - [*-setImages*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setimages)
       - [*-disablePhotoSourcesWhenImagesArePassedIn*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablephotosourceswhenimagesarepassedin)
@@ -1428,7 +1429,6 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 ######- setPriceTitleHidden
 ```Objective-C
 /**
-/**
  Set 'Starting at' and 'Retail price' titles hidden
  
  @param set Default value is NO
@@ -1480,6 +1480,22 @@ btnSFacebook.textColor = [UIColor blackColor];
 btnSFacebook.useBoldFonts = YES;
     
 [printIO setAvailablePhotoSources:[NSArray arrayWithObjects:btnSPhone, btnSInstagram, btnSFacebook, nil]];
+//... other customization
+[printIO open];
+```
+######- setCustomPhotoSources
+```Objective-C
+/**
+ Set custom photo sources
+ 
+ @param customPhotoSources Array of id<PhotoSource> objects 
+ */
+- (void)setCustomPhotoSources:(NSArray*)customPhotoSources;
+```
+**Sample code:**
+```Objective-C
+MyCustomPhotoSource* photoSource = [[MyCustomPhotoSource alloc] init];
+[printIO setCustomPhotoSources:@[photoSource]];
 //... other customization
 [printIO open];
 ```
