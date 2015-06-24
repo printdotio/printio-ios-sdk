@@ -1,6 +1,21 @@
 iOS Release Notes
 ==================================
 
+**1.2.24 (19)**
+---
+**Features:**
+* Flat Cards - Remove the "?" mark permanently and then the preview can be larger on the screen
+
+####
+
+**Bug fixes:** 
+* Phone case - Changing to Glossy doesn't work correctly
+* Photobooks - app is crashing with images from Dropbox source
+* Photobooks - "Page Picker" disappear in navigation bar after add text object
+* Shopping cart screen - "Coupon savings" box are moving around screen
+
+####
+
 **1.2.22 (19) CRUCIAL UPDATE**
 ---
 **Features:**
