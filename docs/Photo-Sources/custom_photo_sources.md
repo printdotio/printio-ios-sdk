@@ -18,7 +18,7 @@ When selecting images, you have an option to include up to six photo sources fro
 - Dropbox
 - Preselected 
 
-Since version x.y you have an ability to add your own custom photo source api to the list.
+Since version 1.1 you have an ability to add your own custom photo source api to the list.
 
 ## Default implementation
 
