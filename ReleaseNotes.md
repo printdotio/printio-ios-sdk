@@ -6,9 +6,10 @@ iOS Release Notes
 **Features:**
 * New Product: Giclee Prints
 * Photobooks - Allow user to save customization and cart for later usage
-* Photobook - Change to a different template style (make sure preview images are large so user can see what they are)
+* Photobook - Change to a different template style 
 * Photobooks - turn off permanently status bar on Customization screen
 * Added meta info when posting orders
+* New public method added (replace default text on templates): https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdefaulttemplatetexts
 
 ####
 
