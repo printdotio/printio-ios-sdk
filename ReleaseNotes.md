@@ -1,6 +1,29 @@
 iOS Release Notes
 ==================================
 
+**1.2.28 (19)**
+---
+**Features:**
+* New Product: Giclee Prints
+* Photobooks - Allow user to save customization and cart for later usage
+* Photobook - Change to a different template style (make sure preview images are large so user can see what they are)
+* Photobooks - turn off permanently status bar on Customization screen
+* Added meta info when posting orders
+
+####
+
+**Bug fixes:** 
+* Customization screen is broken after try to edit text object
+* Shipment Review screen - added dialog for keeping or upgrading shipping method
+* Order Completed screen - "Overall" is showing amount in US dollars even if currency is not dollar
+* Navigation bar - Back button from another screen is active when side menu is opened
+* Payment screen - Uploading images to server stop when phone goes to sleep
+* UI chnages - Added Custom Fonts on some fields
+* Payment screen - Placing Order stop when phone goes to sleep
+
+
+####
+
 **1.2.24 (19)**
 ---
 **Features:**
