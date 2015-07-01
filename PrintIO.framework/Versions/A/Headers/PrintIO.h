@@ -717,21 +717,21 @@ rightButtonBackgroundColor:(UIColor *)rColor
  @param timeInSeconds Time in seconds. Set -1 if ballon should be visible all the time.
  Default time is 2 seconds.
  */
-- (void)setDoubleTapBalloonVisibilityTime:(int)timeInSeconds;
+-(void)setDoubleTapBalloonVisibilityTime:(int)timeInSeconds;
 
 /**
  Show custom dialog for helping user how to edit a photo
 
  @param Path to image.
  */
-- (void)showHelpDialogWithImage:(NSString *)imagePath;
+-(void)showHelpDialogWithImage:(NSString *)imagePath;
 
 /**
  Disable Preview screen for product
  
  @param set Default value is NO
  */
-- (void)disablePreviewScreen:(BOOL)set DEPRECATED_ATTRIBUTE;
+-(void)disablePreviewScreen:(BOOL)set DEPRECATED_ATTRIBUTE;
 
 /**
  Set same photo on front and back side of product.
@@ -739,7 +739,14 @@ rightButtonBackgroundColor:(UIColor *)rColor
  
  @param productId Product id
  */
-- (void)setSamePhotoOnFrontAndBackSideOfProduct:(NSInteger)productId;
+-(void)setSamePhotoOnFrontAndBackSideOfProduct:(NSInteger)productId;
+
+/**
+ Replace default template text
+ 
+ @param texts Array of text strings
+ */
+-(void)setDefaultTemplateTexts:(NSArray *)texts;
 
 #pragma mark - Image Editor
 

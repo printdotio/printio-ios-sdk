@@ -10,8 +10,6 @@
 
 @interface ProductIds : NSObject
 
-extern BOOL PIO_isProductIdAvailable(int productId);
-
 extern int PRODUCT_ACRYLIC_BLOCKS();
 extern int PRODUCT_ACRYLIC_PRINTS();
 extern int PRODUCT_ACRYLIC_TRAYS();
@@ -42,7 +40,7 @@ extern int PRODUCT_FRAMED_CANVAS();
 extern int PRODUCT_FRAMED_PRINTS();
 extern int PRODUCT_FRAMED_PRINTS_STEP_3_4();
 extern int PRODUCT_GAMING_SKINS();
-extern int PRODUCT_GICLE_ART_PRINTS();
+extern int PRODUCT_GICLEE_ART_PRINTS();
 extern int PRODUCT_GLASS_CUTTING_BOARDS();
 extern int PRODUCT_GLASS_ORNAMENTS();
 extern int PRODUCT_HAND_TOWELS();
