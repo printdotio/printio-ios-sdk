@@ -120,6 +120,7 @@ Developer SDK Customization Reference
       - [*-setSamePhotoOnFrontAndBackSideOfProduct*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setsamephotoonfrontandbacksideofproduct)
       - [*-setCustomizationHelpText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcustomizationhelptext)
       - [*-setDefaultTemplateTexts*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdefaulttemplatetexts)
+      - [*-showOnlyOnePhotoTemplates*]()
    - [**Screen 'Image Editor'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-image-editor)
       - [*-imageEditorShowButtons*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--imageeditorshowbuttons)
       - [*-hideWatchVideoButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidewatchvideobutton)
@@ -2037,6 +2038,21 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 **Sample code:**
 ```Objective-C
 [printIO setDefaultTemplateTexts:@[@"Sample text 1", @"Sample text 2"];
+//... other customization
+[printIO open];
+```
+######- showOnlyOnePhotoTemplates
+```Objective-C
+/**
+ Filter templates to show only one photo template
+ 
+ @param set Dafault value is NO
+ */
+-(void)showOnlyOnePhotoTemplates:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
+[printIO showOnlyOnePhotoTemplates:YES];
 //... other customization
 [printIO open];
 ```
