@@ -120,7 +120,7 @@ Developer SDK Customization Reference
       - [*-setSamePhotoOnFrontAndBackSideOfProduct*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setsamephotoonfrontandbacksideofproduct)
       - [*-setCustomizationHelpText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcustomizationhelptext)
       - [*-setDefaultTemplateTexts*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdefaulttemplatetexts)
-      - [*-showOnlyOnePhotoTemplates*]()
+      - [*-showOnlyOnePhotoTemplates*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showonlyonephototemplates)
    - [**Screen 'Image Editor'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-image-editor)
       - [*-imageEditorShowButtons*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--imageeditorshowbuttons)
       - [*-hideWatchVideoButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidewatchvideobutton)
