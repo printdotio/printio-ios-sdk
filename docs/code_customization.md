@@ -2030,6 +2030,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```Objective-C
 /**
  Replace default template text
+ Available from version 1.2.28
  
  @param texts Array of text strings
  */
