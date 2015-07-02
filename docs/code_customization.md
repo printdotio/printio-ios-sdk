@@ -2045,6 +2045,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ```Objective-C
 /**
  Filter templates to show only one photo template
+ Available from version 1.2.30.
  
  @param set Dafault value is NO
  */
