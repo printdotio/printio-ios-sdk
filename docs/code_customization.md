@@ -2029,12 +2029,20 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 ######- setDefaultTemplateTexts
 ```Objective-C
 /**
- Replace default template text
- Available from version 1.2.28
+ Available from sdk version v1.2.31.
  
- @param texts Array of text strings
+ Replace default template text for productIds:
+ 
+ NSArray *photobookText = @[@"First text", @"Second text", @"Third text"];
+ NSArray *flatCardsText = @[@"Flat card first text"];
+ 
+ NSDictionary *textDict = [NSDictionary dictionaryWithObjectsAndKeys:
+                            flatCardsText, @(PRODUCT_FLAT_CARDS()),
+                            photobookText, @(PRODUCT_PHOTO_BOOKS()), nil];
+ 
+ @param texts Array of NSDictionary with text and productId
  */
--(void)setDefaultTemplateTexts:(NSArray *)texts;
+-(void)setDefaultTemplateTexts:(NSDictionary *)textDict;
 ```
 **Sample code:**
 ```Objective-C
