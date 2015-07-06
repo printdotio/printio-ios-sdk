@@ -742,11 +742,18 @@ rightButtonBackgroundColor:(UIColor *)rColor
 -(void)setSamePhotoOnFrontAndBackSideOfProduct:(NSInteger)productId;
 
 /**
- Replace default template text
+ Replace default template text for productIds:
  
- @param texts Array of text strings
+ NSArray *photobookText = @[@"First text", @"Second text", @"Third text"];
+ NSArray *flatCardsText = @[@"Flat card first text"];
+ 
+ NSDictionary *textDict = [NSDictionary dictionaryWithObjectsAndKeys:
+                            flatCardsText, @(PRODUCT_FLAT_CARDS()),
+                            photobookText, @(PRODUCT_PHOTO_BOOKS()), nil];
+ 
+ @param texts Array of NSDictionary with text and productId
  */
--(void)setDefaultTemplateTexts:(NSArray *)texts;
+-(void)setDefaultTemplateTexts:(NSDictionary *)textDict;
 
 /**
  Filter templates to show only one photo template
