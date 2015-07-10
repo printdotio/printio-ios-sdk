@@ -2382,9 +2382,10 @@ int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 /**
  Set PayPal's client ids, for both modes, staging and production. Default values are
  client ids from PrintIO
-
- @param sClientId Client id for staging mode
- @param pClientId Client id for production mode
+ https://developer.paypal.com/developer/applications/create
+ 
+ @param sClientId Client ID for staging mode
+ @param pClientId Client ID for production mode
  */
 - (void)setPayPalStagingClientId:(NSString *)sClientId
               productionClientId:(NSString *)pClientId;
@@ -2399,9 +2400,12 @@ int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 ```Objective-C
 /**
  Set Braintree encryption key for staging and production mode. By default, keys from PrintIO will be used
-
- @param sEncKey Encryption key for staging mode
- @param pEncKey Encryption key for production mode
+ https://www.braintreepayments.com/create-merchant
+ 
+ For encryption key use CSE Key from API keys you get
+ 
+ @param sEncKey Encryption(CSE) key for staging mode
+ @param pEncKey Encryption(CSE) key for production mode
  */
 - (void)setBraintreeStagingEncryptionKey:(NSString *)sEncKey
                  productionEncryptionKey:(NSString *)pEncKey;
