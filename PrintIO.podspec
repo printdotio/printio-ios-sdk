@@ -27,7 +27,9 @@ Pod::Spec.new do |s|
     'PrintIO.framework/Versions/A/Headers/PIOPhotoSourceItem.h',
     'PrintIO.framework/Versions/A/Headers/PIOSessionManager.h',
     'PrintIO.framework/Versions/A/Headers/PIOPhotoSourceError.h',
-    'PrintIO.framework/Versions/A/Headers/PIOPhotoSourceItemImageDownloader.h'
+    'PrintIO.framework/Versions/A/Headers/PIOPhotoSourceItemImageDownloader.h',
+    'PrintIO.framework/Versions/A/Headers/PaymentOptions.h',
+    'PrintIO.framework/Versions/A/Headers/PIOVersion.h'
 
     sc.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/**"',
                         'OTHER_LDFLAGS' => '-framework PrintIO'
