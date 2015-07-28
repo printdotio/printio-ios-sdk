@@ -36,7 +36,7 @@ iOS Release Notes
 * Photobooks - Double text "Pages" on Step 2
 * Photobooks - Disable background when Page Picker is open
 * Products screen - GridView Images are shrunked
-* Extend 'setDefaultTemplateText' to take productId and test it on photobooks
+* Extend 'setDefaultTemplateText' to take productId
 * Corrupted "maxImages" for some products
 * Select Images screen: Everything bags - Image Counter shows incorrect number
 * Photobooks - "buttons line" stay visible on image editor screen
