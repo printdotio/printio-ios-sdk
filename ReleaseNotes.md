@@ -11,18 +11,13 @@ iOS Release Notes
 * New Product: Dopp Kit
 * New Product: Accessories Pouch
 * Prevent empty URLs or ImgManip string
-* Changed "Processing images..." dialog, so user can see what is processing. For Books "Processing 10 of 100 * images...", for photobooks: "Procesing 3 of 12 pages...".
+* Changed "Processing images..." to show current process in numbers of images processed
 * Improved speed of processing
-* Improved "phone source" to take less than 5 seconds to load images
+* Improved accesing "Phone source" to faster load images
 * Photobooks: Added double tap to edit photo on photobook screens
-* Photobooks: Added outline the photo that is selected so the user knows which one they tapped on
+* Photobooks: Added outline the photo that is selected
 * Photobooks: Improved processing images
 * New method - filter templates to have only one photo template, and auto-select it
-* Multi space support for *book products
-* Throw Pillows - New build info format
-* Everything Bags - New build info format
-* Tinybooks and Thick prints - new build info format
-* Tote Bags - New build info format
 
 ####
 
