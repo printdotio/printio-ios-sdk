@@ -1,6 +1,66 @@
 iOS Release Notes
 ==================================
 
+**1.2.38 (20)**
+---
+**Features:**
+* New Product: Adjustable Strap Tote
+* New Product: Posters
+* New Product: Bandanas
+* New Product: Fabric By The Yard
+* New Product: Dopp Kit
+* New Product: Accessories Pouch
+* Prevent empty URLs or ImgManip string
+* Changed "Processing images..." dialog, so user can see what is processing. For Books "Processing 10 of 100 * images...", for photobooks: "Procesing 3 of 12 pages...".
+* Improved speed of processing
+* Improved "phone source" to take less than 5 seconds to load images
+* Photobooks: Added double tap to edit photo on photobook screens
+* Photobooks: Added outline the photo that is selected so the user knows which one they tapped on
+* Photobooks: Improved processing images
+* New method - filter templates to have only one photo template, and auto-select it
+* Multi space support for *book products
+* Throw Pillows - New build info format
+* Everything Bags - New build info format
+* Tinybooks and Thick prints - new build info format
+* Tote Bags - New build info format
+
+####
+
+**Bug fixes:** 
+* Payment screen - Placing Order stop when phone goes to sleep
+* Mugs - Image running out from Layout when opening/closing text object
+* Customization screen - Pop up is missing when you try to save to cart with less images than maximum allows
+* Throw Pillows - App is crashing when edit it
+* Landscape mode is allowed when side menu is disabled
+* Customization screen - "Bag" products: Remove text bellow Layout
+* Promo code doesn't work
+* Photobooks are in Portrait mode when pass photos in SDK
+* Photobooks: Change name of item in book menu to "Change Book Template"
+* Canvas Minis - wrong orientation for 8x10 inch size
+* Photobooks - Doubled templates
+* Photobooks - Double text "Pages" on Step 2
+* Photobooks - Disable background when Page Picker is open
+* Products screen - GridView Images are shrunked
+* Extend 'setDefaultTemplateText' to take productId and test it on photobooks
+* Corrupted "maxImages" for some products
+* Select Images screen: Everything bags - Image Counter shows incorrect number
+* Photobooks - "buttons line" stay visible on image editor screen
+* Products with two sides - Layout menu stays opened when you tap on Next button
+* Thick Prints - Typo mistake
+* Dog Beds - Add text "Type" on Step 1
+* Photobucket login - Missing popup if user add wrong username or pass
+* Photobooks text - Keypad is rotating in portrait mode
+* Products screen - Wrong prices on products when change Shipping country
+* Select Images screen - Photo Sources stay logged on same account
+* Product Details screen - Loading dialog disappear before load all product variants
+* Customization screen - User is able to save product befor complete design
+* Products with two sides - Layout menu stays opened when you tap on Back button
+* Text feature stops working
+* Blocked UI when promo code is applied
+* Payment screen - Missing uploading dialog for social photo sources
+
+####
+
 **1.2.28 (19)**
 ---
 **Features:**
