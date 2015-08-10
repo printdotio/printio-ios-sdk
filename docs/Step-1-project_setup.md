@@ -4,14 +4,14 @@
 
 In order to follow this guide, you must have the following software installed on or downloaded to your system:
 
-- iOS 7.* SDK (or newer)
+- iOS 8.* SDK (or newer)
 - Xcode 6.*
 
 For the latest versions, please visit [Apple's iOS Dev Center](http://developer.apple.com/devcenter/ios/).
 
 You must be using the latest version of Apple's LLVM compiler. You should not have a problem if you're using a fresh install of Xcode 5.x, which uses this compiler by default. However, if you are working on an older project, or have upgraded from an older version of Xcode, make sure you're not using GCC.
 
-The minimum iOS version supported by the SDK is iOS 6.1. The main reasons for this requirement are our use of ARC ([Automatic Reference Counting](http://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html)) and our reliance on a number of Apple frameworks and libraries which require iOS 6.1.
+The minimum iOS version supported by the SDK is iOS 8.0. The main reasons for this requirement are our use of ARC ([Automatic Reference Counting](http://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html)) and our reliance on a number of Apple frameworks and libraries which require iOS 6.1.
 
 
 # Configuration
