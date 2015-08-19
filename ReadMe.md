@@ -33,7 +33,6 @@ To avoid waring "The resource could not be loaded because the App Transport Secu
 ```Objective-C
 <key>NSAppTransportSecurity</key>
 <dict>
-  <!--Include to allow all connections (DANGER)-->
   <key>NSAllowsArbitraryLoads</key>
       <true/>
 </dict>
