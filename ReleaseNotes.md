@@ -7,32 +7,32 @@ iOS Release Notes
 * New Product: Layflat Photobooks
 * New Product: Bandana
 * New Product: Folded Cards
-* Photobooks: Needs instructions on left hand side of photobook cover page that tells the user how book making works
+* Layflat Photobooks: Needs instructions on left hand side of photobook cover page that tells the user how book making works
 * If any default text isn't edited -> alert the user before checkout
-* Photobooks v2: Need new page that allows user to arrange pages on a screen where all pages are zoomed out
-* Photobook Text -> if a page has text -> i would immediately trigger them to edit it - if there is default text on a page -> the first time they land on the page
+* Layflat Photobooks v2: Need new page that allows user to arrange pages on a screen where all pages are zoomed out
+* Layflat Photobook Text -> if a page has text -> i would immediately trigger them to edit it - if there is default text on a page -> the first time they land on the page
 * When you click to edit the text in the photo book it should zoom in on that area and should hide the top bar so there is more room on the screen
 * Mugs - Added new options on Steps 
-* Photobooks - Add cropping and resizing in landscape mode - not just portrait mode
-* Photobooks - Turn off permanently Status bar on Image Editor screen
+* Layflat Photobooks - Add cropping and resizing in landscape mode - not just portrait mode
+* Layflat Photobooks - Turn off permanently Status bar on Image Editor screen
 
 ####
 
 **Bug fixes:** 
-* Photobooks - App is crashing when try to edit it from shopping cart
+* Layflat Photobooks - App is crashing when try to edit it from shopping cart
 * Speed up image processing: start copying images from Select Photos screen
 * Everything bags - change color of background
 * Bandana  - Shape option Square on Step 1 should be preselected
-* Photobooks - Save (to cart) button doesn't work after closing Image Editor screen
-* Photobooks: Page picker shows wrong number of pages
-* Photobooks: Pages are duplicated on Arrange Pages screen
-* Photobook Text - Needs to zoom on selected text when in landscape mode so its clear what the user is editing
+* Layflat Photobooks - Save (to cart) button doesn't work after closing Image Editor screen
+* Layflat Photobooks: Page picker shows wrong number of pages
+* Layflat Photobooks: Pages are duplicated on Arrange Pages screen
+* Layflat Photobook Text - Needs to zoom on selected text when in landscape mode so its clear what the user is editing
 * Removed "Define button" 
-* Photobooks: Instructions on Cover Page are editable
+* Layflat Photobooks: Instructions on Cover Page are editable
 * Customization screen - Layout is reduced after each opening image editor screen
-* Photobooks - Remove Define & Copy buttons 
+* Layflat Photobooks - Remove Define & Copy buttons 
 * Art Posters - Missing "Sizes" on Details screen
-* Photobooks - Text on thumbnail photo is cut off
+* Layflat Photobooks - Text on thumbnail photo is cut off
 * Customization screen - Can't edit text if you tap on "abc" button while images are loading
 * Products with 2 or more pages - Editor screen is opened 2 times
 * Throw Pillows - App is crashing on iPhone 4s
@@ -44,15 +44,15 @@ iOS Release Notes
 * Mugs - Customization screen is broken
 * Customization screen - Add dialog: "Use the same look for back side"
 * Art Posters - missing live product id
-* Photobooks: Iphone 5 - showing strange smaller keyboard when in landscape mode -> doesn't go all the way across the screen
+* Layflat Photobooks: Iphone 5 - showing strange smaller keyboard when in landscape mode -> doesn't go all the way across the screen
 * Remove hardcoded ZIP code from database
 * Select Images screen - Remove limit on photos
-* Photobooks: keyboard can't go to landscape
+* Layflat Photobooks: keyboard can't go to landscape
 * NSAppTransportSecurity iOS 9 is removed
-* Photobooks: Arrange Pages screen - Add small padding on the left side of screen
+* Layflat Photobooks: Arrange Pages screen - Add small padding on the left side of screen
 * Select Images screen - Ability to add more photos than maximum limit
-* Photobooks - Keyboard doesn't fit properly on the screen
-* Photobooks - Changing Book Template missing transparent cover over the image for resolution warnings
+* Layflat Photobooks - Keyboard doesn't fit properly on the screen
+* Layflat Photobooks - Changing Book Template missing transparent cover over the image for resolution warnings
 * Images from phone source have low/bad resolution on Admin Panel
 
 ####
