@@ -7,14 +7,12 @@ iOS Release Notes
 * New Product: Layflat Photobooks
 * New Product: Bandana
 * New Product: Folded Cards
-* Layflat Photobooks: Needs instructions on left hand side of photobook cover page that tells the user how book making works
 * If any default text isn't edited -> alert the user before checkout
-* Layflat Photobooks v2: Need new page that allows user to arrange pages on a screen where all pages are zoomed out
-* Layflat Photobook Text -> if a page has text -> i would immediately trigger them to edit it - if there is default text on a page -> the first time they land on the page
-* When you click to edit the text in the photo book it should zoom in on that area and should hide the top bar so there is more room on the screen
+* Layflat Photobooks: Added new page that allows user to arrange pages on a screen where all pages are zoomed out
+* Layflat Photobooks: if there is default text on a page popup keyboard to edit
 * Mugs - Added new options on Steps 
-* Layflat Photobooks - Add cropping and resizing in landscape mode - not just portrait mode
-* Layflat Photobooks - Turn off permanently Status bar on Image Editor screen
+* Layflat Photobooks - Added cropping and resizing in landscape mode
+* Layflat Photobooks - Turned off Status bar on Image Editor screen
 
 ####
 
@@ -39,16 +37,16 @@ iOS Release Notes
 * App is crashing when add 252 photos
 * iPhone 4s: Photobooks - App is crashing when try to open keypad for text object
 * Posters - Image doesn't fit properly on layout
-* Mugs - fixed gap
+* Mugs - fixed gap on layouts
 * Shipment Review screen - Shipping Method returns to "standard" and price stay bigger when delete item from the list
 * Mugs - Customization screen is broken
 * Customization screen - Add dialog: "Use the same look for back side"
 * Art Posters - missing live product id
 * Layflat Photobooks: Iphone 5 - showing strange smaller keyboard when in landscape mode -> doesn't go all the way across the screen
-* Remove hardcoded ZIP code from database
+* Removed hardcoded ZIP codes from database
 * Select Images screen - Remove limit on photos
 * Layflat Photobooks: keyboard can't go to landscape
-* NSAppTransportSecurity iOS 9 is removed
+* NSAppTransportSecurity for iOS 9 added temporary solution
 * Layflat Photobooks: Arrange Pages screen - Add small padding on the left side of screen
 * Select Images screen - Ability to add more photos than maximum limit
 * Layflat Photobooks - Keyboard doesn't fit properly on the screen
