@@ -4,6 +4,7 @@ iOS Release Notes
 **1.3.7 (21)**
 ---
 **Features:**
+* New Product: Layflat Photobooks
 * New Product: Bandana
 * New Product: Folded Cards
 * Photobooks: Needs instructions on left hand side of photobook cover page that tells the user how book making works
