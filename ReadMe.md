@@ -19,6 +19,7 @@ Our SDK allows you to select which features and functionality you need as well a
 - [API Customization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/adminpanel_customization.md) for store and product specific options that are controlled via the Print.io Admin Panel.
 - [Assets dimensions](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/Reference/dimensions_of_assets.md) list with all assets that can be changed, and required sizes.
 - [Custom photo sources](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/Photo-Sources/custom_photo_sources.md) option to add a custom photo source
+- [Apple Pay](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/apple_pay_integration.md) integration and configuration (supported from PrintIO SDK version 1.4.0).
 - [Release notes](https://github.com/printdotio/printio-ios-sdk/blob/master/ReleaseNotes.md) new features and bug fixes by version
 
 ### Sample App SDK: For Reference
