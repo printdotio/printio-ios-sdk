@@ -32,3 +32,6 @@ In Xcode, enable Apple Pay under Capabilities in your Project Settings.
 
 ![](https://dl.dropboxusercontent.com/u/19321066/printIO/Screen%20Shot%202015-08-26%20at%201.45.09%20PM.png)
 
+Then enable both Apple Pay Merchant IDs.
+
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/Screen%20Shot%202015-08-26%20at%201.46.07%20PM.png)
