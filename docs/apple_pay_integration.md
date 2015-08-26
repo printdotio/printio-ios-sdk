@@ -37,3 +37,17 @@ Then enable both Apple Pay Merchant IDs.
 ![](https://dl.dropboxusercontent.com/u/19321066/printIO/Screen%20Shot%202015-08-26%20at%201.46.07%20PM.png)
 
 It is important that you compile your app with a provisioning profile for the Apple development team with an Apple Pay Merchant ID. 
+
+Configure PrintIO SDK to use Apple Pay
+--------------------------------------
+
+Public method for setting Apple Pay merchant id(s):
+
+```Objective-C
+/**
+ Set ApplePay merchant identifier
+ 
+ @param merchantIdentifier Merchant Identifier
+ */
+-(void)setApplePayMerchantIdentifier:(NSString *)merchantIdentifier;
+```
