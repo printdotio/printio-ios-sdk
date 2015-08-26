@@ -145,7 +145,7 @@ Developer SDK Customization Reference
       - [*-setPaymentOptions*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpaymentoptions)
       - [*-setPayPalStagingClientId:productionClientId*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpaypalstagingclientidproductionclientid)
       - [*-setBraintreeStagingEncryptionKey:productionEncryptionKey*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setbraintreestagingencryptionkeyproductionencryptionkey)
-      - [*-setApplePayMerchantIdentifier*]() available from SDk v1.4.0
+      - [*-setApplePayMerchantIdentifier*]() available from PrintIO SDK v1.4.0
    - [**Screen 'Shipping Addresses'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-shipping-addresses)
       - [*-showPlusSignOnAddButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showplussignonaddbutton)
       - [*-setColorForAddressSelection*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcolorforaddressselection)
@@ -2414,6 +2414,21 @@ int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 **Sample code:**
 ```Objective-C
 [printIO setBraintreeStagingEncryptionKey:@"s_enc_key" productionEncryptionKey:@"p_enc_key"];
+//... other customization
+[printIO open];
+```
+######- setApplePayMerchantIdentifier
+```Objective-C
+/**
+ Set ApplePay merchant identifier
+ 
+ @param merchantIdentifier Merchant Identifier
+ */
+-(void)setApplePayMerchantIdentifier:(NSString *)merchantIdentifier;
+```
+**Sample code:**
+```Objective-C
+[printIO setApplePayMerchantIdentifier:@"your.merchantid"];
 //... other customization
 [printIO open];
 ```
