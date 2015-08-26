@@ -24,3 +24,11 @@ In order to use Apple Pay on a real device, you must configure an Apple Pay Merc
 4. Download the new Apple Pay Certificate, which you just generated, and send it back to us, support@print.io.
 
 5. We will inform you when your merchant ID is active for using Apple Pay.
+
+Configuration in XCode
+----------------------
+
+In Xcode, enable Apple Pay under Capabilities in your Project Settings.
+
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/Screen%20Shot%202015-08-26%20at%201.45.09%20PM.png)
+
