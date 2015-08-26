@@ -53,7 +53,7 @@ Public method for setting Apple Pay merchant id(s):
 ```
 Sample code:
 ```Objective-C
-[printIO setApplePayMerchantIdentifier:@"your.merchantid"];
+[printIO setApplePayMerchantIdentifier:@"your.merchantid"]; // use right merchant id for staging and production
 //... other customization
 [printIO open];
 ```
