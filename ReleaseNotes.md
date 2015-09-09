@@ -20,14 +20,6 @@ iOS Release Notes
 * Products screen - Grid view doesn't return back on a product that was previously selected
 * Mugs - Remove Material option
 * All Photobooks - Resolution Warnings not working properly after replace photo
-* Folded Cards - Names of templates should change
-* Folded Cards - Preview Images disappears from Customization screen
-* Folded Cards - Page Picker stays open when you tap on Next button
-* Folded cards - Template is not enabled
-* Folded Cards - Image running out from Layout when changing Pages
-* Folded Cards - ImageManip error on Admin panel
-* Folded Cards - Default text is not on right place of the layout
-* Folded Cards - App has crashed
 
 ####
 
