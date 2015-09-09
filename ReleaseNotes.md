@@ -1,6 +1,52 @@
 iOS Release Notes
 ==================================
 
+**1.5.0 (22)**
+---
+**Features:**
+* New Product: Folded Cards
+* New Product: Softcover Photobooks
+* New Product: Selfcover Photobooks
+* New Product: Hardcover Photobooks
+* ApplePay is implemented
+* ApplePay - Public method to set up merchant identifier
+* Regular Book Tasks: One page - one space: resolution warnings
+* Regular Book Tasks: One page - one space: page arrangement
+* Regular Book Tasks: One page - one space: text feature
+
+####
+
+**Bug fixes:** 
+* ApplePay - change payment json to match server side and test it
+* Braintree crash with apple pay
+* Softcover photbooks - Cover page larger than first page
+* Missing Front Page: Hardcover, Softcover and Selfcover photobooks
+* Softcover photobooks - Default text is not visible on first page
+* Selfcover pbooks - Missing first image on 2-3 Page
+* Selfcover pbooks - After opening the items from the shopping cart layouts are bad
+* Selfcover pbooks - "Instruction" text is cutted
+* Missing page titles for Folded Cards
+* Folded cards - Template is not enabled
+* Folded Cards - Image running out from Layout when changing Pages
+* Folded Card - ImageManip error on Admin panel
+* Hardcover photobooks - Preview Images for Templates are small
+* Choose Options screen - Add placeholders on items
+* Hardcover photobooks - Layout is separated few pixels in the middle
+* Folded Cards - App has crashed
+* Hardcover photobooks - Add Template names instead number of images
+* Photobooks - Arranging pages causes missing transparent cover over the image for resolution warnings
+* Folded Cards - Default text is not on right place of the layout
+* Size of layout decreases after changing template on customization screen
+* Products screen - Grid view doesn't return back on a product that was previously selected
+* Folded Cards - Page Picker stays open when you tap on Next button
+* Mugs - Remove Material option
+* All Photobooks - Resolution Warnings not working properly after replace photo
+* Folded Cards - Names of templates should change
+* Folded Cards - Preview Images disappears from Customization screen
+* Hardcover photobooks - Arrange Photos causing bad layouts
+
+####
+
 **1.3.7 (21)**
 ---
 **Features:**
