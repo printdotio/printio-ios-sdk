@@ -28,7 +28,6 @@ iOS Release Notes
 **Features:**
 * New Product: Layflat Photobooks
 * New Product: Bandana
-* New Product: Folded Cards
 * If any default text isn't edited -> alert the user before checkout
 * Layflat Photobooks: Added new page that allows user to arrange pages on a screen where all pages are zoomed out
 * Layflat Photobooks: if there is default text on a page popup keyboard to edit
