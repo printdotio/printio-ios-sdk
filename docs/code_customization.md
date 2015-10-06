@@ -121,6 +121,7 @@ Developer SDK Customization Reference
       - [*-setCustomizationHelpText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcustomizationhelptext)
       - [*-setDefaultTemplateTexts*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdefaulttemplatetexts)
       - [*-showOnlyOnePhotoTemplates*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showonlyonephototemplates)
+      - [*-setKeyboardBackgroundColor*]()
    - [**Screen 'Image Editor'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-image-editor)
       - [*-imageEditorShowButtons*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--imageeditorshowbuttons)
       - [*-hideWatchVideoButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidewatchvideobutton)
@@ -2064,6 +2065,22 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 **Sample code:**
 ```Objective-C
 [printIO showOnlyOnePhotoTemplates:YES];
+//... other customization
+[printIO open];
+```
+######- setKeyboardBackgroundColor
+```Objective-C
+/**
+ Set custom keyboard background color. Only applies to landscape mode.
+ Available from SDK v1.5.10(23)
+ 
+ @param color Defalut color is ligh grey.
+ */
+-(void)setKeyboardBackgroundColor:(UIColor *)color;
+```
+**Sample code:**
+```Objective-C
+[printIO setKeyboardBackgroundColor:[UIColor redColor]];
 //... other customization
 [printIO open];
 ```
