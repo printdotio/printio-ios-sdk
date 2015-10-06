@@ -4,6 +4,7 @@ iOS Release Notes
 **1.5.10 (23)**
 ---
 **Features:**
+* Photo source PIO_SM_PICASA changed to PIO_SM_GOOGLE_PHOTOS
 * Fixed Apple Pay issues
 * New custom keyboard to support landscape mode
 * Public method to change custom keyboard background color [- setKeyboardBackgroundColor](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setkeyboardbackgroundcolor)
