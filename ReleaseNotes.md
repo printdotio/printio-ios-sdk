@@ -1,6 +1,65 @@
 iOS Release Notes
 ==================================
 
+**1.5.10 (23)**
+---
+**Features:**
+* Integrated Apple Pay into SDK
+* Integrated New Custom Keyboard into SDK for support landscape mode
+* Created Public Method to change Keyboard Background
+* Marked editing text view
+* Support iOS v9.0+
+* Posters: Added new option - Paper Finish
+* Fleece Blankets: Added new option - Print Sides
+* Phone Cases: Added new options - Case Color, Case Style and Hardness
+* Mementos - Removed "Type" option
+* Updated PayPal SDK to 2.12.2
+
+####
+
+**Bug fixes:** 
+* Mementos: Opens Print Customization screen if you edit Mementos from shopping cart screen
+* Mementos - Can not place order
+* Button name changed from "Create It" to "Make It"
+* Text alignment - size bar, move on left side and make it vertical
+* Shopping cart screen - Missing thumbnail after change Layout
+* User is able to open Image Editor screen while text feature is opened
+* Custom Keypad - Make "Close" button to stay always visible
+* Textview Red marker is moving across text
+* SC and HC pbooks  - Disable "Options menu" when Text Object is active
+* Custom Keypad - When status bar is ON keypad is cutted
+* Text options bar doesn't works correcly if "Hide Status bar" is OFF
+* Customization screen - Add warning dialog when change Layout all changes will be lost (apply to all products)
+* All Photoobooks - Options Menu is visible when text object is active and causing crash
+* Custom Keypad - Caps Lock On/OFF functionality doesn't change icon
+* Custom Keypad - Some of characters are not very clickable
+* Arrange Pages - Text stays on the same page
+* Photobooks - Missing text objects on arrange pages screen
+* Custom Keypad - When status bar is ON, Close button is cutted
+* Status Bar ON - On Facebook authorization screen buttons are cutted
+* Text feature - Red text box is not shown automatically 
+* Photobooks - "Next" button on last page is removed
+* Custom Keypad - Should not save last state on the next opening
+* Photobooks - Missing text objects on arrange pages screen after editing product from Shopping Cart
+* All Photobooks - Arrange Photos not save Replaced Image
+* Picasa Photo Source name is changed to Google Photos
+* All Photobooks: Arrange Pages - Pages are doubled
+* Photobooks: Edit from shopping cart - Text is not on right page
+* Layflat Photobooks - App has crashed
+* Fleece Blankets - Steps are not working properly
+* Resolution Warnings - Dialog "Photo is too small" remembers what the user has selected
+* Photo Books - Custom text disappears after arranging pages
+* Order Completed screen - Order Number is not valid
+* PayPal - Ability to click on PayPal button before payment verified
+* Phone Cases - Shows different prices on Options screen and in cart list
+* Fleece Blankets - Add Dialog: Use same look for back side"
+* Fleece Blankets - Step 3 goes behind navigation bar
+* Text alignment
+* Pay with Card - Duplicate Order
+* Pay with Card - Place Order button stays disabled after entered incorrect card number
+
+####
+
 **1.5.0 (22)**
 ---
 **Features:**
