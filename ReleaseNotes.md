@@ -1,6 +1,43 @@
 iOS Release Notes
 ==================================
 
+**1.5.17 (24)**
+---
+**Features:**
+* Shopping cart: New Remove item UX
+* Cancel Button on Product Options Screen
+* Added new preview on Products screen - List view & Grid view
+* Create public method set apple pay business name and app name
+* New Flow Path for SDK - Single Page Customize
+* Public method for entering text - What's new dialog
+* Method to set retail discount percent
+* What's New Overlay
+* Renamed all Printio/BreakoutCommerce labels to Makeable
+* Product options flow with sofa
+
+####
+
+**Bug fixes:** 
+Shopping Cart screen - Empty "Promo Code" shows wrong dialog which never disappear
+Shopping Cart screen - Ability to click on item when delete button is active
+Shopping cart issue with changing currency
+Checkout screen - Reduce blank space between "Save Address" button and keyboard
+Shopping Cart screen - Old swipe animation is shown when user scrolls  up and down
+V2 screen - Mugs overlay not fitted properly in list/grid view
+V2 screen - Shows preview image (from another product) instead passed image on products with overlays
+hellopics rejection
+Framed Prints - Steps are not working properly
+Facebook source - App has crashed
+Folded Cards - are not showing Step 4
+V2 Products screen - Changing list view to grid view causes shifting of the image into grid view
+V2 products screen - Tapping on one product causes blinking on another product
+Changing Currency from side menu  does not affects on Prices in  Product details screen
+What's new dialog - Replace "X" button with "Ok" transparent button
+Couch step - scroll to top, increase height
+Products with sofa - Sofa image is deformed
+
+####
+
 **1.5.10 (23)**
 ---
 **Features:**
