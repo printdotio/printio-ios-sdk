@@ -4,7 +4,7 @@ iOS Release Notes
 **1.5.17 (24)**
 ---
 **Features:**
-* Shopping cart: New Remove item UX
+* Shopping cart new UI
 * Cancel Button on Product Options Screen
 * Added new preview on Products screen - List view & Grid view
 * Create public method set apple pay business name and app name
