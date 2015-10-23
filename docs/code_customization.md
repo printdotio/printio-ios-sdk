@@ -125,7 +125,7 @@ Developer SDK Customization Reference
       - [*-showOnlyOnePhotoTemplates*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showonlyonephototemplates)
       - [*-setKeyboardBackgroundColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setkeyboardbackgroundcolor)
       - [*-showCancelOptionsButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showcanceloptionsbutton)
-      - [*-useSinglePageCustomization*]()
+      - [*-useSinglePageCustomization*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--usesinglepagecustomization)
    - [**Screen 'Image Editor'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-image-editor)
       - [*-imageEditorShowButtons*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--imageeditorshowbuttons)
       - [*-hideWatchVideoButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidewatchvideobutton)
