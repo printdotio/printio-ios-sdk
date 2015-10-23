@@ -77,7 +77,7 @@ Developer SDK Customization Reference
       - [*-setFeaturedProductsDefaultView*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsdefaultview)
       - [*-setAvailableProducts*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailableproducts)
       - [*-enableAnimationInProductsList*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--enableanimationinproductslist)
-      - [*-setProductsScreenVersion*]()
+      - [*-setProductsScreenVersion*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setproductsscreenversion)
       - [*-setProductsScreenImageUrl*]()
    - [**Screen 'Product Details'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-product-details)
       - [*-productDetailsShowTitleBelowNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
