@@ -7,7 +7,7 @@ iOS Release Notes
 * Shopping cart new UI
 * Added Cancel button on Product options screen [showCancelOptionsButton](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showcanceloptionsbutton)
 * Live product preview in products list [setProductsScreenVersion](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setproductsscreenversion) and [setProductsScreenImageUrl](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setproductsscreenimageurl)
-* Create public method set apple pay business name and app name
+* Set Apple Pay business name and app name (MANDATORY if use Apple Pay feature in SDK) [setApplePayBusinessName](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setapplepaybusinessname)
 * New Flow Path for SDK - Single Page Customize
 * Public method for entering text - What's new dialog
 * Method to set retail discount percent
