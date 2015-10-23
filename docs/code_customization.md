@@ -150,6 +150,7 @@ Developer SDK Customization Reference
       - [*-setPayPalStagingClientId:productionClientId*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpaypalstagingclientidproductionclientid)
       - [*-setBraintreeStagingEncryptionKey:productionEncryptionKey*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setbraintreestagingencryptionkeyproductionencryptionkey)
       - [*-setApplePayMerchantIdentifier*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setapplepaymerchantidentifier) available from PrintIO SDK v1.4.0
+      - [*-setApplePayBusinessName*]()
    - [**Screen 'Shipping Addresses'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-shipping-addresses)
       - [*-showPlusSignOnAddButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showplussignonaddbutton)
       - [*-setColorForAddressSelection*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcolorforaddressselection)
@@ -2501,6 +2502,23 @@ int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 **Sample code:**
 ```Objective-C
 [printIO setApplePayMerchantIdentifier:@"your.merchantid"];
+//... other customization
+[printIO open];
+```
+######- setApplePayBusinessName
+```Objective-C
+/**
+ Set Apple Pay bussines name and app name
+ Available from SDK v1.5.14(23)
+ 
+ @param name Business name
+ @param appName Application name
+ */
+-(void)setApplePayBusinessName:(NSString *)name yourAppName:(NSString *)appName;
+```
+**Sample code:**
+```Objective-C
+[printIO setApplePayBusinessName:@"Name" yourAppName:@"AppName"];
 //... other customization
 [printIO open];
 ```
