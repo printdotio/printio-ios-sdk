@@ -85,7 +85,7 @@ Developer SDK Customization Reference
       - [*-productDetailsShowMenuBtnInNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
       - [*-setQualityGuaranteeText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setqualityguaranteetext)
       - [*-setPriceTitleHidden*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpricetitlehidden)
-      - [*-setRetailDiscountPercent*]()
+      - [*-setRetailDiscountPercent*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setretaildiscountpercent)
    - [**Photo sources**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#photo-sources)
       - [*-setAvailablePhotoSources*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources)
       - [*-setCustomPhotoSources*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcustomphotosources)
