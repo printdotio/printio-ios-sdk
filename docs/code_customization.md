@@ -77,6 +77,8 @@ Developer SDK Customization Reference
       - [*-setFeaturedProductsDefaultView*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsdefaultview)
       - [*-setAvailableProducts*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailableproducts)
       - [*-enableAnimationInProductsList*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--enableanimationinproductslist)
+      - [*-setProductsScreenVersion*]()
+      - [*-setProductsScreenImageUrl*]()
    - [**Screen 'Product Details'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-product-details)
       - [*-productDetailsShowTitleBelowNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
       - [*-productDetailsShowMenuBtnInNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
@@ -1382,6 +1384,42 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 **Sample code:**
 ```Objective-C
 [printIO enableAnimationInProductsList:YES];
+//... other customization
+[printIO open];
+```
+######- setProductsScreenVersion
+```Objective-C
+/**
+ Change version of Products Screen. 
+ 
+ @param version Default screen version is PIOProductsScreenV1
+ 
+ PIOProductsScreenV1
+ PIOProductsScreenV2 - available from sdk v1.5.13(23). Dynamic products list view.
+ 
+ */
+-(void)setProductsScreenVersion:(PIOProductsScreenVersion)version;
+```
+**Sample code:**
+```Objective-C
+[printIO setProductsScreenVersion:PIOProductsScreenV2];
+//... other customization
+[printIO open];
+```
+######- setProductsScreenImageUrl
+```Objective-C
+/**
+ Set image url for Dymanic products list view. In order to use this method, 
+ PIOProductsScreenV2 needs to be enabled.
+ Available from sdk v1.5.13(23)
+ 
+ @param url Url to image file.
+ */
+-(void)setProductsScreenImageUrl:(NSString *)url;
+```
+**Sample code:**
+```Objective-C
+[printIO setProductsScreenImageUrl:imageUrl];
 //... other customization
 [printIO open];
 ```
