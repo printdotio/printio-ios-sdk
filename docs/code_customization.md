@@ -79,6 +79,7 @@ Developer SDK Customization Reference
       - [*-enableAnimationInProductsList*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--enableanimationinproductslist)
       - [*-setProductsScreenVersion*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setproductsscreenversion)
       - [*-setProductsScreenImageUrl*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setproductsscreenimageurl)
+      - [*-setWhatsNewDailogText*]()
    - [**Screen 'Product Details'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-product-details)
       - [*-productDetailsShowTitleBelowNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
       - [*-productDetailsShowMenuBtnInNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
@@ -1422,6 +1423,24 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 **Sample code:**
 ```Objective-C
 [printIO setProductsScreenImageUrl:imageUrl];
+//... other customization
+[printIO open];
+```
+######- setWhatsNewDailogText
+```Objective-C
+/**
+ Set text for What's New Dialog. If there's no text, dialog
+ will be hidden.
+ 
+ Sample text: @"- bug fixes\n- new products added\n- new feature added"
+ 
+ @param text Text
+ */
+-(void)setWhatsNewDailogText:(NSString *)text;
+```
+**Sample code:**
+```Objective-C
+[printIO setWhatsNewDailogText:@"sample text"];
 //... other customization
 [printIO open];
 ```
