@@ -10,8 +10,7 @@ iOS Release Notes
 * Set Apple Pay business name and app name (MANDATORY if use Apple Pay feature in SDK) [setApplePayBusinessName](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setapplepaybusinessname)
 * New Flow Path for SDK - Single Page Customize [useSinglePageCustomization](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--usesinglepagecustomization)
 * Added 'What's new dialog' options - [setWhatsNewDailogText](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setwhatsnewdailogtext)
-* Method to set retail discount percent
-* What's New Overlay
+* Method to set retail discount [setRetailDiscountPercent](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setretaildiscountpercent)
 * Renamed all Printio/BreakoutCommerce labels to Makeable
 * Product options flow with sofa
 
