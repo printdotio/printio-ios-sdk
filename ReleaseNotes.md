@@ -5,7 +5,7 @@ iOS Release Notes
 ---
 **Features:**
 * Shopping cart new UI
-* Cancel Button on Product Options Screen
+* Added Cancel button on Product options screen [showCancelOptionsButton](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showcanceloptionsbutton)
 * Added new preview on Products screen - List view & Grid view
 * Create public method set apple pay business name and app name
 * New Flow Path for SDK - Single Page Customize
