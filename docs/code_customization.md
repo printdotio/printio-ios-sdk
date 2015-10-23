@@ -150,7 +150,7 @@ Developer SDK Customization Reference
       - [*-setPayPalStagingClientId:productionClientId*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpaypalstagingclientidproductionclientid)
       - [*-setBraintreeStagingEncryptionKey:productionEncryptionKey*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setbraintreestagingencryptionkeyproductionencryptionkey)
       - [*-setApplePayMerchantIdentifier*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setapplepaymerchantidentifier) available from PrintIO SDK v1.4.0
-      - [*-setApplePayBusinessName*]()
+      - [*-setApplePayBusinessName*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setapplepaybusinessname)
    - [**Screen 'Shipping Addresses'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-shipping-addresses)
       - [*-showPlusSignOnAddButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showplussignonaddbutton)
       - [*-setColorForAddressSelection*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcolorforaddressselection)
