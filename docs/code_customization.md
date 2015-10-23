@@ -85,6 +85,7 @@ Developer SDK Customization Reference
       - [*-productDetailsShowMenuBtnInNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
       - [*-setQualityGuaranteeText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setqualityguaranteetext)
       - [*-setPriceTitleHidden*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpricetitlehidden)
+      - [*-setRetailDiscountPercent*]()
    - [**Photo sources**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#photo-sources)
       - [*-setAvailablePhotoSources*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailablephotosources)
       - [*-setCustomPhotoSources*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcustomphotosources)
@@ -1502,6 +1503,21 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 **Sample code:**
 ```Objective-C
 [printIO setPriceTitleHidden:YES];
+//... other customization
+[printIO open];
+```
+######- setRetailDiscountPercent
+```Objective-C
+/**
+ Set retail discont percent for product details screen
+ 
+ @param percent 
+ */
+-(void)setRetailDiscountPercent:(float)percent;
+```
+**Sample code:**
+```Objective-C
+[printIO setRetailDiscountPercent:10.0];
 //... other customization
 [printIO open];
 ```
