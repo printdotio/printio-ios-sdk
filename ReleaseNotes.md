@@ -22,17 +22,11 @@ iOS Release Notes
 * Shopping cart issue with changing currency
 * Checkout screen - Reduce blank space between "Save Address" button and keyboard
 * Shopping Cart screen - Old swipe animation is shown when user scrolls  up and down
-* V2 screen - Mugs overlay not fitted properly in list/grid view
-* V2 screen - Shows preview image (from another product) instead passed image on products with overlays
 * Framed Prints - Steps are not working properly
 * Facebook source - App has crashed
 * Folded Cards - are not showing Step 4
-* V2 Products screen - Changing list view to grid view causes shifting of the image into grid view
-* V2 products screen - Tapping on one product causes blinking on another product
 * Changing Currency from side menu  does not affects on Prices in  Product details screen
-* What's new dialog - Replace "X" button with "Ok" transparent button
 * Couch step - scroll to top, increase height
-* Products with sofa - Sofa image is deformed
 
 ####
 
