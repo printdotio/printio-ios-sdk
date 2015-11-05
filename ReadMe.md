@@ -30,7 +30,7 @@ Our SDK allows you to select which features and functionality you need as well a
 - [Social Media Account Setup] (https://github.com/printdotio/printio-ios-sdk/blob/master/docs/Reference/SocialMediaAccountSetup.md) the PrintIO SDK allows you to change to your social media accounts. Use this guide if you have questions regarding what information and settings are needed.
 
 ### iOS 9 and XCode 7 support:
-To avoid waring "The resource could not be loaded because the App Transport Security policy requires the use of a secure connection." please add next lines to info.plist (temporary solution):
+- To avoid waring "The resource could not be loaded because the App Transport Security policy requires the use of a secure connection." please add next lines to info.plist (temporary solution):
 ```Objective-C
 <key>NSAppTransportSecurity</key>
 <dict>
@@ -38,5 +38,11 @@ To avoid waring "The resource could not be loaded because the App Transport Secu
       <true/>
 </dict>
 ```
+
+- Your application needs to whitelist the schemes your app will query. This is Apple policy. To query for the Facebook, please add this to Info.plist file:
+
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/Screen%20Shot%202015-11-05%20at%2011.30.11%20AM.png)
+
+
 
 *supports only iPhone app configuration
