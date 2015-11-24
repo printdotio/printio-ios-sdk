@@ -73,9 +73,7 @@ Developer SDK Customization Reference
       - [*-setTitleForFeaturedProductsScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforfeaturedproductsscreen)
       - [*-setFeaturedProductsLeftLabelTextColor:rightLabelTextColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsleftlabeltextcolorrightlabeltextcolor)
       - [*-setFeaturedProductsBackgroundImage*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsbackgroundimage)
-      - [*-setFeaturedProductsDefaultView*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsdefaultview)
       - [*-setAvailableProducts*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailableproducts)
-      - [*-enableAnimationInProductsList*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--enableanimationinproductslist)
       - [*-setProductsScreenVersion*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setproductsscreenversion)
       - [*-setProductsScreenImageUrl*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setproductsscreenimageurl)
       - [*-setWhatsNewDailogText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setwhatsnewdailogtext)
@@ -114,12 +112,10 @@ Developer SDK Customization Reference
       - [*-hideImagesListInCustomizeProduct*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideimageslistincustomizeproduct)
       - [*-setPhotoArrangement*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setphotoarrangement)
       - [*-setIconForAddPhotosButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforaddphotosbutton)
-      - [*-setIconForHelpButtonInCustomizeProduct:visible*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforhelpbuttonincustomizeproductvisible)
       - [*-setIconForSaveButtonInCustomizeProduct*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforsavebuttonincustomizeproduct)
       - [*-setPopUpWithImage:text:textColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpopupwithimagetexttextcolor)
       - [*-setDoubleTapBalloonVisibilityTime*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdoubletapballoonvisibilitytime)
       - [*-showHelpDialogWithImage*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showhelpdialogwithimage)
-      - [*-disablePreviewScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--disablepreviewscreen)
       - [*-setSamePhotoOnFrontAndBackSideOfProduct*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setsamephotoonfrontandbacksideofproduct)
       - [*-setCustomizationHelpText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcustomizationhelptext)
       - [*-setDefaultTemplateTexts*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdefaulttemplatetexts)
@@ -133,7 +129,6 @@ Developer SDK Customization Reference
    - [**Screen 'Shopping Cart'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-shopping-cart)
       - [*-setIconForShoppingCart:withNumberOfProducts:labelPosition:textColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartwithnumberofproductslabelpositiontextcolor)
       - [*-setIconForShoppingCart:withNumberOfProducts:labelPosition:circleColor:textColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartwithnumberofproductslabelpositioncirclecolortextcolor)
-      - [*-removePlusFromAddMoreProductsButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removeplusfromaddmoreproductsbutton)
       - [*-setTitleForShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforshoppingcart)
       - [*-setShowsAddMoreProductsInShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setshowsaddmoreproductsinshoppingcart)
       - [*-customizeAddMoreProductButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--customizeaddmoreproductbutton)
@@ -145,7 +140,6 @@ Developer SDK Customization Reference
       - [*-closeWidgetFromShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--closewidgetfromshoppingcart)
       - [*+clearShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#-clearshoppingcart)
    - [**Screen 'Payment Options'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-payment-options)
-      - [*-removeLogoFromPaymentScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--removelogofrompaymentscreen)
       - [*-setPayeeName*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpayeename)
       - [*-setTermsAndConditionsURL*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settermsandconditionsurl)
       - [*-setPaymentOptions*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpaymentoptions)
@@ -1313,23 +1307,6 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 //... other customization
 [printIO open];
 ```
-######- setFeaturedProductsDefaultView
-```Objective-C
-/**
- Set default view for Featured Products Screen
- PIO_FP_FEATURED_PRODUCTS,
- PIO_FP_ALL_PRODUCTS
- 
- @param viewType
- */
-- (void)setFeaturedProductsDefaultView:(PIOFeatureProductsView)viewType;
-```
-**Sample code:**
-```Objective-C
-[printIO setFeaturedProductsDefaultView:PIO_FP_ALL_PRODUCTS];
-//... other customization
-[printIO open];
-```
 ######- setAvailableProducts
 ```Objective-C
 /**
@@ -1347,22 +1324,6 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 ```Objective-C
 NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NSNumber numberWithInt:PRODUCT_PHONE_CASES()]];
 [printIO setAvailableProducts:availableProducts];
-//... other customization
-[printIO open];
-```
-######- enableAnimationInProductsList
-```Objective-C
-/**
- Enable animation in product's list.
- Available from SDK version 1.2.2
- 
- @param set Default value is NO
- */
-- (void)enableAnimationInProductsList:(BOOL)set;
-```
-**Sample code:**
-```Objective-C
-[printIO enableAnimationInProductsList:YES];
 //... other customization
 [printIO open];
 ```
@@ -1950,24 +1911,6 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setIconForHelpButtonInCustomizeProduct:visible
-```Objective-C
-/**
- Change icon for Help Button on Customize Product screen
-
- @param imagePath Path to image file.
- @param visible Default value is YES
- */
-- (void)setIconForHelpButtonInCustomizeProduct:(NSString *)imagePath
-                                       visible:(BOOL)visible;
-```
-**Sample code:**
-```Objective-C
-[printIO setIconForHelpButtonInCustomizeProduct:[[NSBundle mainBundle]pathForResource:@"icon" ofType:@"png"] 
-                                        visible:YES];
-//... other customization
-[printIO open];
-```
 ######- setIconForSaveButtonInCustomizeProduct
 ```Objective-C
 /**
@@ -2030,21 +1973,6 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 **Sample code:**
 ```Objective-C
 [printIO showHelpDialogWithImage:[[NSBundle mainBundle]pathForResource:@"image" ofType:@"png"]];
-//... other customization
-[printIO open];
-```
-######- disablePreviewScreen
-```Objective-C
-/**
- Disable Preview screen for product
-
- @param set Default value is NO
- */
-- (void)disablePreviewScreen:(BOOL)set;
-```
-**Sample code:**
-```Objective-C
-[printIO disablePreviewScreen:YES];
 //... other customization
 [printIO open];
 ```
@@ -2258,19 +2186,6 @@ NSArray *buttons = @[[PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_INFO]
 //... other customization
 [printIO open];
 ```
-######- removePlusFromAddMoreProductsButton
-```Objective-C
-/**
- Remove plus sign from "Add more products" button. By default, sign is visible.
- */
-- (void)removePlusFromAddMoreProductsButton:(BOOL)remove;
-```
-**Sample code:**
-```Objective-C
-[printIO removePlusFromAddMoreProductsButton:YES];
-//... other customization
-[printIO open];
-```
 ######- setTitleForShoppingCart
 ```Objective-C
 /**
@@ -2416,20 +2331,6 @@ int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 [PrintIO clearShoppingCart];
 ```
 ###Screen 'Payment Options'
-######- removeLogoFromPaymentScreen
-```Objective-C
-/**
- Remove logo from Payment and Order Confirmation screen
- */
-- (void)removeLogoFromPaymentScreen:(BOOL)remove;
-
-```
-**Sample code:**
-```Objective-C
-[printIO removeLogoFromPaymentScreen:YES];
-//... other customization
-[printIO open];
-```
 ######- setPayeeName
 ```Objective-C
 /**
