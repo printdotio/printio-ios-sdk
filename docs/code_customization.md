@@ -13,7 +13,6 @@ Developer SDK Customization Reference
       - [*-close*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--close)
       - [*-goToProductId*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--gotoproductid)
       - [*-goToProductId:withSKU*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--gotoproductidwithsku)
-      - [*-setVariantsOptions*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setvariantsoptions)
    - [**Utils**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#utils)
       - [*-turnOffLogs*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--turnofflogs)
    - [**Country, Currency and Language**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#country-currency-and-language)
@@ -153,7 +152,6 @@ Developer SDK Customization Reference
       - [*-setPayPalStagingClientId:productionClientId*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpaypalstagingclientidproductionclientid)
       - [*-setBraintreeStagingEncryptionKey:productionEncryptionKey*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setbraintreestagingencryptionkeyproductionencryptionkey)
       - [*-setApplePayMerchantIdentifier*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setapplepaymerchantidentifier) available from PrintIO SDK v1.4.0
-      - [*-setApplePayBusinessName*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setapplepaybusinessname)
    - [**Screen 'Shipping Addresses'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-shipping-addresses)
       - [*-showPlusSignOnAddButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showplussignonaddbutton)
       - [*-setColorForAddressSelection*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcolorforaddressselection)
@@ -343,29 +341,6 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 **Sample code:**
 ```Objective-C
 [printIO goToProductId:PRODUCT_PHONE_CASES() withSKU:@"PhoneCase-iphone5S-Matte"];
-//... other customization
-[printIO open];
-```
-######- setVariantsOptions
-```Objective-C
-/**
- Set products variants options
-
- @param options Array of PIOVariantOption objects. Pass 'color' with Case Style option
- */
-- (void)setVariantsOptions:(NSArray *)options;
-```
-**Sample code:**
-```Objective-C
-// Galaxy Note 10.0
-PIOVariantOption *option1 = [[PIOVariantOption alloc]initWithProductId:PRODUCT_TABLET_CASES()
-                                                              optionId:@"db7b1f755f10457cb2aef7ee9bf58177"
-                                                               valueId:@"db0440e48e2c43d4851ed784af35263f"];
-// Case Sytle Glossy
-PIOVariantOption *option2 = [[PIOVariantOption alloc]initWithProductId:PRODUCT_TABLET_CASES()
-                                                              optionId:@"2729db9407ba441d9bd257cc158d8ce9"
-                                                               valueId:@"0058706aaaa7482585a09ac5437f4009"];
-[printIO setVariantsOptions:@[option1, option2];
 //... other customization
 [printIO open];
 ```
@@ -2554,23 +2529,6 @@ int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 **Sample code:**
 ```Objective-C
 [printIO setApplePayMerchantIdentifier:@"your.merchantid"];
-//... other customization
-[printIO open];
-```
-######- setApplePayBusinessName
-```Objective-C
-/**
- Set Apple Pay bussines name and app name
- Available from SDK v1.5.14(23)
- 
- @param name Business name
- @param appName Application name
- */
--(void)setApplePayBusinessName:(NSString *)name yourAppName:(NSString *)appName;
-```
-**Sample code:**
-```Objective-C
-[printIO setApplePayBusinessName:@"Name" yourAppName:@"AppName"];
 //... other customization
 [printIO open];
 ```
