@@ -122,7 +122,6 @@ Developer SDK Customization Reference
       - [*-showOnlyOnePhotoTemplates*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showonlyonephototemplates)
       - [*-setKeyboardBackgroundColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setkeyboardbackgroundcolor)
       - [*-showCancelOptionsButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showcanceloptionsbutton)
-      - [*-useSinglePageCustomization*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--usesinglepagecustomization)
    - [**Screen 'Image Editor'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-image-editor)
       - [*-imageEditorShowButtons*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--imageeditorshowbuttons)
       - [*-hideWatchVideoButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidewatchvideobutton)
@@ -2076,22 +2075,6 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 **Sample code:**
 ```Objective-C
 [printIO showCancelOptionsButton:YES];
-//... other customization
-[printIO open];
-```
-######- useSinglePageCustomization
-```Objective-C
-/**
- Use single page customization. All customization steps are on one page
- Available from SDK version 1.5.14(23)
- 
- @param set Default value is NO
- */
--(void)useSinglePageCustomization:(BOOL)set;
-```
-**Sample code:**
-```Objective-C
-[printIO useSinglePageCustomization:YES];
 //... other customization
 [printIO open];
 ```
