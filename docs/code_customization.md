@@ -77,6 +77,7 @@ Developer SDK Customization Reference
       - [*-setProductsScreenVersion*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setproductsscreenversion)
       - [*-setProductsScreenImageUrl*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setproductsscreenimageurl)
       - [*-setWhatsNewDailogText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setwhatsnewdailogtext)
+      - [*-showBottomBarWithLikeUsURL:rateUsAppId:shareText*]()
    - [**Screen 'Product Details'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-product-details)
       - [*-productDetailsShowTitleBelowNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
       - [*-productDetailsShowMenuBtnInNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
@@ -1377,6 +1378,24 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 **Sample code:**
 ```Objective-C
 [printIO setWhatsNewDailogText:@"sample text"];
+//... other customization
+[printIO open];
+```
+######- showBottomBarWithLikeUsURL:rateUsAppId:shareText
+```Objective-C
+/**
+ Show bottom bar with search, like, share and rate us options
+ Available from SDK v1.5.19(24)
+ 
+ @param likeUsUrl URL to web page (facebook page etc...)
+ @param rateUsAppId Application id from app store
+ @param shareText Text for sharing
+ */
+-(void)showBottomBarWithLikeUsURL:(NSURL *)likeUsURL rateUsAppId:(NSString *)rateUsAppId shareText:(NSString *)shareText;
+```
+**Sample code:**
+```Objective-C
+[printIO showBottomBarWithLikeUsURL:url rateUsAppId:@"appId" shareText:@"share text"];
 //... other customization
 [printIO open];
 ```
