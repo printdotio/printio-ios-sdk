@@ -1,6 +1,45 @@
 iOS Release Notes
 ==================================
 
+**1.6.0 (25)**
+---
+**IMPORTANT NOTE TO PARTNERS**: We have made changes to the Framed Canvas, Fleece Blankets, Phone Cases and T-shirts products. If you have these products enabled in the production version of your admin panel for iOS client, they will not work in the client. A work around is to disable them until we fix the issue. This will main a higher user experience.
+
+**Features:**
+* New Home screen and UI redesign
+* [New Share, Rate and Like bar](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showbottombarwithlikeusurlrateusappidsharetext)
+* Circular Hero in Home screen
+* If prices are updated on server side, user is informed about changes
+* Cached images are deleted
+* User Flow Adjustment
+* Added Logout Prompt dialog for Photo Sources
+* Framed Canvas - Added new option "Wrap Type"
+* Phone Cases - Added new options "Case Color" and "Case Hardness" 
+* Fleece Blankets - Added new option "Print Sides"
+
+####
+
+**Bug fixes:** 
+* github issues fixes: 
+[#484](https://github.com/printdotio/printio-ios-sdk/issues/484), [#487](https://github.com/printdotio/printio-ios-sdk/issues/487)
+* Side Menu - Ability to open side menu on screens where side menu is disabled/ Opens Side Menu on back button
+* Order ID is Cutted of
+* Changing country - no progress dialog visible
+* Single Page options - Add Separator line on some products
+* Memory consumption issue: Layflat Photobooks - App has crashed
+* Wall Calendar - Arrange dialog is opened every time when you entered the page
+* Double Sided Card Image issues
+* Photobooks - Resolution warning background disappear on few seconds after closing text object
+* Photobooks - Processing page counter shows wrong numbers on Customization screen
+* Phone Source - Folder names text is cutted on the bottom side
+* Products screen - Loading dialog is shown in landscape mode
+* If country is changed, also should change metric measurements
+* SDK - App mode always use all photo sources
+* Side menu - photo sources stays visible when hidden by public method
+* Shopping Cart screen - "Custom fonts" does not applies on "delete" button
+* Method Set Country Code to US does not work
+
+
 **1.5.17 (24)**
 ---
 **Features:**
