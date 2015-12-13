@@ -3,7 +3,7 @@ iOS Release Notes
 
 **1.6.0 (25)**
 ---
-**IMPORTANT NOTE TO PARTNERS**: We have made changes to the Framed Canvas, Fleece Blankets, Phone Cases and T-shirts products. If you have these products enabled in the production version of your admin panel for iOS client, they will not work in the client. A work around is to disable them until we fix the issue. This will main a higher user experience.
+**IMPORTANT NOTE TO PARTNERS**: We have made changes to Framed Canvas’ and T-shirts products. These products will not behave as intended if enabled in the production version of your admin panel for iOS and Android clients. A work around is to disable these products in your admin panel. This will ensure a better user experience.
 
 **Features:**
 * New Home screen and UI redesign
