@@ -52,13 +52,10 @@ Developer SDK Customization Reference
       - [*-sideMenuHideInfoHeader*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuhideinfoheader)
       - [*-sideMenuShowOptionsAsList*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenushowoptionsaslist)
       - [*-slideSideMenuFromRight*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--slidesidemenufromright)
-      - [*-setShareText:additionalText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setsharetextadditionaltext)
       - [*-hidePhotoSourcesInSideMenu*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidephotosourcesinsidemenu)
       - [*-sideMenuBackgroungImage*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenubackgroungimage)
       - [*-setHowItWorksText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sethowitworkstext)
       - [*-setAboutText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setabouttext)
-      - [*-setLikeUsOnFacebookUrl*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setlikeusonfacebookurl)
-      - [*-setAppIDFromAppleStore*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setappidfromapplestore)
       - [*-hideVersionInSideMenu*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideversioninsidemenu)
    - [**Screen 'Choose Country'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-choose-country)
       - [*-setTitleForChooseCountryScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchoosecountryscreen)
@@ -100,7 +97,6 @@ Developer SDK Customization Reference
       - [*-setDropboxKey:redirectUrl*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setdropboxkeyredirecturl)
       - [*-setFacebookAppId:redirectUrl*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfacebookappidredirecturl)
       - [*-setFacebookAccessToken*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfacebookaccesstoken)
-      - [*-enableShareOnFacebookDeal*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--enableshareonfacebookdeal)
       - [*-setPhotobucketUsername:password*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setphotobucketusernamepassword)
       - [*-setPhotobucketAccessToken:userName:baseURL*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setphotobucketaccesstokenusernamebaseurl)
       - [*-setTitleForPhotoSourcesScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforphotosourcesscreen)
@@ -1003,23 +999,6 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 //... other customization
 [printIO open];
 ```
-######- setShareText:additionalText
-```Objective-C
-/**
- This is option from Side Menu, in order to use it, Side Menu needs to be enabled first.
-
- @param shareText Text that will be used for sharing. May contains link also.
- @param additionalText Text used when sharing with image.
- */
-- (void)setShareText:(NSString *)shareText additionalText:(NSString *)additionalText;
-```
-**Sample code:**
-```Objective-C
-[printIO setShareText:@"I'm using YouApp! Here is a <a href=\"https://itunes.apple.com/US/app/id559500608?mt=8\">link</a> for you to download." 
-       additionalText:@"Made in #YourApp @YourApp"];
-//... other customization
-[printIO open];
-```
 ######- hidePhotoSourcesInSideMenu
 ```Objective-C
 /**
@@ -1077,37 +1056,6 @@ NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
 **Sample code:**
 ```Objective-C
 [printIO setAboutText:@"About text is..."];
-//... other customization
-[printIO open];
-```
-######- setLikeUsOnFacebookUrl
-```Objective-C
-/**
- Set url link to facebook page e.g. 'fb://profile/642169949144369'
- 
- @param urlS link to page
- */
-- (void)setLikeUsOnFacebookUrl:(NSString *)urlS;
-```
-**Sample code:**
-```Objective-C
-[printIO setLikeUsOnFacebookUrl:@"fb://profile/642169949144369"];
-//... other customization
-[printIO open];
-```
-######- setAppIDFromAppleStore
-```Objective-C
-/**
- Set application id from apple store, used for 'Rate Our App'
- option in side menu. e.g '731593327'
-
- @param appID application id
- */
-- (void)setAppIDFromAppleStore:(NSString *)appID;
-```
-**Sample code:**
-```Objective-C
-[printIO setAppIDFromAppleStore:@"731593327"];
 //... other customization
 [printIO open];
 ```
@@ -1734,21 +1682,6 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 **Sample code:**
 ```Objective-C
 [printIO setFacebookAccessToken:@"access_token"];
-//... other customization
-[printIO open];
-```
-######- enableShareOnFacebookDeal
-```Objective-C
-/**
- Enable option to share on facebook and get extra deal
-
- @param set Default value is NO
- */
-- (void)enableShareOnFacebookDeal:(BOOL)set;
-```
-**Sample code:**
-```Objective-C
-[printIO enableShareOnFacebookDeal:YES];
 //... other customization
 [printIO open];
 ```
