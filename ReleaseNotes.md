@@ -5,26 +5,23 @@ iOS Release Notes
 ---
 **Features:**
 * New Side Menu UI
-* New Quality Guarantee screen for Side Menu
-* Close side menu - Add ability to close menu by swiping it left
+* New Quality Guarantee screen
+* Close side menu - Ability to close menu by swiping it left
 * Thick Prints - Separate "Size" and "Set" options in two steps
 * Magnetgrams - Separate "Size" and "Count" options in two steps
+* All Product variants are in horizontal pager
 
 ####
 
 **Bug fixes:** 
-* New Side Menu - Back button doesn't work correctly
 * Fixed all public methods regarding side menu
-* Custom photo sources in new Side Menu
 * Shopping Cart screen - Quantity is active while Remove Items is opened
 * Shopping Cart screen - Should add Cancel button on Payment option popup
-* Turn OFF credit card & paypal payment method:  Both payment methods are shown in SKD
-* New Side Menu - Currency is cutted
-* Share it text doesn't work
+* Turn OFF credit card & paypal payment method: Both payment methods are shown in SKD
 * Default Text warning dialog is not shown if you save product from Cover page
-* Put product variants in pager horizontal
 * Select Images screen - "Tap icons to get images" text should be centered
-* Facebook image urls issue
+* Facebook image urls issue with latest Facebook applications
+* Back button issue - when side menu is hidden, back button on products screen not responding
 
 ####
 
