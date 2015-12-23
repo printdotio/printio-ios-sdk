@@ -1,6 +1,15 @@
 iOS Release Notes
 ==================================
 
+**1.6.5 (26)**
+---
+**Features:**
+####
+**Bug fixes:**
+* SVPullToRefresh duplicated symbols fixed
+
+####
+
 **1.6.4 (26)**
 ---
 **Features:**
