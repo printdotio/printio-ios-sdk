@@ -127,7 +127,7 @@ Developer SDK Customization Reference
       - [*-setIconForShoppingCart:withNumberOfProducts:labelPosition:circleColor:textColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartwithnumberofproductslabelpositioncirclecolortextcolor)
       - [*-setTitleForShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforshoppingcart)
       - [*-showKeepShoppingButtonInShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showKeepShoppingButtonInShoppingCart)
-      - [*-customizeAddMoreProductButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--customizeaddmoreproductbutton)
+      - [*-setKeepShoppingButtonTitle*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setKeepShoppingButtonTitle)
       - [*-setIconForShoppingCartBackButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartbackbutton)
       - [*-numberOfItemsInShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--numberofitemsinshoppingcart)
       - [*-hideEditButtonInShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideeditbuttoninshoppingcart)
@@ -2151,20 +2151,20 @@ NSArray *buttons = @[[PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_INFO]
 //... other customization
 [printIO open];
 ```
-######- customizeAddMoreProductButton
+######- setKeepShoppingButtonTitle
 ```Objective-C
 /**
- Customize 'Add More Products' button
+ Customize 'Keep Shopping' button
 
  @param title New title for button
  @param iconPath Path to icon file. Default is nil.
  */
-- (void)customizeAddMoreProductButton:(NSString *)title icon:(NSString *)iconPath;
+- (void)setKeepShoppingButtonTitle:(NSString *)title icon:(NSString *)iconPath;
 ```
 **Sample code:**
 ```Objective-C
-[printIO customizeAddMoreProductButton:@"MAKE MORE PRODUCTS" 
-                                  icon:[[NSBundle mainBundle]pathForResource:@"icon" ofType:@"png"]];
+[printIO setKeepShoppingButtonTitle:@"MAKE MORE PRODUCTS" 
+                               icon:[[NSBundle mainBundle]pathForResource:@"icon" ofType:@"png"]];
 //... other customization
 [printIO open];
 ```
