@@ -126,7 +126,7 @@ Developer SDK Customization Reference
       - [*-setIconForShoppingCart:withNumberOfProducts:labelPosition:textColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartwithnumberofproductslabelpositiontextcolor)
       - [*-setIconForShoppingCart:withNumberOfProducts:labelPosition:circleColor:textColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartwithnumberofproductslabelpositioncirclecolortextcolor)
       - [*-setTitleForShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforshoppingcart)
-      - [*-setShowsAddMoreProductsInShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setshowsaddmoreproductsinshoppingcart)
+      - [*-showKeepShoppingButtonInShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showKeepShoppingButtonInShoppingCart)
       - [*-customizeAddMoreProductButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--customizeaddmoreproductbutton)
       - [*-setIconForShoppingCartBackButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartbackbutton)
       - [*-numberOfItemsInShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--numberofitemsinshoppingcart)
@@ -2136,14 +2136,14 @@ NSArray *buttons = @[[PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_INFO]
 //... other customization
 [printIO open];
 ```
-######- setShowsAddMoreProductsInShoppingCart
+######- showKeepShoppingButtonInShoppingCart
 ```Objective-C
 /**
- Toggle 'Add more products' button on the Shopping Cart screen.
+ Toggle 'Keep Shopping' button on Shopping Cart screen.
 
  @param showsButton Button visibility flag. Default is YES.
  */
-- (void)setShowsAddMoreProductsInShoppingCart:(BOOL)showsAddButton;
+- (void)showKeepShoppingButtonInShoppingCart:(BOOL)showsAddButton;
 ```
 **Sample code:**
 ```Objective-C
