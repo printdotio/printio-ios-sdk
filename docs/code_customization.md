@@ -2147,7 +2147,7 @@ NSArray *buttons = @[[PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_INFO]
 ```
 **Sample code:**
 ```Objective-C
-[printIO setShowsAddMoreProductsInShoppingCart:YES];
+[printIO showKeepShoppingButtonInShoppingCart:YES];
 //... other customization
 [printIO open];
 ```
