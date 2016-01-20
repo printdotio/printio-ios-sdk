@@ -47,7 +47,7 @@ Developer SDK Customization Reference
       - [*-setBackButtonHidden*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setbackbuttonhidden)
       - [*-setNavigationBarLogo*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarlogo)
    - [**Side menu**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#side-menu)
-      - [*-useSideMenuWithMenuIcon*]()
+      - [*-useSideMenuWithMenuIcon*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--usesidemenuwithmenuicon)
       - [*-setSideMenuItems*]()
       - [*-slideSideMenuFromRight*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--slidesidemenufromright)
       - [*-hidePhotoSourcesInSideMenu*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidephotosourcesinsidemenu)
