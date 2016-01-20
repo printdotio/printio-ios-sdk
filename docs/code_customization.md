@@ -11,6 +11,7 @@ Developer SDK Customization Reference
       - [*-presentFromViewController*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--presentfromviewcontroller)
       - [*-viewController*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--viewcontroller)
       - [*-close*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--close)
+      - [*-closeWithCompletionHandler*]()
       - [*-goToProductId*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--gotoproductid)
       - [*-goToProductId:withSKU*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--gotoproductidwithsku)
    - [**Utils**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#utils)
@@ -302,6 +303,17 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 **Sample code:**
 ```Objective-C
 [printIO close];
+```
+######- closeWithCompletionHandler
+``` Objective-C
+/**
+ Close widget
+ */
+-(void)closeWithCompletionHandler:(void(^)(void))completionHandler;
+```
+**Sample code:**
+```Objective-C
+[printIO closeWithCompletionHandler:nil];
 ```
 ######- goToProductId
 ```Objective-C
