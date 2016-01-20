@@ -126,7 +126,6 @@ Developer SDK Customization Reference
       - [*-setKeepShoppingButtonTitle*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setkeepshoppingbuttontitle)
       - [*-setIconForShoppingCartBackButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartbackbutton)
       - [*-numberOfItemsInShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--numberofitemsinshoppingcart)
-      - [*-hideEditButtonInShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideeditbuttoninshoppingcart)
       - [*-setPromoCode*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpromocode)
       - [*-hideCartButtonWhenCartIsEmpty*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecartbuttonwhencartisempty)
       - [*-closeWidgetFromShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--closewidgetfromshoppingcart)
@@ -2024,21 +2023,6 @@ NSArray *buttons = @[[PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_INFO]
 **Sample code:**
 ```Objective-C
 int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
-```
-######- hideEditButtonInShoppingCart
-```Objective-C
-/**
- Hides 'Edit' button on 'Shopping Cart' screen
-
- @param set Default value is NO
- */
-- (void)hideEditButtonInShoppingCart:(BOOL)set;
-```
-**Sample code:**
-```Objective-C
-[printIO hideEditButtonInShoppingCart:YES];
-//... other customization
-[printIO open];
 ```
 ######- setPromoCode
 ```Objective-C
