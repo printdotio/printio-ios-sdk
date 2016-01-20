@@ -138,7 +138,6 @@ Developer SDK Customization Reference
       - [*-setBraintreeStagingEncryptionKey:productionEncryptionKey*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setbraintreestagingencryptionkeyproductionencryptionkey)
       - [*-setApplePayMerchantIdentifier*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setapplepaymerchantidentifier) available from PrintIO SDK v1.4.0
    - [**Screen 'Shipping Addresses'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-shipping-addresses)
-      - [*-showPlusSignOnAddButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showplussignonaddbutton)
       - [*-setColorForAddressSelection*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcolorforaddressselection)
       - [*+clearShippingAddresses*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#-clearshippingaddresses)
       - [*+clearBillingAddresses*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#-clearbillingaddresses)
@@ -2184,23 +2183,6 @@ int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 [printIO open];
 ```
 ###Screen 'Shipping Addresses'
-######- showPlusSignOnAddButton
-```Objective-C
-#pragma mark - Shipping Addresses screen
-
-/**
- Show plus sign on 'Add Shipping Address' button
-
- @param set Default value is NO
- */
-- (void)showPlusSignOnAddButton:(BOOL)set;
-```
-**Sample code:**
-```Objective-C
-[printIO showPlusSignOnAddButton:YES];
-//... other customization
-[printIO open];
-```
 ######- setColorForAddressSelection
 ```Objective-C
 /**
