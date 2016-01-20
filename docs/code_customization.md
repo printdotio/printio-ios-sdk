@@ -48,7 +48,7 @@ Developer SDK Customization Reference
       - [*-setNavigationBarLogo*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarlogo)
    - [**Side menu**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#side-menu)
       - [*-useSideMenuWithMenuIcon*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--usesidemenuwithmenuicon)
-      - [*-setSideMenuItems*]()
+      - [*-setSideMenuItems*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setsidemenuitems)
       - [*-slideSideMenuFromRight*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--slidesidemenufromright)
       - [*-hidePhotoSourcesInSideMenu*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidephotosourcesinsidemenu)
       - [*-setHowItWorksText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sethowitworkstext)
@@ -904,6 +904,21 @@ rightButtonBackgroundColor:(UIColor *)rColor
 **Sample code:**
 ```Objective-C
 [printIO setAboutText:@"About text is..."];
+//... other customization
+[printIO open];
+```
+######- setContactUsEmail
+```Objective-C
+/**
+ Set email for "Contact Us" button
+ 
+ @param email Customer support email
+ */
+-(void)setContactUsEmail:(NSString *)email;
+```
+**Sample code:**
+```Objective-C
+[printIO setContactUsEmail:@"email"];
 //... other customization
 [printIO open];
 ```
