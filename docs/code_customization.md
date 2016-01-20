@@ -45,7 +45,7 @@ Developer SDK Customization Reference
       - [*-setThreeButtonsNavigationBarSytle*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setthreebuttonsnavigationbarsytle)
       - [*-setNavigationBarSaveToCartBackgroundColor:titleColor:buttonBackgroundColor:buttonTitleColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarsavetocartbackgroundcolortitlecolorbuttonbackgroundcolorbuttontitlecolor)
       - [*-setBackButtonHidden*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setbackbuttonhidden)
-      - [*-setNavigationBarLogo*]()
+      - [*-setNavigationBarLogo*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarlogo)
    - [**Side menu**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#side-menu)
       - [*-useSideMenuWithMenuIcon:background*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--usesidemenuwithmenuiconbackground)
       - [*-sideMenuAddButtons*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons)
