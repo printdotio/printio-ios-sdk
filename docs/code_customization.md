@@ -118,7 +118,6 @@ Developer SDK Customization Reference
       - [*-showCancelOptionsButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showcanceloptionsbutton)
    - [**Screen 'Image Editor'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-image-editor)
       - [*-imageEditorShowButtons*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--imageeditorshowbuttons)
-      - [*-hideWatchVideoButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidewatchvideobutton)
    - [**Screen 'Shopping Cart'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-shopping-cart)
       - [*-setIconForShoppingCart:withNumberOfProducts:labelPosition:textColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartwithnumberofproductslabelpositiontextcolor)
       - [*-setIconForShoppingCart:withNumberOfProducts:labelPosition:circleColor:textColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforshoppingcartwithnumberofproductslabelpositioncirclecolortextcolor)
@@ -1898,21 +1897,6 @@ NSArray *buttons = @[[PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_INFO]
                      [PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_EDIT_TEXT],
                      [PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_EFFECTS]];
 [printIO imageEditorShowButtons:buttons];
-//... other customization
-[printIO open];
-```
-######- hideWatchVideoButton
-```Objective-C
-/**
- Hide 'Watch Video' button on Customize Product screen
- 
- @param hide Default value is NO
- */
-- (void)hideWatchVideoButton:(BOOL)hide;
-```
-**Sample code:**
-```Objective-C
-[printIO hideWatchVideoButton:YES];
 //... other customization
 [printIO open];
 ```
