@@ -795,21 +795,18 @@ rightButtonBackgroundColor:(UIColor *)rColor
 [printIO open];
 ```
 ###Side menu
-######- useSideMenuWithMenuIcon:background
+######- useSideMenuWithMenuIcon
 ```Objective-C
 /**
- Use Side Menu with options:
+ Use Side Menu
 
  @param mIconPath Path to image for Menu icon. If nil, default icon will be used.
- @param bcgColor Background color for Side Menu. If nil, default will be used.
  */
-- (void)useSideMenuWithMenuIcon:(NSString *)mIconPath
-                     background:(UIColor *)bcgColor;
+- (void)useSideMenuWithMenuIcon:(NSString *)iconPath
 ```
 **Sample code:**
 ```Objective-C
-[printIO useSideMenuWithMenuIcon:[[NSBundle mainBundle]pathForResource:@"mg_icon_menu" ofType:@"png"] 
-                      background:[UIColor blackColor]];
+[printIO useSideMenuWithMenuIcon:[[NSBundle mainBundle]pathForResource:@"mg_icon_menu" ofType:@"png"]];
 //... other customization
 [printIO open];
 ```
