@@ -810,198 +810,25 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- sideMenuAddButtons
+######- setSideMenuItems
 ```Objective-C
 /**
- Set which options to use in side menu
-
- @param buttons Array of PIOSideMenuButton objects of types:
- PIO_SM_EXIT_BUTTON,
- PIO_SM_SEARCH_BAR,
- PIO_SM_PRODUCTS,
- PIO_SM_FEATURED_PRODUCTS,
- PIO_SM_VIEW_CART,
- PIO_SM_SHARE_WITH_IMAGE,
- PIO_SM_EMAIL_SUPPORT
- PIO_SM_HELP
- PIO_SM_CHANGE_CURRENCY,
- PIO_SM_CHANGE_COUNTRY,
- PIO_SM_CHANGE_LANGUAGE
+ Set side menu items: array of options presented as PIOSideMenuButton:
  
- @param optionsTitle Title for this section
- @param oTitleColor Title color
- @param optionsColor Background color for this section
- @param accountsTitle Title for this section
- @param aTitleColor Title color
- @param accountsColor Background color for this section
+ PIOSMButtonTypeQualityGuarantee,
+ PIOSMButtonTypeAbout,
+ PIOSMButtonTypeHowItWorks,
+ PIOSMButtonTypePastOrders,
+ PIOSMButtonTypeOrderStatus
+ PIOSMButtonTypeContactUs
  
- @param info Array of PIOSideMenuButton objects of types:
- PIO_SM_PRICING_CHART,
- PIO_SM_SHARE_APP,
- PIO_SM_LIKE_US_FB,
- PIO_SM_RATE_APP,
- PIO_SM_ABOUT,
- PIO_SM_HOW_IT_WORKS,
- PIO_SM_PAST_ORDERS
- 
- @param infoTitle Title for this section
- @param infoTitleColor Title color
- @param infoColor Background color for this section
- @param backgroundImageForButtons Path to file
- 
+ By default all items are presented in side menu
  */
-- (void)sideMenuAddButtons:(NSArray *)buttons
-                   options:(NSArray *)options
-              optionsTitle:(NSString *)optionsTitle
-         optionsTitleColor:(UIColor *)oTitleColor
-              optionsColor:(UIColor *)optionsColor
-             accountsTitle:(NSString *)accountsTitle
-        accountsTitleColor:(UIColor *)aTitleColor
-             accountsColor:(UIColor *)accountsColor
-                      info:(NSArray *)info
-                 infoTitle:(NSString *)infoTitle
-            infoTitleColor:(UIColor *)iTitleColor
-                 infoColor:(UIColor *)infoColor
- backgroundImageForButtons:(NSString *)path;
+-(void)setSideMenuItems:(NSArray *)items;
 ```
 **Sample code:**
 ```Objective-C
-// Set main buttons for Side Menu
-PIOSideMenuButton *btnExit = [[PIOSideMenuButton alloc]initWithTitle:@"EXIT"
-                                                                type:PIO_SM_EXIT_BUTTON
-                                                            iconPath:[[NSBundle mainBundle] pathForResource:@"exit" ofType:@"png"]];
-btnExit.fontSize = 15.0;
-btnExit.textColor = [UIColor whiteColor];
-btnExit.useBoldFonts = YES;
-    
-PIOSideMenuButton *btnProducts = [[PIOSideMenuButton alloc]initWithTitle:@"ALL PRODUCTS"
-                                                                    type:PIO_SM_PRODUCTS
-                                                                iconPath:[[NSBundle mainBundle] pathForResource:@"btn_products" ofType:@"png"]];
-btnProducts.fontSize = 15.0;
-btnProducts.textColor = [UIColor blackColor];
-btnProducts.useBoldFonts = YES;
-    
-PIOSideMenuButton *btnViewCart = [[PIOSideMenuButton alloc]initWithTitle:@"MY CART"
-                                                                    type:PIO_SM_VIEW_CART
-                                                                iconPath:[[NSBundle mainBundle] pathForResource:@"btn_cart" ofType:@"png"]];
-btnViewCart.textColor = [UIColor blackColor];
-btnViewCart.fontSize = 15.0;
-btnViewCart.useBoldFonts = YES;
-btnViewCart.circlePoint = CGPointMake(37, 10);
-btnViewCart.circleColor = mgGreen;
-    
-PIOSideMenuButton *btnEmailSupport = [[PIOSideMenuButton alloc]initWithTitle:@"EMAIL ORDER SUPPORT"
-                                                                        type:PIO_SM_EMAIL_SUPPORT
-                                                                    iconPath:[[NSBundle mainBundle] pathForResource:@"btn_email_support" ofType:@"png"]];
-btnEmailSupport.dataHolder = @"support@yourapp.com";
-btnEmailSupport.textColor = [UIColor blackColor];
-btnEmailSupport.fontSize = 15.0;
-btnEmailSupport.useBoldFonts = YES;
-    
-NSArray *buttons = [NSArray arrayWithObjects:btnExit, btnProducts, btnViewCart, btnEmailSupport, nil];
-    
-// Options
-PIOSideMenuButton *btnChangeCurrency = [[PIOSideMenuButton alloc]initWithTitle:@"CHANGE CURRENCY"
-                                                                          type:PIO_SM_CHANGE_CURRENCY
-                                                                      iconPath:nil];
-btnChangeCurrency.fontSize = 12.0;
-btnChangeCurrency.textColor = [UIColor blackColor];
-btnChangeCurrency.textSecondColor = mgGrey;
-btnChangeCurrency.useBoldFonts = YES;
-    
-PIOSideMenuButton *btnChangeCountry = [[PIOSideMenuButton alloc]initWithTitle:@"CHANGE COUNTRY"
-                                                                         type:PIO_SM_CHANGE_COUNTRY
-                                                                     iconPath:nil];
-btnChangeCountry.fontSize = 12.0;
-btnChangeCountry.textColor = [UIColor blackColor];
-btnChangeCountry.useBoldFonts = YES;
-    
-PIOSideMenuButton *btnChangeLanguage = [[PIOSideMenuButton alloc]initWithTitle:@"CHANGE LANGUAGE"
-                                                                          type:PIO_SM_CHANGE_LANGUAGE
-                                                                      iconPath:[[NSBundle mainBundle] pathForResource:@"s_icon_language" ofType:@"png"]];
-btnChangeLanguage.fontSize = 12.0;
-btnChangeLanguage.textColor = [UIColor blackColor];
-btnChangeLanguage.useBoldFonts = YES;
-    
-NSArray *options = [NSArray arrayWithObjects:btnChangeCurrency, btnChangeCountry, btnChangeLanguage, nil];
-    
-// Infos
-PIOSideMenuButton *btnHowItWorks = [[PIOSideMenuButton alloc]initWithTitle:@"HOW IT WORKS"
-                                                                      type:PIO_SM_HOW_IT_WORKS
-                                                                  iconPath:[[NSBundle mainBundle] pathForResource:@"s_btn_info" ofType:@"png"]];
-btnHowItWorks.textColor = [UIColor blackColor];
-btnHowItWorks.fontSize = 15.0;
-btnHowItWorks.useBoldFonts = YES;
-    
-NSArray *infos = [NSArray arrayWithObjects:btnHowItWorks, nil];
-    
-[printIO sideMenuAddButtons:buttons
-                    options:options
-               optionsTitle:@"OPTIONS"
-          optionsTitleColor:[UIColor whiteColor]
-               optionsColor:[UIColor greyColor]
-              accountsTitle:@"SOCIAL ACCOUNTS"
-         accountsTitleColor:[UIColor whiteColor]
-              accountsColor:mgGrey
-                       info:infos
-                  infoTitle:@"INFO"
-             infoTitleColor:[UIColor whiteColor]
-                  infoColor:mgGrey
-  backgroundImageForButtons:[[NSBundle mainBundle]pathForResource:@"bcg" ofType:@"png"]];
-//... other customization
-[printIO open];
-```
-######- sideMenuHideOptionsHeader
-```Objective-C
-/**
- Hide 'Options' header in Side Menu
- */
-- (void)sideMenuHideOptionsHeader:(BOOL)set;
-```
-**Sample code:**
-```Objective-C
-[printIO sideMenuHideOptionsHeader:YES];
-//... other customization
-[printIO open];
-```
-######- sideMenuHideAccountsHeader
-```Objective-C
-/**
- Hide 'Accounts' header in Side Menu
- */
-- (void)sideMenuHideAccountsHeader:(BOOL)set;
-```
-**Sample code:**
-```Objective-C
-[printIO sideMenuHideAccountsHeader:YES];
-//... other customization
-[printIO open];
-```
-######- sideMenuHideInfoHeader
-```Objective-C
-/**
- Hide 'Info' header in Side Menu
- */
-- (void)sideMenuHideInfoHeader:(BOOL)set;
-```
-**Sample code:**
-```Objective-C
-[printIO sideMenuHideInfoHeader:YES];
-//... other customization
-[printIO open];
-```
-######- sideMenuShowOptionsAsList
-```Objective-C
-/**
- Show 'Options' section as a list
-
- @param set Default value is NO
- */
-- (void)sideMenuShowOptionsAsList:(BOOL)set;
-```
-**Sample code:**
-```Objective-C
-[printIO sideMenuShowOptionsAsList:YES];
+[printIO setSideMenuItems:items];
 //... other customization
 [printIO open];
 ```
