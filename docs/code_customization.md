@@ -11,7 +11,7 @@ Developer SDK Customization Reference
       - [*-presentFromViewController*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--presentfromviewcontroller)
       - [*-viewController*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--viewcontroller)
       - [*-close*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--close)
-      - [*-closeWithCompletionHandler*]()
+      - [*-closeWithCompletionHandler*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--closewithcompletionhandler)
       - [*-goToProductId*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--gotoproductid)
       - [*-goToProductId:withSKU*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--gotoproductidwithsku)
    - [**Utils**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#utils)
