@@ -45,6 +45,7 @@ Developer SDK Customization Reference
       - [*-setThreeButtonsNavigationBarSytle*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setthreebuttonsnavigationbarsytle)
       - [*-setNavigationBarSaveToCartBackgroundColor:titleColor:buttonBackgroundColor:buttonTitleColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarsavetocartbackgroundcolortitlecolorbuttonbackgroundcolorbuttontitlecolor)
       - [*-setBackButtonHidden*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setbackbuttonhidden)
+      - [*-setNavigationBarLogo*]()
    - [**Side menu**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#side-menu)
       - [*-useSideMenuWithMenuIcon:background*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--usesidemenuwithmenuiconbackground)
       - [*-sideMenuAddButtons*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sidemenuaddbuttons)
@@ -779,6 +780,21 @@ rightButtonBackgroundColor:(UIColor *)rColor
 **Sample code:**
 ```Objective-C
 [printIO setBackButtonHidden:YES];
+//... other customization
+[printIO open];
+```
+######- setNavigationBarLogo
+```Objective-C
+/**
+ Set and show logo in navigation bar
+ 
+ @param iconPath Path to image file
+ */
+-(void)setNavigationBarLogo:(NSString *)iconPath;
+```
+**Sample code:**
+```Objective-C
+[printIO setNavigationBarLogo:iconPath];
 //... other customization
 [printIO open];
 ```
