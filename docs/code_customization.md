@@ -53,7 +53,7 @@ Developer SDK Customization Reference
       - [*-hidePhotoSourcesInSideMenu*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidephotosourcesinsidemenu)
       - [*-setHowItWorksText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sethowitworkstext)
       - [*-setAboutText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setabouttext)
-      - [*-setContactUsEmail*]()
+      - [*-setContactUsEmail*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcontactusemail)
       - [*-hideVersionInSideMenu*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideversioninsidemenu)
    - [**Screen 'Choose Country'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-choose-country)
       - [*-setTitleForChooseCountryScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchoosecountryscreen)
