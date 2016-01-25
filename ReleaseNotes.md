@@ -1,7 +1,37 @@
 iOS Release Notes
 ==================================
 
-**1.6.5 (26)**
+**1.6.10 (27)**
+---
+**Features:**
+* New mechanism on Products steps
+* Adding products to new Products Steps
+* Added Clearing cached images
+
+####
+
+**Bug fixes:**
+* Support email after payment fails
+* Back button issue - when side menu is hidden, back button on products screen not responding
+* Removed Silver background from Image Preview on Products screen
+* Ability to open Select images screen few times
+* Wall Calendars - Scroll view on Step 2 is cutted on the bottom side
+* Options screen - Add separators between steps
+* Options screen - After scrolling, "back" button doesn't work correctly
+* Mementos - Names of templates overlapping each other
+* Coasters (4 different) - Missing +/- buttons on Customization screen
+* Folded Cards - Customization screen: Template name "Landscape Card" is splitted
+* Folded cards: Customization screen  - Back button doesn't work on Inside Left/Right Page
+* Missing text object on Admin Panel
+* Folded Cards - Default text is missing
+* Hardcover pb - when you enter on page with default text, keyboard should be automatically opened
+* Options screen - Ability to open option Photo Layout/Design few times
+* Photobooks - Processing pages dialog shows wrong numbers for pages
+* Customization screen - Missing "Layout" icon in the tab bar
+
+####
+
+**1.6.5 (27)**
 ---
 **Features:**
 ####
