@@ -817,6 +817,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
  PIOSMButtonTypePastOrders,
  PIOSMButtonTypeOrderStatus
  PIOSMButtonTypeContactUs
+ PIOSMButtonTypeHelp
  
  By default all items are presented in side menu
  */
