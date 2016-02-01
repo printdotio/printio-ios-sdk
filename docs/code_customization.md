@@ -72,6 +72,7 @@ Developer SDK Customization Reference
       - [*-setProductsScreenImageUrl*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setproductsscreenimageurl)
       - [*-setWhatsNewDailogText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setwhatsnewdailogtext)
       - [*-showBottomBarWithLikeUsURL:rateUsAppId:shareText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showbottombarwithlikeusurlrateusappidsharetext)
+      - [*-setImageInHero:url*]()
    - [**Screen 'Product Details'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-product-details)
       - [*-productDetailsShowTitleBelowNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
       - [*-productDetailsShowMenuBtnInNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
@@ -1189,6 +1190,22 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 **Sample code:**
 ```Objective-C
 [printIO showBottomBarWithLikeUsURL:url rateUsAppId:@"appId" shareText:@"share text"];
+//... other customization
+[printIO open];
+```
+######- setImageInHero:url
+```Objective-C
+/**
+ Add image obj in hero, which will lead to url, when user taps on it
+ 
+ @param image UIImage object
+ @param url NSURL object
+ */
+-(void)setImageInHero:(UIImage *)image url:(NSURL *)url;
+```
+**Sample code:**
+```Objective-C
+[self.printIO setImageInHero:[UIImage imageNamed:@"sample_image.jpg"] url:[NSURL URLWithString:@"youtube://www.youtube.com/watch?v=pLrS1q242eE"]];
 //... other customization
 [printIO open];
 ```
