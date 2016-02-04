@@ -75,4 +75,4 @@ Include the following line to make the SDK available to your code:
 
     #import <PrintIO/PrintIO.h>
 
-To launch the PrintIO widget, create and display an instance of PrintIO, look at [Basic Usage](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/quick_start_sample_code.md).
+To launch the PrintIO widget, create and display an instance of PrintIO, look at [Basic Usage](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/Step-2-quick_start_code.md).
