@@ -4,10 +4,9 @@ iOS Release Notes
 **1.7.0 (29)**
 ---
 **Features:**
-* New Hero Methods
-* Search function moved to the navigation bar
-* New Text Object Moving and Editing
-* Allowed partners to modify all titles and options in Side Menu
+* Ability to [pass in image with url](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setimageinherourl) to hero 
+* Search option moved to the navigation bar
+* New movable text object
 
 ####
 
@@ -21,37 +20,27 @@ iOS Release Notes
 * Hardcover photobooks - Default text  is cutted by the text selector
 * Shopping cart screen - Missing thumbnail after cache clearing
 * Add field to shipping info and small text adjustment
-* Search icon disappear after opening categories
-* Search products is possible while side menu is opened
-* 'setThreeButtonsNavigationBarSytle' doesn’t work as expected
-* Add Switch for "Jump To Shopping Cart" method
-* Add support for Hero to display images and YouTube link in SDK
-* Nav bar is broken when Method "Slide SideMenu from right" is turn ON
+* 'setThreeButtonsNavigationBarSytle' method fixed
+* Nav bar is broken when Method "Slide Side Menu from right" is enabled
 * Removed center menu button from navigation bar
 * Customization screen - Buttons on Options bar stops working after double taping on Custom text
 * Text feature with 2 rows: First row of text can't edit
-* Hero is broken when Method "Jump to Shopping Cart" is turn ON
+* Hero is broken when method "Jump to Shopping Cart" is enabled
 * Slide Side Menu from right - Shopping cart icon in nav bar is active
 * "Preset products in hero" method - App is crashing in production mode
 * Products screen is not automatically refreshed
-* New Text Object - Text is second raw  is cutted
-* When method "Preset product in hero" is ON, method "Image item in hereo" is not visible
 * Flat Cards: Deck the Halls template - Default text is barely visible
-* Show rate,share,like bottom bar is shown in the middle of the screen when Method "Jump to Shopping Cart" is turn ON
+* Show rate, share, like bottom bar is shown in the middle of the screen when Method "Jump to Shopping Cart" is enabled
 * Production mode - Wrong Preview Images for Grid View
 * Shopping Cart screen - Remove button is active while shopping cart is empty
-* After User Pulls to refresh Category, opens Products screen
+* After User Pulls to refresh Category, it opens Products screen
 * New Text Objects - Text object is "glued" to the layout
 * The ability to open more than one products or at once
 * Missing Preview image for two products on Products and details screen
-* ImgManip bug - text to text2 
-* New Text Object - On some Fonts, text is running out from the red box
-* While text increases, red box remains the same
+* ImgManip bug with text
 * Changing color of the text applies only on one row
-* Image item in Hero doesn't work if user doesn't have installed YouTube app on the device
 * Missing Fonts on Admin Panel
-* Products screen - Change Search icon
-* Side Menu - Version of SDK is not visible on iPhone 6 when Status bar is ON
+* Side Menu - Version of SDK is not visible on iPhone 6 when Status bar is visible
 
 ####
 
