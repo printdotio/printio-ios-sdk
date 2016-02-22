@@ -1130,7 +1130,7 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
  
  PIOProductsScreenV1
  PIOProductsScreenV2 - available from sdk v1.5.13(23). Dynamic products list view.
- 
+ PIOProductsScreenV3 - available from sdk v1.7.1(30). Products are in list/grid view.
  */
 -(void)setProductsScreenVersion:(PIOProductsScreenVersion)version;
 ```
