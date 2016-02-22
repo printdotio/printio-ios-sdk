@@ -1,6 +1,42 @@
 iOS Release Notes
 ==================================
 
+**1.7.4 (30)**
+---
+**Features:**
+* Added support for V2 Products screen
+* Movable Text Objects
+* Multiple Text Objects
+
+####
+
+**Bug fixes:**
+* Product Details screen - Duplicate "Est Domestic/International Arrival"
+* Product details screen - "Starting at" price is not refreshing when change country only on products from Hero
+* Photo Sources - Images are replicated during loading of the new images
+* V2 Products screen - Bottom bar overlapping last product in the list
+* Photobooks Movable Text Objects - Red Box should be opened on Selected Photo
+* Photobooks Movable Text Objects - By swiping text, causing the text is running out from the red box
+* Photobooks Movable Text Objects - Page picker disappear when close text object only for One Page - One Space pbooks
+* Photobooks Movable Text Objects - Red Box is opened empty on the opposite side of the text (only for "one page - one space" pbooks)
+* V2 screen is broken when methods "Use Custom fonts", "Jump to Shopping Cart" are turned on
+* V2 screen - Changing currency does not works good
+* Multiple Text Objects - Colors does not works after change font/color on new text object 
+* Multiple Text Objects - Long press for making new text object not working for "bag" products
+* Multiple Text Objects - Ability to edit non selected text object
+* Applied promo code is deleted when you return to Shopping Cart screen
+* Buttons on Customization screen stop working when you double taps few times on the text
+* Buttons on Select Address screen stop working when you go back from Payment screen 
+* Layflat - After deleting text object, text feature stop working 
+* Photobooks (one page - one space) - Holding the text, new text is made on opposite page 
+* Customization and Editor screen are broken after double taps on image and text 
+* Select Address screen - Ability to open delete/edit menu, on 2 or more items 
+* Select Address screen - If you select 3 different address at the same moment, app is crashing
+* Transparent image is copied over layout if user at once tap on text and image
+* Multiple Text Object - Shows error in ImgManip
+
+####
+
 **1.7.0 (29)**
 ---
 **Features:**
