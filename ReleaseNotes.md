@@ -4,27 +4,25 @@ iOS Release Notes
 **1.7.10 (31)**
 ---
 **Features:**
-* Added Overlay for multiple/movable text object help
-* Text feature - Added long press availability on zoom in and zoom out button
+* Added Help dialog for multiple/movable text
+* Text feature - Added long press gesture on zoom in and zoom out buttons
 
 ####
 
 **Bug fixes:**
 * Text - Wrong text object is opened for editing
-* Photobooks (one page - one space) - Can not make new text when open text object from the opposite side
+* Photobooks - Can not make new text when open text object from the opposite side
 * Turned off 3d preview for Mugs
 * Transparent image is copied over layout if user at once double taps on text and ABC button
-* Multiple Text Objects - "New Text" can not be edited on double tap (in certain situations)
-* Multiple Text Object - Shows error in ImgManip
-* Coupon re applying every time when you go to shopping cart screen
-* Coupons do not work
-* Multiple Text Objects - Text is moving from the saved position when flips pages on pbooks
-* Rename customer support email (to gooten) when payment failed twice
-* Rename Makeable labels into Gooten in whole SDK
+* Multiple Text Objects - new text object can not be edited on double tap
+* Coupon reapplying every time when you go to shopping cart screen
+* Multiple Text Objects - Text is moving from the saved position when flip pages on photobooks
+* Renamed customer support email when payment fails twice
+* Renamed Makeable labels into Gooten
 * Shopping Cart screen - Coupon savings field overlap "Remove" button on a few seconds
 * Multiple Text Objects - Text is moving from the saved position when flips pages on pbooks templates with more than one photo per page
 * Multiple Text Objects - "New Text" object is cutted when goes back from another page
-* Multiple Text Objects - Text have incorrect position on Admin Panel
+* Multiple Text Objects - Text have incorrect position in imgmanip
 
 ####
 
