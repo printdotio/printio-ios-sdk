@@ -37,3 +37,17 @@
  */
 -(void)gtAnalyticsOnEnterScreen:(GTAnalyticsScreen *)screen;
 ```
+
+Use this with any other analytics SDK (Google, Flurry...)
+
+Screens captured with analytics:
+
+```Objective-C
+kGTScreenCustomizeProduct;
+kGTScreenHome;
+kGTScreenPayment;
+kGTScreenPhotoSources;
+kGTScreenProductDetails;
+kGTScreenSideMenu;
+kGTScreenShoppingCart;
+```
