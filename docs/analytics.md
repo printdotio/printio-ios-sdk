@@ -40,7 +40,7 @@
 
 Use this with any other analytics SDK (Google, Flurry...)
 
-Screens captured with analytics:
+Screens captured with analytics (GTAnalyticsScreen):
 
 ```Objective-C
 kGTScreenCustomizeProduct;
@@ -52,7 +52,7 @@ kGTScreenSideMenu;
 kGTScreenShoppingCart;
 ```
 
-Events captured:
+Events captured (GTAnalyticsEvent):
 
 ```Objective-C
 // captures duration of time spent on screens
