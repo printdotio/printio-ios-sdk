@@ -1,4 +1,4 @@
-Analytics
+###**How to integrate Analytics**
 
 In order to use Analytics, you need to import GTAnalytics protocol:
 
