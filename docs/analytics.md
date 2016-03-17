@@ -8,6 +8,12 @@ In order to use Analytics, you need to import GTAnalytics protocol:
 @interface ViewController () <GTAnalyticsDelegate>
 ```
 
+Next step is to set delegate:
+
+```Objective-C
+[self.printIO setAnalyticsDelegate:self];
+```
+
 "GTAnalytics" protocol
 
 ```Objective-C
