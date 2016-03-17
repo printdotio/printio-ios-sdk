@@ -1,6 +1,6 @@
 ###**How to integrate Analytics**
 
-In order to use Analytics, you need to import GTAnalytics protocol:
+1. In order to use Analytics, you need to import GTAnalytics protocol:
 
 ```Objective-C
 #import <PrintIO/PrintIO.h>
@@ -8,13 +8,13 @@ In order to use Analytics, you need to import GTAnalytics protocol:
 @interface ViewController () <GTAnalyticsDelegate>
 ```
 
-Next step is to set delegate:
+2. Next step is to set delegate:
 
 ```Objective-C
 [self.printIO setAnalyticsDelegate:self];
 ```
 
-"GTAnalytics" protocol
+3. Write delegate methods to receive GTAnalyticsEvent or GTAnalyticsScreen.
 
 ```Objective-C
 /**
