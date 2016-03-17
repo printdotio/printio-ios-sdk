@@ -20,6 +20,7 @@ Our SDK allows you to select which features and functionality you need as well a
 - [Assets dimensions](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/Reference/dimensions_of_assets.md) list with all assets that can be changed, and required sizes.
 - [Custom photo sources](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/Photo-Sources/custom_photo_sources.md) option to add a custom photo source
 - [Apple Pay](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/apple_pay_integration.md) integration and configuration (supported from Gooten SDK version 1.4.0).
+- [Analytics](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/analytics.md) to collect user data and track custom events and screens (available from SDK version 1.7.15)
 - [Release notes](https://github.com/printdotio/printio-ios-sdk/blob/master/ReleaseNotes.md) new features and bug fixes by version
 
 ### Sample App SDK: For Reference
