@@ -1,5 +1,13 @@
 Analytics
 
+In order to use Analytics, you need to import GTAnalytics protocol:
+
+```Objective-C
+#import <PrintIO/PrintIO.h>
+
+@interface ViewController () <GTAnalyticsDelegate>
+```
+
 "GTAnalytics" protocol
 
 ```Objective-C
