@@ -32,6 +32,6 @@
     [Flurry endTimedEvent:event.name withParameters:@{@"value":event.value}];
 }
 ```
-
+####Sample code, GTAnalytics integration with Google Analytics.
 
 
