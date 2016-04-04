@@ -46,3 +46,25 @@
         gai.trackUncaughtExceptions = YES;  // report uncaught exceptions
         gai.logger.logLevel = kGAILogLevelVerbose;  // remove before app release
 ```
+#####Import GTAnalyticsDelegate methods
+```Obj-C
+#pragma mark - GTAnalytics delegate
+
+-(void)gtAnalyticsOnEnterScreen:(GTAnalyticsScreen *)screen{
+        id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+        [tracker set:screen.name value:@""];
+        [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
+}
+
+-(void)gtAnalyticsOnEvent:(GTAnalyticsEvent *)event{
+    [Flurry logEvent:event.name withParameters:@{@"value":event.value}];
+}
+
+-(void)gtAnalyticsOnTimedEvent:(GTAnalyticsEvent *)event{
+    [Flurry logEvent:event.name withParameters:@{@"value":event.value} timed:YES];
+}
+
+-(void)gtAnalyticsOnEndTimedEvent:(GTAnalyticsEvent *)event{
+    [Flurry endTimedEvent:event.name withParameters:@{@"value":event.value}];
+}
+```
