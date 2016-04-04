@@ -66,10 +66,15 @@
 }
 
 -(void)gtAnalyticsOnTimedEvent:(GTAnalyticsEvent *)event{
-    [Flurry logEvent:event.name withParameters:@{@"value":event.value} timed:YES];
+    
 }
 
 -(void)gtAnalyticsOnEndTimedEvent:(GTAnalyticsEvent *)event{
-    [Flurry endTimedEvent:event.name withParameters:@{@"value":event.value}];
+        id tracker = [[GAI sharedInstance] defaultTracker];
+
+        [tracker send:[[GAIDictionaryBuilder createTimingWithCategory:kCategory
+                                                             interval:@((NSUInteger)(self.loadTime * 1000))
+                                                                 name:event.name
+                                                                label:nil] build]];
 }
 ```
