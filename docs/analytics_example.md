@@ -66,11 +66,11 @@
 }
 
 -(void)gtAnalyticsOnTimedEvent:(GTAnalyticsEvent *)event{
-        self.eventDuration = ... // start measuring event duration
+        self.eventDuration = ...; // start measuring event duration
 }
 
 -(void)gtAnalyticsOnEndTimedEvent:(GTAnalyticsEvent *)event{
-        self.eventDuration = ... // end measuring event duration
+        self.eventDuration = ...; // end measuring event duration
         
         id tracker = [[GAI sharedInstance] defaultTracker];
 
