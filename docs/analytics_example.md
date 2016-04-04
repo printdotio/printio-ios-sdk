@@ -8,7 +8,7 @@
                                            stagingRecipeId:kStagingRecipeId];
         [self.printIO setAnalyticsDelegate:self];
         
-        // init Flurry
+        // init Flurry Analytics
         [Flurry startSession:kAPIKey];
 }
 ```
@@ -33,5 +33,16 @@
 }
 ```
 ####Sample code, GTAnalytics integration with Google Analytics.
-
-
+```Obj-C
+-(void)viewDidLoad{
+        // init printIO SDK
+        self.printIO = [[PrintIO alloc]initWithEnvironment:PRINTIO_STAGING 
+                                        productionRecipeId:kProductionRecipeId 
+                                           stagingRecipeId:kStagingRecipeId];
+        [self.printIO setAnalyticsDelegate:self];
+        
+        // init Google Analytics
+        GAI *gai = [GAI sharedInstance];
+        gai.trackUncaughtExceptions = YES;  // report uncaught exceptions
+        gai.logger.logLevel = kGAILogLevelVerbose;  // remove before app release
+```
