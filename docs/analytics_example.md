@@ -66,14 +66,16 @@
 }
 
 -(void)gtAnalyticsOnTimedEvent:(GTAnalyticsEvent *)event{
-    
+        self.eventDuration = ... // start measuring event duration
 }
 
 -(void)gtAnalyticsOnEndTimedEvent:(GTAnalyticsEvent *)event{
+        self.eventDuration = ... // end measuring event duration
+        
         id tracker = [[GAI sharedInstance] defaultTracker];
 
         [tracker send:[[GAIDictionaryBuilder createTimingWithCategory:kCategory
-                                                             interval:@((NSUInteger)(self.loadTime * 1000))
+                                                             interval:@((NSUInteger)(self.eventDuration * 1000))
                                                                  name:event.name
                                                                 label:nil] build]];
 }
