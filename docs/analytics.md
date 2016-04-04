@@ -129,3 +129,5 @@ kGTEventSKUSelected; // tracks sku of selected product which will be customized
 kGTEventTextFeature; //  tracks when user enters text on product
 kGTEventUseShippingAddress;// tracks when user sets Shipping Address as Billing Address under Credit Card screen
 ```
+
+Look at [sample code](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/analytics_example.md), how to use our analytics with Google Analytics or Flurry.
