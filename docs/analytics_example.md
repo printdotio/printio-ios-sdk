@@ -17,19 +17,19 @@
 #pragma mark - GTAnalytics delegate
 
 -(void)gtAnalyticsOnEnterScreen:(GTAnalyticsScreen *)screen{
-    [Flurry logEvent:screen.name];
+        [Flurry logEvent:screen.name];
 }
 
 -(void)gtAnalyticsOnEvent:(GTAnalyticsEvent *)event{
-    [Flurry logEvent:event.name withParameters:@{@"value":event.value}];
+        [Flurry logEvent:event.name withParameters:@{@"value":event.value}];
 }
 
 -(void)gtAnalyticsOnTimedEvent:(GTAnalyticsEvent *)event{
-    [Flurry logEvent:event.name withParameters:@{@"value":event.value} timed:YES];
+        [Flurry logEvent:event.name withParameters:@{@"value":event.value} timed:YES];
 }
 
 -(void)gtAnalyticsOnEndTimedEvent:(GTAnalyticsEvent *)event{
-    [Flurry endTimedEvent:event.name withParameters:@{@"value":event.value}];
+        [Flurry endTimedEvent:event.name withParameters:@{@"value":event.value}];
 }
 ```
 ####Sample code, GTAnalytics integration with Google Analytics.
@@ -57,7 +57,12 @@
 }
 
 -(void)gtAnalyticsOnEvent:(GTAnalyticsEvent *)event{
-    [Flurry logEvent:event.name withParameters:@{@"value":event.value}];
+        id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+
+        [tracker send:[[GAIDictionaryBuilder createEventWithCategory:kCategory
+                                                              action:kAction
+                                                               label:event.name
+                                                               value:event.value] build]];
 }
 
 -(void)gtAnalyticsOnTimedEvent:(GTAnalyticsEvent *)event{
