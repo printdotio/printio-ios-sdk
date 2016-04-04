@@ -73,46 +73,59 @@ kGTScreenShoppingCart;
 Events captured (GTAnalyticsEvent):
 
 ```Objective-C
-// captures duration of time spent on screens
-kGTEventEnterHomeScreen; // captures time spent on home screen
-kGTEventEnterSideMenu; // captures time spent in side menu
-kGTEventEnterProductDeatils; // captures time spent on product details screen
-kGTEventEnterShoppingCart; // captures time spent on Shopping Cart screen
-kGTEventEnterSearchProduct; // captures time spent on search
+// tracks time spent on screens
 kGTEventEnterCheckout; // captures time spent on Checkout screen
 kGTEventEnterCreditCard; // captures time spent on Credit Card screen
+kGTEventEnterCustomization; // captures time spent on Product Customization
+kGTEventEnterHomeScreen; // captures time spent on home screen
+kGTEventEnterImageEditor; // captures time spent on Image Editor screen
+kGTEventEnterProductDetails; // captures time spent on product details screen
+kGTEventEnterSideMenu; // captures time spent in side menu
+kGTEventEnterShoppingCart; // captures time spent on Shopping Cart screen
 
-kGTEventSideMenuSelectPhotoSource; // captures selected photo source inside side menu (value)
-kGTEventSideMenuCurrencyChanged; // fired when currency is changed (value)
-kGTEventSideMenuCountryChanged; // fired when county has beed changed inside side menu (value)
-kGTEventSideMenuTapOnContactUs; // options under Information section
-kGTEventSideMenuTapOnQualityGuarantee; // options under Information section
-kGTEventSideMenuTapOnOrderStatus; // options under Information section
-kGTEventSideMenuTapOnPastOrders; // options under Information section
-kGTEventSideMenuTapOnHowItWorks; // options under Information section
-kGTEventSideMenuTapOnAboutUs; // options under Information section
-kGTEventSideMenuTapOnHelp; // options under Information section
-kGTEventOrderStatusView; // captures when user tap on View Order Status inside Order Status screen
-kGTEventSearchCanceled; // captures when Search has been canceled
-kGTEventSearchProduct; // captures search product id
-kGTEventHomeChangeShippingCountry; // captures if shipping country is changed inside home screen
-kGTEventHomeHeroSwipes; // fired if user swipes through all products listed in hero
-kGTEventHomeHeroProductSelected; // captures selected product inside hero (value)
-kGTEventHomeCategorySelected; // captures selected category inside Home screen (value), and time spent in category
-kGTEventBackToHome; // captures when backs from category to home screen
-kGTEventMakeIt; // captures when user taps on Make It button with product id
-kGTEventSKUSelected; // captures sku of selected product which will be customized
-kGTEventCartQuantity; // captures when user changes quantity of product
-kGTEventKeepShopping; // captures tap on Keep Shopping button in Shopping cart
-kGTEventEnterPromoCode; // captures when user taps on Promo code button in Shopping cart
-kGTEventApplyPromoCode; // captures when user taps on Apply promo code in Shopping cart
-kGTEventRemoveItem; // captures when user taps on Remove item button in Shopping cart
-kGTEventDeleteProduct; // captures when user deletes product (value)
-kGTEventChooseFromContacts; // captures when user taps on choose from contacts
-kGTEventSaveAddress; // captures when user taps on Save Address button
-kGTEventPayWithPayPal; // captures when user uses PayPal payment option
-kGTEventPayWithCreditCard; // captures when user uses Credit Card payment option
-kGTEventPayWithApplePay; // captures when user uses ApplePay payment option
-kGTEventUseShippingAddress;// captures when user uses Shipping Address as Billing Address in Credit Card screen
-kGTEventPlaceOrder; // captures when user place an order
+// events
+kGTEventApplyPromoCode; // tracks when user taps on Apply promo code in Shopping cart
+kGTEventBackToHome; // tracks when backs from category to home screen
+kGTEventCartQuantity; // tracks when user changes quantity of product
+kGTEventChooseFromContacts; // tracks when user taps on 'Choose from contacts' button
+kGTEventCustomizeProductImageEffects; // tracks when user taps on Image Effects
+kGTEventCustomizeProductChangeTemplate; // tracks when user changes product template
+kGTEventCustomizeProductShuffleImages; // tracks when user shuffles images
+kGTEventCustomizeProductBackground; // tracks when user taps to change product's background color
+kGTEventCustomizeProductAddMorePhotos; // tracks when user taps on 'Add more photos' (plus) button
+kGTEventCustomizeProductAutoArrangePhotos; // tracks when user selects 'Auto Arrange' photos option
+kGTEventCustomizeProductManualArrangePhotos; // tracks when user selects 'Manual Arrange' photos option
+kGTEventDeleteProduct; // tracks when user deletes product (with value, productId)
+kGTEventEnterPromoCode; // tracks when user taps on Promo code button in Shopping cart
+kGTEventHomeChangeShippingCountry; // tracks if shipping country is changed under home screen
+kGTEventHomeHeroSwipes; // tracks if user swipes through all products listed in hero
+kGTEventHomeHeroProductSelected; // tracks selected product inside hero (value, productid)
+kGTEventHomeCategorySelected; // tracks selected category inside Home screen (value, catId)
+kGTEventLikeUs; // tracks when user taps on 'Like Us' on Facebook button
+kGTEventKeepShopping; // tracks tap on Keep Shopping button in Shopping cart
+kGTEventMakeIt; // tracks when user taps on 'Make It' button with product id
+kGTEventOrderStatusView; // tracks when user tap on View Order Status inside Order Status screen
+kGTEventPayWithPayPal; // tracks when user uses PayPal payment option
+kGTEventPayWithCreditCard; // tracks when user uses Credit Card payment option
+kGTEventPayWithApplePay; // tracks when user uses ApplePay payment option
+kGTEventPlaceOrder; // track when user place an order
+kGTEventRateApp; // tracks when user taps on 'Rate App' button
+kGTEventRemoveItem; // tracks when user taps on Remove item button in Shopping cart
+kGTEventSaveAddress; // tracks when user taps on Save Address button
+kGTEventSearchProduct; // tracks search productId
+kGTEventSideMenuSelectPhotoSource; // selected photo source under side menu (with value)
+kGTEventSideMenuCurrencyChanged; // tracks when currency is changed (value, currency code)
+kGTEventSideMenuCountryChanged; // tracks when county has beed changed inside side menu (value, country code)
+kGTEventSideMenuTapOnContactUs; // tracks when user taps on 'Contact Us' under Information section
+kGTEventSideMenuTapOnQualityGuarantee; // tracks when user taps on 'Quality Guarantee' under Information section
+kGTEventSideMenuTapOnOrderStatus; // tracks when user taps on 'Order Status' under Information section
+kGTEventSideMenuTapOnPastOrders; // tracks when user taps on 'Past Orders' under Information section
+kGTEventSideMenuTapOnHowItWorks; // tracks when user taps on 'How It Works' under Information section
+kGTEventSideMenuTapOnAboutUs; // tracks when user taps on 'About Us' under Information section
+kGTEventSideMenuTapOnHelp; // tracks when user taps on 'Help' under Information section
+kGTEventSideMenuTapOnExit; //  tracks when user taps on Exit button under Side Menu
+kGTEventShareApp; // tracks when user taps on 'Share' App button
+kGTEventSKUSelected; // tracks sku of selected product which will be customized
+kGTEventTextFeature; //  tracks when user enters text on product
+kGTEventUseShippingAddress;// tracks when user sets Shipping Address as Billing Address under Credit Card screen
 ```
