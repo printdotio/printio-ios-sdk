@@ -23,7 +23,7 @@
 -(void)gtAnalyticsOnEvent:(GTAnalyticsEvent *)event;
 
 /**
- Captures duration of event
+ Track duration of event
  */
 -(void)gtAnalyticsOnTimedEvent:(GTAnalyticsEvent *)event;
 
@@ -33,7 +33,7 @@
 -(void)gtAnalyticsOnEndTimedEvent:(GTAnalyticsEvent *)event;
 
 /**
- Captures on which screen user has landed
+ Tracks on which screen user has landed
  */
 -(void)gtAnalyticsOnEnterScreen:(GTAnalyticsScreen *)screen;
 ```
@@ -43,12 +43,30 @@ Use this with any other analytics SDK (Google, Flurry...)
 Screens captured with analytics (GTAnalyticsScreen):
 
 ```Objective-C
+kGTScreenAboutUs;
+kGTScreenAddAddress;
+kGTScreenAddressValidation;
+kGTScreenChooseCountry;
+kGTScreenChooseCurrency;
+kGTScreenColorPicker;
 kGTScreenCustomizeProduct;
+kGTScreenCustomizeProductLandscape;
+kGTScreenCustomizeProductList;
 kGTScreenHome;
+kGTScreenHowItWorks;
+kGTScreenImageEditor;
+kGTScreenImagePreview;
+kGTScreenOrderCompleted;
+kGTScreenOrderHistory;
+kGTScreenOrderStatus;
 kGTScreenPayment;
 kGTScreenPhotoSources;
 kGTScreenProductDetails;
+kGTScreenQualityGuarantee;
+kGTScreenSelectAddress;
+kGTScreenSelectColor;
 kGTScreenSideMenu;
+kGTScreenShipmentReview;
 kGTScreenShoppingCart;
 ```
 
