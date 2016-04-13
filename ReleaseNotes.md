@@ -6,7 +6,7 @@ iOS Release Notes
 **Features:**
 * Limited text object to be displayed only on printable area
 * Removed AppBoy from SDK
-* Made Internal GA to work under GTAnalytics
+* Custom analytics [GTAnalytics](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/analytics.md)
 * Added Analytics Documentation with sample code
 * Improvee Analytics Events #124
 * Added meta to order
