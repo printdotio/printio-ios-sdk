@@ -1,6 +1,38 @@
 iOS Release Notes
 ==================================
 
+**1.7.21 (32)**
+---
+**Features:**
+* Limited text object to be displayed only on printable area
+* Removed AppBoy from SDK
+* Made Internal GA to work under GTAnalytics
+* Added Analytics Documentation with sample code
+* Improvee Analytics Events #124
+* Added meta to order
+
+####
+
+**Bug fixes:**
+* Puzzle - Remove function for automatically selecting first variant
+* Removed Shopping Cart Icon from screens
+* Edit Phone Case from Shopping Cart - Missing Loading Dialog
+* Customization screen - layout button overlapping design/layout option
+* Preview images for Phone model are not the same size
+* Flip Flops - Added some space between dimensions on Step 2
+* Disable multi touch in Side Menu
+* Disable multi touch on Payment screen
+* Body Pillows - Add "Use same look" dialog on Customization screen
+* Subtotal price is cut off on Order Details screen
+* Text alignments issue on Order Details & Past Orders screen
+* Phone Cases - "Sides of images are wrapped" text is to close to the Layout
+* Change Title bar Color ON - Missing arrow icons on Customization screen
+* Order Completed Screen - Remove white space if logo is not added
+* Side menu should stay opened after logging in Photo source
+* Customization screen - Custom Color Picker doesn't apply color on the Layout
+
+####
+
 **1.7.10 (31)**
 ---
 **Features:**
