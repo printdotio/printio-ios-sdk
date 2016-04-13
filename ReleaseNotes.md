@@ -4,7 +4,7 @@ iOS Release Notes
 **1.7.21 (32)**
 ---
 **Features:**
-* Text object position limiteg only on printable area
+* Text object position limited only on printable area
 * Removed AppBoy from SDK
 * Custom analytics [GTAnalytics](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/analytics.md)
 * Added META info to order
