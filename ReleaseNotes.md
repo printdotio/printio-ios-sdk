@@ -1,6 +1,11 @@
 iOS Release Notes
 ==================================
 
+**1.7.22 (32)**
+---
+**Bug fixes:**
+* fixed 'setDefaultPhotoSource' for custom photo sources
+
 **1.7.21 (32)**
 ---
 **Features:**
