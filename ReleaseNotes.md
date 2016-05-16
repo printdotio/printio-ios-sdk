@@ -1,7 +1,7 @@
 iOS Release Notes
 ==================================
 
-**1.8.0 (33)**
+**1.8.0 (33) - coming soon**
 ---
 **Features:**
 * Multiple coupons
