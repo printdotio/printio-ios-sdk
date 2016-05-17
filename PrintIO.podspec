@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'Commercial', :file => 'LICENSE.md' }
     s.author           = { "PrintIO" => "boro@gooten.com" }
     s.source           = { :git => "https://github.com/printdotio/printio-ios-sdk.git", :branch => "master", :tag => '1.8.0' }
-    s.social_media_url = "https://twitter.com/gooten"
+    s.social_media_url = "https://twitter.com/gooteninc"
     s.platform     = :ios, '7.1'
     s.requires_arc = true
 
