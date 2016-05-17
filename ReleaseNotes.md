@@ -4,28 +4,18 @@ iOS Release Notes
 **1.8.0 (33) - coming soon**
 ---
 **Features:**
-* Multiple coupons
+* Multiple coupons added
 * Custom categories
-* Analytics improvement
-* Home screen - Corrected imageview position
+* Analytics improvement (ECommerce, Device info, Payee name, RecipeId...)
 * Added "Phone Model" in meta info
+* Added new product: Accessory Pouches
 
 ####
 
 **Bug fixes:**
 
-* Multiple coupons - Savings amount disappears after taping on "Savings"
-* Multiple Coupons - Close "coupon view" after user click Apply button
-* Multiple coupons - Apply button does not works correctly
-* Multiple Coupons - Applied coupon cannot be deleted from the cart
-* Multiple coupons - After deleting coupon, coupons list is automatically closing
-* Multiple Coupons - Added coupon is automatically applied when open Shopping Cart screen
-* Multiple coupons - After applying a coupon, list automatically closes
-* Multiple coupons - Coupons list is closing automatically
-* Choose Options screen: Accessory Pouches - Missing all Options
 * Shopping Cart screen - User is able to delete item while "coupon view" is opened
 * Dismiss keyboard issues
-* Added Coupons are not saved after re entering Shopping cart screen
 * Phone Case - Transparent image has white background on transparent template
 * Phone Case - Transparent template is crashing on Save (to cart)
 * Choose Options screen: Missing all Options for two products
@@ -34,7 +24,8 @@ iOS Release Notes
 * GTAnalytics Typo
 * Select Address screen - Ability to tap two times on the same address item
 * Photobooks - Second and Third row of default text cannot edit
-
+* Home screen - Fixed imageview position
+* 
 ####
 
 **1.7.22 (32)**
