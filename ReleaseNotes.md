@@ -25,7 +25,7 @@ iOS Release Notes
 * Select Address screen - Ability to tap two times on the same address item
 * Photobooks - Second and Third row of default text cannot edit
 * Home screen - Fixed imageview position
-* 
+
 ####
 
 **1.7.22 (32)**
