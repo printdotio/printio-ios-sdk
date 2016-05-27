@@ -1,6 +1,11 @@
 iOS Release Notes
 ==================================
 
+**1.8.1 (33)**
+---
+**Bug fixes:**
+* Fixed Dopp Kits product id
+
 **1.8.0 (33)**
 ---
 **Features:**
