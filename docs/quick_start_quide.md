@@ -10,3 +10,4 @@ target 'MyProject' do
 	pod 'PrintIO'
 end
 ```
+4. Save your Podfile and run ```$ pod install```
