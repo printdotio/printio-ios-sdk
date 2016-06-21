@@ -24,4 +24,5 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 
 After launching SDK, you should get this screen:
 
+
 ![](https://dl.dropboxusercontent.com/u/19321066/printIO/wosettings.png)
