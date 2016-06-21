@@ -21,3 +21,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
                                              isInTestMode:YES; // in testing mode orders are submitted without payment verification
 [printIO open];
 ```
+
+After launching SDK, you should get this screen:
+
+![](https://dl.dropboxusercontent.com/u/19321066/printIO/wosettings.png)
