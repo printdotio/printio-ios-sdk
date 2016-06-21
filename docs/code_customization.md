@@ -55,6 +55,7 @@ Developer SDK Customization Reference
       - [*-setAboutText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setabouttext)
       - [*-setContactUsEmail*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcontactusemail)
       - [*-hideVersionInSideMenu*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideversioninsidemenu)
+      - [*-defaultSideMenuItems*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--defaultsidemenuitems)
    - [**Screen 'Choose Country'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-choose-country)
       - [*-setTitleForChooseCountryScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchoosecountryscreen)
       - [*-hideSearchIconInChooseCountryScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidesearchiconinchoosecountryscreen)
@@ -827,6 +828,21 @@ rightButtonBackgroundColor:(UIColor *)rColor
 **Sample code:**
 ```Objective-C
 [printIO setSideMenuItems:items];
+//... other customization
+[printIO open];
+```
+######- defaultSideMenuItems
+```Objective-C
+/**
+ Get default side menu items, which you can edit and customize
+ 
+ @return Array of PIOSideMenuButton objects
+ */
+- (NSArray *)defaultSideMenuItems;
+```
+**Sample code:**
+```Objective-C
+[printIO defaultSideMenuItems:items];
 //... other customization
 [printIO open];
 ```
