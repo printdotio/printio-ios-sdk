@@ -14,11 +14,9 @@ end
 
 ## Quick Launch Code
 
-Example code for launching Gooten SDK from view controller:
+Example code for launching Gooten SDK from view controller (below is sample recipeid, you can provide recipeId from Gooten):
 ```Objective-C
-PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
-                                              environment:PRINTIO_PRODUCTION
-                                       productionRecipeId:@"f255af6f-9614-4fe2-aa8b-1b77b936d9d6"
-                                          stagingRecipeId:@"00000000-0000-0000-0000-000000000000"];
+PrintIO *printIO = [[PrintIO alloc]initWithViewController:self 
+						 recipeId:@"f255af6f-9614-4fe2-aa8b-1b77b936d9d6"];
 [printIO open];
 ```
