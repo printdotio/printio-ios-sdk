@@ -42,7 +42,7 @@ Developer SDK Customization Reference
       - [*-setNavigationBarBackgroundForCustomizeProduct*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarbackgroundforcustomizeproduct)
       - [*-setIconForBackButton*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforbackbutton)
       - [*-setStatusBarDark:hidden*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setstatusbardarkhidden)
-      - [*-setThreeButtonsNavigationBarSytle*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setthreebuttonsnavigationbarsytle)
+      - [*-setThreeButtonsNavigationBarStyle*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setthreebuttonsnavigationbarstyle)
       - [*-setNavigationBarSaveToCartBackgroundColor:titleColor:buttonBackgroundColor:buttonTitleColor*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarsavetocartbackgroundcolortitlecolorbuttonbackgroundcolorbuttontitlecolor)
       - [*-setBackButtonHidden*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setbackbuttonhidden)
       - [*-setNavigationBarLogo*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setnavigationbarlogo)
@@ -721,18 +721,18 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setThreeButtonsNavigationBarSytle
+######- setThreeButtonsNavigationBarStyle
 ```Objective-C
 /**
  Set three buttons Back, Menu and Cart button in navigation bar for Featured Products screen
 
  @param set Default value is NO
  */
-- (void)setThreeButtonsNavigationBarSytle:(BOOL)set;
+- (void)setThreeButtonsNavigationBarStyle:(BOOL)set;
 ```
 **Sample code:**
 ```Objective-C
-[printIO setThreeButtonsNavigationBarSytle:YES];
+[printIO setThreeButtonsNavigationBarStyle:YES];
 //... other customization
 [printIO open];
 ```
