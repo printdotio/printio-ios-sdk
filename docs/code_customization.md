@@ -878,21 +878,6 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- sideMenuBackgroungImage
-```Objective-C
-/**
- Set background image on Side Menu
-
- @param path Image path
- */
-- (void)sideMenuBackgroungImage:(NSString *)path;
-```
-**Sample code:**
-```Objective-C
-[printIO sideMenuBackgroungImage:[[NSBundle mainBundle]pathForResource:@"sm_bcg" ofType:@"png"]];
-//... other customization
-[printIO open];
-```
 ######- setHowItWorksText
 ```Objective-C
 /**
