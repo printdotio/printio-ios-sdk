@@ -49,13 +49,13 @@ Developer SDK Customization Reference
    - [**Side menu**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#side-menu)
       - [*-useSideMenuWithMenuIcon*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--usesidemenuwithmenuicon)
       - [*-setSideMenuItems*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setsidemenuitems)
+      - [*-defaultSideMenuItems*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--defaultsidemenuitems)
       - [*-slideSideMenuFromRight*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--slidesidemenufromright)
       - [*-hidePhotoSourcesInSideMenu*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidephotosourcesinsidemenu)
       - [*-setHowItWorksText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--sethowitworkstext)
       - [*-setAboutText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setabouttext)
       - [*-setContactUsEmail*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setcontactusemail)
       - [*-hideVersionInSideMenu*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hideversioninsidemenu)
-      - [*-defaultSideMenuItems*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--defaultsidemenuitems)
    - [**Screen 'Choose Country'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-choose-country)
       - [*-setTitleForChooseCountryScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settitleforchoosecountryscreen)
       - [*-hideSearchIconInChooseCountryScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidesearchiconinchoosecountryscreen)
@@ -73,6 +73,7 @@ Developer SDK Customization Reference
       - [*-setProductsScreenImageUrl*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setproductsscreenimageurl)
       - [*-setWhatsNewDailogText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setwhatsnewdailogtext)
       - [*-showBottomBarWithLikeUsURL:rateUsAppId:shareText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showbottombarwithlikeusurlrateusappidsharetext)
+      - [*-setProductsInHero*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setproductsinhero)
       - [*-setImageInHero:url*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setimageinherourl)
    - [**Screen 'Product Details'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-product-details)
       - [*-productDetailsShowTitleBelowNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
@@ -1206,6 +1207,22 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 **Sample code:**
 ```Objective-C
 [printIO showBottomBarWithLikeUsURL:url rateUsAppId:@"appId" shareText:@"share text"];
+//... other customization
+[printIO open];
+```
+######- setProductsInHero
+```Objective-C
+/**
+ Set which products will be in hero, on Products page, by providing product ids.
+ Max number of products is five.
+ 
+ @param productsIds Array of product ids
+ */
+-(void)setProductsInHero:(NSArray *)productsIds;
+```
+**Sample code:**
+```Objective-C
+[self.printIO productsInHero:[[NSNumber numberWithInt:PRODUCT_PHONE_CASES()], [NSNumber numberWithInt:PRODUCT_TABLET_CASES()]];
 //... other customization
 [printIO open];
 ```
