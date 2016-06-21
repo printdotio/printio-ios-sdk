@@ -18,6 +18,6 @@ Example code for launching Gooten SDK from view controller (below is sample reci
 ```
 PrintIO *printIO = [[PrintIO alloc]initWithViewController:self 
                                                  recipeId:@"f255af6f-9614-4fe2-aa8b-1b77b936d9d6"
-                                             isInTestMode:NO;
+                                             isInTestMode:YES; // in testing mode orders are submitted without payment verification
 [printIO open];
 ```
