@@ -112,6 +112,10 @@ Specific Page Methods
 
 - [**setPriceTitleHidden**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpricetitlehidden)
 
+#### B5. Set retail discount percent for product details screen.
+
+- [**setRetailDiscountPercent**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setretaildiscountpercent)
+
 ---
 
 ## C. Choose Options
