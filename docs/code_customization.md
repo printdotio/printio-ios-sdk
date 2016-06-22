@@ -1292,7 +1292,7 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 ######- setRetailDiscountPercent
 ```Objective-C
 /**
- Set retail discont percent for product details screen
+ Set retail discount percent for product details screen
  
  @param percent 
  */
