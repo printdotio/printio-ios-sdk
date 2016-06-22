@@ -4,7 +4,7 @@ Developer SDK Customization Reference
    - [**Initialization**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#initialization)
       - [*-initWithRecipeId*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithrecipeid)
       - [*-initWithViewController*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithviewcontroller)
-      - [*-setIsInTestMode*]()
+      - [*-setIsInTestMode*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setisintestmode)
       - [*-setIsRootController*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setisrootcontroller)
    - [**Opening and closing**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#opening-and-closing)
       - [*-open*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--open)
