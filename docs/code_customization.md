@@ -2,7 +2,7 @@ Developer SDK Customization Reference
 =====================================
 
    - [**Initialization**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#initialization)
-      - [*-initWithEnvironment*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithenvironment)
+      - [*-initWithRecipeId*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initWithRecipeId)
       - [*-initWithViewController*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithviewcontroller)
       - [*-setIsRootController*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setisrootcontroller)
    - [**Opening and closing**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#opening-and-closing)
@@ -160,46 +160,36 @@ Developer SDK Customization Reference
 
 ### Initialization
 
-######- initWithEnvironment
+######- initWithRecipeId
 ``` Objective-C
 /**
  Init PrintIO widget. To get view controller, use '[self.printIO viewController]'
-
- @param type Set environment to staging or live, use PRINTIO_STAGING or PRINTIO_PRODUCTION
- @param pRecipeId Production recipeId provided by PrintIO
- @param sRecipeId Staging recipeId provided by PrintIO
+ 
+ @param recipeId Recipe Id provided by Gooten
+ @param isInTestMode Default value is NO
  */
-- (id)initWithEnvironment:(int)type
-       productionRecipeId:(NSString *)pRecipeId
-          stagingRecipeId:(NSString *)sRecipeId;
+-(id)initWithRecipeId:(NSString *)recipeId isInTestMode:(BOOL)isInTestMode;
 ```
 **Sample code:**
 ```Objective-C
-PrintIO *printIO = [[PrintIO alloc]initWithEnvironment:PRINTIO_STAGING
-                                    productionRecipeId:nil
-                                       stagingRecipeId:@"00000000-0000-0000-0000-000000000000"];
+PrintIO *printIO = [[PrintIO alloc]initWithRecipeId:kRecipeID isInTestMode:YES];
 ```
 ######- initWithViewController
 ``` Objective-C
 /**
  Init PrintIO widget with parent view controller.
-
+ 
  @param viewController Parent view controller. From this view controller, widget will open.
- @param type Set environment to staging or live, use PRINTIO_STAGING or PRINTIO_PRODUCTION
- @param pRecipeId Production recipeId provided by PrintIO
- @param sRecipeId Staging recipeId provided by PrintIO
+ @param recipeId Production recipeId provided by Gooten
+ @param isInTestMode Default value is
  */
-- (id)initWithViewController:(id)viewController
-                 environment:(int)type
-          productionRecipeId:(NSString *)pRecipeId
-             stagingRecipeId:(NSString *)sRecipeId;
+-(id)initWithViewController:(id)viewController recipeId:(NSString *)recipeId isInTestMode:(BOOL)isInTestMode;
 ```
 **Sample code:**
 ```Objective-C
 PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
-                                              environment:PRINTIO_STAGING
-                                       productionRecipeId:nil
-                                          stagingRecipeId:@"00000000-0000-0000-0000-000000000000"];
+                                                 recipeId:kRecipeID
+                                             isInTestMode:YES];
 ```
 ######- setIsRootController
 ```Objective-C
