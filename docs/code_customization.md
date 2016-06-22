@@ -4,6 +4,7 @@ Developer SDK Customization Reference
    - [**Initialization**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#initialization)
       - [*-initWithRecipeId*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithrecipeid)
       - [*-initWithViewController*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithviewcontroller)
+      - [*-setIsInTestMode*]()
       - [*-setIsRootController*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setisrootcontroller)
    - [**Opening and closing**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#opening-and-closing)
       - [*-open*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--open)
@@ -190,6 +191,21 @@ PrintIO *printIO = [[PrintIO alloc]initWithRecipeId:kRecipeID isInTestMode:YES];
 PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
                                                  recipeId:kRecipeID
                                              isInTestMode:YES];
+```
+######- setIsInTestMode
+```Objective-C
+/**
+ Use to place live orders in production mode, without payment verification
+ 
+ @param testMode Default value is NO
+ */
+-(void)setIsInTestMode:(BOOL)testMode;
+```
+**Sample code:**
+```Objective-C
+[self.printIO setIsInTestMode:YES];
+// other customization ...
+[self.printIO open];
 ```
 ######- setIsRootController
 ```Objective-C
