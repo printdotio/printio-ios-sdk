@@ -62,6 +62,38 @@ Specific Page Methods
 
 - [**setFeaturedProductsDefaultView**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsdefaultview)
 
+#### A8. Hide coming soon products from product's list. Default value is NO.
+
+- [**hideComingSoonProducts**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecomingsoonproducts)
+
+#### A9. Set available products. List of product ids, which will be shown in product's list.
+
+- [**setAvailableProducts**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setavailableproducts)
+
+#### A10. Change version of Products Screen. Default screen version is PIOProductsScreenV1.
+
+- [**setProductsScreenVersion**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setproductsscreenversion)
+
+#### A11. Set image url for Dymanic products list view. In order to use this method, PIOProductsScreenV2 needs to be enabled. Available from sdk v1.5.13(23)
+
+- [**setProductsScreenImageUrl**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setproductsscreenimageurl)
+
+#### A12. Set text for What's New Dialog. If there's no text, dialog will be hidden.
+
+- [**setWhatsNewDailogText**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setwhatsnewdailogtext)
+
+#### A13. Show bottom bar with search, like, share and rate us options. Available from SDK v1.5.19(24)
+
+- [**showBottomBarWithLikeUsURL:rateUsAppId:shareText**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showbottombarwithlikeusurl:rateusappid:sharetext)
+
+#### A14. Set which products will be in hero, on Products page, by providing product ids. Max number of products is five.
+
+- [**setProductsInHero**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setproductsinhero)
+
+#### A15. Set which products will be in hero, on Products page, by providing product ids. Max number of products is five.
+
+- [**setImageInHero:url**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setimageinhero:url)
+
 ---
 
 ## Product Details screen
