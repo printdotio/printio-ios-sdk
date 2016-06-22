@@ -58,10 +58,6 @@ Specific Page Methods
 
 - [**backgroundColor**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showcountryselectiononscreenbackgroundcolor)
 
-#### A7. Set default view for Featured Products Screen. Default value is PIO_FP_FEATURED_PRODUCTS.
-
-- [**setFeaturedProductsDefaultView**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setfeaturedproductsdefaultview)
-
 #### A8. Hide coming soon products from product's list. Default value is NO.
 
 - [**hideComingSoonProducts**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecomingsoonproducts)
@@ -84,7 +80,7 @@ Specific Page Methods
 
 #### A13. Show bottom bar with search, like, share and rate us options. Available from SDK v1.5.19(24)
 
-- [**showBottomBarWithLikeUsURL:rateUsAppId:shareText**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showbottombarwithlikeusurl:rateusappid:sharetext)
+- [**showBottomBarWithLikeUsURL:rateUsAppId:shareText**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showbottombarwithlikeusurlrateusappidsharetext)
 
 #### A14. Set which products will be in hero, on Products page, by providing product ids. Max number of products is five.
 
@@ -92,7 +88,7 @@ Specific Page Methods
 
 #### A15. Set which products will be in hero, on Products page, by providing product ids. Max number of products is five.
 
-- [**setImageInHero:url**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setimageinhero:url)
+- [**setImageInHero:url**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setimageinherourl)
 
 ---
 
