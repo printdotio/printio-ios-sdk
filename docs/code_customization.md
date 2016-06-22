@@ -5,6 +5,7 @@ Developer SDK Customization Reference
       - [*-initWithRecipeId*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithrecipeid)
       - [*-initWithViewController*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--initwithviewcontroller)
       - [*-setIsInTestMode*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setisintestmode)
+      - [*-useStagingModeWithRecipeID*]()
       - [*-setIsRootController*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setisrootcontroller)
    - [**Opening and closing**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#opening-and-closing)
       - [*-open*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--open)
@@ -204,6 +205,21 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 **Sample code:**
 ```Objective-C
 [self.printIO setIsInTestMode:YES];
+// other customization ...
+[self.printIO open];
+```
+######- useStagingModeWithRecipeID
+```Objective-C
+/**
+ Run SDK in staging environment
+ 
+ @param recipeID Staging recipeID provided by Gooten
+ */
+-(void)useStagingModeWithRecipeID:(NSString *)recipeID;
+```
+**Sample code:**
+```Objective-C
+[self.printIO useStagingModeWithRecipeID:kRecipeID];
 // other customization ...
 [self.printIO open];
 ```
