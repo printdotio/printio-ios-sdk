@@ -1,6 +1,28 @@
 iOS Release Notes
 ==================================
 
+**1.8.10 (34)**
+---
+**Features:**
+* Configured Support for IsTest=true
+* Replaced Instagram icons
+* Updated Instagram Client Id
+* Made default SDK to looks as Hellopics app
+* New Getting Started guide
+
+####
+
+**Bug fixes:**
+* Multiple Coupons - "Savings" is disappeared after apply two coupons
+* Shipment Review screen - Dialog for "keep/upgrade" should be opened only if "freeshipping" promo code is applied
+* Shopping Cart screen - "Savings" field is visible across quantity picker
+* Select Address screen - Ability to tap two times on the same address item
+* Select Address screen - After deleting last "address item" should open Checkout screen automatically 
+* Phone Cases - Background color is not applied on the Layout
+* Payment screen - Removed empty space into scrollview
+
+####
+
 **1.8.1 (33)**
 ---
 **Bug fixes:**
