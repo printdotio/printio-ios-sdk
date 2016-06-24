@@ -4,7 +4,7 @@ iOS Release Notes
 **1.8.10 (34)**
 ---
 **Features:**
-* Configured Support for IsTest=true
+* Added 'isInTestMode' option, which allows placing orders in live
 * Replaced Instagram icons
 * Changed default SDK look
 * New Getting Started guide
