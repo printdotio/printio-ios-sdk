@@ -6,13 +6,13 @@ iOS Release Notes
 **Features:**
 * Configured Support for IsTest=true
 * Replaced Instagram icons
-* Updated Instagram Client Id
-* Made default SDK to looks as Hellopics app
+* Changed default SDK look
 * New Getting Started guide
 
 ####
 
 **Bug fixes:**
+* Accessing images on Instagram
 * Multiple Coupons - "Savings" is disappeared after apply two coupons
 * Shipment Review screen - Dialog for "keep/upgrade" should be opened only if "freeshipping" promo code is applied
 * Shopping Cart screen - "Savings" field is visible across quantity picker
