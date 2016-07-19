@@ -1,6 +1,23 @@
 iOS Release Notes
 ==================================
 
+**1.8.12 (35)**
+---
+**Features:**
+* Added New product Metal Ornaments
+* Added New product Bottle Labels
+* Added New product Accent Mugs
+* Added New product Desk Calendars
+* Added Order Safe ID inside Paypal Transactions
+
+####
+
+**Bug fixes:**
+* Fixed disapearing Loading Dialog after few second on Customization screen
+* Fixed missing one letter from text on Admin Panel
+
+####
+
 **1.8.10 (34)**
 ---
 **Features:**
