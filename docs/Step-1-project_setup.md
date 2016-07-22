@@ -29,7 +29,7 @@ Example code for launching Gooten SDK from view controller (below is sample reci
 }
 ```
 
-First put ```#import <PrintIO/PrintIO.h>``` into ```-Bridging-Header.h```.
+In Swift, first put ```#import <PrintIO/PrintIO.h>``` into ```-Bridging-Header.h```.
 ```Swift
 // Swift
 override func viewDidLoad() {
@@ -40,11 +40,12 @@ override func viewDidLoad() {
 }
 ```
 
+### iOS 9 and XCode 7 support:
+If you have problem with loading images, please use temporary solution for this issue:
+-  In ```Info.plist``` under ```Information Property List``` add ```NSAppTransportSecurity```, and under ```NSAppTransportSecurity``` add ```NSAllowsArbitraryLoads``` and set it to ```YES```.
+
+
 After launching SDK, you should get this screen:
 
 
 ![](https://dl.dropboxusercontent.com/u/19321066/printIO/wosettings.png)
-
-### iOS 9 and XCode 7 support:
-If you have problem with loading images, please use temporary solution for this issue:
--  In ```Info.plist``` under ```Information Property List``` add ```NSAppTransportSecurity```, and under ```NSAppTransportSecurity``` add ```NSAllowsArbitraryLoads``` and set it to ```YES```.
