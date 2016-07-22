@@ -16,6 +16,7 @@ end
 
 Example code for launching Gooten SDK from view controller (below is sample recipeId, you can provide recipeId from Gooten):
 ```Objective-C
+// Objective c
 #import <PrintIO/PrintIO.h>
 
 - (void)viewDidLoad {
@@ -25,6 +26,15 @@ Example code for launching Gooten SDK from view controller (below is sample reci
                                                      recipeId:@"f255af6f-9614-4fe2-aa8b-1b77b936d9d6"
                                                  isInTestMode:YES]; // in testing mode orders are submitted without payment verification
     [printIO open];
+}
+```
+```Swift
+// Swift
+override func viewDidLoad() {
+    super.viewDidLoad()
+
+    let printIO = PrintIO(viewController: self, recipeId: "f255af6f-9614-4fe2-aa8b-1b77b936d9d6", isInTestMode: true);
+    printIO.open();
 }
 ```
 
