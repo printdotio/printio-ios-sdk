@@ -28,6 +28,8 @@ Example code for launching Gooten SDK from view controller (below is sample reci
     [printIO open];
 }
 ```
+
+First put ```#import <PrintIO/PrintIO.h>``` into ```-Bridging-Header.h```.
 ```Swift
 // Swift
 override func viewDidLoad() {
