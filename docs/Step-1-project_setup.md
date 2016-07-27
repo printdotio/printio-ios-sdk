@@ -16,7 +16,7 @@ end
 
 - From [releases](https://github.com/printdotio/printio-ios-sdk/releases) download latest release ```Source code (zip)```
 - Unzip it, and drag ```PrintIO.framework```, ```PrintIOBundle.bundle``` and ```TextBundle.bundle``` to your project
-- 
+ 
 
 ## Quick Launch Code
 
