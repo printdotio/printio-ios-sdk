@@ -1,6 +1,6 @@
 #Gooten iOS SDK - Quick Start Guide
 
-### Add Gooten SDK to your project (CocoaPods)
+#### Add Gooten SDK to your project (CocoaPods)
 
 - Open a terminal window, and ```$ cd``` into your project directory.
 - Create a Podfile. This can be done by running ```$ pod init```.
@@ -12,7 +12,7 @@ end
 ```
 - Save your Podfile and run ```$ pod install```
 
-### Add Gooten SDK to your project (manually from Git)
+#### Add Gooten SDK to your project (manually from Git)
 
 - From [releases](https://github.com/printdotio/printio-ios-sdk/releases) download latest release ```Source code (zip)```
 - Unzip it, and drag ```PrintIO.framework```, ```PrintIOBundle.bundle``` and ```TextBundle.bundle``` to your project
@@ -21,7 +21,7 @@ end
 - Select target -> Build Settings -> Other Linker Flags and add ```-all_load```
 - To run sdk on real devices: Select Target -> Build Settings -> Enable Bitcode set to No
 
-## Quick Launch Code
+### Quick Launch Code
 
 Example code for launching Gooten SDK from view controller (below is sample recipeId, you can provide recipeId from Gooten):
 ```Objective-C
