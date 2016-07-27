@@ -18,6 +18,7 @@ end
 - Unzip it, and drag ```PrintIO.framework```, ```PrintIOBundle.bundle``` and ```TextBundle.bundle``` to your project
 - Select target -> Build Settings -> Framework Search Paths and add path to folder where PrintIO framework is
 - If your project is written in Swift: Select target -> Build Phases -> Link Binary With Libraries and add libraries ```libc++```, ```libsqlite3``` and ```libxml2```
+- If your project is written in Swift: Select target -> Build Settings -> Other Linker Flags and add ```-all_load```
 
 ## Quick Launch Code
 
