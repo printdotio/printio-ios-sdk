@@ -1,6 +1,11 @@
 iOS Release Notes
 ==================================
 
+**1.8.15 (35)**
+---
+**Bug fixes:**
+* Fixed Xcode configuration, public header imports, for Swift projects
+
 **1.8.14 (35)**
 ---
 **Bug fixes:**
