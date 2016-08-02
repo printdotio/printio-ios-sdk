@@ -5,6 +5,7 @@ iOS Release Notes
 ---
 **Bug fixes:**
 * Fixed Xcode configuration, public header imports, for Swift projects
+* Custom photo sources: ```fetchImageForItem``` removed from ```<PIOPhotoSource>```, instead of use ```fetchImageInPhotoSource``` in ```<PIOPhotoSourceItem>```
 
 **1.8.14 (35)**
 ---
