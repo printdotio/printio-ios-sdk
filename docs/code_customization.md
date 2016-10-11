@@ -136,6 +136,8 @@ Developer SDK Customization Reference
       - [*-hideCartButtonWhenCartIsEmpty*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecartbuttonwhencartisempty)
       - [*-closeWidgetFromShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--closewidgetfromshoppingcart)
       - [*+clearShoppingCart*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#-clearshoppingcart)
+      - [*+shoppingCartJSONContent*]()
+      - [*+setShoppingCartContent*]()
    - [**Screen 'Payment Options'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-payment-options)
       - [*-setPayeeName*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpayeename)
       - [*-setTermsAndConditionsURL*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settermsandconditionsurl)
@@ -2151,6 +2153,31 @@ int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 **Sample code:**
 ```Objective-C
 [PrintIO clearShoppingCart];
+```
+######+ shoppingCartJSONContent
+```Objective-C
+/**
+ Get shopping cart JSON content
+ */
++(NSString *)shoppingCartJSONContent;
+```
+**Sample code:**
+```Objective-C
+NSString *jsonString = [PrintIO shoppingCartJSONContent];
+```
+######+ setShoppingCartContent
+```Objective-C
+/**
+ Set the content of shopping cart. 
+ Pass single space to clear cart (" ")
+ 
+ @param jsonString JSON content string
+ */
++(void)setShoppingCartContent:(NSString *)jsonString;
+```
+**Sample code:**
+```Objective-C
+[PrintIO setShoppingCartContent:jsonString];
 ```
 ###Screen 'Payment Options'
 ######- setPayeeName
