@@ -1,6 +1,11 @@
 iOS Release Notes
 ==================================
 
+**1.8.20 (36)**
+---
+**Features:**
+* Added support for [separate carts](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#-shoppingcartjsoncontent)
+
 **1.8.15 (35)**
 ---
 **Bug fixes:**
