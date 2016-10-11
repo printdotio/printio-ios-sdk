@@ -1,13 +1,13 @@
 
 Pod::Spec.new do |s|
     s.name             = "PrintIO"
-    s.version          = "1.8.15"
+    s.version          = "1.8.20"
 
     s.summary          = "SDK that enables the printing of any photo, from any source, onto any product!"
     s.homepage         = "http://www.gooten.com"
     s.license          = { :type => 'Commercial', :file => 'LICENSE.md' }
     s.author           = { "PrintIO" => "boro@gooten.com" }
-    s.source           = { :git => "https://github.com/printdotio/printio-ios-sdk.git", :branch => "master", :tag => '1.8.15' }
+    s.source           = { :git => "https://github.com/printdotio/printio-ios-sdk.git", :branch => "master", :tag => '1.8.20' }
     s.social_media_url = "https://twitter.com/gooteninc"
     s.platform     = :ios, '7.1'
     s.requires_arc = true
