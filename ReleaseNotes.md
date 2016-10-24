@@ -1,5 +1,15 @@
 iOS Release Notes
 ==================================
+**1.8.21 (36)**
+---
+**Features:**
+* Added function to set [order's partner source id](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setpartnersourceid)
+* Added function to set [order meta data](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setordermeta)
+
+####
+
+**Bug fixes:**
+* Fixed bug regarding accessing contacts on iOS 10.0
 
 **1.8.20 (36)**
 ---
