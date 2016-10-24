@@ -154,6 +154,8 @@ Developer SDK Customization Reference
       - [*-setIconForOrderCompletedScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--seticonforordercompletedscreen)
       - [*-setMessageForOrderCompletedScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setmessageforordercompletedscreen)
       - [*-orderCompletedScreenCloseButtonShouldPerformBack*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--ordercompletedscreenclosebuttonshouldperformback)
+      - [*-setPartnerSourceId*]()
+      - [*setOrderMeta*]()
    - [**Google Analytics**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#google-analytics)
       - [*-setTrackingIDForGoogleAnalytics*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--settrackingidforgoogleanalytics)
    - [**Push Notifications**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#push-notifications)
@@ -2380,6 +2382,36 @@ NSMutableAttributedString *message = [[NSMutableAttributedString alloc]initWithS
 **Sample code:**
 ```Objective-C
 [printIO orderCompletedScreenCloseButtonShouldPerformBack:NO];
+//... other customization
+[printIO open];
+```
+######- setPartnerSourceId
+```Objective-C
+/**
+ Set order's partner source id 
+ 
+ @param sourceId Partner source id
+ */
+-(void)setPartnerSourceId:(NSString *)sourceId;
+```
+**Sample code:**
+```Objective-C
+[printIO setPartnerSourceId:kPartnerSourceId];
+//... other customization
+[printIO open];
+```
+######- setOrderMeta
+```Objective-C
+/**
+ Set order's meta data
+ 
+ @param meta Meta data (key, value)
+ */
+-(void)setOrderMeta:(NSDictionary *)meta;
+```
+**Sample code:**
+```Objective-C
+[printIO setOrderMeta:@{@"key":@"value"}];
 //... other customization
 [printIO open];
 ```
