@@ -77,6 +77,9 @@ Developer SDK Customization Reference
       - [*-showBottomBarWithLikeUsURL:rateUsAppId:shareText*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--showbottombarwithlikeusurlrateusappidsharetext)
       - [*-setProductsInHero*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setproductsinhero)
       - [*-setImageInHero:url*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setimageinherourl)
+      - [*-hideSingleProductOption*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidesingleproductoption)
+      - [*-hideChangeBackgroundColorInCustomizeProductScreen*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidechangebackgroundcolorincustomizeproductscreen)
+      - [*-hideComingSoonFeatures*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecomingsoonfeatures)
    - [**Screen 'Product Details'**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#screen-product-details)
       - [*-productDetailsShowTitleBelowNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowtitlebelownavbar)
       - [*-productDetailsShowMenuBtnInNavBar*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--productdetailsshowmenubtninnavbar)
@@ -1251,6 +1254,51 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 **Sample code:**
 ```Objective-C
 [self.printIO setImageInHero:[UIImage imageNamed:@"sample_image.jpg"] url:[NSURL URLWithString:@"youtube://www.youtube.com/watch?v=pLrS1q242eE"]];
+//... other customization
+[printIO open];
+```
+######- hideSingleProductOption
+```Objective-C
+/**
+ Hides single product option and autoselects it
+ 
+ @param set Default value is NO
+ */
+-(void)hideSingleProductOption:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
+[self.printIO hideSingleProductOption:YES];
+//... other customization
+[printIO open];
+```
+######- hideChangeBackgroundColorInCustomizeProductScreen
+```Objective-C
+/**
+ Hides Change Background color button in Customize Product Screen
+ 
+ @param set Default value is NO
+ */
+-(void)hideChangeBackgroundColorInCustomizeProductScreen:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
+[self.printIO hideChangeBackgroundColorInCustomizeProductScreen:YES];
+//... other customization
+[printIO open];
+```
+######- hideComingSoonFeatures
+```Objective-C
+/**
+ Hides coming soon features in Customize Product and Image Editor
+ 
+ @param set Default value is NO
+ */
+-(void)hideComingSoonFeatures:(BOOL)set;
+```
+**Sample code:**
+```Objective-C
+[self.printIO hideComingSoonFeatures:YES];
 //... other customization
 [printIO open];
 ```

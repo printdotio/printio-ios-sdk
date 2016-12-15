@@ -1,5 +1,14 @@
 iOS Release Notes
 ==================================
+
+**1.8.22 (37)**
+---
+**Features:**
+* Added option to [hide single product option](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidesingleproductoption)
+* Added option to [hide Change background color button in Customize Product screen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidechangebackgroundcolorincustomizeproductscreen)
+* Added option to [hide coming soon features in Customize Product screen](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--hidecomingsoonfeatures)
+* Added new products: Canvas Ornaments and Porcelain Ornaments
+
 **1.8.21 (36)**
 ---
 **Features:**
