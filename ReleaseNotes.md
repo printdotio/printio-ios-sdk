@@ -1,5 +1,10 @@
 iOS Release Notes
 ==================================
+**1.8.30 (37)**
+---
+**Bug fixes:**
+* Fixed crash when getting Shopping Cart JSON content `[PrintIO shoppingCartJSONContent]`
+* Fixed incorect frame size for Framed Prints product
 
 **1.8.22 (37)**
 ---
