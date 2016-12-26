@@ -1,5 +1,18 @@
 iOS Release Notes
 ==================================
+**1.8.31 (38)**
+---
+**Features:**
+* Added new products: Dog tags, Key fobs, Photo downloads, Photo sculptures, Plaques, Trading cards, Wall stars
+####
+
+**Bug fixes:**
+* Fixed changing text color
+* Fixed crash when there's no products for selected country code
+* Fixed reducing product layer size, for multi space product templates
+
+####
+
 **1.8.30 (37)**
 ---
 **Bug fixes:**
