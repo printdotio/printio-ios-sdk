@@ -4,9 +4,11 @@ iOS Release Notes
 ---
 **Features:**
 * Added new products: Dog tags, Key fobs, Photo downloads, Photo sculptures, Plaques, Trading cards, Wall stars
+
 ####
 
 **Bug fixes:**
+* Fixed Image Editor for zoom mode app's state
 * Fixed changing text color
 * Fixed crash when there's no products for selected country code
 * Fixed reducing product layer size, for multi space product templates
