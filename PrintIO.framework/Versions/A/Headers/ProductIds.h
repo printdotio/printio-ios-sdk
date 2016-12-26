@@ -140,6 +140,17 @@
 #define GTProductYogaMats (isStaging ? 1174 : 166)
 #define GTProductYouthApparel (isStaging ? 1143 : 147)
 
+// new products v38
+#define GTProductDogTags (isStaging ? 1207 : 205)
+#define GTProductKeyFobs (isStaging ? 1184 : 199)
+// GTProductMagnets
+#define GTProductPhotoDownloads (isStaging ? 1206 : 204)
+#define GTProductPhotoSculptures (isStaging ? 1205 : 203)
+#define GTProductPlaques (isStaging ? 1202 : 200)
+#define GTProductTradingCards (isStaging ? 1204 : 202)
+#define GTProductWallStars (isStaging ? 1203 : 201)
+
+
 @interface ProductIds : NSObject // > > > should be DEPRECATED soon < < <
 
 extern int PRODUCT_ACCESSORY_POUCH();
