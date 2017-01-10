@@ -1,5 +1,12 @@
 iOS Release Notes
 ==================================
+**1.8.32 (38)**
+---
+**Bug fixes:**
+* Fixed placing order when total amount is zero (using coupons)
+
+####
+
 **1.8.31 (38)**
 ---
 **Features:**
