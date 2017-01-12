@@ -1,5 +1,13 @@
 iOS Release Notes
 ==================================
+
+**1.8.33 (38)**
+---
+**Bug fixes:**
+* Fixed shipping info on Product Details screen
+
+####
+
 **1.8.32 (38)**
 ---
 **Bug fixes:**
