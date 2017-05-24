@@ -1,6 +1,12 @@
 iOS Release Notes
 ==================================
 
+**1.8.34 (38)**
+---
+**Bug fixes:**
+* Fixed missing products on first run
+* 
+
 **1.8.33 (38)**
 ---
 **Bug fixes:**
