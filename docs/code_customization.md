@@ -168,7 +168,7 @@ Developer SDK Customization Reference
 
 ### Initialization
 
-######- initWithRecipeId
+###### - initWithRecipeId
 ``` Objective-C
 /**
  Init PrintIO widget. To get view controller, use '[self.printIO viewController]'
