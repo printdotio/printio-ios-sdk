@@ -15,7 +15,6 @@ Developer SDK Customization Reference
       - [*-close*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--close)
       - [*-closeWithCompletionHandler*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--closewithcompletionhandler)
       - [*-goToProductId*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--gotoproductid)
-      - [*-goToProductId:withSKU*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--gotoproductidwithsku)
    - [**Utils**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#utils)
       - [*-turnOffLogs*](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--turnofflogs)
    - [**Country, Currency and Language**](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#country-currency-and-language)
@@ -353,22 +352,6 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 **Sample code:**
 ```Objective-C
 [printIO goToProductId:PRODUCT_PHONE_CASES()];
-//... other customization
-[printIO open];
-```
-######- goToProductId:withSKU
-```Objective-C
-/**
- Jumps directly to product with sku
-
- @param productId Product identifier can be found in ProductIds.h and starts with PRODUCT_
- @param sku SKU for selected product
- */
-- (void)goToProductId:(int)productId withSKU:(NSString *)sku;
-```
-**Sample code:**
-```Objective-C
-[printIO goToProductId:PRODUCT_PHONE_CASES() withSKU:@"PhoneCase-iphone5S-Matte"];
 //... other customization
 [printIO open];
 ```
