@@ -182,7 +182,7 @@ Developer SDK Customization Reference
 ```Objective-C
 PrintIO *printIO = [[PrintIO alloc]initWithRecipeId:kRecipeID isInTestMode:YES];
 ```
-######- initWithViewController
+###### - initWithViewController
 ``` Objective-C
 /**
  Init PrintIO widget with parent view controller.
