@@ -1,6 +1,11 @@
 iOS Release Notes
 ==================================
 
+**1.8.35 (38)**
+---
+**Bug fixes:**
+* Fixed method goToProductId:withSKU
+
 **1.8.34 (38)**
 ---
 **Bug fixes:**
