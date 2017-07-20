@@ -17,7 +17,7 @@ In order to use Apple Pay on a real device, you must configure an Apple Pay Merc
 
 1. Sign in to your iOS Developer Center and create two Apple Pay Merchant IDs, one for staging/sandbox and another for production.
 
-2. Please tobias@makeable.com to obtain the CSR (certificate signing request) files for staging/sandbox and production. 
+2. Please email tobias@makeable.com to obtain the CSR (certificate signing request) files for staging/sandbox and production. 
 
 3. Generate a new Apple Pay Certificate in Apple's developer portal by uploading the CSR files we have provided.
 
