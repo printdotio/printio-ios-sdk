@@ -21,7 +21,7 @@ In order to use Apple Pay on a real device, you must configure an Apple Pay Merc
 
 3. Generate a new Apple Pay Certificate in Apple's developer portal by uploading the CSR files we have provided.
 
-4. Download the new Apple Pay Certificate, which you just generated, and send it back to us, tobias@makeable.com.
+4. Download the new Apple Pay Certificate, which you just generated, and send it back to us, partnersupport@gooten.com.
 
 5. He will inform you when your merchant ID is active for using Apple Pay.
 
