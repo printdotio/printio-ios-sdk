@@ -3,7 +3,7 @@ Custom Photo Source API
 
 Since version 1.1.0 there is an option to add a custom photo source.
 
-![](https://dl.dropboxusercontent.com/u/19321066/printIO/printio_sdk_screens.png)
+![](https://user-images.githubusercontent.com/6410345/28869589-8417c408-777d-11e7-9598-c3da670e3ef6.png)
 
 ## Introduction
 
