@@ -3,7 +3,7 @@ Gooten iOS SDK
 
 The Gooten iOS SDK enables you to integrate our platforms commerce tools and connect to the largest international print on demand network.
 
-![](https://dl.dropboxusercontent.com/u/19321066/printIO/printio_sdk_screens.png)
+![](https://user-images.githubusercontent.com/6410345/28869589-8417c408-777d-11e7-9598-c3da670e3ef6.png)
 
 ## Introduction
 
@@ -39,7 +39,7 @@ Our SDK allows you to select which features and functionality you need as well a
 
 - Your application needs to whitelist the schemes your app will query. This is Apple policy. To query for the Facebook, please add this to Info.plist file:
 
-![](https://dl.dropboxusercontent.com/u/19321066/printIO/Screen%20Shot%202015-11-05%20at%2011.30.11%20AM.png)
+![](https://user-images.githubusercontent.com/6410345/28869645-b0c18b2e-777d-11e7-8190-22e2b5e2ad04.png)
 
 
 
