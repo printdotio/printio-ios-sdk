@@ -28,13 +28,13 @@ In order to use Apple Pay on a real device, you must configure an Apple Pay Merc
 Configuration in XCode
 ----------------------
 
-In Xcode, enable Apple Pay under Capabilities in your Project Settings.
+In Xcode, enable Apple Pay under Capabilities in your Project Settings:
 
-![](https://dl.dropboxusercontent.com/u/19321066/printIO/Screen%20Shot%202015-08-26%20at%201.45.09%20PM.png)
+![](https://user-images.githubusercontent.com/6410345/28869817-42eee42e-777e-11e7-99ff-f70b12149774.png)
 
-Then enable both Apple Pay Merchant IDs.
+Add Apple Merchant ID:
 
-![](https://dl.dropboxusercontent.com/u/19321066/printIO/Screen%20Shot%202015-08-26%20at%201.46.07%20PM.png)
+![](https://user-images.githubusercontent.com/6410345/28869826-48887936-777e-11e7-9549-f15601524bc4.png)
 
 It is important that you compile your app with a provisioning profile for the Apple development team with an Apple Pay Merchant ID. 
 
