@@ -57,4 +57,4 @@ If you have problem with loading images, please use temporary solution for this 
 After launching SDK, you should get this screen:
 
 
-![](https://dl.dropboxusercontent.com/u/19321066/printIO/wosettings.png)
+![](https://user-images.githubusercontent.com/6410345/28869766-13b7b384-777e-11e7-817d-fa4ad725fbab.png)
