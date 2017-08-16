@@ -1,13 +1,13 @@
 
 Pod::Spec.new do |s|
     s.name             = "PrintIO"
-    s.version          = "1.8.35"
+    s.version          = "1.8.40"
 
     s.summary          = "SDK that enables the printing of any photo, from any source, onto any product!"
     s.homepage         = "http://www.gooten.com"
     s.license          = { :type => 'Commercial', :file => 'LICENSE.md' }
     s.author           = { "PrintIO" => "boro@gooten.com" }
-    s.source           = { :git => "https://github.com/printdotio/printio-ios-sdk.git", :branch => "master", :tag => '1.8.35' }
+    s.source           = { :git => "https://github.com/printdotio/printio-ios-sdk.git", :branch => "master", :tag => '1.8.40' }
     s.social_media_url = "https://twitter.com/gooteninc"
     s.platform     = :ios, '7.1'
     s.requires_arc = true
@@ -33,10 +33,6 @@ Pod::Spec.new do |s|
     'PrintIO.framework/Versions/A/Headers/GTAnalyticsDelegate.h',
     'PrintIO.framework/Versions/A/Headers/GTAnalyticsEvent.h',
     'PrintIO.framework/Versions/A/Headers/GTAnalyticsScreen.h'
-
-    sc.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/**"',
-                        'OTHER_LDFLAGS' => '-framework PrintIO'
-                      }
 
     sc.resources = 'PrintIOBundle.bundle'
     sc.preserve_paths = 'PrintIO.framework/*'
