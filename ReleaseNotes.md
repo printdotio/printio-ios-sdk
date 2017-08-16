@@ -1,5 +1,12 @@
 iOS Release Notes
 ==================================
+**1.8.40 (38)**
+---
+**Features:**
+* Added abillity to [pass thumbnail urls into sdk](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/code_customization.md#--setimages), with `setImages` method
+###
+**Bug fixes:**
+* Fixed re-uploading images issue [#274](https://github.com/printdotio/printio-ios-sdk/issues/274)
 
 **1.8.35 (38)**
 ---
