@@ -553,7 +553,7 @@ enum {
 /**
  Pass in images URLs or UIImage objects.
  
- @param images Array of image urls or/and UIImage objects
+ @param images Array of image urls (NSString), UIImage objects and PIOPassedImage objects
  */
 -(void)setImages:(NSArray *)images;
 
