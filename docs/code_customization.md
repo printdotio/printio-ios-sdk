@@ -1451,10 +1451,10 @@ MyCustomPhotoSource* photoSource = [[MyCustomPhotoSource alloc] init];
 ######- setImages
 ```Objective-C
 /**
- Pass in images URLs or UIImage objects.
+ Pass in images urls, UIImage objects and PIOPassedImage objects
  https://github.com/printdotio/printio-ios-sdk/blob/master/ios_sdk_customization.md#pass-photo-to-sdk
  
- @param images Array of image urls or/and UIImage objects
+ @param images Array of image urls (NSString), UIImage objects and PIOPassedImage objects
  */
 - (void)setImages:(NSArray *)images;
 ```
