@@ -199,7 +199,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
                                                  recipeId:kRecipeID
                                              isInTestMode:YES];
 ```
-######- setIsInTestMode
+###### - setIsInTestMode
 ```Objective-C
 /**
  Use to place live orders in production mode, without payment verification
@@ -214,7 +214,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 // other customization ...
 [self.printIO open];
 ```
-######- useStagingModeWithRecipeID
+###### - useStagingModeWithRecipeID
 ```Objective-C
 /**
  Run SDK in staging environment
@@ -229,7 +229,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 // other customization ...
 [self.printIO open];
 ```
-######- setIsRootController
+###### - setIsRootController
 ```Objective-C
 /**
  Root controller flag. Set to YES if the PrintIO widget is the root controller of your application.
@@ -244,7 +244,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 ```
 ### Opening and closing
 
-######- open
+###### - open
 ``` Objective-C
 /**
  Open widget by presenting view from bottom
@@ -260,7 +260,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 //... other customization
 [printIO open];
 ```
-######- openWithOption
+###### - openWithOption
 ``` Objective-C
 /**
  Open widget with option
@@ -283,7 +283,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 //... other customization
 [printIO openWithOption:PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM | PRINTIO_ENABLE_BACK_BUTTON];
 ```
-######- presentFromViewController
+###### - presentFromViewController
 ``` Objective-C
 /**
  Present widget from view controller with option
@@ -307,7 +307,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 //... other customization
 [printIO presentFromViewController:self withOption:PRINTIO_OPTION_PRESENT_VIEW_FROM_BOTTOM];
 ```
-######- viewController
+###### - viewController
 ``` Objective-C
 /**
  Returns PrintIO view controller. Set all options before calling this method
@@ -318,7 +318,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 ```Objective-C
 [printIO viewController];
 ```
-######- close
+###### - close
 ``` Objective-C
 /**
  Close widget
@@ -329,7 +329,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 ```Objective-C
 [printIO close];
 ```
-######- closeWithCompletionHandler
+###### - closeWithCompletionHandler
 ``` Objective-C
 /**
  Close widget
@@ -340,7 +340,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 ```Objective-C
 [printIO closeWithCompletionHandler:nil];
 ```
-######- goToProductId
+###### - goToProductId
 ```Objective-C
 /**
  Jumps directly to product.
@@ -355,8 +355,8 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 //... other customization
 [printIO open];
 ```
-###Utils
-######- turnOffLogs
+### Utils
+###### - turnOffLogs
 ```Objective-C
 /**
  Turn off logs
@@ -369,8 +369,8 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 ```Objective-C
 [printIO turnOffLogs:YES];
 ```
-###Country, Currency and Language
-######- setCountryCode
+### Country, Currency and Language
+###### - setCountryCode
 ```Objective-C
 /**
  Set country code
@@ -385,7 +385,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 //... other customization
 [printIO open];
 ```
-######- setCurrencyCode
+###### - setCurrencyCode
 ```Objective-C
 /**
  Set currency code
@@ -400,7 +400,7 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 //... other customization
 [printIO open];
 ```
-######- setLanguageCode
+###### - setLanguageCode
 ```Objective-C
 /**
  Set language code
@@ -415,8 +415,8 @@ PrintIO *printIO = [[PrintIO alloc]initWithViewController:self
 //... other customization
 [printIO open];
 ```
-###General UI customization
-######- setCustomizationXML
+### General UI customization
+###### - setCustomizationXML
 ```Objective-C
 /**
  Import customization XML file
@@ -434,7 +434,7 @@ NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];
 //... other customization
 [printIO open];
 ```
-######- setFonts
+###### - setFonts
 ```Objective-C
 /**
  Set custom fonts from main app bundle.
@@ -456,7 +456,7 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 //... other customization
 [printIO open];
 ```
-######- changeSizeOfLightFontsBy
+###### - changeSizeOfLightFontsBy
 ```Objective-C
 /**
  Change light fonts size
@@ -469,7 +469,7 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 ```Objective-C
 [printIO changeSizeOfLightFontsBy:-1.0];
 ```
-######- changeSizeOfMediumFontsBy
+###### - changeSizeOfMediumFontsBy
 ```Objective-C
 /**
  Change medium fonts size
@@ -482,7 +482,7 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 ```Objective-C
 [printIO changeSizeOfMediumFontsBy:-1.0];
 ```
-######- changeSizeOfRegularFontsBy
+###### - changeSizeOfRegularFontsBy
 ```Objective-C
 /**
  Change regular fonts size
@@ -495,7 +495,7 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 ```Objective-C
 [printIO changeSizeOfRegularFontsBy:-1.0];
 ```
-######- changeSizeOfBoldFontsBy
+###### - changeSizeOfBoldFontsBy
 ```Objective-C
 /**
  Change bold fonts size
@@ -508,7 +508,7 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 ```Objective-C
 [printIO changeSizeOfBoldFontsBy:-1.0];
 ```
-######- setLoadingActivityIndicatorViewStyle
+###### - setLoadingActivityIndicatorViewStyle
 ```Objective-C
 /**
  Toggles UIActivityIndicatorView on the loading view instead of the loading gif image. 
@@ -524,7 +524,7 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 //... other customization
 [printIO open];
 ```
-######- setLoadingGIF
+###### - setLoadingGIF
 ```Objective-C
 /**
  Changes "Loading" GIF animation image. Calling this method will override the UIActivityIndicatorViewStyle if has previously been set.
@@ -539,7 +539,7 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 //... other customization
 [printIO open];
 ```
-######- setLoadingText
+###### - setLoadingText
 ```Objective-C
 /**
  Change title of loading dialog
@@ -554,7 +554,7 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 //... other customization
 [printIO open];
 ```
-######- setIconForHelpButton
+###### - setIconForHelpButton
 ```Objective-C
 /**
  Change icon for Help Button
@@ -569,7 +569,7 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 //... other customization
 [printIO open];
 ```
-######- setLogoFileName
+###### - setLogoFileName
 ```Objective-C
 /**
  Change partner's logo in SDK
@@ -585,7 +585,7 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 //... other customization
 [printIO open];
 ```
-######- setPositiveButtonsBackgroundColor
+###### - setPositiveButtonsBackgroundColor
 ```Objective-C
 /**
  Change background color on positive buttons (Yes, Next, Ok, Save, Buy It, Create It...)
@@ -601,7 +601,7 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 //... other customization
 [printIO open];
 ```
-######- setNegativeButtonsBackgroundColor
+###### - setNegativeButtonsBackgroundColor
 ```Objective-C
 /**
  Change background color on negative buttons (No, Back, Cancel, Close...)
@@ -617,7 +617,7 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 //... other customization
 [printIO open];
 ```
-######- setTitleForChooseOptionsScreen
+###### - setTitleForChooseOptionsScreen
 ```Objective-C
 /**
  Change title for 'Customization Options' screen
@@ -630,7 +630,7 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 //... other customization
 [printIO open];
 ```
-######- setSelectionColor
+###### - setSelectionColor
 ```Objective-C
 /**
  Set selection color for product customization steps
@@ -646,7 +646,7 @@ NSArray *fonts = @[@"timess.ttf", @"timess.ttf", @"aubrey.ttf", @"CaviarDreams_B
 [printIO open];
 ```
 ### Navigation bar
-######- navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon
+###### - navigationBarColor:titleColor:leftButtonBackgroundColor:rightButtonBackgroundColor:titleButtonIcon
 ```Objective-C
 /**
  Change navigation bar color and title font color.
@@ -674,7 +674,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setNavigationBarBackground
+###### - setNavigationBarBackground
 ```Objective-C
 /**
  Set background image on Navigation Bar
@@ -689,7 +689,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setNavigationBarBackgroundForCustomizeProduct
+###### - setNavigationBarBackgroundForCustomizeProduct
 ```Objective-C
 /**
  Set navigation bar background image on 'Customize Product' screen
@@ -704,7 +704,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setIconForBackButton
+###### - setIconForBackButton
 ```Objective-C
 /**
  Set icon for back button.
@@ -719,7 +719,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setStatusBarDark:hidden
+###### - setStatusBarDark:hidden
 ```Objective-C
 /**
  Set status bar style and visibility.
@@ -736,7 +736,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setThreeButtonsNavigationBarStyle
+###### - setThreeButtonsNavigationBarStyle
 ```Objective-C
 /**
  Set three buttons Back, Menu and Cart button in navigation bar for Featured Products screen
@@ -751,7 +751,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setNavigationBarSaveToCartBackgroundColor:titleColor:buttonBackgroundColor:buttonTitleColor
+###### - setNavigationBarSaveToCartBackgroundColor:titleColor:buttonBackgroundColor:buttonTitleColor
 ```Objective-C
 /**
  Set colors scheme for navigation bar with "Save to" shopping cart button
@@ -776,7 +776,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setBackButtonHidden
+###### - setBackButtonHidden
 ```Objective-C
 /**
  Set back button hidden
@@ -791,7 +791,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setNavigationBarLogo
+###### - setNavigationBarLogo
 ```Objective-C
 /**
  Set and show logo in navigation bar
@@ -806,8 +806,8 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-###Side menu
-######- useSideMenuWithMenuIcon
+### Side menu
+###### - useSideMenuWithMenuIcon
 ```Objective-C
 /**
  Use Side Menu
@@ -822,7 +822,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setSideMenuItems
+###### - setSideMenuItems
 ```Objective-C
 /**
  Set side menu items: array of options presented as PIOSideMenuButton:
@@ -845,7 +845,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- defaultSideMenuItems
+###### - defaultSideMenuItems
 ```Objective-C
 /**
  Get default side menu items, which you can edit and customize
@@ -860,7 +860,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- slideSideMenuFromRight
+###### - slideSideMenuFromRight
 ```Objective-C
 /**
  Slide side menu from right. Default value is NO.
@@ -875,7 +875,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- hidePhotoSourcesInSideMenu
+###### - hidePhotoSourcesInSideMenu
 ```Objective-C
 /**
  Hide photo sources section in Side Menu
@@ -890,7 +890,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setHowItWorksText
+###### - setHowItWorksText
 ```Objective-C
 /**
  Provide text for "How It Works" screen
@@ -905,7 +905,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setAboutText
+###### - setAboutText
 ```Objective-C
 /**
  Provide text for "About" screen
@@ -920,7 +920,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setContactUsEmail
+###### - setContactUsEmail
 ```Objective-C
 /**
  Set email for "Contact Us" button
@@ -935,7 +935,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- hideVersionInSideMenu
+###### - hideVersionInSideMenu
 ```Objective-C
 /**
  Hide version label from side menu
@@ -950,8 +950,8 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-###Screen 'Choose Country'
-######- setTitleForChooseCountryScreen
+### Screen 'Choose Country'
+###### - setTitleForChooseCountryScreen
 ```Objective-C
 /**
  Change title on 'Choose Country' screen
@@ -966,7 +966,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- hideSearchIconInChooseCountryScreen
+###### - hideSearchIconInChooseCountryScreen
 ```Objective-C
 /**
  Hide search icon from navigation bar on 'Choose Country' screen
@@ -981,7 +981,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setPlaceholderTextForSearchBarInChooseCountryScreen:hideMagnifyingGlass
+###### - setPlaceholderTextForSearchBarInChooseCountryScreen:hideMagnifyingGlass
 ```Objective-C
 /**
  Change placeholder text in search bar, and set magnifying glass visible or hidden
@@ -999,7 +999,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setNavigationBarBackgroundColorForChooseCountryScreen
+###### - setNavigationBarBackgroundColorForChooseCountryScreen
 ```Objective-C
 /**
  Change the color of navigation bar in 'Choose Country' screen
@@ -1014,8 +1014,8 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-###Screen 'Products'
-######- hideCategoriesInFeaturedProducts
+### Screen 'Products'
+###### - hideCategoriesInFeaturedProducts
 ```Objective-C
 
 /**
@@ -1030,7 +1030,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- hideComingSoonProducts
+###### - hideComingSoonProducts
 ```Objective-C
 /**
  Hide coming soon products from product's list
@@ -1045,7 +1045,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- showCountrySelectionOnScreen:backgroundColor
+###### - showCountrySelectionOnScreen:backgroundColor
 ```Objective-C
 /**
  Show country selection. By default, country selection is always shown on Featured/All products
@@ -1066,7 +1066,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setTitleForFeaturedProductsScreen
+###### - setTitleForFeaturedProductsScreen
 ```Objective-C
 /**
  Change title on Featured Products screen
@@ -1081,7 +1081,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setFeaturedProductsLeftLabelTextColor:rightLabelTextColor
+###### - setFeaturedProductsLeftLabelTextColor:rightLabelTextColor
 ```Objective-C
 /**
  Change label's color on items in list on Featured Products screen
@@ -1100,7 +1100,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setFeaturedProductsBackgroundImage
+###### - setFeaturedProductsBackgroundImage
 ```Objective-C
 /**
  Set background image on Featured Products screen
@@ -1116,7 +1116,7 @@ rightButtonBackgroundColor:(UIColor *)rColor
 //... other customization
 [printIO open];
 ```
-######- setAvailableProducts
+###### - setAvailableProducts
 ```Objective-C
 /**
  Set available products. 
@@ -1136,7 +1136,7 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 //... other customization
 [printIO open];
 ```
-######- setProductsScreenVersion
+###### - setProductsScreenVersion
 ```Objective-C
 /**
  Change version of Products Screen. 
@@ -1155,7 +1155,7 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 //... other customization
 [printIO open];
 ```
-######- setProductsScreenImageUrl
+###### - setProductsScreenImageUrl
 ```Objective-C
 /**
  Set image url for Dymanic products list view. In order to use this method, 
@@ -1172,7 +1172,7 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 //... other customization
 [printIO open];
 ```
-######- setWhatsNewDailogText
+###### - setWhatsNewDailogText
 ```Objective-C
 /**
  Set text for What's New Dialog. If there's no text, dialog
@@ -1190,7 +1190,7 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 //... other customization
 [printIO open];
 ```
-######- showBottomBarWithLikeUsURL:rateUsAppId:shareText
+###### - showBottomBarWithLikeUsURL:rateUsAppId:shareText
 ```Objective-C
 /**
  Show bottom bar with search, like, share and rate us options
@@ -1208,7 +1208,7 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 //... other customization
 [printIO open];
 ```
-######- setProductsInHero
+###### - setProductsInHero
 ```Objective-C
 /**
  Set which products will be in hero, on Products page, by providing product ids.
@@ -1224,7 +1224,7 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 //... other customization
 [printIO open];
 ```
-######- setImageInHero:url
+###### - setImageInHero:url
 ```Objective-C
 /**
  Add image obj in hero, which will lead to url, when user taps on it
@@ -1240,7 +1240,7 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 //... other customization
 [printIO open];
 ```
-######- hideSingleProductOption
+###### - hideSingleProductOption
 ```Objective-C
 /**
  Hides single product option and autoselects it
@@ -1255,7 +1255,7 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 //... other customization
 [printIO open];
 ```
-######- hideChangeBackgroundColorInCustomizeProductScreen
+###### - hideChangeBackgroundColorInCustomizeProductScreen
 ```Objective-C
 /**
  Hides Change Background color button in Customize Product Screen
@@ -1270,7 +1270,7 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 //... other customization
 [printIO open];
 ```
-######- hideComingSoonFeatures
+###### - hideComingSoonFeatures
 ```Objective-C
 /**
  Hides coming soon features in Customize Product and Image Editor
@@ -1285,8 +1285,8 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 //... other customization
 [printIO open];
 ```
-###Screen 'Product Details'
-######- productDetailsShowTitleBelowNavBar
+### Screen 'Product Details'
+###### - productDetailsShowTitleBelowNavBar
 ```Objective-C
 /**
  Show title below navigation bar on Product Details screen
@@ -1301,7 +1301,7 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 //... other customization
 [printIO open];
 ```
-######- productDetailsShowMenuBtnInNavBar
+###### - productDetailsShowMenuBtnInNavBar
 ```Objective-C
 /**
  Show menu button in navigation bar on Product Details screen
@@ -1316,7 +1316,7 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 //... other customization
 [printIO open];
 ```
-######- setQualityGuaranteeText
+###### - setQualityGuaranteeText
 ```Objective-C
 /**
  Provide Quality Guarantee text for Product Details screen
@@ -1331,7 +1331,7 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 //... other customization
 [printIO open];
 ```
-######- setPriceTitleHidden
+###### - setPriceTitleHidden
 ```Objective-C
 /**
  Set 'Starting at' and 'Retail price' titles hidden
@@ -1346,7 +1346,7 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 //... other customization
 [printIO open];
 ```
-######- setRetailDiscountPercent
+###### - setRetailDiscountPercent
 ```Objective-C
 /**
  Set retail discount percent for product details screen
@@ -1361,8 +1361,8 @@ NSArray *availableProducts = @[[NSNumber numberWithInt:PRODUCT_MOUSEPADS()], [NS
 //... other customization
 [printIO open];
 ```
-###Photo sources
-######- setAvailablePhotoSources
+### Photo sources
+###### - setAvailablePhotoSources
 ```Objective-C
 /**
  Set available photo sources
@@ -1403,7 +1403,7 @@ btnSFacebook.useBoldFonts = YES;
 //... other customization
 [printIO open];
 ```
-######- setCustomPhotoSources
+###### - setCustomPhotoSources
 ```Objective-C
 /**
  Set custom photo sources
@@ -1419,7 +1419,7 @@ MyCustomPhotoSource* photoSource = [[MyCustomPhotoSource alloc] init];
 //... other customization
 [printIO open];
 ```
-######- setDefaultPhotoSource:albumId
+###### - setDefaultPhotoSource:albumId
 ```Objective-C
 /**
  When user enters 'Select Photos' screen, selected photo source will be opened by default.
@@ -1448,7 +1448,7 @@ MyCustomPhotoSource* photoSource = [[MyCustomPhotoSource alloc] init];
 //... other customization
 [printIO open];
 ```
-######- setImages
+###### - setImages
 ```Objective-C
 /**
  Pass in images urls, UIImage objects and PIOPassedImage objects
@@ -1466,7 +1466,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- disablePhotoSourcesWhenImagesArePassedIn
+###### - disablePhotoSourcesWhenImagesArePassedIn
 ```Objective-C
 /**
  If user pass in images usinig method 'images', this method can disable photo sources,
@@ -1482,7 +1482,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- disablePhotoSourcesForOnePhotoTemplate
+###### - disablePhotoSourcesForOnePhotoTemplate
 ```Objective-C
 /**
  Disable photo sources only if image is passed in, and user selects template with
@@ -1496,7 +1496,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setPreselectPassedImages:shouldPreselectPassedImages
+###### - setPreselectPassedImages:shouldPreselectPassedImages
 ```Objective-C
 /**
  A flag that determines whether passed images are preselected on the 'Select Photos' screen.
@@ -1509,7 +1509,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- enablePhotoSourcesInCustomizeProduct
+###### - enablePhotoSourcesInCustomizeProduct
 ```Objective-C
 /**
  Enables photo sources in Customize Product screen only, if they're disabled 
@@ -1523,7 +1523,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setPassedImageFirstInPhotoSources
+###### - setPassedImageFirstInPhotoSources
 ```Objective-C
 /**
  Set passed in image to be first in row for all photo sources.
@@ -1536,7 +1536,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- hideIconForUploadInstructions
+###### - hideIconForUploadInstructions
 ```Objective-C
 /**
  Hide icon for Upload Instructions text in Photo Sources screen. Default value is NO.
@@ -1549,7 +1549,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setInstagramClientID:redirectUrl
+###### - setInstagramClientID:redirectUrl
 ```Objective-C
 /**
  Set Instagram credentials. By default, PrintIO credentials are used.
@@ -1564,7 +1564,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setInstagramAccessToken
+###### - setInstagramAccessToken
 ```Objective-C
 /**
  Set access token for Instagram
@@ -1579,7 +1579,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setFlickrKey:secretKey:redirectUrl
+###### - setFlickrKey:secretKey:redirectUrl
 ```Objective-C
 /**
  Set Flickr credentials. By default, PrintIO credentials are used.
@@ -1594,7 +1594,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setDropboxKey:redirectUrl
+###### - setDropboxKey:redirectUrl
 ```Objective-C
 /**
  Set Dropbox credentials. By default, PrintIO credentials are used.
@@ -1608,7 +1608,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setFacebookAppId:redirectUrl
+###### - setFacebookAppId:redirectUrl
 ```Objective-C
 /**
  Set Facebook credentials. By default, PrintIO credentials are used.
@@ -1622,7 +1622,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setFacebookAccessToken
+###### - setFacebookAccessToken
 ```Objective-C
 /**
  Set access token for Facebook
@@ -1637,7 +1637,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setPhotobucketUsername:password
+###### - setPhotobucketUsername:password
 ```Objective-C
 /**
  Set username and password for Photobucket (autologin)
@@ -1654,7 +1654,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setPhotobucketAccessToken:userName:baseURL
+###### - setPhotobucketAccessToken:userName:baseURL
 ```Objective-C
 /**
  Set access token for Photobucket
@@ -1673,7 +1673,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setTitleForPhotoSourcesScreen
+###### - setTitleForPhotoSourcesScreen
 ```Objective-C
 /**
  Change title for Photo Sources screen
@@ -1688,7 +1688,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- autoSelectOnePhotoTemplateForProductID
+###### - autoSelectOnePhotoTemplateForProductID
 ```Objective-C
 /**
  Auto selects one photo template for selected productID
@@ -1703,7 +1703,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- disableAutoRecognizePhoneModel
+###### - disableAutoRecognizePhoneModel
 ```Objective-C
 /**
  Disable auto recognition and selection of iPhone model
@@ -1718,7 +1718,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- hideCartInPhotoSources
+###### - hideCartInPhotoSources
 ```Objective-C
 /**
  Hide shopping cart icon from Photo Sources screen
@@ -1733,7 +1733,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- showSelectAllButton
+###### - showSelectAllButton
 ```Objective-C
 /**
  Show 'Select All' button on Photo Sources screen which selects all images in the current folder
@@ -1748,8 +1748,8 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-###Screen 'Customize/Edit Product'
-######- showToolbarInCustomizeProduct:backgroundImage
+### Screen 'Customize/Edit Product'
+###### - showToolbarInCustomizeProduct:backgroundImage
 ```Objective-C
 /**
  Show/hide tab bar in Customize Product screen. Default value is YES
@@ -1767,7 +1767,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- hideImagesListInCustomizeProduct
+###### - hideImagesListInCustomizeProduct
 ```Objective-C
 /**
  Hide list with images in customization screen
@@ -1780,7 +1780,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setPhotoArrangement
+###### - setPhotoArrangement
 ```Objective-C
 /**
  Set photo(s) arrangement in Customize Product screen
@@ -1799,7 +1799,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setIconForAddPhotosButton
+###### - setIconForAddPhotosButton
 ```Objective-C
 /**
  Change image for "Add photos" button in Customize Product screen
@@ -1814,7 +1814,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setIconForSaveButtonInCustomizeProduct
+###### - setIconForSaveButtonInCustomizeProduct
 ```Objective-C
 /**
  Change icon for 'Save' button on Customize Product screen
@@ -1829,7 +1829,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setPopUpWithImage:text:textColor
+###### - setPopUpWithImage:text:textColor
 ```Objective-C
 /**
  Set Pop up balloon in Customize Product screen
@@ -1848,7 +1848,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setDoubleTapBalloonVisibilityTime
+###### - setDoubleTapBalloonVisibilityTime
 ```Objective-C
 /**
  Set time of visibility for Double Tap ballon in Customize Product screen
@@ -1864,7 +1864,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- showHelpDialogWithImage
+###### - showHelpDialogWithImage
 ```Objective-C
 /**
  Show custom dialog for helping user how to edit a photo
@@ -1879,7 +1879,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setSamePhotoOnFrontAndBackSideOfProduct
+###### - setSamePhotoOnFrontAndBackSideOfProduct
 ```Objective-C
 /**
  Set same photo on front and back side of product.
@@ -1895,7 +1895,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setCustomizationHelpText
+###### - setCustomizationHelpText
 ```Objective-C
 /**
  Provide help text for Customize Product screen
@@ -1910,7 +1910,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setDefaultTemplateTexts
+###### - setDefaultTemplateTexts
 ```Objective-C
 /**
  Available from sdk version v1.2.31.
@@ -1934,7 +1934,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- showOnlyOnePhotoTemplates
+###### - showOnlyOnePhotoTemplates
 ```Objective-C
 /**
  Filter templates to show only one photo template
@@ -1950,7 +1950,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- setKeyboardBackgroundColor
+###### - setKeyboardBackgroundColor
 ```Objective-C
 /**
  Set custom keyboard background color. Only applies to landscape mode.
@@ -1966,7 +1966,7 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-######- showCancelOptionsButton
+###### - showCancelOptionsButton
 ```Objective-C
 /**
  Show Cancel button on Options screen
@@ -1982,8 +1982,8 @@ NSArray *images = @[@"http://www.google.com/landscape.jpeg", image];
 //... other customization
 [printIO open];
 ```
-###Screen 'Image Editor'
-######- imageEditorShowButtons
+### Screen 'Image Editor'
+###### - imageEditorShowButtons
 ```Objective-C
 /**
  Set which buttons will be visible in Image Editor toolbar. By default, all buttons are visible.
@@ -2006,8 +2006,8 @@ NSArray *buttons = @[[PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_INFO]
 //... other customization
 [printIO open];
 ```
-###Screen 'Shopping Cart'
-######- setIconForShoppingCart:withNumberOfProducts:labelPosition:textColor
+### Screen 'Shopping Cart'
+###### - setIconForShoppingCart:withNumberOfProducts:labelPosition:textColor
 ```Objective-C
 /**
  Set custom icon for Shopping Cart
@@ -2031,7 +2031,7 @@ NSArray *buttons = @[[PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_INFO]
 //... other customization
 [printIO open];
 ```
-######- setIconForShoppingCart:withNumberOfProducts:labelPosition:circleColor:textColor
+###### - setIconForShoppingCart:withNumberOfProducts:labelPosition:circleColor:textColor
 ```Objective-C
 /**
  Set custom icon for Shopping Cart
@@ -2058,7 +2058,7 @@ NSArray *buttons = @[[PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_INFO]
 //... other customization
 [printIO open];
 ```
-######- setTitleForShoppingCart
+###### - setTitleForShoppingCart
 ```Objective-C
 /**
  Change title for "Shopping Cart" screen
@@ -2073,7 +2073,7 @@ NSArray *buttons = @[[PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_INFO]
 //... other customization
 [printIO open];
 ```
-######- showKeepShoppingButtonInShoppingCart
+###### - showKeepShoppingButtonInShoppingCart
 ```Objective-C
 /**
  Toggle 'Keep Shopping' button on Shopping Cart screen.
@@ -2088,7 +2088,7 @@ NSArray *buttons = @[[PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_INFO]
 //... other customization
 [printIO open];
 ```
-######- setKeepShoppingButtonTitle
+###### - setKeepShoppingButtonTitle
 ```Objective-C
 /**
  Customize 'Keep Shopping' button
@@ -2105,7 +2105,7 @@ NSArray *buttons = @[[PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_INFO]
 //... other customization
 [printIO open];
 ```
-######- setIconForShoppingCartBackButton
+###### - setIconForShoppingCartBackButton
 ```Objective-C
 /**
  Change icon for Back button on Shopping Cart screen
@@ -2120,7 +2120,7 @@ NSArray *buttons = @[[PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_INFO]
 //... other customization
 [printIO open];
 ```
-######- numberOfItemsInShoppingCart
+###### - numberOfItemsInShoppingCart
 ```Objective-C
 /**
  Get number of items in shopping cart
@@ -2131,7 +2131,7 @@ NSArray *buttons = @[[PIOButton alloc]initWithType:PIO_BUTTON_IMAGE_EDITOR_INFO]
 ```Objective-C
 int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 ```
-######- setPromoCode
+###### - setPromoCode
 ```Objective-C
 /**
  Set promo code to get discount
@@ -2146,7 +2146,7 @@ int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 //... other customization
 [printIO open];
 ```
-######- hideCartButtonWhenCartIsEmpty
+###### - hideCartButtonWhenCartIsEmpty
 ```Objective-C
 /**
  Hides cart button from navigation bar, when cart is empty
@@ -2161,7 +2161,7 @@ int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 //... other customization
 [printIO open];
 ```
-######- closeWidgetFromShoppingCart
+###### - closeWidgetFromShoppingCart
 ```Objective-C
 /**
  Close widget when tap on Back button in Shopping Cart screen
@@ -2176,7 +2176,7 @@ int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 //... other customization
 [printIO open];
 ```
-######+ clearShoppingCart
+###### + clearShoppingCart
 ```Objective-C
 /**
  Remove all items(products) from Shopping cart
@@ -2187,7 +2187,7 @@ int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 ```Objective-C
 [PrintIO clearShoppingCart];
 ```
-######+ shoppingCartJSONContent
+###### + shoppingCartJSONContent
 ```Objective-C
 /**
  Get shopping cart JSON content
@@ -2198,7 +2198,7 @@ int numberOfItems = [PrintIO numberOfItemsInShoppingCart];
 ```Objective-C
 NSString *jsonString = [PrintIO shoppingCartJSONContent];
 ```
-######+ setShoppingCartContent
+###### + setShoppingCartContent
 ```Objective-C
 /**
  Set the content of shopping cart. 
@@ -2212,8 +2212,8 @@ NSString *jsonString = [PrintIO shoppingCartJSONContent];
 ```Objective-C
 [PrintIO setShoppingCartContent:jsonString];
 ```
-###Screen 'Payment Options'
-######- setPayeeName
+### Screen 'Payment Options'
+###### - setPayeeName
 ```Objective-C
 /**
  Set payee name for order processing
@@ -2228,7 +2228,7 @@ NSString *jsonString = [PrintIO shoppingCartJSONContent];
 //... other customization
 [printIO open];
 ```
-######- setTermsAndConditionsURL
+###### - setTermsAndConditionsURL
 ```Objective-C
 /**
  Set url for Terms and Conditions
@@ -2243,7 +2243,7 @@ NSString *jsonString = [PrintIO shoppingCartJSONContent];
 //... other customization
 [printIO open];
 ```
-######- setPaymentOptions
+###### - setPaymentOptions
 ```Objective-C
 /**
  Set Payment option
@@ -2261,7 +2261,7 @@ NSString *jsonString = [PrintIO shoppingCartJSONContent];
 //... other customization
 [printIO open];
 ```
-######- setPayPalStagingClientId:productionClientId
+###### - setPayPalStagingClientId:productionClientId
 ```Objective-C
 /**
  Set PayPal's client ids, for both modes, staging and production. Default values are
@@ -2280,7 +2280,7 @@ NSString *jsonString = [PrintIO shoppingCartJSONContent];
 //... other customization
 [printIO open];
 ```
-######- setBraintreeStagingEncryptionKey:productionEncryptionKey
+###### - setBraintreeStagingEncryptionKey:productionEncryptionKey
 ```Objective-C
 /**
  Set Braintree encryption key for staging and production mode. By default, keys from PrintIO will be used
@@ -2300,7 +2300,7 @@ NSString *jsonString = [PrintIO shoppingCartJSONContent];
 //... other customization
 [printIO open];
 ```
-######- setApplePayMerchantIdentifier
+###### - setApplePayMerchantIdentifier
 ```Objective-C
 /**
  Set ApplePay merchant identifier
@@ -2315,8 +2315,8 @@ NSString *jsonString = [PrintIO shoppingCartJSONContent];
 //... other customization
 [printIO open];
 ```
-###Screen 'Shipping Addresses'
-######- setColorForAddressSelection
+### Screen 'Shipping Addresses'
+###### - setColorForAddressSelection
 ```Objective-C
 /**
  Change highlight color for address selection on 'Select Address'
@@ -2332,7 +2332,7 @@ NSString *jsonString = [PrintIO shoppingCartJSONContent];
 //... other customization
 [printIO open];
 ```
-######+ clearShippingAddresses
+###### + clearShippingAddresses
 ```Objective-C
 /**
  Remove all saved shipping addresses
@@ -2343,7 +2343,7 @@ NSString *jsonString = [PrintIO shoppingCartJSONContent];
 ```Objective-C
 [PrintIO clearShippingAddresses];
 ```
-######+ clearBillingAddresses
+###### + clearBillingAddresses
 ```Objective-C
 /**
  Remove all saved billing addresses
@@ -2354,8 +2354,8 @@ NSString *jsonString = [PrintIO shoppingCartJSONContent];
 ```Objective-C
 [PrintIO clearBillingAddresses];
 ```
-###Screen 'Order Completed'
-######- setTitleForOrderCompletedScreen
+### Screen 'Order Completed'
+###### - setTitleForOrderCompletedScreen
 ```Objective-C
 /**
  Change title for 'Order Completed' screen
@@ -2370,7 +2370,7 @@ NSString *jsonString = [PrintIO shoppingCartJSONContent];
 //... other customization
 [printIO open];
 ```
-######- setIconForOrderCompletedScreen
+###### - setIconForOrderCompletedScreen
 ```Objective-C
 /**
  Change icon for company logo on 'Order Completed' screen
@@ -2385,7 +2385,7 @@ NSString *jsonString = [PrintIO shoppingCartJSONContent];
 //... other customization
 [printIO open];
 ```
-######- setMessageForOrderCompletedScreen
+###### - setMessageForOrderCompletedScreen
 ```Objective-C
 /**
  Change company message below company logo on 'Order Completed' screen
@@ -2401,7 +2401,7 @@ NSMutableAttributedString *message = [[NSMutableAttributedString alloc]initWithS
 //... other customization
 [printIO open];
 ```
-######- orderCompletedScreenCloseButtonShouldPerformBack
+###### - orderCompletedScreenCloseButtonShouldPerformBack
 ```Objective-C
 /**
  Change function of 'Close' button on 'Order Completed' screen
@@ -2416,7 +2416,7 @@ NSMutableAttributedString *message = [[NSMutableAttributedString alloc]initWithS
 //... other customization
 [printIO open];
 ```
-######- setPartnerSourceId
+###### - setPartnerSourceId
 ```Objective-C
 /**
  Set order's partner source id 
@@ -2431,7 +2431,7 @@ NSMutableAttributedString *message = [[NSMutableAttributedString alloc]initWithS
 //... other customization
 [printIO open];
 ```
-######- setOrderMeta
+###### - setOrderMeta
 ```Objective-C
 /**
  Set order's meta data
@@ -2446,8 +2446,8 @@ NSMutableAttributedString *message = [[NSMutableAttributedString alloc]initWithS
 //... other customization
 [printIO open];
 ```
-###Google Analytics 
-######- setTrackingIDForGoogleAnalytics
+### Google Analytics 
+###### - setTrackingIDForGoogleAnalytics
 ```Objective-C
 /**
  Set tracking id for Google Analytics. If tracking id is not provided,
@@ -2463,8 +2463,8 @@ NSMutableAttributedString *message = [[NSMutableAttributedString alloc]initWithS
 //... other customization
 [printIO open];
 ```
-###Push Notifications
-######- enablePushNotifications
+### Push Notifications
+###### - enablePushNotifications
 ```Objective-C
 /**
  Enable push notification in SDK
@@ -2479,7 +2479,7 @@ NSMutableAttributedString *message = [[NSMutableAttributedString alloc]initWithS
 //... other customization
 [printIO open];
 ```
-######- setParseApplicationId:apiKey
+###### - setParseApplicationId:apiKey
 ```Objective-C
 /**
  Set applicationId and apiKey provided from parse.com
@@ -2518,7 +2518,7 @@ NSMutableAttributedString *message = [[NSMutableAttributedString alloc]initWithS
   return YES;
 }
 ```
-######- registerDeviceToken
+###### - registerDeviceToken
 ```Objective-C
 /**
  Register device to receive push notifications
@@ -2534,7 +2534,7 @@ NSMutableAttributedString *message = [[NSMutableAttributedString alloc]initWithS
   [PrintIO registerDeviceToken:deviceToken];
 }
 ```
-######- showNotification:backgroundColor:textColor
+###### - showNotification:backgroundColor:textColor
 ```Objective-C
 /**
  Display notification pop up from bottom of screen. On tap it will dismiss notification.
