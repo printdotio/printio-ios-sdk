@@ -4,7 +4,7 @@ iOS Release Notes
 ---
 **Bug fixes:**
 * Fixed apple pay shipping state and currency conversion issues
----
+
 **1.8.40 (38)**
 ---
 **Features:**
