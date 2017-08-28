@@ -1,5 +1,10 @@
 iOS Release Notes
 ==================================
+**1.8.42 (38)**
+---
+**Bug fixes:**
+* Fixed apple pay shipping state country issue
+
 **1.8.41 (38)**
 ---
 **Bug fixes:**
