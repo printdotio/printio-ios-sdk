@@ -1,5 +1,11 @@
 iOS Release Notes
 ==================================
+**1.8.43 (38)**
+---
+**Bug fixes:**
+* Fixed PayPal issue when SDK is in test mode
+* Fixed dialogs issue in case when host app has AdMob SDK
+
 **1.8.42 (38)**
 ---
 **Bug fixes:**
