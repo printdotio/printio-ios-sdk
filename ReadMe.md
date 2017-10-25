@@ -27,7 +27,7 @@ Our SDK allows you to select which features and functionality you need as well a
 - [Push Notifications](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/Reference/PUSH_NOTIFICATIONS.md) the Gooten SDK also offers the ability to send push notifications from your app.
 - [Social Media Account Setup](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/Reference/SocialMediaAccountSetup.md) the Gooten SDK allows you to change to your social media accounts. Use this guide if you have questions regarding what information and settings are needed.
 
-### iOS 9 and XCode 7 support:
+### iOS 9 and Xcode 7 support:
 - To avoid waring "The resource could not be loaded because the App Transport Security policy requires the use of a secure connection." please add next lines to info.plist (temporary solution):
 ```Objective-C
 <key>NSAppTransportSecurity</key>
