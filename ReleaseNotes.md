@@ -1,5 +1,10 @@
 iOS Release Notes
 ==================================
+**1.8.44 (38)**
+---
+**Bug fixes:**
+* Fixed iOS 11 issues
+
 **1.8.43 (38)**
 ---
 **Bug fixes:**
