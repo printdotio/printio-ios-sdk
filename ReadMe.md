@@ -1,13 +1,19 @@
-Gooten iOS SDK
-===============
+Gooten iOS SDK v2.0
+===================
 
 The Gooten iOS SDK enables you to integrate our platforms commerce tools and connect to the largest international print on demand network.
 
-![](https://user-images.githubusercontent.com/6410345/28869589-8417c408-777d-11e7-9598-c3da670e3ef6.png)
+<p align="center">
+  <img src="https://github.com/printdotio/printio-ios-sdk/raw/master/docs/images/ssx1.png" height="320"/>
+  <img src="https://github.com/printdotio/printio-ios-sdk/raw/master/docs/images/ssx2.png" height="320"/>
+  <img src="https://github.com/printdotio/printio-ios-sdk/raw/master/docs/images/ssx3.png" height="320"/>
+  <img src="https://github.com/printdotio/printio-ios-sdk/raw/master/docs/images/ssx4.png" height="320"/>
+  <img src="https://github.com/printdotio/printio-ios-sdk/raw/master/docs/images/ssx5.png" height="320"/>
+</p>
 
 ## Introduction
 
-Our SDK allows you to select which features and functionality you need as well as to customize the look and feel of different UI elements. Customization can be performed via code level options and/or XML configuration.
+Our SDK allows you to select which features and functionality you need as well as to customize the look and feel of different UI elements. Customization can be performed via code level options.
 
 ## Begin to Develop with the Gooten SDK
 
