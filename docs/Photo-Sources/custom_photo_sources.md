@@ -3,8 +3,6 @@ Custom Photo Source API
 
 Since version 1.1.0 there is an option to add a custom photo source.
 
-![](https://user-images.githubusercontent.com/6410345/28869589-8417c408-777d-11e7-9598-c3da670e3ef6.png)
-
 ## Introduction
 
 When selecting images, you have an option to include up to six photo sources from the following list:
@@ -14,7 +12,6 @@ When selecting images, you have an option to include up to six photo sources fro
 - Instagram
 - Picasa
 - Flickr
-- Photobucket
 - Dropbox
 - Preselected 
 
