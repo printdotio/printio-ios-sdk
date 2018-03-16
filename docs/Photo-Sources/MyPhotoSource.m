@@ -16,7 +16,7 @@
 }
 
 - (NSString *)buttonIconPath{
-    return [[NSBundle mainBundle] pathForResource:@"icon1" ofType:@"png"];
+    return [[NSBundle mainBundle] pathForResource:@"icon" ofType:@"png"];
 }
 
 - (BOOL)isAuthed{
