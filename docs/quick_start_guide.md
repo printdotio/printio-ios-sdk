@@ -52,4 +52,6 @@ override func viewDidLoad() {
 After launching SDK, you should get this screen:
 
 
-![](https://user-images.githubusercontent.com/6410345/28869766-13b7b384-777e-11e7-817d-fa4ad725fbab.png)
+<p align="center">
+  <img src="https://github.com/printdotio/printio-ios-sdk/raw/master/docs/images/ssx1.png" height="320"/>
+</p>
