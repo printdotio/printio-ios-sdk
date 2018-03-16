@@ -1,5 +1,5 @@
-####Sample code, GTAnalytics integration with Flurry analytics.
-#####Initialize printIO SDK and Flurry
+#### Sample code, GTAnalytics integration with Flurry analytics.
+##### Initialize printIO SDK and Flurry
 ```Obj-C
 -(void)viewDidLoad{
         // init printIO SDK
@@ -12,7 +12,7 @@
         [Flurry startSession:kAPIKey];
 }
 ```
-#####Import GTAnalyticsDelegate methods
+##### Import GTAnalyticsDelegate methods
 ```Obj-C
 #pragma mark - GTAnalytics delegate
 
@@ -32,7 +32,7 @@
         [Flurry endTimedEvent:event.name withParameters:@{@"value":event.value}];
 }
 ```
-####Sample code, GTAnalytics integration with Google Analytics.
+#### Sample code, GTAnalytics integration with Google Analytics.
 ```Obj-C
 -(void)viewDidLoad{
         // init printIO SDK
@@ -46,7 +46,7 @@
         gai.trackUncaughtExceptions = YES;  // report uncaught exceptions
         gai.logger.logLevel = kGAILogLevelVerbose;  // remove before app release
 ```
-#####Import GTAnalyticsDelegate methods
+##### Import GTAnalyticsDelegate methods
 ```Obj-C
 #pragma mark - GTAnalytics delegate
 
