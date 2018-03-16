@@ -27,7 +27,6 @@
     } else { // here provide full size image
         NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:self.imageUrl]];
         UIImage *image = [UIImage imageWithData:data scale:1.0];
-        NSLog(@"image size: %.2fmb", (float)data.length/1024.0f/1024.0f);
         imageFetchCompletionHandler(image);
     }
 }
