@@ -1,6 +1,6 @@
 ### Initialization and opening
 
-```
+```Objective-C
 /**
  Init PrintIO widget. To get view controller, use '[self.printIO viewController]'
  
@@ -9,6 +9,8 @@
  */
 - (id)initWithRecipeId:(NSString *)recipeId isInTestMode:(BOOL)isInTestMode;
 ```
+
+```Objective-C
 /**
  Init PrintIO widget with parent view controller.
  
@@ -17,7 +19,7 @@
  @param isInTestMode Default value is
  */
 - (id)initWithViewController:(id)viewController recipeId:(NSString *)recipeId isInTestMode:(BOOL)isInTestMode;
-
+```
 /**
  Use to place live orders in production mode, without payment verification
  
