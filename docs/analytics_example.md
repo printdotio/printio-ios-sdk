@@ -3,9 +3,9 @@
 ```Obj-C
 -(void)viewDidLoad{
         // init printIO SDK
-        self.printIO = [[PrintIO alloc]initWithEnvironment:PRINTIO_STAGING 
-                                        productionRecipeId:kProductionRecipeId 
-                                           stagingRecipeId:kStagingRecipeId];
+        self.printIO = [[PrintIO alloc]initWithViewController:self 
+                                                     recipeId:kRecipeId 
+                                                 isInTestMode:YES;
         [self.printIO setAnalyticsDelegate:self];
         
         // init Flurry Analytics
@@ -36,9 +36,9 @@
 ```Obj-C
 -(void)viewDidLoad{
         // init printIO SDK
-        self.printIO = [[PrintIO alloc]initWithEnvironment:PRINTIO_STAGING 
-                                        productionRecipeId:kProductionRecipeId 
-                                           stagingRecipeId:kStagingRecipeId];
+        self.printIO = [[PrintIO alloc]initWithViewController:self 
+                                                     recipeId:kRecipeId 
+                                                 isInTestMode:YES;
         [self.printIO setAnalyticsDelegate:self];
         
         // init Google Analytics
