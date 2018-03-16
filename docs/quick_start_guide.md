@@ -1,4 +1,4 @@
-#Gooten iOS SDK - Quick Start Guide
+# Gooten iOS SDK - Quick Start Guide
 
 ### Add Gooten SDK to your project (CocoaPods)
 
@@ -15,7 +15,7 @@ end
 ### Add Gooten SDK to your project (manually from Git)
 
 1. From [releases](https://github.com/printdotio/printio-ios-sdk/releases) download latest release ```Source code (zip)```
-2. Unzip it, and drag ```PrintIO.framework```, ```PrintIOBundle.bundle``` and ```TextBundle.bundle``` to your project
+2. Unzip it, and drag ```PrintIO.framework``` and ```PrintIOBundle.bundle``` to your project
 3. Select target -> Build Settings -> Framework Search Paths and add path to folder where PrintIO framework is
 4. Select target -> Build Phases -> Link Binary With Libraries and add libraries ```libc++```, ```libsqlite3``` and ```libxml2```
 5. Select target -> Build Settings -> Other Linker Flags and add ```-all_load```
@@ -48,11 +48,6 @@ override func viewDidLoad() {
     printIO.open();
 }
 ```
-
-### iOS 9 and XCode 7 support:
-If you have problem with loading images, please use temporary solution for this issue:
--  In ```Info.plist``` under ```Information Property List``` add ```NSAppTransportSecurity```, and under ```NSAppTransportSecurity``` add ```NSAllowsArbitraryLoads``` and set it to ```YES```.
-
 
 After launching SDK, you should get this screen:
 
