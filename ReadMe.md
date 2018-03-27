@@ -1,7 +1,7 @@
 Gooten iOS SDK v2.0
 ===================
 
-Easily build native applications for IOS with our personalized product and photo printing SDK. The Gooten iOS SDK enables you to integrate our platforms commerce tools and connect to the largest international print on demand network.
+Easily build native applications for iOS with our personalized product and photo printing SDK. The Gooten iOS SDK enables you to integrate our platforms commerce tools and connect to the largest international print on demand network.
 
 <p align="center">
   <img src="https://github.com/printdotio/printio-ios-sdk/raw/master/docs/images/ssx1.png" height="320"/>
