@@ -19,3 +19,7 @@ There's no replacement for removed methods. Default values will be used.
 - use of native UI components
 - UI and User flow redesign
 - SDK size reduced
+
+####
+SDK initialization stays same like it was. In order to get SDK runnning, remove all unsupported methods.
+For any question in migration process, feel free to contact our partner support, partnersupport@gooten.com, we will respond as soon as possible. 
