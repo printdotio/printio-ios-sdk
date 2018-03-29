@@ -1,4 +1,4 @@
-Gooten iOS SDK v2.0
+Gooten iOS SDK v2
 ===================
 
 Easily build native applications for iOS with our personalized product and photo printing SDK. The Gooten iOS SDK enables you to integrate our platforms commerce tools and connect to the largest international print on demand network.
@@ -23,8 +23,7 @@ SDK supports iPad and iPhone app configurations, and universal app mode.
 - [Migration Guide](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/migration_guide.md) how to easy migrate from v1 to v2.
 - [SDK Reference](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/sdk_reference.md) list of all methods available within sdk, with description and sample code.
 - [Custom photo sources](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/Photo-Sources/custom_photo_sources.md) option to add a custom photo source
-- [Apple Pay](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/apple_pay_integration.md) integration and configuration (supported from Gooten SDK version 1.4.0).
-- [Analytics](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/analytics.md) to collect user data and track custom events and screens (available from SDK version 1.7.15)
+- [Analytics](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/analytics.md) to collect user data and track custom events and screens
 - [Release notes](https://github.com/printdotio/printio-ios-sdk/blob/master/ReleaseNotes.md) new features and bug fixes by version
 
 ### Sample App SDK: For Reference
