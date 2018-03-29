@@ -1,9 +1,15 @@
 iOS Release Notes
 ==================================
+**2.0.1 (38)**
+---
+* SDK Redesign, follow [Migration Guide](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/migration_guide.md)
+* ApplePay has been removed until further
+* Back button for application mode fixed
+
 **2.0.0 (38)**
 ---
 * SDK Redesign, follow [Migration Guide](https://github.com/printdotio/printio-ios-sdk/blob/master/docs/migration_guide.md)
----
+
 **1.8.44 (38)**
 ---
 **Bug fixes:**
