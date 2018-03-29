@@ -414,12 +414,12 @@ typedef void(^GTImagesCompletionHandler)(NSArray *images);
  */
 - (void)setBraintreeStagingEncryptionKey:(NSString *)sEncKey productionEncryptionKey:(NSString *)pEncKey;
 
-/**
- Set ApplePay merchant identifier
- 
- @param merchantIdentifier Merchant Identifier
- */
-- (void)setApplePayMerchantIdentifier:(NSString *)merchantIdentifier;
+///**
+// Set ApplePay merchant identifier
+// 
+// @param merchantIdentifier Merchant Identifier
+// */
+//- (void)setApplePayMerchantIdentifier:(NSString *)merchantIdentifier;
 
 #pragma mark - Utils
 
